@@ -99,6 +99,6 @@ Una versione definitiva del codice che verrà compilato è disponibile [nel repo
 Questa esercitazione illustra come distribuire un'applicazione console esistente in un contenitore di Windows. Una versione definitiva del codice che verrà compilato è disponibile [nel repository core-docs su GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
