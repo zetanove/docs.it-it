@@ -11,8 +11,8 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
 translationtype: Human Translation
-ms.sourcegitcommit: 149086110d7470d97e1ab3e5969269626290b523
-ms.openlocfilehash: 94bae12916fd20f534916d97157605c6a9aa9202
+ms.sourcegitcommit: 352d4a1fe96b701ebf9e0d60d006cfb9ed77977c
+ms.openlocfilehash: e055475200c55c2e2f890ac63b8b258aeacfae75
 
 ---
 
@@ -30,7 +30,7 @@ L'uso di un gruppo di test automatizzati è uno dei modi migliori per verificare
 > [!NOTE]
 > Gli sviluppatori hanno spesso difficoltà a scegliere i nomi appropriati per i metodi e le classi di test. Come punto di partenza, è possibile fare riferimento alle [convenzioni](https://github.com/aspnet/Home/wiki/Engineering-guidelines#unit-tests-and-functional-tests) adottate dal team del prodotto ASP.NET.
 
-Quando si scrivono unit test, fare attenzione a non introdurre accidentalmente dipendenze dall'infrastruttura. Queste dipendenze tendono a rendere i test più lenti e fragili ed è quindi consigliabile usarle solo nei test di integrazione. È possibile evitare queste dipendenze nascoste nel codice dell'applicazione seguendo il [principio delle dipendenze esplicite](http://deviq.com/explicit-dependencies-principle/) e usando la tecnica di [inserimento delle dipendenze](https://docs.asp.net/en/latest/fundamentals/dependency-injection.html) per richiedere le dipendenze dal framework. È inoltre possibile mantenere gli unit test in un progetto separato dai test di integrazione e verificare che il progetto di unit test non includa riferimenti o dipendenze relative a pacchetti dell'infrastruttura.
+Quando si scrivono unit test, fare attenzione a non introdurre accidentalmente dipendenze dall'infrastruttura. Queste dipendenze tendono a rendere i test più lenti e fragili ed è quindi consigliabile usarle solo nei test di integrazione. È possibile evitare queste dipendenze nascoste nel codice dell'applicazione seguendo il [principio delle dipendenze esplicite](http://deviq.com/explicit-dependencies-principle/) e usando la tecnica di [inserimento delle dipendenze](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) per richiedere le dipendenze dal framework. È inoltre possibile mantenere gli unit test in un progetto separato dai test di integrazione e verificare che il progetto di unit test non includa riferimenti o dipendenze relative a pacchetti dell'infrastruttura.
 
 Altre informazioni sul testing unità sono disponibili nei progetti .NET Core:
 
@@ -40,6 +40,6 @@ Il team di xUnit ha scritto un'esercitazione che illustra [come usare xUnit con 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

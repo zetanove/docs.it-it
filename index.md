@@ -5,7 +5,7 @@ description:
 keywords: 
 author: 
 manager: 
-ms.date: 06/20/2016
+ms.date: 11/14/2016
 ms.topic: hubpage
 ms.prod: 
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 ms.suite: 
 ms.assetid: 
 translationtype: Human Translation
-ms.sourcegitcommit: 86a7089d110ace6ff2ac627659aa9a5e2416d601
-ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
+ms.sourcegitcommit: 11f0979ab18b708fb775a54736ecd06f388557cf
+ms.openlocfilehash: 1c9bafe53583478b382e3e068150f1e692664c48
 
 ---
 <div id="main" class="v2">
@@ -27,7 +27,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="./docs/images/hub/featured-1.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -45,7 +45,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="./docs/images/hub/featured-2.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-2.svg" src="./docs/images/hub/featured-2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -57,13 +57,13 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                 </a>
             </li>
             <li>
-                <a href="https://msdn.microsoft.com/en-us/library/mt472912(v=vs.110).aspx">
+                <a href="https://msdn.microsoft.com/library/mt472912(v=vs.110).aspx">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img src="./docs/images/hub/featured-3.png" alt="" />
+                                        <img data-hoverimage="articles/images/hub/featured-3.svg" src="./docs/images/hub/featured-3.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -95,10 +95,10 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/welcome">Che cos'è .NET?</a></h3>
+                                                <h3><a href="/dotnet/articles/welcome">Che cos'è .NET?</a></h3>
                                                 <p><a href="https://www.microsoft.com/net">Introduzione</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/standard/#a-stroll-through-net">Panoramica di .NET</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/about/products">Concetti relativi a .NET</a></p>
+                                                <p><a href="/dotnet/articles/standard/#a-stroll-through-net">Panoramica di .NET</a></p>
+                                                <p><a href="/dotnet/articles/about/products">Concetti relativi a .NET</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -114,10 +114,10 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/core">Guida a .NET Core</a></h3>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/core/getting-started">Introduzione</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/core/tutorials">Esercitazioni</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/core/porting">Portabilità da .NET Framework</a></p>
+                                                <h3><a href="/dotnet/articles/core">Guida a .NET Core</a></h3>
+                                                <p><a href="/dotnet/articles/core/getting-started">Introduzione</a></p>
+                                                <p><a href="/dotnet/articles/core/tutorials">Esercitazioni</a></p>
+                                                <p><a href="/dotnet/articles/core/porting">Portabilità da .NET Framework</a></p>
                                                 <p><a href="https://docs.asp.net/en/latest/getting-started.html">ASP.NET Core</a></p>
                                             </div>
                                         </div>
@@ -134,11 +134,11 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://msdn.microsoft.com/en-us/library/zw4w595w(v=vs.110).aspx">Guida a .NET Framework</a></h3>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/hh425099(v=vs.110).aspx">Introduzione</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/hh156542(v=vs.110).aspx">Esercitazioni</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/54xbah2z(v=vs.110).aspx">Sviluppo client</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/bb400852(v=vs.110).aspx">ASP.NET</a></p>
+                                                <h3><a href="https://msdn.microsoft.com/library/w0x726c2(v=vs.110).aspx">Guida a .NET Framework</a></h3>
+                                                <p><a href="https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx">Introduzione</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/hh156542(v=vs.110).aspx">Esercitazioni</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/54xbah2z(v=vs.110).aspx">Sviluppo client</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -174,10 +174,10 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp">Guida a C#</a></h3>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/getting-started">Introduzione</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/tour-of-csharp">Panoramica di C#</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/csharp/concepts">Concetti relativi a C#</a></p>
+                                                <h3><a href="/dotnet/articles/csharp">Guida a C#</a></h3>
+                                                <p><a href="/dotnet/articles/csharp/getting-started">Introduzione</a></p>
+                                                <p><a href="/dotnet/articles/csharp/tour-of-csharp">Panoramica di C#</a></p>
+                                                <p><a href="/dotnet/articles/csharp/language-reference">Riferimenti del linguaggio C#</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -193,10 +193,10 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp">Guida a F#</a></h3>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/tutorials/getting-started">Introduzione</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/tour">Panoramica di F#</a></p>
-                                                <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/language-reference">Riferimenti per il linguaggio F#</a></p>
+                                                <h3><a href="/dotnet/articles/fsharp">Guida a F#</a></h3>
+                                                <p><a href="/dotnet/articles/fsharp/tutorials/getting-started">Introduzione</a></p>
+                                                <p><a href="/dotnet/articles/fsharp/tour">Panoramica di F#</a></p>
+                                                <p><a href="/dotnet/articles/fsharp/language-reference">Riferimenti per il linguaggio F#</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -212,10 +212,10 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://msdn.microsoft.com/en-us/library/2x7h1hfk.aspx">Guida a Visual Basic</a></h3>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/8hb2a397.aspx">Introduzione</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/9a4y3z34.aspx">Panoramica di Visual Basic</a></p>
-                                                <p><a href="https://msdn.microsoft.com/en-us/library/sh9ywfdk.aspx">Riferimenti al linguaggio Visual Basic</a></p>
+                                                <h3><a href="/dotnet/articles/visual-basic">Guida a Visual Basic</a></h3>
+                                                <p><a href="/dotnet/articles/visual-basic/getting-started">Introduzione</a></p>
+                                                <p><a href="/dotnet/articles/visual-basic/walkthroughs">Panoramica di Visual Basic</a></p>
+                                                <p><a href="/dotnet/articles/visual-basic/language-reference">Riferimenti al linguaggio Visual Basic</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -246,7 +246,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/aspnet/core/">
+                                <a href="/aspnet/core/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -284,7 +284,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc">
+                                <a href="/aspnet/core/tutorials/first-mvc-app/start-mvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -303,7 +303,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/aspnetmvc">
+                                <a href="/dotnet/articles/framework/docker/aspnetmvc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -322,7 +322,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/your-first-mac-aspnet">
+                                <a href="/aspnet/core/tutorials/your-first-mac-aspnet">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -346,7 +346,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                         <a href="#cloud">Cloud</a>
                         <ul id="cloud" class="cardsG">
                             <li>
-                                <a href="https://azure.microsoft.com/en-us/develop/net">
+                                <a href="https://azure.microsoft.com/develop/net">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -365,7 +365,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                 </a>
                             </li>
                             <li>
-                                <a href="https://azure.microsoft.com/en-us/documentation/articles/cloud-services-dotnet-get-started">
+                                <a href="https://azure.microsoft.com/documentation/articles/cloud-services-dotnet-get-started">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -384,7 +384,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/dotnet/articles/fsharp/using-fsharp-on-azure">
+                                <a href="/dotnet/articles/fsharp/using-fsharp-on-azure">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -403,7 +403,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                                 </a>
                             </li>
                             <li>
-                                <a href="https://azure.microsoft.com/en-us/documentation/services/storage/">
+                                <a href="https://azure.microsoft.com/documentation/services/storage/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -489,7 +489,7 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
                         <a href="#desktop">Desktop</a>
                         <ul id="desktop" class="cardsG">
                             <li>
-                                <a href="https://msdn.microsoft.com/en-us/library/windows/apps/dn609832.aspx">
+                                <a href="https://msdn.microsoft.com/library/windows/apps/dn609832.aspx">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -658,6 +658,6 @@ ms.openlocfilehash: 3e10bcf4d8244be16739c1f1e6db4ea8ce175b89
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -26,6 +26,6 @@ Le esercitazioni seguenti includono informazioni e istruzioni sull'uso di Docker
 Per esercitazioni sullo sviluppo di applicazioni Web ASP.NET Core, si consiglia di consultare la [documentazione di ASP.NET Core](https://docs.asp.net).
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
