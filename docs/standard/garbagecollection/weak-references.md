@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 22319f2f-0008-4ace-815e-545892a0512a
 translationtype: Human Translation
 ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: cc43c319f2ec8055073da4749cbfb7c56b825df9
+ms.openlocfilehash: a966f430c00f07d48f2210d64f03d6805f4e3097
 
 ---
 
@@ -60,6 +60,6 @@ Evitare di usare i riferimenti deboli come soluzione automatica per i problemi d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

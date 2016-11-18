@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 26870cdc-1709-4978-831b-ff2a2f24856f
 translationtype: Human Translation
 ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 735ae2f1d11ddf6b88b40c7b89083a45d1f07523
+ms.openlocfilehash: da4c5aec6e02393c9e6201edd766eb7579a40b5e
 
 ---
 
@@ -173,6 +173,6 @@ I valori [DateTimeOffset](xref:System.DateTimeOffset) sono dissociati da qualsia
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

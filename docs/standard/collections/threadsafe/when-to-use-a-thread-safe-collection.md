@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: a2a42d44-f6a5-4f16-9000-026221d66349
 translationtype: Human Translation
 ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: 74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8
+ms.openlocfilehash: 05f692a1a58c0c653e14993cafd61a0711ebf9f8
 
 ---
 
@@ -74,6 +74,6 @@ Quando è necessaria la semantica di delimitazione e blocco, è probabile che l'
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

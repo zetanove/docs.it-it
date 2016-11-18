@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: df780a6e-734e-44b8-9747-9f7783f79e20
 translationtype: Human Translation
 ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: 51655742b8975c84eae3f58c4ef0f7381a0bed6b
+ms.openlocfilehash: 42b82c6a906a803b45976c01a55e585cd3b7542f
 
 ---
 
@@ -239,6 +239,6 @@ End Module
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
