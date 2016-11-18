@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 translationtype: Human Translation
 ms.sourcegitcommit: 0882a5ca2f7814e2fd168dce40705d11b199f102
-ms.openlocfilehash: caf72bec4a5d3276d1fdeafc4fa3816e5f00c296
+ms.openlocfilehash: de44f103bef6006dd1a952c48c1e172f6277a95b
 
 ---
 
@@ -579,6 +579,6 @@ L'operazione è ora completata.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

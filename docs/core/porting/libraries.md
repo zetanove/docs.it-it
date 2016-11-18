@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
 translationtype: Human Translation
 ms.sourcegitcommit: 46061efa8e33c6a73befa5181eb33b8deb2fa637
-ms.openlocfilehash: 051c8d46abdafe722eec77a440e384efbae0e70a
+ms.openlocfilehash: 503cf3628ee317f701f467bddc4bcb5998b82af4
 
 ---
 
@@ -354,6 +354,6 @@ Spostandosi metodicamente dalla base all'esterno della libreria e testando ogni 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: b2032f5d-771f-48d9-917c-587d9509035c
 translationtype: Human Translation
 ms.sourcegitcommit: 682b27c575e63c3a9efeba8fe14bad6288d02664
-ms.openlocfilehash: be3ada8eb885d341c03a004d16fb523281f12870
+ms.openlocfilehash: 3aac9688235cf272d978d540a93f6553efc6eb89
 
 ---
 
@@ -127,6 +127,6 @@ Per usare i RID, è necessario sapere quali sono quelli disponibili. Alla piatta
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

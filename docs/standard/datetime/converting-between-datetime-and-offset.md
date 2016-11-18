@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: fab3af5b-5d0f-4384-a40a-1b5d99b30dd1
 translationtype: Human Translation
 ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 312ac8cb7e901c4ceeff2e428620c2c4c615ca3d
+ms.openlocfilehash: 99ec9d8c433025bbc5122fe3ea364fe84f33a1f8
 
 ---
 
@@ -532,6 +532,6 @@ Questo codice si basa su due presupposti che, a seconda dell'applicazione e dell
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

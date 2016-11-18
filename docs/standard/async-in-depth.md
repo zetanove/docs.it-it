@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 translationtype: Human Translation
 ms.sourcegitcommit: de0dab146fc811e895dc32f98f877db5e757f82b
-ms.openlocfilehash: 6536a608a4ee1bb10f41907a28114193a300a52c
+ms.openlocfilehash: c8ff0f81054feddb4ee7042926c817de525034f9
 
 ---
 
@@ -148,6 +148,6 @@ Quando viene rilevato `await`, l'esecuzione di `CalculateResult()` viene ceduta 
 `async` e `await` sono la procedura consigliata per la gestione di attività associate alla CPU quando è necessaria velocità di risposta. Vi sono diversi modelli per l'uso di codice asincrono con attività associate alla CPU. È importante tenere presente che esiste un costo minimo per l'uso del codice asincrono e che tale uso è sconsigliato per cicli ridotti.  Spetta all'utente determinare come scrivere il codice in base a questa nuova funzionalità.
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
 translationtype: Human Translation
 ms.sourcegitcommit: aeb199a9aeb1584570ad2a2942e2f22c75a59616
-ms.openlocfilehash: ea16d4b841f5c93da222df56db36d6fb70ea35f9
+ms.openlocfilehash: 4223f296224c9b62c88b72f0f643c8b8b6fc9f6b
 
 ---
 
@@ -132,6 +132,6 @@ Gli strumenti dell'interfaccia della riga di comando di .NET Core offrono due ap
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

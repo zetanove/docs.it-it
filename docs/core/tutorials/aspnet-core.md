@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 4172512e-b93d-4169-abdb-bd0b0b2d657e
 translationtype: Human Translation
 ms.sourcegitcommit: 5870a3cf6d8d2abd4bd1851a8d00bb70adbda752
-ms.openlocfilehash: cfb3a2ee49046f8a24c28c2b3f81cdcbe9760861
+ms.openlocfilehash: fe7b64a0d3fc1ebd1948a21f670711c891aee757
 
 ---
 
@@ -21,6 +21,6 @@ ms.openlocfilehash: cfb3a2ee49046f8a24c28c2b3f81cdcbe9760861
 Per esercitazioni sullo sviluppo di applicazioni Web ASP.NET Core, si consiglia di consultare la [documentazione di ASP.NET Core](https://docs.asp.net).
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
 translationtype: Human Translation
 ms.sourcegitcommit: 30175813af95911c8ab4f2f0e39c40bed49a23b3
-ms.openlocfilehash: edd6975fe4acdba3e75084f10b4d71efebe42a4d
+ms.openlocfilehash: e6212a63e74f2d1525e87480b092861be9f92379
 
 ---
 
@@ -42,6 +42,6 @@ Intestazioni di assembly da ECMA 335 II.25.1, struttura del formato di file di r
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
