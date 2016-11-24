@@ -70,7 +70,7 @@ NuGet è lo strumento di gestione dei pacchetti per la piattaforma di sviluppo M
 
 ## <a name="net-core-tools-for-visual-studio-2015"></a>Strumenti .NET Core per Visual Studio 2015
 
-Scaricare e installare l'[SDK ][.NET Core 1.0.1 - VS 2015 Tooling Preview 2]. 
+Scaricare e installare l'[SDK][.NET Core 1.0.1 - VS 2015 Tooling Preview 2]. 
 
 Il pacchetto .NET Core Tooling installa .NET Core, i modelli di progetto e altri strumenti per Visual Studio 2015.
 
