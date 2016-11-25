@@ -12,11 +12,11 @@ ms.devlang: dotnet
 ms.assetid: 48682290-4fd7-40dc-8a7b-bac528eba361
 translationtype: Human Translation
 ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 713bd9a7ead18d6ccf298ad781b0d95c508fb9b0
+ms.openlocfilehash: d0bf81844526a7ad5a45e6ec8eba0a94b0e33998
 
 ---
 
-# <a name="-net-core-servicing"></a>Manutenzione di .NET Core
+# <a name="-net-core-servicing"></a>🔧 Manutenzione di .NET Core
 
 > **Nota**
 > 
@@ -31,6 +31,6 @@ ms.openlocfilehash: 713bd9a7ead18d6ccf298ad781b0d95c508fb9b0
     
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

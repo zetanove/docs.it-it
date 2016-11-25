@@ -11,14 +11,14 @@ ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: d095b0b6-2454-4e23-80b4-c9e8a447116c
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: 68815f7e7e96483eff218138dd1612a20e2eb1e6
+ms.sourcegitcommit: b022f5b9e8ac81c00a6e5aa189feab4e7157dfd4
+ms.openlocfilehash: 0734347048742657b8e33a1fffae15448ecad4f3
 
 ---
 
 # <a name="automatic-memory-management-and-garbage-collection"></a>Gestione automatica della memoria e Garbage Collection
 
-La gestione automatica della memoria è uno dei servizi offerti da Common Language Runtime durante l'esecuzione gestita. L'allocazione e il rilascio di memoria per un'applicazione vengono gestiti da Garbage Collector di Common Language Runtime. Agli sviluppatori non viene quindi richiesta la scrittura di codice per eseguire attività di gestione della memoria quando si sviluppano applicazioni gestite. La gestione automatica della memoria consente di evitare che si verifichino i problemi consueti legati alla gestione della memoria, quale la mancata liberazione di un oggetto e il conseguente spreco di memoria allocata ma non più referenziabile o il tentativo di accesso alla memoria per un oggetto già liberato. In questa sezione viene descritta la modalità utilizzata dal Garbage Collector per l'allocazione e il rilascio di memoria.
+Gestione automatica della memoria è uno dei servizi offerti da Common Language Runtime durante l'esecuzione gestita. L'allocazione e il rilascio di memoria per un'applicazione vengono gestiti da Garbage Collector di Common Language Runtime. Agli sviluppatori non viene quindi richiesta la scrittura di codice per eseguire attività di gestione della memoria quando si sviluppano applicazioni gestite. La gestione automatica della memoria consente di evitare che si verifichino i problemi consueti legati alla gestione della memoria, quale la mancata liberazione di un oggetto e il conseguente spreco di memoria allocata ma non più referenziabile o il tentativo di accesso alla memoria per un oggetto già liberato. In questa sezione viene descritta la modalità utilizzata dal Garbage Collector per l'allocazione e il rilascio di memoria.
 
 ## <a name="allocating-memory"></a>Allocazione di memoria
 
@@ -59,6 +59,6 @@ Le attività di gestione della memoria necessarie vengono effettuate dal Garbage
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

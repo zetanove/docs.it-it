@@ -14,8 +14,8 @@ ms.technology:
 ms.suite: 
 ms.assetid: 
 translationtype: Human Translation
-ms.sourcegitcommit: a78076dc6e6663b56594057c3cae9e8123c6c986
-ms.openlocfilehash: 3360b18bd1d5d6dde6078c7d695349e0224ef794
+ms.sourcegitcommit: c8b9e166a49c86dcabfa89887db1dce3a8e45f4f
+ms.openlocfilehash: d8b2def6b766aa1af9318fe5b0620f4db4a2ee43
 
 ---
 <div id="main" class="v2">
@@ -97,9 +97,9 @@ ms.openlocfilehash: 3360b18bd1d5d6dde6078c7d695349e0224ef794
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/welcome">Che cos'è .NET?</a></h3>
-                                                <p><a href="https://www.microsoft.com/net">Introduzione</a></p>
-                                                <p><a href="/dotnet/articles/standard/#a-stroll-through-net">Panoramica di .NET</a></p>
-                                                <p><a href="/dotnet/articles/about/products">Concetti relativi a .NET</a></p>
+                                                <p><a href="/dotnet/articles/standard/getting-started">Introduzione</a></p>
+                                                <p><a href="/dotnet/articles/standard/tour">Panoramica di .NET</a></p>
+                                                <p><a href="/dotnet/articles/standard/components">Concetti dell'architettura .NET</a></p>
                                             </div>
                                         </div>
                                     </div>
