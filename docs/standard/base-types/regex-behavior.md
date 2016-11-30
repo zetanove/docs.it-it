@@ -13,7 +13,7 @@ ms.devlang: dotnet
 ms.assetid: 6f11047f-45a4-4caf-a259-18abe08cc0d2
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: b217b59874ceafbb0e5e410878cc434974c5a863
+ms.openlocfilehash: fa0513a5b450742995bd86fca495ba9904e7361b
 
 ---
 
@@ -480,7 +480,7 @@ End Module
 
 Per altre informazioni sulle sottoespressioni non di backtracking, vedere [Costrutti di raggruppamento nelle espressioni regolari](grouping.md).
 
-### <a name="righttoleft-matching"></a>Corrispondenza da destra a sinistra
+### <a name="right-to-left-matching"></a>Corrispondenza da destra a sinistra
 
 Corrispondenza da destra a sinistra specificata passando l'opzione [RegexOptions.RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft) a un costruttore della classe [Regex](xref:System.Text.RegularExpressions.Regex) o al metodo corrispondente dell'istanza statica. Questa funzionalità è utile durante la ricerca da destra verso sinistra anziché da sinistra verso destra oppure nei casi in cui risulta più efficace iniziare una corrispondenza nella parte destra del criterio anziché in quella sinistra. Come illustrato nell'esempio seguente, l'uso della corrispondenza da destra a sinistra può modificare il comportamento dei quantificatori greedy. Nell'esempio vengono condotte due ricerche di una frase che termina con un numero. La ricerca da sinistra a destra che usa il quantificatore greedy `+` trova la corrispondenza con una delle sei cifre nella frase, mentre la ricerca da destra a sinistra trova la corrispondenza con tutte le sei cifre. Per una descrizione del criterio di espressione regolare, vedere l'esempio che illustra i quantificatori lazy in precedenza in questa sezione.
 
@@ -641,6 +641,6 @@ Titolo | Descrizione
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
