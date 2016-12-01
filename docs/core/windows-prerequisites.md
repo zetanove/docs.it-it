@@ -70,12 +70,12 @@ NuGet è lo strumento di gestione dei pacchetti per la piattaforma di sviluppo M
 
 ## <a name="net-core-tools-for-visual-studio-2015"></a>Strumenti .NET Core per Visual Studio 2015
 
-Scaricare e installare l'[SDK][.NET Core 1.0.1 - VS 2015 Tooling Preview 2]. 
+Scaricare e installare l'[.NET Core 1.0.1 - VS 2015 Tooling Preview 2][SDK]. 
 
 Il pacchetto .NET Core Tooling installa .NET Core, i modelli di progetto e altri strumenti per Visual Studio 2015.
 
 > [!NOTE]
-Attualmente non è possibile scaricare un programma di installazione offline per l'[SDK ][.NET Core 1.0.1 - VS 2015 Tooling Preview 2]. È invece necessario scaricare l'[SDK] del [normale programma di avvio automatico] ed eseguirlo con un'opzione della riga di comando, ad esempio `/layout c:\path`, per ottenere un layout offline. Questo layout può essere usato in seguito come programma di installazione offline. È sufficiente avviare il file eseguibile dal percorso locale. Si noti che, poiché si tratta di un layout completo, questa procedura scarica tutti i pacchetti per tutte le lingue supportate, per un totale di circa 1 GB.
+Attualmente non è possibile scaricare un programma di installazione offline per l'[.NET Core 1.0.1 - VS 2015 Tooling Preview 2][SDK ]. È invece necessario scaricare l'[normale programma di avvio automatico][SDK] ed eseguirlo con un'opzione della riga di comando, ad esempio `/layout c:\path`, per ottenere un layout offline. Questo layout può essere usato in seguito come programma di installazione offline. È sufficiente avviare il file eseguibile dal percorso locale. Si noti che, poiché si tratta di un layout completo, questa procedura scarica tutti i pacchetti per tutte le lingue supportate, per un totale di circa 1 GB.
 
 [sdk]: https://go.microsoft.com/fwlink/?LinkID=827546
 
