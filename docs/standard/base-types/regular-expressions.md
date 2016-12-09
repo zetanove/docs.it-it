@@ -3,11 +3,11 @@ title: Espressioni regolari in .NET
 description: Espressioni regolari in .NET
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d1a640cf-09ca-48f7-800c-a627a6d549c9
 translationtype: Human Translation
@@ -150,7 +150,7 @@ Il metodo [Regex.Matches](xref:System.Text.RegularExpressions.Regex.Matches(Syst
 
 Si noti che la stringa di input include la sottostringa "this? This". Dato che tuttavia tra le due parole è presente un segno di punteggiatura, le parole non vengono identificate come duplicati.
 
-### <a name="example-3-dynamically-building-a-culturesensitive-regular-expression"></a>Esempio 3: compilazione dinamica di un'espressione regolare dipendente dalle impostazioni cultura
+### <a name="example-3-dynamically-building-a-culture-sensitive-regular-expression"></a>Esempio 3: compilazione dinamica di un'espressione regolare dipendente dalle impostazioni cultura
 
 L'esempio seguente illustra le potenzialità delle espressioni regolari combinate alla flessibilità offerta dalle funzionalità di globalizzazione di .NET. Viene usato l'oggetto [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) per determinare il formato dei valori di valuta nelle impostazioni cultura correnti del sistema. Queste informazioni vengono quindi usate per costruire in modo dinamico un'espressione regolare per l'estrazione dei valori di valuta dal testo. Per ogni corrispondenza, il sottogruppo che contiene solo la stringa numerica viene estratto e convertito in un valore [Decimal](xref:System.Decimal), quindi viene calcolato un totale parziale. 
 

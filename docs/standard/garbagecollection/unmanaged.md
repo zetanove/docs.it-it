@@ -3,11 +3,11 @@ title: Pulizia delle risorse non gestite
 description: Pulizia delle risorse non gestite
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/18/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8c97c3e2-8619-47ce-ae29-d6a3140bfa83
 translationtype: Human Translation

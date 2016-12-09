@@ -3,11 +3,11 @@ title: 'Procedura: Enumerare i fusi orari presenti in un computer'
 description: Come enumerare i fusi orari presenti in un computer
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c5ae4a6c-1790-4355-b5b1-879aaf956129
 translationtype: Human Translation

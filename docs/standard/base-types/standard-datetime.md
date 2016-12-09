@@ -4,11 +4,10 @@ description: Stringhe di formato di data e ora standard
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: be239871-10cc-4949-b548-200bb260630a
 translationtype: Human Translation
@@ -376,7 +375,7 @@ Console.WriteLine(date1.ToString("m", _
 ' Displays 10 April
 ```
 
-## <a name="the-roundtrip-o-o-format-specifier"></a>Identificatore di formato di round trip ("O", "o")
+## <a name="the-round-trip-o-o-format-specifier"></a>Identificatore di formato di round trip ("O", "o")
 
 L'identificatore di formato standard "O" o "o" rappresenta una stringa di formato di data e ora personalizzata con uno schema che mantiene le informazioni sul fuso orario e crea una stringa di risultato conforme allo standard ISO 8601. Per i valori [DateTime](xref:System.DateTime), questo identificatore di formato è progettato per mantenere valori di data e ora insieme alla proprietà [DateTime.Kind](xref:System.DateTime.Kind) nel testo. La stringa formattata può essere analizzata tramite il metodo [DateTime.Parse(String, IFormatProvider, DateTimeStyles)](xref:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)) o [DateTime.ParseExact](xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)) se il parametro styles è impostato su [DateTimeStyles.RoundtripKind](xref:System.Globalization.DateTimeStyles.RoundtripKind). 
 

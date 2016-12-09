@@ -4,11 +4,10 @@ description: Ancoraggi in espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 96dff1be-3005-4ba5-af1b-323182a26085
 translationtype: Human Translation
@@ -835,7 +834,7 @@ Criterio | Descrizione
 `\w*` | Trova la corrispondenza di zero o più caratteri alfanumerici.
 `\b` | Termina la corrispondenza sul confine di parola.
  
-## <a name="nonword-boundary-b"></a>Carattere che non costituisce un confine di parola: \B
+## <a name="non-word-boundary-b"></a>Carattere che non costituisce un confine di parola: \B
 
 L'ancoraggio **\B** specifica che la corrispondenza non deve verificarsi in un confine di parola. Si tratta dell'effetto contrario rispetto all'ancoraggio **\b**.
 

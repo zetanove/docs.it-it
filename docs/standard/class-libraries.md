@@ -3,11 +3,11 @@ title: Librerie di classi .NET
 description: Librerie di classi .NET
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
 translationtype: Human Translation
@@ -26,7 +26,7 @@ Le librerie di classi rappresentano il concetto di [libreria condivisa](http://e
 *   Le librerie di classi **portabili** possono accedere a un sottoinsieme di API e possono essere usate da app e librerie destinate a più piattaforme.
 *   Le librerie di classi **.NET Core** sono una fusione del concetto di libreria specifica della piattaforma e della libreria portabile in un unico modello che offre i vantaggi di entrambi i tipi di libreria.
 
-## <a name="platformspecific-class-libraries"></a>Librerie di classi specifiche della piattaforma
+## <a name="platform-specific-class-libraries"></a>Librerie di classi specifiche della piattaforma
 
 Le librerie di classi specifiche della piattaforma sono associate a una singola piattaforma .NET, ad esempio.NET Framework in Windows, e possono pertanto dipendere in modo significativo dall'ambiente di esecuzione. Questo ambiente esporrà un set di API, come .NET e OS, gestirà ed esporrà lo stato previsto, ad esempio il registro di sistema di Windows.
 

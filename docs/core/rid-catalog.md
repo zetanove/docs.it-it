@@ -3,11 +3,10 @@ title: Catalogo dei RID (Runtime IDentifier) di .NET Core
 description: Catalogo dei RID (Runtime IDentifier) di .NET Core
 keywords: .NET, .NET Core
 author: blackdwarf
-manager: wpickett
+ms.author: mairaw
 ms.date: 08/22/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: b2032f5d-771f-48d9-917c-587d9509035c
 translationtype: Human Translation

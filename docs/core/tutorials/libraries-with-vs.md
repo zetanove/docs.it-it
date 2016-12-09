@@ -2,12 +2,9 @@
 title: Sviluppo di librerie .NET Core con Visual Studio
 description: Sviluppo di librerie .NET Core con Visual Studio
 keywords: .NET, .NET Core
-author: dotnet-bot
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 01b988ed-583f-48c8-a016-caeee282e0a6
 translationtype: Human Translation

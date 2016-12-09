@@ -4,11 +4,10 @@ description: Costrutti di alternanza nelle espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 59ffac4d-fc6e-461f-8783-d9f8dc88ce2c
 translationtype: Human Translation

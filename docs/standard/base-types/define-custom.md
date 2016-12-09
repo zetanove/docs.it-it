@@ -3,11 +3,11 @@ title: 'Procedura: Definire e usare provider di formati numerici personalizzati'
 description: Come definire e usare provider di formati numerici personalizzati
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 9b184114-6612-4c1a-a2db-2e24e65b0f77
 translationtype: Human Translation

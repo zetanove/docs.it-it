@@ -3,11 +3,11 @@ title: La programmazione asincrona in dettaglio
 description: Spiegazione approfondita di come funziona il codice asincrono in .NET
 keywords: .NET, .NET Core, .NET standard
 author: cartermp
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 translationtype: Human Translation
@@ -35,7 +35,7 @@ L'uso di `await` consente all'applicazione o al servizio di eseguire operazioni 
 
 Per altre informazioni sulle attività e i diversi modi per interagire con esse, vedere l'articolo [Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/library/hh873175.aspx) (Modello asincrono basato su attività).
 
-## <a name="deeper-dive-into-tasks-for-an-iobound-operation"></a>Approfondimento sulle attività per un'operazione associata ai I/O
+## <a name="deeper-dive-into-tasks-for-an-io-bound-operation"></a>Approfondimento sulle attività per un'operazione associata ai I/O
 
 La sezione seguente offre una panoramica di ciò che accade con una chiamata I/O asincrona tipica. Iniziamo con alcuni esempi.
 
@@ -117,7 +117,7 @@ E cosa ancora più importante, dal momento che il lavoro associato a I/O virtual
 
 Inviare lavoro al thread dell'interfaccia utente, ad esempio l'aggiornamento dell'interfaccia, è anche molto semplice con i metodi `async` e non richiede operazioni aggiuntive, come ad esempio la chiamata a un delegato thread-safe.
 
-## <a name="deeper-dive-into-task-and-taskt-for-a-cpubound-operation"></a>Approfondimento delle attività Task e Task<T> per un'operazione associata alla CPU
+## <a name="deeper-dive-into-task-and-taskt-for-a-cpu-bound-operation"></a>Approfondimento delle attività Task e Task<T> per un'operazione associata alla CPU
 
 Il codice `async` associato alla CPU è un po' diverso rispetto al codice `async` associato a I/O.  Dal momento che il lavoro viene eseguito sulla CPU, non c'è modo di evitare di dedicare un thread al calcolo.  L'uso di `async` e `await` offre un metodo chiaro per interagire con un thread in background e mantenere reattivo il chiamante del metodo asincrono.  Si noti che ciò non offre alcuna protezione per i dati condivisi.  Se si usano dati condivisi, sarà necessario applicare una strategia di sincronizzazione appropriata.
 

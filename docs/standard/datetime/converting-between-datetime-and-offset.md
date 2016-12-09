@@ -3,11 +3,11 @@ title: Conversione tra DateTime e DateTimeOffset
 description: Conversione tra DateTime e DateTimeOffset
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: fab3af5b-5d0f-4384-a40a-1b5d99b30dd1
 translationtype: Human Translation
@@ -417,7 +417,7 @@ Console.WriteLine("{0} converted to {1} {2}", _
 '       11/4/2007 4:00:00 AM -05:00 converted to 11/4/2007 1:00:00 AM Local
 ```
 
-## <a name="a-generalpurpose-conversion-method"></a>Metodo di conversione generale
+## <a name="a-general-purpose-conversion-method"></a>Metodo di conversione generale
 
 Nell'esempio riportato di seguito viene definito un metodo denominato `ConvertFromDateTimeOffset` che converte valori [DateTimeOffset](xref:System.DateTimeOffset) in valori [DateTime](xref:System.DateTime). In base all'offset, determina se il valore [DateTimeOffset](xref:System.DateTimeOffset) si riferisce a un'ora UTC, a un'ora locale o ad altro e definisce di conseguenza la proprietà [Kind](xref:System.DateTime.Kind)del valore di data e ora restituito. 
 

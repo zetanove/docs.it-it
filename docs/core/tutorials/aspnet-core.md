@@ -3,11 +3,10 @@ title: Introduzione ad ASP.NET Core
 description: Introduzione ad ASP.NET Core
 keywords: .NET, .NET Core
 author: tdykstra
-manager: wpickett
+ms.author: tdykstra
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: aspnet-core
 ms.devlang: dotnet
 ms.assetid: 4172512e-b93d-4169-abdb-bd0b0b2d657e
 translationtype: Human Translation

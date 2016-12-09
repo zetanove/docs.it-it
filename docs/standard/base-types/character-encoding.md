@@ -4,11 +4,10 @@ description: Codifica dei caratteri in .NET
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bce54e41-e9dc-493a-8988-1cbadc340fe8
 translationtype: Human Translation
@@ -592,7 +591,7 @@ Quando un metodo tenta di codificare o decodificare un carattere, ma non esiste 
 > [!IMPORTANT]
 > I problemi più comuni nelle operazioni di codifica si verificano quando non è possibile eseguire il mapping di un carattere Unicode a una particolare codifica della tabella codici. I problemi più comuni nelle operazioni di decodifica si verificano quando sequenze di byte non valide non possono essere convertite in caratteri Unicode validi. Per questi motivi, è opportuno conoscere la strategia di fallback usata da un oggetto di codifica specifico. Quando è possibile, è consigliabile specificare la strategia di fallback usata da un oggetto di codifica quando si crea un'istanza dell'oggetto.
  
-### <a name="bestfit-fallback"></a>Fallback con mapping più appropriato
+### <a name="best-fit-fallback"></a>Fallback con mapping più appropriato
 
 Quando un carattere non ha una corrispondenza esatta nella codifica di destinazione, il codificatore può provare a eseguirne il mapping a un carattere simile. Il fallback con mapping più appropriato è principalmente un problema di codifica più che di decodifica. Esistono pochissime tabelle codici contenenti caratteri di cui non è possibile eseguire correttamente il mapping a Unicode. Il fallback con mapping più appropriato è quello predefinito per le codifiche della tabella codici e Double Byte Character Set recuperate dagli overload [Encoding.GetEncoding(Int32)](xref:System.Text.Encoding.GetEncoding(System.Int32)) e [Encoding.GetEncoding(String)](xref:System.Text.Encoding.GetEncoding(System.String)).
 

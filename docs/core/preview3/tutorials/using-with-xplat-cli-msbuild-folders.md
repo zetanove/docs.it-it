@@ -3,11 +3,11 @@ title: Organizzazione e testing dei progetti con la riga di comando di .NET Core
 description: Organizzazione e testing dei progetti con la riga di comando di .NET Core (anteprima 3 dell&quot;SDK)
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 translationtype: Human Translation

@@ -4,11 +4,10 @@ description: Informazioni di riferimento di global.json
 keywords: .NET, .NET Core
 author: aL3891
 ms.author: mairaw
-manager: wpickett
 ms.date: 11/02/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: e1ac9659-425f-4486-a376-c12ca942ead8
 translationtype: Human Translation

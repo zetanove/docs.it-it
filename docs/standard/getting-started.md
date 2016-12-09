@@ -3,12 +3,11 @@ title: Introduzione a .NET
 description: Vengono elencati diversi articoli introduttivi a .NET dal punto di vista del linguaggio e della piattaforma.
 keywords: .NET, Introduzione, C#, F#, Visual Basic
 author: cartermp
-manager: wpickett
-ms.author: phcart
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
 ms.prod: .net
-ms.technology: .net-core-technologies
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
 translationtype: Human Translation

@@ -4,11 +4,10 @@ description: Procedure consigliate per le espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 096fd614-91bf-4296-be24-12f62b062294
 translationtype: Human Translation
@@ -686,7 +685,7 @@ Elemento di linguaggio | Descrizione
 **(?<**=_subexpression_**)** | Lookbehind positivo di larghezza zero. Lookbehind della posizione corrente per determinare se *subexpression* corrisponde alla stringa di input.
 **(?<!**_subexpression_**)** | Lookbehind negativo di larghezza zero. Lookbehind della posizione corrente per determinare se *subexpression* non corrisponde alla stringa di input.
  
-## <a name="use-timeout-values"></a>Usare valori di timeout
+## <a name="use-time-out-values"></a>Usare valori di timeout
 
 Se le espressioni regolari elaborano l'input che corrisponde quasi al modello dell'espressione regolare, possono spesso basarsi su un backtracking eccessivo, con un impatto notevole sulle prestazioni. Oltre a considerare attentamente l'utilizzo del backtracking e a testare l'espressione regolare rispetto all'input maggiormente corrispondente, è necessario impostare sempre un valore di timeout per assicurarsi che l'impatto di un eventuale backtracking eccessivo sia contenuto.
 
