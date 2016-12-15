@@ -1,0 +1,5 @@
+# [Directives (Visual Basic)](directives.md)
+## [#Const Directive](const-directive.md)
+## [#ExternalSource Directive](externalsource-directive.md)
+## [#If...Then...#Else Directives](if-then-else-directives.md)
+## [#Region Directive](region-directive.md)
