@@ -1,0 +1,5 @@
+# [Main() e argomenti della riga di comando (Guida per programmatori C#)](main-and-command-line-arguments.md)
+## [Argomenti della riga di comando (Guida per programmatori C#)](command-line-arguments.md)
+## [Procedura: visualizzare gli argomenti della riga di comando (Guida per programmatori C#)](how-to-display-command-line-arguments.md)
+## [Procedura: accedere agli argomenti della riga di comando utilizzando foreach (Guida per programmatori C#)](how-to-access-command-line-arguments-using-foreach.md)
+## [Valori restituiti da Main() (Guida per programmatori C#)](main-return-values.md)

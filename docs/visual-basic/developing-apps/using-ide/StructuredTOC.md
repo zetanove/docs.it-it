@@ -1,0 +1,6 @@
+# [Using the Visual Basic Development Environment](using-the-visual-basic-development-environment.md)
+## [Visual Basic Settings](settings.md)
+## [Visual Basic IntelliSense Code Snippets](intellisense-code-snippets.md)
+## [Finestra di dialogo Rinomina e refactoring (Visual Basic)](refactoring-and-rename-dialog-box.md)
+## [Help for Event Handlers in Visual Basic Code](help-for-event-handlers.md)
+## [How to: Compile and Run a Project in Visual Basic](how-to-compile-and-run-a-project.md)

@@ -1,0 +1,7 @@
+# [Eventi (Guida per programmatori C#)](index.md)
+## [Procedura: sottoscrivere e annullare la sottoscrizione di eventi (Guida per programmatori C#)](how-to-subscribe-to-and-unsubscribe-from-events.md)
+## [Procedura: pubblicare eventi conformi alle linee guida di .NET Framework (Guida per programmatori C#)](how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+## [Procedura: generare eventi della classe base in classi derivate (Guida per programmatori C#)](how-to-raise-base-class-events-in-derived-classes.md)
+## [Procedura: implementare gli eventi di interfaccia (Guida per programmatori C#)](how-to-implement-interface-events.md)
+## [Procedura: utilizzare un dizionario per archiviare istanze di evento (Guida per programmatori C#)](how-to-use-a-dictionary-to-store-event-instances.md)
+## [Procedura: implementare funzioni di accesso a eventi personalizzati (Guida per programmatori C#)](how-to-implement-custom-event-accessors.md)
