@@ -1,0 +1,57 @@
+---
+title: "&lt;typeparam&gt; (Guida per programmatori C#) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/05/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-csharp"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "typeparam"
+dev_langs: 
+  - "CSharp"
+helpviewer_keywords: 
+  - "<typeparam> (tag XML C#)"
+  - "typeparam (tag XML C#)"
+ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
+caps.latest.revision: 19
+caps.handback.revision: 19
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
+---
+# &lt;typeparam&gt; (Guida per programmatori C#)
+[!INCLUDE[vs2017banner](../../../csharp/includes/vs2017banner.md)]
+
+## Sintassi  
+  
+```  
+<typeparam name="name">description</typeparam>  
+```  
+  
+#### Parametri  
+ `name`  
+ Nome del parametro del tipo.  Racchiudere il nome tra virgolette doppie \(" "\).  
+  
+ `description`  
+ Descrizione del parametro di tipo.  
+  
+## Note  
+ Il tag `<typeparam>` deve essere utilizzato nel commento relativo alla dichiarazione di un metodo o di un tipo generico per descrivere un parametro di tipo.  Aggiungere un tag per ogni parametro di tipo del metodo o del tipo generico.  
+  
+ Per ulteriori informazioni, vedere [Generics](../../../csharp/programming-guide/generics/index.md).  
+  
+ Il testo relativo al tag `<typeparam>` verrà visualizzato in IntelliSense, in [Object Browser Window](http://msdn.microsoft.com/it-it/3c7f1673-1f0d-41b1-94ca-a3dcfcb82cda) e nel report Web sui commenti del codice.  
+  
+ Eseguire la compilazione con [\/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) per elaborare in un file i commenti per la creazione della documentazione.  
+  
+## Esempio  
+ [!code-cs[csProgGuideDocComments#13](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/typeparam_1.cs)]  
+  
+## Vedere anche  
+ [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
+ [Tag consigliati per i commenti relativi alla documentazione](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

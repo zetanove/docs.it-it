@@ -1,0 +1,7 @@
+# [Funzioni stringa (Visual Basic)](string-functions.md)
+# [Funzione CType (Visual Basic)](ctype-function.md)
+# [Type Conversion Functions (Visual Basic)](type-conversion-functions.md)
+# [Funzioni (Visual Basic)](index.md)
+# [Conversion Functions (Visual Basic)](conversion-functions.md)
+# [Funzioni matematiche (Visual Basic)](math-functions.md)
+# [Return Values for the CStr Function (Visual Basic)](return-values-for-the-cstr-function.md)
