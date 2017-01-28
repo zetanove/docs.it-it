@@ -3,32 +3,32 @@ title: Introduzione all&quot;uso di .NET Core su Windows/Linux/macOS dalla riga 
 description: Introduzione all&quot;uso di .NET Core su Windows/Linux/macOS dall&quot;interfaccia della riga di comando di .NET Core
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
 translationtype: Human Translation
-ms.sourcegitcommit: aeb199a9aeb1584570ad2a2942e2f22c75a59616
-ms.openlocfilehash: aafa0c110dc3a2820f7e050d70b9450af1db35d8
+ms.sourcegitcommit: 37e14d5cdf1593f6a8b1ecee9d9828647b023548
+ms.openlocfilehash: 5493ccb77e62d20d5101728ef8ab1744ea697fb8
 
 ---
 
 # <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line"></a>Introduzione all'uso di .NET Core su Windows/Linux/macOS dalla riga di comando
 
-Questa guida illustra come usare gli strumenti dell'interfaccia della riga di comando di .NET Core per creare applicazioni console multipiattaforma.  Si inizia con un'applicazione console molto semplice per poi passare a più progetti, incluso un progetto di test. Le funzionalità verranno illustrate in maniera graduale, aggiungendo nuove informazioni sulla base di quelle già acquisite.
+Questa guida illustra come usare gli strumenti dell'interfaccia della riga di comando di .NET Core per creare applicazioni console multipiattaforma di base.
 
 Se non si ha familiarità con il set di strumenti dell'interfaccia della riga di comando di .NET Core, leggere [la panoramica di .NET Core SDK](../sdk.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di iniziare, assicurarsi di avere gli [strumenti più recenti dell'interfaccia della riga di comando di .NET Core](https://www.microsoft.com/net/core).  È necessario anche un editor di testo.
+Prima di iniziare, assicurarsi di avere gli [strumenti più recenti dell'interfaccia della riga di comando di .NET Core](https://www.microsoft.com/net/core). È necessario anche un editor di testo.
 
 ## <a name="hello-console-app"></a>Creazione di un'applicazione console
 
-Innanzitutto, passare a un'altra cartella e crearne una nuova con il nome desiderato.  "Hello" è il nome selezionato per il codice di esempio, che è possibile trovare [qui](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello).
+Passare a un'altra cartella e crearne una nuova con il nome desiderato. "Hello" è il nome selezionato per il codice di esempio, che è possibile trovare [qui](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/Hello).
 
 Aprire un prompt dei comandi e digitare quanto segue:
 
@@ -97,7 +97,7 @@ Hello, World!
 
 È inoltre possibile eseguire [`dotnet build`](../tools/dotnet-build.md) per compilare il codice senza eseguire la compilazione di applicazioni console.
 
-### <a name="building-a-selfcontained-application"></a>Compilazione di un'applicazione autonoma
+### <a name="building-a-self-contained-application"></a>Compilazione di un'applicazione autonoma
 
 In questa sezione si proverà a compilare un'applicazione autonoma anziché un'applicazione portabile. È possibile leggere altre informazioni sui [tipi di portabilità in .NET Core](../deploying/index.md) per conoscere i diversi tipi di applicazione e il modo in cui vengono distribuiti.
 
@@ -647,6 +647,6 @@ Per un esempio più avanzato di un'applicazione console, esaminare l'esercitazio
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -4,16 +4,15 @@ description: Opzioni di espressione regolare
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2db2c3e6-953e-4913-8168-d707c437f2df
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 21672e28d0e76b98f6dac698096fccb2ce4edd03
+ms.openlocfilehash: a2a9fe356a0b2e9cf9415714bc01b77ea86229fc
 
 ---
 
@@ -215,7 +214,7 @@ L'opzione [RegexOptions.None](xref:System.Text.RegularExpressions.RegexOptions.N
  
 Poiché l'opzione [RegexOptions.None](xref:System.Text.RegularExpressions.RegexOptions.None) rappresenta il comportamento predefinito del motore delle espressioni regolari, raramente viene specificata in modo esplicito in una chiamata a metodo. Viene invece chiamato un costruttore o un metodo statico dei criteri di ricerca senza un parametro options.
 
-## <a name="caseinsensitive-matching"></a>Corrispondenza senza distinzione tra maiuscole e minuscole
+## <a name="case-insensitive-matching"></a>Corrispondenza senza distinzione tra maiuscole e minuscole
 
 L'opzione [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase) o l'opzione inline **i** definisce la corrispondenza senza distinzione tra maiuscole e minuscole. Per impostazione predefinita, vengono usate le convenzioni sulla combinazione di maiuscole e minuscole delle impostazioni cultura correnti.
 
@@ -543,7 +542,7 @@ End Class
 '    Joe: 164
 ```
 
-## <a name="singleline-mode"></a>Modalità a riga singola
+## <a name="single-line-mode"></a>Modalità a riga singola
 
 L'opzione [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline), o l'opzione inline s, consente al motore delle espressioni regolari di gestire la stringa di input come se fosse composta da una sola riga. Lo fa modificando il comportamento dell'elemento language punto (**.**) in modo che corrisponda a qualsiasi carattere anziché a qualsiasi carattere ad eccezione del carattere di nuova riga **\n** o \u000A.
 
@@ -1233,7 +1232,7 @@ End Module
 '       Instead, it is a nonsensical paragraph.
 ```
 
-## <a name="righttoleft-mode"></a>Modalità da destra a sinistra
+## <a name="right-to-left-mode"></a>Modalità da destra a sinistra
 
 Per impostazione predefinita, il motore delle espressioni regolari effettua la ricerca da sinistra a destra. È possibile invertire la direzione della ricerca usando l'opzione [RegexOptions.RightToLeft](xref:System.Text.RegularExpressions.RegexOptions.RightToLeft). La ricerca inizia automaticamente nella posizione dell'ultimo carattere della stringa. Per i metodi dei criteri di ricerca che includono un parametro della posizione iniziale, ad esempio [Regex.Match(String, Int32)](xref:System.Text.RegularExpressions.Regex.Match(System.String,System.Int32)), la posizione iniziale è l'indice della posizione dell'ultimo carattere a destra in corrispondenze del quale ha inizio la ricerca. 
 
@@ -1667,6 +1666,6 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

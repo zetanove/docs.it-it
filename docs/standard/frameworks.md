@@ -1,22 +1,22 @@
 ---
-title: Framework
-description: Framework
+title: Frameworks e destinazioni
+description: Illustra i concetti relativi alle destinazioni dei framework durante la scrittura di codice .NET.
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 09/19/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6ef56a2e-593d-497b-925a-1e25bb6df2e6
 translationtype: Human Translation
-ms.sourcegitcommit: 246d381246e78a27b7097d6b8126f421b52014de
-ms.openlocfilehash: 5b87ddfcfc66ebc05e2e559517180f93813a0806
+ms.sourcegitcommit: 38561c2d25c6950d166bf706f4306c867e683b04
+ms.openlocfilehash: 82ba6f4abe200dc48158eac1ad3e3609feeda2c9
 
 ---
 
-# <a name="frameworks"></a>Framework
+# <a name="frameworks-and-targets"></a>Frameworks e destinazioni
 
 L'ecosistema .NET si basa su un concetto di framework. I framework definiscono l'API che è possibile usare per una particolare piattaforma. .NET Framework 4.6 è una di queste piattaforme. I framework vengono usati in Visual Studio e in altri IDE ed editor per offrire il set corretto di API. Vengono anche usati da NuGet, per la produzione e l'uso dei pacchetti NuGet, per garantire la creazione e l'uso di pacchetti appropriati (e attività incluse) per il framework di destinazione. I framework possono essere considerati come una delle valute principali nell'ecosistema .NET. Il concetto è disponibile per correttezza per evitare a società e clienti di visualizzare @System.MissingMethodException in fase di esecuzione.
 
@@ -61,6 +61,6 @@ Con .NET Framework 4.6.1 come esempio, è possibile usare i seguenti modi:
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

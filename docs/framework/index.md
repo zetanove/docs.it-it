@@ -11,12 +11,12 @@ ms.technology: dotnet-bcl
 ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 translationtype: Human Translation
-ms.sourcegitcommit: 6b9ae37f4053d292c21b02f9e7f93ccd32a78976
-ms.openlocfilehash: 9228135d6d4f60ef005375712b1c549423b72803
+ms.sourcegitcommit: 38561c2d25c6950d166bf706f4306c867e683b04
+ms.openlocfilehash: cd7442b304ff28b02826a84684b594dfdd0d9873
 
 ---
 
-# <a name="net-framework"></a>.NET Framework
+# <a name="net-framework-on-docker-guide"></a>Guida a .NET Framework su Docker
 
 .NET Framework è una piattaforma di sviluppo per la creazione di applicazioni per Windows, Windows Phone, Windows Server e Microsoft Azure. È costituito da Common Language Runtime (CLR) e dalla libreria di classi .NET Framework che include classi, interfacce e tipi di valore che supportano un'ampia gamma di tecnologie. .NET Framework fornisce un ambiente di esecuzione gestito, sviluppo e distribuzione semplificati e l'integrazione con una varietà di linguaggi di programmazione, inclusi Visual Basic e Visual C# e F#.
 
@@ -25,6 +25,6 @@ Consultare [Docker su .NET Framework](docker/index.md) per informazioni su come 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

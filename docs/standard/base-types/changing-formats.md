@@ -3,16 +3,16 @@ title: 'Esempio di espressione regolare: modifica dei formati di data'
 description: 'Esempio di espressione regolare: modifica dei formati di data'
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3e196697-981c-4c1d-93dd-c3b236ef36dd
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 8b333db10f7dc9d0e4701899b7af46f45f60aa8e
+ms.openlocfilehash: 65cdec2c8bc8caf44329ee44bd574e612723be11
 
 ---
 
@@ -144,6 +144,6 @@ Criterio | Descrizione
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

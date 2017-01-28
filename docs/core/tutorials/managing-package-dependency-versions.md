@@ -3,16 +3,15 @@ title: Come gestire le versioni delle dipendenze di pacchetto per .NET Core 1.0
 description: Come gestire le versioni delle dipendenze di pacchetto per .NET Core 1.0
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 4424a947-bdf9-4775-8d48-dc350a4e0aee
 translationtype: Human Translation
 ms.sourcegitcommit: dd32f1dd4d17ab1bb01b5578237cc950b147898c
-ms.openlocfilehash: 77e1f5484c0f55ae3989dbbea9bdbf2fb58f7926
+ms.openlocfilehash: 676ffd19ac3e39b8260d626a81e9c1db8d58f19b
 
 ---
 
@@ -88,6 +87,6 @@ In questo caso, è necessario correggere le altre dipendenze in base alla versio
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

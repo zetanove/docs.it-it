@@ -3,16 +3,16 @@ title: Gestione e generazione di eccezioni in .NET
 description: Informazioni sull&quot;uso delle eccezioni in .NET
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bf116df6-0042-46bf-be13-b69864816210
 translationtype: Human Translation
 ms.sourcegitcommit: 9584699ad7e745ae3cb059b1bb8327301c9a3286
-ms.openlocfilehash: 0c73fb0a12092877ff5b54221f4a80693d1d1152
+ms.openlocfilehash: 5271b63a47aa2fcc81cd9c8b1ffd22e618829412
 
 ---
 
@@ -26,7 +26,7 @@ Un'eccezione è una condizione di errore o un comportamento imprevisto riscontra
 
 In .NET un'eccezione è un oggetto che eredita dalla classe [System.Exception](xref:System.Exception). Le eccezioni vengono generate dalle aree di codice in cui si è verificato un problema. Ogni eccezione viene passata ai livelli superiori dello stack finché non viene gestita dall'applicazione o non si arresta il programma.
 
-## <a name="exceptions-vs-traditional-errorhandling-methods"></a>Eccezioni e metodi tradizionali di gestione degli errori
+## <a name="exceptions-vs-traditional-error-handling-methods"></a>Eccezioni e metodi tradizionali di gestione degli errori
 
 In precedenza, il modello di gestione degli errori di un linguaggio si basava sul metodo specifico usato da tale linguaggio per rilevare gli errori e individuarne i gestori oppure sul meccanismo di gestione degli errori fornito dal sistema operativo. La modalità di gestione delle eccezioni di .NET offre i vantaggi seguenti:
 
@@ -247,7 +247,7 @@ public class ProcessFile
 }
 ```
 
-## <a name="how-to-create-userdefined-exceptions"></a>Come creare eccezioni definite dall'utente
+## <a name="how-to-create-user-defined-exceptions"></a>Come creare eccezioni definite dall'utente
 
 .NET fornisce una gerarchia di classi di eccezione derivate in ultima istanza dalla classe di base @System.Exception. Se però nessuna delle eccezioni predefinite soddisfa le proprie esigenze, è possibile creare classi di eccezione personalizzate derivandole dalla classe @System.Exception.
 
@@ -509,6 +509,6 @@ Per altre informazioni sull'uso delle eccezioni in .NET, vedere [What Every Dev 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

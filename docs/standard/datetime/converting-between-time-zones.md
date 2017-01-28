@@ -13,7 +13,7 @@ ms.devlang: dotnet
 ms.assetid: bf8f74e6-e7f2-4c2a-a04c-57db0e28dd36
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 051a4891336470e79bda9d7b9bb1be4e2c9187b8
+ms.openlocfilehash: c2baa48c3b79dfbc5d39652cc57fe015a2313d6e
 
 ---
 
@@ -380,6 +380,6 @@ End Function
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

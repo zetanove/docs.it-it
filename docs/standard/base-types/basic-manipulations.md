@@ -3,16 +3,15 @@ title: 'Procedura: Eseguire modifiche di base delle stringhe'
 description: 'Procedura: Eseguire modifiche di base delle stringhe'
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 141d5c94-08db-469c-8a33-708c0d3bba42
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 120c97f323098a8c70e6f78e10e5a2fc40714b3e
+ms.openlocfilehash: c73aaf1c389ef745ad35987a98242cc75f581e4f
 
 ---
 
@@ -307,6 +306,6 @@ Dopo aver eseguito il codice precedente, all'utente viene chiesto di immettere n
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

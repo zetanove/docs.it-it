@@ -3,16 +3,16 @@ title: Creazione di un pacchetto NuGet con strumenti multipiattaforma
 description: Creazione di un pacchetto NuGet con strumenti multipiattaforma
 keywords: .NET, .NET Core, NuGet
 author: cartermp
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 2f0415c1-110b-433d-87c1-ae3d543a8844
 translationtype: Human Translation
 ms.sourcegitcommit: 300a0304e316cfa265634a3faf74c81c7a8a5e08
-ms.openlocfilehash: 82b82dc2387834b9a4d0351c2c12da6e7595eb6c
+ms.openlocfilehash: d863587fbfee2bf713f8566a3e5b294d49ae50e9
 
 ---
 
@@ -67,6 +67,6 @@ Sono ora disponibili i file necessari per pubblicare un pacchetto NuGet.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

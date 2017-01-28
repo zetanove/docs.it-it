@@ -3,24 +3,24 @@ title: 'Procedura: Eseguire il round trip dei valori di data e ora'
 description: Come eseguire il round trip dei valori di data e ora
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 15690f18-1bb9-4bb8-bc11-0b737e2f0859
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 00a09c8a60138a1828d4e8c62dd72b88abbf4bbe
+ms.openlocfilehash: b4bf747faff171e4a90a897e5f7ef442012e7699
 
 ---
 
-# <a name="how-to-roundtrip-date-and-time-values"></a>Procedura: Eseguire il round trip dei valori di data e ora
+# <a name="how-to-round-trip-date-and-time-values"></a>Procedura: Eseguire il round trip dei valori di data e ora
 
 In molte applicazioni un valore di data e ora deve identificare una data e un'ora singole in modo non ambiguo. In questo argomento viene illustrato come salvare e ripristinare un valore [DateTime](xref:System.DateTime) e un valore [DateTimeOffset](xref:System.DateTimeOffset) in modo che il valore ripristinato identifichi la stessa ora del valore salvato.
 
-## <a name="to-roundtrip-a-datetime-value"></a>Per eseguire il round trip di un valore DateTime
+## <a name="to-round-trip-a-datetime-value"></a>Per eseguire il round trip di un valore DateTime
 
 1. Convertire il valore [DateTime](xref:System.DateTime) nella rappresentazione di stringa relativa chiamando il metodo [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String)) con l'identificatore di formato "o".
 
@@ -97,7 +97,7 @@ Console.WriteLine("Read {0} ({2}) from {1}.", restoredDate.ToString(), _
 
 Quando si esegue il round trip di un valore [DateTime](xref:System.DateTime), questa tecnica consente di mantenere correttamente l'ora per tutte le ore locali e UTC. Ad esempio, se un valore [DateTime](xref:System.DateTime) viene salvato in un sistema con fuso orario ora solare pacifico e viene ripristinato in un sistema con fuso orario ora solare centrale, la data e l'ora ripristinate saranno due ore avanti rispetto all'orario originale. Ciò riflette la differenza tra i due fusi orari. Tuttavia, questa tecnica non è sempre accurata per le ore non specificate. Tutti i valori [DateTime](xref:System.DateTime) la cui proprietà [Kind](xref:System.DateTime.Kind) è [Unspecified](xref:System.DateTimeKind.Unspecified) vengono considerati come ora locale. Se così non è, il valore [DateTime](xref:System.DateTime) non identificherà correttamente data e ora. La soluzione alternativa per questa limitazione consiste nell'associare un valore di data e ora al proprio fuso orario per l'operazione di salvataggio e ripristino.
 
-## <a name="to-roundtrip-a-datetimeoffset-value"></a>Per eseguire il round trip di un valore DateTimeOffset
+## <a name="to-round-trip-a-datetimeoffset-value"></a>Per eseguire il round trip di un valore DateTimeOffset
 
 Convertire il valore [DateTimeOffset](xref:System.DateTimeOffset) nella rappresentazione di stringa relativa chiamando il metodo [DateTimeOffset.ToString(String)](xref:System.DateTimeOffset.ToString(System.String)) con l'identificatore di formato "o".
 
@@ -179,6 +179,6 @@ Questa tecnica consente sempre di identificare in modo non ambiguo il valore [Da
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

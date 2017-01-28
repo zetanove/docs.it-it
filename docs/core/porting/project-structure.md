@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 translationtype: Human Translation
 ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: ca63b25bb5f5e98167aaa8b74a7204fcd77b3523
+ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
 
 ---
 
@@ -33,13 +33,13 @@ Questo articolo fornisce indicazioni ai proprietari di progetto che vogliono com
   * Non consente di condividere la libreria .NET Core tra diversi tipi di progetto nello stesso file di soluzione. A tale scopo, è opportuno [creare una libreria di classi portabile](#support-pcl).
   * Non consente la compilazione del progetto o le modifiche dei caricamenti supportate da attività e destinazioni di MSBuild. A tale scopo, è opportuno [creare una libreria di classi portabile](#support-pcl).
 
-* [**Mantenere separati i progetti esistenti e i nuovi progetti .NET Core**][option-xproj-folder]
+* <a name="support-vs"></a>[**Mantenere separati i progetti esistenti e i nuovi progetti .NET Core**][option-xproj-folder]
   
   *Vantaggi:*
   * Supporto per lo sviluppo di progetti esistenti senza dover eseguire l'aggiornamento per sviluppatori/collaboratori che non dispongono di Visual Studio 2015.
   * Riduzione della possibilità di creazione di nuovi bug nei progetti esistenti in quanto non è necessaria alcuna varianza del codice nei progetti.
 
-* [**Mantenere i progetti esistenti e creare librerie di classi portabili destinate a .NET Core**][option-pcl]
+* <a name="support-pcl"></a>[**Mantenere i progetti esistenti e creare librerie di classi portabili destinate a .NET Core**][option-pcl]
 
   *Vantaggi:*
   * Riferimento alle librerie .NET Core nei progetti desktop e/o Web destinati a .NET Framework completo nella stessa soluzione.
@@ -58,7 +58,7 @@ Si consideri il repository seguente:
 
 Sono disponibili diversi modi per aggiungere il supporto per .NET Core per il repository in base ai vincoli e alla complessità dei progetti esistenti descritti di seguito.
 
-## <a name="replace-existing-projects-with-a-multitargeted-net-core-project-xproj"></a>Sostituire i progetti esistenti con un progetto .NET Core con più destinazioni (xproj)
+## <a name="replace-existing-projects-with-a-multi-targeted-net-core-project-xproj"></a>Sostituire i progetti esistenti con un progetto .NET Core con più destinazioni (xproj)
 
 Il repository può essere riorganizzato in modo che qualsiasi file `*.csproj` esistente venga rimosso e un singolo file `*.xproj` venga creato per essere destinato a più framework.  Questa è un'ottima opzione perché consente di compilare un singolo progetto per diversi framework.  Include inoltre la possibilità di gestire diverse opzioni di compilazione, dipendenze e così via per ciascun framework di destinazione.
 
@@ -125,6 +125,6 @@ Per altre indicazioni sullo spostamento a project.json e xproj, vedere la [docum
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

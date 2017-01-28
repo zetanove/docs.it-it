@@ -3,16 +3,15 @@ title: Versionamento di .NET Core
 description: Versionamento di .NET Core
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
 translationtype: Human Translation
 ms.sourcegitcommit: bb15293c569fa92f1acf6315c5fe7f2cd9cb6f68
-ms.openlocfilehash: 3db91c84c887645bd3054fab70841657aa045c54
+ms.openlocfilehash: 1f4f580a8287f371ff5cdc37b78e73b7329dca02
 
 ---
 

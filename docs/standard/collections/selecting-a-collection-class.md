@@ -3,16 +3,16 @@ title: Selezione di una classe Collection
 description: Selezione di una classe Collection
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0a60fca7-e082-48d4-9dda-30b0d3e67ec7
 translationtype: Human Translation
 ms.sourcegitcommit: cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b
-ms.openlocfilehash: f00fedb70bddc184e5c6ea71213b2beb78594792
+ms.openlocfilehash: 38f5a970738103bd96c9570f4d6e8ee540af6ee1
 
 ---
 
@@ -84,6 +84,6 @@ LINQ to Objects consente agli sviluppatori di usare le query LINQ per accedere a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

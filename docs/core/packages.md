@@ -4,16 +4,14 @@ description: Pacchetti, metapacchetti e framework
 keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
-manager: wpickett
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
 translationtype: Human Translation
 ms.sourcegitcommit: cb2e83b35b5a4aae14c89bcbdf26b064885a477a
-ms.openlocfilehash: af6c83755068cc311b59c1a337898c177cc6d537
+ms.openlocfilehash: 6b5bb7042fdaa453966a4fc576291b3c90ee5410
 
 ---
 
@@ -126,7 +124,7 @@ Il framework `.NETFramework,Version=4.6` rappresenta le API disponibili in .NET 
 
 `.NETStandard,Version=1.3` è un framework basato su pacchetti. Si basa su pacchetti che hanno come destinazione il framework per definire ed esporre le API in termini di framework.
 
-## <a name="packagebased-frameworks"></a>Framework basati su pacchetti
+## <a name="package-based-frameworks"></a>Framework basati su pacchetti
 
 Tra i framework e i pacchetti è presente una relazione bidirezionale. La prima parte consiste nella definizione delle API disponibili per un determinato framework, ad esempio `netstandard1.3`. I pacchetti che hanno come destinazione `netstandard1.3` (o framework compatibili quali `netstandard1.0`) definiscono le API disponibili per `netstandard1.3`. Può sembrare una definizione circolare, ma non lo è. Poiché è basato su pacchetti, la definizione delle API per il framework deriva dai pacchetti. Il framework stesso non definisce alcuna API.
 
@@ -188,6 +186,6 @@ Il metapacchetto `Microsoft.NETCore.App` ha come destinazione il framework `netc
 Anche la maggior parte delle librerie fornite da `Microsoft.NETCore.App` ha come destinazione `netstandard`, dato che le relative dipendenze sono soddisfatte da altre librerie `netstandard`. Questo significa che anche le librerie `netstandard` possono fare riferimento a tali pacchetti come dipendenze. 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

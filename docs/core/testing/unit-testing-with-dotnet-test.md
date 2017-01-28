@@ -3,16 +3,15 @@ title: Eseguire unit test in .NET Core usando il test dotnet
 description: Eseguire unit test in .NET Core usando il test dotnet
 keywords: .NET, .NET Core
 author: ardalis
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
 translationtype: Human Translation
 ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: a941a7e1bcafa4f342907f3160dbbf8e6ff4bac9
+ms.openlocfilehash: 0c98084786408a285111ae724ed404ce32160aea
 
 ---
 
@@ -214,6 +213,6 @@ Questa soluzione è stata strutturata in modo che l'aggiunta di nuovi pacchetti 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -2,17 +2,17 @@
 title: "Modello di estendibilità dell&quot;interfaccia della riga di comando di .NET Core"
 description: "Modello di estendibilità dell&quot;interfaccia della riga di comando di .NET Core"
 keywords: "interfaccia della riga di comando, estendibilità, comandi personalizzati, .NET Core"
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
 translationtype: Human Translation
 ms.sourcegitcommit: aeb199a9aeb1584570ad2a2942e2f22c75a59616
-ms.openlocfilehash: ea16d4b841f5c93da222df56db36d6fb70ea35f9
+ms.openlocfilehash: 4223f296224c9b62c88b72f0f643c8b8b6fc9f6b
 
 ---
 
@@ -29,14 +29,14 @@ Gli strumenti dell'interfaccia della riga di comando possono essere estesi in du
 
 I due meccanismi di estendibilità sopra indicati non sono mutualmente esclusivi: è possibile usarli entrambi o usarne uno soltanto. La scelta dipende in larga misura dall'obiettivo che si intende raggiungere con l'estensione.
 
-## <a name="perproject-based-extensibility"></a>Estendibilità in base al progetto
+## <a name="per-project-based-extensibility"></a>Estendibilità in base al progetto
 Gli strumenti in base al progetto sono [applicazioni console portabili](../deploying/index.md) distribuite come pacchetti NuGet. Gli strumenti sono disponibili solo nel contesto del progetto che fa riferimento ad essi e per il quale vengono ripristinati. La chiamata all'esterno del contesto del progetto, ad esempio all'esterno della directory contenente il progetto, avrà esito negativo perché non sarà possibile trovare il comando.
 
 Questi strumenti sono perfetti anche per i server di compilazione, dal momento che non è necessario nulla al di fuori di `project.json`. Il processo di compilazione esegue il ripristino del progetto compilato e gli strumenti saranno disponibili. Rientrano in questa categoria anche i progetti in un particolare linguaggio, ad esempio F#. In definitiva, ogni progetto può essere scritto soltanto in uno specifico linguaggio. 
 
 Questo modello di estendibilità, infine, fornisce il supporto per la creazione di strumenti che devono accedere all'output compilato del progetto. Ad esempio, rientrano in questa categoria diversi strumenti di visualizzazione Razor presenti in applicazioni MVC [ASP.NET](https://www.asp.net/). 
 
-### <a name="consuming-perproject-tools"></a>Utilizzo di strumenti in base al progetto
+### <a name="consuming-per-project-tools"></a>Utilizzo di strumenti in base al progetto
 Per l'utilizzo di questi strumenti, è necessario aggiungere un nodo `tools` al file `project.json`. All'interno del nodo `tools` viene fatto riferimento al pacchetto in cui si trovano gli strumenti. Dopo l'esecuzione di `dotnet restore`, viene eseguito il ripristino dello strumento e delle relative dipendenze. 
 
 Per gli strumenti che devono caricare l'output di compilazione del progetto per l'esecuzione, è in genere presente un'altra dipendenza elencata sotto le normali dipendenze del file di progetto. Questo significa che gli strumenti che caricano il codice del progetto sono costituiti da due componenti: 
@@ -101,7 +101,7 @@ Un esempio chiaro di questo approccio è disponibile in [.NET Core CLI repo](htt
 * [Implementazione della dipendenza specifica del framework](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages/dotnet-desktop-and-portable)
 
 
-### <a name="pathbased-extensibility"></a>Estendibilità basata su PATH
+### <a name="path-based-extensibility"></a>Estendibilità basata su PATH
 L'estendibilità basata sul PATH viene in genere usata per i computer di sviluppo in cui è necessario disporre di uno strumento in grado di coprire concettualmente più di un singolo progetto. Il principale svantaggio di questo meccanismo di estensione è che è vincolato al computer in cui è presente lo strumento. Se si vuole usare questo meccanismo in un altro computer, è necessario eseguire un'attività di distribuzione.
 
 Questo modello di estendibilità del set di strumenti dell'interfaccia della riga di comando è molto semplice. Come illustrato in [.NET Core CLI overview](index.md) (Panoramica sull'interfaccia della riga di comando di .NET Core), il driver `dotnet` può eseguire qualsiasi comando denominato in base alla convenzione `dotnet-<command>`. La logica di risoluzione predefinita testerà prima diverse posizioni e alla fine sceglierà il percorso specificato dal PATH di sistema. Se il comando richiesto è presente nel PATH di sistema ed è un file binario che è possibile richiamare, il driver `dotnet` lo richiamerà. 
@@ -132,6 +132,6 @@ Gli strumenti dell'interfaccia della riga di comando di .NET Core offrono due ap
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

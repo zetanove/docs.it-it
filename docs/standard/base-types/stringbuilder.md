@@ -3,16 +3,16 @@ title: Uso della classe StringBuilder
 description: Uso della classe StringBuilder
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: f4f5d1c7-d84d-4867-810f-2708cd6de0da
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 1e8453b78827d8c02f29135ddfb832956ab40f3c
+ms.openlocfilehash: 2c42a4ac5fcd889eedea27b54b249f48c4848c88
 
 ---
 
@@ -254,6 +254,6 @@ End Module
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

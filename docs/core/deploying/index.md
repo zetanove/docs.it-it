@@ -3,16 +3,15 @@ title: Distribuzione di applicazioni .NET Core
 description: Distribuzione di applicazioni .NET Core
 keywords: .NET, .NET Core, distribuzione di .NET Core
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 09/08/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 translationtype: Human Translation
 ms.sourcegitcommit: 663f4102b82512e64ab39d8046c7298a7cf37de7
-ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
+ms.openlocfilehash: 5509f09b3f7957049194ea7af9952bb6b5ec7539
 
 ---
 
@@ -24,11 +23,11 @@ ms.openlocfilehash: 96eb2cc7ca948b3e372fa1363b1741624d791d27
 
 - Distribuzione autonoma. A differenza delle distribuzioni dipendenti dal framework, una distribuzione autonoma non si basa su tutti i componenti condivisi presenti nel sistema di destinazione. Tutti i componenti, inclusi librerie e runtime di .NET Core, sono inclusi nell'applicazione e isolati dalle altre applicazioni .NET Core. Le distribuzioni autonome includono un file eseguibile (ad esempio `app.exe` su piattaforme Windows per un'applicazione denominata `app`), che è una versione rinominata dell'host .NET Core specifico della piattaforma, e un file con estensione dll (ad esempio `app.dll`), che indica l'applicazione.
 
-## <a name="frameworkdependent-deployments-fdd"></a>Distribuzioni dipendenti dal framework ##
+## <a name="framework-dependent-deployments-fdd"></a>Distribuzioni dipendenti dal framework ##
 
 Per una distribuzione dipendente dal framework, viene distribuita solo l'app e le dipendenze di terze parti. Non è necessario distribuire .NET Core, poiché l'app userà la versione di .NET Core presente nel sistema di destinazione. Si tratta del modello di distribuzione predefinito per le app .NET Core.
 
-### <a name="why-create-a-frameworkdependent-deployment"></a>Perché creare una distribuzione dipendente dal framework? ###
+### <a name="why-create-a-framework-dependent-deployment"></a>Perché creare una distribuzione dipendente dal framework? ###
 
 Una distribuzione dipendente dal framework offre numerosi vantaggi:
 
@@ -44,7 +43,7 @@ Sono presenti anche alcuni svantaggi:
 
 - Nelle versioni successive è possibile che il runtime e le librerie di .NET Core vengano modificate senza notificare l'utente. In rari casi, questo scenario può comportare la modifica del comportamento dell'app.
 
-### <a name="deploying-a-frameworkdependent-deployment"></a>Pubblicazione di una distribuzione dipendente dal framework ###
+### <a name="deploying-a-framework-dependent-deployment"></a>Pubblicazione di una distribuzione dipendente dal framework ###
 
 Una distribuzione dipendente dal framework senza dipendenze di terze parti richiede la compilazione, il testing e la pubblicazione dell'app. Il processo viene illustrato da un semplice esempio scritto in C#. L'esempio usa l'[utilità dotnet](../tools/dotnet.md) dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.
 
@@ -101,7 +100,7 @@ Il set completo dei file dell'applicazione può essere distribuito in qualsiasi 
 
 Oltre ai file binari dell'applicazione, il programma di installazione deve anche aggregare il programma di installazione di framework condiviso oppure cercarlo come prerequisito come parte dell'installazione dell'applicazione.  L'installazione del framework condiviso richiede l'accesso amministratore o alla radice perché è a livello di computer.
 
-### <a name="deploying-a-frameworkdependent-deployment-with-thirdparty-dependencies"></a>Pubblicazione di una distribuzione dipendente dal framework con dipendenze di terze parti ###
+### <a name="deploying-a-framework-dependent-deployment-with-third-party-dependencies"></a>Pubblicazione di una distribuzione dipendente dal framework con dipendenze di terze parti ###
 
 Una distribuzione dipendente dal framework con una o più dipendenze di terze parti prevede tre passaggi aggiuntivi prima di poter eseguire il comando `dotnet restore`:
 
@@ -121,11 +120,11 @@ Una distribuzione dipendente dal framework con una o più dipendenze di terze pa
 
 Si noti che la portabilità di una distribuzione dipendente dal framework con dipendenze di terze parti dipenderà dalle relative dipendenze. Ad esempio, se una libreria di terze parti supporta solo macOS, l'app non sarà portabile in sistemi Windows. Questa situazione può verificarsi se la dipendenza di terze parti stessa dipende dal codice nativo. Un esempio valido è il server Kestrel. Quando viene creata una distribuzione dipendente dal framework per un'applicazione con questo tipo di dipendenze di terze parti, l'output pubblicato conterrà una cartella per ogni [identificatore di runtime](../rid-catalog.md#what-are-rids) supportato dalla dipendenza nativa. Quest'ultimo si trova nel relativo pacchetto NuGet.
 
-## <a name="selfcontained-deployments-scd"></a>Distribuzioni autonome ##
+## <a name="self-contained-deployments-scd"></a>Distribuzioni autonome ##
 
 Per una distribuzione autonoma, si distribuisce non solo l'app e le dipendenze di terze parti, ma la versione di .NET Core con cui si compila l'app. Tuttavia, la creazione di una distribuzione autonoma non include le [dipendenze native di .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) su più piattaforme (ad esempio, OpenSSL in macOS), pertanto queste devono essere installate prima di eseguire l'applicazione. 
 
-### <a name="why-deploy-a-selfcontained-deployment"></a>Perché distribuire una distribuzione autonoma? ###
+### <a name="why-deploy-a-self-contained-deployment"></a>Perché distribuire una distribuzione autonoma? ###
 
 Una distribuzione autonoma offre due vantaggi principali:
 
@@ -141,7 +140,7 @@ Sono presenti anche alcuni svantaggi:
 
 - La distribuzione di numerose app .NET Core autonome a un sistema comporta l'utilizzo di quantità significative di spazio su disco, poiché ogni app duplica i file di .NET Core.
 
-### <a name="a-namesimpleselfa-deploying-a-simple-selfcontained-deployment"></a> Pubblicazione di una semplice distribuzione autonoma ###
+### <a name="a-namesimpleselfa-deploying-a-simple-self-contained-deployment"></a><a name="simpleSelf"></a> Pubblicazione di una semplice distribuzione autonoma ###
 
 Una distribuzione autonoma senza dipendenze di terze parti comporta la creazione del progetto, la modifica del file project.json, la compilazione, il testing e la pubblicazione dell'app.  Il processo viene illustrato da un semplice esempio scritto in C#. L'esempio usa l'utilità `dotnet` dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.
 
@@ -262,7 +261,7 @@ Di seguito è riportato il file `project.json` completo per questo progetto.
 }
 ```
 
-### <a name="deploying-a-selfcontained-deployment-with-thirdparty-dependencies"></a>Pubblicazione di una distribuzione autonoma con dipendenze di terze parti ###
+### <a name="deploying-a-self-contained-deployment-with-third-party-dependencies"></a>Pubblicazione di una distribuzione autonoma con dipendenze di terze parti ###
 
 Una distribuzione autonoma con una o più dipendenze di terze parti comporta l'aggiunta della dipendenza di terze parti:
 
@@ -304,7 +303,7 @@ Quando si distribuisce l'applicazione, anche le dipendenze di terze parti usate 
 
 Si noti che è possibile distribuire una distribuzione autonoma solo con una libreria di terze parti alle piattaforme supportate da tale libreria. Questo scenario è simile a quello in cui nella distribuzione dipendente dal framework sono disponibili dipendenze di terze parti con dipendenze native. 
 
-### <a name="deploying-a-selfcontained-deployment-with-a-smaller-footprint"></a>Pubblicazione di una distribuzione autonoma con impatto ridotto ###
+### <a name="deploying-a-self-contained-deployment-with-a-smaller-footprint"></a>Pubblicazione di una distribuzione autonoma con impatto ridotto ###
 
 Se la disponibilità di spazio di archiviazione adeguato sui sistemi di destinazione può rappresentare un problema, è possibile ridurre l'impatto generale dell'app escludendo alcuni componenti di sistema. A tale scopo, definire in modo esplicito i componenti di .NET Core che l'app include nel file project.json.
 

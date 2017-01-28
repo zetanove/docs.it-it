@@ -4,16 +4,15 @@ description: Formattazione composita
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a01efc8f-c242-4535-bd32-acd0032d9590
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 9bcf2ff74237f7e7faf2890849c2d68a0a602353
+ms.openlocfilehash: 15c549f5df0b6de8164e05f50855006996a47fac
 
 ---
 
@@ -377,6 +376,6 @@ Console.WriteLine(FormatPrice)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

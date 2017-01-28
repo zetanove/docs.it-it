@@ -3,16 +3,15 @@ title: Usare MSTest con .NET Core in Windows
 description: Come usare MSTest con .NET Core in Windows mediante Visual Studio 2015
 keywords: MSTest, .NET, .NET Core
 author: ncarandini
-manager: wpickett
+ms.author: wiwagn
 ms.date: 08/18/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: ed447641-3e85-4e50-b7ed-004630048a3e
 translationtype: Human Translation
 ms.sourcegitcommit: 6795f1ace77e6f4d1b2fe07e6281f4acb6d21271
-ms.openlocfilehash: c9d6bb1d45b9a6cb88334050669a4c064e53d54e
+ms.openlocfilehash: 11faa46347b18240e9ddf1c27f27a814103e2565
 
 ---
 
@@ -72,6 +71,6 @@ Per creare il progetto di libreria, seguire le istruzioni presenti in [Introduzi
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

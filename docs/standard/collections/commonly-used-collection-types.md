@@ -3,16 +3,16 @@ title: Tipi di raccolte comunemente utilizzate
 description: Tipi di raccolte comunemente utilizzate
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 55861611-1e40-4cc2-9ec5-0b2df4ba6c0c
 translationtype: Human Translation
 ms.sourcegitcommit: d4e7ef84480aa9f735fb8d1ff03c9e8a61127c83
-ms.openlocfilehash: 063e43b156771ba0db7c6b8ef5823330a4405c2c
+ms.openlocfilehash: 6cadcd91810f08900b58e402240e8a469fad2018
 
 ---
 
@@ -58,6 +58,6 @@ Titolo | Descrizione
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

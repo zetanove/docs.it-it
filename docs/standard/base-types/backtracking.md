@@ -4,16 +4,15 @@ description: Backtracking nelle espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8a3e6298-26b7-4c99-bd97-c9892f6c9418
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 00e324803cf5c57eab1cc71eb819949247131479
+ms.openlocfilehash: 649dfd6752f0589eb396b00e7d0b5184bb65d488
 
 ---
 
@@ -236,7 +235,7 @@ Il confronto della stringa di input con l'espressione regolare continua in quest
 
 Il backtracking consente di creare espressioni regolari potenti e flessibili. Tuttavia, come illustrato nella sezione precedente, insieme a questi vantaggi si ottiene una notevole riduzione delle prestazioni. Per evitare un uso eccessivo del backtracking, è consigliabile definire un intervallo di timeout quando si crea un'istanza di un oggetto [Regex](xref:System.Text.RegularExpressions.Regex) o si chiama un metodo di espressione regolare statica corrispondente. Questo è discusso nella sezione seguente. .NET Core supporta anche tre elementi del linguaggio delle espressioni regolari che limitano o evitano del tutto l'uso del backtracking e che supportano espressioni regolari complesse senza o con una minima riduzione delle prestazioni: [sottoespressioni non di backtracking](#nonbacktracking-subexpression), [asserzioni lookbehind](#lookbehind-assertions) e [asserzioni lookahead](#lookahead-assertions). Per altre informazioni su ogni elemento del linguaggio, vedere [Costrutti di raggruppamento nelle espressioni regolari](grouping.md).
 
-### <a name="defining-a-timeout-interval"></a>Definizione di un intervallo di timeout
+### <a name="defining-a-time-out-interval"></a>Definizione di un intervallo di timeout
 
 È possibile impostare un valore di timeout che rappresenta l'intervallo più lungo entro il quale il motore delle espressioni regolari cercherà una singola corrispondenza prima di rinunciare e generare un'eccezione [RegexMatchTimeoutException](xref:System.Text.RegularExpressions.RegexMatchTimeoutException). Specificare l'intervallo di timeout specificando un valore [TimeSpan](xref:System.TimeSpan) al costruttore `Regex(String, RegexOptions, TimeSpan)` per creare un'istanza di espressioni regolari. Ogni metodo statico di ricerca della corrispondenza ha un overload con un valore [TimeSpan](xref:System.TimeSpan) per il parametro [Regex.Regex(String, RegexOptions, TimeSpan)], che consente di specificare un valore di timeout. Per impostazione predefinita l'intervallo di timeout viene impostato su [Regex.InfiniteMatchTimeout](xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout), mentre il motore delle espressioni regolari non ha timeout. 
 
@@ -687,6 +686,6 @@ Criterio | Descrizione
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

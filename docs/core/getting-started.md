@@ -12,7 +12,7 @@ ms.devlang: dotnet
 ms.assetid: d1453a0d-317c-4da6-b68e-422a2c0bfe49
 translationtype: Human Translation
 ms.sourcegitcommit: bfba7f8c3af791fcf0f1a6438214d3318a6d329c
-ms.openlocfilehash: 1537efe3e1ad2b0fbfe4765696ea85b5d040b43d
+ms.openlocfilehash: 88ace26f653934ddf759977539debb1c62b2b5c8
 
 ---
 
@@ -65,6 +65,6 @@ Installare .NET Core per [macOS](https://www.microsoft.com/net/core#macos). .NET
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

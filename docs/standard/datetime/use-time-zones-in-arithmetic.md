@@ -1,18 +1,18 @@
 ---
-title: 'Procedura: Usare fusi orari nell''aritmetica di data e ora'
+title: 'Procedura: Usare fusi orari nell&quot;aritmetica di data e ora'
 description: Come usare i fusi orari nell&quot;aritmetica di data e ora
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 26870cdc-1709-4978-831b-ff2a2f24856f
 translationtype: Human Translation
 ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 735ae2f1d11ddf6b88b40c7b89083a45d1f07523
+ms.openlocfilehash: da4c5aec6e02393c9e6201edd766eb7579a40b5e
 
 ---
 
@@ -173,6 +173,6 @@ I valori [DateTimeOffset](xref:System.DateTimeOffset) sono dissociati da qualsia
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

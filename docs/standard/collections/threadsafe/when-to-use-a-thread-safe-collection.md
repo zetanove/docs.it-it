@@ -3,20 +3,20 @@ title: Quando utilizzare una raccolta thread-safe
 description: Quando utilizzare una raccolta thread-safe
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a2a42d44-f6a5-4f16-9000-026221d66349
 translationtype: Human Translation
 ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: 74f421a5badd9f2c7bf10fa1dfdf98161bba2ce8
+ms.openlocfilehash: 05f692a1a58c0c653e14993cafd61a0711ebf9f8
 
 ---
 
-# <a name="when-to-use-a-threadsafe-collection"></a>Quando utilizzare una raccolta thread-safe
+# <a name="when-to-use-a-thread-safe-collection"></a>Quando utilizzare una raccolta thread-safe
 
 I tipi di raccolta `ConcurrentQueue`, `ConcurrentStack`, `ConcurrentDictionary`, `ConcurrentBag` e `BlockingCollection` sono stati creati specificamente per il supporto di operazioni di aggiunta e rimozione multithread. Per ottenere la thread safety, questi nuovi tipi usano vari nuovi meccanismi di sincronizzazione, sia di blocco che senza blocco. La sincronizzazione aggiunge sovraccarico a un'operazione. La quantità di sovraccarico dipende dal tipo di sincronizzazione usato, dal tipo di operazioni eseguite e da altri fattori, quali il numero di thread che provano ad accedere contemporaneamente alla raccolta.
 
@@ -74,6 +74,6 @@ Quando è necessaria la semantica di delimitazione e blocco, è probabile che l'
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

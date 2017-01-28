@@ -3,16 +3,16 @@ title: LINQ (Language Integrated Query)
 description: LINQ (Language Integrated Query)
 keywords: .NET, .NET Core
 author: cartermp
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
 translationtype: Human Translation
 ms.sourcegitcommit: 6992d907b152d67c51f43ec517902fb2effc6db2
-ms.openlocfilehash: 4cb0c523a31faf319c1e07ceaa8a8122d3046be8
+ms.openlocfilehash: 0d941d7722353c68051bb761f4b05a6e304291ef
 
 ---
 
@@ -278,6 +278,6 @@ I processi basati su CPU parallelizzabili che possono essere espressi facilmente
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

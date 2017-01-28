@@ -4,16 +4,15 @@ description: Sostituzioni nelle espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 0fded615-1021-4468-a644-b491814305c6
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 3e02d18d6566c67c7fff7003671f340f97b0dfce
+ms.openlocfilehash: 4b2b547b6edd67590ad75851b8b287e55dc7d70c
 
 ---
 
@@ -564,6 +563,6 @@ Corrispondenza con | Posizione | Stringa prima della corrispondenza | Stringa di
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

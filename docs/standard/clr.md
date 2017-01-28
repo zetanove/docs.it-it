@@ -3,16 +3,16 @@ title: Common Language Runtime (CLR)
 description: Common Language Runtime (CLR)
 keywords: .NET, .NET Core
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7704d9c9-e5fa-4969-a423-081cce0e21e6
 translationtype: Human Translation
 ms.sourcegitcommit: bb50b160a685d494ba47b3ca583f6fc35fa3ef3e
-ms.openlocfilehash: 44b4798a9b6f132d2fc8921bfffa24fa04202d43
+ms.openlocfilehash: 779b4bc43465833fa92e85d42156a232f390f7c2
 
 ---
 
@@ -75,6 +75,6 @@ Versione di .NET Framework | Include la versione CLR
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

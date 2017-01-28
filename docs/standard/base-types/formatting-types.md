@@ -4,16 +4,15 @@ description: Formattazione di tipi
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: cf497639-9f91-45cb-836f-998d1cea2f43
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 6c6ddfdbe288fe012adf31fd4d45af1b697d1132
+ms.openlocfilehash: 2dc4d1deff8d1b72cbe433c45dda873e9caa26fb
 
 ---
 
@@ -666,7 +665,7 @@ Titolo | Definizione
 [Stringhe di formato di enumerazione](enumeration-format.md) | Vengono descritte le stringhe di formato standard che consentono di creare rappresentazioni di stringa di valori di enumerazione.
 [Guid.ToString(String)](xref:System.Guid.ToString(System.String)) | Descrive le stringhe di formato standard per i valori [Guid](xref:System.Guid).
 
-## <a name="culturesensitive-formatting-with-format-providers-and-the-iformatprovider-interface"></a>Formattazione dipendente dalle impostazioni cultura con provider di formato e l'interfaccia IFormatProvider
+## <a name="culture-sensitive-formatting-with-format-providers-and-the-iformatprovider-interface"></a>Formattazione dipendente dalle impostazioni cultura con provider di formato e l'interfaccia IFormatProvider
 
 Sebbene gli identificatori di formato consentano di personalizzare la formattazione degli oggetti, la creazione di una rappresentazione di stringa significativa degli oggetti richiede spesso informazioni aggiuntive sulla formattazione. La formattazione, ad esempio, di un numero come valore di valuta tramite la stringa di formato standard "C" o una stringa di formato personalizzata, come ad esempio "$ #,#.00", richiede almeno la possibilità di includere nella stringa formattata le informazioni relative al simbolo di valuta, al separatore di gruppi e al separatore decimale corretti. In .NET queste informazioni aggiuntive sulla formattazione vengono rese disponibili tramite l'interfaccia [IFormatProvider](xref:System.IFormatProvider), fornita come parametro di uno o più overload del metodo `ToString` di tipi numerici e di data e ora. Le implementazioni di [IFormatProvider](xref:System.IFormatProvider) vengono usate in .NET per supportare la formattazione specifica delle impostazioni cultura. Nell'esempio seguente viene illustrato come cambia la rappresentazione di stringa di un oggetto quando viene formattata con tre oggetti [IFormatProvider](xref:System.IFormatProvider) che rappresentano impostazioni cultura diverse.
 
@@ -730,7 +729,7 @@ In .NET sono disponibili tre classi che implementano [IFormatProvider](xref:Syst
 
 È anche possibile implementare un provider di formato personalizzato per sostituire una di queste classi. Il metodo `GetFormat` dell'implementazione, tuttavia, deve restituire un oggetto del tipo elencato nella tabella precedente, se deve fornire informazioni sulla formattazione al metodo `ToString`.
 
-### <a name="culturesensitive-formatting-of-numeric-values"></a>Formattazione dipendente dalle impostazioni cultura di valori numerici
+### <a name="culture-sensitive-formatting-of-numeric-values"></a>Formattazione dipendente dalle impostazioni cultura di valori numerici
 
 Per impostazione predefinita, la formattazione di valori numerici è dipendente dalle impostazioni cultura. Se non si specificano impostazioni cultura quando si chiama un metodo di formattazione, vengono usate le convenzioni di formattazione delle impostazioni cultura del thread corrente. Questa situazione viene illustrata nell'esempio seguente in cui le impostazioni cultura del thread corrente vengono modificate quattro volte e viene chiamato il metodo [Decimal.ToString(String)](xref:System.Decimal.ToString(System.String)). In ogni caso, la stringa risultante riflette le convenzioni di formattazione delle impostazioni cultura correnti. Questo accade perché i metodi `ToString` e `ToString(String)` eseguono il wrapping di chiamate al metodo `ToString(String, IFormatProvider)` di ogni tipo numerico. 
 
@@ -856,7 +855,7 @@ End Module
 '       fr:    1 043,630
 ```
 
-### <a name="culturesensitive-formatting-of-date-and-time-values"></a>Formattazione dipendente dalle impostazioni cultura di valori data e ora
+### <a name="culture-sensitive-formatting-of-date-and-time-values"></a>Formattazione dipendente dalle impostazioni cultura di valori data e ora
 
 Per impostazione predefinita, la formattazione dei valori data e ora è dipendente dalle impostazioni cultura. Se non si specificano impostazioni cultura quando si chiama un metodo di formattazione, vengono usate le convenzioni di formattazione delle impostazioni cultura del thread corrente. Questa situazione viene illustrata nell'esempio seguente in cui le impostazioni cultura del thread corrente vengono modificate quattro volte e viene chiamato il metodo [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String)). In ogni caso, la stringa risultante riflette le convenzioni di formattazione delle impostazioni cultura correnti. Questo avviene perché i metodi [DateTime.ToString()](xref:System.DateTime.ToString), [DateTime.ToString(String)](xref:System.DateTime.ToString(System.String)), [DateTimeOffset.ToString()](xref:System.DateTimeOffset.ToString(System.String)) e [DateTimeOffset.ToString(String)](xref:System.DateTimeOffset.ToString(System.String)) eseguono il wrapping delle chiamate ai metodi [DateTime.ToString(String, IFormatProvider)](xref:System.DateTime.ToString(System.String,System.IFormatProvider)) e [DateTimeOffset.ToString(String, IFormatProvider)](xref:System.DateTimeOffset.ToString(System.String,System.IFormatProvider)).
 
@@ -1404,6 +1403,6 @@ Titolo | Definizione
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

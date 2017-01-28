@@ -3,16 +3,16 @@ title: Panoramica sui fusi orari
 description: Panoramica sui fusi orari
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e3a10f62-d403-4441-8621-adc964e32c07
 translationtype: Human Translation
 ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 31a4582c28c208a7a3d86259b360e3472b851249
+ms.openlocfilehash: 67d77b80c2517da1c553094689eaf08c0c29078b
 
 ---
 
@@ -62,6 +62,6 @@ Per informazioni dettagliate sulla conversione degli orari tra fusi orari, veder
 [Date, ore e fusi orari](index.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

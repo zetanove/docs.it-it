@@ -3,16 +3,15 @@ title: .NET Core
 description: .NET Core
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 translationtype: Human Translation
 ms.sourcegitcommit: 8ada0e4c57febd4068be69330e7f9633517ce7ff
-ms.openlocfilehash: 8b6b38aa7f59002dcfbb229ce6522df67b611028
+ms.openlocfilehash: 66d9060cd92cfe5718c55eb54e721c1239e6f2f1
 
 ---
 

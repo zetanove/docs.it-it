@@ -3,16 +3,16 @@ title: Modifica della combinazione di maiuscole e minuscole
 description: Modifica della combinazione di maiuscole e minuscole
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 646c5afd-8aec-4393-9c00-f68ad2580c68
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: a6f6f21daae79f752cfac0a70558778ae98d1a5d
+ms.openlocfilehash: f67c726b38657790deebb623dc44cb528fe404bc
 
 ---
 
@@ -76,6 +76,6 @@ Console.WriteLine(MyString.ToLower())
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

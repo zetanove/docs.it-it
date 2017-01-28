@@ -4,16 +4,15 @@ description: Stringhe in formato numerico personalizzato
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/25/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7b1c16ee-956f-4e9c-8502-c3dd6598c51d
 translationtype: Human Translation
 ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: e36c0117f6f011589299fa59a8abd139870c2257
+ms.openlocfilehash: 2d5a051efd074d02f2a5e9ff03c11e1d9a202d7f
 
 ---
 
@@ -598,11 +597,11 @@ Console.WriteLine(String.Format("{0:" + fmt3 + "}", zeroValue))
 
 ## <a name="notes"></a>Note
 
-### <a name="floatingpoint-infinities-and-nan"></a>Valori infiniti a virgola mobile e NaN
+### <a name="floating-point-infinities-and-nan"></a>Valori infiniti a virgola mobile e NaN
 
 Indipendentemente dalla stringa di formato, se il valore di un tipo a virgola mobile [Single](xref:System.Single) o [Double](xref:System.Double) è un numero infinito positivo, un numero infinito negativo o un valore NaN (Not a Number, non un numero), la stringa formattata corrisponde al valore della proprietà [PositiveInfinitySymbol](xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol), [NegativeInfinitySymbol](xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol) o [NaNSymbol](xref:System.Globalization.NumberFormatInfo.NaNSymbol) corrispondente specificata dall'oggetto [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) attualmente applicabile. 
 
-### <a name="rounding-and-fixedpoint-format-strings"></a>Arrotondamento e stringhe di formato a virgola fissa
+### <a name="rounding-and-fixed-point-format-strings"></a>Arrotondamento e stringhe di formato a virgola fissa
 
 Per le stringhe di formato a virgola fissa, ovvero stringhe di formato non contenenti caratteri di formato in notazione scientifica, i numeri vengono arrotondati al numero di posizioni decimali corrispondente al numero di segnaposto per cifre a destra del separatore decimale. Se la stringa di formato non contiene alcun separatore decimale, il numero viene arrotondato all'intero più vicino. Se le cifre del numero sono più numerose dei segnaposto per le cifre riportati a sinistra del separatore decimale, le cifre eccedenti vengono copiate nella stringa di risultato immediatamente prima del primo segnaposto per le cifre.
 
@@ -651,6 +650,6 @@ Console.WriteLine(value2)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

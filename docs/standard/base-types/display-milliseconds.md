@@ -3,16 +3,16 @@ title: 'Procedura: Visualizzare i millisecondi nei valori di data e ora'
 description: Come visualizzare i millisecondi nei valori di data e ora
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 78599e33-1c3f-4335-b320-751e35906338
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: cc3d9e1df658b923c0006e4798e44bceba79da31
+ms.openlocfilehash: 9bcec8a610ed0fd47d168e23fb1454067e2d3fac
 
 ---
 
@@ -189,6 +189,6 @@ Console.WriteLine("{0} seconds", dateValue.ToString("s.ffff"))
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

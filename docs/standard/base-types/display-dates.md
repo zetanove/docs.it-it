@@ -3,20 +3,20 @@ title: 'Procedura: Visualizzare le date in calendari non gregoriani'
 description: Come visualizzare le date in calendari non gregoriani
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 93f06e1d-544b-4ccc-a0b2-95cd674852cb
 translationtype: Human Translation
 ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 783b51f3145d8b11e79b99cfdc4baefe127306e3
+ms.openlocfilehash: 85c9d450be48c553ea3a1f1a0f16c298941fa325
 
 ---
 
-# <a name="how-to-display-dates-in-nongregorian-calendars"></a>Procedura: Visualizzare le date in calendari non gregoriani
+# <a name="how-to-display-dates-in-non-gregorian-calendars"></a>Procedura: Visualizzare le date in calendari non gregoriani
 
 I tipi [DateTime](xref:System.DateTime) e [DateTimeOffset](xref:System.DateTimeOffset) usano il calendario gregoriano come calendario predefinito. Ciò significa che la chiamata al metodo `ToString` di un valore di data e ora visualizza la rappresentazione di stringa di tale data e ora nel calendario gregoriano, anche se la data e l'ora sono state create usando un altro calendario. Questo processo è illustrato nell'esempio seguente in cui vengono usati due metodi diversi per creare un valore di data e ora con il calendario persiano ma i valori vengono visualizzati nel calendario gregoriano quando viene chiamato il metodo [ToString](xref:System.DateTime.ToString). L'esempio riflette due tecniche comuni ma non corrette per la visualizzazione della data in un determinato calendario.
 
@@ -334,6 +334,6 @@ Indipendentemente dal calendario usato per creare un valore [DateTime](xref:Syst
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
