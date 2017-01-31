@@ -3,16 +3,15 @@ title: Esempi ed esercitazioni
 description: Esempi ed esercitazioni
 keywords: .NET
 author: BillWagner
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/25/2016
 ms.topic: article
 ms.prod: .net
-ms.technology: .net-technologies
 ms.devlang: dotnet
 ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 8c3a58f97c9cb70e168a055cd874ee10ebb08c54
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: f44193d8f7bc9f67acb8b04966e02beca18a0653
 
 ---
 
@@ -22,7 +21,7 @@ ms.openlocfilehash: 8c3a58f97c9cb70e168a055cd874ee10ebb08c54
 
 È possibile trovare risorse avanzate per apprendere il linguaggio di programmazione F# sul [sito di F# Foundation](http://fsharp.org/learn.html). 
 
-È possibile trovare risorse avanzate relative ad ASP.NET Core sul [sito di ASP.NET](https://docs.asp.net/en/latest/tutorials/index.html).
+È possibile trovare risorse avanzate relative ad ASP.NET Core sul [sito di ASP.NET](https://docs.microsoft.com/aspnet/core/tutorials/).
 
 Inoltre, se si vuole approfondire la conoscenza di C# usando un test online, provare a eseguire queste [esercitazioni interattive](http://go.microsoft.com/fwlink/?LinkId=817234).
 
@@ -99,6 +98,6 @@ Una versione definitiva del codice che verrà compilato è disponibile [nel repo
 Questa esercitazione illustra come distribuire un'applicazione console esistente in un contenitore di Windows. Una versione definitiva del codice che verrà compilato è disponibile [nel repository core-docs su GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 
