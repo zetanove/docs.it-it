@@ -1,5 +1,5 @@
 ---
-title: Script dotnet-install | .NET Core SDK
+title: script dotnet-install | Microsoft Docs
 description: Informazioni sugli script dotnet-install per l&quot;installazione degli strumenti dell&quot;interfaccia della riga di comando di .NET Core e del runtime condiviso.
 keywords: dotnet-install, script dotnet-install, .NET Core
 author: blackdwarf
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 59b9c456-2bfd-4adc-8202-a1c6a0a6c787
+ms.assetid: b64e7e6f-ffb4-4fc8-b43b-5731c89479c2
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 08a401abed36e68caa7172e05184d18469fef48f
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 9f241774dd8977bbb26b5143d9f5d094af1ce05d
 
 ---
 
-#<a name="dotnet-install-scripts-reference"></a>Riferimento agli script dotnet-install
+#<a name="dotnet-install-scripts-reference-tooling-preview-4"></a>Informazioni di riferimento degli script dotnet-install (strumenti dell'anteprima 4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC). Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Informazioni di riferimento degli script dotnet-install](../../tools/dotnet-install-script.md).
 
 ## <a name="name"></a>Nome
 dotnet-install.ps1 | dotnet-install.sh: script usato per l'installazione degli strumenti dell'interfaccia della riga di comando e del runtime condiviso
@@ -126,6 +129,6 @@ macOS/Linux:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

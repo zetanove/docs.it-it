@@ -1,25 +1,28 @@
 ---
-title: Comando dotnet-new | .NET Core
+title: Comando dotnet-new | Microsoft Docs
 description: Il comando dotnet-new consente di creare nuovi progetti .NET Core nella directory corrente.
 keywords: dotnet-new, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
+ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 49f0a5e9b385c09a31cc463a77a74894b4304792
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: d4ca76f3de38b5d05868292d5c4bb8e3b0c7fdf2
 
 ---
 
-#<a name="dotnet-new"></a>dotnet-new
+#<a name="dotnet-new-tooling-preview-4"></a>dotnet-new (strumenti dell'anteprima 4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC). Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [dotnet-new](../../tools/dotnet-new.md).
 
 ## <a name="name"></a>Nome
-dotnet-new: consente di creare un nuovo progetto .NET Core nella directory corrente
+dotnet-new: consente di creare un nuovo progetto .NET Core nella directory corrente.
 
 ## <a name="synopsis"></a>Riepilogo
 `dotnet new [--help] [--type] [--lang]`
@@ -40,9 +43,9 @@ Dopo questa operazione, il progetto è pronto per essere compilato e/o ulteriorm
 
 Stampa una breve guida per il comando.  
 
-`-l|--lang <C#|F#>`
+`-l|--lang C#`
 
-Linguaggio del progetto. Il valore predefinito è `C#`. Altri valori validi sono `csharp`, `fsharp`, `cs` e `fs`.
+Linguaggio del progetto. Il valore predefinito è `C#`. Altri valori validi sono `csharp` e `cs`.
 
 `-t|--type`
 
@@ -54,15 +57,11 @@ Creare un progetto di applicazione console C# nella directory corrente:
 
 `dotnet new` o `dotnet new --lang c#` 
    
-Creare un progetto di applicazione console F# nella directory corrente:
-
-`dotnet new --lang f#`
-  
 Creare un nuovo progetto di applicazione console ASP.NET Core C# nella directory corrente:
 
 `dotnet new -t web`
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

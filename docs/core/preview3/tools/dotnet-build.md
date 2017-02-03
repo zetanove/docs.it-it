@@ -1,22 +1,25 @@
 ---
-title: Comando dotnet-build | .NET Core SDK
+title: Comando dotnet-build | Microsoft Docs
 description: Il comando dotnet-build consente di compilare un progetto e tutte le relative dipendenze.
 keywords: dotnet-build, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/13/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
+ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 04c4d77b31bf4a1bdb425d837c490440e7312e57
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: d2eeeccd6b3bdf82ba02fea6ce89785ef19d4116
 
 ---
 
-#<a name="dotnet-build"></a>dotnet-build
+#<a name="dotnet-build-tooling-preview-4"></a>dotnet-build (strumenti dell'anteprima 4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC). Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [dotnet-build](../../tools/dotnet-build.md).
 
 ## <a name="name"></a>Nome 
 dotnet-build: consente di compilare un progetto e tutte le relative dipendenze 
@@ -31,7 +34,7 @@ dotnet-build: consente di compilare un progetto e tutte le relative dipendenze
 ## <a name="description"></a>Descrizione
 
 Il comando `dotnet build` consente di compilare più file di origine da un progetto di origine e le relative dipendenze in un file binario. Per impostazione predefinita, il file binario risultante è scritto in linguaggio intermedio (IL, Intermediate Language) e ha l'estensione DLL. 
-`dotnet build` rilascia inoltre un file `\*.deps` che descrive gli elementi necessari all'host per eseguire l'applicazione.  
+`dotnet build` rilascia inoltre un file `*.deps` che descrive gli elementi necessari all'host per eseguire l'applicazione.  
 
 Per la compilazione è necessario un file di asset (un file che elenca tutte le dipendenze dell'applicazione). È quindi necessario eseguire [`dotnet restore`](dotnet-restore.md) prima della compilazione del codice.
 
@@ -100,6 +103,6 @@ Compilare un progetto e le relative dipendenze per un runtime specifico ( in que
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

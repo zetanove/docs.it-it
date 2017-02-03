@@ -1,5 +1,5 @@
 ---
-title: "Modello di estendibilità dell&quot;interfaccia della riga di comando di .NET Core"
+title: "Modello di estendibilità dell&quot;interfaccia della riga di comando di .NET Core | Microsoft Docs"
 description: "Modello di estendibilità dell&quot;interfaccia della riga di comando di .NET Core"
 keywords: "interfaccia della riga di comando, estendibilità, comandi personalizzati, .NET Core"
 author: blackdwarf
@@ -9,20 +9,23 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 1bebd25a-120f-48d3-8c25-c89965afcbcd
+ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 2cf58161a75894a12f47cf67a5760dc26f9d261c
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 7df8b8bd4ae96a344b279a2673906962beaf29a4
 
 ---
 
-# <a name="net-core-cli-extensibility-model"></a>Modello di estendibilità dell'interfaccia della riga di comando di .NET Core 
+# <a name="net-core-cli-extensibility-model-tooling-preview-4"></a>Modello di estendibilità dell'interfaccia della riga di comando di .NET Core (strumenti dell'anteprima 4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC). Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Modello di estendibilità dell'interfaccia della riga di comando di .NET Core](../../tools/dotnet-test.md).
 
 ## <a name="overview"></a>Panoramica
 Questo documento analizza i principali metodi per estendere gli strumenti dell'interfaccia della riga di comando e illustra gli scenari relativi a ciascuno di essi. Viene indicato come utilizzare gli strumenti e vengono fornite brevi note riguardanti la compilazione di entrambi i tipi di strumenti. 
 
 ## <a name="how-to-extend-cli-tools"></a>Come estendere gli strumenti dell'interfaccia della riga di comando
-Gli strumenti dell'interfaccia della riga di comando dell'anteprima 3 possono essere estesi in tre modi principali:
+Gli strumenti dell'interfaccia della riga di comando dell'anteprima 4 possono essere estesi in tre modi principali:
 
 1. Tramite pacchetti NuGet in base al progetto
 2. Tramite pacchetti NuGet con destinazioni personalizzate  
@@ -40,7 +43,7 @@ Questo modello di estendibilità, infine, fornisce il supporto per la creazione 
 ### <a name="consuming-per-project-tools"></a>Utilizzo di strumenti in base al progetto
 Per utilizzare questi strumenti, è necessario aggiungere al file di progetto un elemento `<DotNetCliToolReference>` per ciascuno degli strumenti da usare. All'interno dell'elemento `<DotNetCliToolReference>` l'utente fa riferimento al pacchetto in cui si trova lo strumento e specifica la versione necessaria. Dopo l'esecuzione di `dotnet restore`, viene eseguito il ripristino dello strumento e delle relative dipendenze. 
 
-Per gli strumenti che devono caricare l'output di compilazione del progetto per l'esecuzione, è in genere presente un'altra dipendenza elencata sotto le normali dipendenze del file di progetto. Poiché la versione di anteprima 3 dell'interfaccia della riga di comando usa MSBuild come motore di compilazione, è consigliabile che queste parti dello strumento vengano scritte come destinazioni e attività MSBuild personalizzate, in quanto fanno parte del processo complessivo di compilazione. Tali destinazioni e attività, inoltre, possono ottenere facilmente alcuni o tutti i dati prodotti tramite la compilazione, ad esempio la posizione dei file di output, la configurazione corrente in fase di compilazione e così via. Nell'anteprima 3 tutte queste informazioni diventano un set di proprietà MSBuild leggibili da qualsiasi destinazione. Nel documento verrà illustrato come aggiungere una destinazione personalizzata usando NuGet. 
+Per gli strumenti che devono caricare l'output di compilazione del progetto per l'esecuzione, è in genere presente un'altra dipendenza elencata sotto le normali dipendenze del file di progetto. Poiché la versione di anteprima 4 dell'interfaccia della riga di comando usa MSBuild come motore di compilazione, è consigliabile che queste parti dello strumento vengano scritte come destinazioni e attività MSBuild personalizzate per essere incluse nel processo di compilazione globale. Tali destinazioni e attività, inoltre, possono ottenere facilmente alcuni o tutti i dati prodotti tramite la compilazione, ad esempio la posizione dei file di output, la configurazione corrente in fase di compilazione e così via. Nell'anteprima 4 tutte queste informazioni diventano un set di proprietà MSBuild leggibili da qualsiasi destinazione. Nel documento verrà illustrato come aggiungere una destinazione personalizzata usando NuGet. 
 
 Di seguito è riportato un esempio di aggiunta di un semplice strumento "tools" a un semplice progetto. Si consideri un comando di esempio denominato `dotnet-api-search` che consente di cercare nei pacchetti NuGet l'API specificata. Di seguito è riportato un file di progetto di un'applicazione console che usa tale strumento:
 
@@ -83,12 +86,12 @@ L'elemento `<DotNetCliToolReference>` è strutturato in modo analogo all'element
 ### <a name="building-tools"></a>Compilazione degli strumenti
 Come affermato in precedenza, gli strumenti sono essenzialmente applicazioni console portabili. La compilazione di uno strumento è analoga a quella di qualsiasi applicazione console. Dopo la compilazione, usare il comando [`dotnet pack`](dotnet-pack.md) per creare un pacchetto NuGet (nupkg) contenente il codice, informazioni sulle relative dipendenze e così via. Il nome del pacchetto è a scelta dell'autore, ma è necessario che l'applicazione in esso contenuta, l'effettivo file binario dello strumento, sia conforme alla convenzione di `dotnet-<command>` per consentire a `dotnet` di richiamare il pacchetto. 
 
-Nei componenti dell'anteprima 3 il comando `dotnet pack` non include il file `runtimeconfig.json` necessario per eseguire lo strumento. Per includere il file sono disponibili due opzioni:
+Nei componenti dell'anteprima 4 il comando `dotnet pack` non include il file `runtimeconfig.json` necessario per eseguire lo strumento. Per includere questo file nel pacchetto sono disponibili due opzioni:
 
-1. Creare un file `nuspec` e usare il nuovo comando `dotnet nuget pack` disponibile nell'interfaccia della riga di comando dell'anteprima 3 per includere il file
+1. Creare un file `nuspec` e usare il nuovo comando `dotnet nuget pack` disponibile nell'interfaccia della riga di comando dell'anteprima 4 per includere il file
 2. Usare il nuovo elemento `<Content>` in un elemento `<ItemGroup>` del file di progetto per includere il file manualmente
 
-L'utilizzo dei file nuspec esula dall'ambito di questo articolo. È tuttavia possibile trovare informazioni utili nei [documenti ufficiali NuGet](https://docs.nuget.org/ndocs/create-packages/creating-a-package#the-role-and-structure-of-the--nuspec-file). Se si sceglie il secondo approccio, di seguito è possibile esaminare il file di esempio `csproj` e la relativa configurazione:
+L'utilizzo dei file nuspec esula dall'ambito di questo articolo. È tuttavia possibile trovare informazioni utili nei [documenti ufficiali NuGet](https://docs.microsoft.com/nuget/create-packages/creating-a-package#the-role-and-structure-of-the-nuspec-file). Se si sceglie il secondo approccio, di seguito è possibile esaminare il file di esempio `csproj` e la relativa configurazione:
 
 ```xml
   <ItemGroup>
@@ -108,7 +111,7 @@ Gli strumenti di questo tipo hanno un grafico delle dipendenze completamente sep
 Esempi più dettagliati e differenti combinazioni sono disponibili in [.NET Core CLI repo](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestProjects) (Archivio .NET Core dell'interfaccia della riga di comando). Nello stesso archivio è possibile vedere anche l'[implementazione degli strumenti usati](https://github.com/dotnet/cli/tree/rel/1.0.0-preview2/TestAssets/TestPackages). 
 
 ### <a name="custom-targets"></a>Destinazioni personalizzate
-Per un determinato periodo NuGet ha consentito di includere destinazioni MSBuild personalizzate e file props. La documentazione ufficiale su questo argomento è disponibile nel [sito della documentazione NuGet](https://docs.nuget.org/ndocs/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package). Con il passaggio nell'interfaccia della riga di comando all'uso di MSBuild, lo stesso meccanismo di estendibilità viene applicato ai progetti .NET Core. È opportuno usare questo tipo di estendibilità quando si vuole estendere il processo di compilazione, quando si vuole accedere a qualsiasi elemento di tale processo, ad esempio i file generati, oppure quando si vuole esaminare la configurazione in cui viene richiamata la compilazione e così via. 
+Per un determinato periodo NuGet ha consentito di includere destinazioni MSBuild personalizzate e file props. La documentazione ufficiale su questo argomento è disponibile nel [sito della documentazione NuGet](https://docs.microsoft.com/nuget/create-packages/creating-a-package#including-msbuild-props-and-targets-in-a-package). Con il passaggio nell'interfaccia della riga di comando all'uso di MSBuild, lo stesso meccanismo di estendibilità viene applicato ai progetti .NET Core. È opportuno usare questo tipo di estendibilità quando si vuole estendere il processo di compilazione, quando si vuole accedere a qualsiasi elemento di tale processo, ad esempio i file generati, oppure quando si vuole esaminare la configurazione in cui viene richiamata la compilazione e così via. 
 
 Il file di progetto della destinazione di esempio viene riportato di seguito a scopo di riferimento. Mostra come usare la nuova sintassi `csproj` per indicare al comando `dotnet pack` gli elementi da includere per inserire i file di destinazione, nonché gli assembly, nella cartella `build` all'interno del pacchetto. Notare che l'elemento `<ItemGroup>` riportato di seguito ha la proprietà `Label` impostata su "dotnet pack instructions". 
 
@@ -208,6 +211,6 @@ Gli strumenti dell'interfaccia della riga di comando di .NET Core offrono tre ap
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

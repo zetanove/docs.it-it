@@ -1,25 +1,28 @@
 ---
-title: Comando dotnet-build | .NET Core SDK
+title: Comando dotnet-build | Microsoft Docs
 description: Il comando dotnet-build consente di compilare un progetto e tutte le relative dipendenze.
 keywords: dotnet-build, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/13/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 344f8154c63bbb3c5ce6840bc7c7b1659950c223
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 3cb552590bf45ec73d84cc902a505b3048301b9f
 
 ---
 
-#<a name="dotnetbuild"></a>dotnet-build
+#<a name="dotnet-build"></a>dotnet-build
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC), vedere l'argomento [dotnet-build (strumenti dell'anteprima 4)](../preview3/tools/dotnet-build.md).
 
 ## <a name="name"></a>Nome 
-dotnet-build: consente di compilare un progetto e tutte le relative dipendenze 
+`dotnet-build`: consente di compilare un progetto e tutte le relative dipendenze. 
 
 ## <a name="synopsis"></a>Riepilogo
 
@@ -76,11 +79,11 @@ Esegue la compilazione per un framework specifico. Il framework deve essere defi
 
 Definisce una configurazione in cui eseguire la compilazione.  Se omessa, il valore predefinito è `Debug`.
 
-`-r|--runtime [RUNTIME_IDENTIFIER]`
+`-r|--runtime <RUNTIME_IDENTIFIER>`
 
 Runtime di destinazione per cui eseguire la compilazione. Per un elenco degli identificatori di runtime (RID, Runtime Identifier) che è possibile usare, vedere il [catalogo RID](../rid-catalog.md). 
 
-`--version-suffix [VERSION_SUFFIX]`
+`--version-suffix <VERSION_SUFFIX>`
 
 Definisce l'elemento che deve sostituire `*` nel campo relativo alla versione del file [project.json](project-json.md#version). Il formato rispetta le linee guida della versione NuGet. 
 
@@ -111,6 +114,6 @@ Compilare un progetto e le relative dipendenze per un runtime specifico ( in que
 `dotnet build --runtime ubuntu.16.04-x64`
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

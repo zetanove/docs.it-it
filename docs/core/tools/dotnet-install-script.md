@@ -1,26 +1,28 @@
 ---
-title: Script dotnet-install | .NET Core SDK
+title: script dotnet-install | Microsoft Docs
 description: Informazioni sugli script dotnet-install per l&quot;installazione degli strumenti dell&quot;interfaccia della riga di comando di .NET Core e del runtime condiviso.
 keywords: dotnet-install, script dotnet-install, .NET Core
 author: blackdwarf
 ms.author: mairaw
-manager: wpickett
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 59b9c456-2bfd-4adc-8202-a1c6a0a6c787
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 30e969c55d08b3ac276c6e7786fa96985dbb0a6b
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 4ef9e076e3afb4cf5c96c627dc102da1ff2c8ce0
 
 ---
 
-#<a name="dotnetinstall-scripts-reference"></a>Riferimento agli script dotnet-install
+#<a name="dotnet-install-scripts-reference"></a>Riferimento agli script dotnet-install
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC), vedere l'argomento [Informazioni di riferimento degli script dotnet-install (strumenti dell'anteprima 4)](../preview3/tools/dotnet-install-script.md).
 
 ## <a name="name"></a>Nome
-dotnet-install.ps1 | dotnet-install.sh: script usato per l'installazione degli strumenti dell'interfaccia della riga di comando e del runtime condiviso
+`dotnet-install.ps1` | `dotnet-install.sh` - script usato per l'installazione degli strumenti dell'interfaccia della riga di comando e del runtime condiviso.
 
 ## <a name="synopsis"></a>Riepilogo
 Windows:
@@ -64,7 +66,7 @@ Versione dell'interfaccia della riga di comando da installare. È necessario spe
 
 `-InstallDir [DIR]`
 
-Percorso in cui eseguire l'installazione. Se la directory non esiste, verrà creata. Il valore predefinito è *%LocalAppData%\.dotnet*.
+Percorso in cui eseguire l'installazione. Se la directory non esiste, verrà creata. Il valore predefinito è *%LocalAppData%\Microsoft\dotnet*.
 
 `-Debug`
 
@@ -127,6 +129,6 @@ macOS/Linux:
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 
