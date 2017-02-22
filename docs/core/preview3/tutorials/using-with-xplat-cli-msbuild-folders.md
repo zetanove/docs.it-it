@@ -1,6 +1,6 @@
 ---
-title: Organizzazione e testing dei progetti con la riga di comando di .NET Core (anteprima 3 dell&quot;SDK)
-description: Organizzazione e testing dei progetti con la riga di comando di .NET Core (anteprima 3 dell&quot;SDK)
+title: Organizzazione e testing dei progetti con la riga di comando di .NET Core (strumenti di .NET Core RC4) | Microsoft Docs
+description: Organizzazione e testing dei progetti con la riga di comando di .NET Core (strumenti di .NET Core RC4)
 keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
@@ -9,16 +9,19 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
+ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 translationtype: Human Translation
-ms.sourcegitcommit: 07b62bd7163193eff8dc8f61fda7a45a924bba2b
-ms.openlocfilehash: 0a3122a3c10838b74801bcc910070745cb9bf0d5
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: bcb5ce9772ca2f3e35ebd7ec948d011ec04296e0
 
 ---
 
-# <a name="organizing-and-testing-projects-with-the-net-core-command-line-sdk-preview-3"></a>Organizzazione e testing dei progetti con la riga di comando di .NET Core (anteprima 3 dell'SDK)
+# <a name="organizing-and-testing-projects-with-the-net-core-command-line-net-core-tools-rc4"></a>Organizzazione e testing dei progetti con la riga di comando di .NET Core (strumenti di .NET Core RC4)
 
-Questa esercitazione segue [Introduzione all'uso di .NET Core su Windows/Linux/macOS dalla riga di comando (anteprima 3 dell'SDK)](./using-with-xplat-cli-msbuild.md) e illustra come superare i semplici scenari di tipo "hello world" e preparare la strada per applicazioni più avanzate e ben organizzate.
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Introduzione all'uso di .NET Core su Windows/Linux/macOS dalla riga di comando](../../tutorials/using-with-xplat-cli.md).
+
+Questa esercitazione segue [Introduzione all'uso di .NET Core su Windows/Linux/macOS dalla riga di comando (strumenti di .NET Core RC4)](./using-with-xplat-cli-msbuild.md) e illustra come superare gli scenari semplici di tipo "hello world" e preparare la strada per applicazioni più avanzate e ben organizzate.
 
 ## <a name="using-folders-to-organize-code"></a>Uso di cartelle per organizzare il codice
 
@@ -322,6 +325,6 @@ SUMMARY: Total: 1 targets, Passed: 1, Failed: 0.
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

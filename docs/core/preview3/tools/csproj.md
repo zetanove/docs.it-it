@@ -4,14 +4,14 @@ description: Informazioni sulle differenze tra i file csproj esistenti e .NET Co
 keywords: informazioni di riferimento, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 07/02/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: dfa7cc0f7005269b4e2560c8bbc8b049ed02cc1a
+ms.sourcegitcommit: 0402707f98af8b716b041ba1260162cd227918cc
+ms.openlocfilehash: 98f6ced2a199bdbe2f91f46e48ffd3ac52438cf8
 
 ---
 
@@ -23,85 +23,144 @@ Questo documento descrive le modifiche aggiunte ai file csproj come parte del pa
 
 ## <a name="additions"></a>Aggiornamenti
 
-### <a name="packagereference"></a>PackageReference
-Specifica una dipendenza NuGet nel progetto. L'attributo `Include` specifica l'ID del pacchetto. 
+* Elemento PackageReference che specifica una dipendenza NuGet nel progetto. L'attributo `Include` specifica l'ID del pacchetto. 
 
 ```xml
-<PackageReference Include="<package-id>">
-    <Version></Version>
-    <PrivateAssets></PrivateAssets>
-    <IncludeAssets></IncludeAssets>
-    <ExcludeAssets></ExcludeAssets>
-</PackageReference>
+<PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
 ```
 
-#### <a name="version"></a>Versione
-`<Version>` specifica la versione del pacchetto da ripristinare. L'elemento rispetta le regole dello schema di numerazione delle versioni NuGet.
+## <a name="version"></a>Versione
+`Version` specifica la versione del pacchetto da ripristinare. L'elemento rispetta le regole dello schema di numerazione delle versioni NuGet.
 
-#### <a name="includeassets"></a>IncludeAssets
-L'elemento figlio `<IncludeAssets>` specifica quali risorse appartenenti al pacchetto specificato dall'elemento padre `<PackageReference>` devono essere utilizzate. 
+## <a name="includeassets"></a>IncludeAssets
+L'attributo `IncludeAssets` specifica quali asset appartenenti al pacchetto specificato dall'elemento `<PackageReference>` devono essere usati. 
 
-L'elemento può contenere uno o più dei valori seguenti:
+L'attributo può contenere uno o più dei valori seguenti:
 
-* Compile: i contenuti della cartella lib sono disponibili per la compilazione.
-* Runtime: vengono distribuiti i contenuti della cartella runtime.
-* ContentFiles: vengono usati i contenuti della cartella contentfiles.
-* Build: vengono usate le proprietà/destinazioni nella cartella build.
-* Native: i contenuti degli asset nativi vengono copiati nella cartella di output per il runtime.
-* Analyzers: vengono usati gli analizzatori.
+* `Compile`: i contenuti della cartella lib sono disponibili per la compilazione.
+* `Runtime`: vengono distribuiti i contenuti della cartella runtime.
+* `ContentFiles`: vengono usati i contenuti della cartella contentfiles.
+* `Build`: vengono usate le proprietà/destinazioni nella cartella build.
+* `Native`: i contenuti degli asset nativi vengono copiati nella cartella di output per il runtime.
+* `Analyzers`: vengono usati gli analizzatori.
+
+In alternativa, l'attributo può contenere:
+
+* `None`: nessuno degli asset viene usato.
+* `All`: vengono usati tutti gli asset.
+
+## <a name="excludeassets"></a>ExcludeAssets
+L'attributo `ExcludeAssets` specifica quali asset appartenenti al pacchetto specificato dall'elemento `<PackageReference>` non devono essere usati.
+
+L'attributo può contenere uno o più dei valori seguenti:
+
+* `Compile`: i contenuti della cartella lib sono disponibili per la compilazione.
+* `Runtime`: vengono distribuiti i contenuti della cartella runtime.
+* `ContentFiles`: vengono usati i contenuti della cartella contentfiles.
+* `Build`: vengono usate le proprietà/destinazioni nella cartella build.
+* `Native`: i contenuti degli asset nativi vengono copiati nella cartella di output per il runtime.
+* `Analyzers`: vengono usati gli analizzatori.
 
 In alternativa, l'elemento può contenere:
 
-* None: nessuno degli asset viene usato.
-* All: vengono usati tutti gli asset.
+* `None`: nessuno degli asset viene usato.
+* `All`: vengono usati tutti gli asset.
 
-#### <a name="excludeassets"></a>ExcludeAssets
-L'elemento figlio `<ExcludeAssets>` specifica quali risorse appartenenti al pacchetto specificato dall'elemento padre `<PackageReference>` non devono essere utilizzate.
-
-L'elemento può contenere uno o più dei valori seguenti:
-
-* Compile: i contenuti della cartella lib sono disponibili per la compilazione.
-* Runtime: vengono distribuiti i contenuti della cartella runtime.
-* ContentFiles: vengono usati i contenuti della cartella contentfiles.
-* Build: vengono usate le proprietà/destinazioni nella cartella build.
-* Native: i contenuti degli asset nativi vengono copiati nella cartella di output per il runtime.
-* Analyzers: vengono usati gli analizzatori.
-
-In alternativa, l'elemento può contenere:
-
-* None: nessuno degli asset viene usato.
-* All: vengono usati tutti gli asset.
-
-#### <a name="privateassets"></a>PrivateAssets
-L'elemento figlio `<PrivateAssets>` specifica quali risorse appartenenti al pacchetto specificato dall'elemento padre `<PackageReference>` devono essere utilizzate. Specifica, inoltre, che tali risorse non devono essere trasmesse al progetto successivo. 
+## <a name="privateassets"></a>PrivateAssets
+L'attributo `PrivateAssets` specifica quali asset appartenenti al pacchetto specificato dall'elemento `<PackageReference>` devono essere usati. Specifica, inoltre, che tali asset non devono essere trasmessi al progetto successivo. 
 
 > [!NOTE]
 > Questo è un nuovo termine per l'elemento `SuppressParent` di project.json/xproj. 
 
-L'elemento può contenere uno o più dei valori seguenti:
+L'attributo può contenere uno o più dei valori seguenti:
 
-* Compile: i contenuti della cartella lib sono disponibili per la compilazione.
-* Runtime: vengono distribuiti i contenuti della cartella runtime.
-* ContentFiles: vengono usati i contenuti della cartella contentfiles.
-* Build: vengono usate le proprietà/destinazioni nella cartella build.
-* Native: i contenuti degli asset nativi vengono copiati nella cartella di output per il runtime.
-* Analyzers: vengono usati gli analizzatori.
+* `Compile`: i contenuti della cartella lib sono disponibili per la compilazione.
+* `Runtime`: vengono distribuiti i contenuti della cartella runtime.
+* `ContentFiles`: vengono usati i contenuti della cartella contentfiles.
+* `Build`: vengono usate le proprietà/destinazioni nella cartella build.
+* `Native`: i contenuti degli asset nativi vengono copiati nella cartella di output per il runtime.
+* `Analyzers`: vengono usati gli analizzatori.
 
-In alternativa, l'elemento può contenere:
+In alternativa, l'attributo può contenere:
 
-* None: nessuno degli asset viene usato.
-* All: vengono usati tutti gli asset.
+* `None`: nessuno degli asset viene usato.
+* `All`: vengono usati tutti gli asset.
 
-### <a name="dotnetclitoolreference"></a>DotnetCliToolReference
-L'elemento `<DotnetCliToolReference>` specifica lo strumento dell'interfaccia della riga di comando che l'utente vuole ripristinare nel contesto del progetto. Si tratta di una sostituzione per il nodo `tools` in `project.json`. 
+* L'elemento `<DotnetCliToolReference>` DotnetCliToolReference specifica lo strumento dell'interfaccia della riga di comando che l'utente vuole ripristinare nel contesto del progetto. Si tratta di una sostituzione per il nodo `tools` in `project.json`. 
 
-#### <a name="version"></a>Versione
-`<Version>` specifica la versione del pacchetto da ripristinare. L'elemento rispetta le regole dello schema di numerazione delle versioni NuGet.
+```xml
+<DotnetCliToolReference Include="<package-id>" Version="" />
+```
 
-### <a name="runtimeidentifiers"></a>Identificatori di runtime
-L'elemento `<RuntimeIdentifiers>` consente di specificare un elenco delimitato da punto e virgola di [identificatori di runtime (RID)](../../rid-catalog.md) per il progetto. I RID consentono di pubblicare distribuzioni autonome. 
+## <a name="version"></a>Versione
+`Version` specifica la versione del pacchetto da ripristinare. L'attributo rispetta le regole dello schema di numerazione delle versioni NuGet.
+
+* RuntimeIdentifiers L'elemento `<RuntimeIdentifiers>` consente di specificare un elenco delimitato da punto e virgola di [identificatori di runtime (RID)](../../rid-catalog.md) per il progetto. I RID consentono di pubblicare distribuzioni autonome. 
+
+```xml
+<RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+```
 
 
-<!--HONumber=Jan17_HO3-->
+* RuntimeIdentifier L'elemento `<RuntieIdentifier>` consente di specificare un solo [identificatore di runtime (RID)](../../rid-catalog.md) per il progetto. I RID consentono di pubblicare una distribuzione autonoma. 
+
+```xml
+<RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+```
+
+
+* PackageTargetFallback L'elemento `<PackageTargetFallback>` consente di specificare un set di destinazioni compatibili da usare durante il ripristino di pacchetti. È progettato per consentire ai pacchetti che usano il TxM dotnet di interagire con pacchetti che non dichiarano un TxM dotnet. Se il progetto usa il TxM dotnet, anche tutti i pacchetti da cui si dipende devono avere un TxM dotnet, a meno che non si aggiunga `<PackageTargetFallback>` al progetto per consentire alle piattaforme non dotnet di essere compatibili con dotnet. 
+
+L'esempio seguente include i fallback per tutte le destinazioni nel progetto: 
+
+```xml
+<PackageTargetFallback>
+    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
+</PackageTargetFallback >
+```
+
+L'esempio seguente specifica i fallback solo per la destinazione `netcoreapp1.0`:
+
+```xml
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp1.0'">
+    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
+</PackageTargetFallback >
+```
+
+## <a name="nuget-metadata-properties"></a>Proprietà dei metadati NuGet
+Con il passaggio a MSbuild, i metadati di input usati per la creazione di un pacchetto NuGet sono stati spostati da file project.json a csproj. Gli input sono proprietà di MSBuild. L'elenco seguente include le proprietà usate come input per il processo di creazione del pacchetto quando si usa il comando `dotnet pack` o la destinazione di MSBuild `Pack` che fa parte dell'SDK. 
+
+* IsPackable
+* PackageVersion
+* PackageId
+* Titolo
+* Autori
+* Descrizione
+* Copyright
+* PackageRequireLicenseAcceptance
+* PackageLicenseUrl
+* PackageProjectUrl
+* PackageIconUrl
+* PackageReleaseNotes
+* PackageTags
+* PackageOutputPath
+* IncludeSymbols
+* IncludeSource
+* PackageTypes
+* IsTool
+* RepositoryUrl
+* RepositoryType
+* NoPackageAnalysis
+* MinClientVersion
+* IncludeBuildOutput
+* IncludeContentInPack
+* BuildOutputTargetFolder
+* ContentTargetFolders
+* NuspecFile
+* NuspecBasePath
+* NuspecProperties
+
+
+<!--HONumber=Feb17_HO2-->
 
 

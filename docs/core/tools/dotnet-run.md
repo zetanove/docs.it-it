@@ -1,26 +1,29 @@
 ---
-title: Comando dotnet-run | .NET Core SDK
+title: Comando dotnet-run | Microsoft Docs
 description: Il comando dotnet-run offre un modo pratico per eseguire l&quot;applicazione dal codice sorgente.
 keywords: dotnet-run, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 495ff50b-cb30-4d30-8f20-beb3d5e7c31f
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 18731d9fcc190371d908779a69a81114e0685aba
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 2e14cd14bc3d5ed86c841e46dc80c2649f239a82
 
 ---
 
-#<a name="dotnetrun"></a>dotnet-run
+#<a name="dotnet-run"></a>dotnet-run
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [dotnet-run (strumenti di .NET Core RC4)](../preview3/tools/dotnet-run.md).
 
 ## <a name="name"></a>Nome 
 
-dotnet-run: esegue il codice sorgente "sul posto" senza compilazioni esplicite o senza avviare i comandi
+`dotnet-run`: esegue il codice sorgente "sul posto" senza compilazioni esplicite o comandi di avvio.
 
 ## <a name="synopsis"></a>Riepilogo
 
@@ -77,6 +80,6 @@ Eseguire il progetto nella directory corrente (l'argomento `--help` in questo es
 `dotnet run --configuration Release -- --help`
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

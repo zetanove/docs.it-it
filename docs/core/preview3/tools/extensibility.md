@@ -4,28 +4,28 @@ description: "Modello di estendibilità dell&quot;interfaccia della riga di coma
 keywords: "interfaccia della riga di comando, estendibilità, comandi personalizzati, .NET Core"
 author: blackdwarf
 ms.author: mairaw
-ms.date: 11/13/2016
+ms.date: 02/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fffc3400-aeb9-4c07-9fea-83bc8dbdcbf3
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: 7df8b8bd4ae96a344b279a2673906962beaf29a4
+ms.sourcegitcommit: 5a1ba8984d93795e4628a7b911307d513e8de8d1
+ms.openlocfilehash: 1b6bc46639fda60e4a23c1ea66d0d0ca8b58acb7
 
 ---
 
-# <a name="net-core-cli-extensibility-model-tooling-preview-4"></a>Modello di estendibilità dell'interfaccia della riga di comando di .NET Core (strumenti dell'anteprima 4)
+# <a name="net-core-cli-extensibility-model-net-core-tools-rc4"></a>Modello di estendibilità dell'interfaccia della riga di comando di .NET Core (strumenti di .NET Core RC4)
 
 > [!WARNING]
-> Questo argomento si applica agli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC). Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Modello di estendibilità dell'interfaccia della riga di comando di .NET Core](../../tools/dotnet-test.md).
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Modello di estendibilità dell'interfaccia della riga di comando di .NET Core](../../tools/dotnet-test.md).
 
 ## <a name="overview"></a>Panoramica
 Questo documento analizza i principali metodi per estendere gli strumenti dell'interfaccia della riga di comando e illustra gli scenari relativi a ciascuno di essi. Viene indicato come utilizzare gli strumenti e vengono fornite brevi note riguardanti la compilazione di entrambi i tipi di strumenti. 
 
 ## <a name="how-to-extend-cli-tools"></a>Come estendere gli strumenti dell'interfaccia della riga di comando
-Gli strumenti dell'interfaccia della riga di comando dell'anteprima 4 possono essere estesi in tre modi principali:
+Gli strumenti dell'interfaccia della riga di comando della versione RC4 possono essere estesi in tre modi principali:
 
 1. Tramite pacchetti NuGet in base al progetto
 2. Tramite pacchetti NuGet con destinazioni personalizzate  
@@ -43,41 +43,22 @@ Questo modello di estendibilità, infine, fornisce il supporto per la creazione 
 ### <a name="consuming-per-project-tools"></a>Utilizzo di strumenti in base al progetto
 Per utilizzare questi strumenti, è necessario aggiungere al file di progetto un elemento `<DotNetCliToolReference>` per ciascuno degli strumenti da usare. All'interno dell'elemento `<DotNetCliToolReference>` l'utente fa riferimento al pacchetto in cui si trova lo strumento e specifica la versione necessaria. Dopo l'esecuzione di `dotnet restore`, viene eseguito il ripristino dello strumento e delle relative dipendenze. 
 
-Per gli strumenti che devono caricare l'output di compilazione del progetto per l'esecuzione, è in genere presente un'altra dipendenza elencata sotto le normali dipendenze del file di progetto. Poiché la versione di anteprima 4 dell'interfaccia della riga di comando usa MSBuild come motore di compilazione, è consigliabile che queste parti dello strumento vengano scritte come destinazioni e attività MSBuild personalizzate per essere incluse nel processo di compilazione globale. Tali destinazioni e attività, inoltre, possono ottenere facilmente alcuni o tutti i dati prodotti tramite la compilazione, ad esempio la posizione dei file di output, la configurazione corrente in fase di compilazione e così via. Nell'anteprima 4 tutte queste informazioni diventano un set di proprietà MSBuild leggibili da qualsiasi destinazione. Nel documento verrà illustrato come aggiungere una destinazione personalizzata usando NuGet. 
+Per gli strumenti che devono caricare l'output di compilazione del progetto per l'esecuzione, è in genere presente un'altra dipendenza elencata sotto le normali dipendenze del file di progetto. Poiché la versione RC4 dell'interfaccia della riga di comando usa MSBuild come motore di compilazione, è consigliabile che queste parti dello strumento vengano scritte come destinazioni e attività MSBuild personalizzate per essere incluse nel processo di compilazione globale. Tali destinazioni e attività, inoltre, possono ottenere facilmente alcuni o tutti i dati prodotti tramite la compilazione, ad esempio la posizione dei file di output, la configurazione corrente in fase di compilazione e così via. Nella versione RC4 tutte queste informazioni diventano un set di proprietà MSBuild leggibili da qualsiasi destinazione. Nel documento verrà illustrato come aggiungere una destinazione personalizzata usando NuGet. 
 
 Di seguito è riportato un esempio di aggiunta di un semplice strumento "tools" a un semplice progetto. Si consideri un comando di esempio denominato `dotnet-api-search` che consente di cercare nei pacchetti NuGet l'API specificata. Di seguito è riportato un file di progetto di un'applicazione console che usa tale strumento:
 
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1/TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
   </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.1.0</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161102-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
 
   <!-- The tools reference -->
   <ItemGroup>
-    <DotNetCliToolReference Include="dotnet-api-search">
-      <Version></Version>
-    </DotNetCliToolReference>
+    <DotNetCliToolReference Include="dotnet-api-search" Version="1.0.0" />
   </ItemGroup>
-
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 
@@ -86,23 +67,8 @@ L'elemento `<DotNetCliToolReference>` è strutturato in modo analogo all'element
 ### <a name="building-tools"></a>Compilazione degli strumenti
 Come affermato in precedenza, gli strumenti sono essenzialmente applicazioni console portabili. La compilazione di uno strumento è analoga a quella di qualsiasi applicazione console. Dopo la compilazione, usare il comando [`dotnet pack`](dotnet-pack.md) per creare un pacchetto NuGet (nupkg) contenente il codice, informazioni sulle relative dipendenze e così via. Il nome del pacchetto è a scelta dell'autore, ma è necessario che l'applicazione in esso contenuta, l'effettivo file binario dello strumento, sia conforme alla convenzione di `dotnet-<command>` per consentire a `dotnet` di richiamare il pacchetto. 
 
-Nei componenti dell'anteprima 4 il comando `dotnet pack` non include il file `runtimeconfig.json` necessario per eseguire lo strumento. Per includere questo file nel pacchetto sono disponibili due opzioni:
-
-1. Creare un file `nuspec` e usare il nuovo comando `dotnet nuget pack` disponibile nell'interfaccia della riga di comando dell'anteprima 4 per includere il file
-2. Usare il nuovo elemento `<Content>` in un elemento `<ItemGroup>` del file di progetto per includere il file manualmente
-
-L'utilizzo dei file nuspec esula dall'ambito di questo articolo. È tuttavia possibile trovare informazioni utili nei [documenti ufficiali NuGet](https://docs.microsoft.com/nuget/create-packages/creating-a-package#the-role-and-structure-of-the-nuspec-file). Se si sceglie il secondo approccio, di seguito è possibile esaminare il file di esempio `csproj` e la relativa configurazione:
-
-```xml
-  <ItemGroup>
-    <Content Include="$(OutputPath)\*.runtimeconfig.json">
-      <Pack>true</Pack>
-      <PackagePath>lib\$(TargetFramework)</PackagePath>
-    </Content>
-  </ItemGroup>
-```
-
-Questo `<ItemGroup>` indica al comando `dotnet pack` di includere qualsiasi file `runtimeconfig.json` nella directory di output della compilazione (designata dalla variabile `$(OutputPath)`) e di inserirlo nella cartella `lib` per il framework di destinazione della compilazione. Il framework di destinazione della compilazione viene designato in modo analogo al percorso di output mediante la proprietà MSBuild. Dopo l'impostazione di questa proprietà, il file nupkg dello strumento risultante conterrà tutti gli elementi necessari per l'esecuzione dello strumento stesso.
+> [!NOTE]
+> Nelle versioni precedenti alla RC3 degli strumenti della riga di comando di .NET Core, il comando `dotnet pack` ha un bug a causa del quale il file `runtime.config.json` non viene incluso nel pacchetto dello strumento. La mancanza di tale file causa errori in fase di esecuzione. Se si verifica questo problema, assicurarsi di eseguire l'aggiornamento alla versione più recente degli strumenti e ritentare il comando `dotnet pack`. 
 
 Poiché gli strumenti sono applicazioni portabili, l'utente che utilizza lo strumento deve disporre della versione delle librerie .NET Core in base a cui tale strumento è stato creato. Solo in questo modo è possibile eseguire lo strumento. Qualsiasi altra dipendenza usata dallo strumento e non contenuta nelle librerie .NET Core viene ripristinata e posizionata nella cache NuGet. Di conseguenza, l'intero strumento viene eseguito usando gli assembly delle librerie .NET Core oltre agli assembly della cache NuGet. 
 
@@ -116,8 +82,7 @@ Per un determinato periodo NuGet ha consentito di includere destinazioni MSBuild
 Il file di progetto della destinazione di esempio viene riportato di seguito a scopo di riferimento. Mostra come usare la nuova sintassi `csproj` per indicare al comando `dotnet pack` gli elementi da includere per inserire i file di destinazione, nonché gli assembly, nella cartella `build` all'interno del pacchetto. Notare che l'elemento `<ItemGroup>` riportato di seguito ha la proprietà `Label` impostata su "dotnet pack instructions". 
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Description>Sample Packer</Description>
     <VersionPrefix>0.1.0-preview</VersionPrefix>
@@ -126,50 +91,31 @@ Il file di progetto della destinazione di esempio viene riportato di seguito a s
     <AssemblyName>SampleTargets.PackerTarget</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
-    <EmbeddedResource Include="**\*.resx" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
     <EmbeddedResource Include="Resources\Pkg\dist-template.xml;compiler\resources\**\*" Exclude="bin\**;obj\**;**\*.xproj;packages\**" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="build\SampleTargets.PackerTarget.targets" />
   </ItemGroup>
-  <ItemGroup Label="dotent pack instructions">
+  <ItemGroup Label="dotnet pack instructions">
     <Content Include="build\*.targets;$(OutputPath)\*.dll;$(OutputPath)\*.json">
       <Pack>true</Pack>
       <PackagePath>build\</PackagePath>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161029-1</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.DependencyModel">
-      <Version>1.0.1-beta-000933</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Build.Framework">
-      <Version>0.1.0-preview-00028-160627</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.Build.Utilities.Core">
-      <Version>0.1.0-preview-00028-160627</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>9.0.1</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
-    <PackageReference Include="NETStandard.Library">
-      <Version>1.6.0</Version>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="1.0.1-beta-000933"/>
+    <PackageReference Include="Microsoft.Build.Framework" Version="0.1.0-preview-00028-160627" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="0.1.0-preview-00028-160627" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
   <ItemGroup />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>463c66f0-921d-4d34-8bde-7c9d0bffaf7b</ProjectGuid>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
     <DefineConstants>$(DefineConstants);NETSTANDARD1_3</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
   </PropertyGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 
@@ -177,7 +123,7 @@ L'utilizzo delle destinazioni personalizzate è reso possibile dalla specifica d
 
 L'uso della destinazione personalizzata dipende esclusivamente dal modo in cui questa viene configurata. Dal momento che si tratta della normale destinazione MSBuild, può dipendere da una destinazione data, eseguita dopo un'altra destinazione, e può anche essere richiamata manualmente mediante il comando `dotnet msbuild /t:<target-name>`. 
 
-Tuttavia, se si vuole offrire agli utenti una migliore esperienza di utilizzo, è possibile combinare gli strumenti in base al progetto e destinazioni personalizzate. In questo scenario, lo strumento in base al progetto si limita ad accettare qualsiasi parametro necessario e lo traduce nella chiamata a `dotnet msbuild` richiesta che eseguirà la destinazione. È possibile visualizzare un esempio di questo tipo di sinergia nel repository degli esempi di [MVP Summit 2016 Hackathon](https://github.com/dotnet/MVPSummitHackathon2016) nel progetto [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer). 
+Tuttavia, se si vuole offrire agli utenti una migliore esperienza di utilizzo, è possibile combinare gli strumenti in base al progetto e destinazioni personalizzate. In questo scenario, lo strumento in base al progetto si limita ad accettare qualsiasi parametro necessario e lo traduce nella chiamata a `dotnet msbuild` richiesta che eseguirà la destinazione. È possibile visualizzare un esempio di questo tipo di sinergia nel repository degli [esempi di MVP Summit 2016 Hackathon](https://github.com/dotnet/MVPSummitHackathon2016) nel progetto [`dotnet-packer`](https://github.com/dotnet/MVPSummitHackathon2016/tree/master/dotnet-packer). 
 
 ### <a name="path-based-extensibility"></a>Estendibilità basata su PATH
 L'estendibilità basata sul PATH viene in genere usata per i computer di sviluppo in cui è necessario disporre di uno strumento in grado di coprire concettualmente più di un singolo progetto. Il principale svantaggio di questo meccanismo di estensione è che è vincolato al computer in cui è presente lo strumento. Se si vuole usare questo meccanismo in un altro computer, è necessario eseguire un'attività di distribuzione.
@@ -211,6 +157,6 @@ Gli strumenti dell'interfaccia della riga di comando di .NET Core offrono tre ap
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

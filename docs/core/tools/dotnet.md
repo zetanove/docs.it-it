@@ -1,22 +1,25 @@
 ---
-title: Comando dotnet | .NET Core SDK
+title: Comando dotnet | Microsoft Docs
 description: Informazioni sul comando dotnet (il driver generico per gli strumenti dell&quot;interfaccia della riga di comando di .NET Core) e sul relativo utilizzo.
 keywords: dotnet, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: 77c37ac3d4d0ba9ad1feac539debe40b0ee31161
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: a6a4bc5dad16bb1455fd8f7bc6a5c3609a06b88a
 
 ---
 
 #<a name="dotnet-command"></a>Comando dotnet
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [Comando dotnet (strumenti di .NET Core RC4)](../preview3/tools/dotnet.md).
 
 ## <a name="name"></a>Nome
 
@@ -84,7 +87,9 @@ Compilare un progetto e le relative dipendenze in una determinata directory:
 
 `dotnet build`
 
-Eseguire un'app portabile denominata `myapp.dll`: `dotnet myapp.dll`
+Eseguire un'app portabile denominata `myapp.dll`:
+
+`dotnet myapp.dll`
 
 ## <a name="environment"></a>Ambiente 
 
@@ -101,6 +106,6 @@ Specifica il percorso dell'indice di manutenzione che l'host condiviso deve usar
 Specifica se i dati relativi all'utilizzo degli strumenti .NET Core vengono raccolti e inviati a Microsoft. `true` per rifiutare esplicitamente la funzionalità di telemetria (i valori accettati sono True, 1 o Sì). In caso contrario, `false` (i valori accettati sono False, 0 o no). Se non è impostato, il valore predefinito è `false`, pertanto la funzionalità di telemetria è attiva.
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

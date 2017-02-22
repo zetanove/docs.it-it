@@ -11,15 +11,15 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: 3cb552590bf45ec73d84cc902a505b3048301b9f
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: bb64da75a2e7bc2d379bc1685b4187493792db78
 
 ---
 
 #<a name="dotnet-build"></a>dotnet-build
 
 > [!WARNING]
-> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC), vedere l'argomento [dotnet-build (strumenti dell'anteprima 4)](../preview3/tools/dotnet-build.md).
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [dotnet-build (strumenti di .NET Core RC4)](../preview3/tools/dotnet-build.md).
 
 ## <a name="name"></a>Nome 
 `dotnet-build`: consente di compilare un progetto e tutte le relative dipendenze. 
@@ -114,6 +114,6 @@ Compilare un progetto e le relative dipendenze per un runtime specifico ( in que
 `dotnet build --runtime ubuntu.16.04-x64`
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

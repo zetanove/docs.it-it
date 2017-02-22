@@ -1,26 +1,29 @@
 ---
-title: Comando dotnet-restore | .NET Core SDK
-description: Informazioni sul ripristino delle dipendenze e degli strumenti specifici per il progetto tramite il comando dotnet-restore
+title: Comando dotnet-restore | Microsoft Docs
+description: Informazioni sul ripristino delle dipendenze e degli strumenti specifici per il progetto tramite il comando dotnet-restore.
 keywords: dotnet-restore, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/07/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
+ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 6fb08a8765ad720b51e796aa0991087413d02e44
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 594956488dee39903feba44e10d6bb81801412a4
 
 ---
 
-#<a name="dotnet-restore"></a>dotnet-restore
+#<a name="dotnet-restore-net-core-tools-rc4"></a>dotnet-restore (strumenti di .NET Core RC4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [dotnet-restore](../../tools/dotnet-restore.md).
 
 ## <a name="name"></a>Nome
 
-`dotnet-restore` : ripristina le dipendenze e gli strumenti di un progetto
+`dotnet-restore`: ripristina le dipendenze e gli strumenti di un progetto.
 
 ## <a name="synopsis"></a>Riepilogo
 
@@ -84,7 +87,7 @@ Ripristinare le dipendenze e gli strumenti per il progetto nella directory corre
 
 Ripristinare le dipendenze e gli strumenti per il progetto `app1` che si trova nel percorso specificato:
 
-'dotnet restore ~/projects/app1/app1.csproj'
+`dotnet restore ~/projects/app1/app1.csproj`
     
 Ripristinare le dipendenze e gli strumenti per il progetto nella directory corrente usando il percorso di file specificato come origine di fallback:
 
@@ -100,6 +103,6 @@ Ripristinare le dipendenze e gli strumenti per il progetto nella directory corre
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

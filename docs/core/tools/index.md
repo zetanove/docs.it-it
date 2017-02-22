@@ -1,5 +1,5 @@
 ---
-title: Strumenti dell&quot;interfaccia della riga di comando di .NET Core
+title: Strumenti dell&quot;interfaccia della riga di comando di .NET Core | Microsoft Docs
 description: "Una panoramica dell&quot;interfaccia della riga di comando e delle relative funzionalità principali"
 keywords: interfaccia della riga di comando, strumenti dell&quot;interfaccia della riga di comando, .NET, .NET Core
 author: blackdwarf
@@ -11,12 +11,15 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 96b7c02493d94b3c1d5fd112ca84ed25c35c4f90
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 1d7a3d90c6ba9079fe5d36b9c9922928d6a6f137
 
 ---
 
 # <a name="net-core-command-line-interface-tools"></a>Strumenti dell'interfaccia della riga di comando di .NET Core
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [Strumenti dell'interfaccia della riga di comando di .NET Core (strumenti di .NET Core RC4)](../preview3/tools/index.md).
 
 L'interfaccia della riga di comando di .NET Core è un nuova toolchain di base multipiattaforma per lo sviluppo di applicazioni .NET Core. È una toolchain "di base" perché corrisponde al livello primario su cui possono essere costruiti gli altri strumenti di livello più alto, ad esempio gli ambienti di sviluppo integrato (IDE, Integrated Development Environment), gli editor e gli agenti di orchestrazione della compilazione. 
 
@@ -98,6 +101,6 @@ In questa breve panoramica sono state illustrate le funzionalità più important
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

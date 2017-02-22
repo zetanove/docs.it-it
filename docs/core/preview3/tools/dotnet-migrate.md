@@ -11,8 +11,8 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 0da07253-5ae1-42e9-9455-bffee9950952
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: 8d83b3f013ecdc1fbf92598a81dfe3a7a2d17054
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 57ae01419c6f7a75970816e1245094c38c5247fa
 
 ---
 
@@ -21,7 +21,7 @@ ms.openlocfilehash: 8d83b3f013ecdc1fbf92598a81dfe3a7a2d17054
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
 ## <a name="name"></a>Nome 
-dotnet-migrate: consente di eseguire la migrazione di un progetto .Net Core dall'anteprima 2 all'anteprima 4
+dotnet-migrate: consente di eseguire la migrazione di un progetto .NET Core dall'anteprima 2 alla versione RC4
 
 ## <a name="synopsis"></a>Riepilogo
 
@@ -32,7 +32,7 @@ dotnet-migrate: consente di eseguire la migrazione di un progetto .Net Core dall
     [<arguments>]`
 
 ## <a name="description"></a>Descrizione
-Il comando `dotnet migrate` eseguirà la migrazione di un progetto valido dell'anteprima 2 basato su `project.json` a un progetto `csproj` valido dell'anteprima 4. Per impostazione predefinita, il comando eseguirà la migrazione del progetto radice e dei riferimenti del progetto contenuti dal progetto radice. Questo comportamento può essere disabilitato usando l'opzione `--skip-project-references` in fase di esecuzione. 
+Il comando `dotnet migrate` eseguirà la migrazione di un progetto valido dell'anteprima 2 basato su `project.json` a un progetto `csproj` valido della versione RC4. Per impostazione predefinita, il comando eseguirà la migrazione del progetto radice e dei riferimenti del progetto contenuti dal progetto radice. Questo comportamento può essere disabilitato usando l'opzione `--skip-project-references` in fase di esecuzione. 
 
 È possibile eseguire la migrazione in uno degli scenari seguenti:
 
@@ -44,7 +44,7 @@ Il comando migrate mantiene il file `project.json` di cui è stata eseguita la m
 
 Per impostazione predefinita, l'operazione di migrazione restituirà lo stato del processo di migrazione all'output standard (STDOUT). Se si usa l'opzione `--report-file`, tale output verrà salvato anche in un file specificato. 
 
-A partire dall'anteprima 4, il comando `dotnet migrate` supporta solo file `project.json` validi dell'anteprima 2. Ciò significa che non è possibile usarlo per eseguire la migrazione di file `project.json` DNX o dell'anteprima 1 direttamente in csproj. È necessario innanzitutto eseguire la migrazione di tali file ai file project.json dell'anteprima 2 e quindi ai file csproj. In futuro, verrà aggiunto il supporto per i progetti dell'anteprima 1. 
+A partire dalla versione RC4, il comando `dotnet migrate` supporta solo file `project.json` validi dell'anteprima 2. Ciò significa che non è possibile usarlo per eseguire la migrazione di file `project.json` DNX o dell'anteprima 1 direttamente in csproj. È necessario innanzitutto eseguire la migrazione di tali file ai file project.json dell'anteprima 2 e quindi ai file csproj. In futuro, verrà aggiunto il supporto per i progetti dell'anteprima 1. 
 
 ## <a name="options"></a>Opzioni
 
@@ -95,6 +95,6 @@ Eseguire solo la migrazione del progetto corrente e non delle dipendenze da prog
 `dotnet migrate -s -v 1.0.0-preview4`
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

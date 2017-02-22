@@ -1,6 +1,6 @@
 ---
-title: Gestione delle dipendenze negli strumenti dell&quot;anteprima 4 di .NET Core | Microsoft Docs
-description: L&quot;anteprima 4 include modifiche relative alla gestione delle dipendenze
+title: Gestione delle dipendenze negli strumenti di .NET Core | Microsoft Docs
+description: Viene illustrato come gestire le dipendenze con gli strumenti di .NET Core.
 keywords: "interfaccia della riga di comando, estendibilità, comandi personalizzati, .NET Core"
 author: blackdwarf
 ms.author: mairaw
@@ -11,12 +11,12 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 74b87cdb-a244-4c13-908c-539118bfeef9
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: ad36f5ff8c1d74f1dd6b82ff620f85833d4dfb3e
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: cef45d986eb9c4a84a03ee942c29a327c23cabf3
 
 ---
 
-# <a name="managing-dependencies-in-net-core-preview-4-tooling"></a>Gestione delle dipendenze negli strumenti dell'anteprima 4 di .NET Core
+# <a name="managing-dependencies-in-net-core-rc4-tooling"></a>Gestione delle dipendenze negli strumenti di .NET Core RC4
 
 [!INCLUDE[preview-warning](../../../includes/warning.md)]
 
@@ -28,9 +28,7 @@ Questo documento descrive il nuovo tipo di riferimento. Illustra anche come aggi
 L'elemento `<PackageReference>` ha la struttura di base seguente:
 
 ```xml
-<PackageReference Include="PACKAGE_ID">
-    <Version>PACKAGE_VERSION</Version>
-</PackageReference>
+<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" />
 ```
 
 Se si ha familiarità con MSBuild, il nuovo elemento risulterà analogo agli altri tipi di riferimento già esistenti. La chiave è l'istruzione `Include` che specifica l'ID del pacchetto da aggiungere al progetto. L'elemento figlio `<Version>` specifica la versione da ottenere. Le versioni vengono specificate in base alle [regole della versione di NuGet](https://docs.microsoft.com/nuget/create-packages/dependency-versions#version-ranges).
@@ -41,9 +39,7 @@ Se si ha familiarità con MSBuild, il nuovo elemento risulterà analogo agli alt
 Per aggiungere una dipendenza disponibile solo in una destinazione specifica, usare le condizioni come nell'esempio seguente:
 
 ```xml
-<PackageReference Include="PACKAGE_ID" Condition="'$(TargetFramework)' == 'netcoreapp1.0'">
-    <Version>PACKAGE_VERSION</Version>
-</PackageReference>
+<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp1.0'" />
 ```
 
 Quanto descritto sopra indica che la dipendenza sarà valida solo se la compilazione avviene per una specifica destinazione. `$(TargetFramework)` nella condizione è una proprietà di MSBuild che viene impostata nel progetto. Per le applicazioni .NET Core più comuni, non occorre eseguire questa operazione. 
@@ -56,42 +52,22 @@ Quando si apre il file di progetto, verranno visualizzati due o più nodi `<Item
 In questo esempio verrà usato il modello predefinito eliminato da `dotnet new`. Si tratta di una semplice applicazione console. Quando si apre il progetto, è possibile visualizzare `<ItemGroup>` con `<PackageReference>` già presente. Vengono quindi aggiunti gli elementi seguenti:
 
 ```xml
-<PackageReference Include="Newtonsoft.Json">
-    <Version>9.0.1</Version>
-</PackageReference>
+<PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
 ```
 Successivamente, salvare il progetto ed eseguire il comando `dotnet restore` per installare la dipendenza. 
 
 Il progetto completo è simile al seguente:
 
 ```xml
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
-  
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.App">
-      <Version>1.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-        <Version>9.0.1</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.NET.Sdk">
-      <Version>1.0.0-alpha-20161104-2</Version>
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
-  
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
 ```
 
@@ -99,6 +75,6 @@ Il progetto completo è simile al seguente:
 La rimozione di una dipendenza dal file di progetto comporta la semplice rimozione di `<PackageReference>` dal file di progetto.
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

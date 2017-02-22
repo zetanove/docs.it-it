@@ -1,5 +1,5 @@
 ---
-title: Uso di .NET Core SDK e dei relativi strumenti in integrazione continua
+title: Uso di .NET Core SDK e dei relativi strumenti in integrazione continua | Microsoft Docs
 description: Uso di .NET Core SDK e dei relativi strumenti in integrazione continua
 keywords: .NET, .NET Core
 author: blackdwarf
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 5fb15297-a276-417f-8c4f-267281357769
+ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 0fda867f1d29caaca716ad27baf6e43146cb99df
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 95c7f0f9911c7cb37c12afec74d0e942db77fbf6
 
 ---
 
-# <a name="using-net-core-sdk-and-tools-in-continuous-integration-ci"></a>Uso di .NET Core SDK e dei relativi strumenti in integrazione continua
+# <a name="using-net-core-sdk-and-tools-in-continuous-integration-ci-net-core-tools-rc4"></a>Uso di .NET Core SDK e dei relativi strumenti in integrazione continua (strumenti di .NET Core RC4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Uso di .NET Core SDK e dei relativi strumenti in integrazione continua](../../tools/using-ci-with-cli.md).
 
 ## <a name="overview"></a>Panoramica
 Questo documento descrive l'uso di .NET Core SDK e dei relativi strumenti sul server di compilazione. Su un server di compilazione di integrazione continua è in genere opportuno automatizzare l'installazione. In teoria, l'automazione non dovrebbe richiedere privilegi amministrativi, se possibile. 
@@ -88,8 +91,6 @@ install:
 ```
 
 
-
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

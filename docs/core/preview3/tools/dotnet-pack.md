@@ -1,5 +1,5 @@
 ---
-title: Comando dotnet-pack | .NET Core SDK
+title: Comando dotnet-pack | Microsoft Docs
 description: Il comando dotnet-pack consente di creare pacchetti NuGet per il progetto .NET Core.
 keywords: dotnet-pack, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: blackdwarf
@@ -9,18 +9,21 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
+ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 5aca8db50bf80606ff94562a6014c396b0ef770e
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 8e266f9b34923b0ab69140d78a20afeca00e0b7c
 
 ---
 
-#<a name="dotnet-pack"></a>dotnet-pack
+#<a name="dotnet-pack-net-core-tools-rc4"></a>dotnet-pack (Strumenti di .NET Core RC4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [dotnet-pack](../../tools/dotnet-pack.md).
 
 ## <a name="name"></a>Nome
 
-`dotnet-pack`: comprime il codice in un pacchetto NuGet
+`dotnet-pack`: comprime il codice in un pacchetto NuGet.
 
 ## <a name="synopsis"></a>Riepilogo
 
@@ -34,7 +37,7 @@ ms.openlocfilehash: 5aca8db50bf80606ff94562a6014c396b0ef770e
 
 Il comando `dotnet pack` consente di compilare il progetto e creare pacchetti NuGet. Il risultato di questo comando è un pacchetto NuGet. Se l'opzione `--include-symbols` è presente, verrà creato un altro pacchetto contenente i simboli di debug. 
 
-Le dipendenze NuGet del progetto compresse vengono aggiunte al file NUSPEC, in modo che possano essere risolte durante l'installazione del pacchetto. I riferimenti da progetto a progetto non sono inseriti all'interno del progetto. Attualmente è necessario disporre di un pacchetto per ogni progetto se sono presenti dipendenze da progetto a progetto.
+Le dipendenze NuGet del progetto compresse vengono aggiunte al file `nuspec` in modo che possano essere risolte durante l'installazione del pacchetto. I riferimenti da progetto a progetto non sono inseriti all'interno del progetto. Attualmente è necessario disporre di un pacchetto per ogni progetto se sono presenti dipendenze da progetto a progetto.
 
 `dotnet pack` per impostazione predefinita compila innanzitutto il progetto. Per evitare questo passaggio, passare l'opzione `--no-build`. Può essere utile negli scenari di compilazione di integrazione continua (CI, Continuous Integration), in cui ad esempio si sa che il codice è stato appena compilato. 
 
@@ -58,7 +61,7 @@ Non compila il progetto prima della compressione.
 
 `--include-source`
 
-Include i file di origine nel pacchetto NuGet. I file di origine sono inclusi nella cartella `src` del pacchetto nupkg. 
+Include i file di origine nel pacchetto NuGet. I file di origine sono inclusi nella cartella `src` del pacchetto `nupkg`. 
 
 `--include-symbols`
 
@@ -95,7 +98,6 @@ Comprimere il progetto corrente e aggiornare la versione dei pacchetti risultant
 `dotnet pack --version-suffix "ci-1234"`
 
 
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

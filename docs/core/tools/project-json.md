@@ -1,22 +1,25 @@
 ---
-title: Riferimenti di project.json
+title: Informazioni di riferimento di project.json | Microsoft Docs
 description: Riferimenti di project.json
 keywords: .NET, .NET Core, project.json
 author: aL3891
 ms.author: mairaw
-ms.date: 09/30/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: ce3dbad938c01fd0f9d79cefb29884be986b8e1f
+ms.sourcegitcommit: 8fba5c76375763abf90e2e17d3bcc9d0039089f0
+ms.openlocfilehash: 2cdb43a9095217498c12c97548e4aa632b13a59c
 
 ---
 
 # <a name="projectjson-reference"></a>Riferimenti di project.json
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per la documentazione relativa agli strumenti di .NET Core versione RC4, vedere la sezione [Strumenti dell'interfaccia della riga di comando di .NET Core (strumenti di .NET Core RC4)](../preview3/tools/index.md).
 
 Il file project.json viene usato nei progetti .NET Core per definire i metadati del progetto, le informazioni di compilazione e le dipendenze. In questo argomento di riferimento verrà presentato l'elenco di tutte le proprietà che è possibile definire nel file project.json.
 
@@ -322,7 +325,7 @@ Ad esempio:
 Tipo: Object
 
 Oggetto che definisce le dipendenze dei pacchetti del progetto. Ogni chiave di questo oggetto è il nome di un pacchetto e ogni valore contiene le informazioni sulla versione.
-Per altre informazioni, vedere l'articolo [Dependency resolution](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3-x) (Risoluzione delle dipendenze) sul sito della documentazione di NuGet.
+Per altre informazioni, vedere l'articolo [Dependency resolution](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#dependency-resolution-in-nuget-3x) (Risoluzione delle dipendenze) sul sito della documentazione di NuGet.
 
 Ad esempio:
 
@@ -344,7 +347,7 @@ Ad esempio:
 ### <a name="version"></a>version
 Tipo: String
 
-Versione o intervallo di versioni della dipendenza. Usare il carattere jolly \* per specificare una [versione di dipendenza mobile](https://docs.nuget.org/ndocs/consume-packages/dependency-resolution#floating-versions).
+Versione o intervallo di versioni della dipendenza. Usare il carattere jolly \* per specificare una [versione di dipendenza mobile](https://docs.microsoft.com/nuget/consume-packages/dependency-resolution#floating-versions).
 
 Ad esempio:
 
@@ -518,7 +521,7 @@ Ad esempio:
 }
 ```
 
-Questo esempio consente di ignorare gli avvisi `The variable 'var' is assigned but its value is never used` e `The variable 'var' is assigned but its value is never used`
+Questo esempio consente di ignorare gli avvisi `The variable 'var' is declared but never used` e `The variable 'var' is assigned but its value is never used`.
 
 ### <a name="additionalarguments"></a>additionalArguments
 Tipo: String[]
@@ -1643,7 +1646,7 @@ Ad esempio:
 ## <a name="usersecretsid"></a>userSecretsId
 Tipo: String
 
-Specifica un identificatore di segreto utente da usare in fase di sviluppo. Per altre informazioni, vedere [Safe storage of app secrets during development](https://docs.asp.net/en/latest/security/app-secrets.html) (Archiviazione sicura dei segreti dell'app durante lo sviluppo).
+Specifica un identificatore di segreto utente da usare in fase di sviluppo. Per altre informazioni, vedere [Safe storage of app secrets during development](https://docs.microsoft.com/aspnet/core/security/app-secrets) (Archiviazione sicura dei segreti dell'app durante lo sviluppo).
 
 Ad esempio:
 
@@ -1655,6 +1658,6 @@ Ad esempio:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

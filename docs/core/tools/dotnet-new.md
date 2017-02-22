@@ -11,15 +11,15 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 263c3d05-3a47-46a6-8023-3ca16b488410
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: 967ef46ba7c4125bee1727f35d38798ef73689e5
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: a49fe94ca8f678c614fb7f58767693c73e34c737
 
 ---
 
 #<a name="dotnet-new"></a>dotnet-new
 
 > [!WARNING]
-> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti dell'anteprima 4 di .NET Core (Visual Studio 2017 RC), vedere l'argomento [dotnet-new (strumenti dell'anteprima 4)](../preview3/tools/dotnet-new.md).
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [dotnet-new (strumenti di .NET Core RC4)](../preview3/tools/dotnet-new.md).
 
 ## <a name="name"></a>Nome
 `dotnet-new`: consente di creare un nuovo progetto .NET Core nella directory corrente.
@@ -66,6 +66,6 @@ Creare un nuovo progetto di applicazione console ASP.NET Core C# nella directory
 `dotnet new -t web`
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
