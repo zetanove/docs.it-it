@@ -12,6 +12,7 @@ ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
 translationtype: Human Translation
 ms.sourcegitcommit: 62fdb3e60b206728d86220076867eb8fd68af82e
 ms.openlocfilehash: 77d49a1df361823c3f8f676923960d4bef2eeb08
+ms.lasthandoff: 11/16/2016
 
 ---
 
@@ -155,9 +156,4 @@ Di seguito un esempio di pacchetto dopo la riduzione delle dipendenze:
 ```
 
 A questo punto, l'impatto è ridotto rispetto a quello che avrebbe se dipendesse dal metapacchetto `NETStandard.Library`.
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 
