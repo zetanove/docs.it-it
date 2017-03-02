@@ -13,6 +13,7 @@ ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 translationtype: Human Translation
 ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
 ms.openlocfilehash: c2c0ae3711c866268c4e8c066b4213e110e771b9
+ms.lasthandoff: 02/10/2017
 
 ---
 
@@ -53,7 +54,7 @@ Per compilare un'applicazione eseguibile anziché una raccolta, è necessario im
 
 `-h|--help`
 
-Stampa una breve guida per il comando.  
+Stampa una breve guida per il comando.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -69,11 +70,11 @@ Definisce una configurazione in cui eseguire la compilazione.  Se omessa, il val
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
 
-Runtime di destinazione per cui eseguire la compilazione. Per un elenco degli identificatori di runtime (RID, Runtime Identifier) che è possibile usare, vedere il [catalogo RID](../../rid-catalog.md). 
+Runtime di destinazione per cui eseguire la compilazione. Per un elenco degli identificatori di runtime (RID, Runtime Identifier) che è possibile usare, vedere il [catalogo RID](../../rid-catalog.md).
 
 `--version-suffix [VERSION_SUFFIX]`
 
-Definisce l'elemento che deve sostituire `*` nel campo relativo alla versione del file di progetto. Il formato rispetta le linee guida della versione NuGet. 
+Definisce l'elemento che deve sostituire `*` nel campo relativo alla versione del file di progetto. Il formato rispetta le linee guida della versione NuGet.
 
 `--build-profile`
 
@@ -100,9 +101,4 @@ Compilare un progetto e le relative dipendenze usando la configurazione per il r
 Compilare un progetto e le relative dipendenze per un runtime specifico ( in questo esempio, Ubuntu 16.04):
 
 `dotnet build --runtime ubuntu.16.04-x64`
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
