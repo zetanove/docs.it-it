@@ -11,8 +11,9 @@ ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: 1f3b9a68-4dea-4b60-8cb3-f46164eedbbf
 translationtype: Human Translation
-ms.sourcegitcommit: 03193513706967a46f74bccdba08a56946dd67df
-ms.openlocfilehash: 274402bbd254e97d88771675daf07995983914aa
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: d3ea05484650d64284affa70c7377df929e44bfc
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -123,9 +124,4 @@ microsoft/aspnetcore       1.0.1               189ad4312ce7        5 days ago   
 ```
 
 È possibile aspettarsi che l'immagine di produzione o della versione abbia dimensioni minori rispetto all'immagine **dev**. Tuttavia, grazie all'uso del mapping dei volumi, il debugger e l'applicazione sono stati eseguiti nel computer locale e non nel contenitore. L'immagine con il tag **latest** integra l'intero codice dell'applicazione necessario per eseguire l'applicazione stessa in un computer host. La differenza corrisponde pertanto alle dimensioni del codice dell'applicazione.
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

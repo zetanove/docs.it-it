@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 9b184114-6612-4c1a-a2db-2e24e65b0f77
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: bb62bdd03d4af4f764ac3bc8734c67902fffa798
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: fdea0fe76b1c5f1e9ae23582219c847fe80b317f
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -244,9 +245,4 @@ In questo esempio il metodo che implementa [ICustomFormatter](xref:System.ICusto
 ## <a name="see-also"></a>Vedere anche
 
 [Esecuzione di operazioni di formattazione](performing-formatting-operations.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

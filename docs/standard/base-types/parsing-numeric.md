@@ -4,16 +4,16 @@ description: Analisi di stringhe numeriche in .NET
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e393430a-731a-49fa-83de-ff7ed52d5704
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 65475fd2b42b832de8d65b0a2aa6d4ceb81d4487
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 85cd57d33b03f7a2105ee3f770b2f8bcc0a57ee4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -325,10 +325,5 @@ End Module
 [Analisi di stringhe in .NET](parsing-strings.md)
 
 [Formattazione di tipi in .NET](formatting-types.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

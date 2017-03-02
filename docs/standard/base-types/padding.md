@@ -3,16 +3,17 @@ title: Aggiunta di spaziatura interna alle stringhe
 description: Aggiunta di spaziatura interna alle stringhe
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1c8b3b44-d370-49e1-90b5-64ac81c02ae91c8b3b44-d370-49e1-90b5-64ac81c02ae9
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 73452c1f432fb8cb50a36e739fb91962693f8e51
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: bc3cc9028b232cc2ba6ca3130c4bdb261c4a0a42
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -60,10 +61,5 @@ Console.WriteLine(MyString.PadRight(20, "-"c))
 ## <a name="see-also"></a>Vedere anche
 
 [Operazioni di base su stringhe](basic-string-operations.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

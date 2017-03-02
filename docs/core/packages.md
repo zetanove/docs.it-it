@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
 translationtype: Human Translation
-ms.sourcegitcommit: cb2e83b35b5a4aae14c89bcbdf26b064885a477a
-ms.openlocfilehash: 6b5bb7042fdaa453966a4fc576291b3c90ee5410
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 2396b2794e88673afc1973b5bdd1e82c28fe5a13
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -114,8 +115,8 @@ I pacchetti .NET Core supportano ciascuno un set di framework, dichiarati con ca
 
 Ad esempio, [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem) supporta i framework seguenti:
 
-- .NETFramework, versione 4.6
-- .NETStandard,versione 1.3
+- .NETFramework, versione&4;.6
+- .NETStandard,versione&1;.3
 - 6 piattaforme Xamarin, ad esempio xamarinios10
 
 È utile confrontare i primi due di questi framework, in quanto sono esempi dei due diversi modi di definire i framework.
@@ -145,7 +146,7 @@ I due principali framework basati su pacchetti usati con .NET Core sono i seguen
 
 Il framework .NET Standard (`netstandard`) rappresenta le API definite e compilate nella [libreria .NET Standard](../standard/library.md). Le librerie da eseguire su più runtime devono avere come destinazione questo framework. Tali librerie verranno supportate su qualsiasi runtime compatibile con .NET Standard, ad esempio .NET Core, .NET Framework e Mono/Xamarin. Ciascuno di questi runtime supporta un set di versioni di .NET Standard, a seconda delle API implementate. 
 
-Il metapacchetto `NETStandard.Library` ha come destinazione il framework `netstandard`. Il modo più comune per definire `netstandard` come destinazione consiste nel fare riferimento a questo metapacchetto. Questo metapacchetto descrive e fornisce l'accesso alle circa 40 librerie .NET e alle API associate che definiscono la libreria .NET Standard. È possibile fare riferimento a pacchetti aggiuntivi che hanno `netstandard` come destinazione per ottenere accesso ad altre API.
+Il metapacchetto `NETStandard.Library` ha come destinazione il framework `netstandard`. Il modo più comune per definire `netstandard` come destinazione consiste nel fare riferimento a questo metapacchetto. Questo metapacchetto descrive e fornisce l'accesso alle circa&40; librerie .NET e alle API associate che definiscono la libreria .NET Standard. È possibile fare riferimento a pacchetti aggiuntivi che hanno `netstandard` come destinazione per ottenere accesso ad altre API.
 
 Una determinata versione della [NETStandard.Library](versions/index.md) corrisponde alla più recente versione di `netstandard` esposta (tramite la relativa chiusura). Il riferimento al framework nel file project.json viene usato per selezionare le risorse corrette dai pacchetti sottostanti. In questo caso, sono necessarie le risorse `netstandard1.6` e non, ad esempio, le risorse `netstandard1.4` o `net46`. 
 
@@ -175,17 +176,12 @@ I riferimenti al framework e al metapacchetto nel file project.json non devono n
 
 Può sembrare strano definire come destinazione `netstandard1.3` ma usare la versione 1.6.0 della `NETStandard.Library`. Si tratta di un caso di uso valido, dal momento che il metapacchetto mantiene il supporto per le precedenti versioni di `netstandard`. Può trattarsi di una situazione in cui è stata definita come standard la versione 1.6.0 del pacchetto e tale versione è stata usata per tutte le librerie, che hanno come destinazione un'ampia gamma di versioni di `netstandard`. Con questo approccio, è sufficiente ripristinare `NETStandard.Library` 1.6.0 e non le versioni precedenti. 
 
-La situazione opposta, ovvero la definizione di `netstandard1.6` come destinazione con la versione 1.3.0 della `NETStandard.Library`, non è valida. Non è possibile definire come destinazione la versione più recente di un framework con una versione precedente di un metapacchetto. La versione precedente del metapacchetto, infatti, non espone alcuna risorsa per la versione più recente del framework. Lo [schema di versionamento] per i metapacchetti impone che questi ultimi corrispondano alla versione più recente del framework che descrivono. In base a questo schema di versionamento, la prima versione della `NETStandard.Library` è la 1.6.0, dato che contiene le risorse `netstandard1.6`. La versione 1.3.0 viene usata nell'esempio precedente per simmetria, ma di fatto non esiste.
+La situazione opposta, ovvero la definizione di `netstandard1.6` come destinazione con la versione 1.3.0 della `NETStandard.Library`, non è valida. Non è possibile definire come destinazione la versione più recente di un framework con una versione precedente di un metapacchetto. La versione precedente del metapacchetto, infatti, non espone alcuna risorsa per la versione più recente del framework. Lo [schema di versionamento] per i metapacchetti impone che questi ultimi corrispondano alla versione più recente del framework che descrivono. In base a questo schema di versionamento, la prima versione della `NETStandard.Library` è la&1;.6.0, dato che contiene le risorse `netstandard1.6`. La versione&1;.3.0 viene usata nell'esempio precedente per simmetria, ma di fatto non esiste.
 
 ### <a name="net-core-application"></a>Applicazione .NET Core
 
 Il framework .NET Core Application (`netcoreapp`) rappresenta i pacchetti e le API associate forniti con la distribuzione .NET Core e con il relativo modello di applicazione console offerto. Le app .NET Core devono usare questo framework poiché hanno come destinazione il modello dell'applicazione console. Devono usare questo framework anche le librerie da eseguire solo in .NET Core. L'uso di questo framework impone che le app e le librerie vengano eseguite solo in .NET Core. 
 
-Il metapacchetto `Microsoft.NETCore.App` ha come destinazione il framework `netcoreapp`. Consente l'accesso a circa 60 librerie, circa 40 fornite dal pacchetto `NETStandard.Library` e le rimanenti 20 in aggiunta. È possibile fare riferimento a librerie aggiuntive che hanno come destinazione `netcoreapp` o framework compatibili, ad esempio `netstandard`, per ottenere l'accesso ad altre API. 
+Il metapacchetto `Microsoft.NETCore.App` ha come destinazione il framework `netcoreapp`. Consente l'accesso a circa&60; librerie, circa&40; fornite dal pacchetto `NETStandard.Library` e le rimanenti&20; in aggiunta. È possibile fare riferimento a librerie aggiuntive che hanno come destinazione `netcoreapp` o framework compatibili, ad esempio `netstandard`, per ottenere l'accesso ad altre API. 
 
 Anche la maggior parte delle librerie fornite da `Microsoft.NETCore.App` ha come destinazione `netstandard`, dato che le relative dipendenze sono soddisfatte da altre librerie `netstandard`. Questo significa che anche le librerie `netstandard` possono fare riferimento a tali pacchetti come dipendenze. 
-
-
-<!--HONumber=Nov16_HO3-->
-
-

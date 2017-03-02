@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
 translationtype: Human Translation
-ms.sourcegitcommit: bb15293c569fa92f1acf6315c5fe7f2cd9cb6f68
-ms.openlocfilehash: 1f4f580a8287f371ff5cdc37b78e73b7329dca02
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 636c86fed9952542a256c075eb9e388b70cff174
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -109,7 +110,7 @@ Una nuova versione di .NET Core può implicare quanto segue:
 
 ### <a name="shipping-a-patch-release"></a>Rilascio di una versione patch
 
-Dopo il rilascio di una versione .NET Core 1.0.0 stabile, alle librerie .NET Core vengono apportate modifiche a livello di patch (senza l'aggiunta di nuove API) per correggere i bug e migliorare le prestazioni e l'affidabilità. I diversi metapacchetti vengono aggiornati in modo che facciano riferimento ai pacchetti della libreria .NET Core aggiornati. Le versioni dei metapacchetti vengono definite come aggiornamenti patch (x.y.z). I framework non vengono aggiornati. Viene rilasciata una nuova distribuzione di .NET Core con un numero di versione corrispondente al metapacchetto `Microsoft.NETCore.App`.
+Dopo il rilascio di una versione .NET Core&1;.0.0 stabile, alle librerie .NET Core vengono apportate modifiche a livello di patch (senza l'aggiunta di nuove API) per correggere i bug e migliorare le prestazioni e l'affidabilità. I diversi metapacchetti vengono aggiornati in modo che facciano riferimento ai pacchetti della libreria .NET Core aggiornati. Le versioni dei metapacchetti vengono definite come aggiornamenti patch (x.y.z). I framework non vengono aggiornati. Viene rilasciata una nuova distribuzione di .NET Core con un numero di versione corrispondente al metapacchetto `Microsoft.NETCore.App`.
 
 Gli esempi di file project.json riportati di seguito mostrano gli aggiornamenti della versione patch.
 
@@ -126,7 +127,7 @@ Gli esempi di file project.json riportati di seguito mostrano gli aggiornamenti 
 
 ### <a name="shipping-a-minor-release"></a>Rilascio di una versione secondaria
 
-Dopo il rilascio di una versione .NET Core 1.0.0 stabile, alle librerie .NET Core vengono aggiunte nuove API per abilitare nuovi scenari. I diversi metapacchetti vengono aggiornati in modo che facciano riferimento ai pacchetti della libreria .NET Core aggiornati. Le versioni dei metapacchetti vengono definite come aggiornamenti patch (x.y), in modo che corrispondano alla versione più recente del framework. I diversi framework vengono aggiornati per descrivere le nuove API. Viene rilasciata una nuova distribuzione di .NET Core con un numero di versione corrispondente al metapacchetto `Microsoft.NETCore.App`.
+Dopo il rilascio di una versione .NET Core&1;.0.0 stabile, alle librerie .NET Core vengono aggiunte nuove API per abilitare nuovi scenari. I diversi metapacchetti vengono aggiornati in modo che facciano riferimento ai pacchetti della libreria .NET Core aggiornati. Le versioni dei metapacchetti vengono definite come aggiornamenti patch (x.y), in modo che corrispondano alla versione più recente del framework. I diversi framework vengono aggiornati per descrivere le nuove API. Viene rilasciata una nuova distribuzione di .NET Core con un numero di versione corrispondente al metapacchetto `Microsoft.NETCore.App`.
 
 Gli esempi di file project.json riportati di seguito mostrano gli aggiornamenti della versione secondaria.
 
@@ -143,7 +144,7 @@ Gli esempi di file project.json riportati di seguito mostrano gli aggiornamenti 
 
 ### <a name="shipping-a-major-release"></a>Rilascio di una versione principale
 
-Data una versione .NET Core 1.0.0 stabile, alle librerie .NET Core vengono aggiunte nuove API per abilitare nuovi scenari per tale versione principale. È possibile che venga eliminato il supporto per una piattaforma. I diversi metapacchetti vengono aggiornati in modo che facciano riferimento ai pacchetti della libreria .NET Core aggiornati. Le versioni dei metapacchetti `Microsoft.NETCore.App` e del framework `netcore` vengono definite come aggiornamento principale (x.). È possibile che le versioni del metapacchetto `NETStandard.Library` vengano definite come aggiornamento secondario (x.y) perché tale metapacchetto si applica a più implementazioni .NET. Verrà rilasciata una nuova distribuzione .NET Core con un numero di versione corrispondente al metapacchetto `Microsoft.NETCore.App`.
+Data una versione .NET Core&1;.0.0 stabile, alle librerie .NET Core vengono aggiunte nuove API per abilitare nuovi scenari per tale versione principale. È possibile che venga eliminato il supporto per una piattaforma. I diversi metapacchetti vengono aggiornati in modo che facciano riferimento ai pacchetti della libreria .NET Core aggiornati. Le versioni dei metapacchetti `Microsoft.NETCore.App` e del framework `netcore` vengono definite come aggiornamento principale (x.). È possibile che le versioni del metapacchetto `NETStandard.Library` vengano definite come aggiornamento secondario (x.y) perché tale metapacchetto si applica a più implementazioni .NET. Verrà rilasciata una nuova distribuzione .NET Core con un numero di versione corrispondente al metapacchetto `Microsoft.NETCore.App`.
 
 Il riferimento al metapacchetto project.json riportato nell'esempio seguente mostra gli aggiornamenti della versione principale.
 
@@ -157,9 +158,4 @@ Il riferimento al metapacchetto project.json riportato nell'esempio seguente mos
   }
 }
 ```
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

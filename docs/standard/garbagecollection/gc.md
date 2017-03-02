@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d095b0b6-2454-4e23-80b4-c9e8a447116c
 translationtype: Human Translation
-ms.sourcegitcommit: b022f5b9e8ac81c00a6e5aa189feab4e7157dfd4
-ms.openlocfilehash: 0734347048742657b8e33a1fffae15448ecad4f3
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 36423ac3248b14a9bb95611d5997d06b927fa88e
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -55,10 +56,5 @@ Le attività di gestione della memoria necessarie vengono effettuate dal Garbage
 [System.GC](xref:System.GC)
 
 [Garbage Collection in .NET](index.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

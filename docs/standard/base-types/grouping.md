@@ -4,16 +4,16 @@ description: Costrutti di raggruppamento nelle espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e0bf3718-e64b-460b-b73d-66678cec6093
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: d27c8c68ea49f150fa0ae5c5c8b437c8c42c9c90
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 05fcdadee5d932a53941386f97971c24cc912fd8
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -613,7 +613,7 @@ Next
 '    'decidedly ' found at index 9. 
 ```
 
-## <a name="zerowidth-positive-lookahead-assertions"></a>Asserzioni lookahead positive di larghezza zero
+## <a name="zero-width-positive-lookahead-assertions"></a>Asserzioni lookahead positive di larghezza zero
 
 Il costrutto di raggruppamento seguente definisce un'asserzione lookbehind positiva di larghezza zero:
 
@@ -692,7 +692,7 @@ Criterio | Descrizione
 `\w+` | Trova la corrispondenza di uno o più caratteri alfanumerici.
 `(?=\sis\b)` | Determina se i caratteri alfanumerici vengono seguiti da uno spazio vuoto e dalla stringa "is", che termina su un confine di parola. In tal caso, la corrispondenza ha esito positivo.
 
-## <a name="zerowidth-negative-lookahead-assertions"></a>Asserzioni lookahead negative di larghezza zero
+## <a name="zero-width-negative-lookahead-assertions"></a>Asserzioni lookahead negative di larghezza zero
 
 Nel costrutto di raggruppamento seguente viene definita un'asserzione lookahead negativa di larghezza zero:
 
@@ -806,7 +806,7 @@ Criterio | Descrizione
 `\b` | Termina la corrispondenza sul confine di parola.
 `\p{P})` | Se il carattere successivo non è un simbolo di punteggiatura (quale un punto o una virgola), la corrispondenza ha esito positivo.
  
-## <a name="zerowidth-positive-lookbehind-assertions"></a>Asserzioni lookbehind positive di larghezza zero
+## <a name="zero-width-positive-lookbehind-assertions"></a>Asserzioni lookbehind positive di larghezza zero
 
 Nel costrutto di raggruppamento seguente viene definita un'asserzione lookbehind positiva di larghezza zero:
 
@@ -866,7 +866,7 @@ Criterio | Descrizione
  
 Le asserzioni lookbehind positive di larghezza zero vengono usate anche per limitare il backtracking quando l'ultimo carattere o gli ultimi caratteri in un gruppo acquisito devono essere costituiti da un subset di caratteri corrispondenti al criterio di ricerca di espressioni regolari di tale gruppo. Se, ad esempio, un gruppo acquisisce tutti i caratteri alfanumerici consecutivi, è possibile usare un'asserzione positiva lookbehind di larghezza zero per richiedere che l'ultimo carattere sia un carattere alfabetico. 
 
-## <a name="zerowidth-negative-lookbehind-assertions"></a>Asserzioni lookbehind negative di larghezza zero
+## <a name="zero-width-negative-lookbehind-assertions"></a>Asserzioni lookbehind negative di larghezza zero
 
 Nel costrutto di raggruppamento seguente viene definita un'asserzione lookbehind negativa di larghezza zero:
 
@@ -1161,9 +1161,4 @@ Il primo gruppo di acquisizione trova la corrispondenza per ogni parola della fr
 [Linguaggio di espressioni regolari - Riferimento rapido](quick-ref.md)
 
 [Backtracking nelle espressioni regolari](backtracking.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

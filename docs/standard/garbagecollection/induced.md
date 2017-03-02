@@ -3,16 +3,17 @@ title: Raccolte indotte
 description: Raccolte indotte
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3e09b9dd-a800-4e56-b468-619f910ae22e
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: a10822518f0687dc7bbb06dd0fb77f6d9a3196fb
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: e120ba44f16b7e4c697d94d270b2ddcc9ae83c48
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -46,9 +47,4 @@ Valore GCCollectionMode | Descrizione
 [Modalità di latenza](latency.md)
 
 [Garbage Collection in .NET](index.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

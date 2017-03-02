@@ -11,8 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 9f6e8679-bd7e-4317-b3f9-7255a260d9cf
 translationtype: Human Translation
-ms.sourcegitcommit: 0882a5ca2f7814e2fd168dce40705d11b199f102
-ms.openlocfilehash: de44f103bef6006dd1a952c48c1e172f6277a95b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 7f419e1fc2c9f442b08e19ede4e84f9cf6843a94
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -576,9 +577,4 @@ $ dotnet test
 ```
 
 L'operazione è ora completata.
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

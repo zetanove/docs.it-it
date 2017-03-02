@@ -3,16 +3,17 @@ title: Esecuzione di operazioni aritmetiche con date e ore
 description: Esecuzione di operazioni aritmetiche con date e ore
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 589ac5ec-8365-4a0d-bc38-72183718110c
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 64fbb3b25d5959ac1dd781d2076775560d926e1a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b872cc4c2b799ddafc9df263795d860754d1ec17
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -315,10 +316,5 @@ End Module
 
 [Procedura: Usare fusi orari nell'aritmetica di data e ora](use-time-zones-in-arithmetic.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

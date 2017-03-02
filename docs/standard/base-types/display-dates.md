@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 93f06e1d-544b-4ccc-a0b2-95cd674852cb
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 85c9d450be48c553ea3a1f1a0f16c298941fa325
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 69a33b3e162c07a1d8a065a150c6db96f04334f6
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -331,9 +332,4 @@ Indipendentemente dal calendario usato per creare un valore [DateTime](xref:Syst
 ## <a name="see-also"></a>Vedere anche
 
 [Esecuzione di operazioni di formattazione](performing-formatting-operations.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3a6ee323-f3cf-486d-aa0c-103931f1eba9
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: e7f07a1f86ca31a24e25d98de2f8918ff098db24
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: e61017e2a0e26295c3be7e8265674b1a5d2ae5a3
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -41,8 +42,3 @@ L'identificatore del fuso orario è un campo chiave che identifica in modo univo
 [Procedura: Enumerare i fusi orari presenti in un computer](enumerate-time-zones.md)
 
 [Conversione degli orari tra fusi orari](converting-between-time-zones.md)
-
-
-<!--HONumber=Nov16_HO3-->
-
-

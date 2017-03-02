@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 96dff1be-3005-4ba5-af1b-323182a26085
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: ef2a63115f1efbe2418c348a3379fe7dd2face86
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 53345ba6ffda09a21cf4c626124797a3818aa504
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -187,7 +188,7 @@ Criterio | Descrizione
 `(\w+\s\w+)` | Trova uno o più caratteri alfanumerici seguiti da uno spazio, seguito da uno o più caratteri alfanumerici. Questo è il quarto gruppo di acquisizione.
 `,` | Trova la corrispondenza con una virgola.
 `\s\d{4}` | Trova uno spazio seguito da quattro cifre decimali.
-`(-(\d{4}`&#124;`present))?` |  Trova nessuna o una occorrenza di un trattino seguita da quattro cifre decimali o dalla stringa "present". Equivale al sesto gruppo di acquisizione. Include anche un settimo gruppo di acquisizione. 
+`(-(\d{4}`&#124;`present))?` |    Trova nessuna o una occorrenza di un trattino seguita da quattro cifre decimali o dalla stringa "present". Equivale al sesto gruppo di acquisizione. Include anche un settimo gruppo di acquisizione. 
 `,?` | Trova nessuna o una occorrenza di una virgola.
 `(\s\d{4}(-(\d{4}`&#124;`present))?,?)+` | Trova una o più occorrenze di: uno spazio, quattro cifre decimali, nessuna o una occorrenza di un trattino seguita da quattro cifre decimali oppure la stringa "present" e nessuna o una virgola. Equivale al quinto gruppo di acquisizione.
  
@@ -894,9 +895,4 @@ Criterio | Descrizione
 
 [Opzioni di espressioni regolari](options.md)
  
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

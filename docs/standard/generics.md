@@ -3,16 +3,17 @@ title: Panoramica di tipi generici (generics)
 description: Panoramica di tipi generici (generics)
 keywords: .NET, .NET Core
 author: kuhlenh
-manager: wpickett
+ms.author: wiwagn
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a315b111-8e48-446c-ab19-acb6405894a7
 translationtype: Human Translation
-ms.sourcegitcommit: 5b1a76c011b95db3ff5c4b4e01556f79c45fb369
-ms.openlocfilehash: 5dcb9d10aeded8c5e8956c4b99ba9675311a787a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 9827f9f37ce198b23bfd4e5fbca41cd86d5885a4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -75,9 +76,4 @@ Se il runtime riconosce il tipo generico, offre una migliore esperienza di debug
 
 *   [Introduzione ai generics per C#](https://msdn.microsoft.com/library/ms379564.aspx)
 *   [Generics (Guida per programmatori C#)](https://msdn.microsoft.com/library/512aeb7t.aspx)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

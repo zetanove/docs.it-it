@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c7b7c005-628d-427a-91ad-af0c3958c00e
 translationtype: Human Translation
-ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: bad7fd4e9cda1976a31f287d7c95d81d113a30fa
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 6826c0c2e86d0a1add1f88b001c13143ee098634
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -200,9 +201,4 @@ public class Example
 [IComparable](https://docs.microsoft.com/dotnet/core/api/System.IComparable)
 
 [IComparable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.IComparable-1)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

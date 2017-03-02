@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 646c5afd-8aec-4393-9c00-f68ad2580c68
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: f67c726b38657790deebb623dc44cb528fe404bc
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 023f40969095627242d3652add853eb999c30c4b
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -73,9 +74,4 @@ Console.WriteLine(MyString.ToLower())
 ## <a name="see-also"></a>Vedere anche
 
 [Operazioni di base su stringhe](basic-string-operations.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

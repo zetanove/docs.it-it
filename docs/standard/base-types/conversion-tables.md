@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d602f260-e7cf-49c8-a37f-731f40e4a538
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 16f38150f26b477de5685d2d3b0ef18afb94c236
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a27f78bc3c0753a7c5bc752bb6391839bfc21e75
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -72,10 +73,5 @@ Tipo | Conversione in
 [System.Convert](xref:System.Convert)
 
 [Conversione di tipi](type-conversion.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

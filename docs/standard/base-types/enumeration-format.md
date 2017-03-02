@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 4d581898-99bc-42c3-816c-d8238f45096f
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 9f5b60a75bf4b92b88d249be2f95f312ddb6909c
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 804884f75eb30764c0b8aaf2c8cd115029811157
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -157,10 +158,5 @@ Console.WriteLine("The value of myColor is 0x{0}.", _
 ## <a name="see-also"></a>Vedere anche
 
 [Formattazione di tipi](formatting-types.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

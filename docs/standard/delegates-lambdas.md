@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
 translationtype: Human Translation
-ms.sourcegitcommit: 9cf6022fc910bc5418c03c0fa81d9432d85be3b0
-ms.openlocfilehash: 7e9bb11db4b3586639a0447737db9cd376898325
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 1dbe9c72999c14e45910310eb0bbc91ebe9f1e4a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -160,9 +161,4 @@ public MainWindow()
 *   [Delegati](https://msdn.microsoft.com/library/ms173171.aspx)
 *   [Funzioni anonime](https://msdn.microsoft.com/library/bb882516.aspx)
 *   [Espressioni lambda](https://msdn.microsoft.com/library/bb397687.aspx)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

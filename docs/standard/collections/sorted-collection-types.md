@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bdc9c13e-e56a-433b-a293-c92364f6e9cb
 translationtype: Human Translation
-ms.sourcegitcommit: 149086110d7470d97e1ab3e5969269626290b523
-ms.openlocfilehash: 4359ec4c55921497f32d5891ea337a30867e4fa5
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 28d5024f759b3a7474aef1fa344d39f9933b6322
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -56,9 +57,4 @@ Nella tabella seguente sono elencate alcune delle differenze tra le due classi S
 [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2)  
  
 [Tipi di raccolte usate comunemente](commonly-used-collection-types.md) 
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

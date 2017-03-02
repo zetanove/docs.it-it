@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: d1a640cf-09ca-48f7-800c-a627a6d549c9
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 1fc1edd64c330fe579f389750432665ed982976e
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: ac26821819b22aa3ea47e6945bb5c8575dcd9807
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -309,10 +310,5 @@ Titolo | Descrizione
 [System.Text.RegularExpressions](xref:System.Text.RegularExpressions)
 
 [System.Text.RegularExpressions.Regex](xref:System.Text.RegularExpressions.Regex)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

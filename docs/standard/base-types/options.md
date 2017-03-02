@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2db2c3e6-953e-4913-8168-d707c437f2df
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: a2a9fe356a0b2e9cf9415714bc01b77ea86229fc
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: af32095fa5f11ec7eba5924c969fbd6ab179cbd4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -1662,10 +1663,5 @@ Thread.CurrentThread.CurrentCulture = defaultCulture
 ## <a name="see-also"></a>Vedere anche
 
 [Linguaggio di espressioni regolari - Riferimento rapido](quick-ref.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

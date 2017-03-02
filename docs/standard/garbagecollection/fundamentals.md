@@ -4,16 +4,16 @@ description: Principi fondamentali di Garbage Collection
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 08/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 9d5fce64-95a4-4609-8eee-b0ac70078cdb
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 53c3afbe0492d010f7864bb42e7b83836c10aa4a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 02b0311559071147b38182076f60918b7351cc63
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -171,9 +171,4 @@ Quando viene individuato un oggetto finalizzabile inutilizzato, il relativo fina
 ## <a name="see-also"></a>Vedere anche
 
 [Garbage Collection in .NET](gc.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

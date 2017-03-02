@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a1a867de-53c2-49ca-9a1a-e5770a942724
 translationtype: Human Translation
-ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: 64a01b5e21e012dfaae07a02f5fb27932be9cf98
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 8a770fb7143a547031daf231d1a0863322c3cfaa
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -130,10 +131,5 @@ Per gli scenari in cui un Consumer deve rimuovere elementi da più raccolte cont
 [Raccolte e strutture di dati](../index.md)
 
 [Raccolte thread-safe](index.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

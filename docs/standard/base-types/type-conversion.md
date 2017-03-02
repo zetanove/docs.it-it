@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c9a53222-89cb-47e5-983d-4f0f204e31ba
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 9f3f0dc381f8892dfb24d027ccc1f46a9b89135a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 0a774a170b7703b900c2044708b07faeb4e51548
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -1225,8 +1226,3 @@ Per altre informazioni sull'uso di convertitori di tipi per l'esecuzione di conv
 [IConvertible](xref:System.IConvertible)
 
 [Tabelle di conversione dei tipi](conversion-tables.md)
-
-
-<!--HONumber=Nov16_HO3-->
-
-

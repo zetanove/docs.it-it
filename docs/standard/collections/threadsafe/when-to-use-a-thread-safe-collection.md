@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a2a42d44-f6a5-4f16-9000-026221d66349
 translationtype: Human Translation
-ms.sourcegitcommit: e07788926a995b41571be276379ad9285747951d
-ms.openlocfilehash: 05f692a1a58c0c653e14993cafd61a0711ebf9f8
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b0b88a85cb4048849464381656a30e8c8ea694d8
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -71,9 +72,4 @@ Quando è necessaria la semantica di delimitazione e blocco, è probabile che l'
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [Raccolte thread-safe](index.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

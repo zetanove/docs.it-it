@@ -3,16 +3,17 @@ title: "Procedura: Aggiungere funzionalità di delimitazione e blocco a una racc
 description: "Procedura: Aggiungere funzionalità di delimitazione e blocco a una raccolta"
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 678d5df2-af63-418f-8b2a-e0be7ea2d77b
 translationtype: Human Translation
-ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: 63a59dbcc323f392e3bf2991b1439aa062382623
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b7b2d679683570ff7113f9100dae7c65c79bd674
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -288,9 +289,4 @@ Per impostazione predefinita, l'archiviazione per un oggetto [BlockingCollection
 [Raccolte thread-safe](index.md)
 
 [Panoramica di BlockingCollection](blockingcollection-overview.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

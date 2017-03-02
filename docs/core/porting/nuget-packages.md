@@ -8,8 +8,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 4d823e71-19ac-4419-953e-b47aa58f5538
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 3726a5f833bb2fae18a918072c85316984d0d467
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 3f409ddcdba5ca87e255c7715fa391548790cf93
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -25,8 +26,3 @@ ms.openlocfilehash: 3726a5f833bb2fae18a918072c85316984d0d467
 >
         
   
-
-
-<!--HONumber=Nov16_HO3-->
-
-

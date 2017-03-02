@@ -1,18 +1,19 @@
 ---
-title: 'Procedura: Creare un''istanza di un oggetto TimeZoneInfo'
+title: 'Procedura: Creare un&quot;istanza di un oggetto TimeZoneInfo'
 description: Come creare un&quot;istanza di un oggetto TimeZoneInfo
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bff137e5-d550-44c3-b460-b3f2dabd4035
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 5af479c40bb5db3213f45c0472dbdea99bbd5c21
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: f2584d446c92d2df2f6d74533ef07fe96888d36a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -109,8 +110,3 @@ Se il fuso orario viene trovato, il metodo restituisce l'oggetto [TimeZoneInfo](
 [Date, ore e fusi orari](index.md)
 
 [Ricerca dei fusi orari definiti in un sistema locale](finding-the-time-zones-on-local-system.md)
-
-
-<!--HONumber=Nov16_HO1-->
-
-
