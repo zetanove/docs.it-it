@@ -3,16 +3,17 @@ title: Uso dei tipi di base
 description: Uso dei tipi di base
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e53e414f-e0b6-4076-a6ab-189ba93e23cd
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: a9801663b3be2d07c767bc263936212d985e370e
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 2be90e0a3e6627152532ff607768dbbb333045d7
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -31,9 +32,4 @@ Questa sezione descrive le operazioni sui tipi di base .NET, tra cui la formatta
 [Analisi di stringhe](parsing-strings.md): descrive come eseguire la conversione di stringhe in tipi.
 
 [Common Type System](common-type-system.md): descrive i tipi usati in .NET.
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

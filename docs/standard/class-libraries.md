@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
 translationtype: Human Translation
-ms.sourcegitcommit: 62fdb3e60b206728d86220076867eb8fd68af82e
-ms.openlocfilehash: eee8fcaff41db5821e4b6aa61875d6a4bcd80b10
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 028fd4961c97e31ea9f213b832c723b2ce2cf27c
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -61,9 +62,4 @@ Le piattaforme seguenti supportano le librerie di classi .NET Core:
 ### <a name="mono-class-libraries"></a>Librerie di classi Mono
 
 Mono supporta le librerie di classi, inclusi i tre tipi di libreria descritti in precedenza. A ragione, Mono è stato spesso considerato un'implementazione multipiattaforma di Microsoft .NET Framework. In parte perché le librerie .NET Framework specifiche della piattaforma potevano essere eseguite in fase di esecuzione Mono senza modifiche o ricompilazione. Questa caratteristica esisteva prima che fossero create le librerie di classi portabili. Tali librerie risultano quindi una scelta obbligata per consentire la portabilità binaria tra .NET Framework e Mono, nonostante funzionasse solo in una direzione.
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 
