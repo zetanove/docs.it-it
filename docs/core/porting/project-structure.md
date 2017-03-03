@@ -3,16 +3,16 @@ title: Organizzazione del progetto per il supporto di .NET Framework e .NET Core
 description: Organizzazione del progetto per il supporto di .NET Framework e .NET Core
 keywords: .NET, .NET Core
 author: conniey
-manager: wpickett
+ms.author: mairaw
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: 3af62252-1dfa-4336-8d2f-5cfdb57d7724
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 7a3f972debee1e90deda57e5604214ff4756da4a
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: ed2fdad2a784f4e4ce1f8a660b5bb151935fd2d4
+ms.lasthandoff: 01/18/2017
 
 ---
 
@@ -69,7 +69,7 @@ Il repository può essere riorganizzato in modo che qualsiasi file `*.csproj` es
 Modifiche da notare:
 * Aggiunta di `global.json`
 * Sostituzione di `packages.config` e `*.csproj` con `project.json` e `*.xproj`
-* Modifiche in [project.json di Car][example-xproj-projectjson] e il relativo [progetto di test][example-xproj-projectjson-test] per supportare la compilazione dell'istanza di .NET Framework esistente e di altre
+* Modifiche in [project.json di Car][example-xproj-projectjson] e nel relativo [progetto di test][example-xproj-projectjson-test] per supportare la compilazione dell'istanza di .NET Framework esistente e di altre
 
 ## <a name="create-a-portable-class-library-pcl-to-target-net-core"></a>Creare una libreria di classi portabile come destinazione per .NET Core
 
@@ -100,7 +100,7 @@ Modifiche da notare:
 
 ## <a name="see-also"></a>Vedere anche
 
-Per altre indicazioni sullo spostamento a project.json e xproj, vedere la [documentazione di .NET Core relativa alla portabilità][porting-doc].
+Per altre indicazioni sul passaggio a project.json e xproj, vedere la [documentazione di .NET Core relativa alla portabilità][porting-doc].
 
 [porting-doc]: index.md
 [example-initial-project]: media/project-structure/project.png "Progetto esistente"
@@ -122,9 +122,4 @@ Per altre indicazioni sullo spostamento a project.json e xproj, vedere la [docum
 [option-xproj-folder]: #keep-existing-projects-and-create-a-net-core-project
 
 [how-to-multitarget]: ../tutorials/libraries.md#how-to-multitarget
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: bdcdb812-6f13-4f20-9e90-0c0977937142
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: 0c98084786408a285111ae724ed404ce32160aea
+ms.sourcegitcommit: 5687fc7ded899a478d1972ffea10a1e37d40124b
+ms.openlocfilehash: f1f08f550d7484869e67fe705dc789ca5dae8e2f
+ms.lasthandoff: 01/18/2017
 
 ---
 
@@ -20,6 +21,9 @@ ms.openlocfilehash: 0c98084786408a285111ae724ed404ce32160aea
 Di [Steve Smith](http://ardalis.com) e [Bill Wagner](https://github.com/BillWagner)
 
 [Visualizzare o scaricare codice di esempio](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/unit-testing-using-dotnet-test)
+
+> [!NOTE]
+> Le informazioni contenute in questo argomento sono valide per .NET Core 1.0.
 
 ## <a name="creating-the-projects"></a>Creazione dei progetti
 
@@ -106,10 +110,6 @@ Per creare ed eseguire unit test, il progetto di test richiede altri pacchetti.
 
 ```json
 "dependencies": {
-  "Microsoft.NETCore.App": {
-    "type":"platform",
-    "version": "1.0.0"
-  },
   "xunit":"2.1.0",
   "dotnet-test-xunit": "1.0.0-rc2-192208-24",
   "PrimeService": {
@@ -210,9 +210,4 @@ Questa soluzione è stata strutturata in modo che l'aggiunta di nuovi pacchetti 
    
    > [!TIP]
    > Nella piattaforma Windows è possibile usare MSTest. Per altre informazioni, vedere il [documento sull'uso di MSTest in Windows](./using-mstest-on-windows.md).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

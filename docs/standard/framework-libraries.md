@@ -3,16 +3,17 @@ title: Librerie del framework
 description: Librerie del framework
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7b77b6c1-8367-4602-bff3-91e4c05ac643
 translationtype: Human Translation
-ms.sourcegitcommit: 093b852fe1ed2307ebce914381fe47388b435c95
-ms.openlocfilehash: 7283ed099cefa4b0e137869724f8e87dda0d451a
+ms.sourcegitcommit: 9df468c7225dbf1e3317ea34bd8b2285361a69f4
+ms.openlocfilehash: f14e6552b2f59694f5cf877ee8ab76ffa026f18f
+ms.lasthandoff: 01/18/2017
 
 ---
 
@@ -30,15 +31,15 @@ Le librerie di classi base offrono i tipi fondamentali e le funzionalità di uti
 
 .NET include un set di tipi primitivi, che vengono usati in tutti i programmi (a diversi livelli). Questi tipi contengono dati, ad esempio numeri, stringhe, byte e oggetti arbitrari. Il linguaggio C# include parole chiave per questi tipi. Un set di esempio di questi tipi è elencato di seguito, con le parole chiave del linguaggio C# corrispondenti.
 
-*   [System.Object](https://msdn.microsoft.com/library/system.object.aspx) ([object](https://msdn.microsoft.com/library/9kkx3h3c.aspx)): classe base principale nel sistema di tipo CLR. È la radice della gerarchia dei tipi.
-*   [System.Int16](https://msdn.microsoft.com/library/system.int16.aspx) ([short](https://msdn.microsoft.com/library/ybs77ex4.aspx)): tipo intero con segno a 16 bit. È anche disponibile il tipo [UInt16](https://msdn.microsoft.com/library/system.uint16.aspx) senza segno.
-*   [System.Int32](https://msdn.microsoft.com/library/system.int32.aspx) ([int](https://msdn.microsoft.com/library/5kzh1b5w.aspx)): tipo intero con segno a 32 bit. È anche disponibile il tipo [UInt32](https://msdn.microsoft.com/library/x0sksh43.aspx) senza segno.
-*   [System.Single](https://msdn.microsoft.com/library/system.single.aspx) ([float](https://msdn.microsoft.com/library/b1e65aza.aspx)): tipo a virgola mobile a 32 bit.
-*   [System.Decimal](https://msdn.microsoft.com/library/system.decimal.aspx) ([decimal](https://msdn.microsoft.com/library/364x0z75.aspx)): tipo decimale a 128 bit.
-*   [System.Byte](https://msdn.microsoft.com/library/system.byte.aspx) ([byte](https://msdn.microsoft.com/library/5bdb6693.aspx)): tipo intero senza segno a 8 bit che rappresenta un byte di memoria.
-*   [System.Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) ([bool](https://msdn.microsoft.com/library/c8f5xwh7.aspx)): tipo booleano che rappresenta 'true' o 'false'.
-*   [System.Char](https://msdn.microsoft.com/library/system.char.aspx) ([char](https://msdn.microsoft.com/library/x9h8tsay.aspx)): tipo numerico a 16 bit che rappresenta un carattere Unicode.
-*   [System.String](https://msdn.microsoft.com/library/system.string.aspx) ([string](https://msdn.microsoft.com/library/362314fe.aspx)): rappresenta una serie di caratteri. Diverso dal tipo `char[]`, ma consente l'indicizzazione in ogni singolo `char` di `string`.
+* [System.Object](https://msdn.microsoft.com/library/system.object.aspx) ([object](https://msdn.microsoft.com/library/9kkx3h3c.aspx)): classe base principale nel sistema di tipo CLR. È la radice della gerarchia dei tipi.
+* [System.Int16](https://msdn.microsoft.com/library/system.int16.aspx) ([short](https://msdn.microsoft.com/library/ybs77ex4.aspx)): tipo intero con segno a 16 bit. È anche disponibile il tipo [UInt16](https://msdn.microsoft.com/library/system.uint16.aspx) senza segno.
+* [System.Int32](https://msdn.microsoft.com/library/system.int32.aspx) ([int](https://msdn.microsoft.com/library/5kzh1b5w.aspx)): tipo intero con segno a 32 bit. È anche disponibile il tipo [UInt32](https://msdn.microsoft.com/library/x0sksh43.aspx) senza segno.
+* [System.Single](https://msdn.microsoft.com/library/system.single.aspx) ([float](https://msdn.microsoft.com/library/b1e65aza.aspx)): tipo a virgola mobile a 32 bit.
+* [System.Decimal](https://msdn.microsoft.com/library/system.decimal.aspx) ([decimal](https://msdn.microsoft.com/library/364x0z75.aspx)): tipo decimale a 128 bit.
+* [System.Byte](https://msdn.microsoft.com/library/system.byte.aspx) ([byte](https://msdn.microsoft.com/library/5bdb6693.aspx)): tipo intero senza segno a 8 bit che rappresenta un byte di memoria.
+* [System.Boolean](https://msdn.microsoft.com/library/system.boolean.aspx) ([bool](https://msdn.microsoft.com/library/c8f5xwh7.aspx)): tipo booleano che rappresenta 'true' o 'false'.
+* [System.Char](https://msdn.microsoft.com/library/system.char.aspx) ([char](https://msdn.microsoft.com/library/x9h8tsay.aspx)): tipo numerico a 16 bit che rappresenta un carattere Unicode.
+* [System.String](https://msdn.microsoft.com/library/system.string.aspx) ([string](https://msdn.microsoft.com/library/362314fe.aspx)): rappresenta una serie di caratteri. Diverso dal tipo `char[]`, ma consente l'indicizzazione in ogni singolo `char` di `string`.
 
 ## <a name="data-structures"></a>Strutture di dati
 
@@ -58,14 +59,9 @@ Le librerie di classi base offrono i tipi fondamentali e le funzionalità di uti
 *   [XDocument](https://msdn.microsoft.com/library/system.xml.linq.xdocument.aspx): un'API per il caricamento e l'esecuzione di query su documenti XML con LINQ.
 *   [StreamReader](https://msdn.microsoft.com/library/system.io.streamreader.aspx): un'API per leggere file ([StreamWriter](https://msdn.microsoft.com/library/system.io.stringwriter.aspx)). Può essere usata anche per scrivere file.
 
-## <a name="appmodel-apis"></a>API dei modelli per App
+## <a name="app-model-apis"></a>API dei modelli per App
 
 Ci sono molti modelli per app, offerti da diverse società, che possono essere usati con .NET.
 
 *   [ASP.NET](http://asp.net): offre un framework Web per la creazione di siti Web e servizi. Supportato in Windows, Linux e macOS (dipende dalla versione ASP.NET).
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
