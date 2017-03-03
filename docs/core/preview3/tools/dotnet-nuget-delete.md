@@ -1,5 +1,5 @@
 ---
-title: Comando dotnet-nuget-delete | .NET Core SDK
+title: Comando dotnet-nuget-delete | Microsoft Docs
 description: Il comando dotnet-nuget-delete rimuove dall&quot;elenco o elimina un pacchetto dal server.
 keywords: dotnet-nuget-delete, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: karann-msft
@@ -11,8 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 6ddffde4-c789-4e90-990e-d35f6a6565d4
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: a338f91d33347d48eefe572ea61da5d58d5c639a
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 787b1427b1064943570cbc361042ab2f20d11088
+ms.lasthandoff: 01/21/2017
 
 ---
 
@@ -62,7 +63,7 @@ Visualizza la quantità di dettagli nell'output. Il livello può essere `normal`
 `--config-file <FILE>`
 
 File di configurazione NuGet usato in modo specifico per questo comando, a sostituzione di altri file di configurazione individuati dal processo di individuazione e concatenazione dei file di configurazione standard. Il percorso può essere assoluto o relativo.
-Per altre informazioni sui file di configurazione, vedere [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior) (Configurazione del comportamento di NuGet). 
+Per altre informazioni sui file di configurazione, vedere [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior) (Configurazione del comportamento di NuGet).
 
 ## <a name="examples"></a>Esempi
 
@@ -81,9 +82,4 @@ Elimina la versione 1.0 del pacchetto MyPackage, specificando un file di configu
 Elimina la versione 1.0 del pacchetto MyPackage con il massimo livello di dettaglio:
 
 `dotnet nuget delete MyPackage 1.0 --verbosity detailed`
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

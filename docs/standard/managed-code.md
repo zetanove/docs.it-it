@@ -3,16 +3,17 @@ title: Informazioni sul codice gestito
 description: Informazioni sul codice gestito
 keywords: .NET, .NET Core
 author: blackdwarf
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 20bb7ea8-192e-4a96-8ef3-e10e1950fd3d
 translationtype: Human Translation
-ms.sourcegitcommit: 0013cf5604bfd1e8a16e5ca15577ac81fce49612
-ms.openlocfilehash: f05bd2e2344b4dd61d038278ad02e9c8f357b3a8
+ms.sourcegitcommit: 4bd90ac423134c67eb35836d417b09053c98f586
+ms.openlocfilehash: 7f761c4fc24b8d22d8d1f8116745ebb3f6583378
+ms.lasthandoff: 01/26/2017
 
 ---
 
@@ -26,7 +27,7 @@ Il modo in cui viene eseguito un programma C/C++, denominato anche "codice non g
 
 Il codice gestito è scritto in uno dei linguaggi di alto livello eseguibili nella piattaforma .NET, ad esempio C#, Visual Basic, F# e altri. Quando si compila codice scritto in uno di questi linguaggi con il relativo compilatore, non si ottiene codice macchina. Si ottiene invece codice in **linguaggio intermedio ** che il runtime provvede a compilare ed eseguire. C++ è l'unica eccezione a questa regola, poiché può generare alche file binari nativi non gestiti eseguibili in Windows.
 
-## <a name="intermediate-language-execution"></a>Linguaggio intermedio ed esecuzione
+## <a name="intermediate-language--execution"></a>Linguaggio intermedio ed esecuzione
 
 Cosa si intende con il termine "linguaggio intermedio"? Il linguaggio intermedio è un prodotto della compilazione di codice scritto in linguaggi .NET di alto livello. Dopo la compilazione del codice scritto in uno di questi linguaggi, si ottiene un file binario in linguaggio intermedio. È importante notare che il linguaggio intermedio è indipendente da qualsiasi linguaggio specifico eseguito a un livello superiore rispetto al runtime. Esiste una specifica separata che è possibile consultare per maggiori informazioni.
 
@@ -45,9 +46,4 @@ Analogamente a quanto sopra esposto, C# è un linguaggio che consente di usare c
 *   [Cenni preliminari su .NET Framework](https://msdn.microsoft.com/library/zw4w595w.aspx)
 *   [Codice unsafe e puntatori](https://msdn.microsoft.com/library/t2yzs44b.aspx)
 *   [Interoperabilità (Guida per programmatori C#)](https://msdn.microsoft.com/library/ms173184.aspx)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
