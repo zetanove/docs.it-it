@@ -3,16 +3,17 @@ title: 'Procedura: Aggiungere zeri iniziali a un numero'
 description: Come aggiungere zeri iniziali a un numero
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a517c066-b11e-4815-826b-9262611eac40
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 991fd8a0e631b73a0a484ebbe71ac1189f37e1f6
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 92f8796eae0f269cacfa4cf70330c5e3c0826717
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -294,10 +295,5 @@ Next
 [Stringhe di formato numerico personalizzato](custom-numeric.md)
 
 [Formattazione composita](composite-format.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

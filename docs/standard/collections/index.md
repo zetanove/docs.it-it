@@ -3,16 +3,17 @@ title: Raccolte e strutture di dati
 description: Raccolte e strutture di dati
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 9e70255a-c02a-4046-86b7-10c84bab2d38
 translationtype: Human Translation
-ms.sourcegitcommit: cfe65fcba1b3fdc09ffcac704a760d8ce29ea60b
-ms.openlocfilehash: 3f2831f21654d9eb1523cd80166b674e7c41d8bb
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 30e53c38bd58e15668e01f2af79defb0a0918192
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -95,9 +96,4 @@ Titolo | Descrizione
 
 [System.Linq](https://docs.microsoft.com/dotnet/core/api/System.Linq)
   
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

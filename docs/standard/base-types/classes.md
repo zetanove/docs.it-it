@@ -4,16 +4,16 @@ description: Classi di caratteri nelle espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c7a9305f-7144-4fe8-80e8-a727bf7d223f
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: f8ebb1db670669e2e8666cd5ef90f72237c105e4
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: ae677af2590636fd144d8978a3500c37f9d33615
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -46,7 +46,7 @@ Una classe di caratteri definisce un set di caratteri, di cui uno qualsiasi può
 
 .NET supporta espressioni di sottrazione di classi di caratteri che consentono di definire un set di caratteri come risultato dell'esclusione di una classe di caratteri da un'altra classe di caratteri. Per altre informazioni, vedere [Sottrazione di classi di caratteri](#character-class-subtraction).
 
-## <a name="positive-character-group-"></a>Gruppo di caratteri positivi: [ ]
+## <a name="positive-character-group--"></a>Gruppo di caratteri positivi: [ ]
 
 Un gruppo di caratteri positivi specifica un elenco di caratteri che possono essere presenti in una stringa di input per trovare una corrispondenza. È possibile specificare l'elenco di caratteri singolarmente, come intervallo o entrambi. 
 
@@ -261,35 +261,35 @@ Il carattere punto (.) corrisponde a qualsiasi carattere ad eccezione di **\n** 
 
   Nell'esempio seguente vengono illustrate le differenze di comportamento della classe di caratteri . se si usa l'impostazione predefinita o l'opzione [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline). L'espressione regolare `^.+` parte dall'inizio della stringa e individua una corrispondenza per ogni carattere. Per impostazione predefinita, la corrispondenza termina alla fine della prima riga. Il modello di espressione regolare trova il carattere di ritorno a capo **\r** o **\u000D**, ma non **\n**. Poiché l'opzione [RegexOptions.Singleline](xref:System.Text.RegularExpressions.RegexOptions.Singleline) interpreta l'intera stringa di input come riga singola, ottiene una corrispondenza per ogni carattere nella stringa di input, incluso **\n**.
 
-  ```csharp
-  using System;
-  using System.Text.RegularExpressions;
+```csharp
+using System;
+using System.Text.RegularExpressions;
 
-  public class Example
-  {
-     public static void Main()
-     {
-        string pattern = "^.+";
-        string input = "This is one line and" + Environment.NewLine + "this is the second.";
-        foreach (Match match in Regex.Matches(input, pattern))
-           Console.WriteLine(Regex.Escape(match.Value));
+public class Example
+{
+   public static void Main()
+   {
+      string pattern = "^.+";
+      string input = "This is one line and" + Environment.NewLine + "this is the second.";
+      foreach (Match match in Regex.Matches(input, pattern))
+         Console.WriteLine(Regex.Escape(match.Value));
 
-        Console.WriteLine();
-        foreach (Match match in Regex.Matches(input, pattern, RegexOptions.Singleline))
-           Console.WriteLine(Regex.Escape(match.Value));
-     }
-  }
-  // The example displays the following output:
-  //       This\ is\ one\ line\ and\r
-  //       
-  //       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
-  ```
+      Console.WriteLine();
+      foreach (Match match in Regex.Matches(input, pattern, RegexOptions.Singleline))
+         Console.WriteLine(Regex.Escape(match.Value));
+   }
+}
+// The example displays the following output:
+//       This\ is\ one\ line\ and\r
+//       
+//       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
+```
 
-  ```vb
-  Imports System.Text.RegularExpressions
+```vb
+Imports System.Text.RegularExpressions
 
-  Module Example
-     Public Sub Main()
+Module Example
+    Public Sub Main()
         Dim pattern As String = "^.+"
         Dim input As String = "This is one line and" + vbCrLf + "this is the second."
         For Each match As Match In Regex.Matches(input, pattern)
@@ -305,46 +305,46 @@ Il carattere punto (.) corrisponde a qualsiasi carattere ad eccezione di **\n** 
   '       This\ is\ one\ line\ and\r
   '       
   '       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
-  ```
+```
 
   > [!NOTE]
   > Poiché trova corrispondenza con ogni carattere ad eccezione di **\n**, la classe di caratteri trova anche **\r**, ossia il carattere di ritorno a capo, **\u000D**.
  
 * In un gruppo di caratteri positivi o negativi un punto viene interpretato come carattere punto letterale e non come classe di caratteri. Per altre informazioni, vedere [Gruppo di caratteri positivi](#positive-character-group--) o [Gruppo di caratteri negativi](#negative-character-group-) descritti in precedenza in questo argomento. L'esempio seguente illustra la definizione di un'espressione regolare che include il carattere punto (**.**) sia come classe di caratteri che come membro di un gruppo di caratteri positivi. L'espressione regolare `\b.*[.?!;:](\s|\z)` inizia in corrispondenza di confine di parola, corrisponde a qualsiasi carattere fino a quando non incontra uno dei quattro segni di punteggiatura, incluso un punto, quindi individua la corrispondenza con uno spazio vuoto o con la fine della stringa.
 
-  ```csharp
-  using System;
-  using System.Text.RegularExpressions;
+```csharp
+using System;
+using System.Text.RegularExpressions;
 
-  public class Example
-  {
-     public static void Main()
-     {
-        string pattern = @"\b.*[.?!;:](\s|\z)";
-        string input = "this. what: is? go, thing.";
-        foreach (Match match in Regex.Matches(input, pattern))
-           Console.WriteLine(match.Value);
-     }
-  }
-  // The example displays the following output:
-  //       this. what: is? go, thing.
-  ```
+public class Example
+{
+   public static void Main()
+   {
+      string pattern = @"\b.*[.?!;:](\s|\z)";
+      string input = "this. what: is? go, thing.";
+      foreach (Match match in Regex.Matches(input, pattern))
+         Console.WriteLine(match.Value);
+   }
+}
+// The example displays the following output:
+//       this. what: is? go, thing.
+```
 
-  ```vb
-  Imports System.Text.RegularExpressions
+```vb
+Imports System.Text.RegularExpressions
 
-  Module Example
-     Public Sub Main()
-        Dim pattern As STring = "\b.*[.?!;:](\s|\z)"
-        Dim input As String = "this. what: is? go, thing."
-        For Each match As Match In Regex.Matches(input, pattern)
-           Console.WriteLine(match.Value)
-        Next   
-     End Sub
-  End Module
-  ' The example displays the following output:
-  '       this. what: is? go, thing.
-  ```
+Module Example
+   Public Sub Main()
+      Dim pattern As STring = "\b.*[.?!;:](\s|\z)"
+      Dim input As String = "this. what: is? go, thing."
+      For Each match As Match In Regex.Matches(input, pattern)
+         Console.WriteLine(match.Value)
+      Next   
+   End Sub
+End Module
+' The example displays the following output:
+'       this. what: is? go, thing.
+```
 
   > [!NOTE]
   > Poiché trova corrispondenza con ogni carattere, l'elemento di linguaggio viene spesso usato con un quantificatore lazy se un modello di espressione regolare tenta di trovare più volte corrispondenza con ogni carattere. Per altre informazioni, vedere [Quantificatori nelle espressioni regolari](quantifiers.md). 
@@ -550,7 +550,7 @@ End Module
 '       'nn' found in 'stunned' at position 3.
 ```
 
-## <a name="nonword-character-w"></a>Carattere non alfanumerico: \W
+## <a name="non-word-character-w"></a>Carattere non alfanumerico: \W
 
 **\W** trova corrispondenza con qualsiasi carattere non alfanumerico. L'elemento di linguaggio **\W** equivale alla classe di caratteri seguente:
 
@@ -679,7 +679,7 @@ End Module
 
 Poiché l'oggetto `Group` per il secondo gruppo di acquisizione contiene un solo carattere non alfanumerico acquisito, nell'esempio vengono recuperati tutti i caratteri non alfanumerici acquisiti dall'oggetto `CaptureCollection` restituito dalla proprietà `Group.Captures`.
 
-## <a name="whitespace-character-s"></a>Spazio vuoto: \s
+## <a name="white-space-character-s"></a>Spazio vuoto: \s
 
 **\s** trova corrispondenza con qualsiasi spazio vuoto. È equivalente alle sequenze di escape e alle categorie Unicode elencate nella tabella seguente. 
 
@@ -746,7 +746,7 @@ End Module
 '       leaves
 ```
 
-## <a name="nonwhitespace-character-s"></a>Carattere diverso da uno spazio vuoto: \S
+## <a name="non-white-space-character-s"></a>Carattere diverso da uno spazio vuoto: \S
 
 **\S** trova corrispondenza con qualsiasi carattere diverso da uno spazio vuoto. Equivale al modello di espressione regolare `[^\f\n\r\t\v\x85\p{Z}]` o è il contrario del modello di espressione regolare equivalente a **\s**, che trova corrispondenza con gli spazi vuoti. Per altre informazioni, vedere la sezione precedente "Spazio vuoto: \s".
 
@@ -922,7 +922,7 @@ End Module
 '       01 999-9999: match failed
 ```
 
-## <a name="nondigit-character-d"></a>Carattere non numerico: \D
+## <a name="non-digit-character-d"></a>Carattere non numerico: \D
 
 **\D** trova corrispondenza con qualsiasi carattere non numerico. È equivalente al criterio di ricerca di espressioni regolari `\P{Nd}`.
 
@@ -1142,7 +1142,7 @@ FF00 - FFEF | **IsHalfwidthandFullwidthForms**
 FFF0 - FFFF | **IsSpecials**
  
 <a name="character-class-subtraction"></a>
-## <a name="character-class-subtraction-basegroup-excludedgroup"></a>Sottrazione di classi di caratteri: [base_group - excluded_group] []
+## <a name="character-class-subtraction-basegroup---excludedgroup"></a>Sottrazione di classi di caratteri: [base_group - excluded_group] []
 
 Una classe di caratteri definisce un set di caratteri. La sottrazione di classi di caratteri produce un set di caratteri che è il risultato dell'esclusione dei caratteri di una classe di caratteri da un'altra classe di caratteri. 
 
@@ -1214,8 +1214,3 @@ End Module
 ## <a name="see-also"></a>Vedere anche
 
 [Opzioni di espressioni regolari](options.md)
-
-
-<!--HONumber=Nov16_HO1-->
-
-

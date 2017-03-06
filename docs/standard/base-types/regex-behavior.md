@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6f11047f-45a4-4caf-a259-18abe08cc0d2
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: fa0513a5b450742995bd86fca495ba9904e7361b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 5656cabb708dcfc311ac7a709446003951b97aa6
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -636,10 +637,5 @@ Titolo | Descrizione
 ## <a name="reference"></a>Riferimento
 
 [System.Text.RegularExpressions](xref:System.Text.RegularExpressions)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

@@ -11,14 +11,15 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38e9d9-8284-46ee-a15f-199adc4f26f4
 translationtype: Human Translation
-ms.sourcegitcommit: 9abc4879533074e6830a7343123b139e912d239b
-ms.openlocfilehash: 033d5e8eb317a17a8f121ff37c2731c3d24999f0
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: fb9940e56b5d0e8f4474584102f2e6167a79f291
+ms.lasthandoff: 03/02/2017
 
 ---
 
 # <a name="async-overview"></a>Panoramica della programmazione asincrona
 
-Fino a non molto tempo fa, per avere app più veloci bastava acquistare un nuovo PC o server. Ad un certo punto, però, questa tendenza si è fermata. Anzi, si è invertita. Sono comparsi telefoni cellulari con chip ARM a core singolo da 1ghz e i carichi di lavoro dei server si sono spostati sulle macchine virtuali. Gli utenti vogliono interfacce a velocità di risposta elevata e i titolari di business vogliono server scalabili in base alle loro attività aziendali. Il passaggio ai dispositivi mobili e cloud e una popolazione connessa a Internet che ormai supera i 3 miliardi di utenti, hanno avuto come risultato lo sviluppo di nuovi modelli di software. 
+Fino a non molto tempo fa, per avere app più veloci bastava acquistare un nuovo PC o server. Ad un certo punto, però, questa tendenza si è fermata. Anzi, si è invertita. Sono comparsi telefoni cellulari con chip ARM a core singolo da 1ghz e i carichi di lavoro dei server si sono spostati sulle macchine virtuali. Gli utenti vogliono interfacce a velocità di risposta elevata e i titolari di business vogliono server scalabili in base alle loro attività aziendali. Il passaggio ai dispositivi mobili e cloud e una popolazione connessa a Internet che ormai supera i&3; miliardi di utenti, hanno avuto come risultato lo sviluppo di nuovi modelli di software. 
 
 * Ci si aspetta che le applicazioni client siano sempre attive, sempre connesse e costantemente reattive all'interazione dell'utente, ad esempio al tocco, con valutazioni dell'archivio applicazioni sempre ottime.
 * Ci si attende dai servizi che sappiano gestire i picchi di traffico scalando verticalmente e orizzontalmente senza intoppi. 
@@ -39,10 +40,5 @@ Il codice asincrono ha le caratteristiche seguenti:
 ## <a name="whats-next"></a>Passaggi successivi
 
 Per un approfondimento dei concetti della programmazione asincrona, vedere [La programmazione asincrona in dettaglio](async-in-depth.md).
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

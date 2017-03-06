@@ -3,16 +3,17 @@ title: Dati numerici in .NET Core
 description: Dati numerici in .NET Core
 keywords: .NET, .NET Core
 author: rpetrusha
-manager: wpickett
+ms.author: ronpet
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6b8696be-55f5-4b66-98f3-69ff827c2c49
 translationtype: Human Translation
-ms.sourcegitcommit: d5c7a18af16b4f3416e84b6cf86f0f78f28948da
-ms.openlocfilehash: 6d14668e643c2451f4ace2119006f442ed4dee15
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 8e2aad830bdaccad6e8184fa462dd0d3157fd6c9
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -22,7 +23,7 @@ ms.openlocfilehash: 6d14668e643c2451f4ace2119006f442ed4dee15
 
 ## <a name="integral-types"></a>Tipi integrali
 
-.NET Core supporta interi con e senza segno di lunghezza da 1 a 8 byte. La tabella seguente contiene un elenco dei tipi integrali e delle relative dimensioni, indica se sono con o senza segno e il specifica relativo intervallo. Tutti gli Integer sono tipi di valori. 
+.NET Core supporta interi con e senza segno di lunghezza da&1; a&8; byte. La tabella seguente contiene un elenco dei tipi integrali e delle relative dimensioni, indica se sono con o senza segno e il specifica relativo intervallo. Tutti gli Integer sono tipi di valori. 
 
 Tipo | Con segno/Senza segno | Dimensioni (byte) | Valore minimo | Valore massimo
 ---- | --------------- | ------------ | ------------- | -------------
@@ -39,7 +40,7 @@ Ogni tipo integrale supporta un set standard di operatori aritmetici, di confron
      
 Si noti che i tipi integrali senza segno non sono conformi a CLS. Per altre informazioni, vedere [.NET Common Type System & Common Language Specification](common-type-system.md) (Common Type System e specifiche CLS).
 
-## <a name="floatingpoint-types"></a>Tipi a virgola mobile
+## <a name="floating-point-types"></a>Tipi a virgola mobile
 
 .NET Core include tre tipi primitivi a virgola mobile, elencati nella tabella seguente. 
 
@@ -61,7 +62,7 @@ I tipi `Double` e `Single` sono destinati all'uso con valori imprecisi per natur
 
 Il tipo [System.Numerics.Complex](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Complex) rappresenta un numero complesso, ovvero composto da una parte numerica reale e da una parte numerica immaginaria. Supporta un set standard di operatori aritmetici, di confronto, uguaglianza, conversione esplicita e conversione implicita, oltre che metodi matematici, algebrici e trigonometrici. 
 
-## <a name="simdenabled-vector-types"></a>Tipi di vettore abilitati per SIMD
+## <a name="simd-enabled-vector-types"></a>Tipi di vettore abilitati per SIMD
 
 Lo spazio dei nomi `System.Numerics` include un set di tipi di vettore abilitati per SIMD per .NET Core. SIMD consente di parallelizzare alcune operazioni a livello hardware, con un notevole miglioramento delle prestazioni nelle app matematiche, scientifiche e di grafica che eseguono calcoli su vettori. 
 
@@ -74,9 +75,4 @@ I tipi di vettore abilitati per SIMD in .NET Core sono elencati di seguito:
 * Due tipi di matrici: [System.Numerics.Matrix3x2](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Matrix3x2), che rappresenta una matrice 3x2, e [System.Numerics.Matrix4x4](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Matrix4x4), che rappresenta una matrice 4x4. 
 
 * Il tipo [System.Numerics.Plane](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Plane), che rappresenta un piano tridimensionale, e il tipo [System.Numerics.Quaternion](https://docs.microsoft.com/dotnet/core/api/System.Numerics.Quaternion), che rappresenta un vettore usato per codificare le rotazioni fisiche tridimensionali.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

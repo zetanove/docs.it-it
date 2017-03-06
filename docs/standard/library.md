@@ -3,16 +3,16 @@ title: Libreria .NET Standard
 description: Libreria .NET Standard
 keywords: .NET, .NET Core
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 translationtype: Human Translation
-ms.sourcegitcommit: f9ffbb2e300df2080276096095a7269736260ba1
-ms.openlocfilehash: ff61319f15fea4c838517ed209e8095b37186c2e
+ms.sourcegitcommit: eb98c703946d8be0757288ae9e00aab87b32e407
+ms.openlocfilehash: 939c6dd0621e3b1121aca52915b04bf51af1d1ef
 
 ---
 
@@ -35,7 +35,7 @@ Di seguito è riportato l'intero set di runtime .NET che supporta la libreria .N
 | Nome della piattaforma | Alias |  |  |  |  |  | | | |
 | :---------- | :--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |:--------- |
 |.NET Standard | netstandard | 1.0 | 1.1 | 1.2 | 1.3 | 1.4 | 1,5 | 1.6 | 2.0 |
-|.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|vNext|
+|.NET Core|netcoreapp|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|1.0|2.0|
 |.NET Framework|net|&rarr;|4.5|4.5.1|4.6|4.6.1|4.6.2|vNext|4.6.1|
 |Piattaforme Mono/Xamarin||&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|&rarr;|vNext|
 |Piattaforma UWP (Universal Windows Platform)|uap|&rarr;|&rarr;|&rarr;|&rarr;|10.0|&rarr;|&rarr;|vNext|
@@ -85,7 +85,7 @@ Il principale veicolo di distribuzione degli assembly di riferimento della libre
 
 I pacchetti NuGet hanno come destinazione uno o più [framework](frameworks.md). I pacchetti della libreria .NET Standard hanno come destinazione il framework ".NET Standard". È possibile definire come destinazione il framework .NET Standard usando il `netstandard` [TFM (Target Framework Moniker) compatto](frameworks.md) (ad esempio `netstandard1.4`). Le librerie che devono essere eseguite in più runtime devono avere come destinazione questo framework. 
 
-Il metapacchetto `NETStandard.Library` fa riferimento al set completo di pacchetti NuGet che definiscono la libreria .NET Standard.  Il modo più comune di definire `netstandard` come destinazione è fare riferimento a questo metapacchetto. Questo metapacchetto descrive e fornisce l'accesso alle circa 40 librerie .NET e alle API associate che definiscono la libreria .NET Standard. Per accedere ad API aggiuntive, è possibile fare riferimento ad altri pacchetti che hanno come destinazione `netstandard`. 
+Il metapacchetto `NETStandard.Library` fa riferimento al set completo di pacchetti NuGet che definiscono la libreria .NET Standard.  Il modo più comune di definire `netstandard` come destinazione è fare riferimento a questo metapacchetto. Questo metapacchetto descrive e fornisce l'accesso alle circa&40; librerie .NET e alle API associate che definiscono la libreria .NET Standard. Per accedere ad API aggiuntive, è possibile fare riferimento ad altri pacchetti che hanno come destinazione `netstandard`. 
 
 ### <a name="versioning"></a>Versionamento
 
@@ -134,6 +134,6 @@ Di seguito è riportato il set di profili delle librerie di classi portabili com
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

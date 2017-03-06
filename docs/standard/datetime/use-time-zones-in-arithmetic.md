@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 26870cdc-1709-4978-831b-ff2a2f24856f
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: da4c5aec6e02393c9e6201edd766eb7579a40b5e
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a86471972d42adcbc412cc8eeb300410ca8a9c42
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -170,9 +171,4 @@ I valori [DateTimeOffset](xref:System.DateTimeOffset) sono dissociati da qualsia
 [Date, ore e fusi orari](index.md)
 
 [Esecuzione di operazioni aritmetiche con date e ore](performing-arithmetic-operations.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: Comando dotnet-nuget-locals | .NET Core SDK
+title: Comando dotnet-nuget-locals | Microsoft Docs
 description: Il comando dotnet-nuget-locals cancella o elenca risorse NuGet locali quali cache delle richieste HTTP, cache temporanea o cartella globale dei pacchetti a livello di computer.
 keywords: dotnet-nuget-locals, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: karann-msft
@@ -11,8 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8440229e-317e-4dc1-9463-cba5fdb12c3b
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 08c51ecb4e042254c89f618d6baff1b407af0113
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: 5f8c3be091b515553eb0db0ccfaee6bb8c620cff
+ms.lasthandoff: 01/21/2017
 
 ---
 
@@ -93,10 +94,5 @@ Cancella tutti i file presenti nella directory locale della cache temporanea:
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Per informazioni sui problemi e sugli errori più comuni relativi all'uso del comando `dotnet-nuget-locals`, vedere [Managing the NuGet cache](https://docs.nuget.org/ndocs/consume-packages/managing-the-nuget-cache) (Gestione della cache NuGet).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
+Per informazioni sui problemi e sugli errori più comuni relativi all'uso del comando `dotnet-nuget-locals`, vedere [Managing the NuGet cache](https://docs.microsoft.com/nuget/consume-packages/managing-the-nuget-cache) (Gestione della cache NuGet).
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e86050c6-d16d-405e-8bba-7205945c9a81
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: b31ea18cd7a7e32863f384cb279dc715fd62b3df
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: f4ab3b4bf3487e70be7e885e9b8a2281927eb30e
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -81,10 +82,5 @@ In genere, un'ora ambigua viene gestita chiamando il metodo [GetAmbiguousTimeOff
 [Date, ore e fusi orari](index.md)
 
 [Procedura: Consentire agli utenti di risolvere orari ambigui](let-users-resolve-ambiguous-times.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

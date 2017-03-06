@@ -17,7 +17,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./docs/images/hub/featured-1.svg" src="./docs/images/hub/featured-1.png" alt="" />
+                                        <img data-hoverimage="/dotnet/articles/images/hub/featured-1.svg" src="/dotnet/articles/images/hub/featured-1.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -35,7 +35,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./docs/images/hub/featured-2.svg" src="./docs/images/hub/featured-2.png" alt="" />
+                                        <img data-hoverimage="/dotnet/articles/images/hub/featured-2.svg" src="/dotnet/articles/images/hub/featured-2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -53,7 +53,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="./docs/images/hub/featured-3.svg" src="./docs/images/hub/featured-3.png" alt="" />
+                                        <img data-hoverimage="/dotnet/articles/images/hub/featured-3.svg" src="/dotnet/articles/images/hub/featured-3.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -81,7 +81,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -100,7 +100,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/netcore.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/netcore.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -120,7 +120,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/netframework.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/netframework.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -140,7 +140,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/xamarin.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/xamarin.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -160,7 +160,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/csharp.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/csharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -179,7 +179,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/fsharp.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/fsharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -198,7 +198,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/vb.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/vb.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -222,7 +222,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-web-1.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-web-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -241,7 +241,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-web-2.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-web-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -260,7 +260,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-web-3.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-web-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -279,7 +279,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-web-4.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-web-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -298,7 +298,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-web-5.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-web-5.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -317,7 +317,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-web-6.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-web-6.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -341,7 +341,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-cloud-1.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -360,7 +360,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-cloud-2.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -379,7 +379,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-cloud-3.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -398,7 +398,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-cloud-4.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -422,7 +422,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-mobile-1.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-mobile-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -441,7 +441,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-mobile-2.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-mobile-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -460,7 +460,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-mobile-3.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-mobile-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -484,7 +484,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-desktop-1.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -504,7 +504,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-desktop-2.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -523,7 +523,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-desktop-3.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -542,7 +542,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-desktop-4.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -566,7 +566,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-gaming-1.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -586,7 +586,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-gaming-2.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -605,7 +605,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-gaming-3.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -624,7 +624,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="./docs/images/hub/net-docs-gaming-4.svg" alt="" />
+                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

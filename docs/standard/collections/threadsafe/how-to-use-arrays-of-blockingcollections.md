@@ -3,16 +3,17 @@ title: 'Procedura: utilizzare matrici di raccolte di blocco in una pipeline'
 description: 'Procedura: utilizzare matrici di raccolte di blocco in una pipeline'
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 278a6566-09ba-4022-8802-e160e75b86af
 translationtype: Human Translation
-ms.sourcegitcommit: c15f2da15c6448cf1c36dea2d5fd53e734bb6608
-ms.openlocfilehash: e68ad58fecfe489cc26af02be7e4dbb4f7a8470c
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 393b286de6b8c3a262451e0d4a0276047d3ea54a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -197,9 +198,4 @@ class PipeLineDemo
 [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent)
 
 [Raccolte thread-safe](index.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

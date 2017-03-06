@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3e196697-981c-4c1d-93dd-c3b236ef36dd
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 65cdec2c8bc8caf44329ee44bd574e612723be11
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: f801e8761ad2dfe80915cc4425c359cfae99949e
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -141,9 +142,4 @@ Criterio | Descrizione
 [Espressioni regolari .NET](regular-expressions.md)
 
 [Esempi di espressioni regolari](regex-examples.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

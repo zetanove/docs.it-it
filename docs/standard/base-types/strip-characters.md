@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: f1df4967-7887-41d2-b60f-0da9be67c8fa
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 2d5b0756ab8c34cca0c4ca7c1eb73f81a7a10b70
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 59824a372405036c2ab6fac2730b67c9c2dfa7f4
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -22,7 +23,7 @@ Nell'esempio seguente viene usato il metodo statico [Regex.Replace](xref:System.
 
 ## <a name="example"></a>Esempio
 
-È possibile usare il metodo `CleanInput` definito in questo esempio per rimuovere i caratteri potenzialmente dannosi che sono stati inseriti in un campo di testo che accetta l'input dell'utente. In questo caso, `CleanInput` rimuove tutti i caratteri non alfanumerici tranne punto (.), chiocciole ((@),) e trattini (-) e restituisce la stringa restante. È tuttavia possibile modificare l'espressione regolare in modo che rimuova i caratteri che non devono essere inclusi in una stringa di input.
+È possibile usare il metodo `CleanInput` definito in questo esempio per rimuovere i caratteri potenzialmente dannosi che sono stati inseriti in un campo di testo che accetta l'input dell'utente. In questo caso, `CleanInput` rimuove tutti i caratteri non alfanumerici tranne punto (.), simboli "at" (@) e trattini (-) e restituisce la stringa restante. È tuttavia possibile modificare l'espressione regolare in modo che rimuova i caratteri che non devono essere inclusi in una stringa di input.
 
 ```csharp
 using System;
@@ -70,9 +71,4 @@ Il criterio di espressione regolare `[^\w\.@-]` corrisponde a qualsiasi caratter
 [Espressioni regolari .NET](regular-expressions.md)
 
 [Esempi di espressioni regolari](regex-examples.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

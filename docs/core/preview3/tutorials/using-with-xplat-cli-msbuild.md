@@ -1,5 +1,5 @@
 ---
-title: Introduzione all&quot;uso di .NET Core su Windows/Linux/macOS dalla riga di comando (anteprima 3 dell&quot;SDK)
+title: Introduzione all&quot;uso di .NET Core su Windows/Linux/macOS dalla riga di comando (strumenti di .NET Core RC4) | Microsoft Docs
 description: Introduzione all&quot;uso di .NET Core su Windows/Linux/macOS dall&quot;interfaccia della riga di comando di .NET Core
 keywords: .NET, .NET Core
 author: cartermp
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: be988f09-7349-43b0-97fb-3a703d4587ce
+ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 translationtype: Human Translation
-ms.sourcegitcommit: ab71aab99505f211fe4adc86957eda4707761f1c
-ms.openlocfilehash: 01b17021e79bcdb2dc69f97b709f4aa63dbab9aa
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 4c17da61f492e17edf4d69d79be430ead3dd0cc6
 
 ---
 
-# <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line-sdk-preview-3"></a>Introduzione all'uso di .NET Core su Windows/Linux/macOS dalla riga di comando (anteprima 3 dell'SDK)
+# <a name="getting-started-with-net-core-on-windowslinuxmacos-using-the-command-line-net-core-tools-rc4"></a>Introduzione all'uso di .NET Core su Windows/Linux/macOS dalla riga di comando (strumenti di .NET Core RC4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Introduzione all'uso di .NET Core su Windows/Linux/macOS dalla riga di comando](../../tutorials/using-with-xplat-cli.md).
 
 Questa guida illustra come usare gli strumenti dell'interfaccia della riga di comando di .NET Core per creare applicazioni console multipiattaforma.  Si inizia con un'applicazione console molto semplice per poi passare a più progetti, incluso un progetto di test. Le funzionalità verranno illustrate in maniera graduale, aggiungendo nuove informazioni sulla base di quelle già acquisite.
 
@@ -24,7 +27,7 @@ Se non si ha familiarità con il set di strumenti dell'interfaccia della riga di
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di iniziare, assicurarsi di avere gli strumenti [dell'anteprima 3 o successiva dell'interfaccia della riga di comando di .NET Core](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md).  È necessario anche un editor di testo.
+Prima di iniziare, assicurarsi di avere la [versione RC4 o una versione successiva degli strumenti dell'interfaccia della riga di comando di .NET Core](https://github.com/dotnet/core/blob/master/release-notes/preview3-download.md).  È necessario anche un editor di testo.
 
 ## <a name="hello-console-app"></a>Creazione di un'applicazione console
 
@@ -314,10 +317,10 @@ L'operazione è ora completata.
  
 Questa guida ha illustrato le procedure per creare un'applicazione console .NET Core, a partire dalle funzionalità di base fino a un sistema basato su più progetti con unit test.  Il passaggio successivo sarà quello di creare eccezionali applicazioni console personalizzate.
  
-Per un esempio di applicazione console più avanzato, vedere l'esercitazione successiva: [Organizzazione e testing dei progetti con la riga di comando di .NET Core (anteprima 3 dell'SDK)](using-with-xplat-cli-msbuild-folders.md).
+Per un esempio di app console più avanzato, vedere l'esercitazione successiva: [Organizzazione e testing dei progetti con la riga di comando di .NET Core (strumenti di .NET Core RC4)](using-with-xplat-cli-msbuild-folders.md).
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

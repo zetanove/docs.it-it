@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 22319f2f-0008-4ace-815e-545892a0512a
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: a966f430c00f07d48f2210d64f03d6805f4e3097
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 1f94c7609d667a54b147b73a61653028d1808080
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -57,9 +58,4 @@ Evitare di usare i riferimenti deboli come soluzione automatica per i problemi d
 ## <a name="see-also"></a>Vedere anche
 
 [Garbage Collection in .NET](index.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

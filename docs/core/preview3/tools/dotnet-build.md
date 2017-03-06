@@ -1,22 +1,26 @@
 ---
-title: Comando dotnet-build | .NET Core SDK
+title: Comando dotnet-build | Microsoft Docs
 description: Il comando dotnet-build consente di compilare un progetto e tutte le relative dipendenze.
 keywords: dotnet-build, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/13/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 70285a83-4103-4617-be8b-d0e1e9a4a91d
+ms.assetid: 5e1a2bc4-a919-4a86-8f33-a9b218b1fcb3
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 04c4d77b31bf4a1bdb425d837c490440e7312e57
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: c2c0ae3711c866268c4e8c066b4213e110e771b9
+ms.lasthandoff: 02/10/2017
 
 ---
 
-#<a name="dotnet-build"></a>dotnet-build
+#<a name="dotnet-build-net-core-tools-rc4"></a>dotnet-build (strumenti di .NET Core RC4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [dotnet-build](../../tools/dotnet-build.md).
 
 ## <a name="name"></a>Nome 
 dotnet-build: consente di compilare un progetto e tutte le relative dipendenze 
@@ -31,7 +35,7 @@ dotnet-build: consente di compilare un progetto e tutte le relative dipendenze
 ## <a name="description"></a>Descrizione
 
 Il comando `dotnet build` consente di compilare più file di origine da un progetto di origine e le relative dipendenze in un file binario. Per impostazione predefinita, il file binario risultante è scritto in linguaggio intermedio (IL, Intermediate Language) e ha l'estensione DLL. 
-`dotnet build` rilascia inoltre un file `\*.deps` che descrive gli elementi necessari all'host per eseguire l'applicazione.  
+`dotnet build` rilascia inoltre un file `*.deps` che descrive gli elementi necessari all'host per eseguire l'applicazione.  
 
 Per la compilazione è necessario un file di asset (un file che elenca tutte le dipendenze dell'applicazione). È quindi necessario eseguire [`dotnet restore`](dotnet-restore.md) prima della compilazione del codice.
 
@@ -50,7 +54,7 @@ Per compilare un'applicazione eseguibile anziché una raccolta, è necessario im
 
 `-h|--help`
 
-Stampa una breve guida per il comando.  
+Stampa una breve guida per il comando.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -66,11 +70,11 @@ Definisce una configurazione in cui eseguire la compilazione.  Se omessa, il val
 
 `-r|--runtime [RUNTIME_IDENTIFIER]`
 
-Runtime di destinazione per cui eseguire la compilazione. Per un elenco degli identificatori di runtime (RID, Runtime Identifier) che è possibile usare, vedere il [catalogo RID](../../rid-catalog.md). 
+Runtime di destinazione per cui eseguire la compilazione. Per un elenco degli identificatori di runtime (RID, Runtime Identifier) che è possibile usare, vedere il [catalogo RID](../../rid-catalog.md).
 
 `--version-suffix [VERSION_SUFFIX]`
 
-Definisce l'elemento che deve sostituire `*` nel campo relativo alla versione del file di progetto. Il formato rispetta le linee guida della versione NuGet. 
+Definisce l'elemento che deve sostituire `*` nel campo relativo alla versione del file di progetto. Il formato rispetta le linee guida della versione NuGet.
 
 `--build-profile`
 
@@ -97,9 +101,4 @@ Compilare un progetto e le relative dipendenze usando la configurazione per il r
 Compilare un progetto e le relative dipendenze per un runtime specifico ( in questo esempio, Ubuntu 16.04):
 
 `dotnet build --runtime ubuntu.16.04-x64`
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: f4f5d1c7-d84d-4867-810f-2708cd6de0da
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 2c42a4ac5fcd889eedea27b54b249f48c4848c88
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 076e10e095b50cc96187f2ec13ade2365d83dad3
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -251,9 +252,4 @@ End Module
 [Operazioni di base su stringhe](basic-string-operations.md)
 
 [Formattazione di tipi](formatting-types.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

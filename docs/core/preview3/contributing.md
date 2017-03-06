@@ -1,8 +1,8 @@
-# <a name="using-the-cli-preview3-folder-and-sub-folders"></a>Uso della cartella cli-preview3 e delle relative sottocartelle
+# <a name="using-the-preview3-folder-and-sub-folders"></a>Uso della cartella preview3 e delle relative sottocartelle
 
-Questa cartella è il nodo di primo livello corrispondente alla cartella degli strumenti, ma contiene elementi differenziali per la versione di anteprima 3 degli strumenti di .NET Core.
+Questa cartella è il nodo di primo livello corrispondente alla cartella degli strumenti, ma contiene elementi differenziali per la versione RC4 degli strumenti di .NET Core.
 
-L'obiettivo di questa struttura di cartelle parallele separate è fornire un'area per i contenuti della versione di anteprima 3 che possono essere uniti in modo relativamente semplice nella struttura principale nel passaggio da una versione all'altra nel sito pubblicato.
+L'obiettivo di questa struttura di cartelle parallele separate è offrire un'area per i contenuti della versione RC4 che possono essere uniti in modo relativamente semplice nella struttura principale nel passaggio da una versione all'altra nel sito pubblicato.
 
 Il contenuto di questo nodo deve essere un set di documenti di dimensioni inferiori che rappresenta gli elementi differenziali tra la versione LTS (Long Term Support) e quella corrente. 
 
@@ -11,9 +11,9 @@ Il contenuto di questo nodo deve essere un set di documenti di dimensioni inferi
 L'aggiunta di nuovo contenuto a questa versione si verifica in due casi:
 
 * Modifiche ai documenti esistenti
-    - Copiare il contenuto esistente in una cartella parallela in questa struttura. Apportare le modifiche e aggiungere il file modificato al sommario della versione di anteprima 3.
+    - Copiare il contenuto esistente in una cartella parallela in questa struttura. Apportare le modifiche e aggiungere il file modificato al sommario della versione RC4.
 * Nuovi documenti
-    - Inserire il nuovo documento nella posizione appropriata e aggiungerlo al sommario sotto il nodo della versione di anteprima 3. 
+    - Inserire il nuovo documento nella posizione appropriata e aggiungerlo al sommario nel nodo per la versione RC4. 
 
 Tutti i file di rilascio correnti devono aggiungere quanto segue nella parte superiore dell'argomento:
 
@@ -37,6 +37,6 @@ L'obiettivo finale consiste nel trattare le diverse versioni come rami nel [repo
 Al momento opportuno, sarà possibile unire ogni versione corrente nella cartella [documenti](../docs) principale, unire i nodi del sommario e pubblicare come set di documenti separati. Può essere utile unire le modifiche apportate alla versione LTS di un file e alla versione corrente di un file, ma è necessario che si tratti di modifiche di facile individuazione.
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

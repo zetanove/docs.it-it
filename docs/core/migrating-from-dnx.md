@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
 translationtype: Human Translation
-ms.sourcegitcommit: 956a0766fe0171052983627f2cf2e8264d6b0365
-ms.openlocfilehash: f01c6521becb930923693a6b6867479f3b5d6df9
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b752e23f37f83a68ef4a7a97108479f7736d53cd
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -53,17 +54,17 @@ Se si usa DNX, sono disponibili i comandi di uno dei tre componenti (DNX, DNU o 
 La tabella seguente mostra il mapping tra i comandi DNX/DNU e i corrispondenti comandi dell'interfaccia della riga di comando.
 
 
-| Comando DNX                       | Comando dell'interfaccia della riga di comando       | Descrizione                                                                                                       |
-|--------------------------------   |----------------   |-----------------------------------------------------------------------------------------------------------------  |
-| dnx run                           | dotnet run        | Esegue il codice dall'origine.                                                                                             |
-| dnu build                         | dotnet build      | Crea un file binario IL (Intermediate Language) del codice.                                                                                  |
-| dnu pack                          | dotnet pack       | Crea un pacchetto NuGet del codice.                                                                          |
-| dnx \[command] (ad esempio, "dnx web")   | N/D\*             | In DNX esegue un comando in base a quanto definito nel file project.json.                                                       |
-| dnu install                       | N/D\*             | In DNX installa un pacchetto come dipendenza.                                                              |
-| dnu restore                       | dotnet restore    | Ripristina le dipendenze specificate nel file project.json.                                                              |
-| dnu publish                       | dotnet publish    | Pubblica l'applicazione per la distribuzione in una delle tre forme possibili: portabile, portabile con nativo e autonoma.    |
-| dnu wrap                          | N/D\*             | In DNX esegue il wrapping di un file project.json in csproj.                                                                      |
-| dnu commands                      | N/D\*             | In DNX gestisce i comandi installati a livello globale.                                                             |
+| Comando DNX                        | Comando dell'interfaccia della riga di comando        | Descrizione                                                                                                         |
+|--------------------------------    |----------------    |-----------------------------------------------------------------------------------------------------------------    |
+| dnx run                            | dotnet run         | Esegue il codice dall'origine.                                                                                               |
+| dnu build                          | dotnet build       | Crea un file binario IL (Intermediate Language) del codice.                                                                                    |
+| dnu pack                           | dotnet pack        | Crea un pacchetto NuGet del codice.                                                                            |
+| dnx \[command] (ad esempio, "dnx web")     | N/D\*              | In DNX esegue un comando in base a quanto definito nel file project.json.                                                         |
+| dnu install                        | N/D\*              | In DNX installa un pacchetto come dipendenza.                                                                |
+| dnu restore                        | dotnet restore     | Ripristina le dipendenze specificate nel file project.json.                                                                |
+| dnu publish                        | dotnet publish     | Pubblica l'applicazione per la distribuzione in una delle tre forme possibili: portabile, portabile con nativo e autonoma.     |
+| dnu wrap                           | N/D\*              | In DNX esegue il wrapping di un file project.json in csproj.                                                                        |
+| dnu commands                       | N/D\*              | In DNX gestisce i comandi installati a livello globale.                                                               |
 
 (\*) Queste funzionalità non sono supportate nell'interfaccia della riga di comando in base alla progettazione. 
 
@@ -76,7 +77,7 @@ DNU integrava un concetto denominato "comandi globali". Si trattava essenzialmen
 L'interfaccia della riga di comando non supporta questo concetto. Supporta tuttavia l'aggiunta di comandi per progetto che è possibile richiamare usando la comune sintassi `dotnet <command>`. Per altre informazioni, vedere [Extensibility overview](tools/index.md#extensibility) (Panoramica sull'estendibilità). 
 
 ### <a name="installing-dependencies"></a>Installazione delle dipendenze
-A partire dalla versione 1, gli strumenti dell'interfaccia della riga di comando di .NET Core non dispongono di un comando `install` per l'installazione delle dipendenze. Per installare un pacchetto da NuGet, è necessario aggiungerlo come dipendenza al file `project.json` e quindi eseguire `dotnet restore`. 
+A partire dalla versione&1;, gli strumenti dell'interfaccia della riga di comando di .NET Core non dispongono di un comando `install` per l'installazione delle dipendenze. Per installare un pacchetto da NuGet, è necessario aggiungerlo come dipendenza al file `project.json` e quindi eseguire `dotnet restore`. 
 
 ### <a name="running-your-code"></a>Esecuzione del codice
 È possibile eseguire il codice in due modi: Dal sorgente, con `dotnet run`. A differenza di `dnx run`, questo comando non esegue alcuna compilazione in memoria, ma richiama `dotnet build` per compilare il codice e quindi eseguire il file binario compilato. 
@@ -141,10 +142,5 @@ Al termine, è possibile tentare il ripristino con `dotnet restore`. A seconda d
 
 L'esecuzione di `dotnet build` mostrerà eventuali errori di compilazione, che tuttavia non dovrebbero essere numerosi. Dopo aver compilato ed eseguito correttamente il codice, è possibile testarlo con Test Runner. Eseguire `dotnet <path-to-your-assembly>` e osservare l'esecuzione.
 
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

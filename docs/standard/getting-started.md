@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
 translationtype: Human Translation
-ms.sourcegitcommit: 10e9195efdbfa031698a8b0f8e8c3479babd9727
-ms.openlocfilehash: a08b0a0f95d43eb995f015f7e408f77fe4ab9d63
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 9791191a4b79978838c97c8d8beb2049a8fb1696
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -37,8 +38,3 @@ Per iniziare a usare .NET, sono disponibili vari metodi.  Poiché .NET è una pi
 ## <a name="getting-started-using-docker-on-net-framework"></a>Attività iniziali con Docker in .NET Framework
 
 L'articolo [Docker su .NET Framework](../framework/docker/index.md) illustra come usare .NET Framework nei contenitori Docker di Windows.
-
-
-<!--HONumber=Nov16_HO3-->
-
-

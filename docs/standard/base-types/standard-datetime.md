@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: be239871-10cc-4949-b548-200bb260630a
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 56da9671a0849b0f0a94d8881cdc28e70bcf8549
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: f9247bae0d290db570b8cd8885e654524ea2f36b
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -747,10 +748,5 @@ La formattazione è influenzata dalle proprietà dell'oggetto [DateTimeFormatInf
 [Formattazione di tipi](formatting-types.md)
 
 [Stringhe di formato di data e ora personalizzato](custom-datetime.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

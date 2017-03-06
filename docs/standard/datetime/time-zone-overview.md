@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: e3a10f62-d403-4441-8621-adc964e32c07
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 67d77b80c2517da1c553094689eaf08c0c29078b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 200d502d12750a28d2a54058f53b4bbef78973c7
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -60,8 +61,3 @@ Per informazioni dettagliate sulla conversione degli orari tra fusi orari, veder
 ## <a name="see-also"></a>Vedere anche
 
 [Date, ore e fusi orari](index.md)
-
-
-<!--HONumber=Nov16_HO3-->
-
-

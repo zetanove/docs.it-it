@@ -1,26 +1,29 @@
 ---
-title: Comando dotnet-pack | .NET Core SDK
+title: Comando dotnet-pack | Microsoft Docs
 description: Il comando dotnet-pack consente di creare pacchetti NuGet per il progetto .NET Core.
 keywords: dotnet-pack, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
-author: mairaw
-manager: wpickett
+author: blackdwarf
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 translationtype: Human Translation
-ms.sourcegitcommit: c6ee3f5663d0a3f62914e8de474cca4d15340c9d
-ms.openlocfilehash: e83c8ad302590bcd77129c3ff325e498da751e69
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: d439dc83cc4538b44634197f3dce1bf7ad2ad6c7
 
 ---
 
-#<a name="dotnetpack"></a>dotnet-pack
+#<a name="dotnet-pack"></a>dotnet-pack
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [dotnet-pack (strumenti di .NET Core RC4)](../preview3/tools/dotnet-pack.md).
 
 ## <a name="name"></a>Nome
 
-`dotnet-pack`: comprime il codice in un pacchetto NuGet
+`dotnet-pack`: comprime il codice in un pacchetto NuGet.
 
 ## <a name="synopsis"></a>Riepilogo
 
@@ -90,6 +93,6 @@ Comprimere il progetto corrente e aggiornare la versione dei pacchetti risultant
 `dotnet pack --version-suffix "ci-1234"`
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

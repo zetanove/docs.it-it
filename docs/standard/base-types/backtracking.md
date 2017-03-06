@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8a3e6298-26b7-4c99-bd97-c9892f6c9418
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 649dfd6752f0589eb396b00e7d0b5184bb65d488
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 58925ce755e995432f3ff205793a192f34999e12
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -227,7 +228,7 @@ Come illustrato nell'output dell'esempio, il motore delle espressioni regolari h
 
 * Torna alla corrispondenza 4 salvata in precedenza. Determina che esiste un altro carattere "a" da assegnare a un gruppo acquisito aggiuntivo. Infine, verifica la fine della stringa. Poiché nella stringa rimane un ulteriore carattere, la corrispondenza ha esito negativo. La corrispondenza non riuscita richiede 4 confronti. Fino a questo momento sono stati eseguiti complessivamente 13 confronti.
 
-* Torna alla corrispondenza 3 salvata in precedenza. Determina che esistono sono altri due caratteri "a" da assegnare a un gruppo acquisito aggiuntivo. Tuttavia, il test di fine della stringa ha esito negativo. Torna quindi alla corrispondenza 3 e tenta di trovare una corrispondenza degli altri due caratteri "a" nei due gruppi acquisiti aggiuntivi. Il test di fine della stringa ha ancora esito negativo. Le corrispondenza non riuscite richiedono 12 confronti. Fino a questo punto, sono stati eseguiti complessivamente 25 confronti. 
+* Torna alla corrispondenza 3 salvata in precedenza. Determina che esistono sono altri due caratteri "a" da assegnare a un gruppo acquisito aggiuntivo. Tuttavia, il test di fine della stringa ha esito negativo. Torna quindi alla corrispondenza&3; e tenta di trovare una corrispondenza degli altri due caratteri "a" nei due gruppi acquisiti aggiuntivi. Il test di fine della stringa ha ancora esito negativo. Le corrispondenza non riuscite richiedono 12 confronti. Fino a questo punto, sono stati eseguiti complessivamente 25 confronti. 
 
 Il confronto della stringa di input con l'espressione regolare continua in questo modo fino a quando il motore delle espressioni regolari non ha tentato tutte le combinazioni di corrispondenze possibili, concludendo infine che non vi è alcuna corrispondenza. A causa dei quantificatori annidati, questo confronto è un'operazione O(2n) o un'operazione esponenziale, dove n è il numero di caratteri all'interno della stringa di input. Ciò significa che nei casi peggiori una stringa di input di 30 caratteri richiede circa 1.073.741.824 confronti e una stringa di input di 40 caratteri richiede circa 1.099.511.627.776 confronti. Se si utilizzano stringhe di queste lunghezze o di lunghezze ancora maggiore, i metodi delle espressioni regolari possono richiedere una quantità di tempo eccessiva per il completamento quando elaborano un input che non corrisponde al modello di espressione regolare.
 
@@ -682,10 +683,5 @@ Criterio | Descrizione
 [Costrutti di alternanza nelle espressioni regolari](alternation.md)
 
 [Costrutti di raggruppamento nelle espressioni regolari](grouping.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

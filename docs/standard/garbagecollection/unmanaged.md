@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8c97c3e2-8619-47ce-ae29-d6a3140bfa83
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: c0600eb27c27261f6496fb45310514f7f716b3b3
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 43ad8829de51775b23d1e00d9b4e2a4f4b240e94
+ms.lasthandoff: 03/03/2017
 
 ---
 
@@ -47,9 +48,4 @@ I consumer del tipo in uso possono quindi chiamare l'implementazione [IDisposabl
 [Object.Finalize](xref:System.Object.Finalize): provvede alla finalizzazione dell'oggetto se le risorse non gestite non vengono rilasciate dal metodo `Dispose`. 
 
 [GC.SuppressFinalize](xref:System.GC#System_GC_SuppressFinalize_System_Object_): elimina la finalizzazione. Questo metodo viene abitualmente chiamato da un metodo `Dispose` per impedire l'esecuzione di un finalizzatore. 
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

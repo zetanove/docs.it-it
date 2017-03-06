@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bce54e41-e9dc-493a-8988-1cbadc340fe8
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: e72540726bdd1b3624064c7388e58d80320c5831
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a8f42fa6a37f8de6f13186ea2ac17b2b2ced1601
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -1501,10 +1502,5 @@ End Module
 
 
 
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

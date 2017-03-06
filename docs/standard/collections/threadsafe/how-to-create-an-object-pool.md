@@ -3,16 +3,17 @@ title: 'Procedura: Creare un pool di oggetti con un oggetto ConcurrentBag'
 description: 'Procedura: Creare un pool di oggetti con un oggetto ConcurrentBag'
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 87a6ada1-ee27-423d-b587-82e7cb45361b
 translationtype: Human Translation
-ms.sourcegitcommit: 2f8dede4c6f679466e8441b29cf778dc46059196
-ms.openlocfilehash: cf16330afe6b8415c3480322069e88132bef1082
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: c2a37ff23c65cb2c4743935c6939816a0cea7e86
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -119,10 +120,5 @@ namespace ObjectPoolExample
 
 [Raccolte thread-safe](index.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 59ffac4d-fc6e-461f-8783-d9f8dc88ce2c
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 2c31622ff97f30e565ed2cd82128518d04d5d1dc
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: fa2a880e5bcc36354bd59d3dc032180c89984f1d
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -100,7 +101,7 @@ Criterio | Descrizione
 `\b` | Inizia dal confine di una parola.
 `gr` | Corrisponde ai caratteri "gr".
 `(a|e)` | Corrisponde a una "a" o una "e".
-`y\b` | Corrisponde a una "y" in un confine di parola.
+`y\b` |    Corrisponde a una "y" in un confine di parola.
 
 
 Il carattere | può essere usato anche per trovare una corrispondenza di tipo either/or con più caratteri o sottoesspressioni, che possono includere qualsiasi combinazione di valori letterali carattere ed elementi language di espressioni regolari. La classe di caratteri non offre questa funzionalità. L'esempio seguente usa il carattere | per estrarre un numero di previdenza sociale (SSN, Social Security Number) degli Stati Uniti, che corrisponde a un numero a 9 cifre (d, digit) con il formato *ddd-dd-dddd* oppure un identificativo del datore di lavoro (EIN, Employer Identification Number) degli Stati Uniti, che corrisponde a un numero a 9 cifre (d, digit) con il formato *dd-ddddddd*.
@@ -329,10 +330,5 @@ End Module
 Vedere anche
 
 [Linguaggio di espressioni regolari - Riferimento rapido](quick-ref.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

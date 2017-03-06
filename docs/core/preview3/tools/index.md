@@ -1,23 +1,25 @@
 ---
-title: Strumenti dell&quot;interfaccia della riga di comando di .NET Core
+title: Strumenti dell&quot;interfaccia della riga di comando di .NET Core | Microsoft Docs
 description: "Una panoramica dell&quot;interfaccia della riga di comando e delle relative funzionalità principali"
 keywords: interfaccia della riga di comando, strumenti dell&quot;interfaccia della riga di comando, .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-manager: wpickett
 ms.date: 10/06/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
+ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: d9e689524a3100f1c5c129bdf13ed691a850ad2e
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: bcb9e39ed400ad93ae9b38890caa6c579f4a1594
 
 ---
 
-# <a name="net-core-command-line-interface-tools"></a>Strumenti dell'interfaccia della riga di comando di .NET Core
+# <a name="net-core-command-line-interface-tools-net-core-tools-rc4"></a>Strumenti dell'interfaccia della riga di comando di .NET Core (strumenti di .NET Core RC4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Strumenti dell'interfaccia della riga di comando di .NET Core](../../tools/index.md).
 
 L'interfaccia della riga di comando di .NET Core è un nuova toolchain di base multipiattaforma per lo sviluppo di applicazioni .NET Core. È una toolchain "di base" perché corrisponde al livello primario su cui possono essere costruiti gli altri strumenti di livello più alto, ad esempio gli ambienti di sviluppo integrato (IDE, Integrated Development Environment), gli editor e gli agenti di orchestrazione della compilazione. 
 
@@ -36,6 +38,7 @@ Per impostazione predefinita, l'interfaccia della riga di comando viene installa
 Per impostazione predefinita vengono installati i comandi seguenti:
 
 * [new](dotnet-new.md)
+* [migrate](dotnet-migrate.md)
 * [restore](dotnet-restore.md)
 * [run](dotnet-run.md)
 * [build](dotnet-build.md)
@@ -86,10 +89,11 @@ L'interfaccia della riga di comando consente la portabilità delle applicazioni 
 
 Altre informazioni su entrambe le modalità di distribuzione sono disponibili nell'argomento [Distribuzione di applicazioni .NET Core](../deploying/index.md). 
 
-## <a name="migration-from-preview-3projectjson"></a>Migrazione dall'anteprima 3 o da project.json
+## <a name="migration-from-rc4projectjson"></a>Migrazione dalla versione RC4 o da project.json
 Se si usano gli strumenti dell'anteprima 2 e i progetti project.json, è possibile consultare la documentazione sul comando [dotnet-migrate](dotnet-migrate.md) per acquisire familiarità con il comando e la migrazione del progetto. 
 
-> **Nota:** il comando `dotnet migrate` attualmente non esegue la migrazione dei file project.json precedenti all'anteprima 2. 
+> [!NOTE]
+> Il comando `dotnet migrate` attualmente non esegue la migrazione dei file project.json precedenti all'anteprima 2. 
 
 ## <a name="extensibility"></a>Estendibilità
 Naturalmente, non ogni singolo strumento che è possibile usare nel flusso di lavoro farà parte degli strumenti dell'interfaccia della riga di comando. Tuttavia, l'interfaccia della riga di comando di .NET Core ha un modello di estendibilità che consente di specificare altri strumenti per i progetti. Per altre informazioni, vedere l'argomento [Modello di estendibilità dell'interfaccia della riga di comando di .NET Core](extensibility.md).
@@ -101,6 +105,6 @@ In questa breve panoramica sono state illustrate le funzionalità più important
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

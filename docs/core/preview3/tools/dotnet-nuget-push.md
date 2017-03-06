@@ -1,5 +1,5 @@
 ---
-title: Comando dotnet-nuget-push | .NET Core SDK
+title: Comando dotnet-nuget-push | Microsoft Docs
 description: Il comando dotnet-nuget-push effettua il push di un pacchetto nel server e lo pubblica.
 keywords: dotnet-nuget-push, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: karann-msft
@@ -11,8 +11,9 @@ ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: f54d9adf-94f8-41cc-bb52-42f7ca3be6ff
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: 04369a7f478cc77b6351f2fbee05d4e4ec8b19fb
+ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
+ms.openlocfilehash: dcc89fd24e23e624c4bcf90a8200b4e655af6dd6
+ms.lasthandoff: 01/21/2017
 
 ---
 
@@ -31,7 +32,7 @@ ms.openlocfilehash: 04369a7f478cc77b6351f2fbee05d4e4ec8b19fb
 
 ## <a name="description"></a>Descrizione
 
-Il comando `dotnet nuget push` effettua il push di un pacchetto nel server e lo pubblica. Il comando di push usa dettagli del server e delle credenziali presenti nel file di configurazione o nella catena di file di configurazione NuGet. Per altre informazioni sui file di configurazione, vedere [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior) (Configurazione del comportamento di NuGet). La configurazione predefinita di NuGet si ottiene caricando *%AppData%\NuGet\NuGet.config* (Windows) o *$HOME/.local/share* (Linux/macOS) e quindi caricando qualsiasi file *nuget.config* o *.nuget\nuget.config* a partire dalla directory radice dell'unità fino alla directory corrente.
+Il comando `dotnet nuget push` effettua il push di un pacchetto nel server e lo pubblica. Il comando di push usa dettagli del server e delle credenziali presenti nel file di configurazione o nella catena di file di configurazione NuGet. Per altre informazioni sui file di configurazione, vedere [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior) (Configurazione del comportamento di NuGet). La configurazione predefinita di NuGet si ottiene caricando *%AppData%\NuGet\NuGet.config* (Windows) o *$HOME/.local/share* (Linux/macOS) e quindi caricando qualsiasi file *nuget.config* o *.nuget\nuget.config* a partire dalla directory radice dell'unità fino alla directory corrente.
 
 ## <a name="options"></a>Opzioni
 
@@ -74,7 +75,7 @@ Forza la visualizzazione in inglese di tutto l'output registrato. Oltre a consen
 `--config-file <FILE>`
 
 File di configurazione NuGet usato in modo specifico per questo comando, a sostituzione di altri file di configurazione individuati dal processo di individuazione e concatenazione dei file di configurazione standard. Il percorso può essere assoluto o relativo.
-Per altre informazioni sui file di configurazione, vedere [Configuring NuGet Behavior](https://docs.nuget.org/ndocs/consume-packages/configuring-nuget-behavior) (Configurazione del comportamento di NuGet). 
+Per altre informazioni sui file di configurazione, vedere [Configuring NuGet Behavior](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior) (Configurazione del comportamento di NuGet). 
 
 `--verbosity <LEVEL>`
 
@@ -113,9 +114,4 @@ Effettua il push di tutti i file con estensione .nupkg presenti nella directory 
 Effettua il push di tutti i file con estensione .nupkg presenti nella directory corrente all'origine push predefinita con il massimo livello di dettaglio:
 
 `dotnet nuget push *.nupkg --verbosity detailed`
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

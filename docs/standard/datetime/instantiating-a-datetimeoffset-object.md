@@ -3,16 +3,17 @@ title: Creazione di un&quot;istanza di un oggetto DateTimeOffset
 description: Creazione di un&quot;istanza di un oggetto DateTimeOffset
 keywords: .NET, .NET Core
 author: stevehoag
-manager: wpickett
+ms.author: shoag
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 476fe67b-6be4-4435-88ab-ced37304f1d1
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: 330371397d0ec258597e4e4f109f3f1bb35df6b7
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 26be324eb5d58b94a71e89aba213f107cf8dfd1e
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -482,10 +483,5 @@ End If
 ## <a name="see-also"></a>Vedere anche
 
 [Date, ore e fusi orari](index.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

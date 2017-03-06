@@ -10,8 +10,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 141d5c94-08db-469c-8a33-708c0d3bba42
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: c73aaf1c389ef745ad35987a98242cc75f581e4f
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a8c0433564c1922adf338d230c14d0d3a110f44a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -303,9 +304,4 @@ Dopo aver eseguito il codice precedente, all'utente viene chiesto di immettere n
 ## <a name="see-also"></a>Vedere anche
 
 [Operazioni di base su stringhe](basic-string-operations.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: Comando dotnet | .NET Core SDK
+title: Comando dotnet | Microsoft Docs
 description: Informazioni sul comando dotnet (il driver generico per gli strumenti dell&quot;interfaccia della riga di comando di .NET Core) e sul relativo utilizzo.
 keywords: dotnet, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: blackdwarf
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 93015521-2127-4fe9-8fce-ca79bcc4ff49
+ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
 translationtype: Human Translation
-ms.sourcegitcommit: 1a84c694945fe0c77468eb77274ab46618bccae6
-ms.openlocfilehash: bbc13c8cca82e660f0f8ccf7d88c0340d9c06e68
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: c80b5e7e26366b5253816e81a8203f90690eec1e
 
 ---
 
-#<a name="dotnet-command"></a>Comando dotnet
+#<a name="dotnet-command-net-core-tools-rc4"></a>Comando dotnet (strumenti di .NET Core RC4)
+
+> [!WARNING]
+> Questo argomento si applica agli strumenti di .NET Core RC4. Per gli strumenti dell'anteprima 2 di .NET Core, vedere l'argomento [Comando dotnet](../../tools/dotnet.md).
 
 ## <a name="name"></a>Nome
 
@@ -70,9 +73,9 @@ Per dotnet sono disponibili i comandi seguenti:
 * [dotnet-pack](dotnet-pack.md)
    * Crea un pacchetto NuGet del codice.
 * [dotnet-migrate](dotnet-migrate.md)
-   * Esegue la migrazione di un progetto di anteprima 2 valido a un progetto di anteprima 3
+   * Esegue la migrazione di un progetto dell'anteprima 2 valido a un progetto RC4.
 * [dotnet-msbuild](dotnet-msbuild.md)
-   * Consente di accedere alla riga di comando MSBuild
+   * Consente di accedere alla riga di comando di MSBuild.
 
 ## <a name="examples"></a>Esempi
 
@@ -107,6 +110,6 @@ Specifica se i dati relativi all'utilizzo degli strumenti .NET Core vengono racc
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

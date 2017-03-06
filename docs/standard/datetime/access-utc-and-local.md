@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 13454d47-d957-421b-9ecd-940058b8835e
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: ab419cf365b61399ea41e99c15e276584ad0db31
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: fcc48e40cdad25c6142dbc3a86513b816378fa4b
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -116,9 +117,4 @@ Accedere sempre al fuso orario locale usando la proprietà [TimeZoneInfo.Local](
 [Date, ore e fusi orari](index.md)
 
 [Ricerca dei fusi orari definiti in un sistema locale](finding-the-time-zones-on-local-system.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

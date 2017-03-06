@@ -3,16 +3,15 @@ title: Introduzione a .NET Core
 description: Risorse per imparare a creare applicazioni .NET Core in Windows, Linux e macOS.
 keywords: .NET, .NET Core
 author: mairaw
-manager: wpickett
+ms.author: mairaw
 ms.date: 10/20/2016
 ms.topic: article
 ms.prod: .net-core
-ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: d1453a0d-317c-4da6-b68e-422a2c0bfe49
 translationtype: Human Translation
-ms.sourcegitcommit: bfba7f8c3af791fcf0f1a6438214d3318a6d329c
-ms.openlocfilehash: 88ace26f653934ddf759977539debb1c62b2b5c8
+ms.sourcegitcommit: 13ce9816570d47600556392b945578c487a1f03b
+ms.openlocfilehash: a3833d8a6605fa51633d17d026ada7825889b70b
 
 ---
 
@@ -26,6 +25,8 @@ Installare .NET Core in [Windows](https://www.microsoft.com/net/core#windows).
 
 È possibile iniziare lo sviluppo di app .NET Core seguendo queste esercitazioni dettagliate.
 
+* [Building a C# Hello World application with .NET Core in Visual Studio 2017 RC](../csharp/getting-started/with-visual-studio-2017.md) (Creazione di un'applicazione C# Hello World con .NET Core in Visual Studio 2017 RC) - Informazioni su come creare, eseguire il debug e pubblicare una semplice applicazione console .NET Core con Visual Studio 2017 RC.
+* [Building a class library with C# and .NET Core in Visual Studio 2017 RC](../csharp/getting-started/library-with-visual-studio-2017.md) (Creazione di una libreria di classi con C# e .NET Core in Visual Studio 2017 RC) - Informazioni su come creare una libreria di classi scritta in C# con Visual Studio 2017 RC.
 * [Introduzione all'uso di .NET Core su Windows con Visual Studio 2015](tutorials/using-on-windows.md): informazioni su come usare [Visual Studio](https://www.visualstudio.com/), ambiente di sviluppo integrato completo per Windows, nei diversi scenari .NET Core.  
 * [Get started with Visual Studio Code using C# and .NET Core on Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core) (Introduzione a Visual Studio Code con C# e .NET Core in Windows): video di Channel9 che illustra come installare e usare [Visual Studio Code](https://www.visualstudio.com/products/code-vs), editor di codice multipiattaforma lightweight di Microsoft, per creare la prima applicazione console in .NET Core.
 * [Introduzione all'uso di .NET Core su macOS con Visual Studio Code](tutorials/using-on-macos.md): questa esercitazione è stata scritta principalmente per macOS, ma è possibile seguirne i passaggi in Windows per una panoramica dei passaggi e del flusso di lavoro per creare una soluzione .NET Core mediante il codice di Visual Studio.
@@ -38,12 +39,12 @@ Per un elenco delle versioni Windows supportate, vedere l'argomento [Prerequisit
 
 Installare .NET Core nella distribuzione/versione in uso:
 
-* [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#redhat)
-* [Ubuntu 14.04, 16.04 & Linux Mint 17](https://www.microsoft.com/net/core#ubuntu)
-* [Debian 8.2](https://www.microsoft.com/net/core#debian)
-* [Fedora 23](https://www.microsoft.com/net/core#fedora)
-* [CentOS 7.1 & Oracle Linux 7.1](https://www.microsoft.com/net/core#centos)
-* [openSUSE 13.2](https://www.microsoft.com/net/core#opensuse)
+* [Red Hat Enterprise Linux 7 Server](https://www.microsoft.com/net/core#linuxredhat)
+* [Ubuntu 14.04, 16.04 & Linux Mint 17](https://www.microsoft.com/net/core#linuxubuntu)
+* [Debian 8.2](https://www.microsoft.com/net/core#linuxdebian)
+* [Fedora 23](https://www.microsoft.com/net/core#linuxfedora)
+* [CentOS 7.1 & Oracle Linux 7.1](https://www.microsoft.com/net/core#linuxcentos)
+* [openSUSE 13.2](https://www.microsoft.com/net/core#linuxopensuse)
 
 È possibile iniziare lo sviluppo di app .NET Core seguendo queste esercitazioni dettagliate.
 
@@ -53,7 +54,7 @@ Installare .NET Core nella distribuzione/versione in uso:
 
 .NET Core è supportato per le distribuzioni e le versioni Linux elencate in precedenza nei collegamenti di installazione.
 
-## <a name="os-x-macos"></a>OS X/macOS
+## <a name="os-x--macos"></a>OS X/macOS
 
 Installare .NET Core per [macOS](https://www.microsoft.com/net/core#macos). .NET Cre è supportato in OS X El Capitan (versione 10.11) e macOS Sierra (versione 10.12).
 
@@ -65,6 +66,6 @@ Installare .NET Core per [macOS](https://www.microsoft.com/net/core#macos). .NET
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 78599e33-1c3f-4335-b320-751e35906338
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 9bcec8a610ed0fd47d168e23fb1454067e2d3fac
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 7a110cf28ac8de558cd1460c61a650fc8a80e51a
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -185,10 +186,5 @@ Console.WriteLine("{0} seconds", dateValue.ToString("s.ffff"))
 [System.Globalization.DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo)
 
 [Stringhe di formato di data e ora personalizzato](custom-datetime.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

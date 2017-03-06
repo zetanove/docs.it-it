@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 6d735520-4059-4754-b34c-d117299d36f1
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: bedd1d281256545776c874a38ccb71ad594467c2
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 077a09152ac23c986a751f42c893e1dcca858291
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -32,11 +33,11 @@ Criterio | Descrizione
 `(.+)` | Trova la corrispondenza con una o più occorrenze di qualsiasi carattere. Equivale al secondo gruppo di acquisizione.
 `$` | Terminare la corrispondenza alla fine della stringa.
  
-Il nome di dominio con il carattere @ viene passato al metodo `DomainMapper`, che usa la classe [IdnMapping](xref:System.Globalization.IdnMapping) per convertire i caratteri Unicode non compresi nell'intervallo di caratteri US-ASCII a Punycode. Il metodo imposta anche il flag `invalid` su `true` se il metodo [IdnMapping.GetAscii](xref:System.Globalization.IdnMapping.GetAscii(System.String)) rileva caratteri non validi nel nome di dominio. Il metodo restituisce il nome di dominio Punycode preceduto dal simbolo @ al metodo `IsValidEmail`. 
+Il nome di dominio con il carattere @ viene passato al metodo `DomainMapper`, che usa la classe [IdnMapping](xref:System.Globalization.IdnMapping) per convertire i caratteri Unicode che si trovano all'esterno dell'intervallo di caratteri US-ASCII a Punycode. Il metodo imposta anche il flag `invalid` su `true` se il metodo [IdnMapping.GetAscii](xref:System.Globalization.IdnMapping.GetAscii(System.String)) rileva caratteri non validi nel nome di dominio. Il metodo restituisce il nome di dominio Punycode preceduto dal simbolo @ al metodo `IsValidEmail`. 
 
 Il metodo `IsValidEmail` chiama quindi il metodo [Regex.IsMatch(String, String)](xref:System.Text.RegularExpressions.Regex.IsMatch(System.String,System.String)) per verificare che l'indirizzo sia conforme a un criterio di espressione regolare. 
 
-Si noti che il metodo `IsValidEmail` non esegue l'autenticazione per convalidare l'indirizzo di posta elettronica e si limita a stabilire se il formato è valido per un indirizzo di posta elettronica. Inoltre il metodo `IsValidEmail` non verifica che il nome di dominio di primo livello sia un nome di dominio valido elencato nella pagina del [Database delle aree radice sul sito IANA](https://www.iana.org/domains/root/db), cosa che richiederebbe un'operazione di ricerca. L'espressione regolare verifica invece solo che il nome di dominio di primo livello sia costituito da un numero di caratteri ASCII compreso tra due e 24. Il nome deve iniziare e finire con caratteri alfanumerici e i caratteri rimanenti possono essere alfanumerici o un trattino (-). 
+Si noti che il metodo `IsValidEmail` non esegue l'autenticazione per convalidare l'indirizzo di posta elettronica e si limita a stabilire se il formato è valido per un indirizzo di posta elettronica. Inoltre il metodo `IsValidEmail` non verifica che il nome di dominio di primo livello sia un nome di dominio valido elencato nella pagina del [Database delle aree radice sul sito IANA](https://www.iana.org/domains/root/db), cosa che richiederebbe un'operazione di ricerca. L'espressione regolare verifica invece solo che il nome di dominio di primo livello sia costituito da un numero di caratteri ASCII compreso tra due e&24;. Il nome deve iniziare e finire con caratteri alfanumerici e i caratteri rimanenti possono essere alfanumerici o un trattino (-). 
 
 ```csharp
 using System;
@@ -141,13 +142,13 @@ Public Class RegexUtilities
 End Class
 ```
 
-In questo esempio il modello di espressione regolare `^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-\w]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$` viene interpretato come illustrato nella tabella seguente. Si noti che l'espressione regolare viene compilata usando il flag [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase).
+In questo esempio il modello di espressione regolare `^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~ \w])*)(?<=[0-9a-z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|( ([0-9a-z] [-\w]*[0-9a-z] *\.) + [a-z0-9] [\-a-z0-9]{0,22}[a-z0-9]))$` viene interpretato come visualizzato nella tabella seguente. Si noti che l'espressione regolare viene compilata usando il flag [RegexOptions.IgnoreCase](xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase).
 
 Criterio | Descrizione
 ------- | ----------- 
 `^` | Iniziare la ricerca della corrispondenza all'inizio della stringa.
 `(?(")` | Determinare se il primo carattere corrisponde a una virgoletta. `(?(")` è l'inizio di un costrutto di alternanza.
-`(?("")("".+?(?<!\\)""@)` | Se il primo carattere è una virgoletta, cercare la corrispondenza con una virgoletta iniziale seguita da almeno un'occorrenza di qualsiasi carattere, seguita da una virgoletta finale. La virgoletta finale non deve essere preceduta da un carattere barra rovesciata `(\). (?<!`. è l'inizio di un'asserzione lookbehind negativa di larghezza zero. La stringa dovrebbe terminare con la chiocciola (@).
+`(?("")("".+?(?<!\\)""@)` | Se il primo carattere è una virgoletta, cercare la corrispondenza con una virgoletta iniziale seguita da almeno un'occorrenza di qualsiasi carattere, seguita da una virgoletta finale. La virgoletta finale non deve essere preceduta da un carattere barra rovesciata `(\). (?<!`. è l'inizio di un'asserzione lookbehind negativa di larghezza zero. La stringa dovrebbe terminare con il simbolo @.
 `&#124;(([0-9a-z] | Se il primo carattere non è una virgoletta, cercare la corrispondenza di qualsiasi carattere alfabetico da a a z o da A a Z (nel confronto è applicata la distinzione tra maiuscole e minuscole) oppure di qualsiasi carattere numerico da 0 a 9.
 `(\.(?!\.))` | Se il carattere successivo è un punto, cercare la corrispondenza del punto. Se non è un punto, eseguire il look ahead del carattere successivo e continuare la ricerca della corrispondenza. `(?!\.)` è un'asserzione lookahead negativa di larghezza zero che impedisce la comparsa di due punti consecutivi nella parte locale di un indirizzo di posta elettronica.
 `&#124;[-!#\$%&'\*\+/=\?\^`\{\}\&#124;~\w] | Se il carattere successivo non è un punto, cercare la corrispondenza con qualsiasi carattere alfanumerico o con uno dei caratteri seguenti: -!#$%'*+=?^`{}&#124;~. 
@@ -244,9 +245,4 @@ End Class
 [Espressioni regolari .NET](regular-expressions.md)
 
 [Esempi di espressioni regolari](regex-examples.md)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

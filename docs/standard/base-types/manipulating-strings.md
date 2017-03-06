@@ -4,16 +4,16 @@ description: Modifica di stringhe
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: da3c277e-b06e-48bd-ae1f-1e7e4240b93e
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 40a3d6f6984898f09b5f4ef8b3f22eae71026e9b
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 0ad6a7ef456e7967b3c23e58cd7afa97a4b786de
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -36,10 +36,5 @@ ms.openlocfilehash: 40a3d6f6984898f09b5f4ef8b3f22eae71026e9b
 [Formattazione di tipi](formatting-types.md): viene descritto come formattare le stringhe usando gli specificatori del formato stringa.
 
 [Analisi di stringhe](parsing-strings.md): descrive come eseguire la conversione di stringhe in tipi.
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

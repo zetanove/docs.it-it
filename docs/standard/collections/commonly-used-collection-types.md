@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 55861611-1e40-4cc2-9ec5-0b2df4ba6c0c
 translationtype: Human Translation
-ms.sourcegitcommit: d4e7ef84480aa9f735fb8d1ff03c9e8a61127c83
-ms.openlocfilehash: 6cadcd91810f08900b58e402240e8a469fad2018
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: f44b8a87bf263032b991fc1bbc70712136910106
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -55,9 +56,4 @@ Titolo | Descrizione
 [`System.Collections.Generic.IDictionary<TKey, TValue>`](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IDictionary-2)
 
 [`System.Linq`](https://docs.microsoft.com/dotnet/core/api/System.Linq)
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

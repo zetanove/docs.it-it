@@ -4,20 +4,20 @@ description: Indipendenza del linguaggio e componenti indipendenti dal linguaggi
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/22/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 47a407d1c1e768a027aaca63ee7a668e992467b2
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: e36eab49717e6a5872c5812fce160d61eee50a4f
+ms.lasthandoff: 03/02/2017
 
 ---
 
-# <a name="language-independence-and-languageindependent-components"></a>Indipendenza del linguaggio e componenti indipendenti dal linguaggio
+# <a name="language-independence-and-language-independent-components"></a>Indipendenza del linguaggio e componenti indipendenti dal linguaggio
 
 La piattaforma .NET è indipendente dal linguaggio. Questo significa che gli sviluppatori possono lavorare in uno dei diversi linguaggi che hanno come destinazione la piattaforma .NET, ad esempio C#, F# e Visual Basic. È possibile accedere a tipi e membri di librerie di classi sviluppate per la piattaforma .NET senza dover conoscere il linguaggio in cui sono stati originariamente scritti e senza dover seguire nessuna delle convenzioni del linguaggio originale. Se si è uno sviluppatore di componenti, è possibile accedere al componente da qualsiasi applicazione .NET, indipendentemente dal linguaggio.
 
@@ -321,10 +321,10 @@ In [common type system](common-type-system.md) di .NET Framework è incluso un n
 
 Tipo conforme a CLS | Descrizione
 ------------------ | -----------
-[Byte](xref:System.Byte) | Unsigned Integer a 8 bit 
-[Int16](xref:System.Int16) | Signed Integer a 16 bit 
-[Int32](xref:System.Int32) | Intero con segno a 32 bit 
-[Int64](xref:System.Int64) | Intero con segno a 64 bit
+[Byte](xref:System.Byte) | Unsigned Integer a&8; bit 
+[Int16](xref:System.Int16) | Signed Integer a&16; bit 
+[Int32](xref:System.Int32) | Intero con segno a&32; bit 
+[Int64](xref:System.Int64) | Intero con segno a&64; bit
 [Single](xref:System.Single) | Valore a virgola mobile e precisione singola
 [Double](xref:System.Double) | Valore a virgola mobile e precisione doppia
 [Boolean](xref:System.Boolean) | tipo di valore true o false 
@@ -338,10 +338,10 @@ I tipi intrinseci elencati nella tabella seguente non sono conformi a CLS.
 
 Tipo non conforme | Descrizione | Alternativa alla conformità a CLS
 ------------------ | ----------- | -------------------------
-[SByte](xref:System.SByte) | Tipo di dati Signed Integer a 8 bit | [Int16](xref:System.Int16)
-[UInt16](xref:System.UInt16) | Intero senza segno a 16 bit | [Int32](xref:System.Int32)
-[UInt32](xref:System.UInt32) | Intero senza segno a 32 bit | [Int64](xref:System.Int64)
-[UInt64](xref:System.UInt64) | Intero senza segno a 64 bit | [Int64](xref:System.Int64) (possibile overflow), [BigInteger](xref:System.Numerics.BigInteger) o [Double](xref:System.Double)
+[SByte](xref:System.SByte) | Tipo di dati Signed Integer a&8; bit | [Int16](xref:System.Int16)
+[UInt16](xref:System.UInt16) | Intero senza segno a&16; bit | [Int32](xref:System.Int32)
+[UInt32](xref:System.UInt32) | Intero senza segno a&32; bit | [Int64](xref:System.Int64)
+[UInt64](xref:System.UInt64) | Intero senza segno a&64; bit | [Int64](xref:System.Int64) (possibile overflow), [BigInteger](xref:System.Numerics.BigInteger) o [Double](xref:System.Double)
 [UIntPtr](xref:System.UIntPtr) | Puntatore o handle senza segno | [IntPtr](xref:System.IntPtr)
  
  Nella libreria di classi .NET Framework o in qualsiasi altra libreria di classi possono essere inclusi altri tipi non conformi a CLS; ad esempio: 
@@ -782,7 +782,7 @@ Public Class [case]
 End Class
 ```
 
-Nell'esempio di C# seguente è possibile creare un'istanza della classe `case` usando il simbolo @ per evitare ambiguità nell'identificatore della parola chiave del linguaggio. Senza, tramite il compilatore C# verrebbero visualizzati due messaggi di errore, "È previsto un tipo" e "'case' è un termine non valido nell'espressione". 
+Nell'esempio C# seguente viene creata un'istanza della classe `case` usando il simbolo @ per distinguere l'identificatore dalla parola chiave del linguaggio. Senza, tramite il compilatore C# verrebbero visualizzati due messaggi di errore, "È previsto un tipo" e "'case' è un termine non valido nell'espressione". 
 
 ```csharp
 using System;
@@ -2816,7 +2816,7 @@ End Class
 
 Se si sta sviluppando un'applicazione anziché una libreria (cioè se non si stanno esponendo tipi o membri che possono essere usati da altri sviluppatori dell'applicazione), la conformità a CLS degli elementi del programma usati dall'applicazione è importante solo se il linguaggio non li supporta. In questo caso, tramite il compilatore di linguaggio verrà generato un errore quando si tenta di usare un elemento non conforme a CLS. 
 
-## <a name="crosslanguage-interoperability"></a>Interoperabilità tra linguaggi diversi
+## <a name="cross-language-interoperability"></a>Interoperabilità tra linguaggi diversi
 
 L'indipendenza del linguaggio ha numerosi significati possibili. Un significato riguarda l'utilizzo semplice dei tipi scritti in un linguaggio da parte di un'applicazione scritta in un linguaggio diverso. Un secondo significato, che è il fulcro di questo articolo, riguarda la combinazione di codice scritto in più linguaggi in un unico assembly .NET Framework. 
 
@@ -2952,10 +2952,5 @@ Per eseguire la compilazione con C#, modificare il nome del compilatore da vbc a
 ```
 csc example.cs /r:UtilityLib.dll
 ```
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

@@ -8,8 +8,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 48682290-4fd7-40dc-8a7b-bac528eba361
 translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: d0bf81844526a7ad5a45e6ec8eba0a94b0e33998
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: c3eb33d28f8bb0296c083705c137702cae2cf8d3
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -26,8 +27,3 @@ ms.openlocfilehash: d0bf81844526a7ad5a45e6ec8eba0a94b0e33998
 > Per altre informazioni su come offrire il proprio contributo, visitare questa pagina di [GitHub](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
 >
     
-
-
-<!--HONumber=Nov16_HO3-->
-
-

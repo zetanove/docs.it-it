@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: b2032f5d-771f-48d9-917c-587d9509035c
 translationtype: Human Translation
-ms.sourcegitcommit: 682b27c575e63c3a9efeba8fe14bad6288d02664
-ms.openlocfilehash: 3aac9688235cf272d978d540a93f6553efc6eb89
+ms.sourcegitcommit: 811b9539019b7cc2817b5742760ae52fbc2f95dd
+ms.openlocfilehash: fc59a9f3333f01caf9622dd500a5de6e2ae5132b
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -90,6 +91,8 @@ Per usare i RID, è necessario sapere quali sono quelli disponibili. Alla piatta
     * `rhel.7.0-x64`
     * `rhel.7.1-x64`
     * `rhel.7.2-x64`
+    * `rhel.7.3-x64`
+    * `rhel.7.4-x64`
 * Ubuntu
     * `ubuntu.14.04-x64`
     * `ubuntu.14.10-x64`
@@ -124,9 +127,4 @@ Per usare i RID, è necessario sapere quali sono quelli disponibili. Alla piatta
 * `osx.10.10-x64`
 * `osx.10.11-x64`
 * `osx.10.12-x64`
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

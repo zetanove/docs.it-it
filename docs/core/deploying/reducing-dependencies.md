@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 916251e3-87f9-4eee-81ec-94076215e6fa
 translationtype: Human Translation
-ms.sourcegitcommit: 62fdb3e60b206728d86220076867eb8fd68af82e
-ms.openlocfilehash: 77d49a1df361823c3f8f676923960d4bef2eeb08
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: aaa29f82cc89593fd29d469d5633bc60fa434ad7
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -155,9 +156,4 @@ Di seguito un esempio di pacchetto dopo la riduzione delle dipendenze:
 ```
 
 A questo punto, l'impatto è ridotto rispetto a quello che avrebbe se dipendesse dal metapacchetto `NETStandard.Library`.
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

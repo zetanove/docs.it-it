@@ -11,8 +11,8 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: a01efc8f-c242-4535-bd32-acd0032d9590
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 15c549f5df0b6de8164e05f50855006996a47fac
+ms.sourcegitcommit: 90ade65e167770bdbcbbf79707fe48e6fbc030c0
+ms.openlocfilehash: 5b61b4736880d57f02070150d8613d860505b268
 
 ---
 
@@ -24,7 +24,7 @@ La funzionalità di formattazione composita è supportata da metodi quali i segu
 
 * [String.Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)), che restituisce una stringa di risultato formattata. 
 
-* [StringBuilder.AppendFormat] (xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider, System.String, System.Object), che aggiunge una stringa di risultato formattata a un oggetto [StringBuilder](xref:System.Text.StringBuilder).
+* [StringBuilder.AppendFormat](xref:System.Text.StringBuilder.AppendFormat(System.IFormatProvider,System.String,System.Object)), che aggiunge una stringa di risultato formattata a un oggetto [StringBuilder](xref:System.Text.StringBuilder).
 
 * Alcuni overload del metodo [Console](xref:System.Console) `WriteLine`, che visualizza una stringa di risultato formattata nella console.  
 
@@ -40,7 +40,7 @@ La funzionalità di formattazione composita è supportata da metodi quali i segu
 
 Una stringa di formato composto e un elenco di oggetti vengono usati come argomenti di metodi che supportano la funzionalità di formattazione composta. Una stringa di formato composto è costituita da zero o più esecuzioni di testo fisso alternate a uno o più elementi di formato. Il testo fisso corrisponde a una stringa di propria scelta e ogni elemento di formato corrisponde a un oggetto o una struttura boxed dell'elenco. La funzionalità di formattazione composta restituisce una nuova stringa risultato in cui ciascun elemento di formato viene sostituito dalla rappresentazione di stringa di origine dell'oggetto corrispondente dell'elenco.
 
-Analizzare il frammento di codice [Format] (xref:System.String.Format(System.String.Format(System.IFormatProvider,System.String,System.Object)) seguente.
+Si consideri il frammento di codice [Format](xref:System.String.Format(System.IFormatProvider,System.String,System.Object)) seguente.
 
 ```csharp
 string name = "Fred";
@@ -229,9 +229,9 @@ Ogni valore nell'elenco di parametri che corrisponde a un elemento di formato vi
 
 3. Se il valore implementa l'interfaccia [IFormattable](xref:System.IFormattable), viene chiamato il metodo dell'interfaccia [ToString(String,IFormatProvider)](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)). Al metodo viene passato il valore *formatString*, se disponibile nell'elemento di formato, o `null` in caso contrario. L'argomento [IFormatProvider](xref:System.IFormatProvider) è determinato come segue:
 
-    *   Per un valore numerico, se viene chiamato un metodo di formattazione composita con un argomento [IFormatProvider](xref:System.IFormatProvider) non Null, il runtime richiede un oggetto [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) dal relativo metodo [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)). Se non è in grado di specificarne uno, se il valore dell'argomento è `null` o se il metodo di formattazione composita non ha un parametro [IFormatProvider](xref:System.IFormatProvider), viene usato l'oggetto [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo per le impostazioni cultura del thread corrente. 
+    *   Per un valore numerico, se viene chiamato un metodo di formattazione composita con un argomento [IFormatProvider](xref:System.IFormatProvider) non Null, il runtime richiede un oggetto [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) dal relativo metodo [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)). Se non è in grado di specificarne uno, se il valore dell'argomento è `null` o se il metodo di formattazione composita non ha un parametro [IFormatProvider](xref:System.IFormatProvider), viene usato l'oggetto [NumberFormatInfo](xref:System.Globalization.NumberFormatInfo) per le impostazioni cultura del thread corrente. 
     
-    * Per un valore di data e ora, se viene chiamato un metodo di formattazione composita con un argomento [IFormatProvider](xref:System.IFormatProvider) non Null, il runtime richiede un oggetto [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo)[NumberFormatInfo]dal metodo [IFormatProvider.GetFormat](xref:System.IFormatProvider._GetFormat(System.Type). Se non è in grado di specificarne uno, se il valore dell'argomento è `null` o se il metodo di formattazione composita non ha un parametro [IFormatProvider](xref:System.IFormatProvider), viene usato l'oggetto [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) per le impostazioni cultura del thread corrente. 
+    * Per un valore di data e ora, se viene chiamato un metodo di formattazione composita con un argomento [IFormatProvider](xref:System.IFormatProvider) non Null, il runtime richiede un oggetto [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) dal relativo metodo [IFormatProvider.GetFormat](xref:System.IFormatProvider.GetFormat(System.Type)). Se non è in grado di specificarne uno, se il valore dell'argomento è `null` o se il metodo di formattazione composita non ha un parametro [IFormatProvider](xref:System.IFormatProvider), viene usato l'oggetto [DateTimeFormatInfo](xref:System.Globalization.DateTimeFormatInfo) per le impostazioni cultura del thread corrente. 
     
     * Per gli oggetti di altri tipi, se una formattazione composita viene chiamata con un argomento [IFormatProvider](xref:System.IFormatProvider), il relativo valore (incluso `null`, se non viene specificato alcun oggetto [IFormatProvider](xref:System.IFormatProvider)) viene passato direttamente all'implementazione di [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)). In caso contrario un oggetto [CultureInfo](xref:System.Globalization.CultureInfo) che rappresenta le impostazioni cultura del thread corrente viene passato all'implementazione di [IFormattable.ToString](xref:System.IFormattable.ToString(System.String,System.IFormatProvider)). 
     
@@ -376,6 +376,6 @@ Console.WriteLine(FormatPrice)
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

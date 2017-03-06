@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3adea434-e2ed-4023-b4f5-b0608b4cf53f
 translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: e14e386a04c64726e4eacb63dc8855a356a18ba0
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 7b3acb4571cddc19520f8534828d94844c9d59e6
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -48,10 +49,5 @@ A causa del sovraccarico di creazione di istanze di oggetti e di compilazione di
 ## <a name="see-also"></a>Vedere anche
 
 [Espressioni regolari .NET](regular-expressions.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: df780a6e-734e-44b8-9747-9f7783f79e20
 translationtype: Human Translation
-ms.sourcegitcommit: 213ce098bcc2b5e31c55e759d895254d5ca33caa
-ms.openlocfilehash: 42b82c6a906a803b45976c01a55e585cd3b7542f
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 63ad1233b5eab63670fd51f41f86269f643209a7
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -235,10 +236,5 @@ End Module
 
 [Pulizia delle risorse non gestite](unmanaged.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

@@ -4,16 +4,16 @@ description: Quantificatori in espressioni regolari
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8e5124c4-20b5-4c57-ab68-301d1d7311c4
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: 016ee9a4f05fdf36982c5b369780526296b53a7d
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: cd47cc351fb926bcf444bdcbd12f3cd61d9fb327
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -788,10 +788,5 @@ End Module
 [Linguaggio di espressioni regolari - Riferimento rapido](quick-ref.md)
 
 [Backtracking nelle espressioni regolari](backtracking.md)
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 7704d9c9-e5fa-4969-a423-081cce0e21e6
 translationtype: Human Translation
-ms.sourcegitcommit: bb50b160a685d494ba47b3ca583f6fc35fa3ef3e
-ms.openlocfilehash: 779b4bc43465833fa92e85d42156a232f390f7c2
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: b789ed861a5df583162f901c1c5bc765c55f7b30
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -71,10 +72,5 @@ Versione di .NET Framework | Include la versione CLR
 [Gestione automatica della memoria](garbagecollection/index.md)
 
  
-
-
-
-
-<!--HONumber=Nov16_HO3-->
 
 

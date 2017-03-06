@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dd84ee8-9f0f-4054-9537-155857a460cd
 translationtype: Human Translation
-ms.sourcegitcommit: c40c28da09e8a122b542463c197196c82c81dd19
-ms.openlocfilehash: f8a603bab32afd0b8e7d13c9c5755e3f14a9d2bd
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: aeb1928be32584ee4b6acf7c9a4f4330daedc590
+ms.lasthandoff: 03/02/2017
 
 ---
 
@@ -354,8 +355,3 @@ L'uso del supporto per i fusi orari in .NET è possibile solo se il fuso orario 
 ## <a name="see-also"></a>Vedere anche
 
 [Date, ore e fusi orari](index.md)
-
-
-<!--HONumber=Nov16_HO3-->
-
-

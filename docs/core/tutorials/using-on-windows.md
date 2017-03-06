@@ -10,14 +10,15 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: d743134a-08a3-4ff6-aab7-49f71f0568c3
 translationtype: Human Translation
-ms.sourcegitcommit: 54da8aebd64e86c064214074bc261f72c3b0aedc
-ms.openlocfilehash: bf7bf944ebbf3c53ee6206f86e1a168111b54378
+ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
+ms.openlocfilehash: 29019587d2d847c5184d07024fa763c8af805d50
 
 ---
 
 # <a name="getting-started-with-net-core-on-windows-using-visual-studio-2015"></a>Introduzione all'uso di .NET Core su Windows con Visual Studio 2015
 
-di [Bertrand Le Roy](https://github.com/bleroy) e [Phillip Carter](https://github.com/cartermp)
+> [!WARNING]
+> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core (Visual Studio 2015). Per gli strumenti di .NET Core RC4, vedere l'argomento [Introduzione all'uso di .NET Core su Windows con Visual Studio 2017](../preview3/tutorials/using-on-windows-vs-2017.md).
 
 Visual Studio 2015 offre un ambiente completo per lo sviluppo di applicazioni .NET Core. Le procedure riportate in questo documento descrivono i passaggi necessari per creare alcune soluzioni .NET Core tipiche, o soluzioni che includono componenti .NET Core, tramite Visual Studio. Gli scenari prevedono l'esecuzione di test e l'uso di librerie di terze parti che non sono state compilate in modo esplicito per la versione più recente di .NET Core. 
 
@@ -228,11 +229,11 @@ Chiudere la soluzione precedente, se aperta. A partire da questa sezione si iniz
 -------------------------------------
 Gli strumenti della libreria di classi portabile possono modificare automaticamente la libreria di classi portabile in modo da definire .NET Standard come destinazione. 
 
-1.  Fare doppio clic sul nodo "Proprietà" per aprire la pagina delle proprietà del progetto
+1.    Fare doppio clic sul nodo "Proprietà" per aprire la pagina delle proprietà del progetto
 
-2.  Sotto l'intestazione di destinazione fare clic sul collegamento ipertestuale "Imposta come destinazione la piattaforma standard .NET".
+2.    Sotto l'intestazione di destinazione fare clic sul collegamento ipertestuale "Imposta come destinazione la piattaforma standard .NET".
 
-3.  Fare clic su "Sì" quando viene chiesto di confermare l'operazione.
+3.    Fare clic su "Sì" quando viene chiesto di confermare l'operazione.
 
 Gli strumenti selezioneranno automaticamente la versione di .NET Standard che include tutte le destinazioni inizialmente definite per la libreria di classi portabile. È possibile definire come destinazione una versione diversa di .NET Standard usando l'elenco a discesa .NET Standard nella pagina delle proprietà del progetto.
  
@@ -240,17 +241,17 @@ Gli strumenti selezioneranno automaticamente la versione di .NET Standard che in
 
 ### <a name="manually-edit-projectjson-to-target-net-standard-from-an-existing-portable-class-library"></a>Modificare manualmente project.json per definire .NET Standard come destinazione da una libreria di classi portabile esistente
 
-1.  Se il file project.json contiene "dnxcore50" nell'elemento "supports", rimuoverlo.
+1.    Se il file project.json contiene "dnxcore50" nell'elemento "supports", rimuoverlo.
 
-2.  Rimuovere la dipendenza su "Microsoft.NETCore".
+2.    Rimuovere la dipendenza su "Microsoft.NETCore".
 
-3.  Modificare la dipendenza da "Microsoft.NETCore.Portable.Compatibility" versione "1.0.0" alla versione "1.0.1".
+3.    Modificare la dipendenza da "Microsoft.NETCore.Portable.Compatibility" versione "1.0.0" alla versione "1.0.1".
 
-4.  Aggiungere una dipendenza da "NETStandard.Library" versione "1.6.0".
+4.    Aggiungere una dipendenza da "NETStandard.Library" versione "1.6.0".
 
-5.  Dall'elemento "frameworks" rimuovere il framework "dotnet" (e l'elemento "imports" al suo interno).
+5.    Dall'elemento "frameworks" rimuovere il framework "dotnet" (e l'elemento "imports" al suo interno).
 
-6.  Aggiungere ` "netstandard1.x” : { } ` all'elemento frameworks, dove la x è sostituita dalla versione di .NET Standard da usare come destinazione.
+6.    Aggiungere ` "netstandard1.x” : { } ` all'elemento frameworks, dove la x è sostituita dalla versione di .NET Standard da usare come destinazione.
 
 ### <a name="example-projectjson"></a>Esempio di project.json
 
@@ -275,6 +276,6 @@ Questo file project.json supporta clausole per UWP e .NET 4.6 e definisce netsta
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

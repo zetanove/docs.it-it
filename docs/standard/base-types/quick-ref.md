@@ -4,20 +4,20 @@ description: Linguaggio di espressioni regolari - Riferimento rapido
 keywords: .NET, .NET Core
 author: stevehoag
 ms.author: shoag
-manager: wpickett
 ms.date: 07/28/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 8c5dee8c-7bc7-4e6e-aff1-986965c4d98e
 translationtype: Human Translation
-ms.sourcegitcommit: b20713600d7c3ddc31be5885733a1e8910ede8c6
-ms.openlocfilehash: ff1eef78985f9b5b428f3b696fb267b59f3cb283
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: a6644fc2431beafa2128287eeac73bd598ee304a
+ms.lasthandoff: 03/02/2017
 
 ---
 
-# <a name="regular-expression-language-quick-reference"></a>Linguaggio di espressioni regolari - Riferimento rapido
+# <a name="regular-expression-language---quick-reference"></a>Linguaggio di espressioni regolari - Riferimento rapido
 
 Un'espressione regolare è un modello per il quale il motore delle espressioni regolari tenta di trovare una corrispondenza nel testo di input. Un modello è costituito da uno o più i valori letterali carattere, operatori o costrutti. Per una breve introduzione, vedere [Espressioni regolari di .NET](regular-expressions.md). 
 
@@ -145,7 +145,7 @@ Un backreference consente a una sottoespressione di cui è stata trovata la corr
 
 Costrutto di backreference | Descrizione | Criterio | Corrispondenze
 ----------------------- | ----------- | ------- | -------
-**\**_numero_ | Backreference. Trova la corrispondenza del valore di una sottoespressione numerata. | `(\w)\1 ` | "ee" in "seek"
+**\**_numero_ | Backreference. Trova la corrispondenza del valore di una sottoespressione numerata. | `(\w)\1    ` | "ee" in "seek"
 **\k<**_nome_**>** | Backreference denominato. Trova la corrispondenza del valore di un'espressione denominata. | `(?<char>\w)\k<char>` | "ee" in "seek"
 
 ## <a name="alternation-constructs"></a>Costrutti di alternanza
@@ -221,9 +221,4 @@ Costrutto | Definizione | Esempio
 [Download in formato Word (.docx)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
     
 [Download in formato PDF (.pdf)](http://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 
