@@ -4,22 +4,20 @@ description: "Una panoramica dell&quot;interfaccia della riga di comando e delle
 keywords: interfaccia della riga di comando, strumenti dell&quot;interfaccia della riga di comando, .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/06/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: b70e9ac0-c8be-49f7-9332-95ab93e0e7bc
+ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 translationtype: Human Translation
-ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
-ms.openlocfilehash: 1d7a3d90c6ba9079fe5d36b9c9922928d6a6f137
+ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
+ms.openlocfilehash: 4e3137d8506342662d145481d5e9fde1d53b9ba3
+ms.lasthandoff: 03/07/2017
 
 ---
 
-# <a name="net-core-command-line-interface-tools"></a>Strumenti dell'interfaccia della riga di comando di .NET Core
-
-> [!WARNING]
-> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [Strumenti dell'interfaccia della riga di comando di .NET Core (strumenti di .NET Core RC4)](../preview3/tools/index.md).
+# <a name="net-core-command-line-interface-tools-net-core-sdk-10-tools"></a>Strumenti dell'interfaccia della riga di comando di .NET Core (strumenti di .NET Core SDK 1.0)
 
 L'interfaccia della riga di comando di .NET Core è un nuova toolchain di base multipiattaforma per lo sviluppo di applicazioni .NET Core. È una toolchain "di base" perché corrisponde al livello primario su cui possono essere costruiti gli altri strumenti di livello più alto, ad esempio gli ambienti di sviluppo integrato (IDE, Integrated Development Environment), gli editor e gli agenti di orchestrazione della compilazione. 
 
@@ -38,6 +36,7 @@ Per impostazione predefinita, l'interfaccia della riga di comando viene installa
 Per impostazione predefinita vengono installati i comandi seguenti:
 
 * [new](dotnet-new.md)
+* [migrate](dotnet-migrate.md)
 * [restore](dotnet-restore.md)
 * [run](dotnet-run.md)
 * [build](dotnet-build.md)
@@ -52,7 +51,7 @@ Per impostazione predefinita vengono installati i comandi seguenti:
 Prima di approfondire l'argomento con dettagli specifici, è possibile esaminare una panoramica generale del funzionamento dell'interfaccia della riga di comando. Nell'esempio seguente sono inclusi alcuni comandi dell'installazione standard dell'interfaccia della riga di comando per inizializzare una nuova applicazione console semplice, ripristinare le dipendenze, compilare l'applicazione e quindi eseguirla. 
 
 ```console
-dotnet new
+dotnet new console
 dotnet restore
 dotnet build --output /stuff
 dotnet /stuff/new.dll
@@ -88,8 +87,11 @@ L'interfaccia della riga di comando consente la portabilità delle applicazioni 
 
 Altre informazioni su entrambe le modalità di distribuzione sono disponibili nell'argomento [Distribuzione di applicazioni .NET Core](../deploying/index.md). 
 
-## <a name="migration-from-dnx"></a>Migrazione da DNX
-Se in passato si è usato DNX in .NET Core 1.0 RC1, è possibile che si voglia sapere se è ancora utilizzabile e in che modo i nuovi strumenti sono correlati a DNX. In breve, gli strumenti DNX sono stati sostituiti dagli strumenti dell'interfaccia della riga di comando di .NET Core. Se si hanno progetti precedenti, o semplicemente si desidera conoscere la corrispondenza tra i comandi, è possibile vedere l'argomento [Migrazione da DNX all'interfaccia della riga di comando .NET Core](../migrating-from-dnx.md) per informazioni dettagliate. 
+## <a name="migration-from-projectjson"></a>Migrazione da project.json
+Se si usano gli strumenti dell'anteprima 2 e i progetti *project.json*, è possibile vedere la documentazione sul comando [dotnet migrate](dotnet-migrate.md) per acquisire familiarità con il comando e su come eseguire la migrazione del progetto. 
+
+> [!NOTE]
+> Il comando `dotnet migrate` non esegue attualmente la migrazione dei file *project.json* precedenti all'anteprima 2. 
 
 ## <a name="extensibility"></a>Estendibilità
 Naturalmente, non ogni singolo strumento che è possibile usare nel flusso di lavoro farà parte degli strumenti dell'interfaccia della riga di comando. Tuttavia, l'interfaccia della riga di comando di .NET Core ha un modello di estendibilità che consente di specificare altri strumenti per i progetti. Per altre informazioni, vedere l'argomento [Modello di estendibilità dell'interfaccia della riga di comando di .NET Core](extensibility.md).
@@ -98,9 +100,4 @@ Naturalmente, non ogni singolo strumento che è possibile usare nel flusso di la
 In questa breve panoramica sono state illustrate le funzionalità più importanti dell'interfaccia della riga di comando. Altre informazioni sono disponibili negli argomenti concettuali e di riferimento pubblicati su questo sito. È anche possibile usare altre risorse:
 * Repository GitHub [dotnet/CLI](https://github.com/dotnet/cli/)
 * [Istruzioni introduttive](https://aka.ms/dotnetcoregs/)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
