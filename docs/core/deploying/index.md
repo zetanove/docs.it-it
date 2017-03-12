@@ -1,24 +1,22 @@
 ---
-title: Distribuzione di applicazioni .NET Core
+title: Distribuzione di applicazioni .NET Core | Microsoft Docs
 description: Distribuzione di applicazioni .NET Core
 keywords: .NET, .NET Core, distribuzione di .NET Core
 author: rpetrusha
 ms.author: ronpet
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 translationtype: Human Translation
-ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
-ms.openlocfilehash: 694502a105224543063cfc08e9310dc02c1d2319
+ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
+ms.openlocfilehash: 0e186665619bd76c5ba3d1e605b885a12aa15c66
+ms.lasthandoff: 03/07/2017
 
 ---
 
-# <a name="net-core-application-deployment"></a>Distribuzione di applicazioni .NET Core #
-
-> [!WARNING]
-> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [Distribuzione di applicazioni .NET Core (strumenti di .NET Core RC4)](../preview3/deploying/index.md).
+# <a name="net-core-application-deployment"></a>Distribuzione di applicazioni .NET Core
 
 È possibile creare due tipi di distribuzioni per le applicazioni .NET Core: 
 
@@ -50,7 +48,7 @@ Sono presenti anche alcuni svantaggi:
 
 Una distribuzione dipendente dal framework senza dipendenze di terze parti richiede la compilazione, il testing e la pubblicazione dell'app. Il processo viene illustrato da un semplice esempio scritto in C#. L'esempio usa l'[utilità dotnet](../tools/dotnet.md) dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.
 
-1. Creare una directory per il progetto e, dalla riga di comando, digitare [dotnet-new](../tools/dotnet-new.md) per creare un nuovo progetto console C#.
+1. Creare una directory per il progetto e, nella riga di comando, digitare `[dotnet new console](../tools/dotnet-new.md)` per creare un nuovo progetto console C#.
 
 2. Aprire il file `Program.cs` in un editor e sostituire il codice generato automaticamente con il codice seguente. Richiede all'utente di immettere il testo e quindi visualizza le singole parole immesse dall'utente. Usa l'espressione regolare `\w+` per separare le parole nel testo di input.
 
@@ -93,9 +91,9 @@ Una distribuzione dipendente dal framework senza dipendenze di terze parti richi
 
 4. Creare una build di debug dell'app usando il comando [dotnet-build](../tools/dotnet-build.md).
 
-5. Dopo aver eseguito il debug e aver testato il programma, è possibile creare i file da distribuire con l'app usando il comando `dotnet publish -f netcoreapp1.0 -c release`. In questo modo, viene creata la versione finale dell'app (anziché un debug).
+5. Dopo aver eseguito il debug e aver testato il programma, è possibile creare i file da distribuire con l'app usando il comando `dotnet publish -f netcoreapp1.1 -c release`. In questo modo, viene creata la versione finale dell'app (anziché un debug).
 
-   I file risultanti vengono inseriti in una directory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netcoreapp1.0`.
+   I file risultanti vengono inseriti in una directory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netcoreapp1.1`.
 
 6. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
 
@@ -107,17 +105,15 @@ Oltre ai file binari dell'applicazione, il programma di installazione deve anche
 
 Una distribuzione dipendente dal framework con una o più dipendenze di terze parti prevede tre passaggi aggiuntivi prima di poter eseguire il comando `dotnet restore`:
 
-1. Aggiungere i riferimenti alle librerie di terze parti alla sezione `dependencies` del file `project.json`. La sezione `dependencies` seguente usa Json.NET come libreria di terze parti.
+1. Aggiungere i riferimenti alle librerie di terze parti alla sezione `<ItemGroup>` del file `csproj`. La sezione `<ItemGroup>` seguente descrive l'elemento `<ItemGroup>` contenente le dipendenze nel progetto predefinito con Json.NET come libreria di terze parti.
 
-    ```json
-    "dependencies": {
-      "Microsoft.NETCore.App": {
-        "type": "platform",
-        "version": "1.0.0"
-      },
-      "Newtonsoft.Json": "9.0.1"
-    },
+    ```xml
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+      </ItemGroup>
     ```
+
+ Si noti che la dipendenza dell'SDK rimane nell'esempio precedente. Si tratta di un'impostazione predefinita, in quanto questa dipendenza è necessaria per ripristinare tutte le destinazioni necessarie per consentire il funzionamento degli strumenti della riga di comando.  
 
 2. Se non lo si è già fatto, scaricare il pacchetto NuGet contenente la dipendenza di terze parti. Per scaricare il pacchetto, eseguire il comando `dotnet restore` dopo l'aggiunta della dipendenza. Poiché la dipendenza viene risolta dalla cache NuGet locale in fase di pubblicazione, deve essere disponibile nel sistema.
 
@@ -143,11 +139,11 @@ Sono presenti anche alcuni svantaggi:
 
 - La distribuzione di numerose app .NET Core autonome a un sistema comporta l'utilizzo di quantità significative di spazio su disco, poiché ogni app duplica i file di .NET Core.
 
-### <a name="a-namesimpleselfa-deploying-a-simple-self-contained-deployment"></a><a name="simpleSelf"></a> Pubblicazione di una semplice distribuzione autonoma ###
+### <a name="simpleSelf"></a> Pubblicazione di una semplice distribuzione autonoma ###
 
-Una distribuzione autonoma senza dipendenze di terze parti comporta la creazione del progetto, la modifica del file project.json, la compilazione, il testing e la pubblicazione dell'app.  Il processo viene illustrato da un semplice esempio scritto in C#. L'esempio usa l'utilità `dotnet` dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.
+La pubblicazione di una distribuzione autonoma senza dipendenze di terze parti comporta la creazione del progetto, la modifica del file csproj, la compilazione, il testing e la pubblicazione dell'app.  Il processo viene illustrato da un semplice esempio scritto in C#. L'esempio usa l'utilità `dotnet` dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.
 
-1. Creare una directory per il progetto e, dalla riga di comando, digitare `dotnet new` per creare un nuovo progetto console C#.
+1. Creare una directory per il progetto e, dalla riga di comando, digitare `dotnet new console` per creare un nuovo progetto console C#.
 
 2. Aprire il file `Program.cs` in un editor e sostituire il codice generato automaticamente con il codice seguente. Richiede all'utente di immettere il testo e quindi visualizza le singole parole immesse dall'utente. Usa l'espressione regolare `\w+` per separare le parole nel testo di input.
 
@@ -185,121 +181,72 @@ Una distribuzione autonoma senza dipendenze di terze parti comporta la creazione
     }
     ```
 
-3. Aprire il file `project.json` e, nella sezione `frameworks`, rimuovere la riga seguente:
+3. Creare un tag `<RuntimeIdentifiers>` nella sezione `<PropertyGroup>` del file `csproj` che definisce le piattaforme di destinazione dell'app e specifica l'identificatore di runtime di ogni piattaforma di destinazione. Per un elenco degli identificatori di runtime, vedere [Runtime IDentifier catalog](../rid-catalog.md) (Catalogo degli identificatori di runtime). L'esempio seguente indica che l'app viene eseguita in sistemi operativi Windows 10 a 64 bit e nel sistema operativo OS X versione 10.11 a 64 bit.
 
-   ```json
-   "type": "platform",
-   ```
-Dopo la modifica, la sezione Framework sarà simile alla seguente:
-
-    ```json
-    "frameworks": {
-      "netcoreapp1.0": {
-        "dependencies": {
-          "Microsoft.NETCore.App": {
-             "version": "1.0.0"
-          }
-        }
-      }
-    }
+    ```xml
+        <PropertyGroup>
+          <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+        </PropertyGroup>
     ```
-La rimozione dell'attributo `"type": "platform"` indica che il framework viene fornito come set di componenti locali dell'app, anziché come pacchetto di piattaforma a livello di sistema.
+Si noti che è inoltre necessario aggiungere un punto e virgola per separare i RID. Si noti anche che l'elemento `<RuntimeIdentifier>` può essere inserito in qualsiasi elemento `<PropertyGroup>` presente nel file `csproj`. Un file di esempio completo `csproj` viene presentato più avanti in questa sezione.
 
-4. Creare una sezione `runtimes` nel file `project.json` che definisce le piattaforme di destinazione dell'app e specifica l'identificatore di runtime di ogni piattaforma di destinazione. Per un elenco degli identificatori di runtime, vedere [Runtime IDentifier catalog](../rid-catalog.md) (Catalogo degli identificatori di runtime). Ad esempio, la sezione `runtimes` seguente indica che l'app viene eseguita in sistemi operativi Windows 10 a 64 bit e nel sistema operativo OS X versione 10.10 a 64 bit.
+4. Eseguire il comando `dotnet restore` per ripristinare le dipendenze specificate nel progetto.
 
-    ```json
-        "runtimes": {
-          "win10-x64": {},
-          "osx.10.10-x64": {}
-        }
-    ```
-Si noti che è inoltre necessario aggiungere una virgola per separare la sezione `runtimes` dalla sezione precedente.
-Un file di esempio completo `project.json` viene presentato più avanti in questa sezione.
-
-6. Eseguire il comando `dotnet restore` per ripristinare le dipendenze specificate nel progetto.
-
-7. Creare le build di debug dell'app in ciascuna delle piattaforme di destinazione usando il comando `dotnet build`. A meno che non si specifichi l'identificatore di runtime che si vuole compilare, il comando `dotnet build` crea una compilazione solo per l'ID di runtime del sistema corrente. È possibile compilare l'app per entrambe le piattaforme di destinazione con i comandi:
-
-    ```console
-    dotnet build -r win10-x64
-    dotnet build -r osx.10.10-x64
-    ```
-Le build di debug dell'app per ogni piattaforma verranno trovate nella sottodirectory del progetto `.\bin\Debug\netcoreapp1.0\<runtime_identifier>`.
-
-8. Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando `dotnet publish` per entrambe le piattaforme di destinazione, come indicato di seguito:
+5. Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando `dotnet publish` per entrambe le piattaforme di destinazione, come indicato di seguito:
 
    ```console
    dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.10-x64
+   dotnet publish -c release -r osx.10.11-x64
    ```
-In questo modo, viene creata la versione finale dell'app per ogni piattaforma di destinazione (anziché un debug). I file risultanti vengono inseriti in una sottodirectory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netcoreapp1.0\<runtime_identifier>`. Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.
+In questo modo, viene creata la versione finale dell'app per ogni piattaforma di destinazione (anziché un debug). I file risultanti vengono inseriti in una sottodirectory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netcoreapp1.1\<runtime_identifier>`. Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.
 
-9. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
+6. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
 
 I file pubblicati possono essere distribuiti nel modo desiderato. Ad esempio, è possibile inserirli in un file zip, usare un semplice comando `copy` o distribuirli con qualsiasi pacchetto di installazione di propria scelta. 
 
-Di seguito è riportato il file `project.json` completo per questo progetto.
+Di seguito è riportato il file `csproj` completo per questo progetto.
 
-```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "debugType": "portable",
-    "emitEntryPoint": true
-  },
-  "dependencies": {},
-  "frameworks": {
-    "netcoreapp1.0": {
-      "dependencies": {
-        "Microsoft.NETCore.App": {
-          "version": "1.0.0"
-        }
-      }
-    }
-  },
-  "runtimes": {
-    "win10-x64": {},
-    "osx.10.10-x64": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <DebugType>Portable</DebugType>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+</Project>
 ```
+
 
 ### <a name="deploying-a-self-contained-deployment-with-third-party-dependencies"></a>Pubblicazione di una distribuzione autonoma con dipendenze di terze parti ###
 
 Una distribuzione autonoma con una o più dipendenze di terze parti comporta l'aggiunta della dipendenza di terze parti:
 
-1. Aggiungere i riferimenti alle librerie di terze parti alla sezione `dependencies` del file `project.json`. La sezione `dependencies` seguente usa Json.NET come libreria di terze parti.
+1. Aggiungere i riferimenti alle librerie di terze parti alla sezione `<ItemGroup>` del file `csproj`. La sezione `<ItemGroup>` seguente usa Json.NET come libreria di terze parti.
 
-    ```json
-    "dependencies": {
-      "Microsoft.NETCore.App": "1.0.0",
-      "Newtonsoft.Json": "9.0.1"
-    },
+    ```xml
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+      </ItemGroup>
     ```
 2. Se non lo si è già fatto, scaricare nel sistema il pacchetto NuGet contenente la dipendenza di terze parti. Per rendere la dipendenza disponibile per l'app, eseguire il comando `dotnet restore` dopo l'aggiunta della dipendenza. Poiché la dipendenza viene risolta dalla cache NuGet locale in fase di pubblicazione, deve essere disponibile nel sistema.
 
-Di seguito è presentato il file project.json completo per questo progetto:
+Di seguito è riportato il file csproj completo per questo progetto:
 
-```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "debugType": "portable",
-    "emitEntryPoint": true
-  },
-  "dependencies": {
-    "Microsoft.NETCore.App": "1.0.0",
-    "Newtonsoft.Json": "9.0.1"
-  },
-  "frameworks": {
-    "netcoreapp1.0": {
-    }
-  },
-  "runtimes": {
-    "win10-x64": {},
-    "osx.10.10-x64": {}
-  }
-}
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <DebugType>Portable</DebugType>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+  </ItemGroup>
+</Project>
 ```
 
 Quando si distribuisce l'applicazione, anche le dipendenze di terze parti usate nell'app sono contenute nei file dell'applicazione. Le librerie di terze parti non devono essere già presenti nel sistema in cui l'app viene eseguita.
@@ -308,92 +255,68 @@ Si noti che è possibile distribuire una distribuzione autonoma solo con una lib
 
 ### <a name="deploying-a-self-contained-deployment-with-a-smaller-footprint"></a>Pubblicazione di una distribuzione autonoma con impatto ridotto ###
 
-Se la disponibilità di spazio di archiviazione adeguato sui sistemi di destinazione può rappresentare un problema, è possibile ridurre l'impatto generale dell'app escludendo alcuni componenti di sistema. A tale scopo, definire in modo esplicito i componenti di .NET Core che l'app include nel file project.json.
+Se la disponibilità di spazio di archiviazione adeguato sui sistemi di destinazione può rappresentare un problema, è possibile ridurre l'impatto generale dell'app escludendo alcuni componenti di sistema. A tale scopo, definire in modo esplicito i componenti di .NET Core che l'app include nel file csproj.
 
-Per creare una distribuzione autonoma con un impatto ridotto, seguire i primi due passaggi per la creazione di una distribuzione autonoma. Dopo aver eseguito il comando `dotnet new` e aggiunto il codice sorgente C# all'app, seguire questa procedura:
+Per creare una distribuzione autonoma con un impatto ridotto, seguire i primi due passaggi per la creazione di una distribuzione autonoma. Dopo aver eseguito il comando `dotnet new console` e aggiunto il codice sorgente C# all'app, seguire questa procedura:
 
-1. Aprire il file `project.json` e sostituire la sezione `frameworks` con quanto segue:
+1. Aprire il file `csproj` e sostituire l'elemento `<TargetFramework>` con quanto segue:
 
-    ```json
-    "frameworks": {
-      "netstandard1.6": { }
-    }
-    ```
-Questa operazione consente di ottenere due risultati:
+  ```xml
+  <TargetFramework>netstandard1.6</TargetFramework>
+  ```
+Questa operazione indica che, anziché usare l'intero framework `netcoreapp1.0`, che include .NET Core CLR, la libreria di .NET Core e vari altri componenti del sistema, l'app usa solo la libreria .NET Standard.
 
-    * Indica che, anziché usare l'intero framework `netcoreapp1.0`, che include .NET Core CLR, la libreria di .NET Core e un numero di altri componenti del sistema, l'app usa solo la libreria .NET Standard.
+2. Sostituire `<ItemGroup>` contenente riferimenti al pacchetto con quanto segue:
 
-    * La rimozione dell'attributo `"type": "platform"` indica che il framework viene fornito come set di componenti locali dell'app, anziché come pacchetto di piattaforma a livello di sistema.
+  ```xml
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.0.2" />
+    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.0.1" />
+  </ItemGroup>
+  ```
 
-2. Sostituire la sezione `dependencies` con il codice seguente:
-
-    ```json
-    "dependencies": {
-      "NETStandard.Library": "1.6.0",
-      "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
-      "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1"
-    },
-    ```
    In questo modo, vengono definiti i componenti di sistema usati dall'app. I componenti di sistema forniti con l'app includono la libreria .NET Standard, il runtime e l'host di .NET Core. In questo modo, si ottiene una distribuzione autonoma con impatto ridotto.
 
-3. Come nell'esempio [Pubblicazione di una semplice distribuzione autonoma](#simpleSelf), creare una sezione `runtimes` nel file `project.json` che definisce le piattaforme di destinazione dell'app e specifica l'identificatore di runtime di ogni piattaforma di destinazione. Per un elenco degli identificatori di runtime, vedere [Runtime IDentifier catalog](../rid-catalog.md) (Catalogo degli identificatori di runtime). Ad esempio, la sezione `runtimes` seguente indica che l'app viene eseguita in sistemi operativi Windows 10 a 64 bit e nel sistema operativo OS X versione 10.10 a 64 bit.
+3. Come nell'esempio [Pubblicazione di una semplice distribuzione autonoma](#simpleSelf), creare un elemento `<RuntimeIdentifiers>` in un'istanza di `<PropertyGroup>` nel file `csproj` che definisce le piattaforme di destinazione dell'app e specifica l'identificatore di runtime di ogni piattaforma di destinazione. Per un elenco degli identificatori di runtime, vedere [Runtime IDentifier catalog](../rid-catalog.md) (Catalogo degli identificatori di runtime). L'esempio seguente indica che l'app viene eseguita in sistemi operativi Windows 10 a 64 bit e nel sistema operativo OS X versione 10.11 a 64 bit.
 
-    ```json
-        "runtimes": {
-          "win10-x64": {},
-          "osx.10.10-x64": {}
-        }
+    ```xml
+    <PropertyGroup>
+      <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+    </PropertyGroup>
     ```
-Si noti che è inoltre necessario aggiungere una virgola per separare la sezione `runtimes` dalla sezione precedente.
-Un file di esempio completo `project.json` viene presentato più avanti in questa sezione.
+    
+   Un file di esempio completo `csproj` viene presentato più avanti in questa sezione.
 
 4. Eseguire il comando `dotnet restore` per ripristinare le dipendenze specificate nel progetto.
 
-5. Creare le build di debug dell'app in ciascuna delle piattaforme di destinazione usando il comando `dotnet build`. A meno che non si specifichi l'identificatore di runtime che si vuole compilare, il comando `dotnet build` crea una compilazione solo per l'ID di runtime del sistema corrente. È possibile compilare l'app per entrambe le piattaforme di destinazione con i comandi:
-
-    ```console
-    dotnet build -r win10-x64
-    dotnet build -r osx.10.10-x64
-    ```
-
-6. Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando `dotnet publish` per entrambe le piattaforme di destinazione, come indicato di seguito:
+5. Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando `dotnet publish` per entrambe le piattaforme di destinazione, come indicato di seguito:
 
    ```console
    dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.10-x64
+   dotnet publish -c release -r osx.10.11-x64
    ```
 In questo modo, viene creata la versione finale dell'app per ogni piattaforma di destinazione (anziché un debug). I file risultanti vengono inseriti in una sottodirectory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netstandard1.6\<runtime_identifier>`. Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.
 
-7. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
+6. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
 
 I file pubblicati possono essere distribuiti nel modo desiderato. Ad esempio, è possibile inserirli in un file zip, usare un semplice comando `copy` o distribuirli con qualsiasi pacchetto di installazione di propria scelta. 
 
-Di seguito è riportato il file `project.json` completo per questo progetto.
+Di seguito è riportato il file `csproj` completo per questo progetto.
 
-```json
-   {
-     "version": "1.0.0-*",
-     "buildOptions": {
-       "debugType": "portable",
-       "emitEntryPoint": true
-     },
-     "dependencies": {
-       "NETStandard.Library": "1.6.0",
-       "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2",
-       "Microsoft.NETCore.DotNetHostPolicy":  "1.0.1"
-     },
-     "frameworks": {
-       "netstandard1.6": { }
-     },
-     "runtimes": {
-       "win10-x64": {},
-       "osx.10.10-x64": {}
-     }
-   }
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <DebugType>Portable</DebugType>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.0.2" />
+    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.0.1" />
+  </ItemGroup>
+</Project>
 ```
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

@@ -40,7 +40,21 @@
           "files": ["**/*.md"],
           "src": "docs",
           "dest": "articles",
-          "exclude": ["**/includes/**", "***/contributing.md"] 
+          "exclude": [
+	"**/includes/**", 
+	"***/contributing.md",
+	"csharp/misc/**",
+	"visual-basic/developing-apps/customizing-extending-my/**",
+	"visual-basic/developing-apps/development-with-my/**",
+	"visual-basic/developing-apps/includes/**",
+	"visual-basic/developing-apps/printing/**",
+	"visual-basic/developing-apps/using-ide/**",
+	"visual-basic/developing-apps/windows-forms/**",
+	"visual-basic/language-reference/**",
+	"visual-basic/misc/**",
+	"visual-basic/programming-guide/**",
+	"visual-basic/reference/**"
+	] 
         },
         {
           "files": ["*.md"],
