@@ -1,0 +1,6 @@
+# [XML Descendant Axis Property](xml-descendant-axis-property.md)
+# [Extension Indexer Property](extension-indexer-property.md)
+# [XML Child Axis Property](xml-child-axis-property.md)
+# [XML Axis Properties](xml-axis-properties.md)
+# [XML Value Property](xml-value-property.md)
+# [XML Attribute Axis Property](xml-attribute-axis-property.md)

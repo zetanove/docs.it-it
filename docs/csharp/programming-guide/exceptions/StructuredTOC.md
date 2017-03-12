@@ -1,0 +1,8 @@
+# [Eccezioni e gestione delle eccezioni (Guida per programmatori C#)](exceptions-and-exception-handling.md)
+## [Utilizzo di eccezioni (Guida per programmatori C#)](using-exceptions.md)
+## [Gestione delle eccezioni (Guida per programmatori C#)](exception-handling.md)
+## [Creazione e generazione di eccezioni (Guida per programmatori C#)](creating-and-throwing-exceptions.md)
+## [Eccezioni generate dal compilatore (Guida per programmatori C#)](compiler-generated-exceptions.md)
+## [Procedura: gestire un'eccezione utilizzando Try/Catch (Guida per programmatori C#)](how-to-handle-an-exception-using-try-catch.md)
+## [Procedura: eseguire codice di pulitura mediante finally (Guida per programmatori C#)](how-to-execute-cleanup-code-using-finally.md)
+## [Procedura: intercettare un'eccezione non CLS](how-to-catch-a-non-cls-exception.md)

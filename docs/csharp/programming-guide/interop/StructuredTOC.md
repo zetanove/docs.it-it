@@ -1,0 +1,7 @@
+# [Interoperabilità (Guida per programmatori C#)](interoperability.md)
+## [Cenni preliminari sull'interoperabilità (Guida per programmatori C#)](interoperability-overview.md)
+## [Procedura: accedere agli oggetti di interoperabilità di Office usando le funzionalità di Visual C# (Guida per programmatori C#)](how-to-access-office-onterop-objects.md)
+## [Procedura: utilizzare proprietà indicizzate nella programmazione dell'interoperabilità COM (Guida per programmatori C#)](how-to-use-indexed-properties-in-com-interop-rogramming.md)
+## [Procedura: utilizzare platform invoke per riprodurre un file audio (Guida per programmatori C#)](how-to-use-platform-invoke-to-play-a-wave-file.md)
+## [Procedura dettagliata: programmazione di Office (C# e Visual Basic)](walkthrough-office-programming.md)
+## [Esempio di classe COM (Guida per programmatori C#)](example-com-class.md)
