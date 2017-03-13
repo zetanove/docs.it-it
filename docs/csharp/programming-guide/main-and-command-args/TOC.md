@@ -1,5 +1,0 @@
-# [Valori restituiti da Main()](main-return-values.md)
-# [Procedura: visualizzare gli argomenti della riga di comando](how-to-display-command-line-arguments.md)
-# [Procedura: accedere agli argomenti della riga di comando utilizzando foreach](how-to-access-command-line-arguments-using-foreach.md)
-# [Main() e argomenti della riga di comando](main-and-command-line-arguments.md)
-# [Argomenti della riga di comando](command-line-arguments.md)

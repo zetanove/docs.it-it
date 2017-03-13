@@ -1,5 +1,0 @@
-# [How to: Call a Web Service Asynchronously](how-to-call-a-web-service-asynchronously.md)
-# [Programming in Visual Basic](index.md)
-# [Accessing Application Forms](accessing-application-forms.md)
-# [Accessing Application Web Services](accessing-application-web-services.md)
-# [Accessing User Data](accessing-user-data.md)

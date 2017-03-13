@@ -1,6 +1,0 @@
-# [Troubleshooting Arrays](troubleshooting-arrays.md)
-# [Matrici](index.md)
-# [How to: Initialize an Array Variable in Visual Basic](how-to-initialize-an-array-variable.md)
-# [How to: Sort An Array in Visual Basic](how-to-sort-an-array.md)
-# [Array Dimensions in Visual Basic](array-dimensions.md)
-# [How to: Assign One Array to Another Array](how-to-assign-one-array-to-another-array.md)
