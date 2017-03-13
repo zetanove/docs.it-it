@@ -78,7 +78,7 @@ Language\-Integrated Query \(LINQ\) semplifica l'accesso a informazioni di datab
   
      Aggiungere il codice seguente all'evento `Load` per eseguire una query nelle tabelle esposte come proprietà del contesto dati e ordinare i risultati.  La query ordina i risultati in base al numero di ordini del cliente, in ordine decrescente.  I clienti che hanno lo stesso numero di ordini vengono ordinati in senso crescente \(impostazione predefinita\) in base al nome di azienda.  
   
-     [!code-vb[VbLINQToSQLHowTos#10](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form4.vb#10)]  
+     [!code-vb[VbLINQToSQLHowTos#10](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-sort-query-results-by-using-linq_1.vb)]  
   
 4.  Premere F5 per eseguire il progetto e visualizzare i risultati.  
   

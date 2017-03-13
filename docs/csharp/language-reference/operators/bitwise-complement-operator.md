@@ -30,7 +30,7 @@ L'operatore `~` esegue un'operazione di complemento bit per bit sull'operando, c
  I tipi definiti dall'utente possono eseguire l'overload dell'operatore `~` .  Per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md).  Le operazioni sui tipi integrali sono generalmente consentite sull'enumerazione.  
   
 ## Esempio  
- [!code-cs[csRefOperators#25](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#25)]  
+ [!code-cs[csRefOperators#25](../../../csharp/language-reference/operators/codesnippet/CSharp/bitwise-complement-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

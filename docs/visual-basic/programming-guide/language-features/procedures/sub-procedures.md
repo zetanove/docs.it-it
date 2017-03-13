@@ -75,11 +75,11 @@ Una routine `Sub` è costituita da una serie di istruzioni [!INCLUDE[vbprvb](../
 ### Illustrazione della dichiarazione e della chiamata  
  La routine `Sub` riportata di seguito indica all'utente del computer quale attività l'applicazione sta per eseguire e visualizza un timestamp.  Anziché duplicare questo codice all'inizio di ogni attività, l'applicazione chiama semplicemente `tellOperator` da posizioni diverse.  Ogni chiamata passa una stringa nell'argomento  `task` , che identifica l'attività che sta per essere avviata.  
   
- [!code-vb[VbVbcnProcedures#2](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/sub-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#2](./codesnippet/VisualBasic/sub-procedures_1.vb)]  
   
  Nell'esempio riportato di seguito viene illustrata una tipica chiamata a `tellOperator`.  
   
- [!code-vb[VbVbcnProcedures#3](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/sub-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#3](./codesnippet/VisualBasic/sub-procedures_2.vb)]  
   
 ## Vedere anche  
  [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

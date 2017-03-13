@@ -55,8 +55,8 @@ Il controllo <xref:Microsoft.VisualBasic.PowerPacks.OvalShape> consente di diseg
   
 4.  Nella routine `Event` aggiungere il codice seguente:  
   
-     [!code-cs[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/VbPowerpacksShapeCS/VbPowerpacksShape.cs#1)]
-     [!code-vb[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerpacksShape/VbPowerpacksShape.vb#1)]  
+     [!code-cs[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.cs)]
+     [!code-vb[VbPowerpacksShape#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls_1.vb)]  
   
 ## Personalizzazione di forme  
  Quando si usano le impostazioni predefinite, i controlli <xref:Microsoft.VisualBasic.PowerPacks.OvalShape> e <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape> vengono visualizzati con un bordo nero continuo largo un pixel e uno sfondo trasparente.  Specifiche proprietà consentono di modificare la larghezza, lo stile e il colore del bordo.  Proprietà aggiuntive consentono di impostare lo sfondo delle forme su una tinta unita, un motivo, un riempimento sfumato o un'immagine.  

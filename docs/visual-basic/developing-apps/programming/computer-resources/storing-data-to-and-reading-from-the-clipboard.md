@@ -31,13 +31,13 @@ caps.handback.revision: 21
 ## Leggere dagli Appunti  
  Utilizzare il metodo di <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText%2A> per leggere il testo negli Appunti.  Nel codice che segue il testo viene letto e visualizzato in una finestra di messaggio.  Per il corretto funzionamento dell'esempio, è necessario che negli Appunti sia memorizzato un testo.  
   
- [!code-vb[VbVbcnMyClipboard#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_1.vb)]  
+ [!code-vb[VbVbcnMyClipboard#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_1.vb)]  
   
  Questo esempio di codice è anche disponibile come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice si trova in **Sistema operativo Windows \> Appunti**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
   
  Utilizzare il metodo <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage%2A> per recuperare un'immagine dagli Appunti.  In questo esempio viene verificato se negli Appunti è presente un'immagine, prima di recuperarla e di assegnarla a  `PictureBox1`.  
   
- [!code-vb[VbResourceTasks#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_2.vb)]  
+ [!code-vb[VbResourceTasks#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_2.vb)]  
   
  Questo esempio di codice è anche disponibile come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice si trova in **Sistema operativo Windows \> Appunti**.Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
   
@@ -48,31 +48,31 @@ caps.handback.revision: 21
   
  Utilizzare la funzione `ContainsImage` per determinare se i dati contenuti negli Appunti sono un'immagine.  Il codice seguente controlla se i dati sono un'immagine e segnala il risultato della verifica.  
   
- [!code-vb[VbResourceTasks#13](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_3.vb)]  
+ [!code-vb[VbResourceTasks#13](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_3.vb)]  
   
 ## cancellare gli Appunti  
  Il metodo <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.Clear%2A> cancella gli Appunti.  Tale cancellazione può avere effetto sugli altri processi condivisi dagli Appunti.  
   
  Nell'esempio di codice riportato di seguito viene illustrato come utilizzare il metodo `Clear`.  
   
- [!code-vb[VbVbcnMyClipboard#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_4.vb)]  
+ [!code-vb[VbVbcnMyClipboard#3](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_4.vb)]  
   
 ## Scrivendo negli Appunti  
  Utilizzare il metodo <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText%2A> per scrivere testo negli Appunti.  Il codice seguente scrive la stringa "This is a test string" negli Appunti.  
   
- [!code-vb[VbVbcnMyClipboard#1](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_5.vb)]  
+ [!code-vb[VbVbcnMyClipboard#1](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_5.vb)]  
   
  il metodo di `SetText` può accettare un parametro di formato che contiene un tipo di <xref:System.Windows.Forms.TextDataFormat>.  Il codice seguente scrive la stringa "This is a test string" negli Appunti come testo RTF.  
   
- [!code-vb[VbVbcnMyClipboard#2](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_6.vb)]  
+ [!code-vb[VbVbcnMyClipboard#2](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_6.vb)]  
   
  Utilizzare il metodo <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData%2A> per scrivere i dati negli Appunti.  In questo esempio viene scritta la `dataChunk` dell'enumerazione `DataObject` negli Appunti nel formato personalizzato `specialFormat`.  
   
- [!code-vb[VbVbcnMyClipboard#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_7.vb)]  
+ [!code-vb[VbVbcnMyClipboard#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_7.vb)]  
   
  Utilizzare il metodo <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio%2A> per scrivere i dati audio negli Appunti.  In questo esempio viene creata la matrice di byte `musicReader`, in cui viene letto il file `cool.wav`, che viene quindi scritto negli Appunti.  
   
- [!code-vb[VbResourceTasks#5](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/storing-data-to-and-read_8.vb)]  
+ [!code-vb[VbResourceTasks#5](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/storing-data-to-and-reading-from-the-clipboard_8.vb)]  
   
 > [!IMPORTANT]
 >  Poiché il contenuto degli Appunti è accessibile da altri utenti, si consiglia di non utilizzarli per memorizzare informazioni riservate, ad esempio password o dati personali.  

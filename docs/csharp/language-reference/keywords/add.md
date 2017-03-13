@@ -23,7 +23,7 @@ La parola chiave contestuale `add` è utilizzata per definire una funzione di ac
 ## Esempio  
  Nell'esempio seguente viene mostrato un evento che dispone di funzioni di accesso personalizzate `add` e [remove](../../../csharp/language-reference/keywords/remove.md).  Per l'esempio completo, vedere [Procedura: implementare eventi di interfaccia](../../../csharp/programming-guide/events/how-to-implement-interface-events.md).  
   
- [!code-cs[csrefKeywordsContextual#15](../../../csharp/language-reference/keywords/codesnippet/csharp/add_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/add_1.cs)]  
   
  Generalmente non è necessario fornire funzioni di accesso per un evento personalizzato.  Le funzioni di accesso che vengono generate automaticamente dal compilatore quando si dichiara un evento sono sufficienti per la maggior parte degli scenari.  
   

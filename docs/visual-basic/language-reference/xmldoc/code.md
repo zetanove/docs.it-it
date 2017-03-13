@@ -41,7 +41,7 @@ Indica che il testo è composto da più righe di codice.
 ## Esempio  
  Nell'esempio riportato di seguito il tag \<code\> viene utilizzato per includere un esempio di codice relativo all'utilizzo del campo `ID`.  
   
- [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/code_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#2](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/code_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

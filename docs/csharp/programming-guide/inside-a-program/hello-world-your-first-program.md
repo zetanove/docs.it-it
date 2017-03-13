@@ -44,7 +44,7 @@ La routine riportata di seguito crea una versione C\# del tradizionale programma
   
 6.  Sostituire il contenuto di Program.jcs con il codice seguente.  
   
-     [!code-cs[csProgGuide#21](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/progGuide.cs#21)]  
+     [!code-cs[csProgGuide#21](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_1.cs)]  
   
 7.  Premere il tasto F5 per eseguire il progetto.  Viene visualizzata una finestra dei prompt dei comandi contenente la riga `Hello World!`  
   
@@ -53,11 +53,11 @@ La routine riportata di seguito crea una versione C\# del tradizionale programma
 ## Commenti  
  La prima riga contiene un commento.  I caratteri `//` convertono il resto della riga in un commento.  
   
- [!code-cs[csProgGuide#32](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/progGuide.cs#32)]  
+ [!code-cs[csProgGuide#32](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_2.cs)]  
   
  È anche possibile commentare un blocco di testo racchiudendolo tra i caratteri `/*` e `*/`.  Questa operazione viene mostrata nell'esempio seguente.  
   
- [!code-cs[csProgGuide#33](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/progGuide.cs#33)]  
+ [!code-cs[csProgGuide#33](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_3.cs)]  
   
 ## Metodo Main  
  Un'applicazione console C\# deve contenere un metodo `Main`, nel quale il controllo ha inizio e fine.  Il metodo `Main` è il metodo in cui si creano oggetti e si eseguono altri metodi.  
@@ -66,19 +66,19 @@ La routine riportata di seguito crea una versione C\# del tradizionale programma
   
 -   Può restituire `void`.  
   
-     [!code-cs[csProgGuideMain#12](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/hello-world-your-first-p_4.cs)]  
+     [!code-cs[csProgGuideMain#12](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_4.cs)]  
   
 -   Può inoltre restituire un integer.  
   
-     [!code-cs[csProgGuideMain#13](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/hello-world-your-first-p_5.cs)]  
+     [!code-cs[csProgGuideMain#13](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_5.cs)]  
   
 -   Con entrambi i tipi restituiti, può accettare argomenti.  
   
-     [!code-cs[csProgGuideMain#19](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/hello-world-your-first-p_6.cs)]  
+     [!code-cs[csProgGuideMain#19](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_6.cs)]  
   
      In alternativa  
   
-     [!code-cs[csProgGuideMain#18](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/hello-world-your-first-p_7.cs)]  
+     [!code-cs[csProgGuideMain#18](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_7.cs)]  
   
  Il parametro `args` del metodo `Main` è una matrice di oggetti `string` che contiene gli argomenti della riga di comando utilizzata per richiamare il programma.  Diversamente da C\+\+, la matrice non include il nome del file eseguibile \(.exe\).  
   
@@ -89,9 +89,9 @@ La routine riportata di seguito crea una versione C\# del tradizionale programma
 ## Input e output  
  In genere nei programmi C\# vengono utilizzati i servizi di input\/output forniti dalla libreria di runtime di .NET Framework.  L'istruzione `System.Console.WriteLine("Hello World!");`, in cui viene utilizzato il metodo <xref:System.Console.WriteLine%2A>,  Questo è uno dei metodi di output della classe <xref:System.Console> nella libreria di runtime.  e visualizza il parametro di tipo stringa sul flusso di output standard seguito da una nuova riga.  Altri metodi <xref:System.Console> sono disponibili per varie operazioni di input e output.  Se si include la direttiva `using System;` all'inizio del programma, è possibile utilizzare direttamente i metodi e le classi <xref:System> senza assegnare loro nomi completi.  È ad esempio possibile chiamare `Console.WriteLine` anziché `System.Console.WriteLine`:  
   
- [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/using.cs#1)]  
+ [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_8.cs)]  
   
- [!code-cs[csProgGuide#23](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/progGuide.cs#23)]  
+ [!code-cs[csProgGuide#23](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/hello-world-your-first-program_9.cs)]  
   
  Per ulteriori informazioni sui metodi di input\/output, vedere <xref:System.IO>.  
   

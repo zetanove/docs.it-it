@@ -25,7 +25,7 @@ caps.handback.revision: 19
 
 I tipi anonimi non offrono alcun meccanismo per specificare direttamente i tipi di dati delle proprietà. I tipi di tutte le proprietà vengono dedotti. Nell'esempio seguente, i tipi di `Name` e `Price` vengono dedotti direttamente dai valori usati per inizializzarli.  
   
- [!code-vb[VbVbalrAnonymousTypes#1](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_1.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#1](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_1.vb)]  
   
  I tipi anonimi possono anche dedurre i nomi e i tipi delle proprietà da altre origini. Le sezioni che seguono forniscono un elenco delle circostanze in cui l'inferenza è possibile e alcuni esempi di situazioni in cui non lo è.  
   
@@ -35,19 +35,19 @@ I tipi anonimi non offrono alcun meccanismo per specificare direttamente i tipi 
   
 -   Dai nomi di variabili. Il tipo anonimo `anonProduct` avrà due proprietà, `productName` e `productPrice`. I relativi tipi di dati saranno quelli delle variabili originali, `String` e `Double`, rispettivamente.  
   
-     [!code-vb[VbVbalrAnonymousTypes#11](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_2.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#11](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_2.vb)]  
   
 -   Dai nomi di proprietà o di campo di altri oggetti. Si consideri ad esempio un oggetto `car` di tipo `CarClass` che include le proprietà `Name` e `ID`. Per creare una nuova istanza di tipo anonimo, `car1`, con le proprietà `Name` e `ID` inizializzate con i valori dell'oggetto `car`, è possibile scrivere quanto segue:  
   
-     [!code-vb[VbVbalrAnonymousTypes#34](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_3.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#34](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_3.vb)]  
   
      La dichiarazione precedente è equivalente alla riga di codice più lunga che definisce il tipo anonimo `car2`.  
   
-     [!code-vb[VbVbalrAnonymousTypes#35](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_4.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#35](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_4.vb)]  
   
 -   Dai nomi di membri XML.  
   
-     [!code-vb[VbVbalrAnonymousTypes#12](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_5.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#12](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_5.vb)]  
   
      Il tipo risultante per `anon` avrebbe una proprietà, `Book`, di tipo <xref:System.Collections.IEnumerable>\(di XElement\).  
   
@@ -59,7 +59,7 @@ I tipi anonimi non offrono alcun meccanismo per specificare direttamente i tipi 
   
      La variabile `anon2` nel codice seguente è un tipo anonimo che ha una proprietà, un carattere denominato `First`. Questo codice visualizzerà una lettera "E", la lettera restituita dalla funzione <xref:System.Linq.Enumerable.First%2A>.  
   
-     [!code-vb[VbVbalrAnonymousTypes#13](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_6.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#13](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_6.vb)]  
   
 ## Inferenze non corrette  
   
@@ -87,7 +87,7 @@ I tipi anonimi non offrono alcun meccanismo per specificare direttamente i tipi 
   
      L'errore può essere risolto assegnando il risultato dell'espressione a un nome di proprietà.  
   
-     [!code-vb[VbVbalrAnonymousTypes#14](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_7.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#14](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_7.vb)]  
   
 -   L'inferenza per più proprietà produce due o più proprietà che hanno lo stesso nome. Riferendosi di nuovo alle dichiarazioni illustrate negli esempi precedenti, non è possibile elencare `product.Name` e `car1.Name` come proprietà dello stesso tipo anonimo, perché l'identificatore dedotto per ognuno di queste sarebbe `Name`.  
   
@@ -97,7 +97,7 @@ I tipi anonimi non offrono alcun meccanismo per specificare direttamente i tipi 
   
      Il problema può essere risolto assegnando i valori a nomi di proprietà distinti.  
   
-     [!code-vb[VbVbalrAnonymousTypes#36](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_8.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#36](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_8.vb)]  
   
      Si noti che le differenze di lettere maiuscole o minuscole non differenziano i due nomi.  
   
@@ -115,7 +115,7 @@ I tipi anonimi non offrono alcun meccanismo per specificare direttamente i tipi 
   
      In questo esempio, è possibile risolvere il problema invertendo l'ordine in cui sono dichiarate le proprietà.  
   
-     [!code-vb[VbVbalrAnonymousTypes#15](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_9.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#15](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_9.vb)]  
   
 -   Un nome di proprietà del tipo anonimo è uguale al nome di un membro di <xref:System.Object>. Ad esempio, la dichiarazione seguente ha esito negativo perché `Equals` è un metodo di <xref:System.Object>.  
   
@@ -127,7 +127,7 @@ I tipi anonimi non offrono alcun meccanismo per specificare direttamente i tipi 
   
      È possibile risolvere il problema modificando il nome della proprietà:  
   
-     [!code-vb[VbVbalrAnonymousTypes#16](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/how-to-infer-property-na_10.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#16](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/how-to-infer-property-names-and-types-in-anonymous-type-declarations_10.vb)]  
   
 ## Vedere anche  
  [Object Initializers: Named and Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)   

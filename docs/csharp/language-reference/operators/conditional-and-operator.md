@@ -41,7 +41,7 @@ x & y
 ## Esempio  
  Nell'esempio seguente, l'espressione condizionale nella seconda `if` l'istruzione restituisce solo il primo operando perché restituisce un valore di operando  `false`.  
   
- [!code-cs[csRefOperators#48](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#48)]  
+ [!code-cs[csRefOperators#48](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-and-operator_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

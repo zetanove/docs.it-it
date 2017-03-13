@@ -21,7 +21,7 @@ In C\# 2.0 e versioni successive le matrici unidimensionali con un limite inferi
   
  Nell'esempio di codice riportato di seguito viene illustrato come un singolo metodo generico che accetta un parametro di input <xref:System.Collections.Generic.IList%601> può scorrere un elenco e una matrice, in questo caso una matrice di numeri interi.  
   
- [!code-cs[csProgGuideGenerics#35](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-arrays_1.cs)]  
+ [!code-cs[csProgGuideGenerics#35](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-arrays_1.cs)]  
   
 ## Vedere anche  
  <xref:System.Collections.Generic>   

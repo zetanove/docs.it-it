@@ -27,7 +27,7 @@ In questo esempio viene costruita una stringa lunga da diverse stringhe più pic
 ## Esempio  
  Nell'esempio riportato di seguito viene creata un'istanza della classe <xref:System.Text.StringBuilder> a cui vengono aggiunte 1.000 stringhe, quindi ne viene restituita la rappresentazione di stringa.  
   
- [!code-vb[VbVbalrStrings#70](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-create-strings-us_1.vb)]  
+ [!code-vb[VbVbalrStrings#70](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-strings-using-a-stringbuilder_1.vb)]  
   
 ## Vedere anche  
  [Uso della classe StringBuilder](../Topic/Using%20the%20StringBuilder%20Class%20in%20the%20.NET%20Framework.md)   

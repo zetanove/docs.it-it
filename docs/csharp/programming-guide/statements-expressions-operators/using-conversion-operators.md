@@ -29,12 +29,12 @@ caps.handback.revision: 20
 ## Esempio  
  In questo caso si parla di operatore di conversione esplicito.  Questo operatore esegue la conversione dal tipo <xref:System.Byte> a un tipo di valore denominato `Digit`.  Poiché non è possibile convertire in cifre tutti i byte, la conversione è di tipo esplicito ed è pertanto necessario utilizzare un cast, come illustrato nel metodo `Main`.  
   
- [!code-cs[csProgGuideStatements#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-conversion-operators_1.cs)]  
+ [!code-cs[csProgGuideStatements#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-conversion-operators_1.cs)]  
   
 ## Esempio  
  In questo esempio viene illustrato un operatore di conversione implicito definendo un operatore di conversione che annulla l'operazione eseguita nell'esempio 1: converte una classe di valori denominata `Digit` in un tipo <xref:System.Byte> integrale.  Poiché è possibile convertire ogni cifra in <xref:System.Byte>, non è necessario forzare gli utenti ad eseguire una conversione esplicita.  
   
- [!code-cs[csProgGuideStatements#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-conversion-operators_2.cs)]  
+ [!code-cs[csProgGuideStatements#12](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-conversion-operators_2.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

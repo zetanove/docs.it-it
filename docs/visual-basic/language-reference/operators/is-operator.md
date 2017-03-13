@@ -55,7 +55,7 @@ result = object1 Is object2
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `Is` viene utilizzato per confrontare coppie di riferimenti a oggetti.  I risultati vengono assegnati a un valore `Boolean` che indica se i due oggetti sono identici.  
   
- [!code-vb[VbVbalrOperators#27](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/is-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#27](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/is-operator_1.vb)]  
   
  Come illustrato nell'esempio precedente, è possibile utilizzare l'operatore `Is` per testare sia gli oggetti ad associazione anticipata che quelli ad associazione tardiva.  
   

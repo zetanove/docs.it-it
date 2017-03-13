@@ -41,7 +41,7 @@ i = "Hello"; // Error: "Cannot implicitly convert type 'string' to 'int'"
 ## Conversioni implicite  
  Per i tipi numerici incorporati, una conversione implicita può essere eseguita quando il valore da archiviare può essere adattato alla variabile senza essere troncato o arrotondato.  Ad esempio, una variabile di tipo [long](../../../csharp/language-reference/keywords/long.md) \(intero a 8 byte\) è in grado di archiviare qualsiasi valore archiviabile in un tipo [int](../../../csharp/language-reference/keywords/int.md) \(4 byte su un computer a 32 bit\).  Nell'esempio seguente, il compilatore converte implicitamente il valore a destra in un tipo `long` prima di assegnarlo a `bigNum`.  
   
- [!code-cs[csProgGuideTypes#34](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/casting-and-type-convers_1.cs)]  
+ [!code-cs[csProgGuideTypes#34](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_1.cs)]  
   
  Per un elenco completo delle conversioni numeriche implicite, vedere [Tabella delle conversioni numeriche implicite](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md).  
   
@@ -55,7 +55,7 @@ Base b = d; // Always OK.
 ## Conversioni esplicite  
  Tuttavia, se una conversione non può essere eseguita senza un rischio di perdita di informazioni, il compilatore richiede che si esegua una conversione esplicita, chiamata *cast*.  Il cast è un modo di informare in modo esplicito il compilatore che si intende eseguire la conversione e che si è consapevoli che potrebbe verificarsi una perdita di dati.  Per eseguire un cast, specificare il tipo di destinazione del cast in parentesi davanti al valore o alla variabile da convertire.  Il seguente programma esegue il cast di [double](../../../csharp/language-reference/keywords/double.md) su [int](../../../csharp/language-reference/keywords/int.md).  Se il cast non è presente, il programma non verrà compilato.  
   
- [!code-cs[csProgGuideTypes#2](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/casting-and-type-convers_2.cs)]  
+ [!code-cs[csProgGuideTypes#2](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_2.cs)]  
   
  Per un elenco delle conversioni numeriche esplicite consentite, vedere [Tabella delle conversioni numeriche esplicite](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md).  
   
@@ -80,7 +80,7 @@ Giraffe g2 = (Giraffe) a;
 ## Eccezioni di conversione di tipi in fase di esecuzione  
  In alcune conversioni di tipi riferimento, il compilatore non è in grado di determinare se un cast sarà valido.  È possibile che un'operazione di cast compilata correttamente non riesca in fase di esecuzione.  Come mostrato nell'esempio seguente, un cast di tipo che non riesce in fase di esecuzione provoca la generazione di <xref:System.InvalidCastException>.  
   
- [!code-cs[csProgGuideTypes#41](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/casting-and-type-convers_3.cs)]  
+ [!code-cs[csProgGuideTypes#41](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/casting-and-type-conversions_3.cs)]  
   
  Il linguaggio C\# fornisce gli operatori [is](../../../csharp/language-reference/keywords/is.md) e [as](../../../csharp/language-reference/keywords/as.md) per consentire di verificare la compatibilità prima di eseguire un cast.  Per ulteriori informazioni, vedere [Procedura: eseguire il cast sicuro tramite gli operatori as e is](../../../csharp/programming-guide/types/how-to-safely-cast-by-using-as-and-is-operators.md).  
   

@@ -24,7 +24,7 @@ La parola chiave contestuale `by` viene utilizzata nella clausola `group` in un'
 ## Esempio  
  Nell'esempio seguente viene illustrato l'utilizzo della parola chiave contestuale `by` nella clausola `group` per specificare che gli studenti devono essere raggruppati in base alla prima lettera del cognome di ciascuno studente.  
   
- [!code-cs[csrefKeywordsContextual#10](../../../csharp/language-reference/keywords/codesnippet/csharp/by_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#10](../../../csharp/language-reference/keywords/codesnippet/CSharp/by_1.cs)]  
   
 ## Vedere anche  
  [Espressioni di query LINQ](../../../csharp/programming-guide/linq-query-expressions/index.md)

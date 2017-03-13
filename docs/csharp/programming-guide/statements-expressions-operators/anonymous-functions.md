@@ -34,7 +34,7 @@ Una funzione anonima è un'istruzione o espressione "in linea" che può essere u
   
  Nell'esempio seguente viene illustrata l'evoluzione della creazione del delegato da C\# 1.0 a C\# 3.0:  
   
- [!code-cs[csProgGuideLINQ#65](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#65)]  
+ [!code-cs[csProgGuideLINQ#65](../../../csharp/programming-guide/arrays/codesnippet/CSharp/anonymous-functions_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

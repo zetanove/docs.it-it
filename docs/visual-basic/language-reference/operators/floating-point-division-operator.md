@@ -85,7 +85,7 @@ expression1 / expression2
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `/` viene utilizzato per eseguire una divisione a virgola mobile.  Il risultato è il quoziente dei due operandi.  
   
- [!code-vb[VbVbalrOperators#16](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/floating-point-division-_1_1.vb)]  
+ [!code-vb[VbVbalrOperators#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-operator_1.vb)]  
   
  Le espressioni dell'esempio precedente restituiscono i valori di 2,5 e 3,333333.  Il risultato è sempre a virgola mobile \(`Double`\), anche se entrambi gli operandi sono costanti integer.  
   

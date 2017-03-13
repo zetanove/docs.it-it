@@ -27,7 +27,7 @@ Nell'esempio viene utilizzata la proprietà <xref:System.String.Chars%2A> per ac
 ## Esempio  
  In alcuni casi è utile disporre dei dati relativi ai caratteri di una stringa e alle posizioni di tali caratteri all'interno della stringa.  Una stringa può essere considerata una matrice di caratteri \(istanze `Char`\). È possibile recuperare un particolare carattere facendo riferimento all'indice di tale carattere mediante la proprietà <xref:System.String.Chars%2A>.  
   
- [!code-vb[VbVbalrStrings#49](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-access-characters_1.vb)]  
+ [!code-vb[VbVbalrStrings#49](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-access-characters-in-strings_1.vb)]  
   
  Il parametro `index` della proprietà <xref:System.String.Chars%2A> è a base zero.  
   

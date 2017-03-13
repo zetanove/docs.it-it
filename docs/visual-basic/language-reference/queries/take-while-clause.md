@@ -47,7 +47,7 @@ Take While expression
 ## Esempio  
  Nell'esempio di codice seguente viene illustrato come utilizzare la clausola `Take While` per recuperare i risultati finché non viene trovato il primo dei clienti senza ordini.  
   
- [!code-vb[VbSimpleQuerySamples#2](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#2)]  
+ [!code-vb[VbSimpleQuerySamples#2](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-while-clause_1.vb)]  
   
 ## Vedere anche  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

@@ -32,7 +32,7 @@ Le enumerazioni costituiscono un comodo mezzo per utilizzare set di costanti cor
   
 -   Qualificare il nome del membro con l'enumerazione.  Nell'esempio che segue il membro `Saturday` dell'enumerazione `FirstDayOfWeek` viene assegnato alla variabile `DayValue`.  
   
-     [!code-vb[VbEnumsTask#19](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#19)]  
+     [!code-vb[VbEnumsTask#19](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-refer-to-an-enumeration-member_1.vb)]  
   
 ## Vedere anche  
  [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)   

@@ -32,7 +32,7 @@ In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes
 ## Tipo Char  
  Il tipo di dati `Char` è un unico carattere Unicode a due byte \(16 bit\).  Se una variabile memorizza sempre esattamente un carattere, dichiararla come `Char`.  Di seguito è riportato un esempio:  
   
- [!code-vb[VbVbalrCharTypes#1](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/visualbasic/character-data-types_1.vb)]  
+ [!code-vb[VbVbalrCharTypes#1](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/character-data-types_1.vb)]  
   
  Ogni valore possibile in una variabile `Char` o `String` è un *punto di codice*, o codice carattere, del set di caratteri Unicode.  I caratteri Unicode comprendono il set di caratteri ASCII di base, altre lettere di diversi alfabeti, accenti, simboli di valuta, frazioni, segni diacritici, oltre a simboli matematici e tecnici.  
   
@@ -44,7 +44,7 @@ In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes
 ## Tipo String  
  Il tipo di dati `String` è una sequenza di zero o più caratteri Unicode a due byte \(16 bit\).  Se una variabile può contenere un numero indefinito di caratteri, dichiararla come `String`.  Di seguito è riportato un esempio:  
   
- [!code-vb[VbVbalrCharTypes#2](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/visualbasic/character-data-types_2.vb)]  
+ [!code-vb[VbVbalrCharTypes#2](../../../../visual-basic/programming-guide/language-features/data-types/codesnippet/VisualBasic/character-data-types_2.vb)]  
   
  Per ulteriori informazioni, vedere [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md).  
   

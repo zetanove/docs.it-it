@@ -30,7 +30,7 @@ Un'espressione di query deve iniziare con la clausola `from`.  Inoltre, un'espre
   
  Nell'esempio riportato di seguito, `numbers` è l'origine dati e `num` è la variabile di intervallo.  Si noti che entrambe le variabili sono fortemente tipizzate anche se viene utilizzata la parola chiave [var](../../../csharp/language-reference/keywords/var.md).  
   
- [!code-cs[cscsrefQueryKeywords#1](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/From.cs#1)]  
+ [!code-cs[cscsrefQueryKeywords#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/from-clause_1.cs)]  
   
 ## Variabile di intervallo  
  Tramite l'inferenza, il compilatore deriva il tipo della variabile di intervallo quando l'origine dati implementa <xref:System.Collections.Generic.IEnumerable%601>.  Se, ad esempio, l'origine dispone di un tipo di `IEnumerable<Customer>`, la variabile di intervallo dedotta sarà `Customer`.  È necessario specificare il tipo in modo esplicito unicamente quando l'origine è un tipo `IEnumerable` non generico, ad esempio <xref:System.Collections.ArrayList>.  Per ulteriori informazioni, vedere la classe [How to: Query an ArrayList with LINQ](../Topic/How%20to:%20Query%20an%20ArrayList%20with%20LINQ.md).  
@@ -42,14 +42,14 @@ Un'espressione di query deve iniziare con la clausola `from`.  Inoltre, un'espre
 ## Clausole from composte  
  In alcuni casi, ogni elemento nella sequenza di origine può essere una sequenza o contenere una sequenza.  Ad esempio, l'origine dati può essere un oggetto `IEnumerable<Student>` in cui ciascun elemento studente della sequenza contiene un elenco di punteggi del test.  Per accedere all'elenco interno in ogni elemento `Student` è possibile utilizzare clausole `from` composte.  La tecnica è analoga all'uso di istruzioni [foreach](../../../csharp/language-reference/keywords/foreach-in.md) annidate.  È possibile aggiungere clausole [where](../../../csharp/language-reference/keywords/partial-method.md) o [orderby](../../../csharp/language-reference/keywords/orderby-clause.md) a una delle due clausole `from` per filtrare i risultati.  Nell'esempio seguente viene illustrata una sequenza di oggetti `Student`, ognuno dei quali contiene un `List` interno di numeri interi che rappresentano i punteggi del test.  Per accedere all'elenco interno, utilizzare una clausola `from` composta.  Se necessario, è possibile inserire delle clausole tra le due clausole `from`.  
   
- [!code-cs[cscsrefQueryKeywords#2](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/From.cs#2)]  
+ [!code-cs[cscsrefQueryKeywords#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/from-clause_2.cs)]  
   
 ## Utilizzo di più clausole from per eseguire join  
  Una clausola `from` composta viene utilizzata per accedere a raccolte interne in una sola origine dati.  Una query può tuttavia contenere anche più clausole `from` che generano query supplementari dalle origini dati indipendenti.  Questa tecnica consente di eseguire determinati tipi di operazioni di join che non sono possibili utilizzando la [clausola join](../../../csharp/language-reference/keywords/join-clause.md).  
   
  Nell'esempio seguente viene mostrato come due clausole `from` possono essere utilizzate per formare un cross join completo di due origini dati.  
   
- [!code-cs[cscsrefQueryKeywords#3](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/From.cs#3)]  
+ [!code-cs[cscsrefQueryKeywords#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/from-clause_3.cs)]  
   
  Per ulteriori informazioni sulle operazioni di join che utilizzano più clausole `from`, vedere [Procedura: eseguire operazioni di join personalizzate](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-custom-join-operations.md).  
   

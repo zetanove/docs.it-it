@@ -49,7 +49,7 @@ Comprime e nasconde sezioni di codice in file di Visual Basic.
 ## Esempio  
  In questo esempio viene usata la direttiva `#Region`.  
   
- [!code-vb[VbVbalrConditionalComp#4](../../../visual-basic/language-reference/directives/codesnippet/visualbasic/region-directive_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#4](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/region-directive_1.vb)]  
   
 ## Vedere anche  
  [\#If...Then...\#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)   

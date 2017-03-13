@@ -23,7 +23,7 @@ caps.handback.revision: 33
   
  Negli esempi riportati di seguito vengono create matrici unidimensionali, multidimensionali e irregolari:  
   
- [!code-cs[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideArrays#1](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
   
 ## Cenni preliminari sulle matrici  
  Di seguito sono riportate le caratteristiche delle matrici:  

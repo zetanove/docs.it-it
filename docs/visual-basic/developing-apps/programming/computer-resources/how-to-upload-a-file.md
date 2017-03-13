@@ -31,19 +31,19 @@ caps.handback.revision: 22
   
 -   Utilizzare il metodo `UploadFile` per caricare un file, specificando il percorso del file di origine e il percorso della directory di destinazione come una stringa o un URI \(Uniform Resource Identifier\). Nell'esempio riportato di seguito viene caricato il file `Order.txt` in `http://www.cohowinery.com/uploads.aspx`.  
   
-     [!code-vb[VbResourceTasks#6](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-upload-a-file_1.vb)]  
+     [!code-vb[VbResourceTasks#6](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-upload-a-file_1.vb)]  
   
 ### Per caricare un file e visualizzare lo stato di avanzamento dell'operazione  
   
 -   Utilizzare il metodo `UploadFile` per caricare un file, specificando il percorso del file di origine e il percorso della directory di destinazione come una stringa o URI.  Nell'esempio riportato di seguito viene caricato il file `Order.txt` in `http://www.cohowinery.com/uploads.aspx` senza fornire un nome utente o una password, viene mostrato lo stato di avanzamento del processo di caricamento ed è previsto un intervallo di timeout di 500 millisecondi.  
   
-     [!code-vb[VbResourceTasks#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-upload-a-file_2.vb)]  
+     [!code-vb[VbResourceTasks#7](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-upload-a-file_2.vb)]  
   
 ### Per caricare un file, fornendo un nome utente e una password  
   
 -   Utilizzare il metodo `UploadFile` per caricare un file, specificando il percorso del file di origine e il percorso della directory di destinazione come una stringa o URI e il nome utente e la password.  Nell'esempio riportato di seguito viene caricato il file `Order.txt` in `http://www.cohowinery.com/uploads.aspx`, fornendo il nome utente `anonymous` e una password vuota.  
   
-     [!code-vb[VbResourceTasks#8](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-upload-a-file_3.vb)]  
+     [!code-vb[VbResourceTasks#8](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-upload-a-file_3.vb)]  
   
 ## Programmazione efficiente  
  Le seguenti condizioni possono generare un'eccezione:  

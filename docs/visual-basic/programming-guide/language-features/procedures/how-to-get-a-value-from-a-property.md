@@ -39,7 +39,7 @@ Per recuperare il valore di una proprietà, includerne il nome in un'espressione
   
      Nell'esempio riportato di seguito viene letto il valore della proprietà `Now` di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] chiamando in modo implicito la rispettiva routine `Get`.  
   
-     [!code-vb[VbVbalrDateProperties#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/VbVbalrDateProperties/Module1.vb#4)]  
+     [!code-vb[VbVbalrDateProperties#4](./codesnippet/VisualBasic/how-to-get-a-value-from-a-property_1.vb)]  
   
 2.  Se la proprietà accetta argomenti, far seguire il nome della proprietà da parentesi tra cui racchiudere l'elenco di argomenti.  Se non sono presenti argomenti, è possibile omettere le parentesi.  
   

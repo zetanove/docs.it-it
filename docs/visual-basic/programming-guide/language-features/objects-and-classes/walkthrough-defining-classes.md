@@ -48,28 +48,28 @@ In questa procedura dettagliata viene illustrato come definire classi da utilizz
   
 5.  Assegnare alla nuova classe il nome `UserNameInfo.vb`, quindi fare clic su **Aggiungi** per visualizzare il codice della nuova classe.  
   
-     [!code-vb[VbVbalrOOP#5](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#5)]  
+     [!code-vb[VbVbalrOOP#5](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_1.vb)]  
   
     > [!NOTE]
     >  È possibile utilizzare l'editor di codice di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] per aggiungere una classe al form di avvio digitando la parola chiave `Class` seguita dal nome della nuova classe.  Verrà automaticamente fornita un'istruzione `End Class` corrispondente.  
   
 6.  Definire un campo privato per la classe aggiungendo il codice seguente tra le istruzioni `Class` e `End Class`:  
   
-     [!code-vb[VbVbalrOOP#7](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#7)]  
+     [!code-vb[VbVbalrOOP#7](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_2.vb)]  
   
      Se il campo viene dichiarato come `Private` sarà possibile utilizzarlo solo all'interno della classe.  Per rendere disponibili i campi dall'esterno di una classe, è possibile utilizzare modificatori di accesso che consentono un accesso maggiore, ad esempio `Public`.  Per ulteriori informazioni, vedere [Access Levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 7.  Definire una proprietà per la classe aggiungendo il seguente codice:  
   
-     [!code-vb[VbVbalrOOP#8](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#8)]  
+     [!code-vb[VbVbalrOOP#8](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_3.vb)]  
   
 8.  Definire un metodo per la classe aggiungendo il seguente codice:  
   
-     [!code-vb[VbVbalrOOP#9](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#9)]  
+     [!code-vb[VbVbalrOOP#9](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_4.vb)]  
   
 9. Definire un costruttore con parametri per la nuova classe aggiungendo una routine denominata `Sub New`:  
   
-     [!code-vb[VbVbalrOOP#10](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#10)]  
+     [!code-vb[VbVbalrOOP#10](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_5.vb)]  
   
      Il costruttore `Sub New` viene chiamato automaticamente quando viene creato un oggetto basato su questa classe,  e imposta il valore del campo che contiene il nome utente.  
   
@@ -79,7 +79,7 @@ In questa procedura dettagliata viene illustrato come definire classi da utilizz
   
 2.  Aggiungere un pulsante al form principale e fare doppio clic su di esso per visualizzare il codice per il gestore eventi `Button1_Click`.  Per chiamare la routine di verifica, aggiungere il codice seguente:  
   
-     [!code-vb[VbVbalrOOP#12](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#12)]  
+     [!code-vb[VbVbalrOOP#12](../../../../visual-basic/misc/codesnippet/VisualBasic/walkthrough-defining-classes_6.vb)]  
   
 ### Per eseguire l'applicazione  
   

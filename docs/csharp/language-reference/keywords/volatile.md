@@ -42,12 +42,12 @@ La parola chiave `volatile` indica che un campo potrebbe essere modificato da pi
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato come dichiarare la variabile di un campo pubblico come `volatile`.  
   
- [!code-cs[csrefKeywordsModifiers#24](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#24)]  
+ [!code-cs[csrefKeywordsModifiers#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_1.cs)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato come creare un thread ausiliario o di lavoro da utilizzare per eseguire l'elaborazione in parallelo con quella del thread primario.  Per informazioni complementari sul multithreading, vedere [Threading](../Topic/Managed%20Threading.md) e [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md).  
   
- [!code-cs[csProgGuideThreading#1](../../../csharp/language-reference/keywords/codesnippet/csharp/volatile_2.cs)]  
+ [!code-cs[csProgGuideThreading#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

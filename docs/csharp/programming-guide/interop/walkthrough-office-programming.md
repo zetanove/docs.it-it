@@ -65,8 +65,8 @@ In [!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/v
   
 2.  Aggiungere le seguenti istruzioni `Imports` \(Visual Basic\) o direttive `using` \(C\#\) all'inizio del file di codice, se non sono già presenti.  
   
-     [!code-cs[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#1)]
-     [!code-vb[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#1)]  
+     [!code-cs[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_1.cs)]
+     [!code-vb[csOfficeWalkthrough#1](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_1.vb)]  
   
 ### Per creare un elenco di conti correnti bancari  
   
@@ -74,20 +74,20 @@ In [!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/v
   
 2.  Sostituire la definizione della classe `Account` con il codice seguente.  Le definizioni di classe usano le *proprietà implementate automaticamente*, una novità di Visual Basic in Visual Studio 2010.  Per altre informazioni, vedere [Auto\-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).  
   
-     [!code-cs[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/account.cs#2)]
-     [!code-vb[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/account.vb#2)]  
+     [!code-cs[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_2.cs)]
+     [!code-vb[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_2.vb)]  
   
 3.  Per creare un elenco `bankAccounts` contenente due conti, aggiungere il seguente codice al metodo `ThisAddIn_Startup` nei file ThisAddIn.vb o ThisAddIn.cs.  Le dichiarazioni dell'elenco usano gli *inizializzatori di raccolta*, una novità di Visual Basic in Visual Studio 2010.  Per altre informazioni, vedere [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).  
   
-     [!code-cs[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#3)]
-     [!code-vb[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#3)]  
+     [!code-cs[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_3.cs)]
+     [!code-vb[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_3.vb)]  
   
 ### Per esportare dati in Excel  
   
 1.  Nello stesso file, aggiungere il metodo seguente alla classe `ThisAddIn`.  Il metodo configura una cartella di lavoro di Excel e vi esporta i dati.  
   
-     [!code-cs[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#4)]
-     [!code-vb[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#4)]  
+     [!code-cs[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_4.cs)]
+     [!code-vb[csOfficeWalkthrough#4](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_4.vb)]  
   
      In questo metodo vengono usati due nuove funzionalità di C\#.  Entrambe queste funzionalità sono già esistenti in Visual Basic.  
   
@@ -97,11 +97,11 @@ In [!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/v
   
     -   Le proprietà `Range` e `Offset` dell'oggetto [Range](http://go.microsoft.com/fwlink/?LinkId=210911) usano le funzionalità delle *proprietà indicizzate*.  Questa funzionalità consente di usare tali proprietà dai tipi COM con la tipica sintassi di C\# seguente.  Le proprietà indicizzate consentono anche di usare la proprietà `Value` dell'oggetto `Range`, eliminando la necessità di usare la proprietà `Value2`.  La proprietà `Value` è indicizzata, ma l'indice è facoltativo.  Nell'esempio seguente sono presenti sia argomenti facoltativi sia proprietà indicizzate.  
   
-         [!code-cs[csOfficeWalkthrough#5](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#5)]  
+         [!code-cs[csOfficeWalkthrough#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_5.cs)]  
   
          Nelle versioni precedenti del linguaggio, è necessaria la seguente sintassi speciale.  
   
-         [!code-cs[csOfficeWalkthrough#6](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#6)]  
+         [!code-cs[csOfficeWalkthrough#6](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_6.cs)]  
   
          Non è possibile creare proprietà indicizzate personalizzate.  La funzionalità supporta solo l'utilizzo di proprietà indicizzate esistenti.  
   
@@ -109,14 +109,14 @@ In [!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/v
   
 2.  Aggiungere il seguente codice alla fine di `DisplayInExcel` per regolare la larghezza delle colonne in modo da adattarle al contenuto.  
   
-     [!code-cs[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#7)]
-     [!code-vb[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#7)]  
+     [!code-cs[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_7.cs)]
+     [!code-vb[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_7.vb)]  
   
      Queste aggiunte dimostrano un'altra nuova funzionalità di C\# 2010: considerare i valori `Object` restituiti dagli host COM, ad esempio Office, come se fossero di tipo [dynamic](../../../csharp/language-reference/keywords/dynamic.md).  Ciò avviene automaticamente quando l'opzione **Incorpora tipi di interoperabilità** è impostata sul valore predefinito, `True`, o allo stesso modo, quando si fa riferimento all'assembly con l'opzione del compilatore [\/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md).  Il tipo `dynamic` consente l'associazione tardiva, già disponibile in Visual Basic, ed evita il cast esplicito richiesto in Visual C\# 2008 e versioni precedenti del linguaggio.  
   
      Ad esempio, `excelApp.Columns[1]` restituisce un `Object` e `AutoFit` è un metodo [Range](http://go.microsoft.com/fwlink/?LinkId=210911) di Excel.  In assenza di `dynamic`, è necessario eseguire il cast dell'oggetto restituito da `excelApp.Columns[1]` come istanza di `Range` prima di chiamare il metodo `AutoFit`.  
   
-     [!code-cs[csOfficeWalkthrough#8](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#8)]  
+     [!code-cs[csOfficeWalkthrough#8](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_8.cs)]  
   
      Per altre informazioni sull'incorporamento di tipi di interoperabilità, vedere le procedure "Per trovare il riferimento all'assembly di interoperabilità primari" e "Per ripristinare la dipendenza di assembly di interoperabilità primario" più avanti in questo argomento.  Per altre informazioni su `dynamic`, vedere [dynamic](../../../csharp/language-reference/keywords/dynamic.md) o [Utilizzo del tipo dinamico](../../../csharp/programming-guide/types/using-type-dynamic.md).  
   
@@ -124,8 +124,8 @@ In [!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/v
   
 1.  Aggiungere il codice seguente alla fine del metodo `ThisAddIn_StartUp`.  La chiamata a `DisplayInExcel` contiene due argomenti.  Il primo argomento è il nome dell'elenco di conti da elaborare.  Il secondo argomento è un'espressione lambda su più righe che definisce la modalità con cui i dati saranno elaborati.  I valori `ID` e `balance` per ogni conto vengono visualizzati in celle adiacenti e la riga viene visualizzata in rosso se il saldo è inferiore a zero.  Le espressioni lambda su più righe sono una nuova funzionalità di Visual Basic 2010.  Per altre informazioni, vedere [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
-     [!code-cs[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#9)]
-     [!code-vb[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#9)]  
+     [!code-cs[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_9.cs)]
+     [!code-vb[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_9.vb)]  
   
 2.  Premere F5 per eseguire il programma.  Viene visualizzato un foglio di lavoro di Excel che contiene i dati dei conti.  
   
@@ -133,12 +133,12 @@ In [!INCLUDE[vs_dev10_long](../../../csharp/programming-guide/interop/includes/v
   
 1.  Aggiungere il seguente codice alla fine del metodo `ThisAddIn_StartUp` per creare un documento di Word contenente un collegamento alla cartella di lavoro di Excel.  
   
-     [!code-cs[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#10)]
-     [!code-vb[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/visualbasic/officewalkthroughsnippets - vb/thisaddin.vb#10)]  
+     [!code-cs[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_10.cs)]
+     [!code-vb[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_10.vb)]  
   
      In questo codice vengono illustrate diverse nuove funzionalità di C\#: la possibilità di omettere la parola chiave `ref` nella programmazione COM, gli argomenti denominati e gli argomenti facoltativi.  Queste funzionalità sono già esistenti in Visual Basic.  Il metodo [PasteSpecial](http://go.microsoft.com/fwlink/?LinkId=147099) presenta sette parametri, ognuno dei quali è definito come parametro di riferimento facoltativo.  Prima di Visual C\# 2010, era necessario definire le variabili di oggetto da usare come argomenti per i sette parametri, anche quando non si aveva alcun valore significativo da inviare.  Gli argomenti denominati e facoltativi consentono di indicare i parametri a cui si vuol accedere per nome e di inviare argomenti solo a tali parametri.  In questo esempio, gli argomenti vengono inviati per indicare che deve essere creato un collegamento alla cartella di lavoro negli Appunti \(parametro `Link`\), e che il collegamento verrà visualizzato nel documento di Word come un'icona \(parametro `DisplayAsIcon`\).  Visual C\# 2010 consente anche di omettere la parola chiave `ref` per questi argomenti.  Confrontare il seguente segmento di codice da Visual C\# 2008 con la riga singola richiesta in Visual C\# 2010:  
   
-     [!code-cs[csOfficeWalkthrough#11](../../../csharp/programming-guide/interop/codesnippet/csharp/officewalkthroughcs/thisaddin.cs#11)]  
+     [!code-cs[csOfficeWalkthrough#11](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_11.cs)]  
   
 ### Per eseguire l'applicazione  
   

@@ -21,7 +21,7 @@ caps.handback.revision: 22
 # Operatori di conversione (Guida per programmatori C#)
 Il linguaggio C\# consente ai programmatori di dichiarare conversioni su classi o strutture in modo che le classi o le strutture possano essere convertite in e\/o da altre classi o strutture oppure tipi di base.  Le conversioni vengono definite come operatori e vengono denominate sulla base del tipo verso cui viene effettuata la conversione.  Il tipo dell'argomento da convertire oppure il tipo del risultato della conversione, ma non entrambi, deve essere il tipo che lo contiene.  
   
- [!code-cs[csProgGuideStatements#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/conversion-operators_1.cs)]  
+ [!code-cs[csProgGuideStatements#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/conversion-operators_1.cs)]  
   
 ## Cenni preliminari sugli operatori di conversione  
  Di seguito sono riportate le caratteristiche principali degli operatori di conversione:  

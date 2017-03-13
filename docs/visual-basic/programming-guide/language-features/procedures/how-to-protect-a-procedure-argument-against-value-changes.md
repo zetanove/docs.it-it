@@ -38,11 +38,11 @@ Se una routine dichiara un parametro come [ByRef](../../../../visual-basic/langu
 ## Esempio  
  Nell'esempio riportato di seguito vengono illustrate due routine che accettano una variabile di matrice e operano sui relativi elementi.  La routine `increase` aggiunge semplicemente uno a ogni elemento.  La routine `replace` assegna una nuova matrice al parametro `a()`, quindi aggiunge uno a ogni elemento.  Tuttavia, la riassegnazione non ha effetto sulla variabile di matrice del codice chiamante.  
   
- [!code-vb[VbVbcnProcedures#35](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-protect-a-procedu_1.vb)]  
+ [!code-vb[VbVbcnProcedures#35](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#38](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-protect-a-procedu_2.vb)]  
+ [!code-vb[VbVbcnProcedures#38](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#37](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-protect-a-procedu_3.vb)]  
+ [!code-vb[VbVbcnProcedures#37](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_3.vb)]  
   
  Alla prima chiamata di `MsgBox` viene visualizzato "After increase\(n\): 11, 21, 31, 41".  Poiché la matrice `n` è un tipo di riferimento, la routine `replace` può modificarne i membri, anche se il meccanismo di passaggio è `ByVal`.  
   

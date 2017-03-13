@@ -19,19 +19,19 @@ caps.handback.revision: 11
 In questo esempio vengono definite due struct, `RomanNumeral` e `BinaryNumeral`, e vengono mostrate delle conversioni tra esse.  
   
 ## Esempio  
- [!code-cs[csProgGuideStatements#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-implement-user-de_1.cs)]  
+ [!code-cs[csProgGuideStatements#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-implement-user-defined-conversions-between-structs_1.cs)]  
   
 ## Programmazione efficiente  
   
 -   Nell'esempio precedente l'istruzione:  
   
-     [!code-cs[csProgGuideStatements#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-implement-user-de_2.cs)]  
+     [!code-cs[csProgGuideStatements#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-implement-user-defined-conversions-between-structs_2.cs)]  
   
      esegue una conversione da `RomanNumeral` a `BinaryNumeral`.  Dal momento che non esiste alcuna conversione diretta da `RomanNumeral` a `BinaryNumeral`, utilizzare un cast per la conversione da `RomanNumeral` a `int` e un altro cast per la conversione da `int` a `BinaryNumeral`.  
   
 -   L'istruzione:  
   
-     [!code-cs[csProgGuideStatements#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-implement-user-de_3.cs)]  
+     [!code-cs[csProgGuideStatements#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-implement-user-defined-conversions-between-structs_3.cs)]  
   
      esegue una conversione da `BinaryNumeral` a `RomanNumeral`.  Dal momento che `RomanNumeral` definisce una conversione implicita da `BinaryNumeral`, non è necessario alcun cast.  
   

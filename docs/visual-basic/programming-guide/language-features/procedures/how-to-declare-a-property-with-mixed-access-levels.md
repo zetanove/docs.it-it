@@ -39,7 +39,7 @@ Per far sì che le routine `Get` e `Set` di una proprietà presentino livelli di
   
 3.  Non specificare un livello di accesso sull'altra routine di proprietà  in quanto assume il livello di accesso dichiarato nella proprietà `Property`.  L'accesso può essere limitato solo su una delle routine di proprietà.  
   
-     [!code-vb[VbVbcnProcedures#10](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-declare-a-propert_1.vb)]  
+     [!code-vb[VbVbcnProcedures#10](./codesnippet/VisualBasic/how-to-declare-a-property-with-mixed-access-levels_1.vb)]  
   
      Nell'esempio precedente la routine `Get` presenta lo stesso livello di accesso `Protected` della proprietà stessa, mentre la routine `Set` dispone del livello di accesso `Private`.  Una classe derivata da `employee` può leggere il valore `salary`, ma tale valore può essere impostato solo dalla classe `employee`.  
   

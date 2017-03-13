@@ -46,7 +46,7 @@ Introduce un'operazione di conversione dei tipi basata sull'ereditarietà o sull
 ## Esempio  
  Nell'esempio riportato di seguito vengono illustrati due utilizzi di `DirectCast`, uno con esito negativo in fase di esecuzione e un altro con esito positivo.  
   
- [!code-vb[VbVbalrKeywords#1](../../../visual-basic/language-reference/codesnippet/visualbasic/directcast-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#1](../../../visual-basic/language-reference/codesnippet/VisualBasic/directcast-operator_1.vb)]  
   
  Nell'esempio precedente il tipo di runtime `q` è `Double`.  `CType` ha esito positivo perché è possibile convertire `Double` in `Integer`.  Tuttavia, il primo `DirectCast` ha esito negativo in fase di esecuzione poiché il tipo di `Double` in fase di esecuzione non presenta alcuna relazione di ereditarietà con `Integer`, anche in presenza di una conversione.  Il secondo `DirectCast` ha esito positivo poiché esegue la conversione dal tipo <xref:System.Windows.Forms.Form> al tipo <xref:System.Windows.Forms.Control>, dal quale <xref:System.Windows.Forms.Form> eredita.  
   

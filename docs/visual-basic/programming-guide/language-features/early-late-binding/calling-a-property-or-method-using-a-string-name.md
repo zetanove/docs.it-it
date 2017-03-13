@@ -44,11 +44,11 @@ Nella maggior parte dei casi è possibile determinare le proprietà e i metodi d
   
  Si supponga di aggiungere un riferimento a un assembly contenente una classe denominata `MathClass`, in cui è presente una nuova funzione denominata `SquareRoot`, come illustrato nel codice seguente:  
   
- [!code-vb[VbVbalrOOP#53](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#53)]  
+ [!code-vb[VbVbalrOOP#53](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_1.vb)]  
   
  È possibile che l'applicazione utilizzi i controlli della casella di testo per controllare il metodo chiamato e i relativi argomenti.  Se, ad esempio, `TextBox1` contiene l'espressione da valutare e `TextBox2` viene utilizzato per immettere il nome della funzione, è possibile utilizzare il codice seguente per richiamare la funzione `SquareRoot` per l'espressione in `TextBox1`:  
   
- [!code-vb[VbVbalrOOP#54](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#54)]  
+ [!code-vb[VbVbalrOOP#54](../../../../visual-basic/misc/codesnippet/VisualBasic/calling-a-property-or-method-using-a-string-name_2.vb)]  
   
  Se si immette "64" in `TextBox1` "SquareRoot" in `TextBox2`, quindi si chiama la routine `CallMath`, verrà valutata la radice quadrata del numero specificato in `TextBox1`.  Il codice riportato nell'esempio richiama la funzione `SquareRoot` \(che accetta una stringa contenente l'espressione da valutare come argomento obbligatorio\) e restituisce "8" in `TextBox1` \(la radice quadrata di 64\).  Naturalmente, se l'utente immette una stringa non valida in `TextBox2`, se la stringa contiene il nome di una proprietà anziché di un metodo o se il metodo richiede un ulteriore argomento, verrà generato un errore di runtime.  Quando si utilizza `CallByName` è necessario aggiungere un efficace codice di gestione degli errori per prevenire errori di questo o altro tipo.  
   

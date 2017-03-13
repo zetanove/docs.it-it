@@ -25,12 +25,12 @@ In un'espressione di query, la clausola `orderby` fa in modo che la sequenza o l
 ## Esempio  
  Nell'esempio seguente, la prima query ordina le parole alfabeticamente a partire da A e la seconda query ordina le medesime parole in ordine decrescente.  La parola chiave `ascending` è il valore di ordinamento predefinito e può essere omessa.  
   
- [!code-cs[cscsrefQueryKeywords#20](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Orderby.cs#20)]  
+ [!code-cs[cscsrefQueryKeywords#20](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_1.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene eseguito un ordinamento primario sui cognomi degli studenti e quindi un ordinamento secondario sui nomi.  
   
- [!code-cs[cscsrefQueryKeywords#22](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Orderby.cs#22)]  
+ [!code-cs[cscsrefQueryKeywords#22](../../../csharp/language-reference/keywords/codesnippet/CSharp/orderby-clause_2.cs)]  
   
 ## Note  
  In fase di compilazione, la clausola `orderby` viene convertita in una chiamata al metodo <xref:System.Linq.Enumerable.OrderBy%2A>.  Chiavi multiple nella clausola `orderby` vengono convertite in chiamate del metodo <xref:System.Linq.Enumerable.ThenBy%2A>.  

@@ -34,9 +34,9 @@ int* p = &number; //address-of operator &
 ## Esempio  
  In questo esempio viene dichiarato un puntatore a `int`, `p`, a cui viene assegnato l'indirizzo di una variabile integer `number`.  La variabile `number` viene inizializzata in seguito all'assegnazione a \*p.  Se si trasforma l'istruzione di assegnazione in un commento, verrà rimossa l'inizializzazione della variabile `number`, ma non verrà generato alcun errore in fase di compilazione.  Si noti l'utilizzo dell'operatore di [accesso ai membri](../../../csharp/programming-guide/unsafe-code-pointers/how-to-access-a-member-with-a-pointer.md) `->` per ottenere e visualizzare l'indirizzo archiviato nel puntatore.  
   
- [!code-cs[csProgGuidePointers#7](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers2.cs#7)]  
+ [!code-cs[csProgGuidePointers#7](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-address-of-a-variable_1.cs)]  
   
- [!code-cs[csProgGuidePointers#8](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#8)]  
+ [!code-cs[csProgGuidePointers#8](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-address-of-a-variable_2.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

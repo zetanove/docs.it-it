@@ -37,7 +37,7 @@ Il metodo `GetValue` dell'oggetto `My.Computer.Registry` consente di leggere val
   
 -   Utilizzare il metodo `GetValue`, specificando il percorso e il nome, per leggere un valore dalla chiave del Registro di sistema.  Nell'esempio che segue il valore `Name` viene letto da `HKEY_CURRENT_USER\Software\MyApp` e visualizzato in una finestra di messaggio.  
   
-     [!code-vb[VbResourceTasks#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-read-a-value-from_1.vb)]  
+     [!code-vb[VbResourceTasks#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-read-a-value-from-a-registry-key_1.vb)]  
   
  Questo esempio di codice è inoltre disponibile come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice si trova in **Sistema operativo Windows \> Registro di sistema**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
   
@@ -45,7 +45,7 @@ Il metodo `GetValue` dell'oggetto `My.Computer.Registry` consente di leggere val
   
 -   Utilizzare il metodo `GetValue` per recuperare il valore.  I controlli di codice se il valore è presente e restituisce un messaggio in caso contrario.  
   
-     [!code-vb[VbResourceTasks#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-read-a-value-from_2.vb)]  
+     [!code-vb[VbResourceTasks#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-read-a-value-from-a-registry-key_2.vb)]  
   
 ## Programmazione efficiente  
  Il Registro di sistema contiene le chiavi di primo livello che vengono utilizzate per l'archiviazione dei dati.  La chiave di primo livello HKEY\_LOCAL\_MACHINE viene ad esempio utilizzata per archiviare le impostazioni a livello di computer impiegate da tutti gli utenti, mentre HKEY\_CURRENT\_USER viene utilizzata per l'archiviazione dei dati specifici di un singolo utente.  

@@ -111,7 +111,7 @@ End Structure
 ## Esempio  
  Nell'esempio seguente l'istruzione `Structure` viene utilizzata per definire un insieme di dati correlati per un dipendente.  Viene illustrato l'utilizzo di membri `Public`, `Friend` e `Private` per riflettere la riservatezza degli elementi di dati.  Vengono inoltre illustrati membri di routine, proprietà ed eventi.  
   
- [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/structure-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
   
 ## Vedere anche  
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   

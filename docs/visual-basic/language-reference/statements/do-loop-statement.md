@@ -98,22 +98,22 @@ Loop { While | Until } condition
 ## Esempio  
  Nell'esempio seguente l'esecuzione delle istruzioni nel ciclo continua finché la variabile `index` non risulta maggiore di 10.  La clausola `Until` si trova alla fine del ciclo.  
   
- [!code-vb[VbVbalrStatements#131](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/do-loop-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#131](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_1.vb)]  
   
 ## Esempio  
  Nell'esempio seguente viene utilizzata una clausola `While` invece di una clausola `Until` e viene eseguito il test `condition` all'inizio del ciclo invece che alla fine.  
   
- [!code-vb[VbVbalrStatements#132](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/do-loop-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#132](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_2.vb)]  
   
 ## Esempio  
  Nell'esempio seguente, il ciclo viene interrotto da `condition` quando la variabile `index` è maggiore di 100.  Tramite l'istruzione `If` nel ciclo, tuttavia, viene causata l'interruzione del ciclo mediante l'istruzione `Exit Do` quando la variabile di indice è maggiore di 10.  
   
- [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/do-loop-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_3.vb)]  
   
 ## Esempio  
  Nell'esempio seguente vengono lette tutte le righe di un file di testo.  Il file viene aperto tramite il metodo <xref:System.IO.File.OpenText%2A>, mediante il quale viene restituito un oggetto <xref:System.IO.StreamReader> che consente la lettura dei caratteri.  Nella condizione `Do...Loop`, tramite il metodo <xref:System.IO.StreamReader.Peek%2A> dell'oggetto `StreamReader` viene determinato se sono presenti eventuali caratteri aggiuntivi.  
   
- [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/do-loop-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_4.vb)]  
   
 ## Vedere anche  
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   

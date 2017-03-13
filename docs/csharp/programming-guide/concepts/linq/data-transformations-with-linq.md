@@ -40,11 +40,11 @@ caps.handback.revision: 15
 ## Unione di più input in un'unica sequenza di output  
  È possibile utilizzare una query [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] per creare una sequenza di output contenente elementi di più sequenze di input.  Nell'esempio seguente viene illustrato come combinare due strutture dei dati in memoria, ma gli stessi principi possono essere applicati per combinare dati da XML o SQL o origini dataset.  Si supponga di utilizzare i due tipi di classe seguenti:  
   
- [!code-cs[CsLINQGettingStarted#7](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#7)]  
+ [!code-cs[CsLINQGettingStarted#7](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_1.cs)]  
   
  Nell'esempio seguente viene illustrata la query:  
   
- [!code-cs[CSLinqGettingStarted#8](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#8)]  
+ [!code-cs[CSLinqGettingStarted#8](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_2.cs)]  
   
  Per ulteriori informazioni, vedere [Clausola join](../../../../csharp/language-reference/keywords/join-clause.md) e [Clausola select](../../../../csharp/language-reference/keywords/select-clause.md).  
   
@@ -70,7 +70,7 @@ caps.handback.revision: 15
 ## Trasformazione di oggetti in memoria in XML  
  Le query [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] consentono di trasformare facilmente i dati tra strutture dei dati in memoria, database SQL, dataset [!INCLUDE[vstecado](../../../../csharp/programming-guide/concepts/linq/includes/vstecado-md.md)] e flussi o documenti XML.  Nell'esempio seguente gli oggetti in una struttura dei dati in memoria vengono trasformati in elementi XML.  
   
- [!code-cs[CsLINQGettingStarted#9](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#9)]  
+ [!code-cs[CsLINQGettingStarted#9](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_3.cs)]  
   
  Il codice genera il seguente output XML:  
   
@@ -102,7 +102,7 @@ caps.handback.revision: 15
 > [!NOTE]
 >  Le chiamate ai metodi nelle espressioni di query non sono supportate se la query viene convertita in altri domini.  Ad esempio, non è possibile chiamare un metodo C\# comune in [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq-md.md)] poiché SQL Server non ne supporta il contesto.  È tuttavia possibile eseguire il mapping delle stored procedure ai relativi metodi e chiamare quindi le stored procedure.  Per ulteriori informazioni, vedere [Stored procedure](../Topic/Stored%20Procedures.md).  
   
- [!code-cs[CsLINQGettingStarted#10](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#10)]  
+ [!code-cs[CsLINQGettingStarted#10](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/data-transformations-with-linq_4.cs)]  
   
 ## Vedere anche  
  [LINQ \(Language\-Integrated Query\)](../Topic/LINQ%20\(Language-Integrated%20Query\).md)   

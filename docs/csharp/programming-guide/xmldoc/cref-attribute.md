@@ -21,7 +21,7 @@ L'attributo `cref` in un tag della documentazione di XML indica "riferimento del
 ## Esempio  
  Nell'esempio seguente vengono illustrati gli attributi `cref` utilizzati nei tag [\<see\>](../../../csharp/programming-guide/xmldoc/see.md).  
   
- [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/cref-attribute_1.cs)]  
+ [!code-cs[csProgGuideDocComments#3](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/cref-attribute_1.cs)]  
   
  Se compilato, il programma genera il file XML seguente.  Si noti che l'attributo `cref` del metodo `GetZero`, ad esempio, è stato trasformato dal compilatore in `"M:TestNamespace.TestClass.GetZero"`.  Il prefisso "M:" significa "method" \(metodo\) ed è una convenzione riconosciuta dagli strumenti della documentazione quale Sandcastle.  Per un elenco completo di prefissi, vedere [Elaborazione del file XML](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md).  
   

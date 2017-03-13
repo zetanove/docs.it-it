@@ -27,7 +27,7 @@ caps.handback.revision: 7
 Nell'esempio viene restituito un valore `Boolean` che indica se la stringa rappresenta un nome o un percorso di file.  Viene eseguito il controllo di convalida alla ricerca di caratteri nel nome non supportati dal the file system.  
   
 ## Esempio  
- [!code-vb[VbVbcnRegEx#4](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/visualbasic/how-to-validate-file-nam_1.vb)]  
+ [!code-vb[VbVbcnRegEx#4](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/how-to-validate-file-names-and-paths_1.vb)]  
   
  Nell'esempio non viene controllato se nel nome i due punti sono stati inseriti nella posizione errata, se le directory sono senza nome oppure se la lunghezza del nome supera la lunghezza massima definita dall'utente.  Inoltre, non viene verificato se l'applicazione dispone dell'autorizzazione di accesso alle risorse del file system con il nome specificato.  
   

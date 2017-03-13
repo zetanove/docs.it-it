@@ -32,7 +32,7 @@ Se si dispone di due variabili che fanno riferimento a degli oggetti, è possibi
   
 -   Utilizzare l'operatore [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) o [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md) con due variabili come operandi.  
   
-     [!code-vb[VbVbalrOperators#69](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-test-whether-two-_1.vb)]  
+     [!code-vb[VbVbalrOperators#69](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-test-whether-two-objects-are-the-same_1.vb)]  
   
  L'azione intrapresa dipende dal riferimento o meno alla stessa istanza da parte dei due oggetti.  Nell'esempio precedente viene confrontato il controllo `c` con il controllo attivo sul form `f`.  In assenza di controlli attivi, oppure se esiste un controllo attivo che tuttavia non corrisponde all'istanza del controllo specificata in `c`, l'istruzione `If` avrà esito negativo e verrà restituita la routine senza ulteriori elaborazioni.  
   

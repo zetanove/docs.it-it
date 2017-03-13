@@ -22,28 +22,28 @@ La possibilità di accedere a un membro dello [spazio dei nomi](../../../csharp/
   
  Nell'esempio di codice riportato di seguito `Console` viene risolto in `TestApp.Console` anziché nel tipo `Console` dello spazio dei nomi <xref:System>.  
   
- [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/using.cs#1)]  
+ [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-use-the-global-namespace-alias_1.cs)]  
   
- [!code-cs[csProgGuideNamespaces#1](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#1)]  
+ [!code-cs[csProgGuideNamespaces#1](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_2.cs)]  
   
  L'utilizzo di `System.Console` determina un errore in quanto lo spazio dei nomi `System` è nascosto dalla classe `TestApp.System`:  
   
- [!code-cs[csProgGuideNamespaces#2](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#2)]  
+ [!code-cs[csProgGuideNamespaces#2](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_3.cs)]  
   
  È tuttavia possibile evitare questo errore utilizzando `global::System.Console` nel modo seguente:  
   
- [!code-cs[csProgGuideNamespaces#3](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#3)]  
+ [!code-cs[csProgGuideNamespaces#3](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_4.cs)]  
   
  Se l'identificatore di sinistra è `global`, la ricerca dell'identificatore di destra ha inizio dallo spazio dei nomi globale.  La seguente dichiarazione fa ad esempio riferimento a `TestApp` come membro dello spazio globale.  
   
- [!code-cs[csProgGuideNamespaces#4](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#4)]  
+ [!code-cs[csProgGuideNamespaces#4](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_5.cs)]  
   
  Non è ovviamente consigliabile creare spazi dei nomi personali denominati `System` ed è improbabile che trovare codice che include uno spazio dei nomi con tale nome.  Nei progetti di grandi dimensioni è tuttavia molto probabile che si verifichi la duplicazione degli spazi dei nomi in un form o in un altro.  In queste situazioni è possibile utilizzare il qualificatore dello spazio dei nomi globale per specificare lo spazio dei nomi di primo livello.  
   
 ## Esempio  
  Nell'esempio seguente viene utilizzato lo spazio dei nomi `System` per includere la classe `TestClass`. Di conseguenza, è necessario utilizzare `global::System.Console` per fare riferimento alla classe `System.Console`, nascosta dallo spazio dei nomi `System`.  Viene inoltre utilizzato l'alias `colAlias` per fare riferimento allo spazio dei nomi `System.Collections`. Di conseguenza, l'istanza di una <xref:System.Collections.Hashtable?displayProperty=fullName> è stata creata utilizzando questo alias anziché lo spazio dei nomi.  
   
- [!code-cs[csProgGuideNamespaces#5](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#5)]  
+ [!code-cs[csProgGuideNamespaces#5](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_6.cs)]  
   
   **A 1**  
 **B 2**  

@@ -32,7 +32,7 @@ Gli operatori di concatenazione consentono di unire più stringhe in un'unica st
   
  Questi operatori possono concatenare anche variabili di tipo `String`, come nell'esempio seguente.  
   
- [!code-vb[VbVbalrOperators#76](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/concatenation-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#76](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operators_1.vb)]  
   
 ## Differenze tra i due operatori di concatenazione  
  Lo scopo primario dell'[\+ Operator](../../../../visual-basic/language-reference/operators/addition-operator.md) consiste nell'aggiungere due numeri.  Questo operatore consente però anche di concatenare operandi numerici con operandi stringa.  L'operatore `+` include un insieme complesso di regole che determinano se aggiungere, concatenare, segnalare un errore del compilatore oppure generare un'eccezione <xref:System.InvalidCastException> in fase di esecuzione.  

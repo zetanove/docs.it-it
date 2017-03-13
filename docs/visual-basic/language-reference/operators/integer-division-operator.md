@@ -73,7 +73,7 @@ expression1 \ expression2
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `\` viene utilizzato per eseguire una divisione con Integer.  Il risultato è un Integer che rappresenta il quoziente integer dei due operandi, escluso il resto.  
   
- [!code-vb[VbVbalrOperators#18](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/integer-division-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#18](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/integer-division-operator_1.vb)]  
   
  Le espressioni nell'esempio precedente restituiscono rispettivamente i valori 2, 3, 33 e \-22.  
   

@@ -32,9 +32,9 @@ L'operatore di riferimento indiretto a puntatore consente di ottenere la variabi
 ## Esempio  
  Nell'esempio riportato di seguito si accede a una variabile di tipo `char` utilizzando puntatori di tipi diversi.  Si noti che l'indirizzo di `theChar` varia da un'esecuzione all'altra, in quanto l'indirizzo fisico allocato a una variabile può subire modifiche.  
   
- [!code-cs[csProgGuidePointers#5](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers2.cs#5)]  
+ [!code-cs[csProgGuidePointers#5](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-value-of-a-pointer-variable_1.cs)]  
   
- [!code-cs[csProgGuidePointers#6](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#6)]  
+ [!code-cs[csProgGuidePointers#6](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-value-of-a-pointer-variable_2.cs)]  
   
   **Valore di theChar \= Z**   
 **Indirizzo di theChar \= 12F718**  

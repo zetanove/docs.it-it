@@ -25,7 +25,7 @@ Tutti i tipi numerici e di enumerazione definiscono un operatore relazionale "mi
  I tipi definiti dall'utente possono eseguire l'overload dell'operatore `<`. Per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md).  Se si esegue l'overload dell'operatore `<`, è necessario sottoporre a overload anche l'operatore [\>](../../../csharp/language-reference/operators/greater-than-operator.md).  Quando si esegue l'overload di un operatore binario, viene eseguito in modo implicito anche l'overload dell'eventuale operatore di assegnazione corrispondente.  
   
 ## Esempio  
- [!code-cs[csRefOperators#24](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#24)]  
+ [!code-cs[csRefOperators#24](../../../csharp/language-reference/operators/codesnippet/CSharp/less-than-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

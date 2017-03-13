@@ -24,7 +24,7 @@ La parola chiave `protected` è un modificatore di accesso per membri.  Un membr
 ## Esempio  
  Un membro protetto di una classe base è accessibile in una classe derivata solo se l'accesso viene eseguito attraverso il tipo della classe derivata.  Si consideri, ad esempio, il seguente segmento di codice:  
   
- [!code-cs[csrefKeywordsModifiers#11](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#11)]  
+ [!code-cs[csrefKeywordsModifiers#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_1.cs)]  
   
  L'istruzione `a.x = 10` genera un errore perché utilizzata all'interno del metodo Main statico e non in un'istanza della classe B.  
   
@@ -33,7 +33,7 @@ La parola chiave `protected` è un modificatore di accesso per membri.  Un membr
 ## Esempio  
  In questo esempio, la classe `DerivedPoint` è derivata da `Point`.  Pertanto sarà possibile accedere ai membri protetti della classe base direttamente dalla classe derivata.  
   
- [!code-cs[csrefKeywordsModifiers#12](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#12)]  
+ [!code-cs[csrefKeywordsModifiers#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/protected_2.cs)]  
   
  Se si modificano i livelli di accesso di `x` e `y` impostandoli su [private](../../../csharp/language-reference/keywords/private.md), in fase di compilazione verranno generati i seguenti messaggi di errore:  
   

@@ -86,17 +86,17 @@ End Namespace
 ## Esempio  
  Nell'esempio illustrato di seguito vengono dichiarati due spazi dei nomi, uno annidato nell'altro.  
   
- [!code-vb[VbVbalrStatements#43](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/namespace-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#43](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_1.vb)]  
   
 ## Esempio  
  Nell'esempio illustrato di seguito vengono dichiarati più spazi dei nomi annidati in un'unica riga in modo equivalente all'esempio precedente.  
   
- [!code-vb[VbVbalrStatements#41](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/namespace-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#41](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_2.vb)]  
   
 ## Esempio  
  Nell'esempio illustrato di seguito si accede alla classe definita negli esempi precedenti.  
   
- [!code-vb[VbVbalrStatements#42](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/namespace-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#42](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/namespace-statement_3.vb)]  
   
 ## Esempio  
  Nell'esempio seguente viene definito lo scheletro di una nuova classe elenco e viene aggiunta questa classe allo spazio dei nomi <xref:System.Collections.Generic?displayProperty=fullName>.  

@@ -52,14 +52,14 @@ Talvolta può risultare necessario utilizzare caratteri speciali nel codice, ovv
 ## Parentesi  
  Utilizzare le parentesi per definire una procedura, quale `Sub` o `Function`.  È necessario racchiudere tra parentesi tutti gli elenchi di argomenti della routine.  È possibile, inoltre, utilizzare le parentesi per inserire variabili o argomenti in gruppi logici, soprattutto per eseguire l'override dell'ordine di precedenza predefinito degli operatori in un'espressione complessa.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbcnConventions#11](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_1.vb)]  
+ [!code-vb[VbVbcnConventions#11](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_1.vb)]  
   
  Dopo l'esecuzione del codice precedente, il valore di `d` è 8,225 e il valore di `e` è 3.  Il calcolo per `d` utilizza la precedenza predefinita di `/` rispetto a `+` ed è equivalente a `d = b + (c / a)`.  Le parentesi nel calcolo di `e` sostituiscono la precedenza predefinita.  
   
 ## Separatori  
  Come suggerito dal nome stesso, il ruolo dei separatori consiste nella separazione delle sezioni del codice.  In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)], il carattere separatore è rappresentato dai due punti \(`:`\).  Utilizzare i separatori per includere più istruzioni su una sola riga anziché su righe separate,   al fine di risparmiare spazio e migliorare la leggibilità del codice.  Nell'esempio seguente vengono mostrate tre istruzioni separate da due punti.  
   
- [!code-vb[VbVbcnConventions#12](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_2.vb)]  
+ [!code-vb[VbVbcnConventions#12](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_2.vb)]  
   
  Per ulteriori informazioni, vedere [Procedura: Interrompere e combinare istruzioni nel codice](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md).  
   
@@ -68,7 +68,7 @@ Talvolta può risultare necessario utilizzare caratteri speciali nel codice, ovv
 ## Concatenazione  
  Per la *concatenazione*, ovvero il collegamento di più stringhe, utilizzare l'operatore `&`,  da non confondere con l'operatore `+` che invece somma valori numerici.  L'utilizzo dell'operatore `+` per la concatenazione può generare risultati errati nel caso di operandi numerici.  Nell'esempio che segue viene illustrato quanto descritto.  
   
- [!code-vb[VbVbcnConventions#13](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_3.vb)]  
+ [!code-vb[VbVbcnConventions#13](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_3.vb)]  
   
  Dopo l'esecuzione del codice precedente, il valore di `resultA` è 21,01 e il valore di `resultB` è "10,0111".  
   
@@ -78,12 +78,12 @@ Talvolta può risultare necessario utilizzare caratteri speciali nel codice, ovv
 ### Punto \(.\) Operatore  
  Utilizzare l'operatore `.` in una classe, struttura, interfaccia o enumerazione come operatore di accesso al membro.  Il membro può essere un campo, una proprietà, un evento o un metodo.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbcnConventions#14](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_4.vb)]  
+ [!code-vb[VbVbcnConventions#14](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_4.vb)]  
   
 ### Punto esclamativo \(\!\) Operatore  
  Utilizzare l'operatore `!` solo in una classe o in un'interfaccia, come operatore di accesso al dizionario.  È necessario che la classe o l'interfaccia disponga di una proprietà predefinita che accetta un unico argomento `String`.  L'identificatore immediatamente successivo all'operatore `!` diventa il valore dell'argomento passato alla proprietà predefinita come stringa.  Nell'esempio che segue viene illustrato quanto descritto.  
   
- [!code-vb[VbVbcnConventions#15](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/special-characters-in-code_5.vb)]  
+ [!code-vb[VbVbcnConventions#15](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/special-characters-in-code_5.vb)]  
   
  In tutte le tre righe di output `MsgBox` viene visualizzato il valore `32856`.  La prima riga utilizza l'accesso tradizionale alla proprietà `index`, la seconda tiene conto del fatto che `index` è la proprietà predefinita della classe `hasDefault` e la terza utilizza l'accesso del dizionario alla classe.  
   

@@ -23,7 +23,7 @@ Gli indicizzatori consentono di indicizzare le istanze di una classe o struct es
   
  Nel seguente esempio, viene definita una classe generica a cui vengono forniti i metodi delle funzioni di accesso [get](../../../csharp/language-reference/keywords/get.md) e [set](../../../csharp/language-reference/keywords/set.md) semplici come mezzo per assegnare e recuperare i valori.  La classe `Program` crea un'istanza di questa classe per archiviare le stringhe.  
   
- [!code-cs[csProgGuideIndexers#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideIndexers#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_1.cs)]  
   
 > [!NOTE]
 >  Per altri esempi, vedere [Sezioni correlate](../../../csharp/programming-guide/indexers/index.md#BKMK_RelatedSections).  

@@ -68,7 +68,7 @@ Definisce un elenco o una tabella.
 ## Esempio  
  In questo esempio il tag `<list>` viene utilizzato per definire un elenco puntato nella sezione relativa alle note.  
   
- [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/list_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/list_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

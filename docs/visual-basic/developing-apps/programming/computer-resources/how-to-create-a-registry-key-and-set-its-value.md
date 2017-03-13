@@ -36,22 +36,22 @@ Il metodo `CreateSubKey` dell'oggetto `My.Computer.Registry` consente di creare 
   
 -   Utilizzare il metodo `CreateSubKey` specificando l'hive in cui inserire la chiave, nonché il nome della chiave.  Per il parametro `Subkey` non viene effettuata distinzione tra maiuscole e minuscole.  Nell'esempio che segue viene creata la chiave del Registro di sistema `MyTestKey` al di sotto di HKEY\_CURRENT\_USER.  
   
-     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_1.vb)]  
+     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_1.vb)]  
   
 #### Per creare una chiave del Registro di sistema e impostare un valore al suo interno  
   
 1.  Utilizzare il metodo `CreateSubkey` specificando l'hive in cui inserire la chiave, nonché il nome della chiave.  Nell'esempio che segue viene creata la chiave del Registro di sistema `MyTestKey` al di sotto di HKEY\_CURRENT\_USER.  
   
-     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_1.vb)]  
+     [!code-vb[VbResourceTasks#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_1.vb)]  
   
 2.  Impostare il valore con il metodo `SetValue`.  Nell'esempio che segue viene impostato il valore stringa    MyTestKeyValue" su "This is a test value".  
   
-     [!code-vb[VbResourceTasks#14](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_2.vb)]  
+     [!code-vb[VbResourceTasks#14](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_2.vb)]  
   
 ## Esempio  
  Nell'esempio che segue viene creata la chiave del Registro di sistema `MyTestKey` al di sotto di HKEY\_CURRENT\_USER, quindi viene impostato il valore stringa `MyTestKeyValue` su `This is a test value`.  
   
- [!code-vb[VbResourceTasks#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-create-a-registry_3.vb)]  
+ [!code-vb[VbResourceTasks#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-create-a-registry-key-and-set-its-value_3.vb)]  
   
 ## Programmazione efficiente  
  Esaminare la struttura del Registro di sistema per individuare un percorso adatto per la chiave.  È ad esempio possibile aprire la chiave HKEY\_CURRENT\_USER\\Software dell'utente corrente e creare una chiave con il nome della società,  quindi aggiungere i valori del Registro di sistema alla chiave della società.  

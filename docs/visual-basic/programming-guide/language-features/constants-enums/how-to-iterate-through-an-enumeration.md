@@ -29,7 +29,7 @@ Le enumerazioni costituiscono un comodo mezzo per utilizzare set di costanti cor
   
 -   Dichiarare una matrice in cui convertire l'enumerazione con il metodo <xref:System.Enum.GetValues%2A> prima di passare la matrice come con qualsiasi altra variabile.  Nell'esempio riportato di seguito viene visualizzato ogni membro dell'enumerazione <xref:Microsoft.VisualBasic.FirstDayOfWeek> mentre si scorre l'enumerazione.  
   
-     [!code-vb[VbEnumsTask#7](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#7)]  
+     [!code-vb[VbEnumsTask#7](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-iterate-through-an-enumeration_1.vb)]  
   
 ## Vedere anche  
  [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)   

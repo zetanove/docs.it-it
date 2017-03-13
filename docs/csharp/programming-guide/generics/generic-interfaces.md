@@ -21,29 +21,29 @@ Risulta spesso utile definire interfacce per classi di raccolte generiche o per 
   
  Quando un'interfaccia viene specificata come vincolo su un parametro di tipo, è possibile utilizzare esclusivamente tipi che implementano l'interfaccia.  Nell'esempio di codice riportato di seguito viene illustrata una classe `SortedList<T>` che deriva dalla classe `GenericList<T>`.  Per ulteriori informazioni, vedere [Introduzione ai generics](../../../csharp/programming-guide/generics/introduction-to-generics.md).  `SortedList<T>` aggiunge il vincolo `where T : IComparable<T>`.  In questo modo, il metodo `BubbleSort` in `SortedList<T>` utilizzerà il metodo <xref:System.IComparable%601.CompareTo%2A> generico su elementi dell'elenco.  Nell'esempio riportato di seguito, gli elementi dell'elenco sono una classe semplice, `Person`, che implementa `IComparable<Person>`.  
   
- [!code-cs[csProgGuideGenerics#29](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_1.cs)]  
+ [!code-cs[csProgGuideGenerics#29](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_1.cs)]  
   
  È possibile specificare più interfacce come vincoli su un solo tipo, come riportato di seguito:  
   
- [!code-cs[csProgGuideGenerics#30](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_2.cs)]  
+ [!code-cs[csProgGuideGenerics#30](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_2.cs)]  
   
  Un'interfaccia può definire più parametri di tipo, come riportato di seguito:  
   
- [!code-cs[csProgGuideGenerics#31](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_3.cs)]  
+ [!code-cs[csProgGuideGenerics#31](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_3.cs)]  
   
  Le regole di ereditarietà valgono sia per le interfacce che per le classi:  
   
- [!code-cs[csProgGuideGenerics#32](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_4.cs)]  
+ [!code-cs[csProgGuideGenerics#32](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_4.cs)]  
   
  Le interfacce generiche possono ereditare da interfacce non generiche se l'interfaccia generica è controvariante, ovvero se utilizza esclusivamente il relativo parametro di tipo come valore restituito.  Nella libreria di classi .NET Framework <xref:System.Collections.Generic.IEnumerable%601> eredita da <xref:System.Collections.IEnumerable> poiché <xref:System.Collections.Generic.IEnumerable%601> utilizza esclusivamente `T` nel valore restituito di <xref:System.Collections.Generic.IEnumerable%601.GetEnumerator%2A> e nella proprietà Get <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
   
  Le classi concrete possono implementare interfacce costruite chiuse, come riportato di seguito:  
   
- [!code-cs[csProgGuideGenerics#33](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_5.cs)]  
+ [!code-cs[csProgGuideGenerics#33](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_5.cs)]  
   
  Le classi generiche possono implementare interfacce generiche oppure interfacce costruite chiuse purché l'elenco di parametri di classi fornisca tutti gli argomenti necessari all'interfaccia, come riportato di seguito:  
   
- [!code-cs[csProgGuideGenerics#34](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-interfaces_6.cs)]  
+ [!code-cs[csProgGuideGenerics#34](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-interfaces_6.cs)]  
   
  Le regole che controllano l'overload dei metodi sono identiche per i metodi all'interno di classi generiche, strutture generiche o interfacce generiche.  Per ulteriori informazioni, vedere [Metodi generici](../../../csharp/programming-guide/generics/generic-methods.md).  
   

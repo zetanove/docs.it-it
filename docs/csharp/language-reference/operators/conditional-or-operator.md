@@ -42,7 +42,7 @@ x | y
 ## Esempio  
  Negli esempi seguenti, l'espressione che utilizza `||` restituisce solo il primo operando.  l'espressione che utilizza `|`valuta entrambi gli operandi.  Nel secondo esempio, si verifica un'eccezione di runtime se entrambi gli operandi sono valutati.  
   
- [!code-cs[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#52)]  
+ [!code-cs[csRefOperators#52](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-or-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

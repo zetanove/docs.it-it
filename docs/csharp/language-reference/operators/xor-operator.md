@@ -25,7 +25,7 @@ Gli operatori `^` binari sono predefiniti per i tipi integrali e `bool`.  Per i 
  I tipi definiti dall'utente possono eseguire l'overload dell'operatore `^`. Per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md).  Le operazioni sui tipi integrali sono generalmente consentite sull'enumerazione.  
   
 ## Esempio  
- [!code-cs[csRefOperators#30](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#30)]  
+ [!code-cs[csRefOperators#30](../../../csharp/language-reference/operators/codesnippet/CSharp/xor-operator_1.cs)]  
   
  Il calcolo di `0xf8 ^ 0x3f` nell'esempio precedente applica un operatore OR esclusivo bit per bit ai due valori binari seguenti che corrispondono ai valori esadecimali F8 e 3F:  
   

@@ -22,15 +22,15 @@ Nelle versioni di C\# precedenti alla 2.0 era possibile dichiarare un [delegato]
   
  La creazione di metodi anonimi consente essenzialmente di passare un blocco di codice come parametro del delegato.  Di seguito sono riportati due esempi:  
   
- [!code-cs[csProgGuideDelegates#6](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#6)]  
+ [!code-cs[csProgGuideDelegates#6](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_1.cs)]  
   
- [!code-cs[csProgGuideDelegates#5](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#5)]  
+ [!code-cs[csProgGuideDelegates#5](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_2.cs)]  
   
  Utilizzando i metodi anonimi si riduce l'overhead della codifica nella creazione di istanze dei delegati, poiché non è necessario creare un metodo separato.  
   
  La specifica di un blocco di codice al posto di un delegato può risultare utile nelle situazioni in cui la necessità di creare un metodo potrebbe sembrare un overhead inutile,  ad esempio quando viene avviato un nuovo thread.  Questa classe crea un thread e contiene anche il codice eseguito dal thread, senza richiedere la creazione di un metodo aggiuntivo per il delegato.  
   
- [!code-cs[csProgGuideDelegates#7](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#7)]  
+ [!code-cs[csProgGuideDelegates#7](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_3.cs)]  
   
 ## Note  
  L'ambito dei parametri di un metodo anonimo è il *blocco di metodi anonimi*.  
@@ -39,7 +39,7 @@ Nelle versioni di C\# precedenti alla 2.0 era possibile dichiarare un [delegato]
   
  Le variabili e i parametri locali il cui ambito contiene una dichiarazione di metodo anonimo sono denominati variabili *esterne* del metodo anonimo.  Nel segmento di codice riportato di seguito, ad esempio, `n` è una variabile esterna:  
   
- [!code-cs[csProgGuideDelegates#8](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#8)]  
+ [!code-cs[csProgGuideDelegates#8](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_4.cs)]  
   
  Un riferimento alla variabile esterna `n` viene detto  *acquisiti* quando viene creato il delegato.  A differenza delle variabili locali, la durata di una variabile acquisita estende finché i delegati che fanno riferimento i metodi anonimi sono idonei per la procedura di garbage collection.  
   
@@ -58,7 +58,7 @@ Nelle versioni di C\# precedenti alla 2.0 era possibile dichiarare un [delegato]
   
  In ogni caso quando il delegato viene richiamato verrà visualizzato un messaggio.  
   
- [!code-cs[csProgGuideDelegates#4](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#4)]  
+ [!code-cs[csProgGuideDelegates#4](../../../csharp/programming-guide/delegates/codesnippet/CSharp/anonymous-methods_5.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

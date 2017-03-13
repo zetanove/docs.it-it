@@ -21,7 +21,7 @@ Una raccolta <xref:System.Collections.Generic.Dictionary%602> contiene una racco
 ## Esempio  
  Nell'esempio di codice riportato di seguito un <xref:System.Collections.Generic.Dictionary%602> viene inizializzato con istanze di tipo `StudentName`.  
   
- [!code-cs[csProgGuideLINQ#34](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#34)]  
+ [!code-cs[csProgGuideLINQ#34](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-a-dictionary-with-a-collection-initializer_1.cs)]  
   
  Si notino le due coppie di parentesi graffe in ogni elemento della raccolta.  Le parentesi graffe più interne racchiudono l'inizializzatore di oggetto per `StudentName`e quelle più esterne racchiudono l'inizializzatore per la coppia chiave\/valore che verrà aggiunta all'oggetto <xref:System.Collections.Generic.Dictionary%602> di `students`.  Viene infine racchiuso tra parentesi graffe l'intero inizializzatore di raccolta per il dizionario.  
   

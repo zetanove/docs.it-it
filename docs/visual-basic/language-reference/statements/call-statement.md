@@ -49,7 +49,7 @@ Consente di trasferire un controllo a una routine `Function`, `Sub` oppure a una
 ## Esempio  
  Nel codice seguente a due esempi in cui la parola chiave di `Call` è necessaria per chiamare una routine.  In entrambi gli esempi, l'espressione chiamata non inizia con un identificatore.  
   
- [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/call-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/call-statement_1.vb)]  
   
 ## Vedere anche  
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   

@@ -65,15 +65,15 @@ End Sub
 ## Esempio  
  In un file denominato Product.Designer.vb, definire una classe `Product` che ha una proprietà `Quantity`.  
   
- [!code-vb[VbVbalrPartialMeths#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/partial-methods_1.vb)]  
+ [!code-vb[VbVbalrPartialMeths#4](./codesnippet/VisualBasic/partial-methods_1.vb)]  
   
  In un file denominato Product.vb, fornire un'implementazione per `QuantityChanged`.  
   
- [!code-vb[VbVbalrPartialMeths#5](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/partial-methods_2.vb)]  
+ [!code-vb[VbVbalrPartialMeths#5](./codesnippet/VisualBasic/partial-methods_2.vb)]  
   
  Infine, nel metodo Main di un progetto, dichiarare un'istanza `Product` e fornire un valore iniziale per la relativa proprietà `Quantity`.  
   
- [!code-vb[VbVbalrPartialMeths#6](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/partial-methods_3.vb)]  
+ [!code-vb[VbVbalrPartialMeths#6](./codesnippet/VisualBasic/partial-methods_3.vb)]  
   
  Comparirà una finestra che visualizza questo messaggio:  
   

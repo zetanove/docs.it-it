@@ -28,7 +28,7 @@ Un metodo parziale ha la firma definita in una parte di un tipo parziale e l'imp
   
  Nell'esempio seguente viene illustrato un metodo parziale definito in due parti di una classe parziale:  
   
- [!code-cs[csrefKeywordsContextual#9](../../../csharp/language-reference/keywords/codesnippet/csharp/partial-method_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/partial-method_1.cs)]  
   
  Per ulteriori informazioni, vedere [Classi e metodi parziali](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md).  
   

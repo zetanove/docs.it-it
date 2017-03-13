@@ -46,13 +46,13 @@ Se una routine include un parametro [ParamArray](../../../../visual-basic/langua
 ## Esempio  
  Nell'esempio riportato di seguito vengono illustrati una routine definita con un parametro [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) e quindi un insieme equivalente di routine di overload.  
   
- [!code-vb[VbVbcnProcedures#69](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_0_1.vb)]  
+ [!code-vb[VbVbcnProcedures#69](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#70](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_0_2.vb)]  
+ [!code-vb[VbVbcnProcedures#70](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_2.vb)]  
   
  Non è possibile eseguire l'overload di una routine di questo tipo con un elenco di parametri che accetta una matrice unidimensionale per la matrice di parametri.  È invece possibile utilizzare le firme di altri overload impliciti.  Questa situazione viene illustrata nelle dichiarazioni seguenti.  
   
- [!code-vb[VbVbcnProcedures#71](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_0_3.vb)]  
+ [!code-vb[VbVbcnProcedures#71](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters_3.vb)]  
   
  Il codice nelle versioni di overload non deve verificare se il codice chiamante ha fornito uno o più valori per il parametro `ParamArray` e, in caso affermativo, il numero di valori.  In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] il controllo viene passato alla versione che corrisponde all'elenco di argomenti di chiamata.  
   

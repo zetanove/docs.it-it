@@ -39,7 +39,7 @@ x = x % y
  L'operatore `%=` non può essere sottoposto direttamente a overload; tuttavia, i tipi definiti dall'utente possono eseguire l'overload dell'[operatore %](../../../csharp/language-reference/operators/modulus-operator.md). Per ulteriori informazioni, vedere [operatore](../../../csharp/language-reference/keywords/operator.md).  
   
 ## Esempio  
- [!code-cs[csRefOperators#4](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#4)]  
+ [!code-cs[csRefOperators#4](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-assignment-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

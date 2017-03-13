@@ -24,7 +24,7 @@ Utilizzare la parola chiave `operator` per eseguire l'overload di un operatore i
 ## Esempio  
  Nell'esempio riportato di seguito viene utilizzata una classe estremamente semplificata di numeri frazionari  in cui gli operatori \+ e \* vengono sottoposti a overload per eseguire addizioni e moltiplicazioni frazionarie. Viene inoltre definito un operatore che converte un tipo Fraction nel corrispondente tipo double.  
   
- [!code-cs[csrefKeywordsConversion#6](../../../csharp/language-reference/keywords/codesnippet/csharp/operator_1.cs)]  
+ [!code-cs[csrefKeywordsConversion#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/operator_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -55,12 +55,12 @@ Per i parametri di tipo generico, la parola chiave `Out` specifica che il tipo Ã
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, estendere e implementare un'interfaccia generica covariante.  Viene inoltre illustrato come utilizzare la conversione implicita per le classi che implementano un'interfaccia covariante.  
   
- [!code-vb[vbVarianceKeywords#3](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/out-generic-modifier_1.vb)]  
+ [!code-vb[vbVarianceKeywords#3](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_1.vb)]  
   
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, creare un'istanza e richiamare un delegato generico covariante.  Viene inoltre illustrato come sia possibile utilizzare la conversione implicita per i tipi delegati.  
   
- [!code-vb[vbVarianceKeywords#4](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/out-generic-modifier_2.vb)]  
+ [!code-vb[vbVarianceKeywords#4](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/out-generic-modifier_2.vb)]  
   
 ## Vedere anche  
  [Varianza nelle interfacce generiche](../Topic/Variance%20in%20Generic%20Interfaces%20\(C%23%20and%20Visual%20Basic\).md)   

@@ -22,25 +22,25 @@ Una variabile associata a un [tipo che rappresenta un valore](../../../csharp/la
 ## Passaggio di tipi di valore per valore  
  Nell'esempio che segue viene illustrato il passaggio di parametri associati a tipi che rappresentano un valore per valore.  La variabile `n` viene passata per valore al metodo `SquareIt`.  Eventuali modifiche apportate nel metodo non avranno alcun effetto sul valore originale della variabile.  
   
- [!code-cs[csProgGuideParameters#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/passing-value-type-param_1.cs)]  
+ [!code-cs[csProgGuideParameters#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-value-type-parameters_1.cs)]  
   
  la variabile `n` è un tipo di valore.  Contiene i dati, il valore `5`.  Quando si richiama `SquareIt`, il contenuto di `n` viene copiato nel parametro `x`, che viene elevato al quadrato all'interno del metodo.  in `Main`, tuttavia, il valore di  `n` è lo stesso dopo avere chiamato  `SquareIt` metodo come era prima.  La modifica eseguita nel metodo influisce solo sulla variabile locale `x`.  
   
 ## Passaggio di tipi di valore per riferimento  
  L'esempio seguente è lo stesso dell'esempio precedente, tranne per il fatto che l'argomento viene passato come `ref` parametro.  Il valore dell'argomento sottostante, `n`, viene modificato quando  `x` viene modificato nel metodo.  
   
- [!code-cs[csProgGuideParameters#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/passing-value-type-param_2.cs)]  
+ [!code-cs[csProgGuideParameters#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-value-type-parameters_2.cs)]  
   
  In questo esempio non viene passato il valore di `n`, ma solo un riferimento a `n`.  Il parametro `x` non è di tipo [int](../../../csharp/language-reference/keywords/int.md) ma è un riferimento a un valore `int`, in questo caso un riferimento a `n`.  Pertanto, quando `x` è quadrato nel metodo, cìò che è quadrato è quello  `x` si riferisce,  `n`.  
   
 ## Scambio di tipi di valore  
  Un esempio comune di modificare i valori degli argomenti è un metodo di scambio, dove si passano due variabili al metodo e il metodo scambia i relativi contenuti.  È necessario passare argomenti al metodo di scambio per riferimento.  In caso contrario, sostituire le copie locali dei parametri nel metodo e nessuna modifica si verifica nel metodo di chiamata.  Nell'esempio seguente viene scambiata i valori Integer.  
   
- [!code-cs[csProgGuideParameters#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/passing-value-type-param_3.cs)]  
+ [!code-cs[csProgGuideParameters#5](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-value-type-parameters_3.cs)]  
   
  Quando si chiama `SwapByRef` il metodo utilizza,  `ref` parola chiave nella chiamata, come illustrato nell'esempio seguente.  
   
- [!code-cs[csProgGuideParameters#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/passing-value-type-param_4.cs)]  
+ [!code-cs[csProgGuideParameters#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-value-type-parameters_4.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

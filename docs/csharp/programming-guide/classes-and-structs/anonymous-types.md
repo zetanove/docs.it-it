@@ -41,7 +41,7 @@ Console.WriteLine(v.Amount + v.Message);
   
  Se nel tipo anonimo non si specificano i nomi dei membri, il compilatore assegna ai membri di tipo anonimo lo stesso nome della proprietà usata per inizializzarli.  Per una proprietà inizializzata con un'espressione è necessario fornire un nome, come illustrato nell'esempio seguente.  Nell'esempio seguente i nomi delle proprietà del tipo anonimo sono `Color` e `Price`.  
   
- [!code-cs[csRef30Features#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/anonymous-types_1.cs)]  
+ [!code-cs[csRef30Features#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/anonymous-types_1.cs)]  
   
  In genere, quando si usa un tipo anonimo per inizializzare una variabile, la si dichiara come variabile locale tipizzata in modo implicito usando [var](../../../csharp/language-reference/keywords/var.md).  Il nome del tipo non può essere specificato nella dichiarazione di variabile, perché solo il compilatore ha accesso al nome sottostante del tipo anonimo.  Per altre informazioni su `var`, vedere [Variabili locali tipizzate in modo implicito](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   

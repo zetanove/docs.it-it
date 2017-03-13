@@ -79,7 +79,7 @@ Per la dichiarazione delle classi viene utilizzata la parola chiave `class`, com
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrata la dichiarazione di costruttori, metodi e campi di classi.  Viene inoltre descritta la creazione di istanze di oggetti e la stampa di dati di un'istanza.  In questo esempio vengono dichiarate due classi, la classe `Child`, che contiene due campi privati \(`name` e `age`\) e due metodi pubblici.  La seconda classe, `StringTest`, viene utilizzata per contenere `Main`.  
   
- [!code-cs[csrefKeywordsTypes#5](../../../csharp/language-reference/keywords/codesnippet/csharp/class_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/class_1.cs)]  
   
 ## Commenti  
  Si noti, nell'esempio precedente, che è possibile accedere ai campi privati \(`name` e `age`\) solo tramite i metodi pubblici della classe `Child`.  Non è quindi possibile stampare il nome del bambino dal metodo `Main` utilizzando un'istruzione come quella riportata di seguito.  

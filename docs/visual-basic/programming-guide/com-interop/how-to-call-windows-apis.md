@@ -27,7 +27,7 @@ caps.handback.revision: 14
 Nell'esempio riportato di seguito la funzione `MessageBox` viene definita e chiamata nel file user32.dll, quindi a essa viene passata una stringa.  
   
 ## Esempio  
- [!code-vb[VbVbalrInterop#1](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#1)]  
+ [!code-vb[VbVbalrInterop#1](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/how-to-call-windows-apis_1.vb)]  
   
 ## Compilazione del codice  
  L'esempio presenta i seguenti requisiti:  

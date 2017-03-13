@@ -8,14 +8,14 @@ In questo esempio viene illustrato come gestire i possibili valori null nelle ra
 ## Esempio  
  È possibile codificare in modo sicuro per evitare un'eccezione di riferimento null come illustrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideLINQ#82](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#82)]  
+ [!code-cs[csProgGuideLINQ#82](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-null-values-in-query-expressions_1.cs)]  
   
  Nell'esempio precedente la clausola `where` esclude tutti gli elementi null nella sequenza di categorie.  Questa tecnica è indipendente dal controllo null nella clausola join.  In questo esempio è possibile utilizzare l'espressione condizionale con null poiché `Products.CategoryID` è di tipo `int?`, ovvero una forma abbreviata di `Nullable<int>`.  
   
 ## Esempio  
  Se in una clausola join solo una delle chiavi di confronto è un tipo valore che ammette valori null, è possibile eseguire il cast della altre chiavi a un tipo che ammette valori null nell'espressione di query.  Nell'esempio seguente si supponga che `EmployeeID` sia una colonna contenente valori di tipo `int?`:  
   
- [!code-cs[csProgGuideLINQ#83](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#83)]  
+ [!code-cs[csProgGuideLINQ#83](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-null-values-in-query-expressions_2.cs)]  
   
 ## Vedere anche  
  <xref:System.Nullable%601>   

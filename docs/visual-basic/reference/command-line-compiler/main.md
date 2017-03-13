@@ -41,7 +41,7 @@ Consente di specificare la classe o il modulo che contiene la routine `Sub Main`
   
  Quando `location` è una classe che eredita da <xref:System.Windows.Forms.Form>, il compilatore fornisce una routine `Main` predefinita che avvia l'applicazione se la classe non ha la routine `Main`.  In questo modo, è possibile compilare il codice dalla  riga di comando creata nell'ambiente di sviluppo.  
   
- [!code-vb[VbVbalrCompiler#16](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/main_1.vb)]  
+ [!code-vb[VbVbalrCompiler#16](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/main_1.vb)]  
   
 ### Per impostare \/main nell'ambiente di sviluppo integrato di Visual Studio  
   

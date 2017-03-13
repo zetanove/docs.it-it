@@ -33,14 +33,14 @@ La clausola `join` è utile per l'associazione di elementi da sequenze di origin
 ## Inner join  
  Nell'esempio che segue viene fornito un inner equijoin.  Questa query produce una semplice sequenza di coppie "nome prodotto \/ categoria".  La stessa stringa della categoria verrà visualizzata in più elementi.  Se per un elemento di `categories` non esistono `products` corrispondenti, tale categoria non verrà visualizzata nei risultati.  
   
- [!code-cs[cscsrefQueryKeywords#24](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#24)]  
+ [!code-cs[cscsrefQueryKeywords#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_1.cs)]  
   
  Per ulteriori informazioni, vedere [Procedura: eseguire degli inner join](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-inner-joins.md).  
   
 ## Group Join  
  Una clausola `join` con un'espressione `into` viene detta group join.  
   
- [!code-cs[cscsrefQueryKeywords#25](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#25)]  
+ [!code-cs[cscsrefQueryKeywords#25](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_2.cs)]  
   
  Un group join produce una sequenza di risultati gerarchica, che associa gli elementi nella sequenza di origine a sinistra con uno o più elementi corrispondenti nella sequenza di origine sul lato destro.  Un group join non ha equivalente in termini relazionali. Si tratta essenzialmente di una sequenza di matrici di oggetti.  
   
@@ -50,14 +50,14 @@ La clausola `join` è utile per l'associazione di elementi da sequenze di origin
   
  È inoltre ovviamente possibile utilizzare il risultato di un group join come generatore di un'altra sottoquery:  
   
- [!code-cs[cscsrefQueryKeywords#26](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#26)]  
+ [!code-cs[cscsrefQueryKeywords#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_3.cs)]  
   
  Per ulteriori informazioni, vedere [Procedura: eseguire dei join raggruppati](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-grouped-joins.md).  
   
 ## Left outer join  
  In un left outer join, vengono restituiti tutti gli elementi nella sequenza di origine di sinistra, anche se non sono disponibili elementi corrispondenti nella sequenza di destra.  Per eseguire un left outer join in [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)], utilizzare il metodo `DefaultIfEmpty` in combinazione con un group join per specificare di produrre un elemento del lato destro predefinito se un elemento del lato sinistro non ha corrispondenze.  È possibile utilizzare `null` come valore predefinito per qualsiasi tipo di riferimento o specificare un tipo predefinito definito dall'utente.  Nell'esempio seguente, viene illustrato un tipo predefinito definito dall'utente:  
   
- [!code-cs[cscsrefQueryKeywords#27](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#27)]  
+ [!code-cs[cscsrefQueryKeywords#27](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_4.cs)]  
   
  Per ulteriori informazioni, vedere [Procedura: Eseguire i left outer join](../../../csharp/programming-guide/linq-query-expressions/how-to-perform-left-outer-joins.md).  
   
@@ -78,7 +78,7 @@ La clausola `join` è utile per l'associazione di elementi da sequenze di origin
 ## Esempio  
  Nell'esempio seguente vengono confrontati i risultati di un inner join, di un group join e di un left outer join nelle stesse origini dati utilizzando le stesse chiavi corrispondenti.  A questi esempi viene aggiunto altro codice per chiarire i risultati nella visualizzazione della console.  
   
- [!code-cs[cscsrefQueryKeywords#23](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Join.cs#23)]  
+ [!code-cs[cscsrefQueryKeywords#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_5.cs)]  
   
 ## Note  
  Una clausola `join` non seguita da `into` viene convertita in una chiamata al metodo <xref:System.Linq.Enumerable.Join%2A>.  Una clausola `join` seguita da `into` viene convertita in una chiamata al metodo <xref:System.Linq.Enumerable.GroupJoin%2A>.  

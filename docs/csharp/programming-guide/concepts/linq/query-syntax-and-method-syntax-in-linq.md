@@ -27,7 +27,7 @@ La maggior parte delle query nella documentazione di query integrata linguaggio 
 ## Metodi di estensione degli operatori di query standard  
  Nell'esempio seguente viene illustrata un'*espressione di query* semplice e la query equivalente a livello semantico scritta come *query basata sul metodo*.  
   
- [!code-cs[csLINQGettingStarted#22](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#22)]  
+ [!code-cs[csLINQGettingStarted#22](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/query-syntax-and-method-syntax-in-linq_1.cs)]  
   
  L'output dei due esempi è identico.  Il tipo della variabile di query è uguale in entrambi i formati: <xref:System.Collections.Generic.IEnumerable%601>.  
   

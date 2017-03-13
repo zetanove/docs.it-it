@@ -52,7 +52,7 @@ variableorproperty = value
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato l'operatore di assegnazione.  Il valore a destra viene assegnato alla variabile a sinistra.  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
   
 ## Vedere anche  
  [&\= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   

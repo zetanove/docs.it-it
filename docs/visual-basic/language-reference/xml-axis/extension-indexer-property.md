@@ -59,7 +59,7 @@ object(index)
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato come utilizzare l'indicizzatore di estensione per accedere al secondo nodo figlio di una raccolta di oggetti <xref:System.Xml.Linq.XElement>.  È possibile accedere alla raccolta utilizzando la proprietà axis dell'elemento figlio che ottiene tutti gli elementi figlio denominati `phone` nell'oggetto `contact`.  
   
- [!code-vb[VbXMLSamples#24](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/extension-indexer-property_1.vb)]  
+ [!code-vb[VbXMLSamples#24](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/extension-indexer-property_1.vb)]  
   
  Verrà visualizzato il seguente testo:  
   

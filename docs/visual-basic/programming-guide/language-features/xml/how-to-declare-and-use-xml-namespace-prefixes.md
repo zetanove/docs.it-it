@@ -26,7 +26,7 @@ caps.handback.revision: 11
 In questo esempio viene illustrato come importare il prefisso dello spazio dei nomi XML `ns` e utilizzarlo in un valore letterale XML e nelle proprietà axis XML.  
   
 ## Esempio  
- [!code-vb[VbXMLSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-declare-and-use-x_1.vb)]  
+ [!code-vb[VbXMLSamples#8](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-declare-and-use-xml-namespace-prefixes_1.vb)]  
   
 ## Compilazione del codice  
  L'esempio presenta i seguenti requisiti:  

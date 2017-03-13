@@ -54,14 +54,14 @@ Implements interfacename.interfacemember [, ...]
 ## Esempio  
  Nell'esempio seguente, viene illustrato come utilizzare l'istruzione `Implements` per implementare i membri di un'interfaccia.  Definisce un'interfaccia denominata `ICustomerInfo` con un evento, una proprietà e una routine.  La classe `customerInfo` implementa tutti i membri definiti nell'interfaccia.  
   
- [!code-vb[VbVbalrStatements#33](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/implements-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#33](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/implements-statement_1.vb)]  
   
  Si noti che la classe `customerInfo` utilizza l'istruzione `Implements` in una riga del codice sorgente distinta per indicare l'implementazione di tutti i membri dell'interfaccia `ICustomerInfo`.  Ogni membro della classe, quindi, include la parola chiave `Implements` nella dichiarazione dei relativi membri per indicare l'implementazione di quel membro dell'interfaccia.  
   
 ## Esempio  
  Nelle seguenti due routine viene illustrato un possibile utilizzo dell'interfaccia implementata nell'esempio precedente.  Per eseguire il test dell'implementazione, aggiungere queste routine al progetto e chiamare la routine `testImplements`.  
   
- [!code-vb[VbVbalrStatements#34](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/implements-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#34](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/implements-statement_2.vb)]  
   
 ## Vedere anche  
  [Implements](../../../visual-basic/language-reference/statements/implements-clause.md)   

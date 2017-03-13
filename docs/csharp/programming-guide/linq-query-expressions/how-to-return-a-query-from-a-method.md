@@ -10,7 +10,7 @@ In questo esempio viene illustrato come restituire una query da un metodo come v
 ## Esempio  
  Nell'esempio seguente il primo metodo restituisce una query come valore restituito, mentre il secondo metodo restituisce una query come parametro `out`.  In entrambi casi, viene restituita una query e non vengono restituiti i risultati della query.  
   
- [!code-cs[csProgGuideLINQ#80](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#80)]  
+ [!code-cs[csProgGuideLINQ#80](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-return-a-query-from-a-method_1.cs)]  
   
 ## Compilazione del codice  
   

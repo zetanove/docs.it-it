@@ -50,7 +50,7 @@ In questa pagina vengono elencati alcuni problemi comuni che possono verificarsi
   
  Nell''esempio riportato di seguito viene illustrato il confronto corretto e non corretto di due valori `Double`.  
   
- [!code-vb[VbVbalrDataTypes#10](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/troubleshooting-data-types_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#10](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_1.vb)]  
   
  Nell''esempio precedente viene utilizzato il metodo <xref:System.Double.ToString%2A> della struttura <xref:System.Double> che consente di specificare una maggiore precisione rispetto a `CStr` utilizzata dalla parola chiave.  Il valore predefinito è di 15 cifre, ma il formato "G17" lo estende a 17 cifre.  
   
@@ -66,7 +66,7 @@ In questa pagina vengono elencati alcuni problemi comuni che possono verificarsi
   
  Nell''esempio riportato di seguito viene illustrata la potenziale imprecisione degli operandi a virgola mobile.  
   
- [!code-vb[VbVbalrDataTypes#11](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/troubleshooting-data-types_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#11](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_2.vb)]  
   
  Nel precedente esempio, si utilizza il metodo <xref:System.Double.ToString%2A> della struttura <xref:System.Double> in modo che possa specificare una maggiore precisione rispetto a quella utilizzata dalla parola chiave `CStr`.  Il valore predefinito è di 15 cifre, ma il formato "G17" lo estende a 17 cifre.  
   
@@ -103,7 +103,7 @@ In questa pagina vengono elencati alcuni problemi comuni che possono verificarsi
   
  [!CODE [VbVbalrStatements#49](../CodeSnippet/VS_Snippets_VBCSharp/VbVbalrStatements#49)]  
   
- [!code-vb[VbVbalrDataTypes#12](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/troubleshooting-data-types_4.vb)]  
+ [!code-vb[VbVbalrDataTypes#12](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/troubleshooting-data-types_3.vb)]  
   
  Esiste sempre un rischio nell'utilizzo delle conversioni di restrizione in quanto possono avere esito negativo in fase di esecuzione.  Una conversione da `String` a `Char` ad esempio può avere esito negativo se il valore `String` contiene più di un carattere.  Di conseguenza, è preferibile programmare per utilizzare il tipo di carattere `C`.  
   

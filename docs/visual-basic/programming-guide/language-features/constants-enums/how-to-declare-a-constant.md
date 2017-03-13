@@ -52,7 +52,7 @@ L'istruzione `Const` consente di dichiarare una costante e di impostarne il valo
   
 -   Scrivere una dichiarazione in cui siano inclusi un identificatore di accesso, la parola chiave `Const` e un'espressione, come illustrato negli esempi seguenti:  
   
-     [!code-vb[VbEnumsTask#8](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#8)]  
+     [!code-vb[VbEnumsTask#8](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-a-constant_1.vb)]  
   
      Se [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) è `Off` e [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) è `On`, è necessario dichiarare una costante in modo esplicito specificando un tipo di dati \(`Boolean`, `Byte`, `Char`, `DateTime`, `Decimal`, `Double`, `Integer`, `Long`, `Short`, `Single` o `String`\).  
   
@@ -62,7 +62,7 @@ L'istruzione `Const` consente di dichiarare una costante e di impostarne il valo
   
 -   Scrivere una dichiarazione in cui siano inclusi la parola chiave `As` e un tipo di dati esplicito, come illustrato negli esempi seguenti:  
   
-     [!code-vb[VbEnumsTask#9](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#9)]  
+     [!code-vb[VbEnumsTask#9](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-a-constant_2.vb)]  
   
      È possibile dichiarare più costanti sulla stessa riga, anche se il codice risulterà più leggibile se si dichiara una sola costante per riga.  Se si dichiarano più costanti in una singola riga, devono presentare tutte lo stesso livello di accesso \(`Public`, `Private`, `Friend`, `Protected` o `Protected Friend`\).  
   

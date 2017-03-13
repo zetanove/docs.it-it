@@ -108,11 +108,11 @@ End Property
 ### Illustrazione della dichiarazione e della chiamata  
  La proprietà riportata di seguito memorizza un nome completo come due nomi costitutivi, ovvero il nome e il cognome.  Quando il codice chiamante legge  `fullName`, la routine `Get` combina i due nomi costitutivi e restituisce il nome completo.  Quando il codice chiamante assegna un nuovo nome completo, la routine `Set` tenta di scomporlo in due parti costitutive.  Se non viene rilevato alcuno spazio, viene memorizzato tutto come nome.  
   
- [!code-vb[VbVbcnProcedures#8](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/property-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#8](./codesnippet/VisualBasic/property-procedures_1.vb)]  
   
  Nell'esempio riportato di seguito vengono illustrate le chiamate tipiche alle routine delle proprietà di `fullName`.  
   
- [!code-vb[VbVbcnProcedures#9](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/property-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/property-procedures_2.vb)]  
   
 ## Vedere anche  
  [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

@@ -33,7 +33,7 @@ I tipi nullable possono rappresentare tutti i valori di un tipo sottostante e un
 ## Esempi di tipi nullable  
  È possibile utilizzare qualsiasi tipo di valore come base per un tipo nullable.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideTypes#4](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_1.cs)]  
+ [!code-cs[csProgGuideTypes#4](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_1.cs)]  
   
 ## Membri dei tipi nullable  
  Ogni istanza di un tipo nullable dispone di due proprietà pubbliche in sola lettura:  
@@ -48,47 +48,47 @@ I tipi nullable possono rappresentare tutti i valori di un tipo sottostante e un
   
  In questo esempio viene utilizzato il membro `HasValue` per verificare se la variabile contiene un valore prima di tentare di visualizzarlo.  
   
- [!code-cs[csProgGuideTypes#5](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_2.cs)]  
+ [!code-cs[csProgGuideTypes#5](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_2.cs)]  
   
  È anche possibile eseguire il test di un valore come nell'esempio riportato di seguito:  
   
- [!code-cs[csProgGuideTypes#6](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_3.cs)]  
+ [!code-cs[csProgGuideTypes#6](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_3.cs)]  
   
 ## Conversioni esplicite  
  È possibile eseguire il cast di un tipo nullable su un tipo regolare, in modo esplicito tramite cast oppure mediante la proprietà `Value`.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideTypes#7](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_4.cs)]  
+ [!code-cs[csProgGuideTypes#7](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_4.cs)]  
   
  Se è stata definita una conversione specifica tra due tipi di dati, sarà possibile utilizzare la stessa conversione anche con le versioni nullable di questi tipi.  
   
 ## Conversioni implicite  
  Una variabile di tipo nullable può essere impostata su null con la parola chiave `null`, come illustrato nell'esempio riportato di seguito:  
   
- [!code-cs[csProgGuideTypes#8](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_5.cs)]  
+ [!code-cs[csProgGuideTypes#8](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_5.cs)]  
   
  La conversione da un tipo ordinario a un tipo nullable è implicita.  
   
- [!code-cs[csProgGuideTypes#9](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_6.cs)]  
+ [!code-cs[csProgGuideTypes#9](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_6.cs)]  
   
 ## Operatori  
  Con i tipi nullable è anche possibile utilizzare gli operatori unari e binari predefiniti, nonché gli eventuali operatori definiti dall'utente disponibili per i tipi di valore esistenti.  Se gli operandi sono null, questi operatori generano un valore null. In caso contrario, per calcolare il risultato l'operando utilizza il valore contenuto.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideTypes#10](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_7.cs)]  
+ [!code-cs[csProgGuideTypes#10](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_7.cs)]  
   
  Quando si eseguono confronti con tipi nullable, se il valore di uno dei tipi nullable è null e l'altro no, tutti i confronti restituiscono `false` ad eccezione di `!=` \(diverso da\).  È importante non presupporre che, poiché un particolare confronto restituisce `false`, il caso opposto restituisca `true`.  Nell'esempio seguente 10 non è maggiore di, minore di o uguale a null.  Solo `num1 != num2` restituisce `true`.  
   
- [!code-cs[csProgGuideTypes#11](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_8.cs)]  
+ [!code-cs[csProgGuideTypes#11](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_8.cs)]  
   
  Un confronto di uguaglianze di due tipi nullable che sono entrambi null restituisce `true`.  
   
 ## OperatoreOperatore  
  L'operatore `??` definisce un valore predefinito che viene restituito quando un tipo nullable viene assegnato a un tipo non nullable.  
   
- [!code-cs[csProgGuideTypes#12](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_9.cs)]  
+ [!code-cs[csProgGuideTypes#12](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_9.cs)]  
   
  Questo operatore può essere utilizzato anche con più tipi nullable.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideTypes#13](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/using-nullable-types_10.cs)]  
+ [!code-cs[csProgGuideTypes#13](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-nullable-types_10.cs)]  
   
 ## Tipotype  
  Il tipo nullable `bool?` può contenere tre valori diversi: [true](../../../csharp/language-reference/keywords/true.md), [false](../../../csharp/language-reference/keywords/false.md) e [null](../../../csharp/language-reference/keywords/null.md).  Per informazioni sull'esecuzione del cast da un tipo bool?  a un tipo bool, vedere [Procedura: eseguire il cast sicuro da bool? a bool](../../../csharp/programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md).  

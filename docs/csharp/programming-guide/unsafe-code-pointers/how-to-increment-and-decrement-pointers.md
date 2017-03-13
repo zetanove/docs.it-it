@@ -37,9 +37,9 @@ p--;
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato come passare da un elemento di una matrice all'altro incrementando il puntatore della dimensione di `int`.  A ogni passaggio verranno visualizzati l'indirizzo e il contenuto dell'elemento della matrice.  
   
- [!code-cs[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers2.cs#3)]  
+ [!code-cs[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-increment-and-decrement-pointers_1.cs)]  
   
- [!code-cs[csProgGuidePointers#13](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#13)]  
+ [!code-cs[csProgGuidePointers#13](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-increment-and-decrement-pointers_2.cs)]  
   
   **Valore: 0 @ indirizzo 12860272**  
 **Valore: 1 @ indirizzo: 12860276**  

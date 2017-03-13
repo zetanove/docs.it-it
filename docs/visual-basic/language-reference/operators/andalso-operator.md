@@ -66,14 +66,14 @@ result = expression1 AndAlso expression2
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `AndAlso` viene utilizzato per eseguire una congiunzione logica tra due espressioni.  Il risultato è un valore `Boolean` che indica se l'intera espressione di congiunzione è True.  Se la prima espressione è `False`, la seconda non verrà valutata.  
   
- [!code-vb[VbVbalrOperators#24](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/andalso-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#24](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_1.vb)]  
   
  I risultati ottenuti dall'esempio precedente sono rispettivamente `True`, `False` e `False`.  Nel calcolo di `secondCheck` la seconda espressione non viene valutata perché la prima è già `False`.  La seconda espressione, tuttavia, viene valutata nel calcolo di `thirdCheck`.  
   
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrata una routine `Function` che esegue la ricerca di un determinato valore tra gli elementi di una matrice.  Se la matrice è vuota o se ne è stata superata la lunghezza, l'istruzione `While` non testa l'elemento della matrice rispetto al valore di ricerca.  
   
- [!code-vb[VbVbalrOperators#25](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/andalso-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#25](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/andalso-operator_2.vb)]  
   
 ## Vedere anche  
  [Logical\/Bitwise Operators](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)   

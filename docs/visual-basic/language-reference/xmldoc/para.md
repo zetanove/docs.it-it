@@ -42,7 +42,7 @@ Specifica la formattazione del contenuto come paragrafo.
 ## Esempio  
  Nell'esempio riportato di seguito il tag `<para>` viene utilizzato per suddividere la sezione delle osservazioni relativa al metodo `UpdateRecord` in due paragrafi.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/para_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/para_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

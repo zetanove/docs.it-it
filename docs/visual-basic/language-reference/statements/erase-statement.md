@@ -43,7 +43,7 @@ Erase arraylist
 ## Esempio  
  Nell'esempio seguente l'istruzione `Erase` viene utilizzata per cancellare due matrici e liberare la relativa memoria \(rispettivamente 1000 e 100 elementi memorizzati\).  L'istruzione `ReDim` consente quindi di assegnare una nuova istanza di matrice alla matrice tridimensionale.  
   
- [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/erase-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/erase-statement_1.vb)]  
   
 ## Vedere anche  
  [Nothing](../../../visual-basic/language-reference/nothing.md)   

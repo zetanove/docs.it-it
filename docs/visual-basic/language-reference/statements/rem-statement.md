@@ -53,7 +53,7 @@ REM comment
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato l'utilizzo dell'istruzione `REM` per includere note esplicative in un programma.  Viene inoltre presentato l'impiego alternativo della virgoletta singola \(`'`\) in sostituzione di `REM`.  
   
- [!code-vb[VbVbalrStatements#6](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/rem-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#6](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/rem-statement_1.vb)]  
   
 ## Vedere anche  
  [Comments in Code](../../../visual-basic/programming-guide/program-structure/comments-in-code.md)   

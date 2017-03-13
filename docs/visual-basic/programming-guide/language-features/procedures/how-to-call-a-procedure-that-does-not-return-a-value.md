@@ -35,7 +35,7 @@ Una routine `Sub` non restituisce un valore al codice chiamante.  Viene chiamata
   
      Nell'esempio seguente viene chiamata la funzione <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] per attivare una finestra dell'applicazione.  <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A> utilizza il titolo della finestra come unico argomento  e non restituisce alcun valore al codice chiamante.  Se un processo Blocco note non è in esecuzione, nell'esempio verrà generata un'eccezione <xref:System.ArgumentException>.  Il presupposto per la routine `Shell` è che le applicazioni si trovino nei percorsi specificati.  
   
-     [!code-vb[VbVbalrCatRef#11](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-a-procedure-_1_1.vb)]  
+     [!code-vb[VbVbalrCatRef#11](./codesnippet/VisualBasic/how-to-call-a-procedure-that-does-not-return-a-value_1.vb)]  
   
 ## Vedere anche  
  <xref:Microsoft.VisualBasic.Interaction.Shell%2A>   

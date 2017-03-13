@@ -39,11 +39,11 @@ Se è stata definita una classe o una struttura, è possibile definire il compor
 ## Esempio  
  Nell'esempio riportato di seguito viene definito l'operatore `+` per una struttura denominata `height`.  La struttura utilizza altezze misurate in piedi e pollici.  Un *pollice* e un *piede* corrispondono rispettivamente a 2,54 cm e a 12 pollici.  Per garantire valori normalizzati \(pollici \< 12\), il costruttore esegue il *modulo* aritmetico 12.  L'operatore `+` utilizza il costruttore per generare valori normalizzati.  
   
- [!code-vb[VbVbcnProcedures#25](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-an-operator_1.vb)]  
+ [!code-vb[VbVbcnProcedures#25](./codesnippet/VisualBasic/how-to-define-an-operator_1.vb)]  
   
  È possibile testare la struttura `height` con il codice riportato di seguito.  
   
- [!code-vb[VbVbcnProcedures#26](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-an-operator_2.vb)]  
+ [!code-vb[VbVbcnProcedures#26](./codesnippet/VisualBasic/how-to-define-an-operator_2.vb)]  
   
  Per ulteriori informazioni ed esempi, vedere [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703) \(informazioni in lingua inglese\).  
   

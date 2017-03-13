@@ -38,7 +38,7 @@ x = x ^ y
  L'operatore ^\= non può essere sottoposto direttamente a overload; tuttavia, i tipi definiti dall'utente possono eseguire l'overload dell'[operatore^](../../../csharp/language-reference/operators/xor-operator.md) \(vedere [operator](../../../csharp/language-reference/keywords/operator.md)\).  
   
 ## Esempio  
- [!code-cs[csRefOperators#23](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#23)]  
+ [!code-cs[csRefOperators#23](../../../csharp/language-reference/operators/codesnippet/CSharp/xor-assignment-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

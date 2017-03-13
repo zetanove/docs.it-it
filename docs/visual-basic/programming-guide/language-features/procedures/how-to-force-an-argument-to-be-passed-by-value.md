@@ -44,9 +44,9 @@ La dichiarazione di routine determina il meccanismo di passaggio.  Se un paramet
 ## Esempio  
  Nell'esempio riportato di seguito viene eseguito l'override di una dichiarazione di parametro `ByRef`.  Si osservino i due livelli di parentesi nella chiamata che impone `ByVal`.  
   
- [!code-vb[VbVbcnProcedures#39](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-force-an-argument_1.vb)]  
+ [!code-vb[VbVbcnProcedures#39](./codesnippet/VisualBasic/how-to-force-an-argument-to-be-passed-by-value_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#40](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-force-an-argument_2.vb)]  
+ [!code-vb[VbVbcnProcedures#40](./codesnippet/VisualBasic/how-to-force-an-argument-to-be-passed-by-value_2.vb)]  
   
  Quando `str` è racchiuso tra parentesi aggiuntive all'interno dell'elenco di argomenti, non è possibile modificare il valore della routine `setNewString` nel codice chiamante e in `MsgBox` viene visualizzato il messaggio "Cannot be replaced if passed ByVal".  Quando il valore `str` non è racchiuso tra parentesi aggiuntive, la routine può modificarlo e in `MsgBox` viene visualizzato il messaggio "This is a new value for the inString argument."  
   

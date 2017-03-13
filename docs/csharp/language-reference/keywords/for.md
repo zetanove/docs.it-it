@@ -24,7 +24,7 @@ Utilizzando un ciclo `for`, è possibile eseguire più volte un'istruzione o un 
 ## Esempio  
  Nell'esempio seguente, il valore `i` viene scritto nella console e viene incrementato da 1 durante ogni iterazione del ciclo.  
   
- [!code-cs[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/csharp/for_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_1.cs)]  
   
  L'istruzione `for` nell'esempio precedente vengono eseguite le seguenti azioni.  
   
@@ -101,11 +101,11 @@ for (initializer; condition; iterator)
   
  Nell'esempio seguente vengono illustrate diverse scelte meno comuni: assegnare un valore a una variabile esterna del ciclo nella sezione di inizializzazione, richiamando il metodo `Console.WriteLine` nell'inizializzatore che le sezioni iteratori e modificare i valori di due variabili nella sezione di iteratore.  
   
- [!code-cs[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/csharp/for_2.cs)]  
+ [!code-cs[csrefKeywordsIteration#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_2.cs)]  
   
  Tutte le espressioni che definiscono un'istruzione `for` sono facoltative.  Ad esempio, l'istruzione seguente viene creato un ciclo infinito.  
   
- [!code-cs[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/csharp/for_3.cs)]  
+ [!code-cs[csrefKeywordsIteration#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/for_3.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

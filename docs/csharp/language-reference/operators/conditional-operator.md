@@ -55,7 +55,7 @@ classify = (input > 0) ? "positive" : "negative";
  Non è possibile eseguire l'overload dell'operatore condizionale.  
   
 ## Esempio  
- [!code-cs[csRefOperators#41](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#41)]  
+ [!code-cs[csRefOperators#41](../../../csharp/language-reference/operators/codesnippet/CSharp/conditional-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

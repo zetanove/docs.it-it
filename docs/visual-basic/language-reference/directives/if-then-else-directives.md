@@ -73,7 +73,7 @@ Compilano in modo condizionale blocchi selezionati di codice Visual Basic.
 ## Esempio  
  Nell'esempio riportato di seguito viene utilizzato il costrutto `#If...Then...#Else` per stabilire se devono essere compilate determinate istruzioni.  
   
- [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/visualbasic/if-then-else-directives_1.vb)]  
+ [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
   
 ## Vedere anche  
  [\#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)   

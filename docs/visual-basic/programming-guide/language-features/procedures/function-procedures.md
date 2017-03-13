@@ -101,11 +101,11 @@ End Function
 ### Illustrazione della dichiarazione e della chiamata  
  La routine `Function` che segue consente di calcolare il lato più lungo, o ipotenusa, di un triangolo retto, dati i valori degli altri due lati.  
   
- [!code-vb[VbVbcnProcedures#1](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/function-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#1](./codesnippet/VisualBasic/function-procedures_1.vb)]  
   
  Nell'esempio che segue è illustrata una tipica chiamata a `hypotenuse`.  
   
- [!code-vb[VbVbcnProcedures#6](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/function-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/function-procedures_2.vb)]  
   
 ## Vedere anche  
  [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

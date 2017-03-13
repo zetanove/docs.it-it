@@ -41,7 +41,7 @@ x = x + y
  L'operatore `+=` viene inoltre utilizzato per specificare un metodo che verrà chiamato in risposta a un evento. Tali metodi sono denominati gestori dell'evento.  L'utilizzo dell'operatore `+=` in questo contesto viene definito *sottoscrizione di un evento*.  Per ulteriori informazioni, vedere [Procedura: eseguire e annullare la sottoscrizione a eventi](../../../csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).  e [Delegati](../../../csharp/programming-guide/delegates/index.md).  
   
 ## Esempio  
- [!code-cs[csRefOperators#35](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#35)]  
+ [!code-cs[csRefOperators#35](../../../csharp/language-reference/operators/codesnippet/CSharp/addition-assignment-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

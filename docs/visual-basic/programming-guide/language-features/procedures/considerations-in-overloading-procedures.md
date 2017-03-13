@@ -94,11 +94,11 @@ Quando si esegue l'overload di una routine, è necessario utilizzare una *firma*
 ## Overload impliciti per i parametri facoltativi  
  Una routine con un parametro [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) equivale a due routine di overload, una con il parametro facoltativo e una senza.  Non è possibile eseguire l'overload di una routine di questo tipo con un elenco di parametri corrispondente a uno di quelli riportati di seguito.  Questa situazione viene illustrata nelle dichiarazioni seguenti.  
   
- [!code-vb[VbVbcnProcedures#58](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_1.vb)]  
+ [!code-vb[VbVbcnProcedures#58](./codesnippet/VisualBasic/considerations-in-overloading-procedures_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#60](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_2.vb)]  
+ [!code-vb[VbVbcnProcedures#60](./codesnippet/VisualBasic/considerations-in-overloading-procedures_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#61](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_3.vb)]  
+ [!code-vb[VbVbcnProcedures#61](./codesnippet/VisualBasic/considerations-in-overloading-procedures_3.vb)]  
   
  Per una routine con più parametri facoltativi esiste un insieme di overload impliciti, che sono il risultato di una logica simile a quella dell'esempio precedente.  
   
@@ -113,13 +113,13 @@ Quando si esegue l'overload di una routine, è necessario utilizzare una *firma*
   
  Nelle dichiarazioni riportate di seguito vengono illustrati questi overload impliciti.  
   
- [!code-vb[VbVbcnProcedures#68](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_4.vb)]  
+ [!code-vb[VbVbcnProcedures#68](./codesnippet/VisualBasic/considerations-in-overloading-procedures_4.vb)]  
   
- [!code-vb[VbVbcnProcedures#70](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_5.vb)]  
+ [!code-vb[VbVbcnProcedures#70](./codesnippet/VisualBasic/considerations-in-overloading-procedures_5.vb)]  
   
  Non è possibile eseguire l'overload di una routine di questo tipo con un elenco di parametri che accetta una matrice unidimensionale per la matrice di parametri.  È invece possibile utilizzare le firme di altri overload impliciti.  Questa situazione viene illustrata nelle dichiarazioni seguenti.  
   
- [!code-vb[VbVbcnProcedures#71](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/considerations-in-overlo_6.vb)]  
+ [!code-vb[VbVbcnProcedures#71](./codesnippet/VisualBasic/considerations-in-overloading-procedures_6.vb)]  
   
 ## Programmazione senza tipi come alternativa all'overload  
  Per consentire al codice chiamante ai tipi di dati diversi di passare a un parametro, un'alternativa consiste programmazione senza tipi.  È possibile impostare l'opzione di controllo dei tipi su `Off` con l'[Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) o con l'opzione del compilatore [\/optionstrict](../../../../visual-basic/reference/command-line-compiler/optionstrict.md).  Non è quindi necessario dichiarare il tipo di dati del parametro.  Rispetto all'overload, tuttavia, questo metodo presenta i seguenti svantaggi:  

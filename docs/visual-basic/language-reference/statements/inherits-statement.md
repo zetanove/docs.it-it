@@ -63,12 +63,12 @@ Inherits basetypenames
 ## Esempio  
  Nell'esempio seguente viene utilizzata l'istruzione `Inherits` per illustrare come una classe denominata `thisClass` può ereditare tutti i membri di una classe base denominata `anotherClass`.  
   
- [!code-vb[VbVbalrStatements#37](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/inherits-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#37](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_1.vb)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrata l'ereditarietà di interfacce multiple.  
   
- [!code-vb[VbVbalrStatements#38](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/inherits-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#38](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/inherits-statement_2.vb)]  
   
  L'interfaccia denominata `thisInterface` comprende ora tutte le definizioni nelle interfacce <xref:System.IComparable>, <xref:System.IDisposable> e <xref:System.IFormattable>. I membri ereditati forniscono rispettivamente il confronto specifico per tipo di due oggetti, mediante il rilascio delle risorse allocate, e l'espressione del valore di un oggetto come `String`.  Una classe che implementa `thisInterface` deve implementare ogni membro di ogni interfaccia base.  
   

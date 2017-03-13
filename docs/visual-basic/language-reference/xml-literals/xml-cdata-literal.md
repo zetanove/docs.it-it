@@ -62,7 +62,7 @@ Valore letterale che rappresenta un oggetto <xref:System.Xml.Linq.XCData>.
 ## Esempio  
  Nell'esempio seguente viene illustrato come crea una sezione CDATA che contiene il testo "Può contenere i tag del valore letterale \<XML\>"  
   
- [!code-vb[VbXMLSamples#23](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-cdata-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#23](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-cdata-literal_1.vb)]  
   
 ## Vedere anche  
  <xref:System.Xml.Linq.XCData>   

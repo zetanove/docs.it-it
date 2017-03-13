@@ -48,7 +48,7 @@ Take count
 ## Esempio  
  Nell'esempio di codice seguente viene utilizzata insieme la clausola `Take` con la clausola `Skip` per restituire dati da una query in pagine.  La funzione GetCustomers utilizza la clausola `Skip` per ignorare i clienti nell'elenco fino al valore di indice iniziale fornito e utilizza la clausola `Take` per restituire una pagina di clienti a partire da quel valore di indice.  
   
- [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#1)]  
+ [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-clause_1.vb)]  
   
 ## Vedere anche  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

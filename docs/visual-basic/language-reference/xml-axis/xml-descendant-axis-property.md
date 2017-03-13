@@ -67,7 +67,7 @@ object...<descendant>
 ## Esempio  
  Nell'esempio seguente viene mostrato come accedere al valore del primo nodo discendente denominato `name` e ai valori di tutti i nodi discendenti denominati `phone` dall'oggetto `contacts`.  
   
- [!code-vb[VbXMLSamples#25](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-descendant-axis-prop_1.vb)]  
+ [!code-vb[VbXMLSamples#25](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-descendant-axis-property_1.vb)]  
   
  Verrà visualizzato il seguente testo:  
   
@@ -78,7 +78,7 @@ object...<descendant>
 ## Esempio  
  Nell'esempio riportato di seguito viene dichiarato `ns` come un prefisso dello spazio dei nomi XML.  Viene utilizzato quindi il prefisso dello spazio dei nomi per creare un valore letterale XML e accedere al valore del primo nodo figlio con il nome completo `ns:name`.  
   
- [!code-vb[VbXMLSamples#26](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-descendant-axis-prop_2.vb)]  
+ [!code-vb[VbXMLSamples#26](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-descendant-axis-property_2.vb)]  
   
  Verrà visualizzato il seguente testo:  
   

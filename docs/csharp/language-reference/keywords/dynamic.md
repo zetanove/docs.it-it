@@ -25,7 +25,7 @@ Il tipo `dynamic` abilita le operazioni nelle quali il controllo dei tipi in fas
   
  Nell'esempio che segue, la variabile di tipo `dynamic` viene messa a confronto con una variabile di tipo `object`.  Per verificare il tipo di ciascuna variabile in fase di compilazione, posizionare il puntatore del mouse su `dyn` o `obj` nelle istruzioni `WriteLine`.  IntelliSense mostra **dynamic** per `dyn` e **object** per `obj`.  
   
- [!code-cs[csrefKeywordsTypes#21](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#21](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_1.cs)]  
   
  Le istruzioni `WriteLine` visualizzano i tipi di runtime di `dyn` e `obj`.  A quel punto, entrambi hanno lo stesso tipo, numero intero.  Il risultato è il seguente:  
   
@@ -48,20 +48,20 @@ obj = obj + 3;
   
 -   Nelle dichiarazioni, come tipo di una proprietà, campo, indicizzatore, parametro, valore restituito, variabile locale o vincolo di tipo.  Nella definizione della classe seguente viene utilizzato `dynamic` in molte dichiarazioni diverse.  
   
-     [!code-cs[csrefKeywordsTypes#22](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_2.cs)]  
+     [!code-cs[csrefKeywordsTypes#22](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_2.cs)]  
   
 -   In conversioni esplicite del tipo, come tipo di destinazione di una conversione.  
   
-     [!code-cs[csrefKeywordsTypes#23](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_3.cs)]  
+     [!code-cs[csrefKeywordsTypes#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_3.cs)]  
   
 -   In ogni contesto in cui i tipi vengono utilizzati come valori, come sul lato destro dell'operatore `is` o dell'operatore `as`, o come argomento a `typeof` come parte di un tipo costruito.  Ad esempio, nelle seguenti espressioni è possibile utilizzare `dynamic`.  
   
-     [!code-cs[csrefKeywordsTypes#24](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_4.cs)]  
+     [!code-cs[csrefKeywordsTypes#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_4.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene utilizzato `dynamic` in molte dichiarazioni.  Il metodo `Main` contrappone anche il controllo dei tipi in fase di compilazione con il controllo dei tipi in fase di esecuzione.  
   
- [!code-cs[csrefKeywordsTypes#25](../../../csharp/language-reference/keywords/codesnippet/csharp/dynamic_5.cs)]  
+ [!code-cs[csrefKeywordsTypes#25](../../../csharp/language-reference/keywords/codesnippet/CSharp/dynamic_5.cs)]  
   
  Per ulteriori informazioni ed esempi, vedere [Utilizzo del tipo dinamico](../../../csharp/programming-guide/types/using-type-dynamic.md).  
   

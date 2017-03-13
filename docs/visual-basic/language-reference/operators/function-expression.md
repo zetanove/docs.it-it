@@ -67,19 +67,19 @@ End Function
 ## Esempio  
  Negli esempi seguenti vengono illustrati due modi per creare espressioni lambda semplici.  Nel primo caso viene utilizzato un oggetto `Dim` per fornire un nome alla funzione.  Per chiamare la funzione, inviare un valore per il parametro.  
   
- [!code-vb[VbVbalrLambdas#1](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#1)]  
+ [!code-vb[VbVbalrLambdas#1](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_1.vb)]  
   
- [!code-vb[VbVbalrLambdas#2](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#2)]  
+ [!code-vb[VbVbalrLambdas#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_2.vb)]  
   
 ## Esempio  
  In alternativa, è possibile dichiarare ed eseguire contemporaneamente la funzione.  
   
- [!code-vb[VbVbalrLambdas#3](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#3)]  
+ [!code-vb[VbVbalrLambdas#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_3.vb)]  
   
 ## Esempio  
  Nell'esempio seguente viene illustrata un'espressione lambda tramite la quale viene incrementato l'argomento e restituito il valore.  Nell'esempio viene illustrata la sintassi delle espressioni lambda sia a riga singola che con più righe per una funzione.  Per ulteriori esempi, vedere [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
- [!code-vb[VbVbalrLambdas#14](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#14)]  
+ [!code-vb[VbVbalrLambdas#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/function-expression_4.vb)]  
   
 ## Esempio  
  Molti degli operatori di query standard hanno espressioni lambda sottostanti in [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext-md.md)] che possono essere utilizzate in modo esplicito nelle query basate su metodo.  Nell'esempio seguente viene mostrata una query [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)] tipica, seguita dalla conversione della query nel formato del metodo.  

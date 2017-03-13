@@ -31,7 +31,7 @@ Il metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> scrive
   
 -   Utilizzare il metodo `WriteAllBytes`, specificando il percorso e il nome del file e i byte da scrivere.  In questo esempio viene aggiunta la matrice di dati `CustomerData` al file denominato `CollectedData.dat`.  
   
-     [!code-vb[VbVbcnMyFileSystem#27](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-write-to-binary-f_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#27](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-to-binary-files_1.vb)]  
   
 ## Programmazione efficiente  
  Un'eccezione può essere generata nelle condizioni seguenti:  

@@ -24,14 +24,14 @@ caps.handback.revision: 13
   
  Negli esempi seguenti viene illustrato come creare una matrice tipizzata in modo implicito:  
   
- [!code-cs[csProgGuideLINQ#37](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#37)]  
+ [!code-cs[csProgGuideLINQ#37](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-arrays_1.cs)]  
   
  Nell'esempio precedente, si noti che con le matrici tipizzate in modo implicito, non vengono utilizzate le parentesi quadre sul lato sinistro dell'istruzione di inizializzazione.  Si noti inoltre che le matrici di matrici vengono inizializzate utilizzando `new []` esattamente come le matrici unidimensionali.  
   
 ## Matrici tipizzate in modo implicito negli inizializzatori di oggetto  
  Quando si crea un tipo anonimo che contiene una matrice, la matrice deve essere tipizzata in modo implicito nell'inizializzatore di oggetto del tipo.  Nell'esempio seguente, `contacts` è una matrice tipizzata in modo implicito di tipi anonimi, ognuno dei quali contiene una matrice denominata `PhoneNumbers`.  Si noti che la parola chiave `var` non viene utilizzata negli inizializzatori di oggetto.  
   
- [!code-cs[csProgGuideLINQ#38](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#38)]  
+ [!code-cs[csProgGuideLINQ#38](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-arrays_2.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

@@ -50,7 +50,7 @@ AddHandler event, AddressOf eventhandler
 >  Per eventi personalizzati, l'istruzione `AddHandler` consente di richiamare la funzione di accesso `AddHandler` dell'evento.  Per ulteriori informazioni sugli eventi personalizzate, vedere [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
   
 ## Esempio  
- [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#17)]  
+ [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
   
 ## Vedere anche  
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   

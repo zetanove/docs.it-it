@@ -21,15 +21,15 @@ Le matrici possono essere passate come argomenti ai parametri di metodo.  Le mat
 ## Passaggio di matrici unidimensionali come parametri  
  È possibile passare una matrice unidimensionale inizializzata a un metodo.  L'istruzione seguente, ad esempio, invia una matrice a un metodo di stampa.  
   
- [!code-cs[csProgGuideArrays#34](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_1.cs)]  
+ [!code-cs[csProgGuideArrays#34](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_1.cs)]  
   
  Nel codice seguente viene illustrata un'implementazione parziale del metodo di stampa.  
   
- [!code-cs[csProgGuideArrays#33](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_2.cs)]  
+ [!code-cs[csProgGuideArrays#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_2.cs)]  
   
  È possibile inizializzare e passare una nuova matrice in un passaggio, come mostrato nell'esempio seguente.  
   
- [!code-cs[CsProgGuideArrays#35](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_3.cs)]  
+ [!code-cs[CsProgGuideArrays#35](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_3.cs)]  
   
 ## Esempio  
   
@@ -37,20 +37,20 @@ Le matrici possono essere passate come argomenti ai parametri di metodo.  Le mat
  Nell'esempio seguente, una matrice di stringhe viene inizializzata e passata come argomento a un metodo `PrintArray` per le stringhe.  Nel metodo vengono visualizzati gli elementi della matrice.  Vengono quindi chiamati i metodi `ChangeArray` e `ChangeArrayElement` per dimostrare che l'invio di un argomento di matrice per valore non impedisce le modifiche agli elementi della matrice.  
   
 ### Codice  
- [!code-cs[csProgGuideArrays#30](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_4.cs)]  
+ [!code-cs[csProgGuideArrays#30](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_4.cs)]  
   
 ## Passaggio di matrici multidimensionali come parametri  
  Una matrice multidimensionale inizializzata viene passata a un metodo nello stesso modo di una matrice unidimensionale.  
   
- [!code-cs[csProgGuideArrays#41](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_5.cs)]  
+ [!code-cs[csProgGuideArrays#41](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_5.cs)]  
   
  Nel codice seguente viene illustrata una dichiarazione parziale di un metodo di stampa che accetta una matrice bidimensionale come argomento.  
   
- [!code-cs[csProgGuideArrays#36](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_6.cs)]  
+ [!code-cs[csProgGuideArrays#36](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_6.cs)]  
   
  È possibile inizializzare e passare una nuova matrice in un passaggio, come mostrato nell'esempio seguente.  
   
- [!code-cs[csProgGuideArrays#32](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_7.cs)]  
+ [!code-cs[csProgGuideArrays#32](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_7.cs)]  
   
 ## Esempio  
   
@@ -58,7 +58,7 @@ Le matrici possono essere passate come argomenti ai parametri di metodo.  Le mat
  Nell'esempio seguente, una matrice bidimensionale di Integer viene inizializzata e passata al metodo `Print2DArray`.  Nel metodo vengono visualizzati gli elementi della matrice.  
   
 ### Codice  
- [!code-cs[csProgGuideArrays#31](../../../csharp/programming-guide/arrays/codesnippet/csharp/passing-arrays-as-argume_8.cs)]  
+ [!code-cs[csProgGuideArrays#31](../../../csharp/programming-guide/arrays/codesnippet/CSharp/passing-arrays-as-arguments_8.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

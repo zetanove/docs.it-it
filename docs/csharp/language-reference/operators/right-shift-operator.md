@@ -31,7 +31,7 @@ L'operatore di spostamento a destra \(`>>`\) sposta il primo operando verso dest
  I tipi definiti dall'utente possono sottoporre a overload l'operatore `>>`. Il tipo del primo operando deve essere un tipo definito dall'utente, mentre il tipo del secondo operando deve essere [int](../../../csharp/language-reference/keywords/int.md).  Per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md).  Quando si esegue l'overload di un operatore binario, viene eseguito in modo implicito anche l'overload dell'eventuale operatore di assegnazione corrispondente.  
   
 ## Esempio  
- [!code-cs[csRefOperators#26](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#26)]  
+ [!code-cs[csRefOperators#26](../../../csharp/language-reference/operators/codesnippet/CSharp/right-shift-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

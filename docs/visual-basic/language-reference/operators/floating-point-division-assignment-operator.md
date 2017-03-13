@@ -55,7 +55,7 @@ variableorproperty /= expression
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `/=` viene utilizzato per dividere una variabile `Integer` per una seconda variabile e assegnare il quoziente alla prima variabile.  
   
- [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/floating-point-division-_0_1.vb)]  
+ [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-assignment-operator_1.vb)]  
   
 ## Vedere anche  
  [\/ Operator](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)   

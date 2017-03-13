@@ -22,7 +22,7 @@ In C\#, tutte le stringhe in memoria sono codificate come Unicode \(UTF\-16\).  
 ## Esempio  
  Nell'esempio seguente viene mostrato come convertire un file di testo codificato in ASCII a 8 bit, interpretando il testo di origine sulla base della tabella codici 737 di Windows.  
   
- [!code-cs[csProgGuideStrings#34](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#34)]  
+ [!code-cs[csProgGuideStrings#34](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-between-legacy-encodings-and-unicode_1.cs)]  
   
 ## Vedere anche  
  [Stringhe](../../../csharp/programming-guide/strings/index.md)

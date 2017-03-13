@@ -30,7 +30,7 @@ La parola chiave `this` si riferisce all'istanza corrente della classe e viene a
   
 -   Qualificare i membri nascosti da nomi simili, ad esempio:  
   
- [!code-cs[csrefKeywordsAccess#4](../../../csharp/language-reference/keywords/codesnippet/csharp/this_1.cs)]  
+ [!code-cs[csrefKeywordsAccess#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/this_1.cs)]  
   
 -   Passare un oggetto come parametro ad altri metodi, ad esempio:  
   
@@ -40,14 +40,14 @@ La parola chiave `this` si riferisce all'istanza corrente della classe e viene a
   
 -   Dichiarare indicizzatori, ad esempio:  
   
- [!code-cs[csrefKeywordsAccess#5](../../../csharp/language-reference/keywords/codesnippet/csharp/this_2.cs)]  
+ [!code-cs[csrefKeywordsAccess#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/this_2.cs)]  
   
  Dal momento che esistono solo a livello di classe e non come parte di un oggetto, le funzioni membro statiche non dispongono di un puntatore `this`.  Non è possibile fare riferimento a `this` in un membro statico.  
   
 ## Esempio  
  Nell'esempio riportato di seguito la parola chiave `this` viene utilizzata per qualificare i membri di classe `Employee`, `name` e `alias`, che sono nascosti da nomi simili.  La parola chiave viene inoltre utilizzata per passare un oggetto al metodo `CalcTax`, che appartiene a un'altra classe.  
   
- [!code-cs[csrefKeywordsAccess#3](../../../csharp/language-reference/keywords/codesnippet/csharp/this_3.cs)]  
+ [!code-cs[csrefKeywordsAccess#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/this_3.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

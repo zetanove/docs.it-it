@@ -19,7 +19,7 @@ caps.handback.revision: 31
 # Struct (Guida per programmatori C#)
 Per la definizione delle strutture viene utilizzata la parola chiave [struct](../../../csharp/language-reference/keywords/struct.md), ad esempio:  
   
- [!code-cs[csProgGuideObjects#39](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/structs_1.cs)]  
+ [!code-cs[csProgGuideObjects#39](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/structs_1.cs)]  
   
  Le strutture condividono la maggior parte della sintassi delle classi, sebbene le prime siano più limitate rispetto alle seconde:  
   

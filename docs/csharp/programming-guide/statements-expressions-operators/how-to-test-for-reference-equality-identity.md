@@ -24,7 +24,7 @@ Non è necessario implementare alcuna logica personalizzata per supportare i con
  Nell'esempio viene inoltre illustrato perché <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> restituisca sempre `false` per i tipi di valore e perché non sia consigliabile utilizzare  <xref:System.Object.ReferenceEquals%2A> per determinare l'uguaglianza tra stringhe.  
   
 ## Esempio  
- [!code-cs[csProgGuideObjects#90](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-test-for-referenc_1.cs)]  
+ [!code-cs[csProgGuideObjects#90](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-test-for-reference-equality-identity_1.cs)]  
   
  L'implementazione di `Equals` nella classe di base universale <xref:System.Object?displayProperty=fullName> esegue anche un controllo dell'uguaglianza dei riferimenti, ma è meglio non servirsene perché, se una classe esegue l'override del metodo, i risultati potrebbero non essere quelli previsti.  La stessa considerazione vale anche per gli operatori `==` e `!=`.  Quando agiscono sui tipi di riferimento, il comportamento predefinito di \=\= e `!=` prevede l'esecuzione di un controllo dell'uguaglianza dei riferimenti.  Le classi derivate possono tuttavia eseguire l'overload dell'operatore per eseguire un controllo dell'uguaglianza dei valori.  Per ridurre al minimo la possibilità di errori, è meglio utilizzare sempre <xref:System.Object.ReferenceEquals%2A> quando è necessario determinare se due oggetti presentano uguaglianza di riferimenti.  
   

@@ -21,17 +21,17 @@ Poiché le stringhe sono *non modificabili*, non è possibile modificare il valo
 ## Esempio  
  Nell'esempio seguente vengono mostrati vari modi per sostituire o rimuovere sottostringhe in una stringa specifica.  
   
- [!code-cs[csProgGuideStrings#28](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#28)]  
+ [!code-cs[csProgGuideStrings#28](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-modify-string-contents_1.cs)]  
   
 ## Esempio  
  Per accedere ai singoli caratteri in una stringa tramite una notazione di matrice, è possibile utilizzare l'oggetto <xref:System.Text.StringBuilder> che esegue l'overload dell'operatore `[]` per fornire accesso al buffer di caratteri interno.  È anche possibile convertire la stringa in una matrice di caratteri tramite il metodo <xref:System.String.ToCharArray%2A>.  Nell'esempio seguente viene utilizzato `ToCharArray` per creare la matrice.  Alcuni elementi di questa matrice vengono quindi modificati.  Un costruttore di stringhe che accetta una matrice di caratteri come parametro di input viene quindi chiamato per creare una nuova stringa.  
   
- [!code-cs[csProgGuideStrings#24](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#24)]  
+ [!code-cs[csProgGuideStrings#24](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-modify-string-contents_2.cs)]  
   
 ## Esempio  
  L'esempio seguente viene fornito per quelle situazioni molto rare nelle quali si potrebbe volere modificare una stringa sul posto tramite codice unsafe, in un modo simile alle matrici di caratteri di tipo C.  Nell'esempio viene mostrato come accedere ai singoli caratteri "sul posto" tramite la parola chiave fixed.  Viene inoltre mostrato un possibile effetto collaterale di operazioni non sicure sulle stringhe che risulta dalla modalità in cui il compilatore C\# archivia \(inserisce\) stringhe all'interno.  In generale, non è consigliabile utilizzare questa tecnica a meno che sia assolutamente necessario.  
   
- [!code-cs[csProgGuideStrings#29](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#29)]  
+ [!code-cs[csProgGuideStrings#29](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-modify-string-contents_3.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

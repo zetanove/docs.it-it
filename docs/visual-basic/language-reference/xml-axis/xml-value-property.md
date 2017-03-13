@@ -60,7 +60,7 @@ object.Value
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato come utilizzare la proprietà <xref:System.Xml.Linq.XElement.Value%2A> per accedere al primo nodo di una raccolta di oggetti <xref:System.Xml.Linq.XElement>.  Nell'esempio viene utilizzata la proprietà axis figlio per ottenere la raccolta di tutti i nodi figlio denominati `phone` inclusi nell'oggetto `contact`.  
   
- [!code-vb[VbXMLSamples#15](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-value-property_1.vb)]  
+ [!code-vb[VbXMLSamples#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_1.vb)]  
   
  Verrà visualizzato il seguente testo:  
   
@@ -69,7 +69,7 @@ object.Value
 ## Esempio  
  Nell'esempio seguente viene illustrato come ottenere il valore di un attributo XML da una raccolta di oggetti <xref:System.Xml.Linq.XAttribute>.  In questo esempio viene utilizzato l'attributo della proprietà axis per visualizzare il valore dell'attributo `type` per tutti gli elementi di `phone`.  
   
- [!code-vb[VbXMLSamples#16](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-value-property_2.vb)]  
+ [!code-vb[VbXMLSamples#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-value-property_2.vb)]  
   
  Verrà visualizzato il seguente testo:  
   

@@ -9,7 +9,7 @@ caps.handback.revision: 21
   
  Nell'esempio seguente viene illustrata l'operazione di query completa.  L'operazione completa include la creazione di un'origine dati, la definizione dell'espressione di query e l'esecuzione della query in un 'istruzione `foreach`.  
   
- [!code-cs[csProgGuideLINQ#11](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#11)]  
+ [!code-cs[csProgGuideLINQ#11](../../../csharp/programming-guide/arrays/codesnippet/CSharp/index_1.cs)]  
   
  Per ulteriori informazioni sulle nozioni di base di [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)] in C\#, vedere [Getting Started with LINQ in C\#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md).  
   

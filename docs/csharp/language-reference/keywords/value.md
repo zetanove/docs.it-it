@@ -20,7 +20,7 @@ caps.handback.revision: 14
 # value (Riferimenti per C#)
 La parola chiave contestuale `value` viene utilizzata nella funzione di accesso set nelle dichiarazioni di proprietà ordinarie.  È simile a un parametro di input in un metodo.  La parola `value` fa riferimento al valore che il codice client sta tentando di assegnare alla proprietà.  Nell'esempio seguente `MyDerivedClass` dispone di una proprietà chiamata `Name` che utilizza il parametro `value` per assegnare una nuova stringa al campo sottostante `name`.  Dal punto di vista del codice client, l'operazione è scritta come una semplice assegnazione.  
   
- [!code-cs[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#26)]  
+ [!code-cs[csrefKeywordsModifiers#26](../../../csharp/language-reference/keywords/codesnippet/CSharp/value_1.cs)]  
   
  Per ulteriori informazioni sull'utilizzo di `value`, vedere [Proprietà](../../../csharp/programming-guide/classes-and-structs/properties.md).  
   

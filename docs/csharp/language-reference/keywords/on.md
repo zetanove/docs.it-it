@@ -24,7 +24,7 @@ La parola chiave contestuale `on` viene utilizzata nella [clausola join](../../.
 ## Esempio  
  Nell'esempio seguente viene illustrato l'utilizzo di `on` in una clausola `join`.  
   
- [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/csharp/on_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#12](../../../csharp/language-reference/keywords/codesnippet/CSharp/on_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

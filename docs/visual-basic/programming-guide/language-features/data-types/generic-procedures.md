@@ -38,7 +38,7 @@ Una *routine generica*, chiamata anche *metodo generico*, indica una routine def
 ## Inferenza di tipi  
  È possibile chiamare una routine generica senza fornire alcun argomento di tipo.  Se la chiamata viene effettuata con questa modalità, il compilatore tenta di determinare i tipi di dati appropriati da passare agli argomenti di tipo della routine.  Questo meccanismo è denominato *inferenza di tipi*.  Nel codice riportato di seguito viene illustrata una chiamata in cui il compilatore deduce che il tipo `String` deve essere passato al parametro di tipo `t`.  
   
- [!code-vb[VbVbalrDataTypes#15](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-procedures_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#15](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-procedures_1.vb)]  
   
  Se il compilatore non è in grado di dedurre gli argomenti di tipo dal contesto della chiamata, viene segnalato un errore.  Una possibile causa di tale errore è dovuta a una mancata corrispondenza del numero di dimensioni della matrice.  Si supponga ad esempio di definire un normale parametro come matrice di un parametro di tipo.  Se si chiama la routine generica fornendo una matrice con un numero di dimensioni differenti, la mancata corrispondenza provoca la non riuscita dell'inferenza di tipi.  Nel codice riportato di seguito viene illustrata una chiamata in cui una matrice bidimensionale viene passata a una routine che prevede una matrice unidimensionale.  
   
@@ -64,14 +64,14 @@ Una *routine generica*, chiamata anche *metodo generico*, indica una routine def
  Nell'esempio riportato di seguito viene definita una routine generica `Function` per trovare un particolare elemento in una matrice.  Viene definito un parametro di tipo e viene utilizzato per costruire i due parametri nell'elenco di parametri.  
   
 ### Codice  
- [!code-vb[VbVbalrDataTypes#14](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-procedures_2.vb)]  
+ [!code-vb[VbVbalrDataTypes#14](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-procedures_2.vb)]  
   
 ### Commenti  
  Nell'esempio precedente viene richiesto di confrontare `searchValue` in ogni elemento di `searchArray`.  Per garantire questa operazione, al parametro di tipo `T` viene vincolata l'implementazione dell'interfaccia <xref:System.IComparable%601>.  Nel codice viene utilizzato il metodo <xref:System.IComparable%601.CompareTo%2A> anziché l'operatore `=`, poiché non è garantito che un argomento di tipo fornito per `T` supporti l'operatore `=`.  
   
  È possibile eseguire il test della routine `findElement` mediante il codice riportato di seguito.  
   
- [!code-vb[VbVbalrDataTypes#13](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/generic-procedures_3.vb)]  
+ [!code-vb[VbVbalrDataTypes#13](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/generic-procedures_3.vb)]  
   
  Nelle chiamate precedenti a `MsgBox` vengono visualizzati rispettivamente "0", "1" e "\-1".  
   

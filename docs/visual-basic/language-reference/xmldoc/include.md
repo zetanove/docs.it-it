@@ -51,7 +51,7 @@ Fa riferimento a un altro file in cui sono descritti i tipi e i membri del codic
 ## Esempio  
  Nell'esempio riportato di seguito il tag `<include>` viene utilizzato per importare i commenti relativi alla documentazione dei membri da un file denominato `commentFile.xml`.  
   
- [!code-vb[VbVbcnXmlDocComments#4](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/include_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#4](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/include_1.vb)]  
   
  Il formato di `commentFile.xml` è il seguente:  
   

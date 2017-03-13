@@ -32,12 +32,12 @@ Per i parametri di tipo generico, la parola chiave `in` specifica che il paramet
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, estendere e implementare un'interfaccia generica controvariante.  Viene inoltre illustrato come sia possibile utilizzare la conversione implicita per le classi che implementano questa interfaccia.  
   
- [!code-cs[csVarianceKeywords#1](../../../csharp/language-reference/keywords/codesnippet/csharp/in-generic-modifier_1.cs)]  
+ [!code-cs[csVarianceKeywords#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/in-generic-modifier_1.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, creare un'istanza e richiamare un delegato generico controvariante.  Viene inoltre illustrato come sia possibile convertire in modo implicito un tipo delegato.  
   
- [!code-cs[csVarianceKeywords#2](../../../csharp/language-reference/keywords/codesnippet/csharp/in-generic-modifier_2.cs)]  
+ [!code-cs[csVarianceKeywords#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/in-generic-modifier_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

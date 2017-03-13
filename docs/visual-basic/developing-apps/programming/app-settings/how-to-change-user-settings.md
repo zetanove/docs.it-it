@@ -34,7 +34,7 @@ caps.handback.revision: 18
 ## Esempio  
  In questo esempio, viene modificato il valore dell'impostazione utente `Nickname`.  
   
- [!code-vb[VbVbalrMyResources#7](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#7)]  
+ [!code-vb[VbVbalrMyResources#7](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/how-to-change-user-settings_1.vb)]  
   
  Per poter utilizzare questo esempio, è necessario che nell'applicazione sia presente un'impostazione dell'utente `Nickname` del tipo `String`.  
   

@@ -146,37 +146,37 @@ End Enum
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato come utilizzare il `Enum` istruzione. Si noti che il membro è detta `EggSizeEnum.Medium`, e non come `Medium`.  
   
- [!code-vb[VbEnumsTask#41](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#41)]  
+ [!code-vb[VbEnumsTask#41](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_1.vb)]  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente il metodo non è compreso il `Egg` (classe). Di conseguenza, `EggSizeEnum` completo come `Egg.EggSizeEnum`.  
   
- [!code-vb[VbEnumsTask#42](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#42)]  
+ [!code-vb[VbEnumsTask#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_2.vb)]  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene utilizzata la `Enum` istruzione per definire un set correlato di valori costanti denominati. In questo caso, i valori sono i colori, che è possibile scegliere di progettare il form di immissione di dati per un database.  
   
- [!code-vb[VbEnumsTask#30](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#30)]  
+ [!code-vb[VbEnumsTask#30](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_3.vb)]  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente vengono illustrati i valori che includono numeri positivi e negativi.  
   
- [!code-vb[VbEnumsTask#31](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#31)]  
+ [!code-vb[VbEnumsTask#31](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_4.vb)]  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente, un `As` clausola viene utilizzata per specificare il `datatype` di un'enumerazione.  
   
- [!code-vb[VbEnumsTask#6](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#6)]  
+ [!code-vb[VbEnumsTask#6](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_5.vb)]  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato come utilizzare un'enumerazione bit per bit. Più valori possono essere assegnati a un'istanza di un'enumerazione bit per bit. Il `Enum` dichiarazione include il <xref:System.FlagsAttribute> attributo, che indica che l'enumerazione può essere considerato come un set di flag.  
   
- [!code-vb[VbEnumsTask#61](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#61)]  
+ [!code-vb[VbEnumsTask#61](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_6.vb)]  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente scorre un'enumerazione. Usa il <xref:System.Enum.GetNames%2A> metodo per recuperare una matrice dei nomi dei membri dell'enumerazione e <xref:System.Enum.GetValues%2A> per recuperare una matrice di valori del membro.  
   
- [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#51)]  
+ [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_7.vb)]  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Enum>   

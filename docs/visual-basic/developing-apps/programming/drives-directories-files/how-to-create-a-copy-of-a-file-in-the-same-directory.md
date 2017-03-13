@@ -32,13 +32,13 @@ Utilizzare il metodo `My.Computer.FileSystem.CopyFile` per copiare i file.  I pa
   
 -   Utilizzare il metodo `CopyFile`, fornendo il file di destinazione e il percorso.  Nell'esempio riportato di seguito viene creata una copia di `test.txt` denominata `test2.txt`.  
   
-     [!code-vb[VbVbcnMyFileSystem#51](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-create-a-copy-of-_0_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#51](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-the-same-directory_1.vb)]  
   
 ### Per creare una copia di un file nella stessa cartella, sovrascrivendo i file esistenti  
   
 -   Utilizzare il metodo `CopyFile`, fornendo il file di destinazione e il percorso e impostando `overwrite` su `True`.  Nell'esempio riportato di seguito viene creata una copia di `test.txt` denominata `test2.txt` e sono sovrascritti i file con questo nome.  
   
-     [!code-vb[VbVbcnMyFileSystem#52](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-create-a-copy-of-_0_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#52](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-the-same-directory_2.vb)]  
   
 ## Programmazione efficiente  
  Le seguenti condizioni possono causare la generazione di un'eccezione:  

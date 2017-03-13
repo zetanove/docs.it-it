@@ -30,7 +30,7 @@ In questo argomento viene illustrato come convertire una stringa in una matrice 
 ## Esempio  
  Nell'esempio riportato di seguito viene utilizzato il metodo <xref:System.Text.Encoding.GetBytes%2A> della classe di codifica <xref:System.Text.Encoding.Unicode%2A?displayProperty=fullName> per convertire una stringa in una matrice di byte.  
   
- [!code-vb[VbVbalrStrings#74](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-strings-i_1.vb)]  
+ [!code-vb[VbVbalrStrings#74](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-strings-into-an-array-of-bytes_1.vb)]  
   
  Per la conversione di una stringa in una matrice di byte è possibile scegliere tra diverse opzioni di codifica:  
   

@@ -78,13 +78,13 @@ Language\-Integrated Query \(LINQ\) semplifica l'accesso a informazioni di datab
   
      Aggiungere il seguente codice all'evento `Load` per eseguire una query nelle tabelle esposte come proprietà del contesto dati.  La query filtra i risultati e restituisce solo i clienti che si trovano a `London`.  
   
-     [!code-vb[VbLINQToSQLHowTos#11](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form5.vb#11)]  
+     [!code-vb[VbLINQToSQLHowTos#11](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-filter-query-results-by-using-linq_1.vb)]  
   
 4.  Premere F5 per eseguire il progetto e visualizzare i risultati.  
   
 5.  Nel seguito vengono illustrate alcune query aggiuntive da provare:  
   
-     [!code-vb[VbLINQToSQLHowTos#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form5.vb#12)]  
+     [!code-vb[VbLINQToSQLHowTos#12](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-filter-query-results-by-using-linq_2.vb)]  
   
 ## Vedere anche  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)   

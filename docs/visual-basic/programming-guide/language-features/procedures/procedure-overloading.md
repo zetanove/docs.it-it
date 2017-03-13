@@ -76,12 +76,12 @@ caps.handback.revision: 24
 ## Più versioni di una routine  
  Si supponga di scrivere una routine `Sub` per inviare una transazione relativa al saldo di un cliente e che si desideri potersi riferire al cliente tramite nome o tramite numero di conto.  Per rispondere a questa esigenza, è possibile definire due diverse routine `Sub`, come nell'esempio che segue:  
   
- [!code-vb[VbVbcnProcedures#73](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_1.vb)]  
+ [!code-vb[VbVbcnProcedures#73](./codesnippet/VisualBasic/procedure-overloading_1.vb)]  
   
 ### Versioni di overload  
  Un'alternativa consiste nell'esecuzione dell'overload di un singolo nome di routine.  È possibile utilizzare la parola chiave [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) per definire una versione della routine per ogni elenco di parametri nel seguente modo:  
   
- [!code-vb[VbVbcnProcedures#72](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_2.vb)]  
+ [!code-vb[VbVbcnProcedures#72](./codesnippet/VisualBasic/procedure-overloading_2.vb)]  
   
 #### Overload aggiuntivi  
  Se si desidera inoltre accettare l'importo di una transazione in `Decimal` o in `Single`, è possibile eseguire l'ulteriore overload di `post` per consentire tale variazione.  Se viene eseguita questa operazione per ognuno degli overload dell'esempio precedente, si ottengono quattro routine `Sub`, tutte con lo stesso nome ma con quattro diverse firme.  
@@ -89,9 +89,9 @@ caps.handback.revision: 24
 ## Vantaggi dell'overload  
  Il vantaggio dell'esecuzione dell'overload di una routine è rappresentato dalla flessibilità della chiamata.  Per utilizzare la routine `post` dichiarata nell'esempio precedente, il codice chiamante può ottenere l'identificazione del cliente in forma di `String` o di `Integer` e quindi chiamare la stessa routine in entrambi i casi.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbcnProcedures#56](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_3.vb)]  
+ [!code-vb[VbVbcnProcedures#56](./codesnippet/VisualBasic/procedure-overloading_3.vb)]  
   
- [!code-vb[VbVbcnProcedures#57](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-overloading_4.vb)]  
+ [!code-vb[VbVbcnProcedures#57](./codesnippet/VisualBasic/procedure-overloading_4.vb)]  
   
 ## Vedere anche  
  [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

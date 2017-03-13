@@ -33,7 +33,7 @@ In questo esempio una stringa esadecimale viene convertita in un Integer mediant
   
      Il primo argomento del metodo <xref:System.Convert.ToInt32%2A> è la stringa da convertire.  Il secondo argomento descrive la base in cui è espresso il numero. I valori esadecimali sono espressi in base 16.  
   
-     [!code-vb[VbVbalrStrings#62](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-hexadecim_1.vb)]  
+     [!code-vb[VbVbalrStrings#62](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-hexadecimal-strings-to-numbers_1.vb)]  
   
 ## Vedere anche  
  <xref:Microsoft.VisualBasic.Conversion.Hex%2A>   

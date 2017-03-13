@@ -38,33 +38,33 @@ In questa procedura dettagliata viene illustrato l'utilizzo della classe <xref:S
   
 1.  Creare una classe `Simple3Des` per incapsulare i metodi di crittografia e decrittografia.  
   
-     [!code-vb[VbVbalrStrings#38](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_1.vb)]  
+     [!code-vb[VbVbalrStrings#38](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_1.vb)]  
   
 2.  Aggiungere un'importazione dello spazio dei nomi di crittografia all'inizio del file che contiene la classe `Simple3Des`.  
   
-     [!code-vb[VbVbalrStrings#77](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_2.vb)]  
+     [!code-vb[VbVbalrStrings#77](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_2.vb)]  
   
 3.  Nella classe `Simple3Des`, aggiungere un campo privato per archiviare il provider di servizi crittografici 3DES.  
   
-     [!code-vb[VbVbalrStrings#39](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_3.vb)]  
+     [!code-vb[VbVbalrStrings#39](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_3.vb)]  
   
 4.  Aggiungere un metodo privato per creare una matrice di byte di lunghezza specificata dall'hash della chiave indicata.  
   
-     [!code-vb[VbVbalrStrings#41](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_4.vb)]  
+     [!code-vb[VbVbalrStrings#41](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_4.vb)]  
   
 5.  Aggiungere un costruttore per inizializzare il provider di servizi crittografici 3DES.  
   
      Il parametro `key` controlla i metodi `EncryptData` e `DecryptData`.  
   
-     [!code-vb[VbVbalrStrings#40](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_5.vb)]  
+     [!code-vb[VbVbalrStrings#40](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_5.vb)]  
   
 6.  Aggiungere un metodo pubblico per la crittografia della stringa.  
   
-     [!code-vb[VbVbalrStrings#42](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_6.vb)]  
+     [!code-vb[VbVbalrStrings#42](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_6.vb)]  
   
 7.  Aggiungere un metodo pubblico per la decrittografia della stringa.  
   
-     [!code-vb[VbVbalrStrings#43](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_7.vb)]  
+     [!code-vb[VbVbalrStrings#43](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_7.vb)]  
   
      È ora possibile utilizzare la classe wrapper per proteggere le risorse dell'utente.  Nel seguente esempio, la classe viene utilizzata per archiviare in modo protetto i dati personali dell'utente in un file di testo accessibile pubblicamente.  
   
@@ -72,11 +72,11 @@ In questa procedura dettagliata viene illustrato l'utilizzo della classe <xref:S
   
 1.  Aggiungere in un'altra classe un metodo che utilizza il metodo `EncryptData` del wrapper per crittografare una stringa e scriverla nella cartella Documenti dell'utente.  
   
-     [!code-vb[VbVbalrStrings#78](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_8.vb)]  
+     [!code-vb[VbVbalrStrings#78](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_8.vb)]  
   
 2.  Aggiungere un metodo con cui è possibile leggere la stringa crittografata nella cartella Documenti dell'utente e decrittografare tale stringa con il metodo `DecryptData` del wrapper.  
   
-     [!code-vb[VbVbalrStrings#79](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/walkthrough-encrypting-a_9.vb)]  
+     [!code-vb[VbVbalrStrings#79](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/walkthrough-encrypting-and-decrypting-strings_9.vb)]  
   
 3.  Aggiungere il codice dell'interfaccia dell'utente per chiamare i metodi `TestEncoding` e `TestDecoding`.  
   

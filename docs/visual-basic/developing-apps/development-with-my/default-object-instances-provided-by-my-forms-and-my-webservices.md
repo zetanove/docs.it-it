@@ -27,9 +27,9 @@ Gli oggetti [My.Forms](../../../visual-basic/language-reference/objects/my-forms
 ## Istanze predefinite  
  Un'istanza predefinita è un'istanza della classe fornita dal runtime e che non deve essere dichiarata e con istanze mediante le istruzioni `Dim` e `New`.  Nell'esempio di codice riportato di seguito viene illustrato come sia possibile disporre di un'istanza dichiarata e con istanze di una classe <xref:System.Windows.Forms.Form> denominata `Form1` e come si sia in grado di ottenere un'istanza predefinita di questa classe <xref:System.Windows.Forms.Form> mediante `My.Forms`.  
   
- [!code-vb[VbVbcnMy#5](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/default-object-instances_1.vb)]  
+ [!code-vb[VbVbcnMy#5](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/default-object-instances-provided-by-my-forms-and-my-webservices_1.vb)]  
   
- [!code-vb[VbVbcnMy#6](../../../visual-basic/developing-apps/development-with-my/codesnippet/visualbasic/default-object-instances_2.vb)]  
+ [!code-vb[VbVbcnMy#6](../../../visual-basic/developing-apps/development-with-my/codesnippet/VisualBasic/default-object-instances-provided-by-my-forms-and-my-webservices_2.vb)]  
   
  Mediante l'oggetto `My.Forms` viene restituita una raccolta di istanze predefinite per ogni classe `Form` presente nel progetto.  Analogamente, l'oggetto `My.WebServices` fornisce un'istanza predefinita della classe proxy per ogni servizio Web a cui è stato creato un riferimento nell'applicazione.  
   

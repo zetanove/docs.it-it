@@ -27,7 +27,7 @@ In l ' esempio seguente viene illustrato come passare [struttura](../../../cshar
  L'output dell' esempio seguente viene illustrata la differenza.  Il valore del campo di `willIChange` dell' istanza della classe viene modificato dalla chiamata al metodo `ClassTaker` perché il metodo utilizza l'indirizzo nel parametro per trovare il campo specificato dall' istanza della classe.  Il campo di `willIChange` della struttura nel metodo di chiamata non viene modificato dalla chiamata al metodo `StructTaker` perché il valore dell' argomento è una copia della struttura stessa, non una copia del relativo indirizzo.  `StructTaker` modifica la copia e la copia viene persa durante la chiamata a `StructTaker` viene completata.  
   
 ## Esempio  
- [!code-cs[csProgGuideObjects#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-know-the-differen_1.cs)]  
+ [!code-cs[csProgGuideObjects#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

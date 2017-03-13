@@ -31,7 +31,7 @@ sealed class B : A {}
 ## Esempio  
  Nell'esempio riportato di seguito, `Z` eredita da `Y` ma `Z` non può eseguire l'override della funzione virtuale `F` dichiarata in `X` e contrassegnata come sealed in `Y`.  
   
- [!code-cs[csrefKeywordsModifiers#16](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#16)]  
+ [!code-cs[csrefKeywordsModifiers#16](../../../csharp/language-reference/keywords/codesnippet/CSharp/sealed_1.cs)]  
   
  Quando si definiscono metodi o proprietà nuove in una classe, è possibile impedire alle classi derivate di eseguire l'override non dichiarandole [virtual](../../../csharp/language-reference/keywords/virtual.md).  
   
@@ -46,7 +46,7 @@ sealed class B : A {}
  Per ulteriori esempi, vedere [Classi e membri delle classi astratte e sealed](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
 ## Esempio  
- [!code-cs[csrefKeywordsModifiers#17](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#17)]  
+ [!code-cs[csrefKeywordsModifiers#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/sealed_2.cs)]  
   
  Nell'esempio riportato in precedenza, se si tentasse di ereditare dalla classe sealed utilizzando l'istruzione seguente:  
   

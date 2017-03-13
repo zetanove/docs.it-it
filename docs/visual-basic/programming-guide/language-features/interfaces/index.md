@@ -46,7 +46,7 @@ Le *interfacce* definiscono le proprietà, i metodi e gli eventi che le classi p
   
  Il codice riportato di seguito, ad esempio, consente di definire un'interfaccia con una funzione, una proprietà e un evento.  
   
- [!code-vb[VbVbalrOOP#17](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#17)]  
+ [!code-vb[VbVbalrOOP#17](../../../../visual-basic/misc/codesnippet/VisualBasic/index_1.vb)]  
   
 ## Implementazione di interfacce  
  La parola riservata `Implements` di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] viene usata in due modi.  L'istruzione `Implements` indica che una classe o una struttura implementa un'interfaccia.  La parola chiave `Implements` indica che un membro di classe o di struttura implementa un membro di interfaccia specifico.  
@@ -59,7 +59,7 @@ Le *interfacce* definiscono le proprietà, i metodi e gli eventi che le classi p
   
  Il codice seguente, ad esempio, illustra come dichiarare una subroutine denominata `Sub1` che implementa un metodo di un'interfaccia:  
   
- [!code-vb[VbVbalrOOP#69](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#69)]  
+ [!code-vb[VbVbalrOOP#69](../../../../visual-basic/misc/codesnippet/VisualBasic/index_2.vb)]  
   
  È necessario che i tipi di parametro e i tipi restituiti del membro che esegue l'implementazione corrispondano alla proprietà dell'interfaccia o alla dichiarazione del membro nell'interfaccia.  Per implementare un elemento di un'interfaccia in genere si usa un membro con lo stesso nome dell'interfaccia, come illustrato nell'esempio precedente.  
   
@@ -67,7 +67,7 @@ Le *interfacce* definiscono le proprietà, i metodi e gli eventi che le classi p
   
  Usando `Implements` è possibile scrivere un unico metodo che implementa più metodi definiti in un'interfaccia, come nell'esempio seguente:  
   
- [!code-vb[VbVbalrOOP#70](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#70)]  
+ [!code-vb[VbVbalrOOP#70](../../../../visual-basic/misc/codesnippet/VisualBasic/index_3.vb)]  
   
  Per implementare un membro di interfaccia, è possibile usare un membro privato.  Quando un membro privato implementa un membro di un'interfaccia, diventa disponibile tramite l'interfaccia anche se non è disponibile direttamente sulle variabili oggetto della classe.  
   
@@ -76,15 +76,15 @@ Le *interfacce* definiscono le proprietà, i metodi e gli eventi che le classi p
   
  L'esempio seguente definisce due interfacce.  La seconda interfaccia, `Interface2`, eredita `Interface1` e definisce una proprietà e un metodo aggiuntivi.  
   
- [!code-vb[VbVbalrOOP#39](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#39)]  
+ [!code-vb[VbVbalrOOP#39](../../../../visual-basic/misc/codesnippet/VisualBasic/index_4.vb)]  
   
  L'esempio che segue implementa `Interface1`, l'interfaccia definita nell'esempio precedente:  
   
- [!code-vb[VbVbalrOOP#40](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#40)]  
+ [!code-vb[VbVbalrOOP#40](../../../../visual-basic/misc/codesnippet/VisualBasic/index_5.vb)]  
   
  L'ultimo esempio implementa `Interface2`, incluso un metodo ereditato da `Interface1`:  
   
- [!code-vb[VbVbalrOOP#41](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#41)]  
+ [!code-vb[VbVbalrOOP#41](../../../../visual-basic/misc/codesnippet/VisualBasic/index_6.vb)]  
   
  È possibile implementare una proprietà ReadOnly usando una proprietà ReadWrite \(in altri termini, non è necessario dichiararla ReadOnly nella classe di implementazione\).  L'implementazione di un'interfaccia consente di implementare almeno i membri dichiarati dall'interfaccia, ma è possibile offrire maggiori funzionalità, ad esempio rendendo la proprietà accessibile in scrittura.  
   

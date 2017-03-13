@@ -33,7 +33,7 @@ string dateTime = "01/08/2008 14:50:50.42"; DateTime dt = Convert.ToDateTime(dat
 ```  
   
 ## Esempio  
- [!code-cs[csProgGuideStrings#13](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#13)]  
+ [!code-cs[csProgGuideStrings#13](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-a-string-to-a-datetime_1.cs)]  
   
 ## Vedere anche  
  [Stringhe](../../../csharp/programming-guide/strings/index.md)

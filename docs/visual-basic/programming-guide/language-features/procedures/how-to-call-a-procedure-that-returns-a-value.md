@@ -51,7 +51,7 @@ Una routine `Function` restituisce un valore al codice chiamante.  Per chiamarla
 ## Esempio  
  Nell'esempio riportato di seguito viene chiamata la <xref:Microsoft.VisualBasic.Interaction.Environ%2A> di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] per recuperare il valore di una variabile di ambiente del sistema operativo.  Nella prima riga `Environ` viene chiamato all'interno di un'espressione e nella seconda viene chiamato in un'istruzione di assegnazione.  `Environ` accetta il nome della variabile come unico argomento.  Il valore della variabile viene restituito al codice chiamante.  
   
- [!code-vb[VbVbcnProcedures#7](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-a-procedure-_0_1.vb)]  
+ [!code-vb[VbVbcnProcedures#7](./codesnippet/VisualBasic/how-to-call-a-procedure-that-returns-a-value_1.vb)]  
   
 ## Vedere anche  
  [Routine Function](../../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   

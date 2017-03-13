@@ -33,7 +33,7 @@ caps.handback.revision: 15
 ## Esempio  
  Il seguente codice copia la directory specificata da `sourcePath` nella directory specificata da `destinationPath`.  Questo codice fornisce inoltre una finestra di dialogo standard che mostra il tempo rimanente stimato prima del completamento dell'operazione.  
   
- [!code-cs[csFilesandFolders#11](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#11)]  
+ [!code-cs[csFilesandFolders#11](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-provide-a-progress-dialog-box-for-file-operations_1.cs)]  
   
 ## Vedere anche  
  [File system e Registro di sistema](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)

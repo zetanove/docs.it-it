@@ -26,7 +26,7 @@ La parola chiave `event` viene utilizzata per dichiarare un evento in una classe
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare e generare un evento che utilizza <xref:System.EventHandler> come tipo delegato sottostante.  Per l'esempio di codice completo in cui viene illustrato come utilizzare il tipo delegato generico <xref:System.EventHandler%601> e come sottoscrivere un evento e creare un metodo per la gestione eventi, vedere [Procedura: pubblicare eventi conformi alle linee guida di .NET Framework](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).  
   
- [!code-cs[csrefKeywordsModifiers#7](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#7)]  
+ [!code-cs[csrefKeywordsModifiers#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/event_1.cs)]  
   
  Gli eventi sono un tipo speciale di delegato multicast che possono essere richiamati solo dall'interno della classe o della struttura in cui sono dichiarati \(la classe autore\).  Se altre classi o strutture sottoscrivono l'evento, i metodi per la gestione eventi corrispondenti verranno chiamati quando la classe autore genera l'evento.  Per ulteriori informazioni ed esempi di codice, vedere [Eventi](../../../csharp/programming-guide/events/index.md) e [Delegati](../../../csharp/programming-guide/delegates/index.md).  
   

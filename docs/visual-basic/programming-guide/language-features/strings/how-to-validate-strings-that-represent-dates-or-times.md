@@ -25,7 +25,7 @@ caps.handback.revision: 11
 Nell'esempio di codice illustrato di seguito viene impostato un valore `Boolean` che indica se una stringa rappresenta una data o un'ora valide.  
   
 ## Esempio  
- [!code-vb[VbVbcnRegEx#2](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/visualbasic/how-to-validate-strings-_1.vb)]  
+ [!code-vb[VbVbcnRegEx#2](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/how-to-validate-strings-that-represent-dates-or-times_1.vb)]  
   
 ## Compilazione del codice  
  Sostituire `("01/01/03")` e `"9:30 PM"` con la data e l'ora che si desidera convalidare.  È possibile sostituire la stringa con un'altra stringa definita a livello di codice con una variabile `String` o con un metodo che restituisce una stringa come `InputBox`.  

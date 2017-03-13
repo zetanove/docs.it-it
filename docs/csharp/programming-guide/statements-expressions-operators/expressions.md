@@ -42,13 +42,13 @@ System.Convert.ToInt32("35")
 ## Valori letterali e nomi semplici  
  I due tipi più semplici di espressioni sono i valori letterali e i nomi semplici.  Il valore letterale è un valore costante privo di nome.  Nell'esempio di codice riportato di seguito `5` e `"Hello World"` sono valori letterali:  
   
- [!code-cs[csProgGuideStatements#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/expressions_1.cs)]  
+ [!code-cs[csProgGuideStatements#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_1.cs)]  
   
  Per ulteriori informazioni sui valori letterali, vedere [Tipi](../../../csharp/language-reference/keywords/types.md).  
   
  Nell'esempio precedente `i` e `s` sono nomi semplici che identificano variabili locali.  Quando tali variabili vengono utilizzate in un'espressione, il nome della variabile restituisce il valore attualmente archiviato nella posizione di memoria corrispondente alla variabile,  come illustrato nell'esempio seguente.  
   
- [!code-cs[csProgGuideStatements#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/expressions_2.cs)]  
+ [!code-cs[csProgGuideStatements#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/expressions_2.cs)]  
   
 ## Espressioni di chiamata  
  Nell'esempio di codice seguente la chiamata a `DoWork` è un'espressione di chiamata.  

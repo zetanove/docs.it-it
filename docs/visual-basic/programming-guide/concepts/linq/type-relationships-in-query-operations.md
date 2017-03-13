@@ -38,7 +38,7 @@ Parti di una query LINQ
   
  In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] la tipizzazione forte viene applicata implementando l'inferenza del tipo di variabile locale, nota anche come *tipizzazione implicita*.  Questa funzionalità viene utilizzata nell'esempio precedente e in tutti gli esempi e nella documentazione [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)].  In Visual Basic l'inferenza del tipo di variabile locale viene eseguita semplicemente utilizzando un'istruzione `Dim` senza una clausola `As`.  Nell'esempio seguente `city` è fortemente tipizzato come stringa.  
   
- [!code-vb[VbLINQTypeRels#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_1.vb)]  
+ [!code-vb[VbLINQTypeRels#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_1.vb)]  
   
 > [!NOTE]
 >  L'inferenza del tipo di variabile locale funziona solo quando `Option Infer` è impostato su `On`.  Per ulteriori informazioni, vedere [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md).  
@@ -47,16 +47,16 @@ Parti di una query LINQ
   
  Potrebbe essere necessario specificare un tipo esplicito per una variabile di intervallo che non corrisponde al tipo restituito dall'origine dati.  È possibile specificare il tipo della variabile di intervallo utilizzando una clausola `As`.  In questo modo, tuttavia, viene restituito un errore se la conversione è una [conversione verso un tipo di dati più piccolo](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md) e `Option Strict` è impostato su `On`.  Si consiglia pertanto di eseguire la conversione sui valori recuperati dall'origine dati.  È possibile convertire i valori dall'origine dati nel tipo di variabile di intervallo esplicito utilizzando il metodo <xref:System.Linq.Enumerable.Cast%2A>.  È inoltre possibile eseguire il cast dei valori selezionati nella clausola `Select` a un tipo esplicito diverso dal tipo della variabile di intervallo.  Questi punti vengono illustrati nel codice seguente.  
   
- [!code-vb[VbLINQTypeRels#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_2.vb)]  
+ [!code-vb[VbLINQTypeRels#4](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_2.vb)]  
   
 ## Query che restituiscono elementi dell'origine dati completi  
  Nell'esempio seguente viene illustrata un'operazione di query [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] che restituisce una sequenza di elementi selezionati dai dati di origine.  Il database di origine, `names`, contiene una matrice di stringhe e il risultato della query è una sequenza contenente stringhe che iniziano con la lettera M.  
   
- [!code-vb[VbLINQTypeRels#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_3.vb)]  
+ [!code-vb[VbLINQTypeRels#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_3.vb)]  
   
  Questo equivale al codice seguente, ma è molto più breve e facile da scrivere.  L'utilizzo dell'inferenza del tipo di variabile locale nelle query è lo stile preferito in Visual Basic.  
   
- [!code-vb[VbLINQTypeRels#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/type-relationships-in-qu_4.vb)]  
+ [!code-vb[VbLINQTypeRels#3](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/type-relationships-in-query-operations_4.vb)]  
   
  Le relazioni riportate di seguito sono presenti in entrambi gli esempi di codice precedenti, indipendentemente dal fatto che i tipi vengano determinati in modo implicito o esplicito.  
   

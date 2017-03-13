@@ -27,14 +27,14 @@ Gli indicizzatori possono essere dichiarati su una [interfaccia](../../../csharp
   
  Nell'esempio seguente viene illustrata la funzione di accesso di un indicizzatore di interfaccia:  
   
- [!code-cs[csProgGuideIndexers#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/indexers-in-interfaces_1.cs)]  
+ [!code-cs[csProgGuideIndexers#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_1.cs)]  
   
  È necessario che la firma di un indicizzatore sia diversa dalle firme di tutti gli altri indicizzatori dichiarati nella stessa interfaccia.  
   
 ## Esempio  
  Nell'esempio seguente viene illustrata la modalità di implementazione degli indicizzatori di interfaccia:  
   
- [!code-cs[csProgGuideIndexers#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/indexers-in-interfaces_2.cs)]  
+ [!code-cs[csProgGuideIndexers#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/indexers-in-interfaces_2.cs)]  
   
  Nell'esempio precedente era possibile utilizzare l'implementazione esplicita del membro dell'interfaccia, utilizzando il nome completo del membro dell'interfaccia.  Di seguito è riportato un esempio:  
   

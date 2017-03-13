@@ -58,7 +58,7 @@ int intSize = sizeof(int);
  Per tutti gli altri tipi, inclusi gli struct, l'operatore `sizeof` può essere utilizzato soltanto in blocchi di codice unsafe.  Sebbene sia possibile utilizzare il metodo <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=fullName>, il valore restituito da questo metodo non corrisponde sempre al valore restituito da `sizeof`.  <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=fullName> restituisce la dimensione dopo il marshalling del tipo, mentre `sizeof` restituisce la dimensione allocata da Common Language Runtime, incluso l'eventuale riempimento.  
   
 ## Esempio  
- [!code-cs[csrefKeywordsOperator#11](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#11)]  
+ [!code-cs[csrefKeywordsOperator#11](../../../csharp/language-reference/keywords/codesnippet/CSharp/sizeof_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

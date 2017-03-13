@@ -41,7 +41,7 @@ System.IO.DriveInfo di = new System.IO.DriveInfo(@"C:\");
 ## Esempio  
  Nell'esempio seguente vengono mostrati vari modi di accedere alle informazioni su file e cartelle.  
   
- [!code-cs[csFilesandFolders#6](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#6)]  
+ [!code-cs[csFilesandFolders#6](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-get-information-about-files-folders-and-drives_1.cs)]  
   
 ## Programmazione efficiente  
  Quando si elaborano stringhe di percorso specificate dall'utente, è necessario gestire anche le eccezioni per le condizioni seguenti:  

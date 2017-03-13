@@ -24,7 +24,7 @@ L'istruzione restituisce il controllo di `continue` l'iterazione successiva di [
 ## Esempio  
  In questo esempio, un contatore è inizializzato per contare da 1 a 10.  Utilizzando l'istruzione di `continue` con l'espressione `(i < 9)`, le istruzioni tra `continue` e la fine del corpo di `for` vengono ignorati.  
   
- [!code-cs[csrefKeywordsJump#3](../../../csharp/language-reference/keywords/codesnippet/csharp/continue_1.cs)]  
+ [!code-cs[csrefKeywordsJump#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/continue_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

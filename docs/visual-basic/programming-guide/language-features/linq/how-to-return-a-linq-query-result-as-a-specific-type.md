@@ -72,7 +72,7 @@ Language\-Integrated Query \(LINQ\) semplifica l'accesso a informazioni di datab
   
 3.  Dopo l'istruzione `End Class` della classe Form1, aggiungere il codice seguente per creare un tipo `CustomerInfo` che contenga i risultati della query per questo esempio.  
   
-     [!code-vb[VbLINQToSQLHowTos#16](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form8.vb#16)]  
+     [!code-vb[VbLINQToSQLHowTos#16](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_1.vb)]  
   
 4.  Quando si aggiungono tabelle a Progettazione relazionale oggetti, la finestra di progettazione aggiunge un oggetto <xref:System.Data.Linq.DataContext> al progetto.  Questo oggetto contiene il codice necessario per accedere a quelle tabelle e per accedere a singoli oggetti e a raccolte per ogni tabella.  L'oggetto <xref:System.Data.Linq.DataContext> per il progetto viene denominato in base al nome del file .dbml.  Per questo progetto, l'oggetto <xref:System.Data.Linq.DataContext> viene denominato `northwindDataContext`.  
   
@@ -80,7 +80,7 @@ Language\-Integrated Query \(LINQ\) semplifica l'accesso a informazioni di datab
   
      Aggiungere il codice seguente all'evento `Load` della classe Form1 per eseguire una query nelle tabelle esposte come proprietà del contesto dati.  La clausola `Select` della query creerà un nuovo tipo `CustomerInfo` anziché un tipo anonimo per ogni elemento del risultato della query.  
   
-     [!code-vb[VbLINQToSQLHowTos#15](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form8.vb#15)]  
+     [!code-vb[VbLINQToSQLHowTos#15](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-return-a-linq-query-result-as-a-specific-type_2.vb)]  
   
 5.  Premere F5 per eseguire il progetto e visualizzare i risultati.  
   

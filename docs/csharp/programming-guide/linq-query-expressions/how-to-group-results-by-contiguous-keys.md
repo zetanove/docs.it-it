@@ -35,7 +35,7 @@ Nell'esempio seguente viene mostrato come raggruppare elementi in blocchi che ra
 ## Esempio  
  Nell'esempio seguente viene mostrato sia il metodo di estensione che il codice client che lo utilizza.  
   
- [!code-cs[cscsrefContiguousGroups#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/how-to-group-results-by-_1.cs)]  
+ [!code-cs[cscsrefContiguousGroups#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-group-results-by-contiguous-keys_1.cs)]  
   
  Per utilizzare il metodo di estensione nel progetto, copiare la classe statica `MyExtensions` in un file di codice sorgente nuovo o esistente e, se richiesto, aggiungere una direttiva `using` per lo spazio dei nomi in cui si trova.  
   

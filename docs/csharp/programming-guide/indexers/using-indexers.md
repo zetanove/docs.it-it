@@ -56,7 +56,7 @@ public int this [int index]   // Indexer declaration
  Si noti che, quando viene valutato l'accesso di un indicizzatore, ad esempio in un'istruzione `Console.Write`, viene richiamata la funzione di accesso [get](../../../csharp/language-reference/keywords/get.md).  Di conseguenza, se non esiste alcuna funzione di accesso `get`, si verificherà un errore in fase di compilazione.  
   
 ### Codice  
- [!code-cs[csProgGuideIndexers#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-indexers_1.cs)]  
+ [!code-cs[csProgGuideIndexers#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-indexers_1.cs)]  
   
 ## Indicizzazione mediante altri valori  
  In C\# non è necessario utilizzare un indice di tipo integer.  Ad esempio, può essere utile assegnare a un indicizzatore un valore stringa.  Un indicizzatore di questo tipo può essere implementato effettuando una ricerca della stringa all'interno della raccolta e restituendo il valore appropriato.  Poiché le funzioni di accesso possono essere sottoposte a overload, le versioni basate su valore stringa e integer possono coesistere.  
@@ -67,7 +67,7 @@ public int this [int index]   // Indexer declaration
  In questo esempio viene dichiarata una classe in cui sono archiviati i giorni della settimana.  Viene quindi dichiarata una funzione di accesso `get` che accetta una stringa e il nome del giorno e restituisce l'intero corrispondente.  Ad esempio, Sunday restituirà 0, Monday restituirà 1 e così via.  
   
 ### Codice  
- [!code-cs[csProgGuideIndexers#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/using-indexers_2.cs)]  
+ [!code-cs[csProgGuideIndexers#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-indexers_2.cs)]  
   
 ## Programmazione robusta  
  Di seguito sono indicate le due tecniche principali che consentono di migliorare la sicurezza e l'affidabilità degli indicizzatori.  

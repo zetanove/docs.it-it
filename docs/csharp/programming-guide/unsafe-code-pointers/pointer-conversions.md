@@ -38,9 +38,9 @@ Nella tabella che segue sono illustrate le conversioni di puntatori implicite gi
 ## Esempio  
  Nell'esempio riportato di seguito un puntatore a `int` viene convertito in un puntatore a `byte`.  Si noti che il puntatore punta al byte della variabile con l'indirizzo più basso.  Quando si incrementa successivamente il risultato, fino a raggiungere la dimensione di `int` \(4 byte\), è possibile visualizzare i byte rimanenti della variabile.  
   
- [!code-cs[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers2.cs#3)]  
+ [!code-cs[csProgGuidePointers#3](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-conversions_1.cs)]  
   
- [!code-cs[csProgGuidePointers#4](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#4)]  
+ [!code-cs[csProgGuidePointers#4](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/pointer-conversions_2.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

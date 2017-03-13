@@ -32,7 +32,7 @@ caps.handback.revision: 19
   
 -   Utilizzare il metodo `WriteAllText` per scrivere testo all'interno di un file, specificando il file e il testo da scrivere.  In questo esempio viene scritta la riga `"This is new text."` nel file `test.txt`, aggiungendo il nuovo testo al testo eventualmente già esistente nel file.  
   
-     [!code-vb[VbFileIOWrite#3](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-write-text-to-files_1.vb)]  
+     [!code-vb[VbFileIOWrite#3](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-text-to-files_1.vb)]  
   
 #### Per scrivere una serie di stringhe in un file  
   
@@ -40,7 +40,7 @@ caps.handback.revision: 19
   
      In questo esempio vengono scritti i nomi dei file nella directory `Documents and Settings` in `FileList.txt`, inserendo un ritorno a capo tra ciascuno di essi per una migliore leggibilità.  
   
-     [!code-vb[VbFileIOWrite#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-write-text-to-files_2.vb)]  
+     [!code-vb[VbFileIOWrite#4](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-text-to-files_2.vb)]  
   
 ## Programmazione efficiente  
  Le seguenti condizioni possono generare un'eccezione:  

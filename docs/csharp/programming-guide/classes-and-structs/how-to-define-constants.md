@@ -27,7 +27,7 @@ Le costanti sono campi cui i valori vengono impostati in fase di compilazione e 
  Per definire le costanti non integrali, è possibile raggrupparle in una sola classe statica denominata `Constants`.  A questo scopo sarà necessario che tutti i riferimenti alle costanti siano preceduti dal nome della classe, come illustrato nell'esempio seguente.  
   
 ## Esempio  
- [!code-cs[csProgGuideObjects#89](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-constants_1.cs)]  
+ [!code-cs[csProgGuideObjects#89](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-constants_1.cs)]  
   
  L'utilizzo del qualificatore del nome della classe consente di fare in modo che tutti gli utenti che utilizzano la costante comprendano che si tratta di una costante e che non può essere modificata.  
   

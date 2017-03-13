@@ -44,14 +44,14 @@ root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);
   
  Le specifiche eccezioni gestite e le specifiche azioni eseguite su ogni file o cartella vengono fornite solo come esempi.  Questo codice va modificato per soddisfare requisiti specifici.  Per ulteriori informazioni, vedere i commenti nel codice.  
   
- [!code-cs[csFilesandFolders#1](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#1)]  
+ [!code-cs[csFilesandFolders#1](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-iterate-through-a-directory-tree_1.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene mostrato come scorrere file e cartelle in una struttura ad albero di directory senza utilizzare la ricorsione.  Questa tecnica utilizza il tipo di raccolta <xref:System.Collections.Generic.Stack%601> generica, che è uno stack LIFO \(Last In, First Out\).  
   
  Le specifiche eccezioni gestite e le specifiche azioni eseguite su ogni file o cartella vengono fornite solo come esempi.  Questo codice va modificato per soddisfare requisiti specifici.  Per ulteriori informazioni, vedere i commenti nel codice.  
   
- [!code-cs[csFilesandFolders#2](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#2)]  
+ [!code-cs[csFilesandFolders#2](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-iterate-through-a-directory-tree_2.cs)]  
   
  L'operazione di verifica su ogni cartella per determinare se l'applicazione dispone dell'autorizzazione ad aprirla richiede in genere troppo tempo.  L'esempio di codice, pertanto, include solo quella parte dell'operazione in un blocco `try/catch`.  È possibile modificare il blocco `catch` in modo da tentare di elevare le autorizzazioni e provare nuovamente l'accesso in caso di accesso negato a una cartella.  Di regola, rilevare solo le eccezioni che è possibile gestire senza lasciare l'applicazione in stato sconosciuto.  
   

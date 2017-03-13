@@ -57,13 +57,13 @@ Non è solitamente possibile chiamare una routine con più argomenti di quelli s
 ## Esempio  
  In l ' esempio seguente viene definita e chiamata la funzione `calcSum`.  Il modificatore di `ParamArray` per il parametro `args` consente alla funzione di accettare un numero variabile di argomenti.  
   
- [!code-vb[VbVbalrStatements#26](../../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/parameter-arrays_1.vb)]  
+ [!code-vb[VbVbalrStatements#26](../../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-arrays_1.vb)]  
   
  Nell'esempio riportato di seguito viene definita una routine con una matrice di parametri e vengono generati i valori di tutti gli elementi della matrice passati alla matrice di parametri.  
   
- [!code-vb[VbVbcnProcedures#48](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/parameter-arrays_2.vb)]  
+ [!code-vb[VbVbcnProcedures#48](./codesnippet/VisualBasic/parameter-arrays_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#49](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/parameter-arrays_3.vb)]  
+ [!code-vb[VbVbcnProcedures#49](./codesnippet/VisualBasic/parameter-arrays_3.vb)]  
   
 ## Vedere anche  
  <xref:Microsoft.VisualBasic.Information.UBound%2A>   

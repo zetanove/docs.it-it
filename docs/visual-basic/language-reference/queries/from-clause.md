@@ -49,11 +49,11 @@ From element [ As type ] In collection [ _ ]
   
  È possibile specificare più clausole `From` in una query per identificare più raccolte da unire.  Quando sono specificati più raccolte, l'iterazione viene eseguita su ognuna in modo indipendente, oppure è possibile unirle se sono correlate.  È possibile unire le raccolte implicitamente utilizzando la clausola `Select` o in modo esplicito utilizzando le clausole `Join` o `Group Join` In alternativa, è possibile specificare più variabili di intervallo e raccolte in una sola clausola `From`, con ogni variabile di intervallo correlata e ogni raccolta separate dalle altre da una virgola.  Nell'esempio di codice seguente vengono illustrate entrambe le opzioni di sintassi per la clausola `From`.  
   
- [!code-vb[VbSimpleQuerySamples#21](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#21)]  
+ [!code-vb[VbSimpleQuerySamples#21](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_1.vb)]  
   
  La clausola `From` definisce l'ambito di una query, che è simile all'ambito di un ciclo `For`.  Pertanto, la variabile di intervallo di ogni `element` nell'ambito di una query deve avere un nome univoco.  Poiché è possibile specificare più clausole `From` per una query, le clausole `From` successive possono fare riferimento alle variabili di intervallo nella clausola `From` oppure possono fare riferimento alle variabili di intervallo in una clausola `From` precedente.  Nell'esempio seguente viene illustrata una clausola `From` annidata in cui la raccolta nella seconda clausola è basata su una proprietà della variabile di intervallo della prima clausola.  
   
- [!code-vb[VbSimpleQuerySamples#22](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#22)]  
+ [!code-vb[VbSimpleQuerySamples#22](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_2.vb)]  
   
  Ogni clausola `From` può essere seguita da una qualsiasi combinazione di clausole query aggiuntive per perfezionare la query.  A tale proposito, è possibile procedere come indicato di seguito:  
   
@@ -76,7 +76,7 @@ From element [ As type ] In collection [ _ ]
 ## Esempio  
  Nell'espressione di query seguente viene utilizzata una clausola `From` per dichiarare una variabile di intervallo `cust` per ogni oggetto `Customer` nella raccolta `customers`.  La clausola `Where` utilizza la variabile di intervallo per restringere l'output ai clienti dalla regione specificata.  Il ciclo `For Each` visualizza il nome di azienda per ogni cliente nel risultato della query.  
   
- [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#23)]  
+ [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  
   
 ## Vedere anche  
  [Queries](../../../visual-basic/language-reference/queries/queries.md)   

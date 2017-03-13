@@ -38,7 +38,7 @@ caps.handback.revision: 15
  Eseguire la compilazione con [\/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) per elaborare in un file i commenti per la creazione della documentazione.  Per creare la documentazione finale basata sul file generato dal compilatore, è possibile creare uno strumento personalizzato o utilizzare uno strumento come [Sandcastle](http://go.microsoft.com/fwlink/?LinkId=124061).  
   
 ## Esempio  
- [!code-cs[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/summary_1.cs)]  
+ [!code-cs[csProgGuideDocComments#12](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_1.cs)]  
   
  Nell'esempio precedente produce il seguente file XML.  
   
@@ -68,7 +68,7 @@ caps.handback.revision: 15
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato come effettuare un riferimento `cref` a un tipo generico.  
   
- [!code-cs[csProgGuideDocComments#11](../../../csharp/programming-guide/xmldoc/codesnippet/csharp/summary_2.cs)]  
+ [!code-cs[csProgGuideDocComments#11](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/summary_2.cs)]  
   
  Nell'esempio precedente produce il seguente file XML.  
   

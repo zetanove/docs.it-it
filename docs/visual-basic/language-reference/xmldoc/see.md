@@ -42,7 +42,7 @@ Specifica un collegamento a un altro membro.
 ## Esempio  
  Nell'esempio riportato di seguito il tag `<see>` viene utilizzato nella sezione relativa alle osservazioni di `UpdateRecord` per fare riferimento al metodo `DoesRecordExist`.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/see_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/see_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

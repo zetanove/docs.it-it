@@ -29,17 +29,17 @@ Quando si confrontano stringhe, si produce un risultato che indica che una strin
 ## Esempio  
  Nell'esempio seguente viene mostrato come confrontare correttamente stringhe i cui valori non cambiano in base alle impostazioni locali del computer dell'utente.  Viene inoltre illustrata la funzionalità *inserimento di stringa* di C\#.  Quando un programma dichiara due o più variabili di stringa identiche, il compilatore le archivia tutte nella stessa posizione.  Chiamando il metodo <xref:System.Object.ReferenceEquals%2A>, è possibile vedere che le due stringhe si riferiscono allo stesso oggetto in memoria.  Utilizzare il metodo <xref:System.String.Copy%2A?displayProperty=fullName> per evitare l'inserimento di stringa, come mostrato nell'esempio.  
   
- [!code-cs[csProgGuideStrings#11](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#11)]  
+ [!code-cs[csProgGuideStrings#11](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-compare-strings_1.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene mostrato come confrontare stringhe nel modo preferito tramite i metodi <xref:System.String?displayProperty=fullName> che accettano un'enumerazione <xref:System.StringComparison>.  Notare che i metodi di istanza <xref:System.String.CompareTo%2A?displayProperty=fullName> non vengono utilizzati qui, perché nessuno degli overload accetta <xref:System.StringComparison>.  
   
- [!code-cs[csProgGuideStrings#31](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#31)]  
+ [!code-cs[csProgGuideStrings#31](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-compare-strings_2.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene mostrato come ordinare e cercare stringhe in una matrice in modo dipendente dalle impostazioni cultura tramite i metodi <xref:System.Array> statici che accettano un parametro <xref:System.StringComparer?displayProperty=fullName>.  
   
- [!code-cs[csProgGuideStrings#32](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#32)]  
+ [!code-cs[csProgGuideStrings#32](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-compare-strings_3.cs)]  
   
  Le classi di raccolte quali <xref:System.Collections.Hashtable?displayProperty=fullName>, <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName> e <xref:System.Collections.Generic.List%601?displayProperty=fullName> dispongono di costruttori che accettano un parametro <xref:System.StringComparer?displayProperty=fullName> quando il tipo degli elementi o delle chiavi è `string`.  In generale, è consigliabile utilizzare questi costruttori quando possibile e specificare `Ordinal` o `OrdinalIgnoreCase`.  
   

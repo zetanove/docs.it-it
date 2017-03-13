@@ -76,7 +76,7 @@ Dim l, m As Long, x, y As Single
 ## Inferenza del tipo di variabile locale  
  L'*inferenza del tipo* consente di determinare i tipi di dati delle variabili locali dichiarate senza una clausola `As`.  Tramite l'inferenza, il compilatore deduce il tipo della variabile dal tipo dell'espressione di inizializzazione  consentendo di dichiarare le variabili senza dichiarare in modo esplicito un tipo.  Nell'esempio seguente `num1` e `num2` sono fortemente tipizzati come integer.  
   
- [!code-vb[VbVbalrTypeInference#1](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/variable-declaration_1.vb)]  
+ [!code-vb[VbVbalrTypeInference#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/variable-declaration_1.vb)]  
   
  Se si desidera utilizza l'inferenza del tipo di variabile locale, è necessario che `Option Infer` sia impostato su `On`.  Per ulteriori informazioni, vedere [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md) e [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md).  
   

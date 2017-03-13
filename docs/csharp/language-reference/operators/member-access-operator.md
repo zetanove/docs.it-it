@@ -22,29 +22,29 @@ caps.handback.revision: 21
 # . Operatore (Riferimenti per C#)
 L'operatore punto \(`.`\) viene utilizzato per l'accesso ai membri.  L'operatore punto specifica un membro di un tipo o di uno spazio dei nomi.  Ad esempio, l'operatore punto viene utilizzato per accedere a metodi specifici all'interno delle librerie di classi di .NET Framework:  
   
- [!code-cs[csRefOperators#16](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#16)]  
+ [!code-cs[csRefOperators#16](../../../csharp/language-reference/operators/codesnippet/CSharp/member-access-operator_1.cs)]  
   
  Si consideri ad esempio la seguente classe:  
   
- [!code-cs[csRefOperators#17](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#17)]  
+ [!code-cs[csRefOperators#17](../../../csharp/language-reference/operators/codesnippet/CSharp/member-access-operator_2.cs)]  
   
- [!code-cs[csRefOperators#18](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#18)]  
+ [!code-cs[csRefOperators#18](../../../csharp/language-reference/operators/codesnippet/CSharp/member-access-operator_3.cs)]  
   
  La variabile `s` ha due membri: `a` e `b`. Per accedervi, utilizzare l'operatore punto, come mostrato nell'esempio.  
   
- [!code-cs[csRefOperators#19](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#19)]  
+ [!code-cs[csRefOperators#19](../../../csharp/language-reference/operators/codesnippet/CSharp/member-access-operator_4.cs)]  
   
  Il punto viene inoltre utilizzato per formare nomi completi, ovvero nomi che specificano, ad esempio, lo spazio dei nomi o l'interfaccia a cui appartengono.  
   
- [!code-cs[csRefOperators#20](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#20)]  
+ [!code-cs[csRefOperators#20](../../../csharp/language-reference/operators/codesnippet/CSharp/member-access-operator_5.cs)]  
   
  La direttiva using rende facoltativa la qualificazione di alcuni nomi:  
   
- [!code-cs[csRefOperators#21](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#21)]  
+ [!code-cs[csRefOperators#21](../../../csharp/language-reference/operators/codesnippet/CSharp/member-access-operator_6.cs)]  
   
  Tuttavia, se l'identificatore è ambiguo, dovrà essere qualificato:  
   
- [!code-cs[csRefOperators#22](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#22)]  
+ [!code-cs[csRefOperators#22](../../../csharp/language-reference/operators/codesnippet/CSharp/member-access-operator_7.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

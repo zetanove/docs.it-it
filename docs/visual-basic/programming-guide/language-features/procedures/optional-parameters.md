@@ -57,12 +57,12 @@ sub name(argument 1, , , argument 4)
   
  Nella prima chiamata a `MsgBox` vengono forniti tutti e tre gli argomenti nell'ordine in cui sono definiti da `MsgBox`.  Nella seconda chiamata viene fornito solo l'argomento obbligatorio.  Nella terza e quarta chiamata vengono forniti il primo e il terzo argomento.  Nella terza chiamata gli argomenti vengono forniti in base alla posizione, nella quarta in base al nome.  
   
- [!code-vb[VbVbcnProcedures#47](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/optional-parameters_1.vb)]  
+ [!code-vb[VbVbcnProcedures#47](./codesnippet/VisualBasic/optional-parameters_1.vb)]  
   
 ## Determinazione dell'eventuale presenza di un argomento facoltativo  
  Una routine non può rilevare, in fase di esecuzione, se un determinato argomento è stato omesso o se il codice di chiamata ha fornito in modo esplicito il valore predefinito.  Se è necessario fare questa distinzione, è possibile impostare come predefinito un valore improbabile.  La routine riportata di seguito definisce il parametro facoltativo `office` e ne verifica il valore predefinito,  `QJZ`, per controllare se è stato omesso nella chiamata:  
   
- [!code-vb[VbVbcnProcedures#46](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/optional-parameters_2.vb)]  
+ [!code-vb[VbVbcnProcedures#46](./codesnippet/VisualBasic/optional-parameters_2.vb)]  
   
  Se il parametro facoltativo è un tipo di riferimento come `String`, è possibile utilizzare `Nothing` come valore predefinito, a meno che esso non sia un valore previsto per l'argomento.  
   

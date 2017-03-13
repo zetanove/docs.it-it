@@ -98,12 +98,12 @@ Const constantlist
 ## Esempio  
  Nell'esempio seguente l'istruzione `Const` viene utilizzata per dichiarare costanti da utilizzare in sostituzione dei valori letterali.  
   
- [!code-vb[VbVbalrStatements#13](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/const-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#13](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/const-statement_1.vb)]  
   
 ## Esempio  
  Se viene definita una costante con il tipo di dati `Object`, il compilatore di Visual Basic assegnerà il tipo di dati `initializer` invece che `Object`.  Nell'esempio seguente, alla costante `naturalLogBase` viene associato il tipo `Decimal` in fase di esecuzione.  
   
- [!code-vb[VbVbalrStatements#87](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/const-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#87](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/const-statement_2.vb)]  
   
  Nell'esempio precedente viene utilizzato il metodo <xref:System.Type.ToString%2A> sull'oggetto <xref:System.Type> restituito da [GetType Operator](../../../visual-basic/language-reference/operators/gettype-operator.md), poiché non è possibile convertire <xref:System.Type> in `String` utilizzando `CStr`.  
   

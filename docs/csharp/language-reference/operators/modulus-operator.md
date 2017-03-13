@@ -25,7 +25,7 @@ L'operatore di `%` calcola il resto dopo la divisione del primo operando dal sec
  I tipi definiti dall'utente possono eseguire l'overload dell'operatore `%`. Per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md).  Quando si esegue l'overload di un operatore binario, viene eseguito in modo implicito anche l'overload dell'eventuale operatore di assegnazione corrispondente.  
   
 ## Esempio  
- [!code-cs[csRefOperators#9](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#9)]  
+ [!code-cs[csRefOperators#9](../../../csharp/language-reference/operators/codesnippet/CSharp/modulus-operator_1.cs)]  
   
 ## Commenti  
  Si notino gli errori di arrotondamento associati al tipo double.  

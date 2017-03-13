@@ -24,7 +24,7 @@ caps.handback.revision: 32
 # if-else (Riferimenti per C#)
 Un'istruzione `if` identifica quale istruzione eseguire in base al valore di un'espressione `Boolean`. Nell'esempio seguente la variabile `Boolean``result` viene impostata su `true` e quindi archiviata nell'istruzione `if`. L'output è `The condition is true`.  
   
- [!code-cs[csrefKeywordsSelection#1](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_1.cs)]  
+ [!code-cs[csrefKeywordsSelection#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_1.cs)]  
   
  È possibile eseguire gli esempi di questo argomento posizionandoli nel metodo `Main` di un'app console.  
   
@@ -43,28 +43,28 @@ Un'istruzione `if` identifica quale istruzione eseguire in base al valore di un'
   
  L'istruzione o le istruzioni in `then-statement` e `else-statement` possono essere di qualsiasi tipo, compresa un'altra istruzione `if` annidata all'interno dell'istruzione `if` originale. Nelle istruzioni `if` annidate ogni clausola `else` appartiene all'ultima istruzione `if` che non ha un'istruzione `else` corrispondente. Nell'esempio seguente viene visualizzato `Result1` se `m > 10` e `n > 20` restituiscono entrambi true. Se `m > 10` è true ma `n > 20` è false, viene visualizzato `Result2`.  
   
- [!code-cs[csrefKeywordsSelection#2](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_2.cs)]  
+ [!code-cs[csrefKeywordsSelection#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_2.cs)]  
   
  Se invece si vuole che venga visualizzato `Result2` quando `(m > 10)` è false, è possibile specificare tale associazione usando le parentesi graffe per stabilire l'inizio e la fine dell'istruzione `if` annidata, come illustrato nell'esempio seguente.  
   
- [!code-cs[csrefKeywordsSelection#3](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_3.cs)]  
+ [!code-cs[csrefKeywordsSelection#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_3.cs)]  
   
  `Result2` viene visualizzato se la condizione `(m > 10)` restituisce false.  
   
 ## Esempio  
  Nell'esempio seguente si immette un carattere dalla tastiera e il programma usa un'istruzione `if` annidata per determinare se il carattere di input è un carattere alfabetico. Se il carattere di input è un carattere alfabetico, il programma verifica se il carattere di input è maiuscolo o minuscolo. Viene visualizzato un messaggio per ogni situazione.  
   
- [!code-cs[csrefKeywordsSelection#4](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_4.cs)]  
+ [!code-cs[csrefKeywordsSelection#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_4.cs)]  
   
 ## Esempio  
  È anche possibile annidare un'istruzione `if` all'interno di un blocco else, come illustrato nella parte di codice seguente. Nell'esempio le istruzioni `if` vengono annidate all'interno di due blocchi else e di un blocco then. I commenti specificano che le condizioni sono true o false in ogni blocco.  
   
- [!code-cs[csrefKeywordsSelection#5](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_5.cs)]  
+ [!code-cs[csrefKeywordsSelection#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_5.cs)]  
   
 ## Esempio  
  L'esempio seguente determina se un carattere di input è una lettera minuscola, una lettera maiuscola o un numero. Se tutte e tre le condizioni sono false, il carattere non è un carattere alfanumerico. Nell'esempio viene visualizzato un messaggio per ogni situazione.  
   
- [!code-cs[csrefKeywordsSelection#6](../../../csharp/language-reference/keywords/codesnippet/csharp/if-else_6.cs)]  
+ [!code-cs[csrefKeywordsSelection#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/if-else_6.cs)]  
   
  Come per un'istruzione nel blocco else o nel blocco then è possibile usare qualsiasi istruzione valida, allo stesso modo per la condizione è possibile usare qualsiasi espressione booleana valida. Per creare le condizioni composte, è possibile usare gli operatori logici quali [&&](../../../csharp/language-reference/operators/conditional-and-operator.md), [&](../../../csharp/language-reference/operators/and-operator.md), [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md), [&#124;](../../../csharp/language-reference/operators/or-operator.md) and [\!](../../../csharp/language-reference/operators/logical-negation-operator.md). Il codice seguente illustra alcuni esempi.  
   

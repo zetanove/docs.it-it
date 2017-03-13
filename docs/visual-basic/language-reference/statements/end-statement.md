@@ -58,7 +58,7 @@ End
 ## Esempio  
  Nell'esempio seguente viene utilizzata l'istruzione `End` per terminare l'esecuzione del codice se l'utente lo richiede.  
   
- [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVersHelp60Controls/Form1.vb#64)]  
+ [!code-vb[VbVersHelp60Controls#64](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/end-statement_1.vb)]  
   
 ## Note per gli sviluppatori di applicazioni per Smart Device  
  Questa istruzione non è supportata.  

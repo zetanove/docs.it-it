@@ -21,11 +21,11 @@ caps.handback.revision: 21
 # explicit (Riferimenti per C#)
 La parola chiave `explicit` dichiara un operatore di conversione di tipi definito dall'utente che è necessario richiamare con un cast.  Il seguente operatore esegue ad esempio la conversione da una classe denominata Fahrenheit a una classe denominata Celsius:  
   
- [!code-cs[csrefKeywordsConversion#2](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_1.cs)]  
+ [!code-cs[csrefKeywordsConversion#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_1.cs)]  
   
  Questo operatore di conversione può essere richiamato nel seguente modo:  
   
- [!code-cs[csrefKeywordsConversion#3](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_2.cs)]  
+ [!code-cs[csrefKeywordsConversion#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_2.cs)]  
   
  L'operatore di conversione esegue la conversione da un tipo di origine a un tipo di destinazione.  Il tipo di origine fornisce l'operatore di conversione.  A differenza di quanto avviene per le conversioni implicite, gli operatori di conversione espliciti devono essere richiamati mediante un cast.  Se un'operazione di conversione può provocare eccezioni o la perdita di informazioni, è opportuno contrassegnarla come `explicit`,  per evitare che il compilatore richiami automaticamente l'operazione di conversione con conseguenze imprevedibili.  
   
@@ -36,12 +36,12 @@ La parola chiave `explicit` dichiara un operatore di conversione di tipi definit
 ## Esempio  
  Nell'esempio riportato di seguito vengono utilizzate una classe `Fahrenheit` e una classe `Celsius`, ciascuna delle quali fornisce un operatore di conversione esplicito all'altra classe.  
   
- [!code-cs[csrefKeywordsConversion#1](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_3.cs)]  
+ [!code-cs[csrefKeywordsConversion#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_3.cs)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito viene definita la struttura `Digit` che rappresenta una singola cifra decimale.  Viene definito un operatore per le conversioni da `byte` a `Digit`; tuttavia, poiché non è possibile convertire tutti i byte in un valore `Digit`, la conversione è esplicita.  
   
- [!code-cs[csrefKeywordsConversion#4](../../../csharp/language-reference/keywords/codesnippet/csharp/explicit_4.cs)]  
+ [!code-cs[csrefKeywordsConversion#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_4.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

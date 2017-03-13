@@ -24,7 +24,7 @@ In C\# è possibile passare argomenti a parametri per valore o per riferimento. 
   
  Nell'esempio seguente viene illustrata la differenza fra parametri di valore e di riferimento.  
   
- [!code-cs[csProgGuideParameters#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/passing-parameters_1.cs)]  
+ [!code-cs[csProgGuideParameters#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-parameters_1.cs)]  
   
  Per ulteriori informazioni, vedere i seguenti argomenti:  
   

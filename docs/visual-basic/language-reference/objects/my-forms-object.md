@@ -53,7 +53,7 @@ Fornisce le proprietà che consentono di accedere alle istanze di ciascun form W
 ## Esempio  
  Nell'esempio viene modificato il titolo del form `SidebarMenu` predefinito.  
   
- [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/visualbasic/my-forms-object_1.vb)]  
+ [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-forms-object_1.vb)]  
   
  Per la corretta esecuzione dell'esempio, è necessario che il progetto contenga un modulo denominato `SidebarMenu`.  Per ulteriori informazioni, vedere [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/it-it/3d7bb25f-fd90-47cf-9378-fa0d764686c1).  
   

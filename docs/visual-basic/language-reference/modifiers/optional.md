@@ -71,7 +71,7 @@ End Function
 ## Esempio  
  Nell'esempio seguente viene illustrato come chiamare una routine con gli argomenti passati dalla posizione e gli argomenti passati per nome.  La routine presenta due parametri facoltativi.  
   
- [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/visualbasic/optional_1.vb)]  
+ [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/VisualBasic/optional_1.vb)]  
   
 ## Vedere anche  
  [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)   

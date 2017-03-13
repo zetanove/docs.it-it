@@ -45,7 +45,7 @@ Le istruzioni in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/li
   
  L'esempio seguente contiene tre dichiarazioni.  
   
- [!code-vb[VbVbalrStatements#80](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_1.vb)]  
+ [!code-vb[VbVbalrStatements#80](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_1.vb)]  
   
  La prima dichiarazione è l'istruzione `Sub`.  Insieme alla sua istruzione corrispondente `End Sub`, dichiara una routine denominata `applyFormat`.  Essa specifica inoltre che la routine `applyFormat` è di tipo `Public` e di conseguenza qualsiasi codice possa farvi riferimento può chiamarla.  
   
@@ -58,11 +58,11 @@ Le istruzioni in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/li
   
  È possibile assegnare un valore iniziale a una variabile come parte della sua dichiarazione, come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrStatements#81](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_2.vb)]  
+ [!code-vb[VbVbalrStatements#81](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_2.vb)]  
   
  Se la variabile è una variabile oggetto, è possibile creare in modo esplicito un'istanza della classe di appartenenza durante la dichiarazione utilizzando la parola chiave [New Operator](../../../visual-basic/language-reference/operators/new-operator.md), come illustrato di seguito:  
   
- [!code-vb[VbVbalrStatements#82](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_3.vb)]  
+ [!code-vb[VbVbalrStatements#82](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_3.vb)]  
   
  Tenere presente che il valore iniziale specificato in un'istruzione di dichiarazione non viene assegnato alla variabile finché l'esecuzione non raggiunge la relativa istruzione di dichiarazione.  Fino ad allora, la variabile contiene il valore predefinito per il suo tipo di dati.  
   
@@ -71,7 +71,7 @@ Le istruzioni in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/li
   
  L'esempio illustrato di seguito utilizza una `If...Then...Else` struttura di controllo per eseguire blocchi di codice diversi basati sul valore di una variabile.  Dentro ogni blocco di codice, un ciclo `For...Next` viene eseguito un numero di volte specificato.  
   
- [!code-vb[VbVbalrStatements#83](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_4.vb)]  
+ [!code-vb[VbVbalrStatements#83](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_4.vb)]  
   
  L'istruzione `If` nell'esempio precedente verifica il valore del parametro `clockwise`.  Se il valore è `True`, chiama il metodo `spinClockwise` di `aWidget`.  Se il valore è `False`, chiama il metodo `spinCounterClockwise` di `aWidget`.  La struttura di controllo `If...Then...Else` termina con `End If`.  
   
@@ -80,7 +80,7 @@ Le istruzioni in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/li
 ## Istruzioni di assegnazione  
  Le istruzioni di assegnazione consentono di eseguire operazioni di assegnazione, ovvero di ottenere il valore alla destra dell'operatore di assegnazione \(`=`\) e di archiviarlo nell'elemento a sinistra, come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrStatements#73](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_5.vb)]  
+ [!code-vb[VbVbalrStatements#73](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_5.vb)]  
   
  Nel precedente esempio l'istruzione di assegnazione viene utilizzata per archiviare il valore letterale 42 nella variabile `v`.  
   
@@ -89,35 +89,35 @@ Le istruzioni in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/li
   
  Il valore a destra dell'operatore di assegnazione viene generato da un'espressione che può essere costituita da una combinazione qualsiasi di valori letterali, costanti, variabili, proprietà, elementi matrice, altre espressioni o chiamate di funzione.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrStatements#74](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_6.vb)]  
+ [!code-vb[VbVbalrStatements#74](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_6.vb)]  
   
  Nell'esempio precedente viene aggiunto il valore contenuto nella variabile `y` al valore incluso nella variabile `z`, quindi viene aggiunto il valore restituito dalla chiamata alla funzione `findResult`.  Il valore totale dell'espressione viene quindi archiviato nella variabile `x`.  
   
 ### Tipi di dati nelle istruzioni di assegnazione  
  Oltre ai valori numerici, l'operatore di assegnazione può assegnare i valori `String` come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrStatements#75](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_7.vb)]  
+ [!code-vb[VbVbalrStatements#75](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_7.vb)]  
   
  È anche possibile assegnare i valori `Boolean` mediante un valore letterale `Boolean` o un'espressione `Boolean` come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrStatements#76](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_8.vb)]  
+ [!code-vb[VbVbalrStatements#76](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_8.vb)]  
   
  In modo simile, è possibile assegnare i valori appropriati agli elementi di programmazione del tipo di dati `Char`, `Date` oppure `Object`.  È infine possibile assegnare un'istanza oggetto a un elemento dichiarato come classe da cui viene creata l'istanza.  
   
 ### Istruzioni di assegnazione composta  
  Le *istruzioni di assegnazione composta* consentono di eseguire un'operazione su un'espressione prima che questa venga assegnata all'elemento di programmazione.  Nell'esempio seguente viene illustrato uno di questi operatori, `+=`, con il quale il valore della variabile alla sinistra dell'operatore viene incrementato del valore restituito dall'espressione alla destra:  
   
- [!code-vb[VbVbalrStatements#77](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_9.vb)]  
+ [!code-vb[VbVbalrStatements#77](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_9.vb)]  
   
  Nell'esempio precedente viene aggiunto 1 al valore di `n`, quindi il nuovo valore viene archiviato in `n`.  È un'abbreviazione equivalente alla seguente istruzione:  
   
- [!code-vb[VbVbalrStatements#78](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_10.vb)]  
+ [!code-vb[VbVbalrStatements#78](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_10.vb)]  
   
  Gli operatori di questo tipo consentono di eseguire una serie di operazioni di assegnazione composte.  Per un elenco completo e ulteriori informazioni su questi operatori, vedere [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md).  
   
  Infine, l'operatore di assegnazione di concatenazione \(`&=`\) è utile per aggiungere una stringa alla fine di stringhe già esistenti, come illustrato nell'esempio seguente:  
   
- [!code-vb[VbVbalrStatements#79](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_11.vb)]  
+ [!code-vb[VbVbalrStatements#79](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_11.vb)]  
   
 ### Conversioni di tipi nelle istruzioni di assegnazione  
  A una variabile, proprietà o un elemento matrice è necessario assegnare un valore di un tipo di dati appropriato all'elemento di destinazione.  Generalmente è opportuno provare a generare un valore dello stesso tipo di dati di quello dell'elemento di destinazione.  Tuttavia, durante l'assegnazione, è possibile convertire alcuni tipi in altri tipi.  
@@ -129,14 +129,14 @@ Le istruzioni in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/li
 ## Inserimento di più istruzioni su una riga  
  È possibile inserire sulla stessa riga più istruzioni, separate dal carattere due punti \(:\)`:`.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrStatements#70](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_12.vb)]  
+ [!code-vb[VbVbalrStatements#70](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_12.vb)]  
   
  Sebbene in alcune occasioni questa forma di sintassi possa risultare comoda, rende il codice difficile da leggere e gestire.  Si raccomanda pertanto di mantenere una sola istruzione per riga.  
   
 ## Continuazione di un'istruzione su più righe  
  Un'istruzione generalmente rientra in una sola riga, ma in caso contrario è possibile continuarla sulla riga successiva utilizzando una sequenza di continuazione della riga, costituita da uno spazio seguito da un carattere di sottolineatura \(`_`\) a sua volta seguito da un ritorno a capo.  Nell'esempio seguente, l'istruzione eseguibile `MsgBox` continua su due righe.  
   
- [!code-vb[VbVbalrStatements#71](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_13.vb)]  
+ [!code-vb[VbVbalrStatements#71](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_13.vb)]  
   
 ### Continuazione di riga implicita  
  In molti casi è possibile continuare un'istruzione sulla riga consecutiva successiva senza utilizzare il carattere di sottolineatura \(\_\).  Nella tabella seguente vengono elencati gli elementi della sintassi che consentono di continuare in modo implicito l'istruzione sulla riga di codice successiva.  
@@ -144,27 +144,27 @@ Le istruzioni in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/li
 |||  
 |-|-|  
 |Elemento della sintassi|Esempio|  
-|Dopo una virgola \(`,`\).|[!code-vb[VbVbalrLineContinuation#1](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_14.vb)]|  
-|Dopo una parentesi aperta \(`(`\) o prima di una parentesi chiusa \(`)`\).|[!code-vb[VbVbalrLineContinuation#2](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_15.vb)]|  
-|Dopo una parentesi graffa aperta \(`{`\) o prima di una parentesi graffa chiusa \(`}`\).|[!code-vb[VbVbalrLineContinuation#3](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_16.vb)]<br /><br /> Per ulteriori informazioni, vedere [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) o [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).|  
-|Dopo un'espressione incorporata aperta \(`<%=`\) o prima della chiusura di un'espressione incorporata \(`%>`\) all'interno di un valore letterale XML.|[!code-vb[VbVbalrLineContinuation#4](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_17.vb)]<br /><br /> Per ulteriori informazioni, vedere [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md).|  
-|Dopo l'operatore di concatenazione \(`&`\).|[!code-vb[VbVbcnConventions#9](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_18.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
-|Dopo gli operatori di assegnazione \(`=`, `&=`, `:=`, `+=`, `-=`, `*=`, `/=`, `\=`, `^=`, `<<=`, `>>=`\).|[!code-vb[VbVbalrLineContinuation#5](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_19.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
-|Dopo gli operatori binari \(`+`, `-`, `/`, `*`, `Mod`, `<>`, `<`, `>`, `<=`, `>=`, `^`, `>>`, `<<`, `And`, `AndAlso`, `Or`, `OrElse`, `Like`, `Xor`\) all'interno di un'espressione.|[!code-vb[VbVbalrLineContinuation#7](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_20.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
-|Dopo gli operatori `Is` e `IsNot`.|[!code-vb[VbVbalrLineContinuation#8](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_21.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
-|Dopo un carattere qualificatore di membro \(`.`\) e prima del nome del membro.  È tuttavia necessario includere un carattere di continuazione di riga \(\_\) dopo un carattere qualificatore di membro quando si utilizza l'istruzione `With` o si forniscono valori nell'elenco di inizializzazione per un tipo.  Prendere in considerazione l'interruzione della riga dopo l'operatore di assegnazione \(ad esempio, `=`\) quando si utilizzano istruzioni `With` o elenchi di inizializzazione degli oggetti.|[!code-vb[VbVbalrLineContinuation#5](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_19.vb)]<br />[!code-vb[VbVbalrLineContinuation#14](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_22.vb)]<br /><br /> Per ulteriori informazioni, vedere [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md) o [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md).|  
-|Dopo un qualificatore della proprietà axis XML \(`.` o `.@` o `...`\).  È tuttavia necessario includere un carattere di continuazione di riga \(\_\) quando si specifica un qualificatore di membro se si utilizza la parola chiave `With`.|[!code-vb[VbVbalrLineContinuation#9](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_23.vb)]<br /><br /> Per ulteriori informazioni, vedere [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md).|  
-|Dopo un segno di minore \(\<\) o prima di un segno di maggiore \(`>`\) quando si specifica un attributo.  Anche dopo un segno di maggiore \(`>`\) quando si specifica un attributo.  È tuttavia necessario includere un carattere di continuazione di riga \(\_\) quando si specificano attributi a livello di assembly o di modulo.|[!code-vb[VbVbalrLineContinuation#10](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_24.vb)]<br /><br /> Per ulteriori informazioni, vedere [Attributi](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md).|  
-|Prima e dopo gli operatori di query \(`Aggregate`, `Distinct`, `From`, `Group By`, `Group Join`, `Join`, `Let`, `Order By`, `Select`, `Skip`, `Skip While`, `Take`, `Take While`, `Where`, `In`, `Into`, `On`, `Ascending` e `Descending`\).  Non è possibile interrompere una riga tra le parole chiave degli operatori di query costituiti da più parole chiave \(`Order By`, `Group Join`, `Take While` e `Skip While`\).|[!code-vb[VbVbalrLineContinuation#11](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_25.vb)]<br /><br /> Per ulteriori informazioni, vedere [Queries](../../../visual-basic/language-reference/queries/queries.md).|  
-|Dopo la parola chiave `In` in un'istruzione `For Each`.|[!code-vb[VbVbalrLineContinuation#12](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_26.vb)]<br /><br /> Per ulteriori informazioni, vedere [Istruzione For Each...Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md).|  
-|Dopo la parola chiave `From` in un inizializzatore di raccolta.|[!code-vb[VbVbalrLineContinuation#13](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/statements_27.vb)]<br /><br /> Per ulteriori informazioni, vedere [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).|  
+|Dopo una virgola \(`,`\).|[!code-vb[VbVbalrLineContinuation#1](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_14.vb)]|  
+|Dopo una parentesi aperta \(`(`\) o prima di una parentesi chiusa \(`)`\).|[!code-vb[VbVbalrLineContinuation#2](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_15.vb)]|  
+|Dopo una parentesi graffa aperta \(`{`\) o prima di una parentesi graffa chiusa \(`}`\).|[!code-vb[VbVbalrLineContinuation#3](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_16.vb)]<br /><br /> Per ulteriori informazioni, vedere [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md) o [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).|  
+|Dopo un'espressione incorporata aperta \(`<%=`\) o prima della chiusura di un'espressione incorporata \(`%>`\) all'interno di un valore letterale XML.|[!code-vb[VbVbalrLineContinuation#4](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_17.vb)]<br /><br /> Per ulteriori informazioni, vedere [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md).|  
+|Dopo l'operatore di concatenazione \(`&`\).|[!code-vb[VbVbcnConventions#9](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_18.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
+|Dopo gli operatori di assegnazione \(`=`, `&=`, `:=`, `+=`, `-=`, `*=`, `/=`, `\=`, `^=`, `<<=`, `>>=`\).|[!code-vb[VbVbalrLineContinuation#5](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_19.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
+|Dopo gli operatori binari \(`+`, `-`, `/`, `*`, `Mod`, `<>`, `<`, `>`, `<=`, `>=`, `^`, `>>`, `<<`, `And`, `AndAlso`, `Or`, `OrElse`, `Like`, `Xor`\) all'interno di un'espressione.|[!code-vb[VbVbalrLineContinuation#7](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_20.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
+|Dopo gli operatori `Is` e `IsNot`.|[!code-vb[VbVbalrLineContinuation#8](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_21.vb)]<br /><br /> Per ulteriori informazioni, vedere [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md).|  
+|Dopo un carattere qualificatore di membro \(`.`\) e prima del nome del membro.  È tuttavia necessario includere un carattere di continuazione di riga \(\_\) dopo un carattere qualificatore di membro quando si utilizza l'istruzione `With` o si forniscono valori nell'elenco di inizializzazione per un tipo.  Prendere in considerazione l'interruzione della riga dopo l'operatore di assegnazione \(ad esempio, `=`\) quando si utilizzano istruzioni `With` o elenchi di inizializzazione degli oggetti.|[!code-vb[VbVbalrLineContinuation#5](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_19.vb)]<br />[!code-vb[VbVbalrLineContinuation#14](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_22.vb)]<br /><br /> Per ulteriori informazioni, vedere [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md) o [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md).|  
+|Dopo un qualificatore della proprietà axis XML \(`.` o `.@` o `...`\).  È tuttavia necessario includere un carattere di continuazione di riga \(\_\) quando si specifica un qualificatore di membro se si utilizza la parola chiave `With`.|[!code-vb[VbVbalrLineContinuation#9](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_23.vb)]<br /><br /> Per ulteriori informazioni, vedere [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md).|  
+|Dopo un segno di minore \(\<\) o prima di un segno di maggiore \(`>`\) quando si specifica un attributo.  Anche dopo un segno di maggiore \(`>`\) quando si specifica un attributo.  È tuttavia necessario includere un carattere di continuazione di riga \(\_\) quando si specificano attributi a livello di assembly o di modulo.|[!code-vb[VbVbalrLineContinuation#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_24.vb)]<br /><br /> Per ulteriori informazioni, vedere [Attributi](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md).|  
+|Prima e dopo gli operatori di query \(`Aggregate`, `Distinct`, `From`, `Group By`, `Group Join`, `Join`, `Let`, `Order By`, `Select`, `Skip`, `Skip While`, `Take`, `Take While`, `Where`, `In`, `Into`, `On`, `Ascending` e `Descending`\).  Non è possibile interrompere una riga tra le parole chiave degli operatori di query costituiti da più parole chiave \(`Order By`, `Group Join`, `Take While` e `Skip While`\).|[!code-vb[VbVbalrLineContinuation#11](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_25.vb)]<br /><br /> Per ulteriori informazioni, vedere [Queries](../../../visual-basic/language-reference/queries/queries.md).|  
+|Dopo la parola chiave `In` in un'istruzione `For Each`.|[!code-vb[VbVbalrLineContinuation#12](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_26.vb)]<br /><br /> Per ulteriori informazioni, vedere [Istruzione For Each...Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md).|  
+|Dopo la parola chiave `From` in un inizializzatore di raccolta.|[!code-vb[VbVbalrLineContinuation#13](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/statements_27.vb)]<br /><br /> Per ulteriori informazioni, vedere [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).|  
   
 ## Aggiunta di commenti  
  Il codice sorgente non sempre è di facile interpretazione, persino per il programmatore che lo ha scritto.  Per aiutare a documentare il codice, pertanto, molti programmatori utilizzano deliberatamente commenti incorporati.  I commenti incorporati nel codice possono illustrare una routine o una particolare istruzione agli utenti.  In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] i commenti vengono ignorati durante la compilazione e non influiscono sul codice compilato.  
   
  Le righe relative ai commenti iniziano con un apostrofo \(`'`\) o un'istruzione `REM` seguita da uno spazio.  È possibile aggiungere i commenti nella posizione desiderata all'interno del codice, eccetto che in una stringa.  Per aggiungere un commento a un'istruzione, inserire un apostrofo o `REM` dopo l'istruzione, seguito dal commento.  I commenti possono essere inseriti anche su una riga separata.  Nell'esempio che segue vengono illustrate queste possibilità.  
   
- [!code-vb[VbVbalrStatements#72](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/statements_28.vb)]  
+ [!code-vb[VbVbalrStatements#72](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/statements_28.vb)]  
   
 ## Controllo degli errori di compilazione  
  Se, dopo aver digitato una riga di codice, essa viene visualizzata in blu con una sottolineatura ondulata, talvolta accompagnata da un messaggio di errore, nell'istruzione è presente un errore di sintassi.  È necessario individuare l'errore, scorrendo ad esempio l'elenco delle attività oppure posizionandosi su di esso con il puntatore del mouse e leggendo il testo del messaggio, e quindi correggerlo.  Il programma potrà essere compilato correttamente solo dopo che gli errori di sintassi del codice saranno stati corretti.  

@@ -30,12 +30,12 @@ In alcuni casi, è utile disporre dei dati relativi ai caratteri e alle relative
 ## Esempio  
  Nell'esempio, viene descritto come suddividere una stringa in una matrice `Char` e come suddividere una stringa in una matrice `String` dei relativi caratteri di testo Unicode.  Il motivo di questa distinzione risiede nel fatto che i caratteri di testo Unicode possono essere costituiti da due o più caratteri `Char`, quali una coppia di surrogati o una sequenza di caratteri in combinazione.  Per ulteriori informazioni, vedere <xref:System.Globalization.TextElementEnumerator> e lo standard Unicode all'indirizzo http:\/\/www.unicode.org.  
   
- [!code-vb[VbVbalrStrings#75](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-a-string-_2_1.vb)]  
+ [!code-vb[VbVbalrStrings#75](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-a-string-to-an-array-of-characters_1.vb)]  
   
 ## Esempio  
  Suddividere una stringa nei relativi caratteri di testo Unicode è un'operazione più complessa, ma è necessaria per ottenere informazioni sulla rappresentazione visiva della stringa.  In questo esempio, il metodo <xref:System.Globalization.StringInfo.SubstringByTextElements%2A> viene utilizzato per ottenere informazioni sui caratteri di testo Unicode che costituiscono una stringa.  
   
- [!code-vb[VbVbalrStrings#76](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-convert-a-string-_2_2.vb)]  
+ [!code-vb[VbVbalrStrings#76](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-convert-a-string-to-an-array-of-characters_2.vb)]  
   
 ## Vedere anche  
  <xref:System.String.Chars%2A>   

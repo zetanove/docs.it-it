@@ -51,7 +51,7 @@ Quando si definisce una classe o uno struct, si stabilisce se abbia senso creare
 ## Esempio  
  Nell'esempio seguente viene illustrato come implementare l'uguaglianza di valori in una classe \(tipo di riferimento\).  
   
- [!code-cs[csProgGuideStatements#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-value-equa_1.cs)]  
+ [!code-cs[csProgGuideStatements#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-value-equality-for-a-type_1.cs)]  
   
  Nelle classi \(tipi di riferimento\), l'implementazione predefinita di entrambi i metodi <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> esegue un confronto di uguaglianza dei riferimenti, non un controllo dell'uguaglianza dei valori.  Un responsabile dell'implementazione esegue l'override del metodo virtuale allo scopo di assegnargli la semantica di uguaglianza dei valori.  
   
@@ -60,7 +60,7 @@ Quando si definisce una classe o uno struct, si stabilisce se abbia senso creare
 ## Esempio  
  Nell'esempio seguente viene illustrato come implementare l'uguaglianza di valori in uno struct \(tipo di valore\).  
   
- [!code-cs[csProgGuideStatements#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-define-value-equa_2.cs)]  
+ [!code-cs[csProgGuideStatements#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-define-value-equality-for-a-type_2.cs)]  
   
  Per gli struct, l'implementazione predefinita di <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> \(la versione sottoposta a override in <xref:System.ValueType?displayProperty=fullName>\) esegue un controllo dell'uguaglianza dei valori utilizzando la reflection per confrontare i valori di ogni campo nel tipo.  Un responsabile dell'implementazione esegue l'override del metodo `Equals` virtuale in uno struct allo scopo di fornire un mezzo più efficiente per eseguire il controllo dell'uguaglianza dei valori e facoltativamente basare il confronto su alcuni sottoinsiemi del campo o delle proprietà dello struct.  
   

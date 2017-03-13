@@ -31,7 +31,7 @@ int i = 10; //explicitly typed
 ## Esempio  
  Nell'esempio seguente vengono illustrate due espressioni di query.  Nella prima espressione, l'utilizzo di `var` è consentito, ma non necessario, perché il tipo del risultato della query può essere dichiarato in modo esplicito come `IEnumerable<string>`.  Tuttavia, nella seconda espressione, `var` deve essere utilizzato, perché il risultato è una raccolta di tipi anonimi e il nome di tale tipo non è accessibile tranne che al compilatore stesso.  Si noti che nell'esempio n. 2, anche la variabile di iterazione `foreach``item` deve essere implicitamente tipizzata.  
   
- [!code-cs[csrefKeywordsTypes#18](../../../csharp/language-reference/keywords/codesnippet/csharp/var_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#18](../../../csharp/language-reference/keywords/codesnippet/CSharp/var_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

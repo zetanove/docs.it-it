@@ -58,7 +58,7 @@ Definisce le costanti del compilatore condizionali.
 ## Esempio  
  Nel codice seguente sono definite e usate due costanti di compilazione condizionale.  
   
- [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/visualbasic/define_1.vb)]  
+ [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/define_1.vb)]  
   
 ## Vedere anche  
  [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   

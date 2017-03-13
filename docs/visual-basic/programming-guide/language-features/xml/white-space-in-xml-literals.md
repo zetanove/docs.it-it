@@ -44,7 +44,7 @@ Il compilatore [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/l
 ## Esempi  
  Nell'esempio seguente sono presenti due elementi XML, uno esterno e uno interno.  Entrambi gli elementi contengono spazi vuoti nel contenuto di testo.  Lo spazio vuoto nell'elemento esterno è non significativo perché questo contiene solo spazi vuoti e un elemento XML.  Lo spazio vuoto nell'elemento interno è significativo perché questo contiene spazi vuoti e testo.  
   
- [!code-vb[VbXMLSamples#29](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/white-space-in-xml-liter_1.vb)]  
+ [!code-vb[VbXMLSamples#29](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/white-space-in-xml-literals_1.vb)]  
   
  Quando viene eseguito questo codice viene visualizzato il seguente testo.  
   

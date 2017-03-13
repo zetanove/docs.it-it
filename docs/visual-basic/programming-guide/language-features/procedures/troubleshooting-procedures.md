@@ -50,7 +50,7 @@ In questa pagina sono elencati alcuni problemi comuni che possono verificarsi du
   
  **Approccio corretto:** per modificare gli elementi di una matrice che deve essere restituita, è necessario definire una matrice interna come variabile locale.  Nell'esempio riportato di seguito la compilazione viene eseguita senza errori.  
   
- [!code-vb[VbVbcnProcedures#66](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#66](./codesnippet/VisualBasic/troubleshooting-procedures_1.vb)]  
   
 ## Argomento non modificato dalla chiamata di routine  
  Per consentire a una routine di modificare un elemento di programmazione sottostante a un argomento nel codice chiamante, è necessario passare tale elemento per riferimento.  Tuttavia, una routine può accedere agli elementi di un argomento tipo di riferimento anche se vengono passati per valore.  
@@ -61,13 +61,13 @@ In questa pagina sono elencati alcuni problemi comuni che possono verificarsi du
   
  Nell'esempio riportato di seguito vengono definite due routine che accettano una variabile di matrice per valore e operano sui relativi elementi.  La routine `increase` aggiunge semplicemente uno a ogni elemento.  La routine `replace` assegna una nuova matrice al parametro `a()`, quindi aggiunge uno a ogni elemento.  Tuttavia, la riassegnazione non ha effetto sulla variabile di matrice sottostante del codice chiamante in quanto `a()` viene dichiarato `ByVal`.  
   
- [!code-vb[VbVbcnProcedures#35](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#35](./codesnippet/VisualBasic/troubleshooting-procedures_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#38](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_3.vb)]  
+ [!code-vb[VbVbcnProcedures#38](./codesnippet/VisualBasic/troubleshooting-procedures_3.vb)]  
   
  Nell'esempio riportato di seguito vengono effettuate chiamate a `increase` e `replace`.  
   
- [!code-vb[VbVbcnProcedures#37](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_4.vb)]  
+ [!code-vb[VbVbcnProcedures#37](./codesnippet/VisualBasic/troubleshooting-procedures_4.vb)]  
   
  Alla prima chiamata di `MsgBox` viene visualizzato "After increase\(n\): 11, 21, 31, 41".  Poiché `n` è un tipo di riferimento, `increase` può modificarne i membri, anche se viene passato `ByVal`.  
   
@@ -75,7 +75,7 @@ In questa pagina sono elencati alcuni problemi comuni che possono verificarsi du
   
  **Approccio corretto:** per modificare un elemento variabile sottostante, è necessario passarlo per riferimento.  Nell'esempio riportato di seguito viene illustrata la modifica apportata alla dichiarazione di `replace`, che consente alla routine di sostituire una matrice con un'altra nel codice chiamante.  
   
- [!code-vb[VbVbcnProcedures#64](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_5.vb)]  
+ [!code-vb[VbVbcnProcedures#64](./codesnippet/VisualBasic/troubleshooting-procedures_5.vb)]  
   
 ## Impossibile definire un overload  
  Se si desidera definire una versione di overload di una routine, è necessario utilizzare lo stesso nome con una firma differente.  Se il compilatore non è in grado di distinguere la dichiarazione da un overload con la stessa firma, viene generato un errore.  
@@ -117,9 +117,9 @@ In questa pagina sono elencati alcuni problemi comuni che possono verificarsi du
   
  Nell'esempio riportato di seguito viene illustrato il processo di risoluzione dell'overload.  
   
- [!code-vb[VbVbcnProcedures#62](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_6.vb)]  
+ [!code-vb[VbVbcnProcedures#62](./codesnippet/VisualBasic/troubleshooting-procedures_6.vb)]  
   
- [!code-vb[VbVbcnProcedures#63](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_7.vb)]  
+ [!code-vb[VbVbcnProcedures#63](./codesnippet/VisualBasic/troubleshooting-procedures_7.vb)]  
   
  Durante la prima chiamata il compilatore elimina il primo overload poiché il tipo del primo argomento \(`Short`\) esegue la conversione verso il tipo di dati più piccolo \(`Byte`\) del parametro corrispondente.  Viene quindi eliminato il terzo overload poiché ogni tipo di argomento del secondo overload \(`Short` e `Single`\) esegue la conversione verso il tipo di dati più grande corrispondente del terzo overload \(`Integer` e `Single`\).  Il secondo overload richiede un minore ampliamento dei dati e viene quindi utilizzato dal compilatore per la chiamata.  
   
@@ -127,7 +127,7 @@ In questa pagina sono elencati alcuni problemi comuni che possono verificarsi du
   
  **Approccio corretto:** per chiamare una routine di overload senza generare ambiguità, è necessario utilizzare la [Funzione CType](../../../../visual-basic/language-reference/functions/ctype-function.md) per fare in modo che i tipi di dati degli argomenti corrispondano ai tipi dei parametri.  Nell'esempio riportato di seguito viene illustrata una chiamata a `z` che forza la risoluzione nel secondo overload.  
   
- [!code-vb[VbVbcnProcedures#65](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/troubleshooting-procedures_8.vb)]  
+ [!code-vb[VbVbcnProcedures#65](./codesnippet/VisualBasic/troubleshooting-procedures_8.vb)]  
   
 ### Risoluzione dell'overload mediante gli argomenti Optional e ParamArray  
  Se due overload di una routine hanno firme identiche ma l'ultimo parametro di uno di essi è dichiarato come [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) e l'altro come [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md), il compilatore risolve una chiamata a tale routine in base al grado di corrispondenza maggiore.  Per ulteriori informazioni, vedere [Overload Resolution](../../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md).  

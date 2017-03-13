@@ -93,7 +93,7 @@ End Set
 ## Esempio  
  Nell'esempio seguente l'istruzione `Set` viene utilizzata per impostare il valore di una proprietà.  
   
- [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/set-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/set-statement_1.vb)]  
   
 ## Vedere anche  
  [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)   

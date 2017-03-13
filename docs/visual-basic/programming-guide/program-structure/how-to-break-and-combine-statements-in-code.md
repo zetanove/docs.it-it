@@ -49,7 +49,7 @@ Durante la scrittura del codice, vengono talvolta create istruzioni molto lunghe
   
      Nell'esempio che segue l'istruzione viene suddivisa in quattro righe con caratteri di continuazione di riga alla fine di tutte le righe tranne l'ultima.  
   
-     [!code-vb[VbVbcnConventions#20](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/how-to-break-and-combine_1.vb)]  
+     [!code-vb[VbVbcnConventions#20](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_1.vb)]  
   
      L'utilizzo di questa sequenza semplifica la lettura del codice, sia online che in versione stampata.  
   
@@ -65,7 +65,7 @@ Durante la scrittura del codice, vengono talvolta create istruzioni molto lunghe
   
 -   Separare le istruzioni con due punti \(`:`\), come nell'esempio seguente:  
   
-     [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/how-to-break-and-combine_2.vb)]  
+     [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
   
 ## Vedere anche  
  [Struttura del programma e convenzioni di scrittura del codice](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)   

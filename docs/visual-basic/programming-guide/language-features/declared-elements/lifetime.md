@@ -67,7 +67,7 @@ La *durata* di un elemento dichiarato è il periodo di tempo durante il quale l'
  Nell'esempio riportato di seguito viene dichiarata una variabile con la parola chiave [Static](../../../../visual-basic/language-reference/modifiers/static.md).  La parola chiave `Dim` non è necessaria quando l'[Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) utilizza un modificatore quale `Static`.  
   
 ### Codice  
- [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/visualbasic/lifetime_1.vb)]  
+ [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)]  
   
 ### Commenti  
  Nell'esempio precedente la variabile `applesSold` continuerà a esistere anche dopo che la routine `runningTotal` avrà restituito un valore al codice chiamante.  Alla successiva chiamata di `runningTotal`, `applesSold` conserverà il valore precedentemente calcolato.  

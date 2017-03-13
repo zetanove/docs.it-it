@@ -34,7 +34,7 @@ I distruttori sono utilizzati per distruggere istanze di classi.
   
  Di seguito è riportato un esempio di dichiarazione di un distruttore per la classe `Car`:  
   
- [!code-cs[csProgGuideObjects#86](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/destructors_1.cs)]  
+ [!code-cs[csProgGuideObjects#86](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_1.cs)]  
   
  Il distruttore chiama in modo implicito il metodo <xref:System.Object.Finalize%2A> sulla classe di base dell'oggetto.  Il codice del distruttore riportato sopra viene quindi convertito implicitamente nel codice seguente:  
   
@@ -78,7 +78,7 @@ protected override void Finalize()
 ## Esempio  
  Nell'esempio riportato di seguito vengono create tre classi che costituiscono una catena di ereditarietà.  La classe `First` è la classe base, `Second` è derivata da `First` e `Third` è derivata da `Second`.  Per tutte e tre le classi sono definiti dei distruttori.  In `Main()` viene creata un'istanza della classe più derivata.  Quando il programma viene eseguito, i distruttori delle tre classi vengono chiamati automaticamente e in ordine, dalla classe più derivata alla meno derivata.  
   
- [!code-cs[csProgGuideObjects#85](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/destructors_2.cs)]  
+ [!code-cs[csProgGuideObjects#85](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/destructors_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

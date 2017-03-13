@@ -48,7 +48,7 @@ Quando si effettua una chiamata a una routine, dopo il nome di quest'ultima vien
   
      Nell'esempio seguente viene chiamata la funzione <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  
   
-     [!code-vb[VbVbcnProcedures#34](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-pass-arguments-to_1.vb)]  
+     [!code-vb[VbVbcnProcedures#34](./codesnippet/VisualBasic/how-to-pass-arguments-to-a-procedure_1.vb)]  
   
      Nell'esempio precedente viene fornito il primo argomento obbligatorio, che è la stringa di messaggio da visualizzare.  Viene omesso un argomento relativo al secondo parametro facoltativo, che specifica i pulsanti da visualizzare nella finestra di messaggio.  Poiché la chiamata non fornisce alcun valore, `MsgBox` utilizza il valore predefinito `MsgBoxStyle.OKOnly`, che visualizza solo un pulsante **OK**.  
   

@@ -80,12 +80,12 @@ number1 Mod number2
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `Mod` viene utilizzato per dividere due numeri e restituire solo il resto.  Se uno dei numeri è a virgola mobile, il risultato sarà il resto espresso con un numero a virgola mobile.  
   
- [!code-vb[VbVbalrOperators#31](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/mod-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#31](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/mod-operator_1.vb)]  
   
 ## Esempio  
  Nell''esempio riportato di seguito viene illustrata la potenziale imprecisione degli operandi a virgola mobile.  Nella prima istruzione gli operandi sono `Double` e 0.2 è una frazione binaria ripetuta all'infinito con un valore memorizzato pari a 0.20000000000000001.  Nella seconda istruzione il carattere di tipo letterale `D` impone che entrambi gli operandi siano `Decimal` e la rappresentazione di 0.2 è precisa.  
   
- [!code-vb[VbVbalrOperators#32](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/mod-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#32](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/mod-operator_2.vb)]  
   
 ## Vedere anche  
  <xref:Microsoft.VisualBasic.Conversion.Int%2A>   

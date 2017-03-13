@@ -70,17 +70,17 @@ Gli operatori di confronto consentono di confrontare due espressioni e di ottene
 ## Confronto di oggetti  
  [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] confronta due variabili di riferimento a oggetti mediante gli operatori [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md) e [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md).  È possibile utilizzare uno di questi operatori per stabilire se due variabili di riferimento si riferiscono alla stessa istanza di un oggetto.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrOperators#65](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#65](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_1.vb)]  
   
  Nell'esempio precedente, `x Is y` restituisce `True`, perché entrambe le variabili fanno riferimento alla stessa istanza.  Si confronti questo risultato con il seguente esempio.  
   
- [!code-vb[VbVbalrOperators#66](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_2.vb)]  
+ [!code-vb[VbVbalrOperators#66](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_2.vb)]  
   
  Nell'esempio precedente, `x Is y` restituisce `False` perché, sebbene le variabili si riferiscano a oggetti dello stesso tipo, fanno riferimento a istanze diverse di quel tipo.  
   
  Quando si desidera effettuare un controllo su due oggetti che non puntano alla stessa istanza, l'operatore `IsNot` consente di evitare una combinazione grammaticalmente impropria di `Not` e `Is`.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrOperators#67](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_3.vb)]  
+ [!code-vb[VbVbalrOperators#67](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_3.vb)]  
   
  Nell'esempio precedente, `If a IsNot b` è equivalente a `If Not a Is b`.  
   
@@ -91,7 +91,7 @@ Gli operatori di confronto consentono di confrontare due espressioni e di ottene
   
  Quando l'oggetto `typename` specifica un tipo di interfaccia, l'espressione `TypeOf`...`Is` restituisce `True` se l'oggetto implementa il tipo di interfaccia.  Quando l'oggetto `typename` è un tipo di classe, l'espressione restituisce `True` se l'oggetto è un'istanza della classe specificata o di una classe da essa derivata.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrOperators#68](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_4.vb)]  
+ [!code-vb[VbVbalrOperators#68](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_4.vb)]  
   
  Nell'esempio precedente, l'espressione `TypeOf x Is Control` restituisce `True` perché il tipo di `x` è `Button`, che eredita da `Control`.  
   

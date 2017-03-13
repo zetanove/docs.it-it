@@ -155,7 +155,7 @@ result = string Like pattern
 ## Esempio  
  Nell'esempio riportato di seguito vengono illustrati diversi utilizzi degli operatori di confronto relazionali che consentono di confrontare espressioni.  Gli operatori di confronto relazionali restituiscono un risultato `Boolean` che indica se l'espressione specificata è `True`.  Quando si applicano alle stringhe gli operatori `>` e `<`, il confronto viene eseguito utilizzando il normale criterio di ordinamento alfabetico delle stringhe,  che può dipendere dalle impostazioni locali.  La distinzione tra maiuscole e minuscole, ad esempio, dipende dall'impostazione di [Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md).  
   
- [!code-vb[VbVbalrOperators#1](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/comparison-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#1](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/comparison-operators_1.vb)]  
   
  Nell'esempio precedente il primo confronto restituisce `False`, mentre gli altri confronti restituiscono `True`.  
   

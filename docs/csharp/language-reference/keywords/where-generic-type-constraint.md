@@ -27,17 +27,17 @@ In una definizione di tipo generico, la clausola `where` viene utilizzata per sp
   
  Oltre ai vincoli di interfaccia, una clausola `where` può comprendere un vincolo di classe base, mediante cui si stabilisce che un tipo deve disporre della classe specificata come classe base o essere esso stesso tale classe, per essere utilizzato come argomento di tipo per tale tipo generico.  Se si utilizza un vincolo di questo tipo, è necessario inserirlo prima di qualsiasi altro vincolo su tale parametro di tipo.  
   
- [!code-cs[csrefKeywordsContextual#6](../../../csharp/language-reference/keywords/codesnippet/csharp/where-generic-type-const_1.cs)]  
+ [!code-cs[csrefKeywordsContextual#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_1.cs)]  
   
  La clausola `where` può anche includere un vincolo di costruttore.  È possibile creare un'istanza di un parametro di tipo utilizzando il nuovo operatore; tuttavia, per eseguire questa operazione è necessario impostare sul parametro di tipo il vincolo di costruttore, `new()`.  Il [vincolo new\(\)](../../../csharp/language-reference/keywords/new-constraint.md) comunica al compilatore che ogni argomento di tipo fornito deve disporre di un costruttore senza parametri, o predefinito, accessibile.  Di seguito è riportato un esempio:  
   
- [!code-cs[csrefKeywordsContextual#7](../../../csharp/language-reference/keywords/codesnippet/csharp/where-generic-type-const_2.cs)]  
+ [!code-cs[csrefKeywordsContextual#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_2.cs)]  
   
  Il vincolo `new()` viene visualizzato per ultimo nella clausola `where`.  
   
  Con i parametri a più tipi, utilizzare una clausola `where` per ogni parametro di tipo, ad esempio:  
   
- [!code-cs[csrefKeywordsContextual#8](../../../csharp/language-reference/keywords/codesnippet/csharp/where-generic-type-const_3.cs)]  
+ [!code-cs[csrefKeywordsContextual#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-generic-type-constraint_3.cs)]  
   
  È inoltre possibile associare vincoli a parametri di tipo di metodi generici, nel modo seguente:  
   

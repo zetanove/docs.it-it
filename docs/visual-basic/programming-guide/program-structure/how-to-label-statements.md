@@ -41,7 +41,7 @@ I blocchi di istruzioni sono costituiti da righe di codice delimitate dai due pu
   
      Le due righe di codice riportate di seguito, ad esempio, sono contrassegnate rispettivamente dalle etichette `Jump` e `120`.  
   
-     [!code-vb[VbVbalrStatements#708](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/how-to-label-statements_1.vb)]  
+     [!code-vb[VbVbalrStatements#708](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/how-to-label-statements_1.vb)]  
   
 ## Vedere anche  
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   

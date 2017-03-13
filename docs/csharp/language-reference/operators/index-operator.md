@@ -26,11 +26,11 @@ Le parentesi quadre \(`[]`\) vengono utilizzate per le matrici, gli indicizzator
 ## Note  
  Un tipo matrice è un tipo seguito da `[]`:  
   
- [!code-cs[csRefOperators#43](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#43)]  
+ [!code-cs[csRefOperators#43](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_1.cs)]  
   
  Per consentire l'accesso a un elemento di una matrice, l'indice dell'elemento desiderato viene racchiuso tra parentesi:  
   
- [!code-cs[csRefOperators#44](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#44)]  
+ [!code-cs[csRefOperators#44](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_2.cs)]  
   
  Se l'indice di una matrice non è incluso nell'intervallo, viene generata un'eccezione.  
   
@@ -38,15 +38,15 @@ Le parentesi quadre \(`[]`\) vengono utilizzate per le matrici, gli indicizzator
   
  In .NET Framework, ad esempio, viene definito un tipo `Hashtable` che associa chiavi e valori di tipo arbitrario:  
   
- [!code-cs[csRefOperators#45](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#45)]  
+ [!code-cs[csRefOperators#45](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_3.cs)]  
   
  Le parentesi quadre vengono inoltre utilizzate per specificare [Attributi](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md):  
   
- [!code-cs[csRefOperators#46](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#46)]  
+ [!code-cs[csRefOperators#46](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_4.cs)]  
   
  È possibile utilizzare le parentesi quadre per effettuare l'indicizzazione a partire da un puntatore:  
   
- [!code-cs[csRefOperators#47](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#47)]  
+ [!code-cs[csRefOperators#47](../../../csharp/language-reference/operators/codesnippet/CSharp/index-operator_5.cs)]  
   
  Non viene effettuata alcuna verifica dei limiti.  
   

@@ -33,12 +33,12 @@ caps.handback.revision: 19
 
 Un'*espressione booleana* è un'espressione che restituisce un valore del [tipo di dati Boolean](../../../../visual-basic/language-reference/data-types/boolean-data-type.md):`True` o `False`.  Le espressioni `Boolean` possono presentarsi in diverse forme.  La più semplice è il confronto diretto del valore di una variabile `Boolean` con un valore letterale `Boolean`, come illustrato nell'esempio riportato di seguito.  
   
- [!code-vb[VbVbalrOperators#87](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_1.vb)]  
+ [!code-vb[VbVbalrOperators#87](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_1.vb)]  
   
 ## Due significati dell'operatore \=  
  Si noti che l'istruzione di assegnazione `newCustomer = True` sembra uguale all'espressione dell'esempio precedente, ma esegue una funzione diversa e viene usata in modo diverso.  Nell'esempio precedente, l'espressione `newCustomer = True` rappresenta un valore booleano e il segno `=` viene interpretato come un operatore di confronto.  In un'istruzione autonoma, il segno `=` viene interpretato come un operatore di assegnazione e assegna il valore di destra alla variabile di sinistra.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrOperators#88](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_2.vb)]  
+ [!code-vb[VbVbalrOperators#88](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_2.vb)]  
   
  Per ulteriori informazioni, vedere [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md) e [Statements](../../../../visual-basic/language-reference/statements/index.md).  
   
@@ -59,7 +59,7 @@ Un'*espressione booleana* è un'espressione che restituisce un valore del [tipo 
 ## Operatori short circuit  
  Gli operatori logici `AndAlso` e `OrElse` esibiscono un comportamento noto come *short\-circuit*.  Un operatore di short\-circuit restituisce prima l'operando di sinistra.  Se l'operatore di sinistra determina il valore dell'intera espressione, l'esecuzione del programma procederà senza valutare l'espressione corretta.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrOperators#89](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_3.vb)]  
+ [!code-vb[VbVbalrOperators#89](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_3.vb)]  
   
  Nell'esempio riportato in precedenza, l'operatore restituisce l'espressione di sinistra, `45 < 12`.  Poiché l'espressione di sinistra restituisce `False`, l'intera espressione logica deve restituire `False`.  L'esecuzione del programma salta quindi l'esecuzione del codice all'interno del blocco `If` senza valutare l'espressione di destra, `testFunction(3)`.  Questo esempio non consente di chiamare `testFunction()` in quando l'espressione di sinistra falsifica l'intera espressione.  
   
@@ -68,7 +68,7 @@ Un'*espressione booleana* è un'espressione che restituisce un valore del [tipo 
 ### Confronto con gli operatori di non short\-circuit  
  Entrambi i lati dell'operatore logico invece sono valutati quando vengono utilizzati gli operatori logici `And` e `Or`.  Questa condizione è illustrata nell'esempio che segue.  
   
- [!code-vb[VbVbalrOperators#90](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/boolean-expressions_4.vb)]  
+ [!code-vb[VbVbalrOperators#90](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/boolean-expressions_4.vb)]  
   
  Nell'esempio elencato in precedenza viene chiamato `testFunction()` anche se l'espressione di sinistra restituisce `False`.  
   

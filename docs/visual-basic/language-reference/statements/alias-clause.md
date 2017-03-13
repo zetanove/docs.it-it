@@ -31,7 +31,7 @@ Indica che il nome della routine esterna è diverso nella rispettiva DLL.
   
  Nell'esempio seguente la parola chiave `Alias` viene utilizzata per fornire il nome della funzione in advapi32.dll, `GetUserNameA`, al posto della quale in questo esempio viene utilizzata `getUserName`.  La funzione `getUserName` viene chiamata nella routine `getUser`, che consente di visualizzare il nome dell'utente corrente.  
   
- [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/alias-clause_1.vb)]  
+ [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/alias-clause_1.vb)]  
   
 ## Vedere anche  
  [Parole chiave](../../../visual-basic/language-reference/keywords/index.md)

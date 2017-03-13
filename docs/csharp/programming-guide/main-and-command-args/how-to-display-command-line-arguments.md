@@ -30,7 +30,7 @@ Gli argomenti forniti per un file eseguibile sulla riga di comando sono accessib
 ## Esempio  
  In questo esempio vengono visualizzati gli argomenti della riga di comando passati a un'applicazione della riga di comando.  L'output illustrato è relativo alla prima voce della tabella precedente.  
   
- [!code-cs[csProgGuideMain#9](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/how-to-display-command-l_1.cs)]  
+ [!code-cs[csProgGuideMain#9](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-display-command-line-arguments_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

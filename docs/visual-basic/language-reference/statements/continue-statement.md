@@ -45,7 +45,7 @@ Continue { Do | For | While }
 ## Esempio  
  Nell'esempio di codice riportato di seguito viene utilizzata l'istruzione `Continue While` per passare alla colonna successiva di una matrice se uno dei divisori è zero.  L'istruzione `Continue While` si trova in un ciclo `For`.  Passa all'istruzione `While col < lastcol`, ossia all'iterazione successiva del ciclo `While` più interno che contiene il ciclo `For`.  
   
- [!code-vb[VbVbalrStatements#14](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/continue-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#14](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/continue-statement_1.vb)]  
   
 ## Vedere anche  
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   

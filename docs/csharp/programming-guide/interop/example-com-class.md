@@ -38,7 +38,7 @@ Di seguito è riportato un esempio di una classe esposta come oggetto COM.  Dopo
  È invece necessario che la classe implementi l'interfaccia di classe. La classe è in grado di implementare più di un'interfaccia, ma la prima implementazione sarà quella dell'interfaccia di classe predefinita.  Implementare i metodi e le proprietà esposte a COM,  che devono essere contrassegnati come pubblici e corrispondere alle dichiarazioni presenti nell'interfaccia della classe.  Dichiarare, inoltre, gli eventi originati dalla classe,  che devono a loro volta essere contrassegnati come pubblici e corrispondere alle dichiarazioni presenti nell'interfaccia degli eventi.  
   
 ## Esempio  
- [!code-cs[csProgGuideInterop#8](../../../csharp/programming-guide/interop/codesnippet/csharp/example-com-class_1.cs)]  
+ [!code-cs[csProgGuideInterop#8](../../../csharp/programming-guide/interop/codesnippet/CSharp/example-com-class_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

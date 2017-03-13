@@ -33,7 +33,7 @@ caps.handback.revision: 27
 ## Assegnazione di valori  
  Utilizzare le istruzioni di assegnazione per eseguire calcoli e assegnare il risultato a una variabile, come nell'esempio seguente.  
   
- [!code-vb[VbVbalrVariables#1](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/visualbasic/index_1.vb)]  
+ [!code-vb[VbVbalrVariables#1](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/VisualBasic/index_1.vb)]  
   
 > [!NOTE]
 >  Il segno uguale \(`=`\) nell'esempio rappresenta un operatore di assegnazione, non di uguaglianza.  Il valore viene assegnato alla variabile `applesSold`.  

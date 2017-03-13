@@ -53,7 +53,7 @@ variableorproperty -= expression
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `-=` viene utilizzato per sottrarre una variabile `Integer` da un'altra variabile e assegnare il risultato a quest'ultima.  
   
- [!code-vb[VbVbalrOperators#11](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/integer-division-assignm_1.vb)]  
+ [!code-vb[VbVbalrOperators#11](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/integer-division-assignment-operator_1.vb)]  
   
 ## Vedere anche  
  [\- Operator](../../../visual-basic/language-reference/operators/subtraction-operator.md)   

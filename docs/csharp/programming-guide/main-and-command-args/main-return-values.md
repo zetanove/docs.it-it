@@ -18,18 +18,18 @@ caps.handback.revision: 20
 # Valori restituiti da Main() (Guida per programmatori C#)
 Il metodo `Main` può restituire `void`:  
   
- [!code-cs[csProgGuideMain#12](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/main-return-values_1.cs)]  
+ [!code-cs[csProgGuideMain#12](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_1.cs)]  
   
  Può anche restituire un `int`:  
   
- [!code-cs[csProgGuideMain#13](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/main-return-values_2.cs)]  
+ [!code-cs[csProgGuideMain#13](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_2.cs)]  
   
  Se il valore restituito da `Main` non viene utilizzato, la restituzione di `void` consente di semplificare leggermente il codice.  La restituzione di un valore intero consente tuttavia al programma di comunicare le informazioni sullo stato ad altri programmi o script che richiamano il file eseguibile.  Nell'esempio seguente viene illustrato come è possibile accedere al valore restituito da `Main`.  
   
 ## Esempio  
  In questo esempio viene utilizzato un file batch per eseguire un programma e testare il valore restituito dalla funzione `Main`.  Quando si esegue un programma in ambiente Windows, qualsiasi valore restituito dalla funzione `Main` viene archiviato in una variabile di ambiente denominata `ERRORLEVEL`.  Un file batch può determinare il risultato dell'esecuzione tramite l'esame della variabile `ERRORLEVEL`.  Un valore restituito pari a zero indica in genere che l'esecuzione è avvenuta in modo corretto.  L'esempio seguente rappresenta un semplice programma che restituisce il valore zero dalla funzione `Main`.  Lo zero indica che il programma è stato eseguito correttamente.  Salvare il programma come MainReturnValTest.cs.  
   
- [!code-cs[csProgGuideMain#14](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/main-return-values_3.cs)]  
+ [!code-cs[csProgGuideMain#14](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/main-return-values_3.cs)]  
   
 ## Esempio  
  Poiché in questo esempio viene utilizzato un file batch, è consigliabile compilare il codice da un prompt dei comandi.  Seguire le istruzioni in [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) per abilitare le compilazioni da riga di comando o utilizzare il prompt dei comandi di Visual Studio, disponibile nel menu **Start** in **Visual Studio Tools**.  Al prompt dei comandi passare alla cartella in cui è stato salvato il programma.  Il comando seguente consente di compilare MainReturnValTest.cs e produrre il file eseguibile MainReturnValTest.exe.  

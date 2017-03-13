@@ -85,7 +85,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 ## Istruzione Throw  
  Se un errore viene generato con il metodo `Err.Raise`, la proprietà `Exception` viene impostata su un'istanza appena creata della classe <xref:System.Exception>.  Per consentire la generazione di eccezioni di tipi derivati, nel linguaggio è supportata un'istruzione `Throw`.  Tale istruzione richiede un solo parametro, ovvero l'istanza di eccezione da generare.  Nell'esempio seguente viene illustrato come utilizzare queste funzionalità con il supporto esistente per la gestione delle eccezioni:  
   
- [!code-vb[VbVbalrErrorHandling#17](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_1.vb)]  
+ [!code-vb[VbVbalrErrorHandling#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_1.vb)]  
   
  Si noti che nell'istruzione `On Error GoTo` vengono intercettati tutti gli errori, indipendentemente dalla classe dell'eccezione.  
   
@@ -103,7 +103,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  Per impedire l'esecuzione del codice di gestione degli errori quando non si è verificato alcun errore, inserire un'istruzione `Exit Sub`, `Exit Function` o `Exit Property` immediatamente prima della routine di gestione degli errori, come illustrato nel seguente frammento di codice:  
   
- [!code-vb[VbVbalrErrorHandling#18](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_2.vb)]  
+ [!code-vb[VbVbalrErrorHandling#18](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_2.vb)]  
   
  In questo esempio il codice di gestione degli errori è racchiuso tra le istruzioni `Exit Sub` ed `End Sub`, che lo separano dal flusso della routine.  Il codice di gestione degli errori può essere inserito in un punto qualsiasi della routine.  
   
@@ -112,7 +112,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  Se si crea un oggetto a cui è consentito l’accesso ad altri oggetti, è opportuno tentare di gestire tutti gli eventuali errori non gestiti passati da tali oggetti.  Se ciò non è possibile, associare i codici di errore di `Err.Number` a uno degli errori, quindi passarli nuovamente all'elemento che ha chiamato l'oggetto.  Specificare l'errore aggiungendone il codice alla costante `VbObjectError`.  Se, ad esempio, il codice dell'errore è 1052, assegnarlo come riportato di seguito:  
   
- [!code-vb[VbVbalrErrorHandling#19](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_3.vb)]  
+ [!code-vb[VbVbalrErrorHandling#19](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_3.vb)]  
   
 > [!CAUTION]
 >  In caso di errori di sistema che si verificano durante le chiamate alle librerie a collegamento dinamico \(DDL, Dynamic\-Link Library\) di Windows, non vengono generate eccezioni. Gli errori, inoltre, non potranno essere rilevati mediante l'intercettazione degli errori di Visual Basic.  Quando si richiamano funzioni di DLL, è opportuno verificare l'esito di ciascun valore restituito \(secondo le specifiche API\) e, in caso di esito negativo, controllare il valore della proprietà `LastDLLError` dell'oggetto `Err`.  
@@ -120,7 +120,7 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
 ## Esempio  
  In questo esempio viene innanzitutto utilizzata l'istruzione `On Error GoTo` per specificare la posizione di una routine di gestione degli errori all'interno di una routine.  Nell'esempio, un tentativo di dividere per zero genera l'errore numero 6.  L'errore viene gestito nella routine di gestione degli errori e il controllo viene quindi restituito all'istruzione che ha causato l'errore.  L'istruzione `On Error GoTo 0` consente di disattivare l'intercettazione degli errori.  Viene quindi utilizzata l'istruzione `On Error Resume Next` per rinviare l'intercettazione degli errori affinché il contesto per l'errore generato dall'istruzione successiva possa essere riconosciuto in modo certo.  `Err.Clear` viene utilizzato per cancellare le proprietà dell'oggetto `Err` una volta gestito l'errore.  
   
- [!code-vb[VbVbalrErrorHandling#20](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/on-error-statement_4.vb)]  
+ [!code-vb[VbVbalrErrorHandling#20](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/on-error-statement_4.vb)]  
   
 ## Requisiti  
  **Spazio dei nomi:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

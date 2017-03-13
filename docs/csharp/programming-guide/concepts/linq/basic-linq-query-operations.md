@@ -46,7 +46,7 @@ In questo argomento viene fornita una breve introduzione alle espressioni di que
 ## Come ottenere l'origine dati  
  In una query [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] il primo passaggio consiste nello specificare l'origine dati.  In C\#, come nella maggior parte dei linguaggi di programmazione, per poter utilizzare una variabile è necessario prima dichiararla.  In una query [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] la clausola `from` deve essere specificata per prima per poter introdurre l'origine dati \(`customers`\) e la *variabile di intervallo* \(`cust`\).  
   
- [!code-cs[csLINQGettingStarted#23](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#23)]  
+ [!code-cs[csLINQGettingStarted#23](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_1.cs)]  
   
  La variabile di intervallo è simile alla variabile di iterazione in un ciclo `foreach`, con la differenza che in un'espressione di query non si verifica un'effettiva iterazione.  Quando viene eseguita la query, la variabile di intervallo funge da riferimento per ogni elemento successivo in `customers`.  Poiché il compilatore è in grado di dedurre il tipo di `cust`, non è necessario specificarlo in modo esplicito.  È possibile introdurre ulteriori variabili di intervallo mediante la clausola `let`.  Per ulteriori informazioni, vedere [Clausola let](../../../../csharp/language-reference/keywords/let-clause.md).  
   
@@ -56,22 +56,22 @@ In questo argomento viene fornita una breve introduzione alle espressioni di que
 ## Filtraggio  
  Probabilmente l'operazione di query più comune consiste nell'applicazione di un filtro sotto forma di espressione booleana.  Il filtro consente alla query di restituire solo gli elementi per i quali l'espressione sia true.  Il risultato viene generato utilizzando la clausola `where`.  Il filtro attivo specifica gli elementi da escludere dalla sequenza di origine.  Nell'esempio seguente vengono restituiti solo gli oggetti `customers` con un indirizzo di Londra.  
   
- [!code-cs[csLINQGettingStarted#24](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#24)]  
+ [!code-cs[csLINQGettingStarted#24](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_2.cs)]  
   
  È possibile utilizzare i comuni operatori logici `AND` e `OR` in C\# per applicare tutte le espressioni di filtro necessarie nella clausola `where`.  Per restituire, ad esempio, solo i clienti di "Londra" di nome "Davon" mediante l'operatore `AND`, utilizzare il codice seguente:  
   
- [!code-cs[csLINQGettingStarted#25](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#25)]  
+ [!code-cs[csLINQGettingStarted#25](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_3.cs)]  
   
  Per restituire i clienti di Londra o Parigi, utilizzare il codice seguente:  
   
- [!code-cs[csLINQGettingStarted#26](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#26)]  
+ [!code-cs[csLINQGettingStarted#26](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_4.cs)]  
   
  Per ulteriori informazioni, vedere [Clausola where](../../../../csharp/language-reference/keywords/where-clause.md).  
   
 ## Ordinamento  
  Spesso è utile ordinare i dati restituiti.  La clausola `orderby` consente di ordinare gli elementi presenti nella sequenza restituita in base all'operatore di confronto predefinito per il tipo da ordinare.  Ad esempio, la query seguente può essere estesa per ordinare i risultati in base alla proprietà `Name`.  Poiché `Name` è una stringa, l'operatore di confronto predefinito dispone i risultati in ordine alfabetico dalla A alla Z.  
   
- [!code-cs[csLINQGettingStarted#27](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#27)]  
+ [!code-cs[csLINQGettingStarted#27](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_5.cs)]  
   
  Per disporre i risultati in ordine inverso, ovvero dalla Z alla A, utilizzare la clausola `orderby…descending`.  
   
@@ -80,20 +80,20 @@ In questo argomento viene fornita una breve introduzione alle espressioni di que
 ## Raggruppamento  
  La clausola `group` consente di raggruppare i risultati in base a una chiave specificata.  Ad esempio, è possibile specificare di raggruppare i risultati in base alla chiave `City` in modo che tutti i clienti di Londra o Parigi vengano suddivisi in singoli gruppi.  In tal caso, la chiave è `cust.City`.  
   
- [!code-cs[csLINQGettingStarted#28](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#28)]  
+ [!code-cs[csLINQGettingStarted#28](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_6.cs)]  
   
  Quando si termina una query con la clausola `group`, i risultati vengono visualizzati sotto forma di elenco.  Ogni elemento nell'elenco è un oggetto che contiene un membro `Key` e un elenco di elementi raggruppati sotto quella chiave.  Quando si scorre una query che genera una sequenza di gruppi, è necessario utilizzare un ciclo `foreach` annidato.  Il ciclo esterno scorre ogni gruppo e il ciclo interno scorre i membri di ogni gruppo.  
   
  Se è necessario fare riferimento ai risultati di un'operazione di gruppo, è possibile utilizzare la parola chiave `into` per creare un identificatore su cui eseguire un'altra query.  Nella query seguente vengono restituiti solo i gruppi che contengono più di due clienti:  
   
- [!code-cs[csLINQGettingStarted#29](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#29)]  
+ [!code-cs[csLINQGettingStarted#29](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_7.cs)]  
   
  Per ulteriori informazioni, vedere [Clausola group](../../../../csharp/language-reference/keywords/group-clause.md).  
   
 ## Operazioni di join  
  Le operazioni di join creano associazioni tra sequenze che non vengono create in modo esplicito nelle origini dati.  È possibile ad esempio eseguire un join per cercare tutti i clienti e i concessionari che risiedono nella stessa località.  In [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] la clausola `join` funziona sempre sulle raccolte di oggetti anziché direttamente sulle tabelle di database.  
   
- [!code-cs[csLINQGettingStarted#36](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#36)]  
+ [!code-cs[csLINQGettingStarted#36](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/basic-linq-query-operations_8.cs)]  
   
  In [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] non è necessario utilizzare `join` come in SQL poiché le chiavi esterne in [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] sono rappresentate nel modello a oggetti come proprietà che contengono una raccolta di elementi.  Ad esempio, un oggetto `Customer` contiene una raccolta di oggetti `Order`.  Invece di eseguire un join, è possibile accedere agli ordini utilizzando la notazione del punto:  
   

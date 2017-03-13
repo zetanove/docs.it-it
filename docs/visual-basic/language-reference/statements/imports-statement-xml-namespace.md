@@ -56,7 +56,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato come importare uno spazio dei nomi XML predefinito e uno spazio dei nomi XML identificato con il prefisso `ns`.  Vengono quindi creati i valori letterali XML che utilizzano entrambi gli spazi dei nomi.  
   
- [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/imports-statement-xml-na_1.vb)]  
+ [!code-vb[VbXMLSamples#45](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_1.vb)]  
   
  Verrà visualizzato il seguente testo:  
   
@@ -72,7 +72,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Esempio  
  Nell'esempio di codice riportato di seguito viene importato il prefisso `ns` dello spazio dei nomi.  Viene quindi creato un valore letterale XML che utilizza il prefisso dello spazio dei nomi e visualizza il formato finale dell'elemento.  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/imports-statement-xml-na_2.vb)]  
+ [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_2.vb)]  
   
  Verrà visualizzato il seguente testo:  
   
@@ -90,7 +90,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ## Esempio  
  Nell'esempio di codice riportato di seguito viene importato il prefisso `ns` dello spazio dei nomi.  Viene quindi utilizzato il prefisso dello spazio dei nomi per creare un valore letterale XML e accedere al primo nodo figlio con il nome completo `ns:name`.  
   
- [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/imports-statement-xml-na_3.vb)]  
+ [!code-vb[VbXMLSamples#19](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/imports-statement-xml-namespace_3.vb)]  
   
  Verrà visualizzato il seguente testo:  
   

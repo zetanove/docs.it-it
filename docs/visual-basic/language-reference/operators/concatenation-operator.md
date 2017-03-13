@@ -59,7 +59,7 @@ result = expression1 & expression2
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `&` viene utilizzato per eseguire una concatenazione forzata di stringhe.  Il risultato è un valore stringa nel quale i due operandi risultano concatenati:  
   
- [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/concatenation-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operator_1.vb)]  
   
 ## Vedere anche  
  [&\= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   

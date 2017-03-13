@@ -141,14 +141,14 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 ## Esempio  
  Nell'esempio seguente viene dichiarato un riferimento esterno a una routine `Function` che restituisce il nome dell'utente corrente.  Viene quindi chiamata la routine esterna `GetUserNameA` come parte della routine `getUser`.  
   
- [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/declare-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_1.vb)]  
   
 ## Esempio  
  La classe <xref:System.Runtime.InteropServices.DllImportAttribute> rappresenta un'alternativa all'utilizzo di funzioni nel codice non gestito.  Nell'esempio seguente viene dichiarata una funzione importata senza l'utilizzo di un'istruzione `Declare`.  
   
- [!code-vb[VbVbalrStatements#16](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/declare-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#16](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_2.vb)]  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/declare-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_3.vb)]  
   
 ## Vedere anche  
  <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>   

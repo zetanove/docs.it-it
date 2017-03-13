@@ -15,7 +15,7 @@ Un left outer join è un join nel quale viene restituito ogni elemento della pri
 > [!NOTE]
 >  Il valore predefinito per un tipo di riferimento è `null`; pertanto, i controlli di esempio per un riferimento Null prima di accedere a ogni elemento di ogni raccolta di `Pet`.  
   
- [!code-cs[CsLINQProgJoining#7](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#7)]  
+ [!code-cs[CsLINQProgJoining#7](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-left-outer-joins_1.cs)]  
   
 ## Compilazione del codice  
   

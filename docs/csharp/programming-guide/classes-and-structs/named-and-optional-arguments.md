@@ -55,7 +55,7 @@ In [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-st
 ## Esempio  
  Nel codice seguente sono implementati gli esempi di questa sezione.  
   
- [!code-cs[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/program.cs#1)]  
+ [!code-cs[csProgGuideNamedAndOptional#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_1.cs)]  
   
 ## Argomenti facoltativi  
  La definizione di un metodo, un costruttore, un indicizzatore o un delegato può specificare che i parametri sono obbligatori o facoltativi.  Tutte le chiamate devono specificare gli argomenti per tutti i parametri obbligatori, ma possono omettere gli argomenti per i parametri facoltativi.  
@@ -70,7 +70,7 @@ In [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-st
   
  I parametri facoltativi sono definiti alla fine dell'elenco di parametri, dopo eventuali parametri obbligatori.  Se il chiamante specifica un argomento per un parametro di una successione di parametri facoltativi, deve specificare gli argomenti per tutti i parametri facoltativi precedenti.  I gap delimitati da virgole nell'elenco di argomenti non sono supportati.  Nel codice seguente, ad esempio, il metodo di istanza `ExampleMethod` viene definito con un parametro obbligatorio e due parametri facoltativi.  
   
- [!code-cs[csProgGuideNamedAndOptional#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/optional.cs#15)]  
+ [!code-cs[csProgGuideNamedAndOptional#15](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_2.cs)]  
   
  La chiamata seguente a `ExampleMethod` genera un errore del compilatore, poiché viene fornito un argomento per il terzo parametro ma non per il secondo.  
   
@@ -91,7 +91,7 @@ Parametri facoltativi in ExampleMethod
 ## Esempio  
  Nell'esempio seguente, il costruttore per `ExampleClass` dispone di un parametro facoltativo.  Il metodo di istanza `ExampleMethod` dispone di un parametro obbligatorio, `required`, e di due parametri facoltativi, `optionalstr` e `optionalint`.  Il codice in `Main` illustra i diversi modi in cui è possibile richiamare il costruttore e il metodo.  
   
- [!code-cs[csProgGuideNamedAndOptional#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/optional.cs#2)]  
+ [!code-cs[csProgGuideNamedAndOptional#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_3.cs)]  
   
 ## Interfacce COM  
  Gli argomenti denominati e facoltativi, insieme al supporto per gli oggetti dinamici e ad altri miglioramenti, aumentano considerevolmente l'interoperabilità con le API COM, quali le API di automazione di Office.  
@@ -103,11 +103,11 @@ Parametri AutoFormat
   
  In C\# 3.0 e versioni precedenti è necessario un argomento per ogni parametro, come mostrato nell'esempio seguente.  
   
- [!code-cs[csProgGuideNamedAndOptional#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/namedandoptcom.cs#3)]  
+ [!code-cs[csProgGuideNamedAndOptional#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_4.cs)]  
   
  È tuttavia possibile semplificare in modo sostanziale la chiamata a `AutoFormat` mediante argomenti denominati e facoltativi, introdotti in C\# 4.0.  Gli argomenti denominati e facoltativi consentono di omettere l'argomento per un parametro facoltativo se non si desidera modificare il valore predefinito del parametro.  Nella chiamata seguente, viene specificato un valore per uno solo dei sette parametri.  
   
- [!code-cs[csProgGuideNamedAndOptional#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/namedandoptionalsnippets/namedandoptcom.cs#13)]  
+ [!code-cs[csProgGuideNamedAndOptional#13](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/named-and-optional-arguments_5.cs)]  
   
  Per ulteriori informazioni ed esempi, vedere [Procedura: utilizzare argomenti denominati e facoltativi nella programmazione di Office](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md) e [Procedura: accedere agli oggetti di interoperabilità di Office usando le funzionalità di Visual C\#](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md).  
   

@@ -20,13 +20,13 @@ I generics rappresentano la soluzione a una limitazione presente nelle versioni 
   
  È possibile dimostrare le limitazioni associate all'utilizzo di classi di raccolte non generiche scrivendo un breve programma in cui si utilizza la classe Collection <xref:System.Collections.ArrayList> della libreria di classi di .NET Framework.  <xref:System.Collections.ArrayList> è una classe Collection estremamente utile che è possibile utilizzare senza modifiche per archiviare qualsiasi tipo di riferimento o di valore.  
   
- [!code-cs[csProgGuideGenerics#4](../../../csharp/programming-guide/generics/codesnippet/csharp/benefits-of-generics_1.cs)]  
+ [!code-cs[csProgGuideGenerics#4](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_1.cs)]  
   
  Questa soluzione presenta tuttavia anche alcuni svantaggi.  Qualsiasi tipo di riferimento o di valore aggiunto a <xref:System.Collections.ArrayList> viene implicitamente sottoposto a upcast in <xref:System.Object>.  Se gli elementi sono tipi di valore, devono essere boxed quando vengono aggiunti all'elenco e unboxed quando vengono recuperati.  Le operazioni di cast e quelle di boxing e unboxing influiscono negativamente sulle prestazioni. L'effetto delle conversioni boxing e unboxing può essere piuttosto significativo nelle situazioni in cui è necessario scorrere gli elementi di raccolte di grandi dimensioni.  
   
  L'altra limitazione è la mancanza di controllo dei tipi in fase di compilazione. Poiché <xref:System.Collections.ArrayList> esegue il cast di tutti gli elementi in <xref:System.Object>, non è possibile impedire situazioni simili a quella riportata di seguito nel codice client in fase di compilazione:  
   
- [!code-cs[csProgGuideGenerics#5](../../../csharp/programming-guide/generics/codesnippet/csharp/benefits-of-generics_2.cs)]  
+ [!code-cs[csProgGuideGenerics#5](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_2.cs)]  
   
  Anche se perfettamente accettabile e a volte intenzionale se si crea una raccolta eterogenea, la combinazione di stringhe e `ints` in un'unica classe <xref:System.Collections.ArrayList> si rivela nella maggior parte dei casi un errore di programmazione, che verrà rilevato solo in fase di esecuzione.  
   
@@ -34,7 +34,7 @@ I generics rappresentano la soluzione a una limitazione presente nelle versioni 
   
  Per la classe <xref:System.Collections.ArrayList> e altre classi simili è in realtà necessario specificare nel codice client, per ogni singola istanza, il particolare tipo di dati che si prevede di utilizzare.  In questo modo non è più necessario eseguire l'upcast in `T:System.Object` ed è inoltre possibile demandare al compilatore il controllo dei tipi.  In altre parole, la classe <xref:System.Collections.ArrayList> richiede un parametro di tipo,  esattamente ciò che viene fornito dai generics.  Nella raccolta <xref:System.Collections.Generic.List%601> generica dello spazio dei nomi `N:System.Collections.Generic` la stessa operazione di aggiunta di elementi alla raccolta è simile a quella riportata di seguito:  
   
- [!code-cs[csProgGuideGenerics#6](../../../csharp/programming-guide/generics/codesnippet/csharp/benefits-of-generics_3.cs)]  
+ [!code-cs[csProgGuideGenerics#6](../../../csharp/programming-guide/generics/codesnippet/CSharp/benefits-of-generics_3.cs)]  
   
  Per il codice client, l'unica sintassi aggiunta con <xref:System.Collections.Generic.List%601> rispetto a <xref:System.Collections.ArrayList> è l'argomento di tipo nella dichiarazione e nella creazione di istanze.  Anche se tale codifica implica una maggiore complessità, consente di creare un elenco non solo più sicuro di <xref:System.Collections.ArrayList>, ma anche sensibilmente più veloce, soprattutto quando le voci dell'elenco sono tipi di valore.  
   

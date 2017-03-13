@@ -21,7 +21,7 @@ Alle variabili locali può essere fornite un "tipo" dedotto di `var` anziché un
   
  Negli esempi seguenti sono illustrati svariati modi con cui le variabili locali possono essere dichiarate con `var`:  
   
- [!code-cs[csProgGuideLINQ#43](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#43)]  
+ [!code-cs[csProgGuideLINQ#43](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-local-variables_1.cs)]  
   
  È importante comprendere che la parola chiave `var` non significa "variant" e che non indica che la variabile è debolmente tipizzata o è ad associazione tardiva.  Significa semplicemente che il compilatore determina e assegna il tipo più adatto.  
   
@@ -54,7 +54,7 @@ Alle variabili locali può essere fornite un "tipo" dedotto di `var` anziché un
   
  Dalla prospettiva del codice sorgente, un tipo anonimo non dispone di nome.  Se una variabile di query è stata inizializzata con `var`, l’unico modo per accedere alle proprietà nella sequenza di oggetti restituita è utilizzare `var` come tipo della variabile di iterazione nell’istruzione `foreach`.  
   
- [!code-cs[csProgGuideLINQ#44](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#44)]  
+ [!code-cs[csProgGuideLINQ#44](../../../csharp/programming-guide/arrays/codesnippet/CSharp/implicitly-typed-local-variables_2.cs)]  
   
 ## Note  
  Le restrizioni seguenti si applicano alle dichiarazioni di variabili tipizzate in modo implicito:  
@@ -73,7 +73,7 @@ Alle variabili locali può essere fornite un "tipo" dedotto di `var` anziché un
   
  La parola chiave `var` può essere utile anche quando il tipo specifico della variabile risulta difficile da digitare con la tastiera, è ovvio o non migliora la leggibilità del codice.  `var` è utile in tal senso ad esempio con i tipi generici annidati, quali quelli utilizzati con le operazioni di gruppo.  Nella query seguente, il tipo della variabile della query è `IEnumerable<IGrouping<string, Student>>`.  Purché ciò sia chiaro a tutti coloro che devono gestire il codice, l'utilizzo della tipizzazione implicita per ragioni di praticità e brevità non costituisce un problema.  
   
- [!code-cs[cscsrefQueryKeywords#13](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Group.cs#13)]  
+ [!code-cs[cscsrefQueryKeywords#13](../../../csharp/language-reference/keywords/codesnippet/CSharp/implicitly-typed-local-variables_3.cs)]  
   
  L'utilizzo di `var`, tuttavia, può quanto meno rendere più difficoltosa la comprensione del codice per gli altri sviluppatori.  Nella documentazione di C\# `var` viene pertanto in genere utilizzata solo quando è necessario.  
   

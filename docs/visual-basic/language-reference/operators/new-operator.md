@@ -34,11 +34,11 @@ Introduce una clausola `New` per creare una nuova istanza di oggetto, specifica 
   
  È possibile utilizzare una clausola `New` in un'istruzione di assegnazione o per la dichiarazione.  Quando l'istruzione viene eseguita, viene chiamato il costruttore appropriato della classe specificata e vengono passati gli argomenti forniti.  Nell'esempio seguente viene illustrato questo comportamento tramite la creazione di istanze di una classe `Customer` con due costruttori, uno che non accetta parametri e uno che accetta un parametro stringa.  
   
- [!code-vb[VbVbalrKeywords#11](../../../visual-basic/language-reference/codesnippet/visualbasic/new-operator_1.vb)]  
+ [!code-vb[VbVbalrKeywords#11](../../../visual-basic/language-reference/codesnippet/VisualBasic/new-operator_1.vb)]  
   
  Poiché le matrici sono classi, `New` consente di creare una nuova istanza di matrice, come illustrato negli esempi seguenti.  
   
- [!code-vb[VbVbalrKeywords#12](../../../visual-basic/language-reference/codesnippet/visualbasic/new-operator_2.vb)]  
+ [!code-vb[VbVbalrKeywords#12](../../../visual-basic/language-reference/codesnippet/VisualBasic/new-operator_2.vb)]  
   
  In Common Language Runtime viene generato un errore <xref:System.OutOfMemoryException> se la memoria è insufficiente per creare la nuova istanza.  
   

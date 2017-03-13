@@ -28,7 +28,7 @@ caps.handback.revision: 18
 Nell'esempio viene illustrato come utilizzare una proprietà axis dell'attributo per accedere per nome agli attributi XML in un elemento XML.  In particolare, viene utilizzata la proprietà axis dell'attributo `type` per accedere all'attributo denominato `type` nell'oggetto `phone`.  
   
 ## Esempio  
- [!code-vb[VbXMLSamples#11](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-access-xml-attrib_1.vb)]  
+ [!code-vb[VbXMLSamples#11](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-attributes_1.vb)]  
   
 ## Vedere anche  
  <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=fullName>   

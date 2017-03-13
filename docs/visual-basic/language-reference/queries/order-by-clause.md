@@ -46,17 +46,17 @@ Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]
 ## Esempio  
  Nell'espressione di query seguente viene utilizzata una clausola `From` per dichiarare una variabile di intervallo `book` per la raccolta `books`.  La clausola `Order By` ordina in senso crescente \(impostazione predefinita\) in base al prezzo il risultato della query.  I libri con lo stesso prezzo vengono ordinati in senso crescente in base al titolo.  Mediante la clausola `Select` vengono selezionate le proprietà `Title` e `Price` come valori restituiti dalla query.  
   
- [!code-vb[VbSimpleQuerySamples#24](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#24)]  
+ [!code-vb[VbSimpleQuerySamples#24](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_1.vb)]  
   
 ## Esempio  
  Nell'espressione di query seguente viene utilizzata la clausola `Order By` per ordinare in senso decrescente il risultato della query in base al prezzo.  I libri con lo stesso prezzo vengono ordinati in senso crescente in base al titolo.  
   
- [!code-vb[VbSimpleQuerySamples#25](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#25)]  
+ [!code-vb[VbSimpleQuerySamples#25](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_2.vb)]  
   
 ## Esempio  
  Nell'espressione di query seguente viene utilizzata una clausola `Select` per selezionare il titolo del libro, il prezzo, la data di pubblicazione e l'autore.  Vengono quindi popolati i campi `Title`, `Price`, `PublishDate`e `Author` della variabile di intervallo per il nuovo ambito.  La clausola `Order By` ordina la nuova variabile di intervallo per autore, titolo del libro e poi prezzo.  Ogni colonna viene ordinata nel senso predefinito \(crescente\).  
   
- [!code-vb[VbSimpleQuerySamples#26](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#26)]  
+ [!code-vb[VbSimpleQuerySamples#26](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/order-by-clause_3.vb)]  
   
 ## Vedere anche  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

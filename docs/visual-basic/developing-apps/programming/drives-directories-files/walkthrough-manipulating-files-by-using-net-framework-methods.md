@@ -67,32 +67,32 @@ In questa procedura dettagliata viene illustrato come aprire e leggere un file m
   
 2.  Poiché l'applicazione fa riferimento allo spazio dei nomi <xref:System.IO>, aggiungere le istruzioni riportate di seguito all'inizio del codice, prima della dichiarazione di classe per il form, che inizia con `Public Class Form1`.  
   
-     [!code-vb[VbVbcnMyFileSystem#35](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#35](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_1.vb)]  
   
      Prima di scrivere nel file, è necessario creare un'istanza della classe <xref:System.IO.StreamWriter>.  
   
 3.  Scegliere **Progettazione** dal menu **Visualizza** per ritornare a **Progettazione Windows Form**.  Fare doppio clic sul pulsante `Submit` per creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante, quindi aggiungere il codice seguente.  
   
-     [!code-vb[VbVbcnMyFileSystem#36](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#36](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_2.vb)]  
   
 > [!NOTE]
 >  L'ambiente di sviluppo integrato \(IDE\) di Visual Studio ritorna all'editor di codice, con il punto di inserimento posizionato all'interno del gestore di eventi in cui è necessario aggiungere il codice.  
   
 1.  Per scrivere nel file, utilizzare il metodo <xref:System.IO.StreamWriter.Write%2A> della classe <xref:System.IO.StreamWriter>.  Aggiungere il codice seguente subito dopo `Dim fw As StreamWriter`.  Non è necessario preoccuparsi della generazione di eccezioni nel caso in cui il file non venga trovato, poiché il file necessario verrà creato, se non esiste già.  
   
-     [!code-vb[VbVbcnMyFileSystem#37](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_3.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#37](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_3.vb)]  
   
 2.  Assicurarsi che l'utente non possa lasciare il campo vuoto aggiungendo il codice seguente subito dopo `Dim ReadString As String`.  
   
-     [!code-vb[VbVbcnMyFileSystem#38](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_4.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#38](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_4.vb)]  
   
 3.  Trattandosi di un diario, è probabile che l'utente desideri assegnare una data a ogni voce.  Inserire il codice seguente dopo `fw = New StreamWriter("C:\MyDiary.txt", True)` per impostare la variabile `Today` sulla data corrente.  
   
-     [!code-vb[VbVbcnMyFileSystem#39](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_5.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#39](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_5.vb)]  
   
 4.  Aggiungere infine il codice necessario per la rimozione di <xref:System.Windows.Forms.TextBox>.  Aggiungere il codice seguente all'evento <xref:System.Windows.Forms.Control.Click> del pulsante `Clear`.  
   
-     [!code-vb[VbVbcnMyFileSystem#40](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_6.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#40](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_6.vb)]  
   
 ## Aggiunta delle funzionalità di visualizzazione al diario  
  In questa sezione viene illustrato come aggiungere una funzionalità che consente la visualizzazione dell'ultima voce aggiunta a `DisplayEntry` <xref:System.Windows.Forms.TextBox>.  È inoltre possibile aggiungere un controllo <xref:System.Windows.Forms.ComboBox> in cui vengono visualizzate le diverse voci e da cui gli utenti potranno selezionare la voce da visualizzare nel controllo `DisplayEntry`<xref:System.Windows.Forms.TextBox>.  Da `MyDiary.txt` viene creata un'istanza della classe <xref:System.IO.StreamReader>.  Al pari della classe <xref:System.IO.StreamWriter>, <xref:System.IO.StreamReader> deve essere utilizzata con file di testo.  
@@ -110,7 +110,7 @@ In questa procedura dettagliata viene illustrato come aprire e leggere un file m
   
 1.  Il controllo <xref:System.Windows.Forms.ComboBox> `PickEntries` viene utilizzato per visualizzare le date di immissione di ogni voce da parte dell'utente, affinché sia possibile selezionare una voce con una data specifica.  Creare un gestore di eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `GetEntries` e aggiungere il seguente codice.  
   
-     [!code-vb[VbVbcnMyFileSystem#41](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_7.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#41](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_7.vb)]  
   
 2.  Per eseguire il test del codice, premere F5 per compilare l'applicazione e fare clic su **Get Entries**.  Fare clic sulla freccia a discesa nel controllo <xref:System.Windows.Forms.ComboBox> per visualizzare le date delle voci.  
   
@@ -118,7 +118,7 @@ In questa procedura dettagliata viene illustrato come aprire e leggere un file m
   
 1.  Creare un gestore di eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `Display` e aggiungere il seguente codice.  
   
-     [!code-vb[VbVbcnMyFileSystem#42](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_8.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#42](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_8.vb)]  
   
 2.  Per eseguire il test del codice, premere F5 per compilare l'applicazione, quindi immettere una voce.  Fare clic su **Get Entries**, selezionare una voce dal controllo <xref:System.Windows.Forms.ComboBox>, quindi scegliere **Display**.  Nel controllo <xref:System.Windows.Forms.TextBox> `DisplayEntry` verrà visualizzato il contenuto della voce selezionata.  
   
@@ -137,23 +137,23 @@ In questa procedura dettagliata viene illustrato come aprire e leggere un file m
   
 1.  Aggiungere il codice seguente all'evento <xref:System.Windows.Forms.Control.Click> del pulsante `Display`, dopo `DisplayEntry.Text = ReadString`.  
   
-     [!code-vb[VbVbcnMyFileSystem#43](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_9.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#43](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_9.vb)]  
   
 2.  Creare un gestore di eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `DeleteEntry` e aggiungere il seguente codice.  
   
-     [!code-vb[VbVbcnMyFileSystem#44](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_10.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#44](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_10.vb)]  
   
 3.  Quando una voce viene visualizzata dall'utente, il pulsante `EditEntry` viene attivato.  Aggiungere il codice riportato di seguito all'evento <xref:System.Windows.Forms.Control.Click> del pulsante `Display`, dopo `DisplayEntry.Text = ReadString`.  
   
-     [!code-vb[VbVbcnMyFileSystem#45](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_11.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#45](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_11.vb)]  
   
 4.  Creare un gestore di eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `EditEntry` e aggiungere il seguente codice.  
   
-     [!code-vb[VbVbcnMyFileSystem#46](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_12.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#46](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_12.vb)]  
   
 5.  Creare un gestore di eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `SubmitEdit` e aggiungere il seguente codice.  
   
-     [!code-vb[VbVbcnMyFileSystem#47](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/walkthrough-manipulating_1_13.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#47](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_13.vb)]  
   
  Per eseguire il test del codice, premere F5 per compilare l'applicazione.  Fare clic su **Get Entries**, selezionare una voce, quindi scegliere **Display**.  La voce verrà visualizzata nel controllo <xref:System.Windows.Forms.TextBox> `DisplayEntry`.  Fare clic su **Edit Entry**.  La voce verrà visualizzata nel controllo <xref:System.Windows.Forms.TextBox> `Entry`.  Modificare la voce nel controllo <xref:System.Windows.Forms.TextBox> `Entry` e fare clic su **Submit Edit**.  Aprire il file `MyDiary.txt` per confermare la correzione,  quindi selezionare una voce e fare clic su **Delete Entry**.  Quando viene richiesta una conferma da <xref:System.Windows.Forms.MessageBox>, scegliere **OK**.  Chiudere l'applicazione e aprire `MyDiary.txt` per confermare l'eliminazione.  
   

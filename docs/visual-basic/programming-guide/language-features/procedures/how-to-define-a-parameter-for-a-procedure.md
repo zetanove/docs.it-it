@@ -45,7 +45,7 @@ Un *parametro* consente al codice chiamante di passare un valore alla routine qu
   
      Nell'esempio di codice seguente viene definita la struttura di una routine `Sub` con tre parametri.  I primi due sono obbligatori mentre il terzo è facoltativo.  Nell'elenco di parametri le dichiarazioni di parametro sono separate da virgole.  
   
-     [!code-vb[VbVbcnProcedures#33](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-a-paramete_1.vb)]  
+     [!code-vb[VbVbcnProcedures#33](./codesnippet/VisualBasic/how-to-define-a-parameter-for-a-procedure_1.vb)]  
   
      Il primo parametro accetta un oggetto `customer` e `updateCustomer` può aggiornare direttamente la variabile passata a `c` in quanto l'argomento viene passato [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md).  La routine non può modificare i valori degli ultimi due argomenti in quanto vengono passati [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md).  
   

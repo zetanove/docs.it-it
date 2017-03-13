@@ -42,7 +42,7 @@ caps.handback.revision: 14
 ## Esempio  
  Nell'esempio seguente viene definita una routine `Sub` per l'invio di una transazione relativa al saldo di un cliente.  Viene utilizzata la parola chiave `Overloads` per definire due versioni della routine, una che accetta il cliente per nome e l'altra per numero di conto.  
   
- [!code-vb[VbVbcnProcedures#72](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-multiple-v_1.vb)]  
+ [!code-vb[VbVbcnProcedures#72](./codesnippet/VisualBasic/how-to-define-multiple-versions-of-a-procedure_1.vb)]  
   
  Il codice chiamante può ottenere l'identificazione del cliente come `String` o `Integer` e quindi utilizzare la stessa istruzione di chiamata in entrambi i casi.  
   

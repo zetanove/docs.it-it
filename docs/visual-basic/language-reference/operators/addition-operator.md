@@ -101,23 +101,23 @@ Somma due numeri o restituisce il valore positivo di un'espressione numerica.  P
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `+` viene utilizzato per eseguire la somma di numeri.  Se gli operandi sono entrambi numerici, verrà calcolato il risultato aritmetico.  Il risultato aritmetico rappresenta la somma dei due operandi.  
   
- [!code-vb[VbVbalrOperators#6](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#6](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_1.vb)]  
   
  L'operatore `+` consente anche di concatenare stringhe.  Se gli operandi sono entrambi stringhe, verrà eseguita la concatenazione.  Il risultato dell'operazione di concatenazione rappresenta una stringa singola costituita dal contenuto dei due operandi in successione.  
   
  Se gli operandi appartengono a tipi diversi, il risultato dipende dall'impostazione dell'[Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md).  Nell'esempio riportato di seguito viene illustrato il risultato che si ottiene quando `Option Strict` è `On`.  
   
- [!code-vb[VbVbalrOperators#53](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#53](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_2.vb)]  
   
- [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_3.vb)]  
-[!code-vb[VbVbalrOperators#51](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_4.vb)]  
+ [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_3.vb)]  
+[!code-vb[VbVbalrOperators#51](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_4.vb)]  
   
  Nell'esempio riportato di seguito viene illustrato il risultato che si ottiene quando `Option Strict` è `Off`.  
   
- [!code-vb[VbVbalrOperators#54](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_5.vb)]  
+ [!code-vb[VbVbalrOperators#54](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_5.vb)]  
   
- [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_3.vb)]  
-[!code-vb[VbVbalrOperators#52](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/addition-operator_6.vb)]  
+ [!code-vb[VbVbalrOperators#50](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_3.vb)]  
+[!code-vb[VbVbalrOperators#52](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addition-operator_6.vb)]  
   
  Per eliminare qualsiasi ambiguità, si consiglia di eseguire la concatenazione utilizzando l'operatore `&` anziché `+`.  
   

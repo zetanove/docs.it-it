@@ -23,7 +23,7 @@ Poiché gli oggetti sono polimorfici, per una variabile di un tipo di classe di 
 ## Esempio  
  Negli esempi seguenti viene mostrato come utilizzare gli operatori `is` e `as` per eseguire il cast da un tipo riferimento a un altro senza il rischio della generazione di un'eccezione.  Nell'esempio viene mostrato anche come utilizzare l'operatore `as` con i tipi valore nullable.  
   
- [!code-cs[csProgGuideTypes#40](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/how-to-safely-cast-by-us_1.cs)]  
+ [!code-cs[csProgGuideTypes#40](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-safely-cast-by-using-as-and-is-operators_1.cs)]  
   
 ## Vedere anche  
  [Tipi](../../../csharp/programming-guide/types/index.md)   

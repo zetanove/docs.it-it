@@ -36,26 +36,26 @@ caps.handback.revision: 20
 
 Quando si fa riferimento a un membro di un'enumerazione, è in genere necessario qualificare il nome del membro con il nome dell'enumerazione.  Per fare riferimento al membro `Sunday` dell'enumerazione `Days`, ad esempio, è necessario utilizzare la seguente sintassi:  
   
- [!code-vb[VbEnumsTask#18](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#18)]  
+ [!code-vb[VbEnumsTask#18](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_1.vb)]  
   
 ## Utilizzo dell'istruzione Imports  
  È possibile evitare l'utilizzo dei nomi completi mediante l'aggiunta dell'istruzione `Imports` nella sezione dichiarazioni dello spazio dei nomi del codice, come illustrato nell'esempio seguente:  
   
- [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#22)]  
+ [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_2.vb)]  
   
  L'istruzione `Imports` consente di importare i nomi dello spazio dei nomi da progetti e assembly a cui si fa riferimento e dall'interno dello stesso progetto del modulo in cui si trova l'istruzione.  Una volta aggiunta questa istruzione, sarà possibile fare riferimento ai membri dell'enumerazione tralasciando la qualificazione, come illustrato nell'esempio seguente:  
   
- [!code-vb[VbEnumsTask#24](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#24)]  
+ [!code-vb[VbEnumsTask#24](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_3.vb)]  
   
  L'organizzazione di set di costanti correlate in enumerazioni consente di utilizzare gli stessi nomi di costanti in contesti diversi.  È possibile, ad esempio, utilizzare gli stessi nomi per le costanti dei giorni della settimana nelle enumerazioni `Days` e `WorkDays`.  Quando si utilizza l'istruzione `Imports` con le enumerazioni, tuttavia, è necessario fare attenzione a evitare riferimenti ambigui.  Si consideri l'esempio seguente:  
   
- [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#22)]  
+ [!code-vb[VbEnumsTask#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_2.vb)]  
   
- [!code-vb[VbEnumsTask#25](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class1.vb#25)]  
+ [!code-vb[VbEnumsTask#25](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_4.vb)]  
   
  Se si suppone che `Monday` sia membro sia dell'enumerazione `Days` che dell'enumerazione `Workdays`, il codice riportato di seguito genererebbe un errore di compilazione.  Per evitare riferimenti ambigui quando si fa riferimento a una singola costante, qualificare il nome della costante indicandone l'enumerazione.  Nel codice riportato di seguito si fa riferimento alle costanti `Saturday` delle enumerazioni `Days` e `WorkDays`.  
   
- [!code-vb[VbEnumsTask#32](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#32)]  
+ [!code-vb[VbEnumsTask#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enumerations-and-name-qualification_5.vb)]  
   
 ## Vedere anche  
  [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)   

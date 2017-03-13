@@ -42,7 +42,7 @@ Specifica la descrizione di una proprietà.
 ## Esempio  
  Nell'esempio riportato di seguito il tag `<value>` viene utilizzato per descrivere il valore della proprietà `Counter`.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/value_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/value_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

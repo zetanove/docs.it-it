@@ -70,9 +70,9 @@ Option Explicit { On | Off }
 ## Esempio  
  Nell'esempio seguente l'istruzione `Option Explicit` viene utilizzata per imporre la dichiarazione esplicita di tutte le variabili.  Se si utilizza una variabile non dichiarata, in fase di compilazione verrà generato un errore.  
   
- [!code-vb[VbVbalrStatements#47](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-explicit-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#47](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_1.vb)]  
   
- [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-explicit-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_2.vb)]  
   
 ## Vedere anche  
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)   

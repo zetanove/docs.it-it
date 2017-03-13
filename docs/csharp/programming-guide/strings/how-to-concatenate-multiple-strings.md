@@ -23,12 +23,12 @@ La *concatenazione* è il processo di aggiunta di una stringa alla fine di un'al
 ## Esempio  
  Nell'esempio seguente viene mostrato come suddividere un lungo valore letterale stringa in stringhe più piccole, per migliorare la leggibilità nel codice sorgente.  Queste parti verranno concatenate in una singola stringa in fase di compilazione.  Non vi è alcun impatto sulle prestazioni in fase di esecuzione indipendentemente dal numero di stringhe coinvolte.  
   
- [!code-cs[csProgGuideStrings#30](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#30)]  
+ [!code-cs[csProgGuideStrings#30](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-concatenate-multiple-strings_1.cs)]  
   
 ## Esempio  
  Per concatenare variabili di tipo stringa, è possibile utilizzare gli operatori `+` o `+=` o i metodi <xref:System.String.Concat%2A?displayProperty=fullName>, <xref:System.String.Format%2A?displayProperty=fullName> o <xref:System.Text.StringBuilder.Append%2A?displayProperty=fullName>.  L'operatore `+` è facile da utilizzare e rende il codice intuitivo.  Anche se si utilizzano vari operatori \+ in un'istruzione, il contenuto della stringa viene copiato solo una volta.  Ma se questa operazione viene ripetuta più volte, ad esempio in un ciclo, potrebbe causare problemi di efficienza.  Notare, ad esempio, il codice seguente:  
   
- [!code-cs[csProgGuideStrings#23](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#23)]  
+ [!code-cs[csProgGuideStrings#23](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-concatenate-multiple-strings_2.cs)]  
   
 > [!NOTE]
 >  Nelle operazioni di concatenazione di stringhe il compilatore C\# tratta una stringa null come se fosse una stringa vuota, ma non converte il valore della stringa null originale.  
@@ -37,7 +37,7 @@ La *concatenazione* è il processo di aggiunta di una stringa alla fine di un'al
   
  Tuttavia, quando le prestazioni sono importanti, è sempre opportuno utilizzare la classe <xref:System.Text.StringBuilder> per concatenare stringhe.  Nell'esempio di codice riportato di seguito viene utilizzato il metodo <xref:System.Text.StringBuilder.Append%2A> della classe <xref:System.Text.StringBuilder> per concatenare le stringhe senza l'effetto di concatenazione dell'operatore `+`.  
   
- [!code-cs[csProgGuideStrings#22](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#22)]  
+ [!code-cs[csProgGuideStrings#22](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-concatenate-multiple-strings_3.cs)]  
   
 ## Vedere anche  
  <xref:System.String>   

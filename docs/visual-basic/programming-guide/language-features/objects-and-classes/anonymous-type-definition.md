@@ -26,7 +26,7 @@ In risposta alla dichiarazione di un'istanza di un tipo anonimo, il compilatore 
 ## Codice generato dal compilatore  
  Per la seguente definizione di `product`, il compilatore crea una nuova definizione di classe che contiene le proprietà `Name`, `Price`e `OnHand`.  
   
- [!code-vb[VbVbalrAnonymousTypes#25](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/anonymous-type-definition_1.vb)]  
+ [!code-vb[VbVbalrAnonymousTypes#25](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_1.vb)]  
   
  La definizione di classe contiene definizioni di proprietà simili alle seguenti.  Si noti che non è disponibile un metodo `Set` per le proprietà chiave.  I valori delle proprietà chiave sono di sola lettura.  
   
@@ -75,13 +75,13 @@ End Class
   
      Ad esempio, `Equals` restituisce `True` solo per `employee01` e `employee08`, come illustrato nell'esempio seguente.  Il commento che precede ogni riga specifica la ragione per cui la nuova istanza nuova non corrisponde a `employee01` .  
   
-     [!code-vb[VbVbalrAnonymousTypes#24](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/anonymous-type-definition_2.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#24](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_2.vb)]  
   
 -   `GetHashcode` fornisce un algoritmo di GetHashCode adeguatamente univoco.  L'algoritmo utilizza solo le proprietà chiave per calcolare il codice hash.  
   
 -   `ToString` restituisce una stringa di valori concatenati della proprietà, come illustrato nell'esempio seguente.  Sono incluse sia le proprietà chiave che quelle non chiave.  
   
-     [!code-vb[VbVbalrAnonymousTypes#29](../../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/anonymous-type-definition_3.vb)]  
+     [!code-vb[VbVbalrAnonymousTypes#29](../../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/anonymous-type-definition_3.vb)]  
   
  Le proprietà denominate in modo esplicito di un tipo anonimo non devono essere in conflitto con questi metodi generati.  Ovvero, non è possibile utilizzare `.Equals`, `.GetHashCode` o `.ToString` per denominare una proprietà.  
   

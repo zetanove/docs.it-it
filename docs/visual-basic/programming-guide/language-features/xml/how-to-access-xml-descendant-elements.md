@@ -28,7 +28,7 @@ caps.handback.revision: 19
 Nell'esempio viene illustrato come utilizzare la proprietà axis descendant per accedere a tutti gli elementi XML che hanno un nome specificato e che sono contenuti in un elemento XML.  In particolare, viene utilizzata la proprietà `Value` per ottenere il valore del primo elemento nella raccolta restituita dalla proprietà axis descendant `name`.  La proprietà axis descendant `name` ottiene tutti gli elementi denominati `name` contenuti nell'oggetto `contacts`.  Nell'esempio viene anche utilizzata la proprietà axis descendant `phone` per accedere a tutti gli elementi discendenti denominati `phone` inclusi nell'oggetto `contacts`.  
   
 ## Esempio  
- [!code-vb[VbXMLSamples#31](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-access-xml-descen_1.vb)]  
+ [!code-vb[VbXMLSamples#31](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-descendant-elements_1.vb)]  
   
 ## Compilazione del codice  
  L'esempio presenta i seguenti requisiti:  

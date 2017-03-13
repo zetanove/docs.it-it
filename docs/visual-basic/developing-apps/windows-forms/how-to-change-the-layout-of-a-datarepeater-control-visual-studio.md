@@ -38,16 +38,16 @@ Il controllo <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> può essere vi
   
 1.  Aggiungere al gestore eventi `Click` di un pulsante o menu il codice riportato di seguito:  
   
-     [!code-cs[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/VbPowerPacksDataRepeaterLayoutCS/VbPowerPacksDataRepeaterLayout.cs#1)]
-     [!code-vb[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerPacksDataRepeaterLayout/VbPowerPacksDataRepeaterLayout.vb#1)]  
+     [!code-cs[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_1.cs)]
+     [!code-vb[VbPowerPacksDataRepeaterLayout#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_1.vb)]  
   
 2.  Nella maggior parte dei casi, per ridimensionare <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate%2A> e adattare la disposizione dei controlli al nuovo orientamento è consigliabile aggiungere codice simile a quello riportato nella sezione Esempio.  
   
 ## Esempio  
  Nell'esempio riportato di seguito viene mostrato come rispondere all'evento <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyleChanged> in un gestore eventi.  Per questo esempio è necessario disporre di un controllo <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> denominato `DataRepeater1` in un form e che il relativo oggetto <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemTemplate%2A> contenga due controlli <xref:System.Windows.Forms.TextBox> denominati `TextBox1` e `TextBox2`.  
   
- [!code-cs[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/VbPowerPacksDataRepeaterLayoutCS/VbPowerPacksDataRepeaterLayout.cs#2)]
- [!code-vb[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/VbPowerPacksDataRepeaterLayout/VbPowerPacksDataRepeaterLayout.vb#2)]  
+ [!code-cs[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_2.cs)]
+ [!code-vb[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_2.vb)]  
   
 ## Vedere anche  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>   

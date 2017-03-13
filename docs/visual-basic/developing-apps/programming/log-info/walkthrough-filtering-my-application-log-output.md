@@ -36,7 +36,7 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
 3.  Nel <xref:System.Windows.Forms.Control.Click> gestore eventi per Button1, aggiungere il codice seguente:  
   
-     [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbcnMyApplicationLogFiltering/Form1.vb#1)]  
+     [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-filtering-my-application-log-output_1.vb)]  
   
 4.  Eseguire l'applicazione nel debugger.  
   

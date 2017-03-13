@@ -35,7 +35,7 @@ caps.handback.revision: 15
 ## Esempio  
  In questo esempio viene modificato il valore dell'impostazione utente `LastChanged` e la modifica viene salvata richiamando il metodo `My.Settings.Save`.  
   
- [!code-vb[VbVbalrMyResources#5](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#5)]  
+ [!code-vb[VbVbalrMyResources#5](../../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/how-to-persist-user-settings_1.vb)]  
   
  Per poter utilizzare questo esempio, è necessario che nell'applicazione sia presente un'impostazione dell'utente `LastChanged` del tipo `Date`.  Per ulteriori informazioni, vedere [Gestione delle impostazioni di un'applicazione \(.NET\)](/visual-studio/ide/managing-application-settings-dotnet).  
   

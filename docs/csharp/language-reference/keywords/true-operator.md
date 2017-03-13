@@ -22,7 +22,7 @@ Restituisce il valore [bool](../../../csharp/language-reference/keywords/bool.md
   
  Con valori booleani nullable, l'espressione `a != b` non è necessariamente uguale a `!(a == b)` poiché uno o entrambi i valori potrebbero essere null.  È necessario eseguire l'overload di entrambi gli operatori `true` e `false` separatamente per identificare correttamente i valori null nell'espressione.  Nell'esempio riportato di seguito viene illustrato come eseguire l'overload e utilizzare gli operatori `true` e `false`.  
   
- [!code-cs[csrefKeywordsOperator#16](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#16)]  
+ [!code-cs[csrefKeywordsOperator#16](../../../csharp/language-reference/keywords/codesnippet/CSharp/true-operator_1.cs)]  
   
  È possibile utilizzare un tipo che esegue l'overload degli operatori `true` e `false`per l'espressione di controllo nelle istruzioni [if](../../../csharp/language-reference/keywords/if-else.md), [do](../../../csharp/language-reference/keywords/do.md), [while](../../../csharp/language-reference/keywords/while.md) e [for](../../../csharp/language-reference/keywords/for.md) nonché nelle [espressioni condizionali](../../../csharp/language-reference/operators/conditional-operator.md).  
   

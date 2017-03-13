@@ -21,7 +21,7 @@ caps.handback.revision: 17
 # Tipi di enumerazione (Guida per programmatori C#)
 Un tipo di enumerazione \(anche denominato enumerazione o enum\) offre un modo efficiente per definire un insieme di costanti integrali denominate che possono essere assegnate a una variabile.  Si presupponga ad esempio di dover definire una variabile il cui valore rappresenterà un giorno della settimana.  Ci sono solo sette valori significativi che la variabile potrà mai archiviare.  Per definire tali valori, è possibile utilizzare un tipo di enumerazione, dichiarato tramite la parola chiave [enum](../../csharp/language-reference/keywords/enum.md).  
   
- [!code-cs[csProgGuideEnums#1](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_1.cs)]  
+ [!code-cs[csProgGuideEnums#1](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_1.cs)]  
   
  Per impostazione predefinita, il tipo sottostante di ogni elemento dell'enumerazione è [int](../../csharp/language-reference/keywords/int.md).  È possibile specificare un altro tipo numerico integrale utilizzando i due punti, come mostrato nell'esempio precedente.  Per un elenco completo dei tipi possibili, vedere [enum \(Riferimenti per C\#\)](../../csharp/language-reference/keywords/enum.md).  
   
@@ -51,14 +51,14 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
  Se la variabile `meetingDay` è di tipo `Days`, è possibile assegnare \(senza un cast esplicito\) solo uno dei valori definiti da `Days`.  E se il giorno della riunione cambia, è possibile assegnare un nuovo valore da `Days` a `meetingDay`:  
   
- [!code-cs[csProgGuideEnums#4](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_2.cs)]  
+ [!code-cs[csProgGuideEnums#4](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_2.cs)]  
   
 > [!NOTE]
 >  È possibile assegnare qualsiasi valore intero arbitrario a `meetingDay`.  Ad esempio, questa riga di codice non produce un errore: `meetingDay = (Days) 42`.  Tuttavia, questa impostazione non è consigliabile perché l'aspettativa implicita è che una variabile enum contenga solo uno dei valori definiti dal tipo enum.  L'assegnazione di un valore arbitrario a una variabile di un tipo di enumerazione introduce un rischio elevato di errori.  
   
  È possibile assegnare qualsiasi valore agli elementi nell'elenco di enumeratori di un tipo di enumerazione ed è inoltre possibile utilizzare valori calcolati:  
   
- [!code-cs[csProgGuideEnums#3](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_3.cs)]  
+ [!code-cs[csProgGuideEnums#3](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_3.cs)]  
   
 ## Tipi di enumerazione come flag di bit  
  È possibile utilizzare un tipo di enumerazione per definire flag di bit, che consentono a un'istanza del tipo di enumerazione di archiviare qualsiasi combinazione dei valori definiti nell'elenco di enumeratori  \(chiaramente, alcune combinazioni potrebbero non essere significative o consentite nel codice del programma\).  
@@ -67,22 +67,22 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
  Nell'esempio seguente, viene definita un'altra versione dell'enum `Days`, denominato `Days2`.  `Days2` dispone dell'attributo `Flags` e a ogni valore viene assegnata la successiva maggiore potenza di 2.  In questo modo è possibile creare una variabile `Days2` il cui valore è `Days2.Tuesday` e `Days2.Thursday`.  
   
- [!code-cs[csProgGuideEnums#2](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_4.cs)]  
+ [!code-cs[csProgGuideEnums#2](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_4.cs)]  
   
  Per impostare un flag su un enum, utilizzare l'operatore `OR` bit per bit come mostrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideEnums#6](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_5.cs)]  
+ [!code-cs[csProgGuideEnums#6](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_5.cs)]  
   
  Per determinare se un flag specifico è impostato, utilizzare l'operatore `AND` bit per bit come mostrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideEnums#7](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_6.cs)]  
+ [!code-cs[csProgGuideEnums#7](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_6.cs)]  
   
  Per ulteriori informazioni sugli aspetti da considerare quando si definiscono tipi di enumerazione con l'attributo <xref:System.FlagsAttribute?displayProperty=fullName>, vedere <xref:System.Enum?displayProperty=fullName>.  
   
 ## Utilizzo dei metodi System.Enum per individuare e modificare valori enum  
  Tutti gli enum sono istanze del tipo <xref:System.Enum?displayProperty=fullName>.  Non è possibile derivare nuove classi da <xref:System.Enum?displayProperty=fullName>, ma è possibile utilizzarne i metodi per individuare informazioni e modificare valori in un'istanza dell'enum.  
   
- [!code-cs[csProgGuideEnums#5](../../csharp/programming-guide/codesnippet/csharp/enumeration-types_7.cs)]  
+ [!code-cs[csProgGuideEnums#5](../../csharp/programming-guide/codesnippet/CSharp/enumeration-types_7.cs)]  
   
  Per ulteriori informazioni, vedere la classe <xref:System.Enum?displayProperty=fullName>.  
   

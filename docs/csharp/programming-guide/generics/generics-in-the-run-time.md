@@ -22,11 +22,11 @@ Quando un metodo o un tipo generico viene compilato in MSIL \(Microsoft intermed
   
  Si supponga, ad esempio, che il codice del programma abbia dichiarato uno stack costituito da interi:  
   
- [!code-cs[csProgGuideGenerics#42](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-in-the-run-time_1.cs)]  
+ [!code-cs[csProgGuideGenerics#42](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-in-the-run-time_1.cs)]  
   
  A questo punto viene generata una versione specializzata della classe <xref:System.Collections.Generic.Stack%601> con l'intero sostituito in modo corretto con il parametro relativo.  In questo modo, ogni volta che il codice del programma utilizza uno stack di interi, viene riutilizzata la classe specializzata <xref:System.Collections.Generic.Stack%601> generata.  Nell'esempio riportato di seguito, vengono create due istanze di uno stack di interi che condividono una singola istanza del codice `Stack<int>`:  
   
- [!code-cs[csProgGuideGenerics#43](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-in-the-run-time_2.cs)]  
+ [!code-cs[csProgGuideGenerics#43](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-in-the-run-time_2.cs)]  
   
  Si supponga ora che un'altra classe <xref:System.Collections.Generic.Stack%601> con un tipo valore diverso, ad esempio `long`, o con una struttura definita dall'utente come relativo parametro venga creata in un altro punto nel codice.  Di conseguenza, viene generata un'altra versione del tipo generico e il valore `long` viene sostituito nelle posizioni appropriate in MSIL.  Le conversioni non sono più necessarie poiché ogni classe generica specializzata contiene a livello nativo il tipo di valore.  
   
@@ -34,17 +34,17 @@ Quando un metodo o un tipo generico viene compilato in MSIL \(Microsoft intermed
   
  Si supponga, ad esempio, di disporre di due tipi riferimento, una classe `Customer` e una classe `Order`, e di aver creato uno stack di tipi `Customer`:  
   
- [!code-cs[csProgGuideGenerics#47](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-in-the-run-time_3.cs)]  
+ [!code-cs[csProgGuideGenerics#47](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-in-the-run-time_3.cs)]  
   
- [!code-cs[csProgGuideGenerics#44](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-in-the-run-time_4.cs)]  
+ [!code-cs[csProgGuideGenerics#44](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-in-the-run-time_4.cs)]  
   
  A questo punto, viene generata una versione specializzata della classe <xref:System.Collections.Generic.Stack%601> che, anziché archiviare dati, archivia riferimenti a oggetti che verranno inseriti in seguito.  Si supponga inoltre che la riga di codice successiva crei uno stack di un altro tipo riferimento, denominato `Order`:  
   
- [!code-cs[csProgGuideGenerics#45](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-in-the-run-time_5.cs)]  
+ [!code-cs[csProgGuideGenerics#45](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-in-the-run-time_5.cs)]  
   
  Diversamente dai tipi di valore, non viene creata un'altra versione specializzata della classe <xref:System.Collections.Generic.Stack%601> per il tipo `Order`.  Viene invece creata un'istanza della versione specializzata della classe <xref:System.Collections.Generic.Stack%601> e viene impostata la variabile `orders` per farvi riferimento.  Si supponga di trovare successivamente una riga di codice per creare uno stack di un tipo `Customer`:  
   
- [!code-cs[csProgGuideGenerics#46](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-in-the-run-time_6.cs)]  
+ [!code-cs[csProgGuideGenerics#46](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-in-the-run-time_6.cs)]  
   
  Analogamente all'utilizzo precedente della classe <xref:System.Collections.Generic.Stack%601> creata con il tipo `Order`, viene creata un'altra istanza della classe <xref:System.Collections.Generic.Stack%601> specializzata.  I puntatori in essa contenuti vengono impostati per fare riferimento a un'area di memoria con le dimensioni di un tipo `Customer`.  Poiché il numero di tipi riferimento può variare notevolmente da un programma a un altro, l'implementazione di C\# dei generics riduce in modo significativo la quantità di codice riducendo a una le classi specializzate create dal compilatore per le classi generiche di tipi riferimento.  
   

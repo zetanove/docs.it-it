@@ -26,7 +26,7 @@ Binary        `|`  sono già definiti per i tipi integrali e `bool`.  Per i tipi
  I tipi definiti dall'utente possono eseguire l'overload dell'operatore          `|` \(vedere [operator](../../../csharp/language-reference/keywords/operator.md)\).  
   
 ## Esempio  
- [!code-cs[csRefOperators#31](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#31)]  
+ [!code-cs[csRefOperators#31](../../../csharp/language-reference/operators/codesnippet/CSharp/or-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

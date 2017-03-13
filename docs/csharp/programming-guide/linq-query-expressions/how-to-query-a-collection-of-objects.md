@@ -10,7 +10,7 @@ In questo esempio viene illustrato come eseguire una query semplice su un elenco
 ## Esempio  
  La query seguente restituisce gli studenti che prendono un voto pari a 90 o superiore nel primo esame.  
   
- [!code-cs[csProgGuideLINQ#15](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#15)]  
+ [!code-cs[csProgGuideLINQ#15](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-query-a-collection-of-objects_1.cs)]  
   
  Questa query è intenzionalmente semplice per consentire all'utente di fare pratica.  È possibile, ad esempio, provare più predicati nella clausola `where` o utilizzare la clausola `orderby` per ordinare i risultati.  
   

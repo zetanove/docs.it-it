@@ -30,7 +30,7 @@ Un letterale è un valore che viene espresso come se stesso piuttosto che come v
   
  Se [Option Infer](../../../../visual-basic/language-reference/statements/option-infer-statement.md) e `Off` e [Option Strict](../../../../visual-basic/language-reference/statements/option-strict-statement.md) è `On`, è necessario dichiarare tutte le costanti in modo esplicito con un tipo di dati.  Nell'esempio riportato di seguito il tipo di dati di `MyByte` è dichiarato in modo esplicito come `Byte`:  
   
- [!code-vb[VbVbalrConstants#1](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/visualbasic/constant-and-literal-dat_1.vb)]  
+ [!code-vb[VbVbalrConstants#1](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_1.vb)]  
   
  Se `Option Infer` è `On` o `Option Strict` è `Off`, è possibile dichiarare una costante senza specificare un tipo di dati con una clausola `As`.  Il compilatore determina il tipo della costante dal tipo dell'espressione.  In base all'impostazione predefinita, per un valore letterale di numero integer viene impostato il tipo di dati `Integer`.  Il tipo di dati predefinito per i numeri a virgola mobile è `Double`, mentre le parole chiave `True` e `False` specificano una costante di tipo `Boolean`.  
   
@@ -48,11 +48,11 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
   
  Per correggere l'esempio precedente, è possibile aggiungere il carattere di tipo `D` al valore letterale, in modo che venga rappresentato come `Decimal`:  
   
- [!code-vb[VbVbalrConstants#2](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/visualbasic/constant-and-literal-dat_2.vb)]  
+ [!code-vb[VbVbalrConstants#2](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_2.vb)]  
   
  Nell'esempio seguente viene illustrato l'utilizzo corretto di caratteri di tipo e caratteri di contenimento:  
   
- [!code-vb[VbVbalrConstants#3](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/visualbasic/constant-and-literal-dat_3.vb)]  
+ [!code-vb[VbVbalrConstants#3](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_3.vb)]  
   
  Nella tabella seguente sono riportati i caratteri di contenimento e i caratteri tipo disponibili in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  
   

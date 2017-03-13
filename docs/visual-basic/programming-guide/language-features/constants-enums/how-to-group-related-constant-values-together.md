@@ -28,11 +28,11 @@ L'enumerazione rappresenta il modo migliore per raggruppare le costanti correlat
   
 1.  Scrivere una dichiarazione che comprenda un livello di accesso al codice, la parola chiave `Enum` e un nome valido.  Nell'esempio riportato di seguito viene creata l'enumerazione `Private` `temperatureValues`.  
   
-     [!code-vb[VbEnumsTask#21](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#21)]  
+     [!code-vb[VbEnumsTask#21](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-group-related-constant-values-together_1.vb)]  
   
 2.  Definire le costanti nell'enumerazione.  Nell'esempio riportato di seguito viene creata l'enumerazione `Public` `temperatureValues` e vengono assegnati i relativi valori.  
   
-     [!code-vb[VbEnumsTask#1](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#1)]  
+     [!code-vb[VbEnumsTask#1](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-group-related-constant-values-together_2.vb)]  
   
 ## Vedere anche  
  [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)   

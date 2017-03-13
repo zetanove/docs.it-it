@@ -89,13 +89,13 @@ End SyncLock
  Se la classe `simpleMessageList` condivide un unico elenco di messaggi tra tutte le istanze, le variabili `messagesList` e `messagesLast` verranno dichiarate come `Shared`.  In questo caso, anche la variabile `messagesLock` deve essere `Shared`, in modo che ogni istanza possa utilizzare un unico oggetto di blocco.  
   
 ### Codice  
- [!code-vb[VbVbalrThreading#1](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/synclock-statement_1.vb)]  
+ [!code-vb[VbVbalrThreading#1](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_1.vb)]  
   
 ### Descrizione  
  Nell'esempio riportato di seguito vengono utilizzati dei thread e `SyncLock`.  Finché l'istruzione `SyncLock` è presente, il blocco di istruzioni costituisce una sezione critica e `balance` non risulterà mai un numero negativo.  È possibile commentare `SyncLock` e le istruzioni `End SyncLock` per vedere l'effetto di nascondere la parola chiave `SyncLock`.  
   
 ### Codice  
- [!code-vb[VbVbalrThreading#21](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/synclock-statement_2.vb)]  
+ [!code-vb[VbVbalrThreading#21](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/synclock-statement_2.vb)]  
   
 ### Commenti  
   

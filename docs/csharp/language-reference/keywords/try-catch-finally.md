@@ -25,7 +25,7 @@ Le parole chiave `catch` e `finally` vengono in genere utilizzate insieme per ri
  Per ulteriori informazioni ed esempi sulla rigenerazione di un'eccezione, vedere [try\-catch](../../../csharp/language-reference/keywords/try-catch.md) e [Generazione di eccezioni](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md).  Per ulteriori informazioni sul blocco di `finally` , vedere [try\-finally](../../../csharp/language-reference/keywords/try-finally.md).  
   
 ## Esempio  
- [!code-cs[csrefKeywordsExceptions#1](../../../csharp/language-reference/keywords/codesnippet/csharp/try-catch-finally_1.cs)]  
+ [!code-cs[csrefKeywordsExceptions#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch-finally_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

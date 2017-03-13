@@ -29,7 +29,7 @@ In un'espressione di query, è talvolta utile archiviare il risultato di una sot
   
 2.  Per consentire alla query di chiamare `ToLower` solo una volta sulla variabile di intervallo `word`.  Senza utilizzare `let`, si dovrebbe chiamare `ToLower` in ogni predicato nella clausola `where`.  
   
- [!code-cs[cscsrefQueryKeywords#28](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Let.cs#28)]  
+ [!code-cs[cscsrefQueryKeywords#28](../../../csharp/language-reference/keywords/codesnippet/CSharp/let-clause_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

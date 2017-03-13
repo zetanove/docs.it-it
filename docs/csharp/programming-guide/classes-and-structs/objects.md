@@ -27,11 +27,11 @@ Una definizione di classe o struttura è simile a un progetto iniziale in cui ve
   
  Le istanze di classi vengono create utilizzando l'[operatore new](../../../csharp/language-reference/keywords/new-operator.md).  Nel seguente esempio, `Person` è il tipo e `person1` e `person 2` sono istanze, o oggetti, di tale tipo.  
   
- [!code-cs[csProgGuideStatements#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/objects_1.cs)]  
+ [!code-cs[csProgGuideStatements#30](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_1.cs)]  
   
  Poiché le strutture sono tipi di valore, una variabile di un oggetto struttura contiene una copia dell'intero oggetto.  Anche le istanze di strutture possono essere create tramite l'operatore `new`, ma non è obbligatorio, come illustrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/objects_2.cs)]  
+ [!code-cs[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_2.cs)]  
   
  La memoria per entrambi gli oggetti `p1` sia `p2` viene allocata sullo stack di thread.  Tale memoria viene recuperata insieme al tipo o al metodo in cui è stata dichiarata.  Questo è il motivo per cui le strutture vengono copiate per assegnazione.  Per contrasto, la memoria allocata per l'istanza di una classe viene recuperata automaticamente \(tramite Garbage Collection\) da Common Language Runtime quando tutti i riferimenti all'oggetto sono usciti dall'ambito.  Non è possibile eliminare in modo deterministico un oggetto di classe come invece avviene in C\+\+.  Per ulteriori informazioni sul sistema di Garbage Collection in [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)], vedere [Garbage Collection](../Topic/Garbage%20Collection.md).  
   
@@ -45,7 +45,7 @@ Una definizione di classe o struttura è simile a un progetto iniziale in cui ve
   
 -   Per determinare se i campi di istanza in due istanze di strutture hanno gli stessi valori, utilizzare il metodo <xref:System.ValueType.Equals%2A?displayProperty=fullName>.  Poiché tutte le strutture ereditano implicitamente da <xref:System.ValueType?displayProperty=fullName>, il metodo viene chiamato direttamente sull'oggetto, come illustrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/objects_3.cs)]  
+ [!code-cs[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_3.cs)]  
   
  L'implementazione <xref:System.ValueType?displayProperty=fullName> di `Equals` utilizza la reflection perché deve essere in grado di determinare i tipi di campi presenti in tutte le strutture.  Quando si creano strutture, eseguire l'override del metodo `Equals` per fornire un algoritmo di uguaglianza efficiente specifico del tipo.  
   

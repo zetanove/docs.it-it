@@ -82,7 +82,7 @@ Language\-Integrated Query \(LINQ\) semplifica l'accesso a informazioni di datab
   
      Aggiungere il seguente codice all'evento `Load` per eseguire una query nelle tabelle esposte come proprietà dell'oggetto <xref:System.Data.Linq.DataContext> ed eseguire il conteggio, la somma e la media dei risultati.  L'esempio utilizza la clausola `Aggregate` per eseguire una query per un solo risultato e la clausola `Group By` per visualizzare una media dei risultati raggruppati.  
   
-     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/StoredProcedureHowTo/Form6.vb#13)]  
+     [!code-vb[VbLINQToSQLHowTos#13](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-count-sum-or-average-data-by-using-linq_1.vb)]  
   
 4.  Premere F5 per eseguire il progetto e visualizzare i risultati.  
   

@@ -30,7 +30,7 @@ Per i parametri di tipo generico, la parola chiave `out` specifica che il parame
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, estendere e implementare un'interfaccia generica covariante.  Viene inoltre illustrato come utilizzare la conversione implicita per le classi che implementano un'interfaccia covariante.  
   
- [!code-cs[csVarianceKeywords#3](../../../csharp/language-reference/keywords/codesnippet/csharp/out-generic-modifier_1.cs)]  
+ [!code-cs[csVarianceKeywords#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_1.cs)]  
   
  In un'interfaccia generica, un parametro di tipo può essere dichiarato covariante se soddisfa le condizioni seguenti:  
   
@@ -44,7 +44,7 @@ Per i parametri di tipo generico, la parola chiave `out` specifica che il parame
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, creare un'istanza e richiamare un delegato generico covariante.  Viene inoltre illustrato come convertire in modo implicito i tipi delegati.  
   
- [!code-cs[csVarianceKeywords#4](../../../csharp/language-reference/keywords/codesnippet/csharp/out-generic-modifier_2.cs)]  
+ [!code-cs[csVarianceKeywords#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/out-generic-modifier_2.cs)]  
   
  In un delegato generico, un tipo può essere dichiarato covariante se viene utilizzato solo come tipo restituito del metodo e non per gli argomenti del metodo.  
   

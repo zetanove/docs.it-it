@@ -47,11 +47,11 @@ Se una routine include uno o più parametri [Optional](../../../../visual-basic/
   
      Nell'esempio seguente viene illustrata una routine definita con un parametro facoltativo, un set equivalente di due routine di overload e infine esempi sia della versione di overload valida che di quella non valida.  
   
-     [!code-vb[VbVbcnProcedures#59](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_1_1.vb)]  
+     [!code-vb[VbVbcnProcedures#59](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-optional-parameters_1.vb)]  
   
-     [!code-vb[VbVbcnProcedures#60](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_1_2.vb)]  
+     [!code-vb[VbVbcnProcedures#60](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-optional-parameters_2.vb)]  
   
-     [!code-vb[VbVbcnProcedures#61](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-overload-a-proced_1_3.vb)]  
+     [!code-vb[VbVbcnProcedures#61](./codesnippet/VisualBasic/how-to-overload-a-procedure-that-takes-optional-parameters_3.vb)]  
   
 ## Più parametri facoltativi  
  Per una routine con più parametri facoltativi, sono generalmente necessarie più di due versioni di overload.  Se, ad esempio, sono presenti due parametri facoltativi e il codice chiamante può fornirne oppure ometterne uno indipendentemente dall'altro, sono necessarie quattro versioni di overload, una per ogni possibile combinazione di argomenti forniti.  

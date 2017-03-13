@@ -33,7 +33,7 @@ In questo argomento viene descritto come utilizzare `My.Computer.Ports` per visu
   
  Solitamente, un utente seleziona la porta seriale utilizzata dall'applicazione dall'elenco di porte disponibili.  Nell'esempio riportato di seguito i nomi delle porte seriali sono archiviati in un controllo <xref:System.Windows.Forms.ListBox>.  Per ulteriori informazioni, vedere [Controllo ListBox](../Topic/ListBox%20Control%20\(Windows%20Forms\).md).  
   
- [!code-vb[VbVbalrMyComputer#45](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/VbVbalrMyComputer/Class2.vb#45)]  
+ [!code-vb[VbVbalrMyComputer#45](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-show-available-serial-ports_1.vb)]  
   
  Questo esempio di codice è anche disponibile come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice, si trova in **Connettività e rete**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
   

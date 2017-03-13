@@ -29,7 +29,7 @@ Utilizzando la parola chiave `params`, è possibile specificare un [parametro di
 ## Esempio  
  Nell'esempio seguente vengono dimostrate le varie modalità nelle quali è possibile inviare argomenti al parametro `params`.  
   
- [!code-cs[csrefKeywordsMethodParams#5](../../../csharp/language-reference/keywords/codesnippet/csharp/params_1.cs)]  
+ [!code-cs[csrefKeywordsMethodParams#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/params_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -41,7 +41,7 @@ Specifica che un argomento viene passato in modo tale che la routine o la propri
 ## Esempio  
  Nell'esempio seguente viene illustrato l'utilizzo del meccanismo di passaggio del parametro `ByVal` con un argomento del tipo di riferimento.  Nell'esempio l'argomento è `c1`, un'istanza della classe `Class1`.  `ByVal` impedisce al codice nelle routine di modificare il valore sottostante dell'argomento di riferimento, `c1`, ma non protegge i campi e le proprietà accessibili di `c1`.  
   
- [!code-vb[VbVbalrKeywords#10](../../../visual-basic/language-reference/codesnippet/visualbasic/byval_1.vb)]  
+ [!code-vb[VbVbalrKeywords#10](../../../visual-basic/language-reference/codesnippet/VisualBasic/byval_1.vb)]  
   
 ## Vedere anche  
  [Parole chiave](../../../visual-basic/language-reference/keywords/index.md)   

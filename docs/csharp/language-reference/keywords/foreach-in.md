@@ -44,7 +44,7 @@ L'istruzione `foreach` ripete un gruppo di istruzioni incorporate per ciascun el
   
 -   ciclo `foreach` che gestisce un conteggio del numero di elementi della matrice  
   
- [!code-cs[csrefKeywordsIteration#4](../../../csharp/language-reference/keywords/codesnippet/csharp/foreach-in_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/foreach-in_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

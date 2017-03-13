@@ -23,7 +23,7 @@ La parola chiave `unchecked` viene utilizzata per eliminare il controllo dell'ov
   
  In un contesto non controllato, o di tipo unchecked, se un'espressione produce un valore non compreso nell'intervallo del tipo di destinazione, l'overflow non viene contrassegnato.  Poiché, ad esempio, il calcolo nell'esempio seguente viene eseguito in un 'espressione o blocco di tipo `unchecked`, il fatto che il risultato sia troppo grande per un tipo Integer viene ignorato e a `int1` viene assegnato il valore \-2.147.483.639.  
   
- [!code-cs[csrefKeywordsChecked#5](../../../csharp/language-reference/keywords/codesnippet/csharp/unchecked_1.cs)]  
+ [!code-cs[csrefKeywordsChecked#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/unchecked_1.cs)]  
   
  Se l'ambiente `unchecked` viene rimosso, si verifica un errore di compilazione.  È possibile rilevare l'overflow in fase di compilazione perché tutti i termini dell'espressione sono costanti.  
   
@@ -34,7 +34,7 @@ La parola chiave `unchecked` viene utilizzata per eliminare il controllo dell'ov
 ## Esempio  
  In questo esempio viene illustrato come utilizzare la parola chiave `unchecked`.  
   
- [!code-cs[csrefKeywordsChecked#2](../../../csharp/language-reference/keywords/codesnippet/csharp/unchecked_2.cs)]  
+ [!code-cs[csrefKeywordsChecked#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/unchecked_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -45,28 +45,28 @@ Quando si chiama una routine `Sub` o `Function`, è possibile passare gli argome
   
  Nella seguente routine `Sub` ad esempio vengono utilizzati tre argomenti:  
   
- [!code-vb[VbVbcnProcedures#41](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_1.vb)]  
+ [!code-vb[VbVbcnProcedures#41](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_1.vb)]  
   
  Quando si chiama questa routine, è possibile fornire gli argomenti tramite posizione, tramite nome o utilizzando una combinazione dei due criteri.  
   
 ## Passaggio di argomenti tramite posizione  
  È possibile chiamare la routine  `studentInfo`  con i relativi argomenti passati per posizione e delimitati da virgole, come mostrato nell'esempio seguente:  
   
- [!code-vb[VbVbcnProcedures#42](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_2.vb)]  
+ [!code-vb[VbVbcnProcedures#42](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_2.vb)]  
   
  Se si omette un argomento facoltativo in un elenco di argomenti di posizione, indicarne la posizione con una virgola.  Nell'esempio riportato di seguito viene chiamata la routine `studentInfo` senza l'argomento  `age` .  
   
- [!code-vb[VbVbcnProcedures#43](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_3.vb)]  
+ [!code-vb[VbVbcnProcedures#43](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_3.vb)]  
   
 ## Passaggio di argomenti tramite nome  
  In alternativa, è possibile chiamare `studentInfo` con gli argomenti passati per nome e delimitati da virgole, come mostrato nell'esempio seguente:  
   
- [!code-vb[VbVbcnProcedures#44](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_4.vb)]  
+ [!code-vb[VbVbcnProcedures#44](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_4.vb)]  
   
 ## Combinazione di argomenti tramite posizione e tramite nome  
  È possibile fornire argomenti tramite posizione e tramite nome in un'unica chiamata di routine, come mostrato nell'esempio che segue:  
   
- [!code-vb[VbVbcnProcedures#45](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-pos_5.vb)]  
+ [!code-vb[VbVbcnProcedures#45](./codesnippet/VisualBasic/passing-arguments-by-position-and-by-name_5.vb)]  
   
  Nell'esempio precedente non è necessaria alcuna virgola aggiuntiva per indicare la posizione dell'argomento `age` omesso, in quanto  `birth`  viene passato per nome.  
   

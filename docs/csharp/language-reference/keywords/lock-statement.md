@@ -67,12 +67,12 @@ class Account
 ## Esempio  
  Nell'esempio seguente viene illustrato un utilizzo semplificato dei thread senza blocco in C\#.  
   
- [!code-cs[csrefKeywordsFixedLock#5](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefFixedLock/csrefKeywordsFixedLock.cs#5)]  
+ [!code-cs[csrefKeywordsFixedLock#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_1.cs)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito vengono utilizzati thread e `lock`.  Finché l'istruzione `lock` è presente, il blocco di istruzioni rimarrà una sezione critica e `balance` non diventerà mai un numero negativo.  
   
- [!code-cs[csrefKeywordsFixedLock#6](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefFixedLock/csrefKeywordsFixedLock.cs#6)]  
+ [!code-cs[csrefKeywordsFixedLock#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -24,7 +24,7 @@ L'istruzione `do` esegue ripetutamente un'istruzione o un blocco di istruzioni f
 ## Esempio  
  Nell'esempio riportato di seguito le istruzioni del ciclo `do-while` vengono eseguite purché la variabile `x` sia inferiore a 5.  
   
- [!code-cs[csrefKeywordsIteration#1](../../../csharp/language-reference/keywords/codesnippet/csharp/do_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/do_1.cs)]  
   
  A differenza dell'istruzione [while](../../../csharp/language-reference/keywords/while.md), un ciclo `do-while` viene eseguito una volta prima della valutazione dell'espressione condizionale.  
   

@@ -10,14 +10,14 @@ caps.handback.revision: 15
 ## Esempio  
  Nell'esempio seguente viene illustrato come spostare codice di gestione dell'eccezione al di fuori di un'espressione di query.  Questa operazione è possibile solo quando il metodo non dipende da qualsiasi variabile locale per la query.  
   
- [!code-cs[csProgGuideLINQ#10](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#10)]  
+ [!code-cs[csProgGuideLINQ#10](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-exceptions-in-query-expressions_1.cs)]  
   
 ## Esempio  
  In alcuni casi, la migliore risposta a un'eccezione generata dall'interno di una query potrebbe essere l'arresto immediato dell'esecuzione della query.  Nell'esempio seguente viene illustrato come gestire le eccezioni che potrebbero essere generate all'interno di un corpo di query.  Si presuma che `SomeMethodThatMightThrow` possa potenzialmente causare un'eccezione che richiede l'arresto dell'esecuzione della query.  
   
  Si noti che il blocco `try` racchiude il ciclo `foreach` e non la query stessa,  in quanto il ciclo `foreach` è il punto in corrispondenza del quale la query viene effettivamente eseguita.  Per ulteriori informazioni, vedere la classe [Introduction to LINQ Queries \(C\#\)](../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
   
- [!code-cs[csProgGuideLINQ#12](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#12)]  
+ [!code-cs[csProgGuideLINQ#12](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-handle-exceptions-in-query-expressions_2.cs)]  
   
 ## Compilazione del codice  
   

@@ -36,17 +36,17 @@ I metodi di estensione consentono agli sviluppatori di aggiungere funzionalità 
 ### Descrizione  
  Nell'esempio riportato di seguito viene definita un'estensione `Print` per il tipo di dati <xref:System.String>.  Il metodo utilizza `Console.WriteLine` per visualizzare una stringa.  Il parametro del metodo `Print`, `aString`, stabilisce che il metodo estende la classe <xref:System.String>.  
   
- [!code-vb[VbVbalrExtensionMethods#1](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/StringExtensions.vb#1)]  
+ [!code-vb[VbVbalrExtensionMethods#1](./codesnippet/VisualBasic/extension-methods_1.vb)]  
   
  Notare che la definizione del metodo di estensione è contrassegnata con l'attributo di estensione `<Extension()>`.  Il contrassegno del modulo nel quale è definito il metodo è facoltativo, tuttavia ogni metodo di estensione deve essere contrassegnato.  <xref:System.Runtime.CompilerServices> deve essere importato per accedere all'attributo di estensione.  
   
  I metodi di estensione possono essere dichiarati solo nei moduli.  In genere, il modulo nel quale è definito un metodo di estensione non è lo stesso nel quale viene chiamato.  Il modulo che contiene il metodo di estensione viene invece importato, se necessario, per portarlo nell'ambito.  Una volta che il modulo contenente `Print` si trova nell'ambito, il metodo può essere chiamato come se fosse un metodo di istanza comune che non assume argomenti, ad esempio `ToUpper`:  
   
- [!code-vb[VbVbalrExtensionMethods#2](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Class1.vb#2)]  
+ [!code-vb[VbVbalrExtensionMethods#2](./codesnippet/VisualBasic/extension-methods_2.vb)]  
   
  Anche il prossimo esempio, `PrintAndPunctuate`, è un'estensione di <xref:System.String>, in questo caso definito con due parametri.  Il primo parametro, `aString`, stabilisce che il metodo di estensione estende <xref:System.String>.  Il secondo parametro, `punc`, deve essere una stringa di segni di punteggiatura passata come argomento quando il metodo viene chiamato.  Il metodo visualizza la stringa seguita dai segni di punteggiatura.  
   
- [!code-vb[VbVbalrExtensionMethods#3](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Class2.vb#3)]  
+ [!code-vb[VbVbalrExtensionMethods#3](./codesnippet/VisualBasic/extension-methods_3.vb)]  
   
  Il metodo viene chiamato inviando un argomento stringa per `punc`: `example.PrintAndPunctuate(".")`  
   
@@ -120,7 +120,7 @@ End Module
   
  I metodi di estensione vengono ignorati in associazione tardiva.  Nell'esempio seguente l'istruzione `anObject.PrintMe()` genera un'eccezione <xref:System.MissingMemberException>; la stessa eccezione sarebbe visualizzata se fosse eliminata la seconda definizione del metodo di estensione `PrintMe` .  
   
- [!code-vb[VbVbalrExtensionMethods#9](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Class6.vb#9)]  
+ [!code-vb[VbVbalrExtensionMethods#9](./codesnippet/VisualBasic/extension-methods_4.vb)]  
   
 ## Suggerimenti  
  I metodi di estensione forniscono una modalità comoda ed efficace di estendere un tipo esistente.  Tuttavia, per utilizzarli correttamente, occorre considerare alcuni punti,  che riguardano principalmente gli autori delle librerie di classi ma che potrebbero influire su qualsiasi applicazione che utilizza i metodi di estensione.  
@@ -140,23 +140,23 @@ End Module
 ## Metodi di estensione, metodi di istanza e proprietà  
  Quando un metodo di istanza nell'ambito ha una firma che è compatibile con gli argomenti di un'istruzione chiamante, il metodo di istanza viene preferito a qualsiasi metodo di estensione.  Il metodo di istanza ha la precedenza anche se il metodo di estensione rappresenta una corrispondenza migliore.  Nell'esempio seguente `ExampleClass` contiene un metodo di istanza denominato `ExampleMethod` che ha un parametro di tipo `Integer`.  Il metodo di estensione `ExampleMethod` estende `ExampleClass` e ha un parametro di tipo `Long`.  
   
- [!code-vb[VbVbalrExtensionMethods#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Class4.vb#4)]  
+ [!code-vb[VbVbalrExtensionMethods#4](./codesnippet/VisualBasic/extension-methods_5.vb)]  
   
  La prima chiamata a `ExampleMethod` nel codice seguente chiama il metodo di estensione, poiché `arg1` è `Long` ed è compatibile solo con il parametro `Long` nel metodo di estensione.  La seconda chiamata a `ExampleMethod` ha un argomento `Integer`, `arg2`, e chiama il metodo di istanza.  
   
- [!code-vb[VbVbalrExtensionMethods#5](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Class4.vb#5)]  
+ [!code-vb[VbVbalrExtensionMethods#5](./codesnippet/VisualBasic/extension-methods_6.vb)]  
   
  Invertire ora i tipi di dati dei parametri nei due metodi:  
   
- [!code-vb[VbVbalrExtensionMethods#6](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Class5.vb#6)]  
+ [!code-vb[VbVbalrExtensionMethods#6](./codesnippet/VisualBasic/extension-methods_7.vb)]  
   
  Questa volta il codice in `Main` chiama il metodo di istanza tutte e due le volte  perché sia `arg1` che `arg2` hanno una conversione verso un tipo di dati più grande a `Long` e il metodo di istanza ha la precedenza sul metodo di estensione in entrambi casi.  
   
- [!code-vb[VbVbalrExtensionMethods#7](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Class5.vb#7)]  
+ [!code-vb[VbVbalrExtensionMethods#7](./codesnippet/VisualBasic/extension-methods_8.vb)]  
   
  Pertanto, un metodo di estensione non può sostituire un metodo di istanza esistente.  Tuttavia, quando un metodo di estensione ha lo stesso nome di un metodo di istanza ma le firme non sono in conflitto, è possibile accedere a entrambi i metodi.  Ad esempio, se la classe `ExampleClass` contiene un metodo denominato `ExampleMethod` che non accetta argomenti, sono consentiti i metodi di estensione con lo stesso nome ma con firme diversa, come mostrato nel codice seguente.  
   
- [!code-vb[VbVbalrExtensionMethods#8](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/ConsoleApplication1/Module3.vb#8)]  
+ [!code-vb[VbVbalrExtensionMethods#8](./codesnippet/VisualBasic/extension-methods_9.vb)]  
   
  L'output di questo codice è il seguente:  
   

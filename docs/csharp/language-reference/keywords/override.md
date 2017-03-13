@@ -24,7 +24,7 @@ Il modificatore `override` è necessario per estendere o modificare l'implementa
 ## Esempio  
  In questo esempio, la classe `Square` deve fornire un'implementazione sottoposta a override dell'oggetto `Area` poiché quest'ultimo viene ereditato dall'oggetto `ShapesClass` astratto.  
   
- [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#1)]  
+ [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/override_1.cs)]  
   
  Un metodo `override` fornisce una nuova implementazione di un membro ereditato da una classe base.  Il metodo che viene sottoposto a override mediante una dichiarazione `override` viene definito metodo di base sottoposto a override.  Il metodo di base sottoposto a override deve avere la stessa firma del metodo di `override`.  Per informazioni sull'eredità, vedere [Ereditarietà](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
   
@@ -41,7 +41,7 @@ Il modificatore `override` è necessario per estendere o modificare l'implementa
 ## Esempio  
  Nell'esempio seguente vengono definite una classe base denominata `Employee` e una classe derivata denominata `SalesEmployee`.  La classe `SalesEmployee` comprende una proprietà aggiuntiva, `salesbonus`, ed esegue l'override del metodo `CalculatePay` per prenderla in considerazione.  
   
- [!code-cs[csrefKeywordsModifiers#9](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#9)]  
+ [!code-cs[csrefKeywordsModifiers#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/override_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

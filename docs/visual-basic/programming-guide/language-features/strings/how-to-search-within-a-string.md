@@ -26,7 +26,7 @@ caps.handback.revision: 16
 Nell'esempio riportato di seguito viene chiamato il metodo <xref:System.String.IndexOf%2A> di un oggetto <xref:System.String> allo scopo di segnalare l'indice della prima occorrenza di una sottostringa.  
   
 ## Esempio  
- [!code-vb[VbVbalrStrings#71](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-search-within-a-s_1.vb)]  
+ [!code-vb[VbVbalrStrings#71](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-search-within-a-string_1.vb)]  
   
 ## Compilazione del codice  
  L'esempio presenta i seguenti requisiti:  

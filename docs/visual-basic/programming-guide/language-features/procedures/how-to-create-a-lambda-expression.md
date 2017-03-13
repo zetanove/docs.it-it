@@ -36,15 +36,15 @@ Un'*espressione lambda* è una funzione o una subroutine che non ha un nome.  È
   
 3.  Dopo l'elenco dei parametri, digitare una sola espressione come corpo della funzione.  Il valore che l'espressione darà come risultato è il valore restituito alla funzione chiamante.  Non utilizzare una clausola `As` per specificare il tipo restituito.  
   
-     [!code-vb[VbVbalrLambdas#1](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#1)]  
+     [!code-vb[VbVbalrLambdas#1](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_1.vb)]  
   
      L'espressione lambda viene chiamata passando un argomento integer.  
   
-     [!code-vb[VbVbalrLambdas#2](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#2)]  
+     [!code-vb[VbVbalrLambdas#2](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_2.vb)]  
   
 4.  In alternativa, si raggiunge lo stesso risultato come illustrato nell'esempio seguente:  
   
-     [!code-vb[VbVbalrLambdas#3](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#3)]  
+     [!code-vb[VbVbalrLambdas#3](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_3.vb)]  
   
 ### Per creare una subroutine di espressione lambda a riga singola  
   
@@ -58,11 +58,11 @@ Un'*espressione lambda* è una funzione o una subroutine che non ha un nome.  È
   
 3.  Dopo l'elenco di parametri, digitare una singola istruzione come corpo della subroutine.  
   
-     [!code-vb[VbVbalrLambdas#17](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#17)]  
+     [!code-vb[VbVbalrLambdas#17](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_4.vb)]  
   
      L'espressione lambda viene chiamata passando un argomento string.  
   
-     [!code-vb[VbVbalrLambdas#18](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#18)]  
+     [!code-vb[VbVbalrLambdas#18](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_5.vb)]  
   
 ### Per creare una funzione di espressione lambda su più righe  
   
@@ -78,11 +78,11 @@ Un'*espressione lambda* è una funzione o una subroutine che non ha un nome.  È
   
 4.  Nel corpo della funzione aggiungere il codice seguente per creare un'espressione e restituire il valore.  Non utilizzare una clausola `As` per specificare il tipo restituito.  
   
-     [!code-vb[VbVbalrLambdas#19](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#19)]  
+     [!code-vb[VbVbalrLambdas#19](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_6.vb)]  
   
      L'espressione lambda viene chiamata passando un argomento integer.  
   
-     [!code-vb[VbVbalrLambdas#20](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#20)]  
+     [!code-vb[VbVbalrLambdas#20](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_7.vb)]  
   
 ### Per creare una subroutine di espressione lambda su più righe  
   
@@ -98,20 +98,20 @@ Un'*espressione lambda* è una funzione o una subroutine che non ha un nome.  È
   
 4.  Nel corpo della funzione aggiungere il codice seguente che deve essere eseguito quando viene richiamata la subroutine.  
   
-     [!code-vb[VbVbalrLambdas#21](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#21)]  
+     [!code-vb[VbVbalrLambdas#21](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_8.vb)]  
   
      L'espressione lambda viene chiamata passando un argomento string.  
   
-     [!code-vb[VbVbalrLambdas#22](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class1.vb#22)]  
+     [!code-vb[VbVbalrLambdas#22](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_9.vb)]  
   
 ## Esempio  
  Un utilizzo comune delle espressioni lambda è definire una funzione che può essere passata come argomento per un parametro il cui tipo è `Delegate`.  Nell'esempio riportato di seguito, il metodo <xref:System.Diagnostics.Process.GetProcesses%2A> restituisce una matrice dei processi in esecuzione sul computer locale.  Il metodo <xref:System.Linq.Enumerable.Where%2A> della classe <xref:System.Linq.Enumerable> richiede un delegato `Boolean` come argomento.  L'espressione lambda nell'esempio viene utilizzata a questo scopo.  Restituisce `True` per ogni processo che dispone di un solo thread e quelli selezionati in `filteredList`.  
   
- [!code-vb[VbVbalrLambdas#10](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class4.vb#10)]  
+ [!code-vb[VbVbalrLambdas#10](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_10.vb)]  
   
  L'esempio precedente è equivalente al codice seguente, scritto in sintassi [!INCLUDE[vbteclinqext](../../../../csharp/getting-started/includes/vbteclinqext-md.md)]:  
   
- [!code-vb[VbVbalrLambdas#11](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/vbvbalrlambdas/Class5.vb#11)]  
+ [!code-vb[VbVbalrLambdas#11](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_11.vb)]  
   
 ## Vedere anche  
  <xref:System.Linq.Enumerable>   

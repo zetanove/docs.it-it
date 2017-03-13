@@ -23,7 +23,7 @@ caps.handback.revision: 15
 Questo esempio illustra come è possibile utilizzare l'overload dell'operatore per creare una classe di numeri complessi `Complex` che definisce l'operazione di addizione tra numeri complessi.  Il programma visualizza le parti immaginaria e reale dei numeri nonché il risultato dell'addizione mediante un override del metodo `ToString`.  
   
 ## Esempio  
- [!code-cs[csProgGuideStatements#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-use-operator-over_1.cs)]  
+ [!code-cs[csProgGuideStatements#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-use-operator-overloading-to-create-a-complex-number-class_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

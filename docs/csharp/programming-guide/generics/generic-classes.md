@@ -43,27 +43,27 @@ Le classi generiche incapsulano operazioni non specifiche di un particolare tipo
   
  Le regole per i vincoli e per i parametri di tipo presentano numerose implicazioni per il comportamento delle classi generiche, soprattutto per quanto riguarda l'ereditarietà e l'accessibilità ai membri.  Prima di procedere, è necessario comprendere alcuni termini.  Per una classe generica il codice client `Node<T>,` può fare riferimento alla classe specificando un argomento di tipo, per creare un tipo costruito chiuso \(`Node<int>`\)  oppure può mantenere il parametro di tipo non specificato, ad esempio quando viene specificata una classe generica di base, per creare un tipo costruito aperto \(`Node<T>`\).  Le classi generiche possono ereditare da classi base concrete, costruite chiuse o costruite aperte:  
   
- [!code-cs[csProgGuideGenerics#16](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_1.cs)]  
+ [!code-cs[csProgGuideGenerics#16](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_1.cs)]  
   
  Le classi non generiche, ovvero concrete, possono ereditare da classi di base costruite chiuse, ma non da classi costruite aperte o da parametri di tipo poiché il codice client non è in grado di fornire l'argomento di tipo necessario per creare l'istanza della classe di base in fase di esecuzione.  
   
- [!code-cs[csProgGuideGenerics#17](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_2.cs)]  
+ [!code-cs[csProgGuideGenerics#17](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_2.cs)]  
   
  Le classi generiche che ereditano da tipi costruiti aperti devono fornire argomenti di tipo per tutti i parametri di tipo delle classi base non condivisi dalla classe che eredita, come illustrato nel codice riportato di seguito:  
   
- [!code-cs[csProgGuideGenerics#18](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_3.cs)]  
+ [!code-cs[csProgGuideGenerics#18](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_3.cs)]  
   
  Le classi generiche che ereditano da tipi costruiti aperti devono specificare i vincoli che rappresentano un superset dei vincoli del tipo base o che implicano gli stessi:  
   
- [!code-cs[csProgGuideGenerics#19](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_4.cs)]  
+ [!code-cs[csProgGuideGenerics#19](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_4.cs)]  
   
  I tipi generici possono utilizzare più vincoli e parametri di tipo, come riportato di seguito:  
   
- [!code-cs[csProgGuideGenerics#20](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_5.cs)]  
+ [!code-cs[csProgGuideGenerics#20](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_5.cs)]  
   
  I tipi costruiti aperti o costruiti chiusi possono essere utilizzati come parametri di metodo:  
   
- [!code-cs[csProgGuideGenerics#21](../../../csharp/programming-guide/generics/codesnippet/csharp/generic-classes_6.cs)]  
+ [!code-cs[csProgGuideGenerics#21](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-classes_6.cs)]  
   
  Se una classe generica implementa un'interfaccia, è possibile eseguire il cast di tutte le istanze della classe a tale interfaccia.  
   

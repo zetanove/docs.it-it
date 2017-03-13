@@ -91,7 +91,7 @@ End Event
 ## Note  
  Dopo aver dichiarato l'evento, usare l'istruzione `RaiseEvent` per generarlo.  Nei frammenti seguenti viene mostrato un esempio tipico di dichiarazione e generazione di un evento:  
   
- [!code-vb[VbVbalrEvents#13](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#13)]  
+ [!code-vb[VbVbalrEvents#13](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_1.vb)]  
   
 > [!NOTE]
 >  È possibile dichiarare argomenti per gli eventi analogamente a quanto avviene per gli argomenti di routine, tenendo però conto che non è possibile specificare per gli eventi argomenti denominati, argomenti `ParamArray` o argomenti `Optional`,   né ottenere da essi valori restituiti.  
@@ -115,11 +115,11 @@ End Event
   
  Aggiungere una variabile `WithEvents` alla sezione delle dichiarazioni della classe `Form1`:  
   
- [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#14)]  
+ [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_2.vb)]  
   
  Aggiungere il codice seguente al codice per `Form1`:  Sostituire eventuali routine duplicate, ad esempio `Form_Load` o `Button_Click`.  
   
- [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#15)]  
+ [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/event-statement_3.vb)]  
   
  Premere F5 per eseguire l'esempio precedente, quindi fare clic sul pulsante con etichetta **Start** Nella prima casella di testo viene avviato il conto alla rovescia dei secondi.  Al termine dei 10 secondi, nella prima casella di testo viene visualizzato "Done".  
   

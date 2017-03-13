@@ -38,7 +38,7 @@ if (obj is MyObject)
  Non è possibile utilizzare metodi anonimi sul lato sinistro dell'operatore `is`.  Questa eccezione include le espressioni lambda.  
   
 ## Esempio  
- [!code-cs[csrefKeywordsOperator#4](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#4)]  
+ [!code-cs[csrefKeywordsOperator#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/is_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -34,7 +34,7 @@ Gli overload del metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles%2
   
 -   Usare uno degli overload del metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles%2A?displayProperty=fullName>, fornendo il nome e il percorso della directory in cui cercare nel parametro `directory`.  L'esempio seguente restituisce tutti i file nella directory e li aggiunge e a  `ListBox1`.  
   
-     [!code-vb[VbVbcnMyFileSystem#32](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-get-the-collectio_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#32](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-get-the-collection-of-files-in-a-directory_1.vb)]  
   
 ## Programmazione efficiente  
  Le seguenti condizioni possono generare un'eccezione:  

@@ -63,7 +63,7 @@ Resume [ Next | line ]
 ## Esempio  
  In questo esempio viene utilizzata l'istruzione `Resume` per terminare la gestione degli errori in una routine e quindi riprendere l'esecuzione dall'istruzione che ha determinato l'errore.  Per illustrare l'utilizzo dell'istruzione `Resume` viene generato il numero di errore 55.  
   
- [!code-vb[VbVbalrErrorHandling#16](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/resume-statement_1.vb)]  
+ [!code-vb[VbVbalrErrorHandling#16](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/resume-statement_1.vb)]  
   
 ## Requisiti  
  **Spazio dei nomi:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  

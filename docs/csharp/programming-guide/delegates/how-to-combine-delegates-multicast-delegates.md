@@ -22,7 +22,7 @@ In questo esempio viene illustrato come creare delegati multicast.  Gli oggetti 
  È possibile utilizzare l'operatore `-` per rimuovere un delegato componente da un delegato multicast.  
   
 ## Esempio  
- [!code-cs[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#11)]  
+ [!code-cs[csProgGuideDelegates#11](../../../csharp/programming-guide/delegates/codesnippet/CSharp/how-to-combine-delegates-multicast-delegates_1.cs)]  
   
 ## Vedere anche  
  <xref:System.MulticastDelegate>   

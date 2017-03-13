@@ -64,7 +64,7 @@ Fornisce proprietà e metodi per accedere alle impostazioni dell'applicazione.
 ## <a name="example"></a>Esempio  
  Questo esempio viene visualizzato il valore di `Nickname` impostazione.  
   
- [!code-vb[VbVbalrMyResources#14](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/visualbasic/VbVbalrMyResources2/Form1.vb#14)]  
+ [!code-vb[VbVbalrMyResources#14](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-settings-object_1.vb)]  
   
  Per eseguire questo esempio, l'applicazione deve contenere un `Nickname` impostazione di tipo `String`.  
   

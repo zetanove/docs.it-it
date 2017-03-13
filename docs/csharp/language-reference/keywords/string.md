@@ -103,7 +103,7 @@ Console.WriteLine(a);
  Per ulteriori informazioni sulle stringhe in C\#, vedere [Stringhe](../../../csharp/programming-guide/strings/index.md).  
   
 ## Esempio  
- [!code-cs[csrefKeywordsTypes#17](../../../csharp/language-reference/keywords/codesnippet/csharp/string_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/string_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

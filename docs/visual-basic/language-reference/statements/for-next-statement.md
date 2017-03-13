@@ -75,11 +75,11 @@ Next [ counter ]
   
  Nell'esempio seguente, la variabile di `index` inizia con un valore di 1 e viene incrementata a ogni iterazione del ciclo, terminando dopo che il valore di intervalli di 5. `index`.  
   
- [!code-vb[VbVbalrStatements#111](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#111](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_1.vb)]  
   
  Nell'esempio seguente, la variabile di `number` inizia a 2 e viene ridotta di 0,25 per ogni iterazione del ciclo, terminando dopo che il valore di 0 intervalli di `number`.  L'argomento di `Step` di `-.25` ridurre il valore di 0,25 per ogni iterazione del ciclo.  
   
- [!code-vb[VbVbalrStatements#112](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#112](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_2.vb)]  
   
 > [!TIP]
 >  Funzionamento di [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md) o di [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md) scaturiscono quando non si conosce in anticipo quante volte per eseguire le istruzioni del ciclo.  Se invece si prevede di eseguire il ciclo per un numero specifico di volte, si consiglia di utilizzare `For`...`Next`.  Il numero di iterazioni viene definito la prima volta che si entra nel ciclo.  
@@ -87,7 +87,7 @@ Next [ counter ]
 ## Cicli annidati  
  È possibile annidare cicli `For` inserendo un ciclo all'interno dell'altro.  Nell'esempio seguente vengono illustrate le strutture `For`...`Next` annidate con diversi valori di incremento.  Il ciclo esterno consente di creare una stringa per ogni iterazione del ciclo.  Nel ciclo interno, per ogni iterazione del ciclo viene ridotta una variabile del contatore di cicli.  
   
- [!code-vb[VbVbalrStatements#113](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#113](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_3.vb)]  
   
  Quando i cicli di annidamento, ogni ciclo deve essere una variabile univoca di `counter`.  
   
@@ -100,7 +100,7 @@ Next [ counter ]
   
  Nell'esempio riportato di seguito viene illustrato l'utilizzo delle istruzioni `Continue For` e `Exit For`.  
   
- [!code-vb[VbVbalrStatements#115](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#115](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_4.vb)]  
   
  È possibile inserire un numero illimitato di istruzioni `Exit For` in un ciclo `For`…`Next`.  Se utilizzata all'interno di cicli `For`…`Next` annidati, l'istruzione `Exit For` consente l'uscita dal ciclo più interno e il trasferimento del controllo al livello di annidamento successivo superiore.  
   
@@ -168,17 +168,17 @@ Next [ counter ]
 ## Esempio  
  Nell'esempio seguente vengono rimossi tutti gli elementi da un elenco generico.  Anziché [Istruzione For Each...Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md), nell'esempio viene illustrata un'istruzione di `For`…`Next` che scorre in ordine decrescente.  L'esempio utilizza questa tecnica perché il metodo di `removeAt` determina gli elementi dopo l'elemento rimosso a un valore di indice più basso.  
   
- [!code-vb[VbVbalrStatements#114](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_5.vb)]  
+ [!code-vb[VbVbalrStatements#114](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_5.vb)]  
   
 ## Esempio  
  L'esempio seguente consente di scorrere un'enumerazione che viene dichiarata utilizzando [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md).  
   
- [!code-vb[VbVbalrStatements#116](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_6.vb)]  
+ [!code-vb[VbVbalrStatements#116](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_6.vb)]  
   
 ## Esempio  
  Nell'esempio seguente, la classe dei parametri dell'istruzione dispone di overload degli operatori per gli operatori `+`, `-`, `>=` e `<=`.  
   
- [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/for-next-statement_7.vb)]  
+ [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_7.vb)]  
   
 ## Vedere anche  
  <xref:System.Collections.Generic.List%601>   

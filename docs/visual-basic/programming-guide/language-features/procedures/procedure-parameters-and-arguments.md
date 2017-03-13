@@ -53,7 +53,7 @@ Passaggio di un argomento a un parametro
 ## Tipo di dati dei parametri  
  La definizione di un tipo di dati per un parametro avviene mediante la specifica della clausola `As` nella relativa dichiarazione.  La funzione che segue, ad esempio, accetta una stringa e un Integer.  
   
- [!code-vb[VbVbcnProcedures#32](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/procedure-parameters-and_1.vb)]  
+ [!code-vb[VbVbcnProcedures#32](./codesnippet/VisualBasic/procedure-parameters-and-arguments_1.vb)]  
   
  Se l'opzione di controllo dei tipi \([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)\) è `Off,` la clausola `As` è facoltativa, a meno che non venga utilizzata da qualche parametro e di conseguenza debba essere utilizzata da tutti i parametri.  Se il controllo dei tipi è `On`, la clausola `As` è obbligatoria per tutti i parametri di routine.  
   

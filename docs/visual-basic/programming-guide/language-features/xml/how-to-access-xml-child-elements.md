@@ -28,7 +28,7 @@ caps.handback.revision: 18
 Nell'esempio viene illustrato come utilizzare una proprietà axis dell'elemento figlio per accedere a tutti gli elementi figlio XML che hanno un nome specificato in un elemento XML.  In particolare, utilizza la proprietà <xref:System.Xml.Linq.XElement.Value%2A> per ottenere il valore del primo elemento nella raccolta restituita dalla proprietà axis dell'elemento figlio `name`.  La proprietà axis dell'elemento figlio `name` recupera tutti gli elementi figlio denominati `phone` nell'oggetto `contact`.  Nell'esempio viene anche utilizzata la proprietà axis dell'elemento figlio `phone` per accedere a tutti gli elementi figlio denominati `phone` inclusi nell'oggetto `contact`.  
   
 ## Esempio  
- [!code-vb[VbXMLSamples#10](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-access-xml-child-_1.vb)]  
+ [!code-vb[VbXMLSamples#10](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-access-xml-child-elements_1.vb)]  
   
 ## Compilazione del codice  
  L'esempio presenta i seguenti requisiti:  

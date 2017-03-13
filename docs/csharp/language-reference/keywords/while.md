@@ -22,17 +22,17 @@ caps.handback.revision: 22
 L'istruzione `while` esegue un'istruzione o un blocco di istruzioni finché un'espressione specificata non restituisce `false`.  
   
 ## Esempio  
- [!code-cs[csrefKeywordsIteration#5](../../../csharp/language-reference/keywords/codesnippet/csharp/while_1.cs)]  
+ [!code-cs[csrefKeywordsIteration#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/while_1.cs)]  
   
 ## Esempio  
- [!code-cs[csrefKeywordsIteration#6](../../../csharp/language-reference/keywords/codesnippet/csharp/while_2.cs)]  
+ [!code-cs[csrefKeywordsIteration#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/while_2.cs)]  
   
 ## Esempio  
  Poiché il test dell'espressione `while` avviene prima di ogni esecuzione del ciclo, un ciclo `while` viene eseguito zero o più volte.  Il ciclo [do](../../../csharp/language-reference/keywords/do.md) è differente, in quanto viene eseguito una o più volte.  
   
  Un ciclo `while` termina quando un'istruzione [break](../../../csharp/language-reference/keywords/break.md), [goto](../../../csharp/language-reference/keywords/goto.md), [return](../../../csharp/language-reference/keywords/return.md) o [throw](../../../csharp/language-reference/keywords/throw.md) trasferisce il controllo all'esterno del ciclo.  Per trasferire il controllo all'iterazione successiva senza uscire dal ciclo, utilizzare l'istruzione [continue](../../../csharp/language-reference/keywords/continue.md).  Si noti la differenza di output nei tre esempi precedenti, che dipende dalla posizione in cui viene incrementato `int n`.  Nell'esempio riportato di seguito non viene generato alcun output.  
   
- [!code-cs[csrefKeywordsIteration#7](../../../csharp/language-reference/keywords/codesnippet/csharp/while_3.cs)]  
+ [!code-cs[csrefKeywordsIteration#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/while_3.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

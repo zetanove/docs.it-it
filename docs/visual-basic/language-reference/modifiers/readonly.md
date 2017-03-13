@@ -60,7 +60,7 @@ Specifica che è possibile leggere ma non scrivere una variabile o una propriet�
 ## Esempio  
  Nell'esempio riportato di seguito viene definita una proprietà `ReadOnly` per la data di assunzione di un dipendente.  La classe memorizza internamente il valore della proprietà come variabile `Private` e tale valore può essere modificato solo dal codice interno alla classe.  Tuttavia, poiché la proprietà è `Public`, può essere letta da qualsiasi codice in grado di accedere alla classe.  
   
- [!code-vb[VbVbalrKeywords#4](../../../visual-basic/language-reference/codesnippet/visualbasic/readonly_1.vb)]  
+ [!code-vb[VbVbalrKeywords#4](../../../visual-basic/language-reference/codesnippet/VisualBasic/readonly_1.vb)]  
   
  Il modificatore `ReadOnly` può essere utilizzato nei seguenti contesti:  
   

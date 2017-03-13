@@ -23,27 +23,27 @@ Non è possibile applicare attributi a tipi generici con modalità simili a quel
   
  Negli esempi riportati di seguito viene utilizzato questo attributo personalizzato:  
   
- [!code-cs[csProgGuideGenerics#48](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-attributes_1.cs)]  
+ [!code-cs[csProgGuideGenerics#48](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-attributes_1.cs)]  
   
  Un attributo può fare riferimento a un tipo generico aperto:  
   
- [!code-cs[csProgGuideGenerics#49](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-attributes_2.cs)]  
+ [!code-cs[csProgGuideGenerics#49](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-attributes_2.cs)]  
   
  Specificare più parametri di tipo utilizzando il numero appropriato di virgole.  In questo esempio `GenericClass2` ha due parametri di tipo:  
   
- [!code-cs[csProgGuideGenerics#50](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-attributes_3.cs)]  
+ [!code-cs[csProgGuideGenerics#50](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-attributes_3.cs)]  
   
  Un attributo può fare riferimento a un tipo generico costruito chiuso:  
   
- [!code-cs[csProgGuideGenerics#51](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-attributes_4.cs)]  
+ [!code-cs[csProgGuideGenerics#51](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-attributes_4.cs)]  
   
  Un attributo che fa riferimento a un parametro di tipo generico genererà un errore in fase di compilazione:  
   
- [!code-cs[csProgGuideGenerics#52](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-attributes_5.cs)]  
+ [!code-cs[csProgGuideGenerics#52](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-attributes_5.cs)]  
   
  Un tipo generico non può ereditare da <xref:System.Attribute>:  
   
- [!code-cs[csProgGuideGenerics#53](../../../csharp/programming-guide/generics/codesnippet/csharp/generics-and-attributes_6.cs)]  
+ [!code-cs[csProgGuideGenerics#53](../../../csharp/programming-guide/generics/codesnippet/CSharp/generics-and-attributes_6.cs)]  
   
  Per ottenere informazioni su un tipo generico o un parametro di tipo generico in fase di esecuzione, è possibile utilizzare i metodi di <xref:System.Reflection>.  Per ulteriori informazioni, vedere [Generics e reflection](../../../csharp/programming-guide/generics/generics-and-reflection.md).  
   

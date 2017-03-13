@@ -23,7 +23,7 @@ caps.handback.revision: 7
 ## Esempio  
  Nell'esempio seguente, l'enumerazione `Grades` rappresenta, il possibile voto che un studente potrebbe prendere in una classe.  Un metodo di estensione denominato `Passing` viene aggiunto al tipo `Grades` in modo che ogni istanza di tale tipo ora "sa" se rappresenta un voto sufficiente oppure no.  
   
- [!code-cs[csProgGuideExtensionMethods#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-create-a-new-meth_1.cs)]  
+ [!code-cs[csProgGuideExtensionMethods#2](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-create-a-new-method-for-an-enumeration_1.cs)]  
   
  Si noti che la classe `Extensions` contiene anche una variabile statica aggiornata in modo dinamico e che il valore restituito del metodo di estensione riflette il valore corrente di tale variabile.  Ciò dimostra che, in background, i metodi di estensione vengono richiamati direttamente sulla classe statica nella quale sono definiti.  
   

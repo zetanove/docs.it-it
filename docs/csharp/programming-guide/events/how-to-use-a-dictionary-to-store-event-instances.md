@@ -19,7 +19,7 @@ caps.handback.revision: 16
 È possibile utilizzare `accessor-declarations` per esporre numerosi eventi senza allocare un campo per ciascuno di essi, bensì utilizzando un dizionario per archiviare le istanze degli venti.  Tuttavia, questa soluzione risulta utile solo se il numero di eventi è elevato e si prevede che la maggior parte non venga implementata.  
   
 ## Esempio  
- [!code-cs[csProgGuideEvents#9](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-use-a-dictionary-_1.cs)]  
+ [!code-cs[csProgGuideEvents#9](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-use-a-dictionary-to-store-event-instances_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

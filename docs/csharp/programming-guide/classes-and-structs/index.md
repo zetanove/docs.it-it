@@ -37,7 +37,7 @@ Classi e strutture sono due dei costrutti di base del Common Type System in .NET
 ## Esempio  
  Nell'esempio seguente viene definita la classe `MyCustomClass` con tre membri in corrispondenza del livello superiore dello spazio dei nomi `ProgrammingGuide`.  Viene creata un'istanza \(oggetto\) di `MyCustomClass` nel metodo `Main` della classe `Program`. I metodi e le proprietà dell'oggetto sono accessibili tramite notazione del punto.  
   
- [!code-cs[csProgGuideObjects#88](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideObjects#88](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_1.cs)]  
   
 ## Incapsulamento  
  *L'incapsulamento* talvolta è definito come il primo pilastro o il principio della programmazione orientata a oggetti.  In base al principio di incapsulamento, una classe o una struttura possono specificare il modo in cui ognuno dei membri è accessibile al codice esterno alla classe o alla struttura.  Metodi e variabili che non devono essere utilizzati dall'esterno della classe o dell'assembly possono essere nascosti per limitare il rischio di errori di codifica o esiti dannosi.  

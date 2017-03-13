@@ -33,7 +33,7 @@ caps.handback.revision: 13
   
      Nell'esempio di codice seguente viene illustrato come utilizzare il metodo <xref:System.Xml.Linq.XDocument.Load%28System.String%29> per popolare un oggetto <xref:System.Xml.Linq.XDocument> con XML da un file di testo.  
   
-     [!code-vb[VbXMLSamples#43](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-load-xml-from-a-f_1.vb)]  
+     [!code-vb[VbXMLSamples#43](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_1.vb)]  
   
 ### Per caricare XML da una stringa  
   
@@ -41,7 +41,7 @@ caps.handback.revision: 13
   
      Nell'esempio di codice seguente viene illustrato come utilizzare il metodo <xref:System.Xml.Linq.XDocument.Parse%28System.String%29?displayProperty=fullName> per popolare un oggetto <xref:System.Xml.Linq.XDocument> con XML da una stringa.  
   
-     [!code-vb[VbXMLSamples#47](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-load-xml-from-a-f_2.vb)]  
+     [!code-vb[VbXMLSamples#47](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_2.vb)]  
   
 ### Per caricare XML da un flusso  
   
@@ -49,7 +49,7 @@ caps.handback.revision: 13
   
  Nell'esempio di codice seguente viene illustrato l'utilizzo del metodo <xref:System.Xml.Linq.XNode.ReadFrom%2A> per popolare un oggetto <xref:System.Xml.Linq.XDocument> con XML da un flusso XML.  
   
- [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-load-xml-from-a-f_3.vb)]  
+ [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_3.vb)]  
   
 ## Vedere anche  
  <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=fullName>   

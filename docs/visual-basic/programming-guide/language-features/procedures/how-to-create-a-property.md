@@ -63,11 +63,11 @@ Una definizione di proprietà viene racchiusa tra un'istruzione `Property` e un'
 ## Esempio  
  Nell'esempio riportato di seguito viene creata una proprietà di lettura e scrittura che memorizza un nome completo costituito da due parti, ossia il nome e il cognome.  Quando il codice chiamante legge `fullName`, la routine `Get` combina le due parti costitutive e restituisce il nome completo.  Quando il codice chiamante assegna un nuovo nome completo, la routine `Set` tenta di scomporlo in due parti costitutive.  Se non viene rilevato alcuno spazio, viene memorizzato tutto come nome.  
   
- [!code-vb[VbVbcnProcedures#8](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-create-a-property_1.vb)]  
+ [!code-vb[VbVbcnProcedures#8](./codesnippet/VisualBasic/how-to-create-a-property_1.vb)]  
   
  Nell'esempio riportato di seguito vengono illustrate le chiamate tipiche alle routine delle proprietà di `fullName`.  La prima chiamata imposta il valore delle proprietà, mentre la seconda lo recupera.  
   
- [!code-vb[VbVbcnProcedures#9](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-create-a-property_2.vb)]  
+ [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/how-to-create-a-property_2.vb)]  
   
 ## Vedere anche  
  [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

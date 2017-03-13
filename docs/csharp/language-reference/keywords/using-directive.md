@@ -77,7 +77,7 @@ class Program
  Nell'esempio seguente viene illustrato come definire e usare un alias `using` per uno spazio dei nomi.  
   
 ### Codice  
- [!code-cs[csrefKeywordsNamespace#8](../../../csharp/language-reference/keywords/codesnippet/csharp/using-directive_1.cs)]  
+ [!code-cs[csrefKeywordsNamespace#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_1.cs)]  
   
 ### Commenti  
  Una direttiva alias using non può contenere un tipo generico aperto nella parte destra.  Ad esempio, non è possibile creare un alias using per List\<T\>, ma è possibile crearne uno per List\<int\>.  
@@ -88,7 +88,7 @@ class Program
  Nell'esempio seguente viene illustrato come definire una direttiva `using` e un alias `using` per una classe:  
   
 ### Codice  
- [!code-cs[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/csharp/using-directive_2.cs)]  
+ [!code-cs[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

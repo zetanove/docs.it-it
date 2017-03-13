@@ -45,7 +45,7 @@ Specifica che una o più variabili locali dichiarate restano valide e conservano
 ## Esempio  
  Nell'esempio seguente viene illustrato l'utilizzo di `Static`.  
   
- [!code-vb[VbVbalrKeywords#5](../../../visual-basic/language-reference/codesnippet/visualbasic/static_1.vb)]  
+ [!code-vb[VbVbalrKeywords#5](../../../visual-basic/language-reference/codesnippet/VisualBasic/static_1.vb)]  
   
  La variabile `Static` `totalSales` viene inizializzata su 0 una sola volta.  Ogni volta che si accede a `updateSales`, in `totalSales` è presente il valore calcolato più recente.  
   

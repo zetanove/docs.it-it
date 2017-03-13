@@ -71,7 +71,7 @@ Viene utilizzata per dichiarare un delegato.  Per delegato si intende un tipo di
 ## Esempio  
  Nell'esempio riportato di seguito l'istruzione `Delegate` viene utilizzata per dichiarare un delegato che consenta di eseguire operazioni su due numeri e restituire un numero.  Il metodo `DelegateTest` accetta un'istanza di tale tipo di delegato e la utilizza per eseguire operazioni su una coppia di numeri.  
   
- [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/delegate-statement_1.vb)]  
+ [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
   
 ## Vedere anche  
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   

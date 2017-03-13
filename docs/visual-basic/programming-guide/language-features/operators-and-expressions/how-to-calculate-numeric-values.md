@@ -52,7 +52,7 @@ caps.handback.revision: 13
   
 -   È possibile utilizzare un'istruzione di assegnazione per assegnare il valore rappresentato da un'espressione numerica a una variabile, come dimostrato nell'esempio riportato di seguito.  
   
-     [!code-vb[VbVbalrOperators#82](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-calculate-numeric_1.vb)]  
+     [!code-vb[VbVbalrOperators#82](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-calculate-numeric-values_1.vb)]  
   
      Nell'esempio riportato in precedenza, il valore dell'espressione a destra dell'operatore uguale \(`=`\) viene assegnato a una variabile `j` a sinistra dell'operatore, quindi `j` restituisce 276.  
   
@@ -65,7 +65,7 @@ caps.handback.revision: 13
   
 -   Utilizzare le parentesi per racchiudere le operazioni che si desidera eseguire per prime.  Nell'esempio seguente vengono illustrati due risultati diversi con gli stessi operandi e operatori.  
   
-     [!code-vb[VbVbalrOperators#83](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-calculate-numeric_2.vb)]  
+     [!code-vb[VbVbalrOperators#83](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-calculate-numeric-values_2.vb)]  
   
      Nell'esempio riportato in precedenza, il calcolo di `j` esegue l'operazione di addizione \(`+`\) per prima in quanto le parentesi attorno a `(67 + i)` eseguono l'override della precedenza normale e il valore assegnato a `j` corrisponde a 276 \(4 volte 69\).  Il calcolo di `k` esegue gli operatori nella loro precedenza normale \(`*` prima di `+`\) e il valore assegnato a`k` corrisponde a 270 \(268 più 2\).  
   

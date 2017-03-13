@@ -44,7 +44,7 @@ Specifica una sezione relativa alle osservazioni per il membro.
 ## Esempio  
  Nell'esempio riportato di seguito il tag `<remarks>` viene utilizzato per illustrare le operazioni che vengono eseguite dal metodo `UpdateRecord`.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/remarks_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/remarks_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

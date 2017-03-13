@@ -23,12 +23,12 @@ In questo esempio viene illustrato come eseguire operazioni di join che non sono
   
  Il secondo metodo produce una sequenza di tutti i prodotti il cui ID di categoria è presente nell'elenco di categorie sul lato sinistro.  Si noti l'utilizzo della clausola `let` e del metodo `Contains` per creare una matrice temporanea.  È inoltre possibile creare la matrice prima della query ed eliminare la prima clausola `from`.  
   
- [!code-cs[csProgGuideLINQ#64](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#64)]  
+ [!code-cs[csProgGuideLINQ#64](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-perform-custom-join-operations_1.cs)]  
   
 ## Esempio  
  Nell'esempio seguente la query deve creare un join di due sequenze basate su chiavi corrispondenti che, nel caso della sequenza interna \(lato destro\), non possono essere ottenute prima della clausola join stessa.  Qualora questo join venga eseguito con una clausola `join`, il metodo `Split` dovrà essere chiamato per ogni elemento.  L'utilizzo di più clausole `from` consente alla query di evitare l'overhead della chiamata al metodo ripetuta.  Tuttavia, poiché il `join` è ottimizzato, in questo caso particolare potrebbe risultare ancora più veloce rispetto all'utilizzo di più clausole `from`.  I risultati varieranno principalmente in base al costo in termini di utilizzo della chiamata al metodo.  
   
- [!code-cs[csProgGuideLINQ#13](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#13)]  
+ [!code-cs[csProgGuideLINQ#13](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-perform-custom-join-operations_2.cs)]  
   
 ## Compilazione del codice  
   

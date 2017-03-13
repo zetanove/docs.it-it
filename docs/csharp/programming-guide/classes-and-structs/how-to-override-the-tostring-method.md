@@ -19,7 +19,7 @@ caps.handback.revision: 21
 # Procedura: eseguire l&#39;override del metodo ToString (Guida per programmatori C#)
 Ogni classe o struct in C\# eredita in modo implicito la classe <xref:System.Object>.  Ogni oggetto in C\# ottiene pertanto il metodo <xref:System.Object.ToString%2A>, il quale restituisce una rappresentazione in formato stringa di tale oggetto.  Tutte le variabili di tipo `int` dispongono ad esempio di un metodo `ToString`, che consente di restituire il relativo contenuto in formato stringa:  
   
- [!code-cs[csProgGuideInheritance#37](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-override-the-tost_1.cs)]  
+ [!code-cs[csProgGuideInheritance#37](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_1.cs)]  
   
  Quando si crea una struttura o una classe personalizzata, è necessario eseguire l'override del metodo <xref:System.Object.ToString%2A> per fornire informazioni sul tipo al codice client.  
   
@@ -40,11 +40,11 @@ Ogni classe o struct in C\# eredita in modo implicito la classe <xref:System.Obj
   
      Nell'esempio seguente viene restituito il nome della classe insieme ai dati specifici di una determinata istanza della classe.  
   
-     [!code-cs[csProgGuideInheritance#36](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-override-the-tost_2.cs)]  
+     [!code-cs[csProgGuideInheritance#36](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_2.cs)]  
   
      È possibile testare il metodo `ToString` come illustrato nell'esempio di codice seguente:  
   
-     [!code-cs[csProgGuideInheritance#38](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-override-the-tost_3.cs)]  
+     [!code-cs[csProgGuideInheritance#38](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_3.cs)]  
   
 ## Vedere anche  
  <xref:System.IFormattable>   

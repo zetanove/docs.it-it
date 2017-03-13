@@ -26,15 +26,15 @@ Un *campo* è una variabile di qualsiasi tipo dichiarata direttamente in una [cl
   
  I campi vengono dichiarati all'interno del blocco della classe specificando il livello di accesso, quindi il tipo e infine il nome del campo.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideObjects#61](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/fields_1.cs)]  
+ [!code-cs[csProgGuideObjects#61](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_1.cs)]  
   
  Per accedere a un campo di un oggetto, aggiungere un punto dopo il nome dell'oggetto, seguito dal nome del campo, come in `objectname.fieldname`.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideObjects#62](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/fields_2.cs)]  
+ [!code-cs[csProgGuideObjects#62](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_2.cs)]  
   
  A un campo è possibile assegnare un valore iniziale nella relativa dichiarazione utilizzando l'operatore di assegnazione.  Per assegnare automaticamente il campo `day` a `"Monday"`, ad esempio, dichiarare `day` come indicato nell'esempio seguente:  
   
- [!code-cs[csProgGuideObjects#63](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/fields_3.cs)]  
+ [!code-cs[csProgGuideObjects#63](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/fields_3.cs)]  
   
  I campi vengono inizializzati immediatamente prima della chiamata al costruttore per l'istanza dell'oggetto.  Se il costruttore assegna il valore di un campo, verrà sovrascritto qualunque valore specificato nella dichiarazione del campo.  Per ulteriori informazioni, vedere [Utilizzo di costruttori](../../../csharp/programming-guide/classes-and-structs/using-constructors.md).  
   

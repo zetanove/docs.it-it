@@ -19,17 +19,17 @@ caps.handback.revision: 16
 In questo esempio vengono dichiarate un'[interfaccia](../../../csharp/language-reference/keywords/interface.md) `IDimensions` e una classe `Box`, che implementa in modo esplicito i membri di interfaccia `getLength` e `getWidth`.  L'accesso ai membri avviene tramite l'istanza di interfaccia `dimensions`.  
   
 ## Esempio  
- [!code-cs[csProgGuideInheritance#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_1_1.cs)]  
+ [!code-cs[csProgGuideInheritance#8](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-interface-members_1.cs)]  
   
 ## Programmazione efficiente  
   
 -   Le righe che seguono, nel metodo `Main`, sono impostate come commento perché, in caso contrario, genererebbero errori di compilazione.  Non è possibile accedere da un'istanza di [classe](../../../csharp/language-reference/keywords/class.md) a un membro di interfaccia implementato in modo esplicito:  
   
-     [!code-cs[csProgGuideInheritance#45](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_1_2.cs)]  
+     [!code-cs[csProgGuideInheritance#45](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-interface-members_2.cs)]  
   
 -   Inoltre, le righe che seguono, nel metodo `Main`, stampano le dimensioni della casella, in quanto i metodi vengono richiamati da un'istanza dell'interfaccia:  
   
-     [!code-cs[csProgGuideInheritance#46](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_1_3.cs)]  
+     [!code-cs[csProgGuideInheritance#46](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-interface-members_3.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

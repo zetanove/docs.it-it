@@ -36,11 +36,11 @@ Rappresenta il valore predefinito di qualsiasi tipo di dati.  Per i tipi di rife
   
  se una variabile è di un tipo di valore che non è nullable, assegnare `Nothing` lo impostato il valore predefinito per il tipo dichiarato.  Se nel tipo si trovano membri variabili, questi vengono tutti impostati ai valori predefiniti corrispondenti.  Questo comportamento viene illustrato nell'esempio seguente per i tipi scalari.  
   
- [!code-vb[VbVbalrKeywords#7](../../visual-basic/language-reference/codesnippet/visualbasic/nothing_1.vb)]  
+ [!code-vb[VbVbalrKeywords#7](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_1.vb)]  
   
  Se una variabile è di tipo riferimento, assegnare `Nothing` per impostare variabili a un oggetto  `null` riferimento del tipo della variabile.  Una variabile che è impostata su `null` il riferimento non associato ad alcun oggetto.  Nell'esempio che segue viene illustrato quanto descritto.  
   
- [!code-vb[VbVbalrKeywords#8](../../visual-basic/language-reference/codesnippet/visualbasic/nothing_2.vb)]  
+ [!code-vb[VbVbalrKeywords#8](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_2.vb)]  
   
  Nel controllare se tipo di valore NULL o di riferimento\) una variabile sia `null`, non utilizzare  `= Nothing` o  `<> Nothing`.  Utilizzare sempre `Is Nothing` o  `IsNot Nothing`.  
   
@@ -48,7 +48,7 @@ Rappresenta il valore predefinito di qualsiasi tipo di dati.  Per i tipi di rife
   
  Nell'esempio seguente vengono illustrati confronti in cui vengono utilizzati gli operatori `Is` e `IsNot`.  
   
- [!code-vb[VbVbalrKeywords#9](../../visual-basic/language-reference/codesnippet/visualbasic/nothing_3.vb)]  
+ [!code-vb[VbVbalrKeywords#9](../../visual-basic/language-reference/codesnippet/VisualBasic/nothing_3.vb)]  
   
  Se si dichiara una variabile senza utilizzare una clausola `As` e la si imposta su `Nothing`, la variabile dispone di un tipo di `Object`.  Un esempio è `Dim something = Nothing`.  Un errore in fase di compilazione si verifica in questo caso `Option Strict` è attivato e  `Option Infer` è disattivato.  
   

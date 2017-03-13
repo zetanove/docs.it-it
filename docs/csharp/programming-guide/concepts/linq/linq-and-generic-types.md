@@ -32,14 +32,14 @@ Le query [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] sono
 ## Variabili IEnumerable\<T\> nelle query LINQ  
  Le variabili di query [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] sono tipizzate come <xref:System.Collections.Generic.IEnumerable%601> o un tipo derivato ad esempio <xref:System.Linq.IQueryable%601>.  Nel caso di una variabile di query tipizzata come `IEnumerable<Customer>`, significa semplicemente che la query, quando eseguita, genererà una sequenza di zero o più oggetti `Customer`.  
   
- [!code-cs[csLINQGettingStarted#34](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#34)]  
+ [!code-cs[csLINQGettingStarted#34](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/linq-and-generic-types_1.cs)]  
   
  Per ulteriori informazioni, vedere [Type Relationships in LINQ Query Operations](../../../../csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md).  
   
 ## Gestione delle dichiarazioni di tipo generico tramite il compilatore  
  Se si preferisce, è possibile evitare la sintassi generica utilizzando la parola chiave [var](../../../../csharp/language-reference/keywords/var.md).  La parola chiave `var` indica al compilatore di dedurre il tipo di una variabile di query esaminando l'origine dati specificata nella clausola `from`.  Nell'esempio seguente viene generato lo stesso codice compilato dell'esempio precedente:  
   
- [!code-cs[csLINQGettingStarted#35](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#35)]  
+ [!code-cs[csLINQGettingStarted#35](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/linq-and-generic-types_2.cs)]  
   
  La parola chiave `var` è utile quando il tipo della variabile è ovvio o quando non è importante specificare in modo esplicito i tipi generici annidati, ad esempio quelli generati dalle query di gruppo.  In generale, è consigliabile utilizzare `var` per rendere più difficile la lettura del codice da parte di altri utenti.  Per ulteriori informazioni, vedere [Variabili locali tipizzate in modo implicito](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   

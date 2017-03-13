@@ -18,7 +18,7 @@ caps.handback.revision: 21
 # Struttura generale di un programma C# (Guida per programmatori C#)
 I programmi in linguaggio C\# possono essere costituiti da uno o più file.  Ciascun file può contenere zero o più spazi dei nomi.  Uno spazio dei nomi può contenere altri spazi dei nomi, nonché dei tipi, quali classi, struct, interfacce, enumerazioni e delegati.  La seguente struttura di base rappresenta un programma in C\# che contiene tutti i suddetti elementi.  
   
- [!code-cs[csProgGuide#34](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/class2.cs#34)]  
+ [!code-cs[csProgGuide#34](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/general-structure-of-a-csharp-program_1.cs)]  
   
 ## Sezioni correlate  
  Per ulteriori informazioni:  

@@ -86,14 +86,14 @@ result = expression1 Or expression2
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene utilizzata la `Or` operatore per eseguire una disgiunzione logica su due espressioni. Il risultato è un `Boolean` che rappresenta se una delle due espressioni è `True`.  
   
- [!code-vb[VbVbalrOperators#35](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/or-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#35](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/or-operator_1.vb)]  
   
  Nell'esempio precedente produce risultati di `True`, `True`, e `False`, rispettivamente.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene utilizzata la `Or` operatore per eseguire la disgiunzione logica dei singoli bit di due espressioni numeriche. Il bit nel risultato viene impostato se entrambi i bit corrispondenti negli operandi è impostato su 1.  
   
- [!code-vb[VbVbalrOperators#36](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/or-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#36](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/or-operator_2.vb)]  
   
  Nell'esempio precedente produce risultati di 10, 14 e 14, rispettivamente.  
   

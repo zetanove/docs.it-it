@@ -28,7 +28,7 @@ Il codice in questo argomento definisce una classe `Student` e crea un elenco di
 ## Esempio  
  Se si lavora sulla procedura dettagliata, è possibile usare questo codice per il file Module1.vb del progetto creato.  Basta sostituire le righe contrassegnate con \*\*\*\* nel metodo `Main` con le query e le esecuzioni delle query fornite nella procedura dettagliata.  
   
- [!code-vb[VbLINQHowToCreateList#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/visualbasic/how-to-create-a-list-of-_1.vb)]  
+ [!code-vb[VbLINQHowToCreateList#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/how-to-create-a-list-of-items_1.vb)]  
   
 ## Vedere anche  
  [Procedura video: scrittura delle query in Visual Basic](http://msdn.microsoft.com/library/bb820884.aspx)   

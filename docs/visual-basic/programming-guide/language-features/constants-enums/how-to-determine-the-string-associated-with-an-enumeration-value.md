@@ -29,7 +29,7 @@ I metodi <xref:System.Enum.GetValues%2A> e <xref:System.Enum.GetNames%2A> consen
   
 -   Utilizzare il metodo <xref:System.Enum.GetNames%2A> per recuperare le stringhe associate ai membri di enumerazione.  Nell'esempio riportato di seguito viene dichiarata l'enumerazione `flavorEnum`, quindi viene utilizzato il metodo <xref:System.Enum.GetNames%2A> per visualizzare le stringhe associate a ciascun membro.  
   
-     [!code-vb[VbEnumsTask#2](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#2)]  
+     [!code-vb[VbEnumsTask#2](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-determine-the-string-associated-with-an-enumeration-value_1.vb)]  
   
 ## Vedere anche  
  <xref:System.Enum.GetValues%2A>   

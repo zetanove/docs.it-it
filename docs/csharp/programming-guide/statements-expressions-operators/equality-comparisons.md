@@ -21,7 +21,7 @@ caps.handback.revision: 14
 ## Uguaglianza di riferimenti  
  Per uguaglianza dei riferimenti si intende che due riferimenti all'oggetto fanno riferimento allo stesso oggetto sottostante.  Questa situazione può verificarsi tramite una semplice assegnazione, come illustrato nell'esempio seguente.  
   
- [!code-cs[csProgGuideStatements#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/equality-comparisons_1.cs)]  
+ [!code-cs[csProgGuideStatements#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/equality-comparisons_1.cs)]  
   
  In questo codice, vengono creati due oggetti, ma dopo l'istruzione di assegnazione, entrambi riferimenti puntano allo stesso oggetto.  Presentano pertanto l'uguaglianza dei riferimenti.  Utilizzare il metodo <xref:System.Object.ReferenceEquals%2A> per stabilire se due riferimenti puntano allo stesso oggetto.  
   

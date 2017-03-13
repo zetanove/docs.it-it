@@ -32,7 +32,7 @@ caps.handback.revision: 11
   
      Nell'esempio di codice seguente viene illustrato come aggiornare il valore di tutti gli elementi \<Price\> in un documento XML.  
   
-     [!code-vb[VbXmlSamples2#4](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#4)]  
+     [!code-vb[VbXmlSamples2#4](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_1.vb)]  
   
      Di seguito vengono illustrati il codice XML di origine e quello modificato, derivati dall'esempio.  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 11
   
 1.  Per aggiungere un attributo a un valore letterale XML, ottenere innanzi tutto un riferimento al valore letterale XML.  È quindi possibile aggiungere un attributo aggiungendo una nuova proprietà axis dell'attributo XML.  È anche possibile aggiungere un nuovo oggetto <xref:System.Xml.Linq.XAttribute> al valore letterale XML tramite il metodo <xref:System.Xml.Linq.XContainer.Add%2A>.  Nell'esempio seguente vengono illustrate entrambe le opzioni.  
   
-     [!code-vb[VbXmlSamples2#5](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#5)]  
+     [!code-vb[VbXmlSamples2#5](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_2.vb)]  
   
      Di seguito vengono illustrati il codice XML di origine e quello modificato, derivati dall'esempio.  
   
@@ -121,7 +121,7 @@ caps.handback.revision: 11
   
      Ognuna di queste tecniche è illustrata negli esempi seguenti:  
   
-     [!code-vb[VbXmlSamples2#6](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#6)]  
+     [!code-vb[VbXmlSamples2#6](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_3.vb)]  
   
      Di seguito vengono illustrati il codice XML di origine e quello modificato, derivati dall'esempio.  
   
@@ -165,7 +165,7 @@ caps.handback.revision: 11
   
 1.  Per rimuovere un elemento o un attributo da un valore letterale XML, ottenere un riferimento all'elemento o attributo e chiamare il metodo `Remove`, come illustrato nell'esempio seguente.  
   
-     [!code-vb[VbXmlSamples2#7](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#7)]  
+     [!code-vb[VbXmlSamples2#7](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_4.vb)]  
   
      Di seguito vengono illustrati il codice XML di origine e quello modificato, derivati dall'esempio.  
   
@@ -213,7 +213,7 @@ caps.handback.revision: 11
   
      Nell'esempio di codice seguente vengono sostituiti tutti gli elementi \<Description\> con un elemento \<Abstract\>.  Il contenuto dell'elemento \<Description\> viene mantenuto nel nuovo elemento \<Abstract\> utilizzando la proprietà <xref:System.Xml.Linq.XContainer.Nodes%2A> dell'oggetto <xref:System.Xml.Linq.XElement>. di \<Description\>  
   
-     [!code-vb[VbXmlSamples2#8](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/visualbasic/VbXmlSamples2/Module2.vb#8)]  
+     [!code-vb[VbXmlSamples2#8](../../../../visual-basic/programming-guide/language-features/xml/codesnippet/VisualBasic/how-to-modify-xml-literals_5.vb)]  
   
      Di seguito vengono illustrati il codice XML di origine e quello modificato, derivati dall'esempio.  
   

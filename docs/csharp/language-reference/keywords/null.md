@@ -23,7 +23,7 @@ La parola chiave `null` è un'espressione letterale che rappresenta un riferimen
   
  Nell'esempio riportato di seguito vengono illustrati alcuni comportamenti della parola chiave null.  
   
- [!code-cs[csrefKeywordsLiteral#1](../../../csharp/language-reference/keywords/codesnippet/csharp/null_1.cs)]  
+ [!code-cs[csrefKeywordsLiteral#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/null_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

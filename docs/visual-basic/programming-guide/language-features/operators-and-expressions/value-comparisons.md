@@ -43,15 +43,15 @@ Gli operatori di confronto consentono di creare espressioni che confrontano i va
   
  Le espressioni di confronto dei valori normalmente vengono utilizzate nelle costruzioni `If...Then`, come indicato nell'esempio seguente.  
   
- [!code-vb[VbVbalrOperators#84](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/value-comparisons_1.vb)]  
+ [!code-vb[VbVbalrOperators#84](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_1.vb)]  
   
  Il segno `=` è un operatore di confronto oltre che un operatore di assegnazione.  Se utilizzato come operatore di confronto, esso consente di valutare se il valore di sinistra è uguale al valore di destra, come indicato nell'esempio seguente.  
   
- [!code-vb[VbVbalrOperators#85](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/value-comparisons_2.vb)]  
+ [!code-vb[VbVbalrOperators#85](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_2.vb)]  
   
  È possibile utilizzare un'espressione di confronto anche in tutti i casi in cui sia richiesto un valore di tipo `Boolean`, come in un'istruzione `If`, `While`, `Loop` o `ElseIf` o durante l'assegnazione o il passaggio di un valore a una variabile `Boolean`.  Nell'esempio seguente, il valore restituito dall'espressione di confronto viene assegnato a una variabile `Boolean`.  
   
- [!code-vb[VbVbalrOperators#86](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/value-comparisons_3.vb)]  
+ [!code-vb[VbVbalrOperators#86](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/value-comparisons_3.vb)]  
   
 ## Vedere anche  
  [Boolean Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)   

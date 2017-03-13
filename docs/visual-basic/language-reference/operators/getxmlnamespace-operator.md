@@ -47,7 +47,7 @@ GetXmlNamespace(xmlNamespacePrefix)
 ## Esempio  
  Nell'esempio riportato di seguito viene importato `ns` come un prefisso dello spazio dei nomi XML.  Il prefisso dello spazio dei nomi viene quindi utilizzato per creare un valore letterale XML e accedere al primo nodo figlio che dispone del nome completo `ns:phone`.  Tale nodo figlio viene quindi passato alla subroutine `ShowName`, che costruisce un nome completo utilizzando l'operatore `GetXmlNamespace`.  La subroutine `ShowName` passa quindi il nome completo al metodo <xref:System.Xml.Linq.XNode.Ancestors%2A> per ottenere il nodo padre `ns:contact`.  
   
- [!code-vb[VbXMLSamples#38](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/getxmlnamespace-operator_1.vb)]  
+ [!code-vb[VbXMLSamples#38](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/getxmlnamespace-operator_1.vb)]  
   
  Quando viene chiamato `TestGetXmlNamespace.RunSample()`, viene visualizzata una finestra di messaggio che contiene il seguente testo:  
   

@@ -38,8 +38,8 @@ Visual Basic fornisce le clausole query `Join` e `Group Join` per consentire di 
   
 2.  Negli esempi di questo utilizzo dell'argomento vengono utilizzati i tipi e i dati `Person` e `Pet` dal seguente esempio di codice.  Copiare questo codice nel modulo `Module1` predefinito creato da Visual Basic.  
   
-     [!code-vb[VbLINQHowTos#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#1)]  
-    [!code-vb[VbLINQHowTos#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#2)]  
+     [!code-vb[VbLINQHowTos#1](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_1.vb)]  
+    [!code-vb[VbLINQHowTos#2](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_2.vb)]  
   
 ## Eseguire un Inner join utilizzando la clausola Join  
  Un INNER JOIN combina i dati da due raccolte.  Vengono inclusi gli elementi per i quali esiste la corrispondenza dei valori della chiave specificata .  Qualsiasi elemento da una qualsiasi raccolta che non ha un elemento corrispondente nell'altra raccolta viene escluso.  
@@ -54,7 +54,7 @@ Visual Basic fornisce le clausole query `Join` e `Group Join` per consentire di 
   
 1.  Aggiungere il codice seguente al modulo `Module1` del progetto per vedere esempi di inner join sia implicito che esplicito.  
   
-     [!code-vb[VbLINQHowTos#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#4)]  
+     [!code-vb[VbLINQHowTos#4](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_3.vb)]  
   
 ## Eseguire un Left outer join utilizzando la clausola Group join  
  Un LEFT OUTER JOIN include tutti gli elementi dalla raccolta di sinistra del join e solo i valori corrispondenti dalla raccolta di destra del join.  Qualsiasi elemento della raccolta di destra del join che non abbia un elemento corrispondente nella raccolta di sinistra viene escluso dal risultato della query.  
@@ -67,7 +67,7 @@ Visual Basic fornisce le clausole query `Join` e `Group Join` per consentire di 
   
 1.  Aggiungere il codice seguente al modulo `Module1` del progetto per vedere esempi di left outer join raggruppato e non raggruppato.  
   
-     [!code-vb[VbLINQHowTos#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#3)]  
+     [!code-vb[VbLINQHowTos#3](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_4.vb)]  
   
 ## Eseguire un join utilizzando una chiave composta  
  È possibile utilizzare la parola chiave `And` in una clausola `Join` o `Group Join` per identificare più campi chiave da utilizzare quando si cercano le corrispondenze tra i valori delle raccolte da unire.  La parola chiave `And` specifica che tutti i campi chiave specificati devono corrispondere per gli elementi da unire.  
@@ -76,7 +76,7 @@ Visual Basic fornisce le clausole query `Join` e `Group Join` per consentire di 
   
 1.  Aggiungere il codice seguente al modulo `Module1` nel progetto per visualizzare un esempio di join che utilizza una chiave composta.  
   
-     [!code-vb[VbLINQHowTos#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#5)]  
+     [!code-vb[VbLINQHowTos#5](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_5.vb)]  
   
 ## Eseguire il codice.  
   
@@ -84,7 +84,7 @@ Visual Basic fornisce le clausole query `Join` e `Group Join` per consentire di 
   
 1.  Sostituire `Sub Main` nel modulo `Module1` nel progetto con il codice seguente per eseguire gli esempi descritti in questo argomento.  
   
-     [!code-vb[VbLINQHowTos#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/visualbasic/VbLINQHowTos/Module1.vb#6)]  
+     [!code-vb[VbLINQHowTos#6](../../../../visual-basic/programming-guide/language-features/linq/codesnippet/VisualBasic/how-to-combine-data-with-linq-by-using-joins_6.vb)]  
   
 2.  Premere F5 per eseguire gli esempi.  
   

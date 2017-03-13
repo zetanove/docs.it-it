@@ -19,19 +19,19 @@ caps.handback.revision: 27
 # Spazi dei nomi (Guida per programmatori C#)
 Gli spazi dei nomi vengono ampiamente utilizzati all'interno dei programmi C\# in due modi.  In primo luogo, vengono utilizzati in .NET Framework per organizzare le numerose classi disponibili come descritto di seguito:  
   
- [!code-cs[csProgGuide#22](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/progGuide.cs#22)]  
+ [!code-cs[csProgGuide#22](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/index_1.cs)]  
   
  `System` è uno spazio dei nomi e `Console` è una classe in tale spazio dei nomi.  La parola chiave `using` può essere utilizzata in modo che il nome completo non sia necessario, come nell'esempio seguente:  
   
- [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/using.cs#1)]  
+ [!code-cs[csProgGuide#1](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/index_2.cs)]  
   
- [!code-cs[csProgGuide#25](../../../csharp/programming-guide/inside-a-program/codesnippet/csharp/csProgGuide/progGuide.cs#25)]  
+ [!code-cs[csProgGuide#25](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/index_3.cs)]  
   
  Per ulteriori informazioni, vedere [Direttiva using](../../../csharp/language-reference/keywords/using-directive.md).  
   
  In secondo luogo, nei progetti di programmazione di grandi dimensioni la dichiarazione di spazi dei nomi consente di controllare l'ambito dei nomi di classi e metodi.  Utilizzare la parola chiave [namespace](../../../csharp/language-reference/keywords/namespace.md) per dichiarare uno spazio dei nomi, come illustrato nel seguente esempio:  
   
- [!code-cs[csProgGuideNamespaces#6](../../../csharp/programming-guide/namespaces/codesnippet/csharp/Namespaces/Namespaces.cs#6)]  
+ [!code-cs[csProgGuideNamespaces#6](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/index_4.cs)]  
   
 ## Cenni preliminari sugli spazi dei nomi  
  Di seguito sono riportate le caratteristiche principali degli spazi dei nomi:  

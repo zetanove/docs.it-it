@@ -29,7 +29,7 @@ caps.handback.revision: 35
   
 -   Per suddividere la definizione di una classe, utilizzare il modificatore della parola chiave [partial](../../../csharp/language-reference/keywords/partial-type.md), come illustrato di seguito:  
   
- [!code-cs[csProgGuideObjects#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_1.cs)]  
+ [!code-cs[csProgGuideObjects#26](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_1.cs)]  
   
  La parola chiave `partial` indica che è possibile definire altre parti della classe, della struttura o dell'interfaccia all'interno dello spazio dei nomi.  Tutte le parti devono utilizzare la parola chiave `partial`,  nonché essere disponibili in fase di compilazione in modo da formare il tipo finale.  Tutte le parti devono inoltre avere lo stesso livello di accessibilità, ad esempio `public`, `private` e così via.  
   
@@ -42,15 +42,15 @@ caps.handback.revision: 35
   
  Nell'esempio seguente viene illustrato che i tipi annidati possono essere parziali, anche se non lo è il tipo all'interno del quale sono annidati.  
   
- [!code-cs[csProgGuideObjects#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_2.cs)]  
+ [!code-cs[csProgGuideObjects#25](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_2.cs)]  
   
  In fase di compilazione gli attributi delle definizioni di tipi parziali verranno uniti.  Si considerino ad esempio le seguenti dichiarazioni:  
   
- [!code-cs[csProgGuideObjects#23](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_3.cs)]  
+ [!code-cs[csProgGuideObjects#23](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_3.cs)]  
   
  Sono equivalenti alle dichiarazioni seguenti:  
   
- [!code-cs[csProgGuideObjects#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_4.cs)]  
+ [!code-cs[csProgGuideObjects#24](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_4.cs)]  
   
  I seguenti elementi vengono uniti da tutte le definizioni di tipi parziali:  
   
@@ -66,24 +66,24 @@ caps.handback.revision: 35
   
  Si considerino ad esempio le seguenti dichiarazioni:  
   
- [!code-cs[csProgGuideObjects#21](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_5.cs)]  
+ [!code-cs[csProgGuideObjects#21](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_5.cs)]  
   
  Sono equivalenti alle dichiarazioni seguenti:  
   
- [!code-cs[csProgGuideObjects#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_6.cs)]  
+ [!code-cs[csProgGuideObjects#22](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_6.cs)]  
   
 ### Restrizioni  
  Quando si utilizzano le definizioni parziali di classi, è necessario rispettare diverse regole:  
   
 -   Tutte le definizioni di tipi parziali destinate a essere parti dello stesso tipo devono essere modificate con `partial`.  Le seguenti dichiarazioni di classe generano ad esempio un errore:  
   
-     [!code-cs[csProgGuideObjects#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_7.cs)]  
+     [!code-cs[csProgGuideObjects#20](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_7.cs)]  
   
 -   È possibile specificare il modificatore `partial` subito prima delle parole chiave `class`, `struct` o `interface`.  
   
 -   I tipi parziali annidati sono consentiti nelle definizioni di tipi parziali, come illustrato nell'esempio seguente:  
   
-     [!code-cs[csProgGuideObjects#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_8.cs)]  
+     [!code-cs[csProgGuideObjects#19](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_8.cs)]  
   
 -   Tutte le definizioni di tipi parziali destinate a essere parti dello stesso tipo devono essere definite nello stesso assembly e nello stesso modulo \(file EXE o DLL\).  Le definizioni parziali non possono estendersi su più moduli.  
   
@@ -117,7 +117,7 @@ caps.handback.revision: 35
  Nell'esempio seguente i campi e il costruttore della classe `CoOrds` vengono dichiarati in una definizione parziale di classe, mentre il membro `PrintCoOrds` viene dichiarato in un'altra definizione parziale di classe.  
   
 ### Codice  
- [!code-cs[csProgGuideObjects#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_9.cs)]  
+ [!code-cs[csProgGuideObjects#17](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_9.cs)]  
   
 ## Esempio 2  
   
@@ -125,7 +125,7 @@ caps.handback.revision: 35
  Nell'esempio riportato di seguito viene dimostrato che è anche possibile sviluppare strutture e interfacce parziali.  
   
 ### Codice  
- [!code-cs[csProgGuideObjects#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/partial-classes-and-meth_10.cs)]  
+ [!code-cs[csProgGuideObjects#18](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/partial-classes-and-methods_10.cs)]  
   
 ## Metodi parziali  
  Una classe o struttura parziale può contenere un metodo parziale.  Una parte della classe contiene la firma del metodo.  Un'implementazione facoltativa può essere definita nella stessa parte o in un'altra parte.  Se l'implementazione non viene fornita, il metodo e tutte le chiamate al metodo vengono rimosse in fase di compilazione.  

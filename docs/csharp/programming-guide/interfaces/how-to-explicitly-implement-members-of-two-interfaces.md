@@ -20,16 +20,16 @@ caps.handback.revision: 15
 L'implementazione esplicita dell'[interfaccia](../../../csharp/language-reference/keywords/interface.md) consente inoltre al programmatore di implementare due interfacce che presentano gli stessi nomi di membri e di operare un'implementazione separata per ciascun membro dell'interfaccia.  In questo sono visualizzate le dimensioni di una casella sia in unità di misura decimali che in unità di misura inglesi.  La [classe](../../../csharp/language-reference/keywords/class.md) Box implementa due interfacce, IEnglishDimensions e IMetricDimensions, che rappresentano i diversi sistemi di misura.  Entrambe le interfacce presentano gli stessi nomi di membri: Length e Width.  
   
 ## Esempio  
- [!code-cs[csProgGuideInheritance#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_0_1.cs)]  
+ [!code-cs[csProgGuideInheritance#9](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-members-of-two-interfaces_1.cs)]  
   
 ## Programmazione efficiente  
  Se si desidera esprimere le misure predefinite in unità inglesi, implementare i metodi Length e Width normalmente e implementare in modo esplicito i metodi Length e Width dall'interfaccia IMetricDimensions:  
   
- [!code-cs[csProgGuideInheritance#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_0_2.cs)]  
+ [!code-cs[csProgGuideInheritance#10](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-members-of-two-interfaces_2.cs)]  
   
  In questo caso è possibile accedere alle unità di misura inglesi dall'istanza di classe e alle unità decimali dall'istanza di interfaccia:  
   
- [!code-cs[csProgGuideInheritance#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-explicitly-implem_0_3.cs)]  
+ [!code-cs[csProgGuideInheritance#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-members-of-two-interfaces_3.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

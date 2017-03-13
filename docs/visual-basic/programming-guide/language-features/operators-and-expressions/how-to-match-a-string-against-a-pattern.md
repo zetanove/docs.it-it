@@ -42,7 +42,7 @@ Per verificare se un'espressione dell'oggetto [String Data Type](../../../../vis
   
      Il seguente esempio consente di verificare se l'oggetto `myString` è costituito esattamente dal singolo carattere `H`.  
   
-     [!code-vb[VbVbalrOperators#70](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_1.vb)]  
+     [!code-vb[VbVbalrOperators#70](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_1.vb)]  
   
 ### Per confrontare un carattere incluso nell'espressione stringa con un carattere jolly  
   
@@ -50,7 +50,7 @@ Per verificare se un'espressione dell'oggetto [String Data Type](../../../../vis
   
      Il seguente esempio consente di verificare se l'oggetto `myString` è costituito dal singolo carattere `W` seguito da due caratteri qualsiasi.  
   
-     [!code-vb[VbVbalrOperators#71](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_2.vb)]  
+     [!code-vb[VbVbalrOperators#71](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_2.vb)]  
   
 ### Per confrontare un carattere incluso nell'espressione stringa con un elenco di caratteri  
   
@@ -58,7 +58,7 @@ Per verificare se un'espressione dell'oggetto [String Data Type](../../../../vis
   
      Il seguente esempio consente di verificare se l'oggetto `myString` è costituito da un qualsiasi carattere valido seguito da un solo carattere `A`, `C`, o `E`.  
   
-     [!code-vb[VbVbalrOperators#72](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_3.vb)]  
+     [!code-vb[VbVbalrOperators#72](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_3.vb)]  
   
      In questo tipo di confronto viene fatta distinzione tra maiuscole e minuscole.  
   
@@ -68,7 +68,7 @@ Per verificare se un'espressione dell'oggetto [String Data Type](../../../../vis
   
      Il seguente esempio consente di verificare se l'oggetto `myString` è costituito dai caratteri `num` seguiti da un solo carattere `i`, `j`, `k`, `l`, `m`, o `n`.  
   
-     [!code-vb[VbVbalrOperators#73](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_4.vb)]  
+     [!code-vb[VbVbalrOperators#73](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_4.vb)]  
   
      In questo tipo di confronto viene fatta distinzione tra maiuscole e minuscole.  
   
@@ -85,7 +85,7 @@ Per verificare se un'espressione dell'oggetto [String Data Type](../../../../vis
   
      Il seguente esempio consente di verificare il numero telefonico di sette cifre `phoneNum` che deve essere composto da tre cifre seguite da uno spazio, da un trattino \(`–`\), da un punto \(`.`\) o da nessun carattere, e quindi da altre quattro cifre.  
   
-     [!code-vb[VbVbalrOperators#74](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-match-a-string-ag_5.vb)]  
+     [!code-vb[VbVbalrOperators#74](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_5.vb)]  
   
 ## Vedere anche  
  [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)   

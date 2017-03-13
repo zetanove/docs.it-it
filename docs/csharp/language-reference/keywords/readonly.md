@@ -24,7 +24,7 @@ La parola chiave `readonly` è un modificatore che è possibile utilizzare per i
 ## Esempio  
  Nell'esempio riportato di seguito, il valore del campo `year` non può essere modificato nel metodo `ChangeYear`, anche se ad esso è assegnato un valore nel costruttore della classe:  
   
- [!code-cs[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#14)]  
+ [!code-cs[csrefKeywordsModifiers#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_1.cs)]  
   
  È possibile assegnare un valore a un campo `readonly` solo nei contesti descritti di seguito:  
   
@@ -44,7 +44,7 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
 ```  
   
 ## Esempio  
- [!code-cs[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#15)]  
+ [!code-cs[csrefKeywordsModifiers#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/readonly_2.cs)]  
   
  Nell'esempio precedente, se si utilizza una dichiarazione di questo tipo:  
   

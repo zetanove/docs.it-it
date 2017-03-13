@@ -30,7 +30,7 @@ Il metodo `My.Computer.FileSystem.CopyFile` consente di copiare i file.  I param
   
 -   Utilizzare il metodo `CopyFile` per copiare un file, specificando il file di origine e la directory di destinazione.  Il parametro `overwrite` consente di specificare se sovrascrivere o meno i file esistenti.  Nell'esempio di codice riportato di seguito viene illustrato l'utilizzo di `CopyFile`.  
   
-     [!code-vb[VbFileIOMisc#24](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-create-a-copy-of-_1_1.vb)]  
+     [!code-vb[VbFileIOMisc#24](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-create-a-copy-of-a-file-in-a-different-directory_1.vb)]  
   
 ## Programmazione efficiente  
  Le seguenti condizioni possono causare la generazione di un'eccezione:  

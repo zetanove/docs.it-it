@@ -62,7 +62,7 @@ Valore letterale che rappresenta un oggetto <xref:System.Xml.Linq.XComment>.
 ## Esempio  
  Nell'esempio seguente viene creato un commento XML che contiene il testo "Questo è un commento".  
   
- [!code-vb[VbXMLSamples#9](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-comment-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-comment-literal_1.vb)]  
   
 ## Vedere anche  
  <xref:System.Xml.Linq.XComment>   

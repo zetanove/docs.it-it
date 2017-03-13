@@ -69,7 +69,7 @@ result = pattern >> amount
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `>>` viene utilizzato per eseguire spostamenti aritmetici a destra su valori integrali.  Il risultato presenta sempre lo stesso tipo di dati dell'espressione in cui è stato effettuato lo spostamento.  
   
- [!code-vb[VbVbalrOperators#14](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/right-shift-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_1.vb)]  
   
  Di seguito sono riportati i risultati dell'esempio precedente:  
   
@@ -87,7 +87,7 @@ result = pattern >> amount
   
  Nell'esempio riportato di seguito vengono illustrati gli spostamenti aritmetici su un valore negativo.  
   
- [!code-vb[VbVbalrOperators#55](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/right-shift-operator_2.vb)]  
+ [!code-vb[VbVbalrOperators#55](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-operator_2.vb)]  
   
  Di seguito sono riportati i risultati dell'esempio precedente:  
   

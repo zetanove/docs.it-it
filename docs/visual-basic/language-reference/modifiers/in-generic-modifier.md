@@ -46,12 +46,12 @@ Per i parametri di tipo generico, la parola chiave `In` specifica che il paramet
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, estendere e implementare un'interfaccia generica controvariante.  Viene inoltre illustrato come sia possibile utilizzare la conversione implicita per le classi che implementano questa interfaccia.  
   
- [!code-vb[vbVarianceKeywords#1](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/in-generic-modifier_1.vb)]  
+ [!code-vb[vbVarianceKeywords#1](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/in-generic-modifier_1.vb)]  
   
 ## Esempio  
  Nell'esempio seguente viene illustrato come dichiarare, creare un'istanza e richiamare un delegato generico controvariante.  Viene inoltre illustrato come sia possibile convertire in modo implicito un tipo delegato.  
   
- [!code-vb[vbVarianceKeywords#2](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/in-generic-modifier_2.vb)]  
+ [!code-vb[vbVarianceKeywords#2](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/in-generic-modifier_2.vb)]  
   
 ## Vedere anche  
  [Varianza nelle interfacce generiche](../Topic/Variance%20in%20Generic%20Interfaces%20\(C%23%20and%20Visual%20Basic\).md)   

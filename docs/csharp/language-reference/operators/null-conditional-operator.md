@@ -30,7 +30,7 @@ L'operatore `??` viene chiamato operatore null\-coalescing.  Restituisce l'opera
  Il risultato di un operatore ?? non è considerato una costante anche se entrambi gli argomenti sono costanti.  
   
 ## Esempio  
- [!code-cs[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#53)]  
+ [!code-cs[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

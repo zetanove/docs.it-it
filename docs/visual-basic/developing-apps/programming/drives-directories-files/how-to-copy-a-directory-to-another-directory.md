@@ -32,7 +32,7 @@ Utilizzare il metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory
   
 -   Utilizzare il metodo `CopyDirectory`, specificando i nomi della directory di origine e di destinazione.  Nell'esempio di codice riportato di seguito, la directory denominata `TestDirectory1` viene copiata in `TestDirectory2`, sovrascrivendo i file esistenti.  
   
-     [!code-vb[VbVbcnMyFileSystem#16](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-copy-a-directory-_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#16](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-copy-a-directory-to-another-directory_1.vb)]  
   
      Questo esempio di codice è anche disponibile come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice si trova in **File system \- Elaborazione di unità, cartelle e file**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
   

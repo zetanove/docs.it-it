@@ -22,7 +22,7 @@ C\# non fornisce un costruttore di copia per gli oggetti, tuttavia è possibile 
 ## Esempio  
  Nell'esempio seguente, nella [classe](../../../csharp/language-reference/keywords/class.md) `Person` viene definito un costruttore di copia che accetta come argomento un'istanza di `Person`.  I valori delle proprietà dell'argomento vengono assegnati alle proprietà della nuova istanza di `Person`.  Il codice contiene un costruttore di copia alternativo che invia le proprietà `Name` e `Age` dell'istanza che si desidera copiare al costruttore di istanza della classe.  
   
- [!code-cs[csProgGuideObjects#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/how-to-write-a-copy-cons_1.cs)]  
+ [!code-cs[csProgGuideObjects#16](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-write-a-copy-constructor_1.cs)]  
   
 ## Vedere anche  
  <xref:System.ICloneable>   

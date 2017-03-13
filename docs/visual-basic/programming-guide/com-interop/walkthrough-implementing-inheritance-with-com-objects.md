@@ -103,15 +103,15 @@ caps.handback.revision: 16
   
 6.  Aggiungere all'inizio della classe `MathClass` il codice che segue per ereditare dalla classe COM.  
   
-     [!code-vb[VbVbalrInterop#31](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#31)]  
+     [!code-vb[VbVbalrInterop#31](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_1.vb)]  
   
 7.  Eseguire l'overload del metodo pubblico della classe base aggiungendo a `MathClass` il seguente codice:  
   
-     [!code-vb[VbVbalrInterop#32](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#32)]  
+     [!code-vb[VbVbalrInterop#32](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_2.vb)]  
   
 8.  Estendere la classe ereditata aggiungendo a `MathClass` il seguente codice:  
   
-     [!code-vb[VbVbalrInterop#33](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#33)]  
+     [!code-vb[VbVbalrInterop#33](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_3.vb)]  
   
  La nuova classe eredita le proprietà della classe base dell'oggetto COM, esegue l'overload di un metodo e definisce un nuovo metodo per estendere la classe.  
   
@@ -121,7 +121,7 @@ caps.handback.revision: 16
   
 2.  Nella routine del gestore eventi `Click` del pulsante aggiungere il codice riportato di seguito per creare un'istanza di `MathClass` e chiamare i metodi di cui è stato eseguito l'overload.  
   
-     [!code-vb[VbVbalrInterop#34](../../../visual-basic/programming-guide/com-interop/codesnippet/visualbasic/vbvbalrinterop/Class1.vb#34)]  
+     [!code-vb[VbVbalrInterop#34](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-implementing-inheritance-with-com-objects_4.vb)]  
   
 3.  Premere F5 per eseguire il progetto.  
   

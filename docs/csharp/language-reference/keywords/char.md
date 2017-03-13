@@ -30,7 +30,7 @@ La parola chiave di `char` utilizzata per dichiarare un'istanza della struttura 
 ## Valori letterali  
  Le costanti del tipo `char` possono essere scritte come valori letterali carattere, sequenze di escape esadecimali o rappresentazioni Unicode.  È inoltre possibile impostare i codici con caratteri integrali.  Nell'esempio seguente quattro variabili `char` vengono inizializzate con lo stesso carattere `X`:  
   
- [!code-cs[csrefKeywordsTypes#19](../../../csharp/language-reference/keywords/codesnippet/csharp/char_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#19](../../../csharp/language-reference/keywords/codesnippet/CSharp/char_1.cs)]  
   
 ## Conversioni  
  Un tipo `char` può essere convertito in modo implicito in [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md) o [decimal](../../../csharp/language-reference/keywords/decimal.md).  Non esiste tuttavia alcuna conversione implicita da questi tipi al tipo `char`.  

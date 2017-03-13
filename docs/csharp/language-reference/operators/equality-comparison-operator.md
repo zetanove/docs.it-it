@@ -25,7 +25,7 @@ Per i tipi di valore predefiniti, l'operatore di uguaglianza \(`==`\) restituisc
  I tipi di valore definiti dall'utente possono eseguire l'overload dell'operatore `==` \(per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md),  al pari dei tipi di riferimento definiti dall'utente, sebbene, in base all'impostazione predefinita, l'operatore `==` si comporti come descritto in precedenza sia per tipi di riferimento predefiniti che per quelli definiti dall'utente.  Se si esegue l'overload dell'operatore `==`, è necessario sottoporre a overload anche l'operatore [\!\=](../../../csharp/language-reference/operators/not-equal-operator.md).  Le operazioni sui tipi integrali sono generalmente consentite sull'enumerazione.  
   
 ## Esempio  
- [!code-cs[csRefOperators#36](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#36)]  
+ [!code-cs[csRefOperators#36](../../../csharp/language-reference/operators/codesnippet/CSharp/equality-comparison-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

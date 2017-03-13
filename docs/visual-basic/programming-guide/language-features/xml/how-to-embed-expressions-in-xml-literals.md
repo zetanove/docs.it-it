@@ -35,7 +35,7 @@ caps.handback.revision: 16
   
 -   Nell'esempio seguente viene illustrato come inserire il testo contenuto nella variabile `contactName` tra gli elementi nomi di apertura e chiusura.  
   
-     [!code-vb[VbXMLSamples#39](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-embed-expressions_1.vb)]  
+     [!code-vb[VbXMLSamples#39](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-embed-expressions-in-xml-literals_1.vb)]  
   
      Questo esempio produce il seguente output:  
   
@@ -49,7 +49,7 @@ caps.handback.revision: 16
   
 -   Nell'esempio seguente viene illustrato come inserire il testo contenuto nella variabile `phoneType` come valore dell'attributo di `type`.  
   
-     [!code-vb[VbXMLSamples#40](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-embed-expressions_2.vb)]  
+     [!code-vb[VbXMLSamples#40](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-embed-expressions-in-xml-literals_2.vb)]  
   
      Questo esempio produce il seguente output:  
   
@@ -65,7 +65,7 @@ caps.handback.revision: 16
   
      Quando si creano elementi utilizzando questa tecnica, è necessario chiuderli con il tag \<\/\>.  
   
-     [!code-vb[VbXMLSamples#41](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-embed-expressions_3.vb)]  
+     [!code-vb[VbXMLSamples#41](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-embed-expressions-in-xml-literals_3.vb)]  
   
      Questo esempio produce il seguente output:  
   

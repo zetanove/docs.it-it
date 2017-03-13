@@ -43,7 +43,7 @@ block = stackalloc int[100];
  Nell'esempio riportato di seguito vengono calcolati e visualizzati i primi 20 numeri della sequenza di Fibonacci.  Ogni numero corrisponde alla somma dei due numeri precedenti.  Nel codice, un blocco di memoria di dimensioni sufficienti a contenere 20 elementi di tipo `int` viene allocato nello stack, non nell'heap.  L'indirizzo del blocco è archiviato nel puntatore `fib`.  Questa memoria non viene sottoposta alla procedura di Garbage Collection e non deve pertanto essere bloccata tramite [fixed](../../../csharp/language-reference/keywords/fixed-statement.md).  La durata del blocco di memoria è limitata alla durata del metodo che lo definisce.  Non è possibile liberare la memoria prima della restituzione del metodo.  
   
 ## Esempio  
- [!code-cs[csrefKeywordsOperator#15](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsOperator/csrefKeywordsOperators.cs#15)]  
+ [!code-cs[csrefKeywordsOperator#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/stackalloc_1.cs)]  
   
 ## Sicurezza  
  Il codice unsafe è per definizione meno sicuro delle alternative sicure.  Tuttavia, l'utilizzo di `stackalloc` attiva automaticamente le funzionalità di rilevazione del sovraccarico del buffer in Common Language Runtime \(CLR\).  Se viene rilevato un sovraccarico del buffer, il processo viene terminato il più rapidamente possibile per ridurre al minimo la possibilità che venga eseguito codice dannoso.  

@@ -45,15 +45,15 @@ caps.handback.revision: 12
 ## Utilizzo degli alias con l'istruzione Imports  
  L'istruzione `Imports` semplifica l'accesso ai metodi delle classi, eliminando la necessità di digitare in modo esplicito il nome completo dei riferimenti.  Gli alias consentono di assegnare un nome più descrittivo a una sola parte di uno spazio dei nomi.  Ad esempio, la sequenza di ritorno a capo\/avanzamento riga che determina la visualizzazione di una singola porzione di testo su più righe fa parte del modulo <xref:Microsoft.VisualBasic.ControlChars> nello spazio dei nomi <xref:Microsoft.VisualBasic?displayProperty=fullName>.  Per utilizzare questa costante in un programma, senza un alias, sarebbe necessario digitare il codice che segue:  
   
- [!code-vb[VbVbalrApplication#3](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/references-and-the-impor_1.vb)]  
+ [!code-vb[VbVbalrApplication#3](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_1.vb)]  
   
  Le istruzioni `Imports` devono essere sempre contenute nelle prime righe immediatamente successive alle istruzioni `Option` in un modulo.  Nel frammento di codice riportato di seguito viene illustrato come importare e assegnare un alias al modulo <xref:Microsoft.VisualBasic.ControlChars?displayProperty=fullName>:  
   
- [!code-vb[VbVbalrApplication#4](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/references-and-the-impor_2.vb)]  
+ [!code-vb[VbVbalrApplication#4](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_2.vb)]  
   
  I riferimenti successivi a questo spazio dei nomi possono essere molto più brevi:  
   
- [!code-vb[VbVbalrApplication#5](../../../visual-basic/programming-guide/program-structure/codesnippet/visualbasic/references-and-the-impor_3.vb)]  
+ [!code-vb[VbVbalrApplication#5](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/references-and-the-imports-statement_3.vb)]  
   
  Se un'istruzione `Imports` non include un nome alias, gli elementi definiti all'interno dello spazio dei nomi importato possono essere utilizzati nel modulo senza qualificazione.  Se il nome alias è specificato, deve essere utilizzato come qualificatore per i nomi contenuti all'interno di quello spazio dei nomi.  
   

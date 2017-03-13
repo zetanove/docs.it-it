@@ -35,29 +35,29 @@ Gli operatori aritmetici consentono di eseguire molte delle comuni operazioni ar
 ## Operazioni aritmetiche  
  È possibile sommare due valori di un'espressione con l'[\+ Operator](../../../../visual-basic/language-reference/operators/addition-operator.md) oppure sottrarne uno da un altro con l'[\- Operator](../../../../visual-basic/language-reference/operators/subtraction-operator.md), come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrOperators#57](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_1.vb)]  
+ [!code-vb[VbVbalrOperators#57](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_1.vb)]  
   
  L'[\- Operator](../../../../visual-basic/language-reference/operators/subtraction-operator.md) viene utilizzato anche per la negazione, ma con un solo operando, come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrOperators#58](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_2.vb)]  
+ [!code-vb[VbVbalrOperators#58](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_2.vb)]  
   
  Per la moltiplicazione e la divisione vengono utilizzati rispettivamente l'[\* Operator](../../../../visual-basic/language-reference/operators/multiplication-operator.md) e l'[\/ Operator](../../../../visual-basic/language-reference/operators/floating-point-division-operator.md), come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrOperators#59](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_3.vb)]  
+ [!code-vb[VbVbalrOperators#59](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_3.vb)]  
   
  L'[^ Operator](../../../../visual-basic/language-reference/operators/exponentiation-operator.md) viene utilizzato per l'elevamento a potenza, come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbalrOperators#60](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_4.vb)]  
+ [!code-vb[VbVbalrOperators#60](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_4.vb)]  
   
  La divisione di interi viene eseguita con l'[\\ Operator](../../../../visual-basic/language-reference/operators/integer-division-operator.md).  La divisione di interi restituisce il quoziente, ovvero il valore intero che rappresenta il numero di volte in cui il divisore sta nel dividendo senza tenere conto di eventuali resti.  Per questo operatore, sia il divisore che il dividendo devono essere tipi integrali \(`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long` e `ULong`\).  È necessario che tutti gli altri tipi vengano prima convertiti in un tipo integrale.  Nell'esempio riportato di seguito viene illustrata la divisione di interi.  
   
- [!code-vb[VbVbalrOperators#61](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_5.vb)]  
+ [!code-vb[VbVbalrOperators#61](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_5.vb)]  
   
  Il modulo aritmetico viene eseguito con l'[Operatore Mod](../../../../visual-basic/language-reference/operators/mod-operator.md).  Questo operatore restituisce il resto dopo che il dividendo è stato diviso per il divisore per un numero intero di volte.  Se sia il divisore che il dividendo sono tipi integrali, il valore restituito è integrale.  Se il divisore e il dividendo sono tipi a virgola mobile, anche il valore restituito è a virgola mobile.  Nell'esempio che segue viene illustrato questo comportamento.  
   
- [!code-vb[VbVbalrOperators#62](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_6.vb)]  
+ [!code-vb[VbVbalrOperators#62](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_6.vb)]  
   
- [!code-vb[VbVbalrOperators#63](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_7.vb)]  
+ [!code-vb[VbVbalrOperators#63](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_7.vb)]  
   
 ### Tentativo di divisione per zero  
  La divisione per zero produce risultati diversi a seconda dei tipi di dati utilizzati.  Nelle divisioni di integrali \(`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`\), [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] genera un'eccezione <xref:System.DivideByZeroException>.  Anche nel caso di operazioni di divisione con tipi di dati `Decimal` o `Single`, [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] genera un'eccezione <xref:System.DivideByZeroException>.  
@@ -90,7 +90,7 @@ Gli operatori aritmetici consentono di eseguire molte delle comuni operazioni ar
   
  Nell'esempio che segue viene effettuato uno spostamento sia a sinistra che a destra di un valore `Integer`.  
   
- [!code-vb[VbVbalrOperators#64](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/arithmetic-operators_8.vb)]  
+ [!code-vb[VbVbalrOperators#64](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/arithmetic-operators_8.vb)]  
   
  Gli spostamenti aritmetici non generano mai eccezioni di overflow.  
   

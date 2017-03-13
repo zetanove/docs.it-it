@@ -26,7 +26,7 @@ L'operatore logico di negazione \(`!`\) è un operatore unario che nega l'operan
  I tipi definiti dall'utente possono eseguire l'overload dell'operatore `!`. Per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md).  
   
 ## Esempio  
- [!code-cs[csRefOperators#7](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#7)]  
+ [!code-cs[csRefOperators#7](../../../csharp/language-reference/operators/codesnippet/CSharp/logical-negation-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

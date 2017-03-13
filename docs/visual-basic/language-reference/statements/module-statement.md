@@ -102,7 +102,7 @@ End Module
 -   **Qualificazione.** Un progetto può contenere più moduli ed è possibile dichiarare i membri con lo stesso nome in due o più moduli.  Tuttavia è necessario qualificare qualsiasi riferimento a tale membro con il nome del modulo appropriato se il riferimento si trova al di fuori del modulo.  Per ulteriori informazioni, vedere [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
   
 ## Esempio  
- [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/module-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
   
 ## Vedere anche  
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)   

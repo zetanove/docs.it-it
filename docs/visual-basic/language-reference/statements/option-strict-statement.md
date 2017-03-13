@@ -147,19 +147,19 @@ Option Strict { On | Off }
 ## Esempio  
  Negli esempi seguenti vengono illustrati gli errori in fase di compilazione causati dalle conversioni dei tipi impliciti che sono conversioni verso un tipo di dati più piccolo.  Questa categoria di errore corrisponde alla condizione di **Conversione implicita** nella pagina **Compilazione**.  
   
- [!code-vb[VbVbalrStatements#161](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#161](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_1.vb)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrato un errore in fase di compilazione causato dall'associazione tardiva.  Questa categoria di errore corrisponde alla condizione di **Associazione tardiva. La chiamata potrebbe non riuscire in fase di esecuzione.** nella pagina **Compilazione**.  
   
- [!code-vb[VbVbalrStatements#162](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#162](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_2.vb)]  
   
 ## Esempio  
  Negli esempi seguenti vengono illustrati gli errori causati dalle variabili che vengono dichiarate con un tipo implicito di `Object`.  Questa categoria di errore corrisponde alla condizione di **Tipo implicito: presunto oggetto** nella pagina **Compilazione**.  
   
- [!code-vb[VbVbalrStatements#163](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#163](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_3.vb)]  
   
- [!code-vb[VbVbalrStatements#164](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/option-strict-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#164](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-strict-statement_4.vb)]  
   
 ## Vedere anche  
  [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)   

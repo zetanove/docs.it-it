@@ -46,7 +46,7 @@ Specifica che uno o più elementi di programmazione sono accessibili solo dall'a
 ## Esempio  
  Nella classe seguente viene utilizzato il modificatore `Friend` per consentire agli altri elementi di programmazione all'interno dello stesso assembly di accedere a determinati membri.  
   
- [!code-vb[VbVbalrAccessModifiers#1](../../../visual-basic/language-reference/modifiers/codesnippet/visualbasic/friend_1.vb)]  
+ [!code-vb[VbVbalrAccessModifiers#1](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/friend_1.vb)]  
   
 ## Utilizzo  
  È possibile utilizzare il modificatore di `Friend` in questi contesti:  

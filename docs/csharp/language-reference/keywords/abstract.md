@@ -24,7 +24,7 @@ Il modificatore `abstract` indica che l'implementazione dell'oggetto modificato 
 ## Esempio  
  Nell'esempio riportato di seguito, la classe `Square` deve fornire un'implementazione di `Area` poiché deriva da `ShapesClass`:  
   
- [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#1)]  
+ [!code-cs[csrefKeywordsModifiers#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_1.cs)]  
   
  Le classi astratte presentano le caratteristiche descritte di seguito.  
   
@@ -66,12 +66,12 @@ Il modificatore `abstract` indica che l'implementazione dell'oggetto modificato 
   
  La classe astratta che implementa un'interfaccia può associare i metodi di interfaccia a metodi astratti.  Di seguito è riportato un esempio:  
   
- [!code-cs[csrefKeywordsModifiers#2](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#2)]  
+ [!code-cs[csrefKeywordsModifiers#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_2.cs)]  
   
 ## Esempio  
  In questo esempio la classe `DerivedClass` deriva da una classe astratta `BaseClass`.  La classe astratta contiene il metodo astratto `AbstractMethod` e le due proprietà astratte `X` e `Y`.  
   
- [!code-cs[csrefKeywordsModifiers#3](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#3)]  
+ [!code-cs[csrefKeywordsModifiers#3](../../../csharp/language-reference/keywords/codesnippet/CSharp/abstract_3.cs)]  
   
  Nell'esempio precedente, se si tenta di creare un'istanza per la classe astratta tramite una dichiarazione di questo tipo:  
   

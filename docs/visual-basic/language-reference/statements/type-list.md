@@ -90,17 +90,17 @@ Specifica i *parametri di tipo* per un elemento di programmazione *generico*.  N
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrata la definizione di base di una classe dizionario generica, che comprende una funzione di base per l'aggiunta di una nuova voce al dizionario.  
   
- [!code-vb[VbVbalrStatements#3](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/type-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#3](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_1.vb)]  
   
 ## Esempio  
  Poiché `dictionary` è generico, il codice che lo utilizza può creare a partire da tale elemento una vasta gamma di oggetti, ciascuno con le stesse funzionalità ma con effetto su tipi di dati diversi.  Nell'esempio riportato di seguito viene illustrata una riga di codice che crea un oggetto `dictionary` con voci `String` e chiavi `Integer`.  
   
- [!code-vb[VbVbalrStatements#4](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/type-list_2.vb)]  
+ [!code-vb[VbVbalrStatements#4](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_2.vb)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito viene illustrata la definizione di base equivalente generata dall'esempio precedente.  
   
- [!code-vb[VbVbalrStatements#5](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/type-list_3.vb)]  
+ [!code-vb[VbVbalrStatements#5](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_3.vb)]  
   
 ## Vedere anche  
  [Of](../../../visual-basic/language-reference/statements/of-clause.md)   

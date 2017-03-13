@@ -75,17 +75,17 @@ Exit { Do | For | Function | Property | Select | Sub | Try | Whil
 ## Esempio  
  Nell'esempio seguente, il ciclo viene interrotto dalla condizione del ciclo quando la variabile `index` è maggiore di 100.  Tramite l'istruzione `If` nel ciclo, tuttavia, viene causata l'interruzione del ciclo mediante l'istruzione `Exit Do` quando la variabile di indice è maggiore di 10.  
   
- [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/exit-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_1.vb)]  
   
 ## Esempio  
  Nell'esempio seguente il valore restituito viene assegnato al nome di funzione `myFunction` e viene quindi utilizzata l'istruzione `Exit Function` per la restituzione dalla funzione.  
   
- [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/exit-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#23](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_2.vb)]  
   
 ## Esempio  
  Nell'esempio seguente viene illustrato come utilizzare [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md) per assegnare il valore restituito e uscire dalla funzione.  
   
- [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/exit-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_3.vb)]  
   
 ## Vedere anche  
  [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)   

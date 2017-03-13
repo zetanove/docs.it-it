@@ -23,7 +23,7 @@ Il dominio di accessibilità di un membro specifica in quali sezioni del program
 ## Esempio  
  In questo esempio viene utilizzato un tipo di primo livello `T1` e due classi annidate, `M1` e `M2`.  Le classi contengono campi con accessibilità dichiarate differenti.  Nel metodo `Main`, ciascuna istruzione è seguita da un commento per indicare il dominio di accessibilità di ciascun membro.  Si noti che le istruzioni che tentano di fare riferimento ai membri non accessibili vengono impostate come commenti.  Per visualizzare gli errori del compilatore provocati da riferimenti a un membro inaccessibile, rimuovere i commenti uno alla volta.  
   
- [!code-cs[csrefKeywordsModifiers#4](../../../csharp/language-reference/keywords/codesnippet/csharp/csrefKeywordsModifiers/csrefKeywordsModifiers.cs#4)]  
+ [!code-cs[csrefKeywordsModifiers#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/accessibility-domain_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

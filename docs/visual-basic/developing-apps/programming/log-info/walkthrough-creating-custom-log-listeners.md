@@ -31,7 +31,7 @@ In questa procedura dettagliata viene illustrato come creare un listener di log 
   
 -   Nell'applicazione creare una classe denominata `SimpleListener` che erediti da <xref:System.Diagnostics.TraceListener>.  
   
-     [!code-vb[VbVbalrMyApplicationLog#16](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#16)]  
+     [!code-vb[VbVbalrMyApplicationLog#16](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_1.vb)]  
   
      I metodi <xref:System.Diagnostics.TraceListener.Write%2A> e <xref:System.Diagnostics.TraceListener.WriteLine%2A>, richiesti dalla classe di base, richiamano `MsgBox` per visualizzare l'input.  
   
@@ -75,7 +75,7 @@ In questa procedura dettagliata viene illustrato come creare un listener di log 
   
 -   Nel codice mostrato di seguito viene illustrato come determinare il tipo di nome sicuro per `SimpleListener`.  
   
-     [!code-vb[VbVbalrMyApplicationLog#17](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/visualbasic/VbVbalrMyApplicationLog/Form1.vb#17)]  
+     [!code-vb[VbVbalrMyApplicationLog#17](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-creating-custom-log-listeners_2.vb)]  
   
      Il nome sicuro per un tipo dipende dal progetto.  
   

@@ -82,12 +82,12 @@ Console.WriteLine((double)dec + dub);
   
  Nell'esempio riportato di seguito vengono combinati nella stessa espressione un tipo `decimal` e un tipo [int](../../../csharp/language-reference/keywords/int.md).  Il risultato restituisce il tipo `decimal`.  
   
- [!code-cs[csrefKeywordsTypes#6](../../../csharp/language-reference/keywords/codesnippet/csharp/decimal_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_1.cs)]  
   
 ## Esempio  
  In questo esempio l'output viene formattato mediante la stringa del formato valuta \(in dollari\).  Si noti che `x` viene arrotondato perché le cifre decimali sono superiori a $ 0,99.  La variabile `y`, che rappresenta le cifre a precisione massima, viene invece visualizzata nel formato esatto.  
   
- [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/csharp/decimal_2.cs)]  
+ [!code-cs[csrefKeywordsTypes#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/decimal_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

@@ -34,7 +34,7 @@ In molte circostanze è importante che l'utilizzo della memoria da parte di un'a
   
  Tutti gli eventi della classe utilizzano il campo `Events` per tenere traccia di quali metodi stanno gestendo ciascun evento.  
   
- [!code-vb[VbVbalrEvents#22](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#22)]  
+ [!code-vb[VbVbalrEvents#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-conserve-memory_1.vb)]  
   
 ## Vedere anche  
  <xref:System.ComponentModel.EventHandlerList>   

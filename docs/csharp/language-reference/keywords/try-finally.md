@@ -29,11 +29,11 @@ Utilizzando un blocco `finally`, è possibile liberare le risorse allocate in un
 ## Esempio  
  In questo esempio un'istruzione di conversione non valida genera un'eccezione `System.InvalidCastException`.  L'eccezione non è gestita.  
   
- [!code-cs[csrefKeywordsExceptions#4](../../../csharp/language-reference/keywords/codesnippet/csharp/try-finally_1.cs)]  
+ [!code-cs[csrefKeywordsExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-finally_1.cs)]  
   
  Nell'esempio seguente, viene rilevata un'eccezione dal metodo `TryCast` in un metodo allocato nello stack di chiamata.  
   
- [!code-cs[csrefKeywordsExceptions#6](../../../csharp/language-reference/keywords/codesnippet/csharp/try-finally_2.cs)]  
+ [!code-cs[csrefKeywordsExceptions#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-finally_2.cs)]  
   
  Per ulteriori informazioni su `finally`, vedere [try\-catch\-finally](../../../csharp/language-reference/keywords/try-catch-finally.md).  
   

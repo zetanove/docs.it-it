@@ -26,12 +26,12 @@ caps.handback.revision: 20
 ## Esempio  
  Nell'esempio seguente viene illustrato come inizializzare un nuovo tipo `StudentName` tramite inizializzatori di oggetto.  
   
- [!code-cs[csProgGuideLINQ#35](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#35)]  
+ [!code-cs[csProgGuideLINQ#35](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-objects-by-using-an-object-initializer_1.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene illustrato come inizializzare una raccolta di tipi `StudentName` nuova utilizzando un inizializzatore di raccolta.  Si noti che un inizializzatore di raccolta è una serie di inizializzatori di oggetto delimitati da virgole.  
   
- [!code-cs[csProgGuideLINQ#36](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#36)]  
+ [!code-cs[csProgGuideLINQ#36](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-objects-by-using-an-object-initializer_2.cs)]  
   
 ## Compilazione del codice  
  Per eseguire questo codice, copiare e incollare la classe in un progetto di applicazione console di Visual C\# creato in [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs-md.md)].  Per ulteriori informazioni, vedere [How to: Create a LINQ Project](../Topic/How%20to:%20Create%20a%20LINQ%20Project.md).  

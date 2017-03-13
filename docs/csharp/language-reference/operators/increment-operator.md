@@ -29,7 +29,7 @@ L'operatore di incremento \(`++`\) incrementa il suo operando di 1. L'operatore 
  I tipi numerico e di enumerazione hanno operatori di incremento predefiniti. I tipi definiti dall'utente possono eseguire l'overload dell'operatore `++`. Le operazioni sui tipi integrali sono generalmente consentite sull'enumerazione.  
   
 ## Esempio  
- [!code-cs[csRefOperators#3](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#3)]  
+ [!code-cs[csRefOperators#3](../../../csharp/language-reference/operators/codesnippet/CSharp/increment-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

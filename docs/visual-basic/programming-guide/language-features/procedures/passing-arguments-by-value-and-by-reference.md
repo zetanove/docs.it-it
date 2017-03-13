@@ -75,7 +75,7 @@ In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes
  Nell'esempio seguente viene illustrato quando passare argomenti per valore e quando passarli per riferimento.  La routine `Calculate` dispone sia di un parametro `ByVal` che di un parametro `ByRef`.  Dati un tasso di interesse, `rate`, e una somma di denaro, `debt`, l'attività della routine consiste nel calcolare un nuovo valore per `debt` che sia il risultato dell'applicazione del tasso di interesse al valore originale di `debt`.  Poiché `debt` è un parametro `ByRef`, il nuovo totale viene riflesso nel valore dell'argomento nel codice chiamante che corrisponde a `debt`.  Il parametro `rate` è un parametro `ByVal` poiché `Calculate` non deve modificarne il valore.  
   
 ### Codice  
- [!code-vb[VbVbcnProcedures#74](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/passing-arguments-by-val_1.vb)]  
+ [!code-vb[VbVbcnProcedures#74](./codesnippet/VisualBasic/passing-arguments-by-value-and-by-reference_1.vb)]  
   
 ## Vedere anche  
  [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   

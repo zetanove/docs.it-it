@@ -23,12 +23,12 @@ caps.handback.revision: 15
 ## Esempio  
  Nell'esempio seguente viene illustrato uno scenario comune in cui la parola chiave `var` è obbligatoria: un'espressione di query che produce una sequenza di tipi anonimi.  In questo scenario, sia la variabile di query che la variabile di iterazione nell'istruzione `foreach` devono essere tipizzate in modo implicito utilizzando `var`, poiché non si dispone dell'accesso a un nome di tipo per il tipo anonimo.  Per ulteriori informazioni sui tipi anonimi, vedere [Tipi anonimi](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md).  
   
- [!code-cs[csProgGuideLINQ#32](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#32)]  
+ [!code-cs[csProgGuideLINQ#32](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_1.cs)]  
   
 ## Esempio  
  Nell'esempio seguente viene utilizzata la parola chiave `var` in una situazione simile, ma in cui l'utilizzo di `var` è facoltativo.  Poiché `student.LastName` è una stringa, l'esecuzione della query restituisce una sequenza di stringhe.  Il tipo di `queryID` potrebbe pertanto essere dichiarato come `System.Collections.Generic.IEnumerable<string>` invece di `var`.  La parola chiave `var` viene utilizzata per praticità.  Nell'esempio la variabile di iterazione nell'istruzione `foreach` è tipizzata in modo esplicito come stringa, ma potrebbe invece essere dichiarata utilizzando `var`.  Poiché il tipo della variabile di iterazione non è un tipo anonimo, l'utilizzo di `var` è facoltativo e non obbligatorio.  Tenere presente che `var` non è un tipo, ma un'istruzione per il compilatore affinché vengano eseguite l'inferenza e l'assegnazione del tipo.  
   
- [!code-cs[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csRef30LangFeatures_2.cs#33)]  
+ [!code-cs[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_2.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

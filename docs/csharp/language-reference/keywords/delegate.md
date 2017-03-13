@@ -38,7 +38,7 @@ public delegate int TestDelegate(MyType m, long num);
  È necessario creare un'istanza del delegato con un metodo o un'espressione lambda che dispone di un tipo restituito compatibile e di parametri di input.  Per ulteriori informazioni sul grado di varianza consentito nella firma del metodo, vedere [Varianza nei delegati](../Topic/Variance%20in%20Delegates%20\(C%23%20and%20Visual%20Basic\).md).  Per l'utilizzo con i metodi anonimi, è necessario dichiarare insieme il delegato e il codice da associare ad esso.  In questa sezione vengono trattati entrambi i metodi per creare istanze dei delegati.  
   
 ## Esempio  
- [!code-cs[csrefKeywordsTypes#8](../../../csharp/language-reference/keywords/codesnippet/csharp/delegate_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/delegate_1.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

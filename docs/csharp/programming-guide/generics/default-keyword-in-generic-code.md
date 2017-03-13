@@ -27,7 +27,7 @@ Nelle classi e nei metodi generici, è determinante capire come assegnare un val
   
  Nell'esempio riportato di seguito riferito alla classe `GenericList<T>` viene illustrato come utilizzare la parola chiave `default`.  Per ulteriori informazioni, vedere [Cenni preliminari sui generics](../../../csharp/programming-guide/generics/introduction-to-generics.md).  
   
- [!code-cs[csProgGuideGenerics#41](../../../csharp/programming-guide/generics/codesnippet/csharp/default-keyword-in-gener_1.cs)]  
+ [!code-cs[csProgGuideGenerics#41](../../../csharp/programming-guide/generics/codesnippet/CSharp/default-keyword-in-generic-code_1.cs)]  
   
 ## Vedere anche  
  <xref:System.Collections.Generic>   

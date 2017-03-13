@@ -33,15 +33,15 @@ Una costante è un nome significativo non soggetto a modifiche utilizzato in sos
 ## Utilizzo dell'istruzione Const  
  Un'istruzione `Const` può rappresentare una quantità matematica o data\/ora:  
   
- [!code-vb[VbEnumsTask#10](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#10)]  
+ [!code-vb[VbEnumsTask#10](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_1.vb)]  
   
  È inoltre in grado di definire costanti `String`:  
   
- [!code-vb[VbEnumsTask#13](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#13)]  
+ [!code-vb[VbEnumsTask#13](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_2.vb)]  
   
  L'espressione a destra del segno di uguale \( `=` \) è spesso un numero o una stringa letterale, ma può essere anche un'espressione che restituisce un numero o una stringa, purché non contenga chiamate di funzioni.  È possibile persino definire costanti in termini di costanti definite in precedenza:  
   
- [!code-vb[VbEnumsTask#15](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#15)]  
+ [!code-vb[VbEnumsTask#15](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_3.vb)]  
   
 ## Ambito delle costanti definite dall'utente  
  L'ambito di un'istruzione `Const` corrisponde all'ambito di una variabile dichiarata nella stessa posizione.  È possibile specificare l'ambito in uno dei seguenti modi:  
@@ -59,8 +59,8 @@ Una costante è un nome significativo non soggetto a modifiche utilizzato in sos
 ### Riferimenti circolari  
  Poiché le costanti possono essere definite in termini di altre costanti, è possibile che si crei inavvertitamente un *ciclo*, o riferimento circolare, tra due o più costanti.  Un ciclo si verifica quando esistono due o più costanti pubbliche, ciascuna delle quali è definita nei termini dell'altra, come nell'esempio seguente:  
   
- [!code-vb[VbEnumsTask#16](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#16)]  
-[!code-vb[VbEnumsTask#17](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/WindowsApplication1/Class2.vb#17)]  
+ [!code-vb[VbEnumsTask#16](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_4.vb)]  
+[!code-vb[VbEnumsTask#17](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_5.vb)]  
   
  Se si verifica un ciclo, in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)]viene generato un errore di compilazione.  
   

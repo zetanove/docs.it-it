@@ -30,7 +30,7 @@ Si sottoscrive un evento pubblicato da un'altra classe quando si desidera scrive
   
      In [!INCLUDE[csprcs](../../../csharp/includes/csprcs-md.md)] verrà creato un metodo di gestore eventi vuoto che verrà aggiunto al codice.  In alternativa è possibile aggiungere manualmente il codice nella visualizzazione **Codice**.  Ad esempio, le righe di codice seguenti dichiarano un metodo di gestore eventi che verrà chiamato quando la classe `Form` genera l'evento `Load`.  
   
-     [!code-cs[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-subscribe-to-and-_1.cs)]  
+     [!code-cs[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-subscribe-to-and-unsubscribe-from-events_1.cs)]  
   
      La riga di codice necessaria per sottoscrivere l'evento viene generata automaticamente nel metodo `InitializeComponent` nel file Form1.Designer.cs del progetto.  Ha un aspetto simile a quanto riportato di seguito:  
   

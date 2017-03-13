@@ -23,7 +23,7 @@ Un'interfaccia contiene le definizioni per un gruppo di funzionalità correlate 
   
  Per definire un'interfaccia, si usa la parola chiave [interface](../../../csharp/language-reference/keywords/interface.md), come nell'esempio seguente.  
   
- [!code-cs[csProgGuideInheritance#47](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideInheritance#47](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_1.cs)]  
   
  Qualsiasi classe o struct che implementa l'interfaccia <xref:System.IEquatable%601> deve contenere una definizione per un metodo <xref:System.IEquatable%601.Equals%2A> che corrisponde alla firma specificata dall'interfaccia.  Di conseguenza, è possibile affidarsi a una classe che implementa `IEquatable<T>` per contenere un metodo `Equals` con cui un'istanza della classe può determinare se sia uguale a un'altra istanza della stessa classe.  
   
@@ -39,7 +39,7 @@ Un'interfaccia contiene le definizioni per un gruppo di funzionalità correlate 
   
  Nell'esempio seguente viene illustrata un'implementazione dell'interfaccia IEquatable\<T\>.  La classe di implementazione, `Car`, deve fornire un'implementazione del metodo <xref:System.IEquatable%601.Equals%2A>.  
   
- [!code-cs[csProgGuideInheritance#48](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_2.cs)]  
+ [!code-cs[csProgGuideInheritance#48](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_2.cs)]  
   
  Le proprietà e gli indicizzatori di una classe possono definire altre funzioni di accesso per una proprietà o un indicizzatore definito in un'interfaccia.  Ad esempio, un'interfaccia può dichiarare una proprietà con una funzione di accesso [get](../../../csharp/language-reference/keywords/get.md).  La classe che implementa l'interfaccia può dichiarare la stessa proprietà con una funzione di accesso `get` o [set](../../../csharp/language-reference/keywords/set.md).  Tuttavia, se la proprietà o l'indicizzatore usa l'implementazione esplicita, le funzioni di accesso devono corrispondere.  Per altre informazioni sull'implementazione esplicita, vedere [Implementazione esplicita dell'interfaccia](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md) e [Proprietà dell'interfaccia](../../../csharp/programming-guide/classes-and-structs/interface-properties.md).  
   

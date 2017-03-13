@@ -30,7 +30,7 @@ caps.handback.revision: 17
   
 -   Creare l' XML inline utilizzando la sintassi letterale XML che corrisponde all'effettiva sintassi XML.  
   
-     [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-create-xml-literals_1.vb)]  
+     [!code-vb[VbXMLSamples#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_1.vb)]  
   
      Eseguire il codice.  L'output del codice è il seguente:  
   
@@ -48,7 +48,7 @@ caps.handback.revision: 17
   
 -   Per creare il documento XML inline.  Nell'esempio di codice riportato di seguito viene creato un documento XML che ha sintassi letterale, una dichiarazione XML, un un'istruzione di elaborazione, un commento e un elemento che contiene un altro elemento.  
   
-     [!code-vb[VbXMLSamples#30](../../../../visual-basic/language-reference/operators/codesnippet/visualbasic/how-to-create-xml-literals_2.vb)]  
+     [!code-vb[VbXMLSamples#30](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-xml-literals_2.vb)]  
   
      Eseguire il codice.  L'output del codice è il seguente:  
   

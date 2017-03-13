@@ -56,7 +56,7 @@ variableorproperty ^= expression
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `^=` viene utilizzato per elevare il valore di una variabile `Integer` alla potenza di una seconda variabile e assegnare il risultato alla prima variabile.  
   
- [!code-vb[VbVbalrOperators#21](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/exponentiation-assignmen_1.vb)]  
+ [!code-vb[VbVbalrOperators#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/exponentiation-assignment-operator_1.vb)]  
   
 ## Vedere anche  
  [^ Operator](../../../visual-basic/language-reference/operators/exponentiation-operator.md)   

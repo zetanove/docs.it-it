@@ -72,7 +72,7 @@ Restituisce la differenza tra due espressioni numeriche o il valore negativo di 
 ## Esempio  
  Nell'esempio riportato di seguito l'operatore `–` viene utilizzato per calcolare e restituire la differenza tra due numeri e quindi per negare un numero.  
   
- [!code-vb[VbVbalrOperators#10](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/subtraction-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#10](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/subtraction-operator_1.vb)]  
   
  Dopo l'esecuzione di tali istruzioni, `binaryResult` conterrà il valore 124,45 e `unaryResult` –334,90.  
   

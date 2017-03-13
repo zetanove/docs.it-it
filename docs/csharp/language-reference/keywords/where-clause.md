@@ -24,17 +24,17 @@ La clausola `where` viene utilizzata in un'espressione di query per specificare 
 ## Esempio  
  Nell'esempio seguente la clausola `where` esclude tutti i numeri tranne quelli che sono minori di cinque.  Se si rimuove la clausola `where`, vengono restituiti tutti i numeri dell'origine dati.  L'espressione `num < 5` è il predicato applicato a ogni elemento.  
   
- [!code-cs[cscsrefQueryKeywords#5](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Where.cs#5)]  
+ [!code-cs[cscsrefQueryKeywords#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_1.cs)]  
   
 ## Esempio  
  All'interno di una singola clausola `where` è possibile specificare tutti i predicati necessari utilizzando gli operatori [&&](../../../csharp/language-reference/operators/conditional-and-operator.md) e [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md).  Nell'esempio seguente la query specifica due predicati per selezionare solo i numeri pari minori di cinque.  
   
- [!code-cs[cscsrefQueryKeywords#6](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Where.cs#6)]  
+ [!code-cs[cscsrefQueryKeywords#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_2.cs)]  
   
 ## Esempio  
  La clausola `where` può contenere uno o più metodi che restituiscono valori booleani.  Nell'esempio seguente la clausola `where` utilizza un metodo per determinare se il valore corrente della variabile di intervallo è pari o dispari.  
   
- [!code-cs[cscsrefQueryKeywords#7](../../../csharp/language-reference/keywords/codesnippet/csharp/csquerykeywords/Where.cs#7)]  
+ [!code-cs[cscsrefQueryKeywords#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/where-clause_3.cs)]  
   
 ## Note  
  La clausola `where` rappresenta un meccanismo di filtro.  Può essere posizionata quasi ovunque in un'espressione di query, ma non può essere la prima o l'ultima clausola.  La clausola `where` può essere posizionata prima o dopo una clausola [group](../../../csharp/language-reference/keywords/group-clause.md) a seconda che gli elementi di origine debbano essere filtrati prima o dopo essere stati raggruppati.  

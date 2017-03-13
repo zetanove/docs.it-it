@@ -16,7 +16,7 @@ Una query è fondamentalmente un insieme di istruzioni per il recupero e l'organ
  Quando si archiviano i risultati della query, si consiglia di assegnare l'oggetto Collection restituito a una nuova variabile come illustrato nell'esempio seguente:  
   
 ## Esempio  
- [!code-cs[csProgGuideLINQ#25](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#25)]  
+ [!code-cs[csProgGuideLINQ#25](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-store-the-results-of-a-query-in-memory_1.cs)]  
   
 ## Compilazione del codice  
   

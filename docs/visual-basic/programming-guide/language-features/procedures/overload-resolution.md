@@ -50,9 +50,9 @@ Risoluzione delle versioni di overload
   
  Nell'esempio riportato di seguito viene illustrato il processo di risoluzione degli overload.  
   
- [!code-vb[VbVbcnProcedures#62](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/overload-resolution_1.vb)]  
+ [!code-vb[VbVbcnProcedures#62](./codesnippet/VisualBasic/overload-resolution_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#63](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/overload-resolution_2.vb)]  
+ [!code-vb[VbVbcnProcedures#63](./codesnippet/VisualBasic/overload-resolution_2.vb)]  
   
  Durante la prima chiamata il compilatore elimina il primo overload poiché il tipo del primo argomento \(`Short`\) esegue la conversione verso il tipo di dati più piccolo \(`Byte`\) del parametro corrispondente.  Viene quindi eliminato il terzo overload poiché ogni tipo di argomento del secondo overload \(`Short` e `Single`\) esegue la conversione verso il tipo di dati più grande corrispondente del terzo overload \(`Integer` e `Single`\).  Il secondo overload richiede un minore ampliamento dei dati e viene quindi utilizzato dal compilatore per la chiamata.  
   

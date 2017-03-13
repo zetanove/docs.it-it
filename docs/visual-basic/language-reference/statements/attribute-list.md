@@ -62,7 +62,7 @@ Specifica gli attributi da applicare a un elemento di programmazione dichiarato.
 ## Esempio  
  Nell'esempio riportato di seguito l'attributo <xref:System.Runtime.InteropServices.DllImportAttribute> viene applicato a una definizione di base di una routine `Function`.  
   
- [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/attribute-list_1.vb)]  
+ [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/attribute-list_1.vb)]  
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> indica che la routine con attributi rappresenta un punto di ingresso di una libreria a collegamento dinamico \(DLL\) non gestita.  L'attributo fornisce il nome della DLL come argomento posizionale e altre informazioni quali gli inizializzatori delle variabili.  
   

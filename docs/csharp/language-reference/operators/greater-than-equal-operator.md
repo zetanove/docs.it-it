@@ -25,7 +25,7 @@ Tutti i tipi numerici e di enumerazione definiscono un operatore relazionale "ma
  I tipi definiti dall'utente possono eseguire l'overload dell'operatore `>=`.  Per ulteriori informazioni, vedere [operator](../../../csharp/language-reference/keywords/operator.md).  Se si esegue l'overload dell'operatore `>=`, è necessario sottoporre a overload anche l'operatore [\<\=](../../../csharp/language-reference/operators/less-than-equal-operator.md).  Le operazioni sui tipi integrali sono generalmente consentite sull'enumerazione.  
   
 ## Esempio  
- [!code-cs[csRefOperators#39](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#39)]  
+ [!code-cs[csRefOperators#39](../../../csharp/language-reference/operators/codesnippet/CSharp/greater-than-equal-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

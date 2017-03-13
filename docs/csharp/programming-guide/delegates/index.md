@@ -21,7 +21,7 @@ caps.handback.revision: 30
   
  I delegati vengono utilizzati per passare metodi come argomenti ad altri metodi.  I gestori di evento non sono altro che metodi richiamati tramite delegati.  Creare un metodo personalizzato e una classe, ad esempio un controllo Windows, che può chiamare tale metodo quando si verifica un determinato evento.  Nell'esempio che segue viene illustrata la dichiarazione di un delegato:  
   
- [!code-cs[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/csharp/csrefDelegates/Delegates.cs#20)]  
+ [!code-cs[csProgGuideDelegates#20](../../../csharp/programming-guide/delegates/codesnippet/CSharp/index_1.cs)]  
   
  Qualsiasi metodo di qualsiasi classe o struct accessibile che corrisponde al tipo di delegato può essere assegnato al delegato.  Il metodo può essere un metodo statico o di istanza.  In questo modo è possibile modificare le chiamate ai metodi a livello di codice, nonché inserire nuovo codice nelle classi esistenti.  
   

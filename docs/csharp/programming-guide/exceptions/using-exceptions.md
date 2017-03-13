@@ -21,21 +21,21 @@ In C\# gli errori che si verificano nel programma in fase di esecuzione vengono 
   
  Le eccezioni sono rappresentate da classi derivate da <xref:System.Exception>.  Questa classe identifica il tipo di eccezione e contiene le proprietà con i dettagli relativi all'eccezione.  La generazione di un'eccezione implica la creazione di un'istanza di una classe derivata dall'eccezione, la configurazione facoltativa delle proprietà dell'eccezione e la generazione dell'oggetto con la parola chiave `throw`.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideExceptions#1](../../../csharp/programming-guide/exceptions/codesnippet/csharp/using-exceptions_1.cs)]  
+ [!code-cs[csProgGuideExceptions#1](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/using-exceptions_1.cs)]  
   
  Dopo la generazione di un'eccezione, il runtime controlla l'istruzione corrente per verificare se si trova all'interno di un blocco `try`.  In caso affermativo, gli eventuali blocchi `catch` associati al blocco `try` vengono controllati per verificare se sono in grado di intercettare l'eccezione.  I blocchi `Catch` specificano i tipi di eccezione; se il tipo del blocco `catch` è identico a quello dell'eccezione o è una classe base dell'eccezione, il blocco `catch` è in grado di gestire il metodo.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideExceptions#2](../../../csharp/programming-guide/exceptions/codesnippet/csharp/using-exceptions_2.cs)]  
+ [!code-cs[csProgGuideExceptions#2](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/using-exceptions_2.cs)]  
   
  Se l'istruzione che genera un'eccezione non si trova all'interno di un blocco `try` oppure se il blocco `try` che la racchiude non ha alcun blocco `catch` corrispondente, il runtime controlla il metodo chiamante per verificare la presenza di un'istruzione `try` e di blocchi `catch`.  Il runtime risale lo stack di chiamate, alla ricerca di un blocco `catch` compatibile.  Quando il blocco `catch` viene individuato ed eseguito, il controllo viene passato all'istruzione successiva dopo tale blocco `catch`.  
   
  Un'istruzione `try` può contenere più di un blocco `catch`.  La prima istruzione `catch` in grado di gestire l'eccezione viene eseguita. Le eventuali istruzioni `catch` seguenti, anche se compatibili, vengono ignorate.  Pertanto i blocchi catch dovrebbero sempre essere ordinati dal più specifico \(o più derivato\) al meno specifico.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideExceptions#3](../../../csharp/programming-guide/exceptions/codesnippet/csharp/using-exceptions_3.cs)]  
+ [!code-cs[csProgGuideExceptions#3](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/using-exceptions_3.cs)]  
   
  Prima che venga eseguito il blocco `catch` il runtime verifica i blocchi `finally`.  I blocchi `Finally` consentono al programmatore di pulire qualsiasi stato ambiguo eventualmente rimasto da un blocco `try` interrotto o di rilasciare le risorse esterne \(ad esempio handle grafici, connessioni al database o flussi di file\) senza aspettare la finalizzazione degli oggetti da parte del Garbage Collector in fase di esecuzione.  Di seguito è riportato un esempio:  
   
- [!code-cs[csProgGuideExceptions#4](../../../csharp/programming-guide/exceptions/codesnippet/csharp/using-exceptions_4.cs)]  
+ [!code-cs[csProgGuideExceptions#4](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/using-exceptions_4.cs)]  
   
  Se `WriteByte()` ha generato un'eccezione, il tentativo di riaprire il file da parte del codice nel secondo blocco `try` avrà esito negativo se non si chiama `file.Close()` e il file rimarrà bloccato.  Poiché i blocchi `finally` vengono eseguiti indipendentemente dal fatto che venga o meno generata un'eccezione, il blocco `finally` dell'esempio precedente consente di chiudere il file correttamente e di evitare errori.  
   

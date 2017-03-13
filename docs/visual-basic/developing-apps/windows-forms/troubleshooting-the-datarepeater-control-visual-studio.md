@@ -46,8 +46,8 @@ dataRepeater1.Top = productsBindingNavigator.Height;
   
  Per correggere problemi di questo tipo è possibile ripristinare le proprietà mancanti nell'evento <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemCloned> che si verifica al termine della duplicazione predefinita.  Nell'esempio riportato di seguito viene illustrato come ripristinare la raccolta <xref:System.Windows.Forms.ListBox.Items%2A> di un controllo <xref:System.Windows.Forms.ListBox> nel gestore eventi <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemCloned>.  
   
- [!code-cs[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/csharp/DataRepeaterItemClonedCS/ItemCloned.cs#1)]
- [!code-vb[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/visualbasic/DataRepeaterItemCloned/ItemCloned.vb#1)]  
+ [!code-cs[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/troubleshooting-the-datarepeater-control-visual-studio_1.cs)]
+ [!code-vb[VbPowerPacksDataRepeaterItemCloned#1](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/troubleshooting-the-datarepeater-control-visual-studio_1.vb)]  
   
 ## Simbolo di selezione mancante nell'intestazione elemento  
  Quando si modifica la proprietà <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.SelectionColor%2A> dell'intestazione elemento in un controllo <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>, il simbolo di selezione può risultare nascosto a causa di alcune opzioni colore.  Ciò può verificarsi anche in caso di modifica della proprietà <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.ItemHeaderSize%2A>.  

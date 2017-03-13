@@ -44,7 +44,7 @@ Contiene valori integer con segno a 8 bit \(1 byte\) in un intervallo compreso t
 ## Esempio  
  Nell'esempio seguente `b` è una variabile `Byte`.  Le istruzioni indicano l'intervallo della variabile e l'applicazione di operatori di scorrimento bit.  
   
- [!code-vb[VbVbalrDataTypes#16](../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/byte-data-type_1.vb)]  
+ [!code-vb[VbVbalrDataTypes#16](../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/byte-data-type_1.vb)]  
   
 ## Vedere anche  
  <xref:System.Byte?displayProperty=fullName>   

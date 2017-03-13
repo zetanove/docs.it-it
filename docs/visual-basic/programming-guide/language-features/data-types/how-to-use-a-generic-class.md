@@ -52,7 +52,7 @@ Una classe che accetta *parametri di tipo* è chiamato *classe generica*. Se si 
   
      L'esempio seguente usa la stessa classe (<xref:System.Collections.Generic.Queue%601?displayProperty=fullName>) per creare due oggetti queue che contengono elementi con tipi di dati diversi. Aggiunge gli elementi alla fine di ogni coda e quindi rimuove e visualizza gli elementi dall'inizio di ogni coda.  
   
-     [!code-vb[VbVbalrDataTypes#9](../../../../visual-basic/language-reference/data-types/codesnippet/visualbasic/how-to-use-a-generic-class_1.vb)]  
+     [!code-vb[VbVbalrDataTypes#9](../../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/how-to-use-a-generic-class_1.vb)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Tipi di dati](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   

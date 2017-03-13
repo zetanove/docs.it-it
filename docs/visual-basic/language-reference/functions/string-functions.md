@@ -58,27 +58,27 @@ Nella tabella seguente vengono elencate le funzioni disponibili in Visual Basic 
 ## Esempio  
  Nell'esempio seguente la funzione `UCase` viene utilizzata per restituire una versione in lettere maiuscole di una stringa:  
   
- [!code-vb[VbVbalrStrings#31](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-functions_1.vb)]  
+ [!code-vb[VbVbalrStrings#31](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_1.vb)]  
   
 ## Esempio  
  In questo esempio vengono utilizzate la funzione `LTrim` per rimuovere gli spazi iniziali e la funzione `RTrim` per rimuovere gli spazi finali da una variabile String.  Viene utilizzata la funzione `Trim` per eliminare entrambi i tipi di spazi.  
   
- [!code-vb[VbVbalrStrings#25](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-functions_2.vb)]  
+ [!code-vb[VbVbalrStrings#25](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_2.vb)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito la funzione `Mid` viene utilizzata per restituire un determinato numero di caratteri da una stringa.  
   
- [!code-vb[VbVbalrStrings#17](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-functions_3.vb)]  
+ [!code-vb[VbVbalrStrings#17](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_3.vb)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito la funzione `Len` viene utilizzata per restituire il numero di caratteri di una stringa.  
   
- [!code-vb[VbVbalrStrings#33](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-functions_4.vb)]  
+ [!code-vb[VbVbalrStrings#33](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_4.vb)]  
   
 ## Esempio  
  Nell'esempio riportato di seguito la funzione `InStr` viene utilizzata per restituire la posizione della prima occorrenza di una stringa in un'altra:  
   
- [!code-vb[VbVbalrStrings#8](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-functions_5.vb)]  
+ [!code-vb[VbVbalrStrings#8](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_5.vb)]  
   
 ## Esempio  
  In questo esempio sono presentati vari utilizzi della funzione `Format` per formattare valori mediante formati sia di tipo `String` che definiti dall'utente.  Per quanto riguarda il separatore della data \(`/`\), dell'ora \(`:`\) e gli indicatori AM\/PM \(`t` e `tt`\), l'output formattato visualizzato dal sistema dipende dalle impostazioni locali utilizzate per il codice.  Nell'ambiente di sviluppo la data e l'ora vengono visualizzate nel formato breve delle impostazioni locali.  
@@ -86,7 +86,7 @@ Nella tabella seguente vengono elencate le funzioni disponibili in Visual Basic 
 > [!NOTE]
 >  Per le impostazioni locali che utilizzano il formato 24 ore, gli indicatori AM\/PM \(`t` e `tt`\) non visualizzano alcun output.  
   
- [!code-vb[VbVbalrStrings#27](../../../visual-basic/language-reference/functions/codesnippet/visualbasic/string-functions_6.vb)]  
+ [!code-vb[VbVbalrStrings#27](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_6.vb)]  
   
 ## Vedere anche  
  [Parole chiave](../../../visual-basic/language-reference/keywords/index.md)   

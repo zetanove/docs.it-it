@@ -20,7 +20,7 @@ In termini di database relazionale, un *inner join* produce un set di risultati 
 ## Esempio di join di chiave semplice  
  Nell'esempio seguente vengono create due raccolte che contengono oggetti di due tipi definiti dall'utente, `Person` e `Pet`.  La query utilizza la clausola `join` in C\# per associare gli oggetti `Person` con oggetti `Pet` per i quali il valore di `Owner` corrisponde a tale oggetto `Person`.  La clausola `select` in C\# definisce l'aspetto degli oggetti risultanti.  In questo esempio gli oggetti risultanti sono tipi anonimi costituiti del nome del proprietario e dal nome dell'animale domestico.  
   
- [!code-cs[CsLINQProgJoining#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#1)]  
+ [!code-cs[CsLINQProgJoining#1](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_1.cs)]  
   
  Si noti che l'oggetto `Person` il cui `LastName` è "Huff" non viene visualizzato nel set di risultati perché non è disponibile alcun oggetto `Pet` il cui `Pet.Owner` sia uguale a tale `Person`.  
   
@@ -31,7 +31,7 @@ In termini di database relazionale, un *inner join* produce un set di risultati 
   
  Nell'esempio seguente viene utilizzato un elenco di oggetti `Employee` e un elenco di oggetti `Student` per determinare quali dipendenti sono anche studenti.  Entrambi questi tipi presentano una proprietà `FirstName` e `LastName` di tipo <xref:System.String>.  Le funzioni create dalle chiavi di join dagli elementi di ogni elenco restituiscono un tipo anonimo costituito dalle proprietà `FirstName` e `LastName` di ogni elemento.  L'operazione di join verifica l'uguaglianza di queste chiavi composte e restituisce coppie di oggetti da ogni elenco dove sia il nome che il cognome corrispondono.  
   
- [!code-cs[CsLINQProgJoining#2](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#2)]  
+ [!code-cs[CsLINQProgJoining#2](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_2.cs)]  
   
 ## Esempio  
   
@@ -44,7 +44,7 @@ In termini di database relazionale, un *inner join* produce un set di risultati 
   
  La seconda clausola `join` in C\# mette in correlazione i tipi anonimi restituiti dal primo join con gli oggetti `Dog` nell'elenco fornito di cani, in base a una chiave composta costituita dalla proprietà `Owner` del tipo `Person`e dalla prima lettera del nome dell'animale.  Restituisce una sequenza di tipi anonimi contenenti le proprietà `Cat.Name` e `Dog.Name` da ogni coppia corrispondente.  Poiché si tratta di un inner join, vengono restituiti solo gli oggetti della prima origine dati che presentano una corrispondenza nella seconda origine dati.  
   
- [!code-cs[CsLINQProgJoining#3](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#3)]  
+ [!code-cs[CsLINQProgJoining#3](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_3.cs)]  
   
 ## Esempio  
   
@@ -57,7 +57,7 @@ In termini di database relazionale, un *inner join* produce un set di risultati 
   
  Il risultato di `query1` è equivalente al set di risultati che sarebbe stato ottenuto utilizzando la clausola `join` senza la clausola `into` per eseguire un inner join.  La variabile `query2` dimostra questa query equivalente.  
   
- [!code-cs[CsLINQProgJoining#4](../../../csharp/programming-guide/linq-query-expressions/codesnippet/csharp/Joins/joins.cs#4)]  
+ [!code-cs[CsLINQProgJoining#4](../../../csharp/programming-guide/linq-query-expressions/codesnippet/CSharp/how-to-perform-inner-joins_4.cs)]  
   
 ## Compilazione del codice  
   

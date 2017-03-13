@@ -35,11 +35,11 @@ Una volta definita una classe o una struttura, è possibile definire gli operato
 ## Esempio  
  Nell'esempio riportato di seguito vengono definiti gli operatori di conversione tra una struttura denominata `digit` e un `Byte`.  
   
- [!code-vb[VbVbcnProcedures#27](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-a-conversi_1.vb)]  
+ [!code-vb[VbVbcnProcedures#27](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_1.vb)]  
   
  È possibile testare la struttura `digit` mediante il codice riportato di seguito.  
   
- [!code-vb[VbVbcnProcedures#28](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-define-a-conversi_2.vb)]  
+ [!code-vb[VbVbcnProcedures#28](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_2.vb)]  
   
 ## Vedere anche  
  [Operator Procedures](../../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)   

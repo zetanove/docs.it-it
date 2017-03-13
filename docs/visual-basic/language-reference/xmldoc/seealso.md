@@ -42,7 +42,7 @@ Specifica un collegamento visualizzato nella sezione Vedere anche.
 ## Esempio  
  Nell'esempio riportato di seguito il tag `<seealso>` viene utilizzato nella sezione relativa alle osservazioni di `DoesRecordExist` per fare riferimento al metodo `UpdateRecord`.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/seealso_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/seealso_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

@@ -23,7 +23,7 @@ Un'interfaccia contiene solo le firme di [metodi](../../../csharp/programming-gu
  Per ulteriori informazioni ed esempi, vedere [Interfacce](../../../csharp/programming-guide/interfaces/index.md).  
   
 ## Esempio  
- [!code-cs[csrefKeywordsTypes#14](../../../csharp/language-reference/keywords/codesnippet/csharp/interface_1.cs)]  
+ [!code-cs[csrefKeywordsTypes#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_1.cs)]  
   
  Un'interfaccia può essere membro di uno spazio dei nomi o di una classe e contenere firme dei seguenti membri:  
   
@@ -46,7 +46,7 @@ Un'interfaccia contiene solo le firme di [metodi](../../../csharp/programming-gu
 ## Esempio  
  Nell'esempio seguente viene illustrata l'implementazione di un'interfaccia.  In questo esempio, l'interfaccia contiene la dichiarazione di proprietà e la classe contiene l'implementazione.  Qualsiasi istanza di una classe che implementa `IPoint` presenta proprietà `x` e `y` di tipo Integer.  
   
- [!code-cs[csrefKeywordsTypes#15](../../../csharp/language-reference/keywords/codesnippet/csharp/interface_2.cs)]  
+ [!code-cs[csrefKeywordsTypes#15](../../../csharp/language-reference/keywords/codesnippet/CSharp/interface_2.cs)]  
   
 ## Specifiche del linguaggio C\#  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  

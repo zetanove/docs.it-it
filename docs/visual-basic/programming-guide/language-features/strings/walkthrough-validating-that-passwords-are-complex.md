@@ -31,7 +31,7 @@ Questo metodo verifica se sono presenti determinate caratteristiche di password 
 ## Esempio  
   
 ### Codice  
- [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/visualbasic/walkthrough-validating-t_1.vb)]  
+ [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/walkthrough-validating-that-passwords-are-complex_1.vb)]  
   
 ## Compilazione del codice  
  Chiama questo metodo passando la stringa che contiene la password.  

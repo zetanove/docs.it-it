@@ -30,7 +30,7 @@ Inizializzare una variabile di matrice includendo un valore letterale di matrice
   
 -   Nella clausola `New` o quando si assegna il valore della matrice, fornire i valori degli elementi tra parentesi graffe \(`{}`\).  Nell'esempio seguente vengono illustrati diversi modi per dichiarare, creare e inizializzare una variabile in modo che contenga una matrice con elementi di tipo `Char`.  
   
-     [!code-vb[VbVbalrArrays#16](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/how-to-initialize-an-arr_1.vb)]  
+     [!code-vb[VbVbalrArrays#16](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_1.vb)]  
   
      Dopo l'esecuzione di ciascuna istruzione, la matrice creata ha una lunghezza di 3, con elementi tra l'indice 0 e l'indice 2 contenenti i valori iniziali.  Se si specificano sia il limite superiore che i valori, è necessario includere un valore per ogni elemento dall'indice 0 al limite superiore.  
   
@@ -40,27 +40,27 @@ Inizializzare una variabile di matrice includendo un valore letterale di matrice
   
 -   Annidare i valori tra parentesi graffe \(`{}`\).  Assicurarsi che i valori letterali della matrice annidati vengano tutti dedotti come matrici dello stesso tipo e con la stessa lunghezza.  Nell'esempio di codice seguente vengono illustrati diversi esempi di inizializzazione di matrici multidimensionali.  
   
-     [!code-vb[VbVbalrArrays#17](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/how-to-initialize-an-arr_2.vb)]  
+     [!code-vb[VbVbalrArrays#17](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_2.vb)]  
   
 -   È possibile specificare in modo esplicito i limiti della matrice o tralasciarli e fare in modo che il compilatore li deduca in base ai valori nel valore letterale di matrice.  Se si specificano sia i limiti superiori che i valori, è necessario includere un valore per ogni elemento dall'indice 0 al limite superiore in ciascuna dimensione.  Nell'esempio seguente vengono illustrati diversi modi per dichiarare, creare e inizializzare una variabile in modo che contenga una matrice bidimensionale con elementi di tipo `Short`.  
   
-     [!code-vb[VbVbalrArrays#18](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/how-to-initialize-an-arr_3.vb)]  
+     [!code-vb[VbVbalrArrays#18](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_3.vb)]  
   
      Dopo l'esecuzione di ciascuna istruzione, la matrice creata contiene sei elementi inizializzati che includono gli indici `(0,0)`, `(0,1)`, `(0,2)`, `(1,0)`, `(1,1)` e `(1,2)`.  Ogni posizione della matrice contiene il valore `10`.  
   
 -   L'esempio seguente scorrere una matrice multidimensionale.  In un'applicazione della console Windows scritta in Visual Basic, incollare il codice nel metodo `Sub Main()`.  Gli ultimi commenti illustrano l'output.  
   
-     [!code-vb[VbVbalrArrays#31](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/how-to-initialize-an-arr_4.vb)]  
+     [!code-vb[VbVbalrArrays#31](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_4.vb)]  
   
 ### Per inizializzare una variabile di matrice di matrici tramite valori letterali della matrice  
   
 -   Annidare i valori degli oggetti tra parentesi graffe \(`{}`\).  Sebbene sia possibile annidare anche valori letterali della matrice che specificano matrici di lunghezze diverse, nel caso di una matrice di matrici assicurarsi che i valori letterali della matrice annidati siano racchiusi tra parentesi \(`()`\).  Le parentesi forzano la valutazione dei valori letterali della matrice annidati e le matrici risultanti vengono utilizzate come valori iniziali della matrice di matrici.  Nell'esempio di codice seguente vengono illustrati diversi esempi di inizializzazione di matrici di matrici.  
   
-     [!code-vb[VbVbalrArrays#19](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/how-to-initialize-an-arr_5.vb)]  
+     [!code-vb[VbVbalrArrays#19](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_5.vb)]  
   
 -   L'esempio seguente scorrere una matrice di matrici.  In un'applicazione della console Windows scritta in Visual Basic, incollare il codice nel metodo `Sub Main()`.  Gli ultimi commenti nel codice illustrano l'output.  
   
-     [!code-vb[VbVbalrArrays#32](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/visualbasic/how-to-initialize-an-arr_6.vb)]  
+     [!code-vb[VbVbalrArrays#32](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_6.vb)]  
   
 ## Vedere anche  
  [Matrici](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   

@@ -43,7 +43,7 @@ Specifica che una classe può essere utilizzata solo come classe base da cui non
 ## Esempio  
  Nell'esempio riportato di seguito vengono illustrati l'ereditarietà forzata e l'override forzato.  La classe base `shape` definisce una variabile `acrossLine`.  Le classi `circle` e `square` derivano da `shape`.  Ereditano la definizione di `acrossLine`, ma devono definire la funzione `area` in quanto il calcolo varia in base al tipo di forma.  
   
- [!code-vb[VbVbalrKeywords#2](../../../visual-basic/language-reference/codesnippet/visualbasic/mustinherit_1.vb)]  
+ [!code-vb[VbVbalrKeywords#2](../../../visual-basic/language-reference/codesnippet/VisualBasic/mustinherit_1.vb)]  
   
  È possibile dichiarare le variabili `shape1` e `shape2` di tipo `shape`.  Non è tuttavia possibile creare un oggetto da `shape` in quanto non dispone della funzionalità della funzione `area` ed è contrassegnato con `MustInherit`.  
   

@@ -62,7 +62,7 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
 -   Aggiungere la classe `Student` e l'elenco di studenti inizializzato alla classe `Program` nel progetto.  
   
-     [!code-cs[CsLinqGettingStarted#11](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#11)]  
+     [!code-cs[CsLinqGettingStarted#11](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_1.cs)]  
   
 #### Per aggiungere un nuovo oggetto Student all'elenco Students  
   
@@ -76,7 +76,7 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
      Tenere inoltre presente che la variabile di intervallo della query, `student`, funge da riferimento a ogni oggetto `Student` presente nell'origine, fornendo l'accesso al membro per ogni oggetto.  
   
- [!code-cs[CsLINQGettingStarted#12](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#12)]  
+ [!code-cs[CsLINQGettingStarted#12](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_2.cs)]  
   
 ## Esecuzione della query  
   
@@ -90,7 +90,7 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
 2.  Dopo avere aggiunto questo codice, compilare ed eseguire l'applicazione premendo CTRL \+ F5 per visualizzare i risultati nella finestra della console.  
   
- [!code-cs[CsLINQGettingStarted#13](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#13)]  
+ [!code-cs[CsLINQGettingStarted#13](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_3.cs)]  
   
 #### Per aggiungere un'altra condizione di filtro  
   
@@ -130,11 +130,11 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
 1.  Il raggruppamento è una funzionalità potente nelle espressioni di query.  Una query con una clausola group genera una sequenza di gruppi e ogni gruppo contiene un oggetto `Key` e una sequenza costituita da tutti i membri di tale gruppo.  Nella nuova query riportata di seguito gli studenti vengono raggruppati utilizzando la prima lettera del cognome come chiave.  
   
-     [!code-cs[CsLINQGettingStarted#14](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#14)]  
+     [!code-cs[CsLINQGettingStarted#14](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_4.cs)]  
   
 2.  Il tipo della query è stato ora modificato.  Vengono ora generate una sequenza di gruppi con il tipo `char` come chiave e una sequenza di oggetti `Student`.  Poiché il tipo della query è stato modificato, nel codice seguente viene modificato anche il ciclo di esecuzione `foreach`:  
   
-     [!code-cs[CsLINQGettingStarted#15](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#15)]  
+     [!code-cs[CsLINQGettingStarted#15](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_5.cs)]  
   
 3.  Premere CTRL \+ F5 per eseguire l'applicazione e visualizzare i risultati nella finestra della console.  
   
@@ -144,7 +144,7 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
 1.  Codificare in modo esplicito `IEnumerables` di `IGroupings` può risultare noioso.  È possibile scrivere la stessa query e il ciclo `foreach` in modo notevolmente più pratico utilizzando `var`.  La parola chiave `var` non modifica i tipi degli oggetti ma indica solo al compilatore di dedurre i tipi.  Modificare il tipo di `studentQuery` e la variabile di iterazione `group`a `var` e rieseguire la query.  Nel ciclo `foreach` interno la variabile di iterazione è ancora tipizzata come `Student` e la query funziona esattamente come prima.  Impostare la variabile di iterazione `s` su `var` e rieseguire la query.  Si otterranno esattamente gli stessi risultati.  
   
-     [!code-cs[CsLINQGettingStarted#16](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#16)]  
+     [!code-cs[CsLINQGettingStarted#16](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_6.cs)]  
   
      Per ulteriori informazioni su [var](../../../../csharp/language-reference/keywords/var.md), vedere [Variabili locali tipizzate in modo implicito](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   
@@ -152,7 +152,7 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
 1.  Quando si esegue la query precedente, i gruppi non sono in ordine alfabetico.  Per modificare questo comportamento, è necessario fornire la clausola `orderby` dopo la clausola `group`.  Per utilizzare la clausola `orderby`, è necessario però utilizzare prima un identificatore che funga da riferimento ai gruppi creati dalla clausola `group`.  Fornire l'identificatore utilizzando la parola chiave `into`, come segue:  
   
-     [!code-cs[csLINQGettingStarted#17](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#17)]  
+     [!code-cs[csLINQGettingStarted#17](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_7.cs)]  
   
      Quando si esegue questa query, i gruppi verranno ora ordinati alfabeticamente.  
   
@@ -160,7 +160,7 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
 1.  È possibile utilizzare la parola chiave `let` per introdurre un identificatore per qualsiasi risultato dell'espressione di query.  Questo identificatore può risultare utile come nell'esempio seguente o può migliorare le prestazioni archiviando i risultati di un'espressione in modo da non doverla calcolare più volte.  
   
-     [!code-cs[csLINQGettingStarted#18](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#18)]  
+     [!code-cs[csLINQGettingStarted#18](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_8.cs)]  
   
      Per ulteriori informazioni, vedere [Clausola let](../../../../csharp/language-reference/keywords/let-clause.md).  
   
@@ -168,17 +168,17 @@ In questa procedura guidata vengono illustrate le funzionalità del linguaggio C
   
 1.  Come descritto in [Query Syntax and Method Syntax in LINQ](../../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md), alcune operazioni di query possono essere espresse solo utilizzando la sintassi del metodo.  Nel codice seguente viene calcolato il punteggio totale per ogni `Student` nella sequenza di origine e viene quindi chiamato il metodo `Average()` sui risultati della query per calcolare il punteggio medio della classe.  Notare l'utilizzo delle parentesi nell'espressione di query.  
   
-     [!code-cs[csLINQGettingStarted#19](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#19)]  
+     [!code-cs[csLINQGettingStarted#19](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_9.cs)]  
   
 #### Per trasformare o proiettare nella clausola select  
   
 1.  Una query genera normalmente una sequenza i cui elementi differiscono dagli elementi delle sequenze di origine.  Eliminare o impostare come commento la query precedente e il ciclo di esecuzione e sostituirli con il codice seguente.  La query restituisce una sequenza di stringhe \(non `Students`\) che si riflette nel ciclo `foreach`.  
   
-     [!code-cs[csLINQGettingStarted#20](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#20)]  
+     [!code-cs[csLINQGettingStarted#20](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_10.cs)]  
   
 2.  Il codice precedente in questa procedura dettagliata indica che il punteggio medio della classe è pari a circa 334.  Per produrre una sequenza di `Students` il cui punteggio totale sia superiore alla media della classe, insieme al relativo `Student ID`, è possibile utilizzare un tipo anonimo nell'istruzione `select`:  
   
-     [!code-cs[csLINQGettingStarted#21](../../../../csharp/programming-guide/concepts/linq/codesnippet/csharp/GettingStarted/Class1.cs#21)]  
+     [!code-cs[csLINQGettingStarted#21](../../../../csharp/programming-guide/concepts/linq/codesnippet/CSharp/walkthrough-writing-queries-linq_11.cs)]  
   
 ## Passaggi successivi  
  Dopo aver acquisito dimestichezza con le caratteristiche principali delle query in C\#, è possibile leggere la documentazione e gli esempi per il tipo specifico di provider [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq-md.md)] desiderato:  

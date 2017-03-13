@@ -34,7 +34,7 @@ Esistono diverse circostanze nelle quali è importante che un gestore eventi non
   
  Al momento della generazione dell'evento `Click` da parte del codice, alla funzione di accesso `RaiseEvent` è consentito richiamare tutti i delegati del gestore eventi in maniera asincrona tramite il metodo <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>.  Con tale metodo è possibile richiamare ogni gestore su un thread di lavoro e di restituirlo immediatamente, in modo tale che i gestori non possano bloccarsi tra loro.  
   
- [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#27)]  
+ [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-avoid-blocking_1.vb)]  
   
 ## Vedere anche  
  <xref:System.Collections.ArrayList>   

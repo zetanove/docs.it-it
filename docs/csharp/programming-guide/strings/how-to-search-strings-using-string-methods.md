@@ -22,7 +22,7 @@ Il tipo [stringa](../../../csharp/language-reference/keywords/string.md), un ali
 ## Esempio  
  Nell'esempio riportato di seguito vengono utilizzati i metodi <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>, <xref:System.String.StartsWith%2A> e <xref:System.String.EndsWith%2A> per effettuare ricerche nelle stringhe.  
   
- [!code-cs[csProgGuideStrings#21](../../../csharp/programming-guide/strings/codesnippet/csharp/CSRefStrings/Strings.cs#21)]  
+ [!code-cs[csProgGuideStrings#21](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-search-strings-using-string-methods_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

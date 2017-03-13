@@ -49,7 +49,7 @@ Il compilatore genera una stringa identificativa \(ID\) per ciascun costrutto de
 ## Esempio  
  Nel codice seguente viene illustrato come vengono generate le stringhe ID per una classe e i relativi membri:  
   
- [!code-vb[VbVbcnXmlDocComments#10](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/processing-the-xml-file_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#10](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/processing-the-xml-file_1.vb)]  
   
 ## Vedere anche  
  [\/doc](../../../visual-basic/reference/command-line-compiler/doc.md)   

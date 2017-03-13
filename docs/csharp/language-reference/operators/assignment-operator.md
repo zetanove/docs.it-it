@@ -24,7 +24,7 @@ L'operatore di assegnazione \(`=`\) archivia il valore dell'operando a destra ne
  L'operatore di assegnazione non può essere sottoposto a overload.  È tuttavia possibile definire operatori di conversione impliciti per un tipo, che consentono di utilizzare l'operatore di assegnazione con tali tipi.  Per ulteriori informazioni, vedere [Utilizzo degli operatori di conversione](../../../csharp/programming-guide/statements-expressions-operators/using-conversion-operators.md).  
   
 ## Esempio  
- [!code-cs[csRefOperators#49](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#49)]  
+ [!code-cs[csRefOperators#49](../../../csharp/language-reference/operators/codesnippet/CSharp/assignment-operator_1.cs)]  
   
 ## Vedere anche  
  [Riferimenti per C\#](../../../csharp/language-reference/index.md)   

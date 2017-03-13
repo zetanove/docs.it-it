@@ -53,7 +53,7 @@ Per chiamare una routine con operatore, è possibile utilizzare il simbolo dell'
 ## Esempio  
  Nell'esempio riportato di seguito vengono create due strutture <xref:System.TimeSpan> che vengono aggiunte insieme e i relativi risultati vengono memorizzati in una terza struttura <xref:System.TimeSpan>.  La struttura <xref:System.TimeSpan> definisce le routine con operatore per eseguire l'overload di diversi operatori standard.  
   
- [!code-vb[VbVbcnProcedures#29](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-an-operator-_1.vb)]  
+ [!code-vb[VbVbcnProcedures#29](./codesnippet/VisualBasic/how-to-call-an-operator-procedure_1.vb)]  
   
  Dal momento che <xref:System.TimeSpan> esegue l'overload dell'operatore standard `+`, nell'esempio precedente viene richiamata una routine di operatore quando si calcola il valore di `combinedSpan`.  
   

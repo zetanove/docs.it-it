@@ -42,7 +42,7 @@ Specifica il valore restituito della proprietà o della funzione.
 ## Esempio  
  Nell'esempio riportato di seguito il tag `<returns>` viene utilizzato per illustrare i valori restituiti dalla funzione `DoesRecordExist`.  
   
- [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/visualbasic/returns_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/returns_1.vb)]  
   
 ## Vedere anche  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)

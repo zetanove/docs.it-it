@@ -27,7 +27,7 @@ caps.handback.revision: 13
   
 -   Utilizzare il metodo `ReadAllText` per leggere il testo dai singoli file in una determinata directory.  Il seguente codice consente di specificare una directory e un file e di utilizzare `ReadAllText` per leggerlo nella stringa denominata `patients`.  
   
-     [!code-vb[VbVbcnMyFileSystem#15](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/visualbasic/how-to-retrieve-the-cont_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#15](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-retrieve-the-contents-of-the-my-documents-directory_1.vb)]  
   
 ## Vedere anche  
  <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories>   

@@ -39,7 +39,7 @@ Per chiamare una routine di proprietà, è necessario memorizzare un valore nell
   
      Nell'esempio seguente viene letto il valore della proprietà <xref:Microsoft.VisualBasic.DateAndTime.Now%2A> chiamando in modo implicito la relativa routine `Get`.  
   
-     [!code-vb[VbVbalrDateProperties#4](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/VbVbalrDateProperties/Module1.vb#4)]  
+     [!code-vb[VbVbalrDateProperties#4](./codesnippet/VisualBasic/how-to-call-a-property-procedure_1.vb)]  
   
 2.  Se la proprietà accetta argomenti, far seguire il nome della proprietà da parentesi tra cui racchiudere l'elenco di argomenti.  Se non sono presenti argomenti, è possibile omettere le parentesi.  
   
@@ -53,7 +53,7 @@ Per chiamare una routine di proprietà, è necessario memorizzare un valore nell
   
      Nell'esempio seguente viene impostato il valore della proprietà <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A> chiamando in modo implicito la routine `Set`.  
   
-     [!code-vb[VbVbcnProcedures#11](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/how-to-call-a-property-p_2.vb)]  
+     [!code-vb[VbVbcnProcedures#11](./codesnippet/VisualBasic/how-to-call-a-property-procedure_2.vb)]  
   
 2.  Se la proprietà accetta argomenti, far seguire il nome della proprietà da parentesi tra cui racchiudere l'elenco di argomenti.  Se non sono presenti argomenti, è possibile omettere le parentesi.  
   

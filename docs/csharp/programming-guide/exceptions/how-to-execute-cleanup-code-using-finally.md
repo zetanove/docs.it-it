@@ -20,12 +20,12 @@ caps.handback.revision: 21
 # Procedura: eseguire codice di pulitura mediante finally (Guida per programmatori C#)
 Lo scopo di un'istruzione `finally` è quello di garantire che venga eseguita immediatamente l'opportuna pulitura degli oggetti, in genere quelli che contengono risorse esterne, anche se viene generata un'eccezione.  Un esempio di questo tipo di pulitura consiste nel chiamare <xref:System.IO.Stream.Close%2A> su un oggetto <xref:System.IO.FileStream> immediatamente dopo l'utilizzo anziché attendere che venga sottoposto alla Garbage Collection da Common Language Runtime, come indicato di seguito:  
   
- [!code-cs[csProgGuideExceptions#16](../../../csharp/programming-guide/exceptions/codesnippet/csharp/how-to-execute-cleanup-c_1.cs)]  
+ [!code-cs[csProgGuideExceptions#16](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/how-to-execute-cleanup-code-using-finally_1.cs)]  
   
 ## Esempio  
  Per trasformare il codice precedente in un'istruzione `try-catch-finally`, il codice di pulitura viene separato dal codice effettivo, come indicato di seguito.  
   
- [!code-cs[csProgGuideExceptions#17](../../../csharp/programming-guide/exceptions/codesnippet/csharp/how-to-execute-cleanup-c_2.cs)]  
+ [!code-cs[csProgGuideExceptions#17](../../../csharp/programming-guide/exceptions/codesnippet/CSharp/how-to-execute-cleanup-code-using-finally_2.cs)]  
   
  Poiché è possibile che in qualsiasi momento si verifichi un'eccezione all'interno del blocco `try` prima della chiamata `OpenWrite()` o che la chiamata a `OpenWrite()` non riesca, non esiste alcuna garanzia che il file sia aperto quando si tenta di chiuderlo.  Il blocco `finally` aggiunge un controllo per verificare che l'oggetto <xref:System.IO.FileStream> non sia `null` prima della chiamata al metodo <xref:System.IO.Stream.Close%2A>.  Senza il controllo di `null`, il blocco `finally` potrebbe infatti generare un'eccezione specifica <xref:System.NullReferenceException> ma la generazione di eccezioni in blocchi `finally` è da evitare, se possibile.  
   

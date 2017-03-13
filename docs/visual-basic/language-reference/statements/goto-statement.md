@@ -68,7 +68,7 @@ Branch validi e non validi in costruzioni Try
 ## Esempio  
  Nell'esempio riportato di seguito l'istruzione `GoTo` viene utilizzata per creare un branch nelle etichette di riga in una routine.  
   
- [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/visualbasic/goto-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
   
 ## Vedere anche  
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)   

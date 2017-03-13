@@ -128,7 +128,7 @@ Un valore letterale che rappresenta un <xref:System.Xml.Linq.XElement> oggetto.
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato come creare un semplice elemento XML che ha due elementi vuoti nidificati.  
   
- [!code-vb[VbXMLSamples#20](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-element-literal_1.vb)]  
+ [!code-vb[VbXMLSamples#20](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_1.vb)]  
   
  L'esempio mostra il testo seguente. Si noti che il valore letterale mantiene la struttura degli elementi vuoti.  
   
@@ -142,7 +142,7 @@ Un valore letterale che rappresenta un <xref:System.Xml.Linq.XElement> oggetto.
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato come utilizzare le espressioni incorporate per denominare un elemento e creare attributi.  
   
- [!code-vb[VbXMLSamples#21](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-element-literal_2.vb)]  
+ [!code-vb[VbXMLSamples#21](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_2.vb)]  
   
  Questo codice visualizza il testo seguente:  
   
@@ -153,7 +153,7 @@ Un valore letterale che rappresenta un <xref:System.Xml.Linq.XElement> oggetto.
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene dichiarato `ns` come un prefisso dello spazio dei nomi XML. Quindi, il prefisso dello spazio dei nomi utilizzato per creare un file XML letterale e visualizza il formato dell'elemento finale.  
   
- [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/visualbasic/xml-element-literal_3.vb)]  
+ [!code-vb[VbXMLSamples#22](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-element-literal_3.vb)]  
   
  Questo codice visualizza il testo seguente:  
   

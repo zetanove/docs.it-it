@@ -49,7 +49,7 @@ Fornisce proprietà per la creazione e l'accesso a una singola istanza di ciascu
 ## Esempio  
  Nell'esempio viene chiamato il metodo `FahrenheitToCelsius` del servizio Web XML `TemperatureConverter` e viene quindi restituito il risultato.  
   
- [!code-vb[VbVbalrMyWebService#1](../../../visual-basic/language-reference/objects/codesnippet/visualbasic/VbVbalrMyWebService/Form1.vb#1)]  
+ [!code-vb[VbVbalrMyWebService#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-webservices-object_1.vb)]  
   
  Per il corretto funzionamento dell'esempio, il progetto deve fare riferimento a un servizio Web denominato `Converter` che esponga il metodo `ConvertTemperature`.  Per ulteriori informazioni, vedere [Accessing Application Web Services](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md).  
   

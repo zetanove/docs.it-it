@@ -36,7 +36,7 @@ Per eliminare chiavi del Registro di sistema, è possibile utilizzare i metodi <
   
 -   Utilizzare il metodo `DeleteSubKey` per eliminare una chiave del Registro di sistema.  Nell'esempio che segue viene eliminata la chiave Software\/TestApp nell'hive CurrentUser.  È possibile impostare la stringa appropriata nel codice o far sì che l'operazione si basi sulle informazioni fornite dall'utente.  
   
-     [!code-vb[VbResourceTasks#19](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-delete-a-registry_1.vb)]  
+     [!code-vb[VbResourceTasks#19](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-delete-a-registry-key_1.vb)]  
   
 ## Programmazione efficiente  
  Se la coppia chiave\/valore non esiste, il metodo `DeleteSubKey` restituirà una stringa vuota.  

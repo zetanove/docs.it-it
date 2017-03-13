@@ -26,7 +26,7 @@ caps.handback.revision: 11
 
 Qualsiasi elemento del programma \(variabile, classe o membro\) può avere lo stesso nome di una parola chiave riservata.  È ad esempio possibile creare una variabile denominata `Loop`.  Tuttavia, per fare riferimento alla propria versione della variabile \(che ha lo stesso nome della parola chiave riservata `Loop`\), è necessario qualificarla anteponendo la corrispondente stringa completa o racchiuderla tra parentesi quadre \(`[ ]`\), come illustrato nell'esempio seguente.  
   
- [!code-vb[VbVbcnConventions#8](../../../visual-basic/programming-guide/language-features/codesnippet/visualbasic/keywords-as-element-name_1.vb)]  
+ [!code-vb[VbVbcnConventions#8](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/keywords-as-element-names-in-code_1.vb)]  
   
  In caso contrario, Visual Basic presupporrà l'utilizzo della parola chiave intrinseca `Loop` e genererà un errore, come nell'esempio seguente:  
   

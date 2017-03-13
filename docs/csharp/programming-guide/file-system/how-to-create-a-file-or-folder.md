@@ -22,7 +22,7 @@ caps.handback.revision: 22
 A livello di codice è possibile creare una cartella sul computer, creare una sottocartella, creare un file nella sottocartella e scrivere dati nel file.  
   
 ## Esempio  
- [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/csharp/csFilesFolders/FileIteration.cs#10)]  
+ [!code-cs[csFilesandFolders#10](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-create-a-file-or-folder_1.cs)]  
   
  Se la cartella esiste già, <xref:System.IO.Directory.CreateDirectory%2A> non produce effetti e non vengono generate eccezioni.  Tuttavia, <xref:System.IO.File.Create%2A?displayProperty=fullName> sostituisce un file esistente con un nuovo file.  Nell'esempio viene utilizzata un'istruzione`else` \- `if`per impedire la sostituzione di un file esistente.  
   

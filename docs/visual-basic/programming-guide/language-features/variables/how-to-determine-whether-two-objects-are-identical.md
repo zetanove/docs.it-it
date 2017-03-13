@@ -52,7 +52,7 @@ In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes
 ## Esempio  
  Nell'esempio riportato di seguito viene eseguita la verifica di coppie di variabili `Object` per stabilire se puntano alla stessa istanza di classe.  
   
- [!code-vb[VbVbalrKeywords#14](../../../../visual-basic/language-reference/codesnippet/visualbasic/how-to-determine-whether_1_1.vb)]  
+ [!code-vb[VbVbalrKeywords#14](../../../../visual-basic/language-reference/codesnippet/VisualBasic/how-to-determine-whether-two-objects-are-identical_1.vb)]  
   
  Di seguito è riportato l'output dell'esempio precedente.  
   

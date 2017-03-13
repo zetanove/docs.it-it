@@ -31,7 +31,7 @@ Una routine *ricorsiva* è una routine che chiama se stessa.  In genere non si t
   
  Nella routine riportata di seguito viene utilizzata la ricorsione per calcolare il fattoriale del relativo argomento originale.  
   
- [!code-vb[VbVbcnProcedures#51](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/recursive-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#51](./codesnippet/VisualBasic/recursive-procedures_1.vb)]  
   
 ## Considerazioni sulle routine ricorsive  
  **Condizioni limitanti**.  È necessario progettare una routine ricorsiva per verificare almeno una condizione in grado di terminare la ricorsione e gestire inoltre il caso in cui nessuna condizione del genere venga soddisfatta nell'ambito di un numero ragionevole di chiamate ricorsive.  In assenza di almeno una condizione che possa essere soddisfatta senza errori, il rischio di eseguire una routine in un ciclo infinito è piuttosto elevato.  

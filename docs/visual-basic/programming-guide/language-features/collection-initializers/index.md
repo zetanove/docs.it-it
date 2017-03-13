@@ -29,7 +29,7 @@ Gli *inizializzatori di raccolta* forniscono una sintassi abbreviata che consent
   
  Si identifica un inizializzatore di raccolta utilizzando la parola chiave `From` seguita da parentesi \(`{}`\).  È simile alla sintassi del valore letterale della matrice descritta in [Matrici](../../../../visual-basic/programming-guide/language-features/arrays/index.md).  Negli esempi riportati di seguito vengono illustrate diverse modalità di utilizzo degli inizializzatori di raccolta per creare le raccolte.  
   
- [!code-vb[VbVbalrCollectionInitializers#1](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/visualbasic/index_1.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_1.vb)]  
   
 > [!NOTE]
 >  Anche in C\# sono disponibili inizializzatori di raccolta.  Gli inizializzatori di raccolta di C\# forniscono la stessa funzionalità di quelli di Visual Basic.  Per ulteriori informazioni sugli inizializzatori di raccolta di C\#, vedere [Inizializzatori di oggetto e di raccolta](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md).  
@@ -37,11 +37,11 @@ Gli *inizializzatori di raccolta* forniscono una sintassi abbreviata che consent
 ## Sintassi  
  Un inizializzatore di raccolta è costituito da un elenco di valori delimitati da virgole racchiusi tra parentesi \(`{}`\), preceduti dalla parola chiave `From`, come mostrato nel codice seguente.  
   
- [!code-vb[VbVbalrCollectionInitializers#2](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/visualbasic/index_2.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#2](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_2.vb)]  
   
  Quando si crea una raccolta, quale un oggetto <xref:System.Collections.Generic.List%601> o <xref:System.Collections.Generic.Dictionary%602>, è necessario specificare il tipo di raccolta prima dell'inizializzatore di raccolta, come illustrato nel codice seguente.  
   
- [!code-vb[VbVbalrCollectionInitializers#13](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/visualbasic/index_3.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#13](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_3.vb)]  
   
 > [!NOTE]
 >  Non è possibile utilizzare sia un inizializzatore di raccolta che un inizializzatore di oggetto per inizializzare lo stesso oggetto Collection.  È possibile utilizzare gli inizializzatori di oggetto per inizializzare gli oggetti in un inizializzatore di raccolta.  
@@ -57,11 +57,11 @@ Gli *inizializzatori di raccolta* forniscono una sintassi abbreviata che consent
   
  Nell'esempio di codice seguente, ad esempio, viene illustrato come creare una raccolta `List(Of Customer)` utilizzando un inizializzatore di raccolta.  Quando viene eseguito il codice, ogni oggetto `Customer` viene passato al metodo `Add(Customer)` dell'elenco generico.  
   
- [!code-vb[VbVbalrCollectionInitializers#9](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/visualbasic/index_4.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#9](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_4.vb)]  
   
  Nell'esempio di codice seguente viene illustrato il codice equivalente che non utilizza un inizializzatore di raccolta.  
   
- [!code-vb[VbVbalrCollectionInitializers#10](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/visualbasic/index_5.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#10](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_5.vb)]  
   
  Se la raccolta dispone di un metodo `Add` con parametri corrispondenti al costruttore per l'oggetto `Customer`, è possibile annidare valori del parametro per il metodo `Add` all'interno di inizializzatori di raccolta, come illustrato nella sezione successiva.  Se la raccolta non dispone di tale metodo `Add`, è possibile crearne uno come metodo di estensione.  Per un esempio di creazione di un metodo `Add` come metodo di estensione per una raccolta, vedere [How to: Create an Add Extension Method Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md).  Per un esempio di creazione di una raccolta personalizzata che può essere utilizzata con un inizializzatore di raccolta, vedere [How to: Create a Collection Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-a-collection-used-by-a-collection-initializer.md).  
   
@@ -70,11 +70,11 @@ Gli *inizializzatori di raccolta* forniscono una sintassi abbreviata che consent
   
  Quando si crea una raccolta utilizzando valori annidati, ogni elemento dell'elenco di valori annidati viene passato come argomento al metodo `Add` che corrisponde ai tipi di elemento.  Nell'esempio di codice seguente, ad esempio, viene creato un oggetto <xref:System.Collections.Generic.Dictionary%602> in cui le chiavi sono di tipo `Integer` e i valori sono di tipo `String`.  Ognuno degli elenchi di valori annidati corrisponde al metodo <xref:System.Collections.Generic.Dictionary%602.Add%2A> per l'oggetto `Dictionary`.  
   
- [!code-vb[VbVbalrCollectionInitializers#5](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/visualbasic/index_6.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#5](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_6.vb)]  
   
  Di seguito viene fornito il codice equivalente all'esempio di codice precedente.  
   
- [!code-vb[VbVbalrCollectionInitializers#6](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/visualbasic/index_7.vb)]  
+ [!code-vb[VbVbalrCollectionInitializers#6](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_7.vb)]  
   
  Solo gli elenchi di valori annidati dal primo livello di annidamento vengono inviati al metodo `Add` per il tipo di raccolta.  I livelli più profondi di annidamento vengono considerati valori letterali di matrice e gli elenchi di valori annidati non corrispondono al metodo `Add` di alcuna raccolta.  
   

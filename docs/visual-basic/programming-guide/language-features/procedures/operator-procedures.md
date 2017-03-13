@@ -82,11 +82,11 @@ Una routine di operatore è costituita da una serie di istruzioni [!INCLUDE[vbpr
 ### Illustrazione della dichiarazione e della chiamata  
  Nella struttura riportata di seguito un valore integer con segno a 128 bit viene memorizzato come parte costitutiva più e meno significativa.  L'operatore `+` viene definito per aggiungere due valori `veryLong` e generare un valore `veryLong` risultante.  
   
- [!code-vb[VbVbcnProcedures#23](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/operator-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#23](./codesnippet/VisualBasic/operator-procedures_1.vb)]  
   
  Nell'esempio riportato di seguito viene illustrata una chiamata tipica all'operatore `+` definito su `veryLong`.  
   
- [!code-vb[VbVbcnProcedures#24](../../../../visual-basic/programming-guide/language-features/procedures/codesnippet/visualbasic/operator-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#24](./codesnippet/VisualBasic/operator-procedures_2.vb)]  
   
  Per ulteriori informazioni ed esempi, vedere [Operator Overloading in Visual Basic 2005](http://go.microsoft.com/fwlink/?LinkId=101703) \(informazioni in lingua inglese\).  
   

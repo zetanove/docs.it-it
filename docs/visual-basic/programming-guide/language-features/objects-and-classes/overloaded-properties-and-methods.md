@@ -34,15 +34,15 @@ Per overload si intende la creazione di più routine, costruttori di istanza o p
 ## Utilizzo dell'overload  
  L'overload è particolarmente utile quando il modello a oggetti impone l'utilizzo di nomi identici per routine che utilizzano tipi di dati diversi.  Una classe che consente la visualizzazione di diversi tipi di dati ad esempio può presentare routine `Display` simili alle seguenti:  
   
- [!code-vb[VbVbalrOOP#64](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#64)]  
+ [!code-vb[VbVbalrOOP#64](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_1.vb)]  
   
  Senza l'overload, sarebbe necessario creare nomi distinti per ciascuna routine, anche se tutte svolgono un'azione dello stesso tipo, come indicato di seguito:  
   
- [!code-vb[VbVbalrOOP#65](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#65)]  
+ [!code-vb[VbVbalrOOP#65](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_2.vb)]  
   
  L'overload semplifica l'utilizzo di proprietà e metodi in quanto consente di utilizzare diversi tipi di dati.  Il metodo `Display` di overload esaminato in precedenza ad esempio può essere chiamato da una qualsiasi delle seguenti righe di codice:  
   
- [!code-vb[VbVbalrOOP#66](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#66)]  
+ [!code-vb[VbVbalrOOP#66](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_3.vb)]  
   
  In fase di esecuzione, in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] verrà chiamata la routine corretta in base ai tipi di dati dei parametri specificati.  
   
@@ -72,11 +72,11 @@ Per overload si intende la creazione di più routine, costruttori di istanza o p
   
 2.  Aggiungere il seguente codice alla classe `TaxClass`.  
   
-     [!code-vb[VbVbalrOOP#67](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#67)]  
+     [!code-vb[VbVbalrOOP#67](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_4.vb)]  
   
 3.  Aggiungere la seguente routine al form:  
   
-     [!code-vb[VbVbalrOOP#68](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#68)]  
+     [!code-vb[VbVbalrOOP#68](../../../../visual-basic/misc/codesnippet/VisualBasic/overloaded-properties-and-methods_5.vb)]  
   
 4.  Aggiungere un pulsante al form e chiamare la routine `ShowTax` dall'evento `Button1_Click` del pulsante.  
   

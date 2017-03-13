@@ -37,7 +37,7 @@ Ereditarietà delle classi
   
  Nell'esempio seguente viene illustrato come le relazioni tra le classi mostrate nella precedente illustrazione vengono espresse in C\#.  Nell'esempio viene inoltre descritto come la classe `WorkItem` implementa l’override del metodo virtuale <xref:System.Object.ToString%2A?displayProperty=fullName> e come la classe `ChangeRequest` eredita l’implementazione del metodo definito dalla classe `WorkItem`.  
   
- [!code-cs[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/inheritance_1.cs)]  
+ [!code-cs[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/inheritance_1.cs)]  
   
 ## Metodi virtuali e astratti  
  Quando una classe base dichiara un metodo come [virtuale](../../../csharp/language-reference/keywords/virtual.md), una classe derivata può [eseguire l'override](../../../csharp/language-reference/keywords/override.md) del metodo definendo una propria implementazione.  Quando una classe di base dichiara un membro come [astratto](../../../csharp/language-reference/keywords/abstract.md), è necessario effettuare l'override di tale metodo in ogni classe non astratta che eredita direttamente da tale classe.  Quando una classe derivata è dichiarata a sua volta astratta, eredita i membri astratti senza implementarli.  I membri astratti e virtuali costituiscono la base del polimorfismo, che rappresenta la seconda principale caratteristica della programmazione orientata a oggetti.  Per ulteriori informazioni, vedere [Polimorfismo](../../../csharp/programming-guide/classes-and-structs/polymorphism.md).  

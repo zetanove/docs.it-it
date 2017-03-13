@@ -25,7 +25,7 @@ caps.handback.revision: 10
 Nell'esempio riportato di seguito viene creata la stringa "abcd" da singoli caratteri.  
   
 ## Esempio  
- [!code-vb[VbVbalrStrings#61](../../../../visual-basic/language-reference/functions/codesnippet/visualbasic/how-to-create-a-string-f_1.vb)]  
+ [!code-vb[VbVbalrStrings#61](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-a-string-from-an-array-of-char-values_1.vb)]  
   
 ## Compilazione del codice  
  Per questo metodo non vi sono requisiti particolari.  

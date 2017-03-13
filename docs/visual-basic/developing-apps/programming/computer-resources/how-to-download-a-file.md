@@ -46,19 +46,19 @@ caps.handback.revision: 22
   
 -   Utilizzare il metodo `DownloadFile` per scaricare il file, specificando il percorso del file di destinazione come una stringa o URI e specificando il percorso dove archiviare il file.  Nell'esempio riportato di seguito viene eseguito il download del file `WineList.txt` da `http://www.cohowinery.com/downloads` e viene salvato in `C:\Documents and Settings\All Users\Documents`:  
   
-     [!code-vb[VbResourceTasks#9](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-download-a-file_1.vb)]  
+     [!code-vb[VbResourceTasks#9](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-download-a-file_1.vb)]  
   
 ### Per scaricare un file, specificando un intervallo di timeout  
   
 -   Utilizzare il metodo `DownloadFile` per eseguire il download del file, specificando il percorso del file di destinazione come una stringa o URI, il percorso dove archiviare il file e l'intervallo di timeout in millisecondi. Il valore predefinito di è 1000.  Nell'esempio riportato di seguito viene eseguito il download del file `WineList.txt` da `http://www.cohowinery.com/downloads` e viene salvato in `C:\Documents and Settings\All Users\Documents`, specificando un intervallo di timeout di 500 millisecondi:  
   
-     [!code-vb[VbResourceTasks#10](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-download-a-file_2.vb)]  
+     [!code-vb[VbResourceTasks#10](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-download-a-file_2.vb)]  
   
 ### Per scaricare un file, fornendo un nome utente e una password  
   
 -   Utilizzare il metodo `DownLoadFile` per eseguire il download del file, specificando il percorso del file di destinazione come una stringa o URI e il percorso dove archiviare il file, il nome utente e la password.  Nell'esempio riportato di seguito viene eseguito il download del file `WineList.txt` da `http://www.cohowinery.com/downloads` e viene salvato in `C:\Documents and Settings\All Users\Documents`, con il nome utente `anonymous` e una password vuota.  
   
-     [!code-vb[VbResourceTasks#11](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/visualbasic/how-to-download-a-file_3.vb)]  
+     [!code-vb[VbResourceTasks#11](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-download-a-file_3.vb)]  
   
     > [!IMPORTANT]
     >  Il protocollo FTP utilizzato dal metodo `DownLoadFile` invia informazioni, comprese le password, in testo semplice e non deve pertanto essere utilizzato per la trasmissione di informazioni riservate.  

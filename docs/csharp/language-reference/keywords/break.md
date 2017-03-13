@@ -24,17 +24,17 @@ L'istruzione `break` termina il ciclo di inclusione più vicino o l'istruzione [
 ## Esempio  
  In questo esempio l'istruzione condizionale contiene un contatore che dovrebbe contare da 1 a 100. L'istruzione `break` viene tuttavia utilizzata per terminare il ciclo dopo 4 conteggi.  
   
- [!code-cs[csrefKeywordsJump#1](../../../csharp/language-reference/keywords/codesnippet/csharp/break_1.cs)]  
+ [!code-cs[csrefKeywordsJump#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/break_1.cs)]  
   
 ## Esempio  
  In questo esempio, l'istruzione `break` viene utilizzata per interrompere un ciclo annidato interno e restituire il controllo al ciclo esterno.  
   
- [!code-cs[csrefKeywordsJump#7](../../../csharp/language-reference/keywords/codesnippet/csharp/break_2.cs)]  
+ [!code-cs[csrefKeywordsJump#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/break_2.cs)]  
   
 ## Esempio  
  In questo esempio viene illustrato l'utilizzo di `break` in un'istruzione [switch](../../../csharp/language-reference/keywords/switch.md).  
   
- [!code-cs[csrefKeywordsJump#2](../../../csharp/language-reference/keywords/codesnippet/csharp/break_3.cs)]  
+ [!code-cs[csrefKeywordsJump#2](../../../csharp/language-reference/keywords/codesnippet/CSharp/break_3.cs)]  
   
  Se si inserisse `4`, si otterrebbe il seguente output:  
   

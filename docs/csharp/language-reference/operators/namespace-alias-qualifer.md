@@ -22,7 +22,7 @@ caps.handback.revision: 21
 # Operatore :: (Riferimenti per C#)
 Il qualificatore di alias `::` dello spazio dei nomi viene utilizzato per cercare gli identificatori.  Viene sempre posizionato tra due identificatori, come nell'esempio seguente:  
   
- [!code-cs[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/csharp/csrefOperators/csrefOperators.cs#27)]  
+ [!code-cs[csRefOperators#27](../../../csharp/language-reference/operators/codesnippet/CSharp/namespace-alias-qualifer_1.cs)]  
   
 ## Note  
  Il qualificatore di alias dello spazio dei nomi può essere `global`.  In questo modo viene richiamata una ricerca nello spazio dei nomi globale, piuttosto che in uno spazio dei nomi con alias.  

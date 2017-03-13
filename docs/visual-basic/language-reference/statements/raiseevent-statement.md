@@ -46,7 +46,7 @@ RaiseEvent eventname[( argumentlist )]
   
  Se l'evento non è stato dichiarato nel modulo nel quale viene generato si verificherà un errore.  Nel frammento seguente vengono illustrate una dichiarazione di evento e una routine di generazione dell'evento.  
   
- [!code-vb[VbVbalrEvents#37](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#37)]  
+ [!code-vb[VbVbalrEvents#37](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_1.vb)]  
   
  Non è possibile utilizzare `RaiseEvent` per generare eventi non dichiarati in modo esplicito nel modulo.  Se ad esempio tutti i form ereditano un evento <xref:System.Windows.Forms.Control.Click> da <xref:System.Windows.Forms.Form?displayProperty=fullName>, non è possibile generare tale evento mediante `RaiseEvent` in un form derivato.  Se si dichiara un evento `Click` nel modulo del form, esso nasconde l'evento <xref:System.Windows.Forms.Control.Click> del form.  È ancora possibile richiamare l'evento <xref:System.Windows.Forms.Control.Click> del form chiamando il metodo <xref:System.Windows.Forms.Control.OnClick%2A>.  
   
@@ -71,12 +71,12 @@ RaiseEvent eventname[( argumentlist )]
   
  Aggiungere una variabile `WithEvents` alla sezione delle dichiarazioni della classe `Form1`.  
   
- [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#14)]  
+ [!code-vb[VbVbalrEvents#14](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_2.vb)]  
   
 ## Esempio  
  Aggiungere il codice seguente al codice per `Form1`.  Sostituire eventuali procedure duplicate, ad esempio `Form_Load` o `Button_Click`.  
   
- [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#15)]  
+ [!code-vb[VbVbalrEvents#15](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/raiseevent-statement_3.vb)]  
   
  Premere F5 per eseguire l'esempio precedente, quindi fare clic sul pulsante con etichetta **Start**.  Verrà avviato il conto alla rovescia dei secondi nella prima casella di testo.  Allo scadere dei 10 secondi nella prima casella di testo viene visualizzato "Completato".  
   

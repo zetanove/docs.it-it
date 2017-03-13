@@ -42,7 +42,7 @@ caps.handback.revision: 53
   
  Il compilatore utilizza le informazioni sui tipi per garantire che tutte le operazioni eseguite nel codice siano *indipendenti dai tipi*.  Ad esempio, se si dichiara una variabile di tipo [int](../../../csharp/language-reference/keywords/int.md), il compilatore consente di utilizzare la variabile in operazioni di addizione e sottrazione.  Se si tenta di eseguire quelle stesse operazioni su una variabile di tipo [bool](../../../csharp/language-reference/keywords/bool.md), il compilatore genera un errore, come mostrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideTypes#42](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideTypes#42](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_1.cs)]  
   
 > [!NOTE]
 >  Gli sviluppatori che utilizzano C e C\+\+ devono tenere presente che in C\#, [bool](../../../csharp/language-reference/keywords/bool.md) non è convertibile in [int](../../../csharp/language-reference/keywords/int.md).  
@@ -52,11 +52,11 @@ caps.handback.revision: 53
 ### Specifica di tipi nelle dichiarazioni di variabile  
  Quando si dichiara una variabile o una costante in un programma, è necessario specificarne il tipo o utilizzare la parola chiave [var](../../../csharp/language-reference/keywords/var.md) per consentire al compilatore di dedurre il tipo.  Nell'esempio seguente vengono mostrate alcune dichiarazioni di variabile che utilizzano sia tipi numerici incorporati che tipi complessi definiti dall'utente:  
   
- [!code-cs[csProgGuideTypes#36](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_2.cs)]  
+ [!code-cs[csProgGuideTypes#36](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_2.cs)]  
   
  I tipi dei parametri e dei valori restituiti di un metodo vengono specificati nella firma del metodo.  Nella firma seguente viene mostrato un metodo che richiede [int](../../../csharp/language-reference/keywords/int.md) come argomento di input e restituisce una stringa:  
   
- [!code-cs[csProgGuideTypes#35](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_3.cs)]  
+ [!code-cs[csProgGuideTypes#35](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_3.cs)]  
   
  Una volta dichiarata, una variabile non può essere dichiarata nuovamente con un nuovo tipo e non le può venire assegnato un valore non compatibile con il tipo dichiarato.  Ad esempio, non è possibile dichiarare [int](../../../csharp/language-reference/keywords/int.md) e assegnare ad esso il valore booleano [true](../../../csharp/language-reference/keywords/true-literal.md).  È tuttavia possibile convertire i valori in altri tipi, ad esempio quando vengono assegnati a nuove variabili o passati come argomenti di metodo.  Una *conversione del tipo* che non causa la perdita di dati viene eseguita automaticamente dal compilatore.  Una conversione che potrebbe causare la perdita di dati richiede un *cast* nel codice sorgente.  
   
@@ -107,13 +107,13 @@ char c = 'Z';
   
  Per creare tipi valore personalizzati si utilizza la parola chiave [struct](../../../csharp/language-reference/keywords/struct.md).  In genere, una struttura viene utilizzata come contenitore per un piccolo insieme di variabili correlate, come mostrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/csharp/index_4.cs)]  
+ [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_4.cs)]  
   
  Per ulteriori informazioni sulle strutture, vedere [Struct](../../../csharp/programming-guide/classes-and-structs/structs.md).  Per ulteriori informazioni sui tipi valore in [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)], vedere [Common Type System](../../../standard/base-types/common-type-system.md).  
   
  L'altra categoria di tipi valore è [enum](../../../csharp/language-reference/keywords/enum.md).  Un tipo enum definisce un insieme di costanti integrali denominate.  Ad esempio, l'enumerazione <xref:System.IO.FileMode?displayProperty=fullName> nella libreria di classi .NET Framework contiene un insieme di interi costanti denominati che specificano come deve essere aperto un file.  La relativa definizione viene mostrata nell'esempio seguente:  
   
- [!code-cs[csProgGuideTypes#44](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_5.cs)]  
+ [!code-cs[csProgGuideTypes#44](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_5.cs)]  
   
  Il valore della costante `System.IO.FileMode.Create` è 2.  Tuttavia, un nome è molto più significativo nella lettura del codice sorgente; per questa ragione è preferibile utilizzare enumerazioni anziché valori letterali numerici costanti.  Per ulteriori informazioni, vedere <xref:System.IO.FileMode?displayProperty=fullName>.  
   
@@ -137,7 +137,7 @@ IMyInterface iface = new MyClass();
   
  Anche tutte le matrici sono tipi riferimento, anche se i relativi elementi sono tipi valore.  Le matrici derivano in modo implicito dalla classe <xref:System.Array?displayProperty=fullName>, ma vengono dichiarate e utilizzate con la sintassi semplificata fornita da C\#, come illustrato nell'esempio seguente:  
   
- [!code-cs[csProgGuideTypes#45](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_6.cs)]  
+ [!code-cs[csProgGuideTypes#45](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_6.cs)]  
   
  I tipi riferimento supportano completamente l'ereditarietà.  Quando si crea una classe, è possibile ereditare da qualsiasi altra interfaccia o classe che non è definita come [sealed](../../../csharp/language-reference/keywords/sealed.md) e le altre classi possono ereditare dalla classe e possono eseguire l'override dei metodi virtuali.  Per ulteriori informazioni sulla creazione di classi personalizzate, vedere [Classi e struct](../../../csharp/programming-guide/classes-and-structs/index.md).  Per ulteriori informazioni sull'ereditarietà e sui metodi virtuali, vedere [Ereditarietà](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
   
@@ -146,7 +146,7 @@ IMyInterface iface = new MyClass();
   
  Poiché i valori letterali sono tipizzati e tutti i tipi derivano da <xref:System.Object?displayProperty=fullName>, è possibile scrivere e compilare codice come il seguente:  
   
- [!code-cs[csProgGuideTypes#37](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_7.cs)]  
+ [!code-cs[csProgGuideTypes#37](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_7.cs)]  
   
 ## Tipi generici  
  Un tipo può essere dichiarato con uno o più *parametri di tipo* che fungono da segnaposto del tipo vero o proprio \(*tipo concreto*\) che il codice client fornirà alla creazione di un'istanza del tipo.  Tali tipi sono definiti *tipi generici*.  Ad esempio, il tipo .NET Framework <xref:System.Collections.Generic.List%601?displayProperty=fullName> dispone di un parametro di tipo che per convenzione gli viene assegnato il nome *T*.  Quando si crea un'istanza del tipo, si specifica il tipo degli oggetti che conterrà l'elenco, ad esempio, stringa:  

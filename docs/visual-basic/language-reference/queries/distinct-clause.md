@@ -38,7 +38,7 @@ Distinct
 ## Esempio  
  Nell'espressione di query seguente vengono uniti un elenco di clienti e un elenco di ordini del cliente.  La clausola `Distinct` viene inclusa per restituire un elenco di nomi cliente e data ordine univoci.  
   
- [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/visualbasic/VbSimpleQuerySamples/QuerySamples1.vb#20)]  
+ [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
   
 ## Vedere anche  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)   

@@ -6,7 +6,7 @@ caps.handback.revision: 12
 Nell'esempio seguente viene illustrato come creare gruppi annidati in un'espressione di query [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq-md.md)].  Ogni gruppo creato in base all'anno studentesco o al livello di istruzione viene quindi suddiviso ulteriormente in gruppi basati sui nomi degli utenti.  
   
 ## Esempio  
- [!code-cs[csProgGuideLINQ#24](../../../csharp/programming-guide/arrays/codesnippet/csharp/csLINQProgRef/csrefLINQHowTos.cs#24)]  
+ [!code-cs[csProgGuideLINQ#24](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-create-a-nested-group_1.cs)]  
   
  Si noti che sono necessari tre cicli `foreach` annidati per scorrere gli elementi interni di un gruppo annidato.  
   

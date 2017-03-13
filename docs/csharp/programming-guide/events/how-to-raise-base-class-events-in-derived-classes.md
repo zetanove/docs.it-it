@@ -24,7 +24,7 @@ Nell'esempio seguente viene illustrato il metodo standard di dichiarare eventi i
 >  Non dichiarare eventi virtuali in una classe base ed eseguire l'override in una classe derivata.  Il compilatore c\# non è in grado di gestirli correttamente e non è possibile prevedere se un sottoscrittore dell' evento derivato sottoscriverà effettivamente l'evento della classe base.  
   
 ## Esempio  
- [!code-cs[csProgGuideEvents#1](../../../csharp/programming-guide/events/codesnippet/csharp/how-to-raise-base-class-_1.cs)]  
+ [!code-cs[csProgGuideEvents#1](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-raise-base-class-events-in-derived-classes_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

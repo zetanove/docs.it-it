@@ -33,7 +33,7 @@ In questo argomento sono elencati i problemi comuni correlati all'uso di gestori
   
 -   Un gestore eventi ereditato non deve includere una clausola [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md).  Il metodo nella classe base è già associato all'evento e verrà generato di conseguenza.  Rimuovere la clausola `Handles` dal metodo ereditato.  
   
-     [!code-vb[VbVbalrEvents#32](../../../../visual-basic/language-reference/statements/codesnippet/visualbasic/VbVbalrEvents/Class1.vb#32)]  
+     [!code-vb[VbVbalrEvents#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/troubleshooting-inherited-event-handlers_1.vb)]  
   
 -   Se il metodo ereditato non contiene una parola chiave `Handles`, verificare che il codice non contenga un'istruzione[AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md) aggiuntiva o un qualsiasi altro metodo che gestisce lo stesso evento.  
   

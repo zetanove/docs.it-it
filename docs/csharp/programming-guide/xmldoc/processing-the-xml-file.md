@@ -82,7 +82,7 @@ Il compilatore genera una stringa identificativa \(ID\) per ciascun costrutto de
 ## Esempi  
  Negli esempi seguenti viene illustrato come vengono generate le stringhe di ID per una classe e i relativi membri:  
   
- [!code-cs[csProgGuidePointers#21](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/csharp/Pointers/Pointers.cs#21)]  
+ [!code-cs[csProgGuidePointers#21](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/processing-the-xml-file_1.cs)]  
   
 ## Vedere anche  
  [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   

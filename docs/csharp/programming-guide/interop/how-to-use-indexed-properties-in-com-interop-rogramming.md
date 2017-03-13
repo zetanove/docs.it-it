@@ -22,29 +22,29 @@ Le *proprietà indicizzate* migliorano l'utilizzo delle proprietà COM dotate di
   
  Nelle versioni precedenti di C\#, i metodi sono accessibili come proprietà solo se il metodo `get` non dispone di parametri e il metodo `set` dispone di un unico parametro di valore.  Non tutte le proprietà COM soddisfano tuttavia tali restrizioni.  Ad esempio, la proprietà [Range](http://go.microsoft.com/fwlink/?LinkId=166053) di Excel dispone di una funzione di accesso `get` che richiede un parametro per il nome dell'intervallo.  In passato, poiché non era possibile accedere direttamente alla proprietà `Range`, era necessario utilizzare il metodo `get_Range`, come illustrato nell'esempio seguente.  
   
- [!code-cs[csProgGuideIndexedProperties#1](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#1)]  
+ [!code-cs[csProgGuideIndexedProperties#1](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_1.cs)]  
   
  Le proprietà indicizzate consentono invece di scrivere quanto segue:  
   
- [!code-cs[csProgGuideIndexedProperties#2](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#2)]  
+ [!code-cs[csProgGuideIndexedProperties#2](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_2.cs)]  
   
 > [!NOTE]
 >  Nell'esempio precedente viene inoltre utilizzata la funzionalità degli [argomenti facoltativi](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md), introdotta in Visual C\# 2010, che consente di omettere `Type.Missing`.  
   
  In modo analogo, per impostare il valore della proprietà `Value` di un oggetto [Range](http://go.microsoft.com/fwlink/?LinkId=179211) in Visual C\# 2008 e versioni precedenti sono necessari due argomenti.  Uno fornisce un argomento per un parametro facoltativo che specifica il tipo del valore di intervallo.  L'altro fornisce il valore per la proprietà `Value`.  Prima di Visual C\# 2010, C\# consentiva un solo argomento.  Anziché utilizzare un metodo set normale, è necessario utilizzare il metodo `set_Value` o una proprietà diversa, [Value2](http://go.microsoft.com/fwlink/?LinkId=166050).  Queste tecniche vengono illustrate negli esempi riportati di seguito.  Entrambe impostano il valore della cella A1 su `Name`.  
   
- [!code-cs[csProgGuideIndexedProperties#3](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#3)]  
+ [!code-cs[csProgGuideIndexedProperties#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_3.cs)]  
   
  Le proprietà indicizzate consentono invece di scrivere il codice riportato di seguito.  
   
- [!code-cs[csProgGuideIndexedProperties#4](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#4)]  
+ [!code-cs[csProgGuideIndexedProperties#4](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_4.cs)]  
   
  Non è possibile creare proprietà indicizzate personalizzate.  La funzionalità supporta solo l'utilizzo di proprietà indicizzate esistenti.  
   
 ## Esempio  
  Nel codice seguente viene illustrato un esempio completo.  Per ulteriori informazioni sulla configurazione di un progetto che accede all'API di Office, vedere [Procedura: accedere agli oggetti di interoperabilità di Office usando le funzionalità di Visual C\#](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md).  
   
- [!code-cs[csProgGuideIndexedProperties#5](../../../csharp/programming-guide/interop/codesnippet/csharp/indexedpropscom/program.cs#5)]  
+ [!code-cs[csProgGuideIndexedProperties#5](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-use-indexed-properties-in-com-interop-rogramming_5.cs)]  
   
 ## Vedere anche  
  [Argomenti denominati e facoltativi](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)   

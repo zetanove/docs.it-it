@@ -71,14 +71,14 @@ L'istruzione `Inherits` consente di dichiarare una nuova classe, denominata *cla
   
  Nell'esempio seguente viene definita una classe base `Payroll,` e una classe derivata `BonusPayroll`, nella quale viene eseguito l'override del metodo ereditato `PayEmployee`.  Attraverso la routine `RunPayroll` vengono creati e quindi passati un oggetto `Payroll` e un oggetto `BonusPayroll` a una funzione denominata `Pay`, che consente di eseguire il metodo `PayEmployee` di entrambi gli oggetti.  
   
- [!code-vb[VbVbalrOOP#28](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#28)]  
+ [!code-vb[VbVbalrOOP#28](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_1.vb)]  
   
 ## La parola chiave MyBase  
  La parola chiave `MyBase` si comporta come una variabile oggetto che fa riferimento alla classe di base dell'istanza corrente di una classe.  `MyBase` viene spesso utilizzata per accedere ai membri della classe di base sottoposti a override o nascosti in una classe derivata.  Nello specifico, `MyBase.New` viene utilizzato per chiamare in modo esplicito un costruttore di classe base da un costruttore di classe derivata.  
   
  Si supponga, ad esempio, di progettare una classe derivata che consente di eseguire l'override di un metodo ereditato dalla classe base.  Con il metodo sottoposto a override è possibile chiamare il metodo della classe base e modificare il valore restituito come indicato nel frammento di codice seguente:  
   
- [!code-vb[VbVbalrOOP#109](../../../../visual-basic/misc/codesnippet/visualbasic/VbVbalrOOP/OOP.vb#109)]  
+ [!code-vb[VbVbalrOOP#109](../../../../visual-basic/misc/codesnippet/VisualBasic/inheritance-basics_2.vb)]  
   
  Nell'elenco seguente sono indicate le limitazioni relative all'utilizzo di `MyBase`:  
   

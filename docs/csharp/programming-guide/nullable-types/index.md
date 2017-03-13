@@ -20,7 +20,7 @@ caps.handback.revision: 44
 # Tipi nullable (Guida per programmatori C#)
 I tipi nullable sono istanze della struttura <xref:System.Nullable%601?displayProperty=fullName>.  Un tipo nullable può rappresentare l'intervallo corretto di valori per il relativo tipo di valore sottostante, più un valore `null` aggiuntivo.  Ad esempio, a un oggetto `Nullable<Int32>`, che si legge "Nullable di Int32", può essere assegnato un qualsiasi valore compreso tra \-2147483648 e 2147483647 oppure il valore `null`.  A un oggetto `Nullable<bool>` è possibile assegnare i valori [true](../../../csharp/language-reference/keywords/true.md), [false](../../../csharp/language-reference/keywords/false.md) o [null](../../../csharp/language-reference/keywords/null.md).  La possibilità di assegnare `null` a tipi numerici e booleani è particolarmente utile quanto si utilizzano database e altri tipi di dati contenenti elementi a cui non sarebbe possibile assegnare un valore.  Ad esempio, in un campo Boolean di un database è possibile archiviare il valore `true` o `false` oppure è possibile lasciarlo indefinito.  
   
- [!code-cs[csProgGuideTypes#3](../../../csharp/programming-guide/nullable-types/codesnippet/csharp/index_1.cs)]  
+ [!code-cs[csProgGuideTypes#3](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_1.cs)]  
   
  Nell'esempio viene visualizzato l'output:  
   
