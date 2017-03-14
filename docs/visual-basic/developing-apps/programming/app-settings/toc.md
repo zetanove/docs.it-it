@@ -1,0 +1,5 @@
+# [Accesso alle impostazioni dell'applicazione](accessing-application-settings.md)
+## [Procedura: Creare griglie di proprietà per impostazioni utente](how-to-create-property-grids-for-user-settings.md)
+## [Procedura: Mantenere le impostazioni dell'utente](how-to-persist-user-settings.md)
+## [Procedura: Modificare le impostazioni dell'utente](how-to-change-user-settings.md)
+## [Procedura: Leggere le impostazioni dell'applicazione](how-to-read-application-settings.md)
