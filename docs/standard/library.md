@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 translationtype: Human Translation
-ms.sourcegitcommit: eb98c703946d8be0757288ae9e00aab87b32e407
-ms.openlocfilehash: 939c6dd0621e3b1121aca52915b04bf51af1d1ef
+ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
+ms.openlocfilehash: f681b1663d1a2e6c2fbbd1cc415290d26bbbe429
+ms.lasthandoff: 03/07/2017
 
 ---
 
@@ -110,7 +111,7 @@ La libreria .NET Standard è compatibile con un sottoinsieme di profili delle li
 
 La compatibilità delle librerie di classi portabili basate sul profilo è fornita dal pacchetto NuGet [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility). Questa dipendenza è obbligatoria quando si fa riferimento a pacchetti NuGet contenenti librerie di classi portabili basate sul profilo.
 
-Le librerie di classi portabili basate sul profilo inserite in pacchetti come `netstandard` sono più semplici da utilizzare rispetto alle librerie di classi portabili basate sul profilo inserite in pacchetti nel file project.json. `netstandard` è un pacchetto compatibile con gli utenti esistenti.
+Le librerie di classi portabili basate sul profilo inserite in un pacchetto come `netstandard` sono più semplici da usare rispetto alle librerie di classi portabili basate sul profilo in pacchetti generici. `netstandard` è un pacchetto compatibile con gli utenti esistenti.
 
 Di seguito è riportato il set di profili delle librerie di classi portabili compatibili con .NET Standard: 
 
@@ -131,9 +132,4 @@ Di seguito è riportato il set di profili delle librerie di classi portabili com
 ## <a name="targeting-net-standard-library"></a>Definizione della libreria .NET Standard come destinazione
 
 È possibile [creare librerie .NET Standard](../core/tutorials/libraries.md) usando una combinazione del framework `netstandard` e del metapacchetto NETStandard.Library. Sono disponibili esempi della [definizione della libreria .NET Standard come destinazione con strumenti .NET Core](../core/packages.md).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
 translationtype: Human Translation
-ms.sourcegitcommit: a8019c9fc25ef458aa555743e61cd83a3beb11ed
-ms.openlocfilehash: b5c088da7d1155414a08995ae0d72154af891190
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: e374b924bf78d62227cb9607641130dfd9128186
+ms.openlocfilehash: 6383a0ce253f6f7000ed8a81b29b9e1d58914acc
+ms.lasthandoff: 03/06/2017
 
 ---
 
@@ -42,57 +42,14 @@ Per l'elenco completo dei [sistemi operativi supportati](https://github.com/dotn
 > <em>Solo per i computer Windows 7 e Windows Server 2008:</em><br>
 > Verificare che l'installazione di Windows sia aggiornata e includa l'hotfix [KB2533623](https://support.microsoft.com/en-us/kb/2533623) installato tramite Windows Update.
 
-## <a name="prerequisites-with-visual-studio"></a>Prerequisiti con Visual Studio
+## <a name="prerequisites-with-visual-studio-2017"></a>Prerequisiti con Visual Studio 2017
 
-È possibile usare l'editor preferito per sviluppare applicazioni .NET Core con .NET Core SDK. Per sviluppare applicazioni .NET Core in Windows con Visual Studio, tuttavia, è possibile usare due versioni:
+È possibile usare l'editor preferito per sviluppare applicazioni .NET Core con .NET Core SDK. Se si vuole tuttavia sviluppare applicazioni .NET Core in Windows in un ambiente di sviluppo integrato, è possibile usare [Visual Studio 2017](#visual-studio-2017).
 
-* [Visual Studio 2015](#visual-studio-2015)
-* [Visual Studio 2017 RC](#visual-studio-2017-rc)
+Per usare Visual Studio 2017 per lo sviluppo di app .NET Core, è necessario avere l'ultima versione di Visual Studio installata con il set di strumenti di **sviluppo multipiattaforma di .NET Core** selezionato (nella sezione **Altri set di strumenti**).
 
-I progetti creati con Visual Studio 2015 saranno basati su project.json per impostazione predefinita, mentre i progetti creati con Visual Studio 2017 RC saranno sempre basati su MSBuild. Per altre informazioni sulle modifiche del formato, vedere [High-level overview of changes](./preview3/tools/layering.md) (Panoramica generale delle modifiche).
+Ci sono edizioni diverse di Visual Studio 2017. Per iniziare, è possibile scaricare [Visual Studio Community 2017](https://www.visualstudio.com/vs/visual-studio-2017/#downloadvs) gratuitamente.  Per altre informazioni sul processo di installazione di Visual Studio, vedere [Install Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio) (Installare Visual Studio 2017).
 
-### <a name="visual-studio-2015"></a>Visual Studio 2015
-
-Per usare Visual Studio 2015 per sviluppare app .NET Core, è necessario:
-
-* Visual Studio 2015 Update 3.3 o versione successiva.
-
-   Esistono [edizioni](https://www.visualstudio.com/vs/compare) diverse di Visual Studio 2015. Per iniziare, è possibile scaricare [Visual Studio Community 2015](https://www.visualstudio.com/downloads/) gratuitamente. 
-
-   Per verificare di avere a disposizione [Visual Studio 2015 Update 3.3](https://msdn.microsoft.com/library/mt752379.aspx), seguire questa procedura:
-
-   * Dal menu **Guida** scegliere **About Microsoft Visual Studio** (Informazioni su Microsoft Visual Studio).
-   * Nella finestra di dialogo **About Microsoft Visual Studio** (Informazioni su Microsoft Visual Studio) il numero di versione sarà 14.0.25424.00 o successivo e dovrebbe includere la dicitura "Update 3".
-   * Se non si dispone di tale aggiornamento, è necessario scaricare e installare [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
-   * Se si dispone dell'aggiornamento ma il numero di versione è precedente a 14.0.25424.00, è necessario scaricare e installare [Visual Studio 2015 Update 3.3](https://msdn.microsoft.com/library/mt752379.aspx).
-
-   Per altre informazioni sulle modifiche apportate in Update 3, vedere le [note sulla versione di .NET Core](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
-
-* Estensione NuGet Manager per Visual Studio
-
-   NuGet è lo strumento di gestione dei pacchetti per la piattaforma di sviluppo Microsoft, incluso .NET Core. Per creare app .NET Core, è necessario [NuGet 3.5.0-beta](https://dist.nuget.org/visualstudio-2015-vsix/v3.5.0-beta/NuGet.Tools.vsix) o versione successiva.
-
-* .NET Core Tooling Preview 2
-
-   Scaricare e installare [.NET Core 1.0.1 - VS 2015 Tooling Preview 2][sdk]. 
-
-   Il pacchetto .NET Core Tooling installa .NET Core, i modelli di progetto e altri strumenti per Visual Studio 2015.
-
-   > [!NOTE]
-   > Attualmente non è possibile scaricare un programma di installazione offline per [.NET Core 1.0.1 - VS 2015 Tooling Preview 2][sdk]. È invece necessario scaricare il [normale programma di avvio automatico][sdk] ed eseguirlo con un'opzione della riga di comando, ad esempio `/layout c:\path`, per ottenere un layout offline. Questo layout può essere usato in seguito come programma di installazione offline. È sufficiente avviare il file eseguibile dal percorso locale. Si noti che, poiché si tratta di un layout completo, questa procedura scarica tutti i pacchetti per tutte le lingue supportate, per un totale di circa 1 GB.
-
-### <a name="visual-studio-2017-rc"></a>Visual Studio 2017 RC
-
-Se si vuole usare Visual Studio 2017 RC per lo sviluppo di app .NET Core, è necessario disporre dell'ultima versione di Visual Studio RC installata, con il carico di lavoro ".NET Core e Docker (Preview)" selezionato. 
-
-Esistono edizioni diverse di Visual Studio 2017 RC. Per iniziare, è possibile scaricare gratuitamente [Visual Studio Community 2017 RC](https://www.visualstudio.com/vs/visual-studio-2017-rc/#downloadvs).  Per altre informazioni sul processo di installazione di Visual Studio, vedere [Install Visual Studio 2017 RC](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio) (Installare Visual Studio 2017 RC).
-
-Per verificare di avere a disposizione la versione più recente di Visual Studio 2017 RC, seguire questa procedura:
-
-* Dal menu **Guida** scegliere **About Microsoft Visual Studio** (Informazioni su Microsoft Visual Studio).
-* Nella finestra di dialogo **Informazioni su Microsoft Visual Studio** il numero di versione deve essere 15.0.26020.0 o successivo.
-
-Per altre informazioni sulle modifiche apportate in Visual Studio 2017 RC, vedere le [note sulla versione](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes).
+Nelle [note sulla versione ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes) è possibile trovare altre informazioni sulle modifiche in Visual Studio 2017.
 
 [sdk]: https://go.microsoft.com/fwlink/?LinkID=827546
-
