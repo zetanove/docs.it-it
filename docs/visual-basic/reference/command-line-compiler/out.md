@@ -1,60 +1,74 @@
 ---
-title: "/out (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/out compiler option [Visual Basic]"
-  - "-out compiler option [Visual Basic]"
-  - "out compiler option [Visual Basic]"
+title: /out (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- /out compiler option [Visual Basic]
+- -out compiler option [Visual Basic]
+- out compiler option [Visual Basic]
 ms.assetid: 9f148c15-0909-4cb8-a2db-777f8a8b45ae
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 17
----
-# /out (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e3eb7af88869e4fb161a12914c02f2bc2f41864e
+ms.lasthandoff: 03/13/2017
 
+---
+# <a name="out-visual-basic"></a>/out (Visual Basic)
 Specifica il nome del file di output.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 /out:filename  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
   
-|||  
-|-|-|  
 |Termine|Definizione|  
-|`filename`|Obbligatorio.  Nome del file di output creato dal compilatore.  Se il nome file contiene uno spazio, racchiudere il nome tra virgolette \(" "\).|  
+|---|---|  
+|`filename`|Obbligatorio. Il nome del file di output, che il compilatore crea. Se il nome del file contiene uno spazio, racchiudere il nome tra virgolette ("").|  
   
-## Note  
- Specificare il nome completo e l'estensione del file che si desidera creare.  Se non viene specificato alcun nome, il nome del file EXE corrisponderà a quello del file di codice sorgente contenente la routine `Sub Main`, mentre il nome del file DLL corrisponderà a quello del primo file di codice sorgente.  
+## <a name="remarks"></a>Note  
+ Specificare il nome completo e l'estensione del file da creare. In caso contrario, il file .exe lo stesso nome file del codice sorgente che contiene il `Sub Main` procedure e il file DLL prende il nome del primo file di codice sorgente.  
   
- Se si specifica un nome file senza una'estensione exe o dll, l'estensione viene aggiunta automaticamente dal compilatore, in base al valore specificato per l'opzione del compilatore `/target`.  
+ Se si specifica un nome di file senza estensione .exe o. dll, il compilatore aggiunge automaticamente l'estensione, a seconda del valore specificato per il `/target` l'opzione del compilatore.  
   
-||  
-|-|  
-|Per impostare \/out nell'ambiente di sviluppo integrato di Visual Studio|  
-|1.  Selezionare un progetto in **Esplora soluzioni**.  Scegliere **Proprietà** dal menu **Progetto**.  Per ulteriori informazioni, vedere [Introduction to the Project Designer](http://msdn.microsoft.com/it-it/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Fare clic sulla scheda **Applicazione**.<br />3.  Modificare il valore della casella **Nome assembly**.|  
+|Per impostare /out nell'ambiente di sviluppo integrato di Visual Studio|  
+|---|  
+|1.  Selezionare un progetto in **Esplora soluzioni**. Nel **progetto** menu, fare clic su **proprietà**. Per altre informazioni, vedere [Introduzione a Creazione progetti](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Fare clic sulla scheda **Applicazione** .<br />3.  Modificare il valore di **nome Assembly** casella.|  
   
-## Esempio  
- Il codice che segue compila `T2.vb` e crea il file di output `T2.exe`.  
+## <a name="example"></a>Esempio  
+ Il codice seguente Compila `T2.vb` e crea file di output `T2.exe`.  
   
 ```  
 vbc t2.vb /out:t3.exe  
 ```  
   
-## Vedere anche  
- [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [\/target](../../../visual-basic/reference/command-line-compiler/target.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Compilatore della riga di comando di Visual Basic](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
  [Esempi di righe di comando di compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

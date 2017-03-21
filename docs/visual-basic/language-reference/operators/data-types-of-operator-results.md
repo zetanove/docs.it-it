@@ -1,116 +1,132 @@
 ---
-title: "Data Types of Operator Results (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "data types [Visual Basic], operator result data types"
-  - "result data types"
-  - "operator result data types"
-  - "operators [Visual Basic], data types"
-  - "data types [Visual Basic], ranges"
-  - "operators [Visual Basic], result data types"
+title: Tipi di dati dei risultati degli operatori (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- data types [Visual Basic], operator result data types
+- result data types
+- operator result data types
+- operators [Visual Basic], data types
+- data types [Visual Basic], ranges
+- operators [Visual Basic], result data types
 ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 27
----
-# Data Types of Operator Results (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 577be6330cb76da436470c383841a717dd6e3200
+ms.lasthandoff: 03/13/2017
 
-In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] il tipo di dati del risultato di un'operazione viene determinato in base ai tipi di dati degli operandi.  In alcuni casi, può trattarsi di un tipo di dati con un intervallo di valori maggiore rispetto a quello di uno dei due operandi.  
+---
+# <a name="data-types-of-operator-results-visual-basic"></a>Tipi di dati dei risultati degli operatori (Visual Basic)
+[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]Determina il tipo di dati del risultato di un'operazione in base ai tipi di dati degli operandi. In alcuni casi potrebbe trattarsi di un tipo di dati con un intervallo maggiore rispetto a quello degli operandi.  
   
-## Intervalli dei tipi di dati  
- Di seguito sono riportati gli intervalli dei principali tipi di dati in ordine crescente:  
+## <a name="data-type-ranges"></a>Intervalli dei tipi di dati  
+ Gli intervalli dei tipi di dati rilevanti, in ordine dal più piccolo al più grande, sono i seguenti:  
   
--   [Boolean](../../../visual-basic/language-reference/data-types/boolean-data-type.md) \- Due valori possibili.  
+-   [Booleano](../../../visual-basic/language-reference/data-types/boolean-data-type.md) , due valori possibili  
   
--   [SByte](../../../visual-basic/language-reference/data-types/sbyte-data-type.md), [Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md) \- 256 valori integrali possibili.  
+-   [SByte](../../../visual-basic/language-reference/data-types/sbyte-data-type.md), [Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md) -256 valori integrali possibili  
   
--   [Short](../../../visual-basic/language-reference/data-types/short-data-type.md), [UShort](../../../visual-basic/language-reference/data-types/ushort-data-type.md) \- 65.536 valori integrali possibili \(compresi tra 6,5...E\+4\).  
+-   [Breve](../../../visual-basic/language-reference/data-types/short-data-type.md), [UShort](../../../visual-basic/language-reference/data-types/ushort-data-type.md) , pari a 65.536 (6,5... E + 4) valori integrali possibili  
   
--   [Integer](../../../visual-basic/language-reference/data-types/integer-data-type.md), [UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md) \- 4.294.967.296 valori integrali possibili \(compresi tra 4,2...E\+9\).  
+-   [Intero](../../../visual-basic/language-reference/data-types/integer-data-type.md), [UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md) -4.294.967.296 (4,2... E + 9) valori integrali possibili  
   
--   [Long](../../../visual-basic/language-reference/data-types/long-data-type.md), [ULong](../../../visual-basic/language-reference/data-types/ulong-data-type.md) \- 18.446.744.073.709.551.615 valori integrali possibili \(compresi tra 1,8...E\+19\).  
+-   [Long](../../../visual-basic/language-reference/data-types/long-data-type.md), [ULong](../../../visual-basic/language-reference/data-types/ulong-data-type.md) -18.446.744.073.709.551.615 (1,8... E + 19) valori integrali possibili  
   
--   [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md) \- Valori integrali possibili compresi tra 1,5...E\+29; intervallo massimo compreso tra 7,9...E\+28 \(valore assoluto\).  
+-   [Decimale](../../../visual-basic/language-reference/data-types/decimal-data-type.md) -1,5... E + 29 valori integrali possibili massimi intervallo 7,9... E + 28 (valore assoluto)  
   
--   [Single](../../../visual-basic/language-reference/data-types/single-data-type.md) \- Intervallo massimo compreso tra 3,4...E\+38 \(valore assoluto\).  
+-   [Singolo](../../../visual-basic/language-reference/data-types/single-data-type.md) : intervallo massimo 3.4... E + 38 (valore assoluto)  
   
--   [Double](../../../visual-basic/language-reference/data-types/double-data-type.md) \- Intervallo massimo compreso tra 1,7...E\+308 \(valore assoluto\).  
+-   [Double](../../../visual-basic/language-reference/data-types/double-data-type.md) : intervallo massimo 1.7... E + 308 (valore assoluto)  
   
- Per ulteriori informazioni sui tipi di dati di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)], vedere [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md).  
+ Per ulteriori informazioni su [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] tipi di dati, vedere [tipi di dati](../../../visual-basic/language-reference/data-types/data-type-summary.md).  
   
- Se un operando restituisce [Nothing](../../../visual-basic/language-reference/nothing.md), gli operatori aritmetici di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] considerano tale valore uguale a zero.  
+ Se un operando restituisce [nulla](../../../visual-basic/language-reference/nothing.md), [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] gli operatori aritmetici considerano come zero.  
   
-## Operazioni aritmetiche su valori decimali  
- Si noti che il tipo di dati [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md) non è né a virgola mobile, né integer.  
+## <a name="decimal-arithmetic"></a>Operazioni aritmetiche decimali  
+ Si noti che il [decimale](../../../visual-basic/language-reference/data-types/decimal-data-type.md) tipo di dati non è né a virgola mobile né integer.  
   
- Se un operando di un'operazione `+`, `–`, `*`, `/` o `Mod` è di tipo  `Decimal` e l'altro non è di tipo `Single` o `Double`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] converte l'altro operando verso il tipo di dati più grande `Decimal`.  L'operazione viene eseguita con il tipo `Decimal` e il tipo di dati del risultato è `Decimal`.  
+ Se degli operandi di un `+`, `–`, `*`, `/`, o `Mod` operazione `Decimal` e l'altro non lo è `Single` o `Double`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] amplia l'altro operando a `Decimal`. L'operazione viene eseguita in `Decimal`, e il tipo di dati del risultato è `Decimal`.  
   
-## Operazioni aritmetiche su valori a virgola mobile  
- In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] la maggior parte delle operazioni aritmetiche su valori a virgola mobile viene eseguita con [Double](../../../visual-basic/language-reference/data-types/double-data-type.md), il tipo di dati più efficiente per tali operazioni.  Tuttavia, se un operando è di tipo [Single](../../../visual-basic/language-reference/data-types/single-data-type.md) e l'altro non è di tipo `Double`, in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] l'operazione viene eseguita con il tipo `Single`.  Ciascun operando viene convertito, se necessario, verso il corrispondente tipo di dati più grande prima dell'operazione. Il risultato ottenuto corrisponde a tale tipo di dati.  
+## <a name="floating-point-arithmetic"></a>Aritmetica a virgola mobile  
+ [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]esegue la maggior parte delle operazioni aritmetiche a virgola mobile in [Double](../../../visual-basic/language-reference/data-types/double-data-type.md), tipo di dati più efficiente per tali operazioni. Tuttavia, se uno degli operandi è [singolo](../../../visual-basic/language-reference/data-types/single-data-type.md) e l'altro non lo è `Double`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] esegue l'operazione in `Single`. Il risultato è tale tipo di dati viene ampliato ogni operando in base alle esigenze per il tipo di dati appropriato prima dell'operazione.  
   
-### Operatori \/ e ^  
- L'operatore `/` viene definito solo per i tipi di dati [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md), [Single](../../../visual-basic/language-reference/data-types/single-data-type.md) e [Double](../../../visual-basic/language-reference/data-types/double-data-type.md).  In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] ciascun operando viene convertito nel corrispondente tipo di dati più grande, secondo necessità, prima di eseguire l'operazione. Il risultato dell'operazione corrisponderà a tale tipo di dati.  
+### <a name="-and--operators"></a>/ e ^ operatori  
+ Il `/` è definito solo per il [decimale](../../../visual-basic/language-reference/data-types/decimal-data-type.md), [singolo](../../../visual-basic/language-reference/data-types/single-data-type.md), e [Double](../../../visual-basic/language-reference/data-types/double-data-type.md) tipi di dati. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]Converte ogni operando in base alle esigenze per il tipo di dati appropriato prima dell'operazione e il risultato è il tipo di dati.  
   
- Nella tabella riportata di seguito vengono illustrati i tipi di dati del risultato per l'operatore `/`.  La tabella è simmetrica. Per una specifica combinazione di tipi di dati degli operandi, infatti, il tipo di dati del risultato sarà lo stesso indipendentemente dall'ordine degli operandi stessi.  
+ Nella tabella seguente viene illustrato il risultato tipi di dati per il `/` operatore. Si noti che questa tabella è simmetrica. per una determinata combinazione di tipi di dati di operando, il tipo di dati del risultato è lo stesso indipendentemente dall'ordine degli operandi.  
   
 ||||||  
-|-|-|-|-|-|  
-||`Decimal`|`Single`|`Double`|Qualsiasi tipo di Integer|  
+|---|---|---|---|---|  
+||`Decimal`|`Single`|`Double`|Qualsiasi tipo integer|  
 |`Decimal`|Decimal|Single|Double|Decimal|  
 |`Single`|Single|Single|Double|Single|  
 |`Double`|Double|Double|Double|Double|  
-|Qualsiasi tipo di Integer|Decimal|Single|Double|Double|  
+|Qualsiasi tipo integer|Decimal|Single|Double|Double|  
   
- L'operatore `^` viene definito solo per il tipo di dati `Double`.  [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] converte, se necessario, ciascun operando nel tipo `Double` prima dell'operazione e il tipo di dati del risultato sarà sempre `Double`.  
+ Il `^` è definito solo per il `Double` tipo di dati. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]Converte ogni operando in base alle esigenze per `Double` prima dell'operazione e il risultato di tipo di dati è sempre `Double`.  
   
-## Operazioni aritmetiche su valori integer  
- Il tipo di dati del risultato di un'operazione su valori integer varia in base ai tipi di dati degli operandi.  In generale, in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] vengono utilizzati i seguenti criteri per determinare il tipo di dati del risultato:  
+## <a name="integer-arithmetic"></a>Operazioni aritmetiche su valori integer  
+ Il tipo di dati del risultato di un'operazione integer dipende da tipi di dati degli operandi. In generale, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] vengono utilizzati i criteri seguenti per determinare il tipo di dati del risultato:  
   
--   Se per entrambi gli operandi di un operatore binario è definito lo stesso tipo di dati, il risultato sarà dello stesso tipo.  Un'eccezione è costituita dal tipo `Boolean`, che viene forzatamente convertito in `Short`.  
+-   Se entrambi gli operandi dell'operatore binario con lo stesso tipo di dati, il risultato è il tipo di dati. Un'eccezione è `Boolean`, che è obbligato a `Short`.  
   
--   Se per l'operazione vengono utilizzati un operando con segno e uno senza segno, il risultato sarà un tipo con segno con un intervallo di grandezza pari almeno a quello di uno dei due operandi.  
+-   Se fa parte di un operando senza segno con segno, il risultato è un tipo con segno con almeno un più ampio un intervallo come degli operandi.  
   
--   Negli altri casi, il risultato è in genere costituito dal più grande dei due tipi di dati degli operandi.  
+-   In caso contrario, il risultato è in genere il più elevato tra due tipi di dati degli operandi.  
   
- Si noti che il tipo di dati del risultato potrebbe essere diverso dal tipo di dati di uno dei due operandi.  
+ Notare che il tipo di dati del risultato potrebbe non essere lo stesso tipo di dati degli operandi.  
   
 > [!NOTE]
->  Il tipo di dati del risultato non sempre è sufficientemente grande da contenere tutti i possibili valori risultanti dall'operazione.  Se il valore è troppo grande per il tipo di dati del risultato, può verificarsi un'eccezione <xref:System.OverflowException>.  
+>  Il tipo di dati del risultato non è sempre sufficientemente grande da contenere tutti i possibili valori risultanti dall'operazione. Un <xref:System.OverflowException>eccezione può verificarsi se il valore è troppo grande per il tipo di dati del risultato.</xref:System.OverflowException>  
   
-### Operatori unari \+ e –  
- Nella tabella riportata di seguito vengono illustrati i tipi di dati del risultato per i due operatori unari `+` e `–`.  
+### <a name="unary--and--operators"></a>Unario + e -operatori  
+ Nella tabella seguente viene illustrato il risultato tipi di dati per i due operatori unari, `+` e `–`.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|Operatore unario `+`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
-|Operatore unario `–`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
+|Unario`+`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+|Unario`–`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
   
-### Operatori \<\< e \>\>  
- Nella tabella seguente vengono illustrati i tipi di dati risultanti per i due operatori di scorrimento bit, `<<` e `>>`.  In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] ogni operatore di scorrimento bit viene trattato come operatore unario sull'operando di sinistra \(lo schema di bit che deve essere fatto scorrere\).  
+### <a name="-and--operators"></a><\<e >> operatori  
+ Nella tabella seguente viene illustrato il risultato tipi di dati per i due operatori di spostamento di bit, `<<` e `>>`. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]ogni operatore di spostamento di bit viene considerato come un operatore unario sul relativo operando di sinistra (lo schema di bit da spostare).  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`<<`, `>>`|Short|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
   
- Se l'operando di sinistra è di tipo `Decimal`, `Single`, `Double` o `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tenta di convertirlo nel tipo `Long` prima dell'operazione e il tipo di dati del risultato sarà `Long`.  L'operando di destra \(il numero di posizioni di bit da spostare\) deve essere di tipo `Integer` oppure di un tipo che viene convertito verso il tipo più grande `Integer`.  
+ Se l'operando sinistro è `Decimal`, `Single`, `Double`, o `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] tenta di convertirlo in `Long` prima dell'operazione e il risultato è di tipo di dati `Long`. L'operando di destra (il numero di posizioni di bit da spostare) deve essere `Integer` o un tipo convertibile in `Integer`.  
   
-### Operatori binari \+, –, \* e Mod  
- Nella tabella riportata di seguito vengono illustrati i tipi di dati del risultato per gli operatori binari `+` e `–`, nonché gli operatori `*` e `Mod`.  La tabella è simmetrica. Per una specifica combinazione di tipi di dati degli operandi, infatti, il tipo di dati del risultato sarà lo stesso indipendentemente dall'ordine degli operandi stessi.  
+### <a name="binary----and-mod-operators"></a>Binario +, -, * e gli operatori Mod  
+ Nella tabella seguente viene illustrato il risultato tipi di dati per il file binario `+` e `–` operatori e `*` e `Mod` operatori. Si noti che questa tabella è simmetrica. per una determinata combinazione di tipi di dati di operando, il tipo di dati del risultato è lo stesso indipendentemente dall'ordine degli operandi.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
 |`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Decimal|  
@@ -122,11 +138,11 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Decimal|  
 |`ULong`|Decimal|Decimal|ULong|Decimal|ULong|Decimal|ULong|Decimal|ULong|  
   
-### Operatore \\  
- Nella tabella riportata di seguito vengono illustrati i tipi di dati del risultato per l'operatore `\`.  La tabella è simmetrica. Per una specifica combinazione di tipi di dati degli operandi, infatti, il tipo di dati del risultato sarà lo stesso indipendentemente dall'ordine degli operandi stessi.  
+### <a name="-operator"></a>Operatore \  
+ Nella tabella seguente viene illustrato il risultato tipi di dati per il `\` operatore. Si noti che questa tabella è simmetrica. per una determinata combinazione di tipi di dati di operando, il tipo di dati del risultato è lo stesso indipendentemente dall'ordine degli operandi.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
 |`Boolean`|Short|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
 |`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
@@ -138,33 +154,33 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Long|  
 |`ULong`|Long|Long|ULong|Long|ULong|Long|ULong|Long|ULong|  
   
- Se uno dei due operandi dell'operatore `\` è di tipo [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md), [Single](../../../visual-basic/language-reference/data-types/single-data-type.md) o [Double](../../../visual-basic/language-reference/data-types/double-data-type.md), [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tenta di convertirlo nel tipo [Long](../../../visual-basic/language-reference/data-types/long-data-type.md) prima dell'operazione e il tipo di dati del risultato sarà `Long`.  
+ Se degli operandi di `\` operatore [decimale](../../../visual-basic/language-reference/data-types/decimal-data-type.md), [singolo](../../../visual-basic/language-reference/data-types/single-data-type.md), o [Double](../../../visual-basic/language-reference/data-types/double-data-type.md), [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] tenta di convertirlo in [lungo](../../../visual-basic/language-reference/data-types/long-data-type.md) prima dell'operazione e il risultato è di tipo di dati `Long`.  
   
-## Confronti relazionali e bit per bit  
- Il tipo di dati del risultato di un'operazione relazionale \(`=`, `<>`, `<`, `>`, `<=`, `>=`\) è sempre `Boolean`[Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md).  Lo stesso vale anche per le operazioni logiche \(`And`, `AndAlso`, `Not`, `Or`, `OrElse`, `Xor`\) su operandi di tipo `Boolean`.  
+## <a name="relational-and-bitwise-comparisons"></a>Confronti relazionali e bit per bit  
+ Il tipo di dati del risultato di un'operazione relazionale (`=`, `<>`, `<`, `>`, `<=`, `>=`) è sempre `Boolean` [tipo di dati Boolean](../../../visual-basic/language-reference/data-types/boolean-data-type.md). Lo stesso vale per le operazioni logiche (`And`, `AndAlso`, `Not`, `Or`, `OrElse`, `Xor`) su `Boolean` operandi.  
   
- Il tipo di dati del risultato di un'operazione logica bit per bit varia in base ai tipi di dati degli operandi.  Si noti che `AndAlso` e `OrElse` sono definiti solo per il tipo `Boolean` e [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] converte, se necessario, ciascun operando nel tipo `Boolean` prima che venga eseguita l'operazione.  
+ Il tipo di dati del risultato di un'operazione logica OR bit per bit dipende da tipi di dati degli operandi. Si noti che `AndAlso` e `OrElse` sono definiti solo per `Boolean`, e [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] converte ogni operando in base alle esigenze per `Boolean` prima di eseguire l'operazione.  
   
-### Operatori \=, \<\>, \<, \>, \<\= e \>\=  
- Se entrambi gli operandi sono di tipo `Boolean`, in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] `True` viene considerato inferiore a `False`.  Se un tipo numerico viene confrontato con un tipo `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tenta di convertire il tipo `String` in `Double` prima dell'operazione.  È possibile confrontare un operando `Char` o `Date` solo con un altro operando dello stesso tipo di dati.  Il tipo di dati del risultato sarà sempre `Boolean`.  
+### <a name="-----and--operators"></a>=, <>, \<, >, \<=, and >= Operators  
+ Se entrambi gli operandi sono `Boolean`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] considera `True` essere minore di `False`. Se un tipo numerico viene confrontato con un `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] tenta di convertire il `String` per `Double` prima dell'operazione. Oggetto `Char` o `Date` operando può essere confrontato solo con un altro operando dello stesso tipo di dati. Il tipo di dati del risultato è sempre `Boolean`.  
   
-### Operatore Not bit per bit  
- Nella tabella riportata di seguito vengono illustrati i tipi di dati del risultato per l'operatore `Not` bit per bit.  
-  
-|||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
-||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Not`|Boolean|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
-  
- Se l'operando è di tipo `Decimal`, `Single`, `Double` o `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tenta di convertirlo nel tipo `Long` prima dell'operazione e il tipo di dati del risultato sarà `Long`.  
-  
-### Operatori And, Or e Xor bit per bit  
- Nella tabella riportata di seguito vengono illustrati i tipi di dati del risultato per gli operatori `And`, `Or` e `Xor` bit per bit.  La tabella è simmetrica. Per una specifica combinazione di tipi di dati degli operandi, infatti, il tipo di dati del risultato sarà lo stesso indipendentemente dall'ordine degli operandi stessi.  
+### <a name="bitwise-not-operator"></a>Bit per bit Not (operatore)  
+ Nella tabella seguente viene illustrato il risultato tipi di dati per il bit per bit `Not` operatore.  
   
 |||||||||||  
-|-|-|-|-|-|-|-|-|-|-|  
+|---|---|---|---|---|---|---|---|---|---|  
 ||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
-|`Boolean`|Boolean|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
+|`Not`|Booleano|SByte|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
+  
+ Se l'operando è `Decimal`, `Single`, `Double`, o `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] tenta di convertirlo in `Long` prima dell'operazione e il risultato è di tipo di dati `Long`.  
+  
+### <a name="bitwise-and-or-and-xor-operators"></a>Bit per bit e, o e gli operatori Xor  
+ Nella tabella seguente viene illustrato il risultato tipi di dati per il bit per bit `And`, `Or`, e `Xor` operatori. Si noti che questa tabella è simmetrica. per una determinata combinazione di tipi di dati di operando, il tipo di dati del risultato è lo stesso indipendentemente dall'ordine degli operandi.  
+  
+|||||||||||  
+|---|---|---|---|---|---|---|---|---|---|  
+||`Boolean`|`SByte`|`Byte`|`Short`|`UShort`|`Integer`|`UInteger`|`Long`|`ULong`|  
+|`Boolean`|Booleano|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
 |`SByte`|SByte|SByte|Short|Short|Integer|Integer|Long|Long|Long|  
 |`Byte`|Short|Short|Byte|Short|UShort|Integer|UInteger|Long|ULong|  
 |`Short`|Short|Short|Short|Short|Integer|Integer|Long|Long|Long|  
@@ -174,23 +190,23 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
 |`Long`|Long|Long|Long|Long|Long|Long|Long|Long|Long|  
 |`ULong`|Long|Long|ULong|Long|ULong|Long|ULong|Long|ULong|  
   
- Se un operando è di tipo `Decimal`, `Single`, `Double` o `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tenta di convertirlo nel tipo `Long` prima dell'operazione e il tipo di dati del risultato sarà lo stesso come se l'operando fosse stato in precedenza di tipo `Long`.  
+ Se un operando è `Decimal`, `Single`, `Double`, o `String`, [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] tenta di convertirlo in `Long` prima dell'operazione e i dati del risultato è lo stesso come se l'operando è già `Long`.  
   
-## Operatori vari  
- L'operatore `&` viene definito solo per concatenazione di operandi `String`.  [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] converte, se necessario, ciascun operando nel tipo `String` prima dell'operazione e il tipo di dati del risultato sarà sempre `String`.  Per gli scopi dell'operatore `&`, tutte le conversioni nel tipo `String` vengono considerate conversioni verso un tipo di dati più grande, anche se l'istruzione `Option Strict` è impostata su `On`.  
+## <a name="miscellaneous-operators"></a>Operatori vari  
+ Il `&` è definito solo per la concatenazione di `String` operandi. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]Converte ogni operando in base alle esigenze per `String` prima dell'operazione e il risultato di tipo di dati è sempre `String`. Per quanto riguarda la `&` operatore, tutte le conversioni in `String` sono considerate di ampliamento, anche se `Option Strict` è `On`.  
   
- Per gli operatori `Is` e `IsNot` è necessario che entrambi gli operandi siano di un tipo di riferimento.  Per l'espressione `TypeOf`...`Is` è necessario che il primo operando sia di un tipo di riferimento e il secondo sia il nome di un tipo di dati.  In tutti questi casi, il tipo di dati del risultato sarà `Boolean`.  
+ Il `Is` e `IsNot` operatori richiedono entrambi gli operandi di un tipo di riferimento. The `TypeOf`... `Is` espressione richiede il primo operando di un tipo di riferimento e il secondo operando per corrispondere al nome di un tipo di dati. In tutti questi casi, i dati del risultato è `Boolean`.  
   
- L'operatore `Like` viene definito solo per criteri di ricerca di operandi `String`.  [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tenta, se necessario, di convertire ciascun operando nel tipo `String` prima dell'operazione.  Il tipo di dati del risultato sarà sempre `Boolean`.  
+ Il `Like` è definito solo per i criteri di ricerca di `String` operandi. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]tenta di convertire ogni operando in base alle esigenze per `String` prima dell'operazione. Il tipo di dati del risultato è sempre `Boolean`.  
   
-## Vedere anche  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)   
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
- [Operators](../../../visual-basic/language-reference/operators/index.md)   
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## <a name="see-also"></a>Vedere anche  
+ [Tipi di dati](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
+ [Operatori ed espressioni](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)   
+ [Operatori aritmetici in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)   
+ [Operatori di confronto in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)   
+ [Operatori](../../../visual-basic/language-reference/operators/index.md)   
+ [Precedenza tra operatori in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)   
+ [Elencata degli operatori per funzionalità](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
+ [Aritmetici (operatori)](../../../visual-basic/language-reference/operators/arithmetic-operators.md)   
+ [Operatori di confronto](../../../visual-basic/language-reference/operators/comparison-operators.md)   
+ [Istruzione Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)

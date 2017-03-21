@@ -1,94 +1,109 @@
 ---
-title: "How Culture Affects Strings in Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "locale, effect on strings"
-  - "strings [Visual Basic], locale dependence"
+title: Influenza delle impostazioni cultura sulle stringhe in Visual Basic | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- locale, effect on strings
+- strings [Visual Basic], locale dependence
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 20
----
-# How Culture Affects Strings in Visual Basic
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 63228a40897b29d0324be73ca1a17bcb19af2a16
+ms.lasthandoff: 03/13/2017
 
-In questa pagina della Guida viene illustrato come in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] le informazioni relative alle impostazioni cultura vengono utilizzate per eseguire conversioni e confronti tra le stringhe.  
+---
+# <a name="how-culture-affects-strings-in-visual-basic"></a>Influenza delle impostazioni cultura sulle stringhe in Visual Basic
+Questa pagina della Guida viene illustrato come [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] utilizza informazioni per eseguire le conversioni di stringhe e i confronti delle impostazioni cultura.  
   
-## Quando utilizzare le stringhe specifiche delle impostazioni cultura  
- Generalmente è necessario utilizzare stringhe specifiche delle impostazioni cultura per tutti i dati presentati e letti dagli utenti e utilizzare le stringhe indipendenti dalle impostazioni cultura per i dati interni dell'applicazione.  
+## <a name="when-to-use-culture-specific-strings"></a>Quando utilizzare le stringhe specifiche delle impostazioni cultura  
+ In genere, è necessario utilizzare stringhe specifiche delle impostazioni cultura per tutti i dati presentati e letti dagli utenti e utilizzare stringhe di impostazioni cultura invarianti per dati interni dell'applicazione.  
   
- Se ad esempio all'utente viene richiesto di immettere una data sotto forma di stringa, l'utente dovrebbe formattare le stringhe in base alle proprie impostazioni cultura e l'applicazione dovrebbe convertire la stringa in modo appropriato.  Se l'applicazione presenta quindi quella data nell'interfaccia utente, dovrebbe presentarla nelle impostazioni cultura dell'utente.  
+ Ad esempio, se l'applicazione richiede agli utenti di immettere una data come stringa, deve aspettarsi che gli utenti per formattare le stringhe secondo le proprie impostazioni cultura e l'applicazione dovrebbe convertire la stringa in modo appropriato. Se l'applicazione presenta quindi tale data nella relativa interfaccia utente, dovrebbe presentarla nelle impostazioni cultura dell'utente.  
   
- Tuttavia se l'applicazione carica la data in un server centrale, la stringa dovrebbe essere formattata in base a impostazioni cultura specifiche, per impedire di far confusione tra formati della data potenzialmente diversi.  
+ Tuttavia, se l'applicazione carica la data in un server centrale, dovrebbe essere formattata la stringa in base alle impostazioni cultura specifiche, per evitare confusione tra formati della data potenzialmente diversi.  
   
-## Funzioni dipendenti dalle impostazioni cultura  
- In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tutte le funzioni per la conversione delle stringhe \(ad eccezione delle funzioni `Str` e `Val`\) utilizzano le informazioni relative alle impostazioni cultura dell'applicazione per accertarsi che le conversioni e i confronti siano appropriati per la cultura dell'utente dell'applicazione.  
+## <a name="culture-sensitive-functions"></a>Funzioni dipendenti dalle impostazioni cultura  
+ Tutti i [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] funzioni di conversione di stringhe (tranne che per il `Str` e `Val` funzioni) utilizzare informazioni sulle impostazioni cultura dell'applicazione per assicurarsi che le conversioni e confronti siano appropriati per le impostazioni cultura dell'utente dell'applicazione.  
   
- La chiave per l'utilizzo corretto delle funzioni per la conversione delle stringhe nelle applicazioni eseguite sui computer con diverse impostazioni cultura consiste nel comprendere quali funzioni utilizzano impostazioni cultura specifiche e quali utilizzano le impostazioni cultura correnti.  Si noti che le impostazioni cultura dell'applicazione vengono, per impostazione predefinita, ereditate dalle impostazioni cultura del sistema operativo.  Per ulteriori informazioni, vedere <xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>, <xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Conversion.Hex%2A>, <xref:Microsoft.VisualBasic.Conversion.Oct%2A> e [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md).  
+ La chiave per l'utilizzo corretto delle funzioni di conversione di stringhe nelle applicazioni eseguite in computer con diverse impostazioni cultura consiste nel comprendere quali funzioni utilizzano impostazioni cultura specifiche, e che utilizzano le impostazioni cultura correnti. Si noti che le impostazioni dell'applicazione delle impostazioni cultura sono, per impostazione predefinita, ereditate dalle impostazioni cultura del sistema operativo. Per ulteriori informazioni, vedere <xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>, <xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Conversion.Hex%2A>, <xref:Microsoft.VisualBasic.Conversion.Oct%2A>, e [funzioni di conversione del tipo](../../../../visual-basic/language-reference/functions/type-conversion-functions.md).</xref:Microsoft.VisualBasic.Conversion.Oct%2A> </xref:Microsoft.VisualBasic.Conversion.Hex%2A> </xref:Microsoft.VisualBasic.Strings.Format%2A> </xref:Microsoft.VisualBasic.Strings.ChrW%2A> </xref:Microsoft.VisualBasic.Strings.Chr%2A> </xref:Microsoft.VisualBasic.Strings.AscW%2A> </xref:Microsoft.VisualBasic.Strings.Asc%2A>  
   
- Le funzioni `Str` \(conversione di numeri in stringhe\) e `Val` \(conversione di stringhe in numeri\) non utilizzano le informazioni relative alle impostazioni cultura dell'applicazione per la conversione tra stringhe e numeri.  Riconoscono invece solo il punto \(.\) come separatore decimale valido.  Gli equivalenti sensibili alle impostazioni cultura di queste funzioni sono:  
+ Il `Str` (converte i numeri in stringhe) e `Val` funzioni (conversione di stringhe in numeri) non utilizzano informazioni relative alla lingua dell'applicazione durante la conversione tra stringhe e numeri. Riconoscono invece solo il punto (.) come separatore decimale valido. I sensibili analoghi di queste funzioni sono:  
   
--   **Conversioni che utilizzano le impostazioni cultura correnti.** Le funzioni `CStr` e `Format` consentono di convertire un numero in una stringa, mentre le funzioni `CDbl` e `CInt` consentono di convertire una stringa in un numero.  
+-   **Conversioni che utilizzano le impostazioni cultura correnti.** Il `CStr` e `Format` funzioni convertono una stringa, un numero e il `CDbl` e `CInt` funzioni convertono una stringa in un numero.  
   
--   **Conversioni che utilizzano impostazioni cultura specifiche.** In ogni oggetto numero esiste un metodo `ToString(IFormatProvider)` per la conversione di numeri in stringhe e un metodo `Parse(String, IFormatProvider)` per la conversione di stringhe in numeri.  Nel tipo `Double` ad esempio sono presenti i metodi <xref:System.Double.ToString%28System.IFormatProvider%29> e <xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29>.  
+-   **Conversioni che utilizzano una lingua specifica.** Ogni oggetto number presenta un `ToString(IFormatProvider)` metodo che converte un numero in una stringa e un `Parse(String, IFormatProvider)` metodo che converte una stringa in un numero. Ad esempio, il `Double` tipo fornisce la <xref:System.Double.ToString%28System.IFormatProvider%29>e <xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29>metodi.</xref:System.Double.Parse%28System.String%2CSystem.IFormatProvider%29> </xref:System.Double.ToString%28System.IFormatProvider%29>  
   
- Per ulteriori informazioni, vedere <xref:Microsoft.VisualBasic.Conversion.Str%2A> e <xref:Microsoft.VisualBasic.Conversion.Val%2A>.  
+ Per ulteriori informazioni, vedere <xref:Microsoft.VisualBasic.Conversion.Str%2A>e <xref:Microsoft.VisualBasic.Conversion.Val%2A>.</xref:Microsoft.VisualBasic.Conversion.Val%2A> </xref:Microsoft.VisualBasic.Conversion.Str%2A>  
   
-## Utilizzo di impostazioni cultura specifiche  
- Si supponga di voler sviluppare un'applicazione per l'invio di una data \(formattata come stringa\) in un servizio Web.  In questo caso, è necessario che l'applicazione utilizzi impostazioni cultura specifiche per la conversione delle stringhe.  A titolo esplicativo considerare il risultato provocato dal metodo <xref:System.DateTime.ToString> della data. Se l'applicazione utilizza quel metodo per la formattazione della data 4 luglio 2005, restituirà "7\/4\/2005" 12:00:00 AM" quando viene eseguita con le impostazioni cultura inglesi \(Stati Uniti\), ma restituisce "04.07.2005 00:00:00" quando viene eseguita con le impostazioni cultura tedesche \(de\-DE\).  
+## <a name="using-a-specific-culture"></a>Utilizzo di impostazioni cultura specifiche  
+ Si supponga che si sta sviluppando un'applicazione che invia una data (formattata come stringa) a un servizio Web. In questo caso, l'applicazione deve utilizzare una lingua specifica per la conversione di stringa. Per illustrare il motivo, considerare i risultati ottenuti utilizzando la data <xref:System.DateTime.ToString>metodo: se l'applicazione utilizza questo metodo per formattare la data 4 luglio 2005, viene restituito "7/4/2005 12:00:00 AM" viene eseguito con le impostazioni cultura inglese Stati Uniti (en-US), ma restituisce "04.07.2005 00:00:00" viene eseguito con le impostazioni cultura tedesco (de-DE).</xref:System.DateTime.ToString>  
   
- Per eseguire una conversione delle stringhe in un formato specifico delle impostazioni cultura, è necessario utilizzare la classe `CultureInfo` incorporata nel [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)].  È possibile creare un oggetto `CultureInfo` nuovo per impostazioni cultura specifiche, passando il nome delle impostazioni cultura al costruttore <xref:System.Globalization.CultureInfo.%23ctor%2A>.  I nomi delle impostazioni cultura supportati sono elencati nella pagine della guida della classe <xref:System.Globalization.CultureInfo>.  
+ Quando è necessario eseguire una conversione di stringhe in un formato specifico delle impostazioni cultura, è necessario utilizzare il `CultureInfo` classe incorporato nel [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]. È possibile creare un nuovo `CultureInfo` oggetto per impostazioni cultura specifiche, passando il nome delle impostazioni cultura per il <xref:System.Globalization.CultureInfo.%23ctor%2A>costruttore.</xref:System.Globalization.CultureInfo.%23ctor%2A> I nomi delle impostazioni cultura supportati sono elencati nel <xref:System.Globalization.CultureInfo>pagina della Guida (classe).</xref:System.Globalization.CultureInfo>  
   
- In alternativa, è possibile ottenere un'istanza delle *impostazioni cultura invarianti* dalla proprietà <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>.  Le impostazioni cultura invarianti corrispondono alle impostazioni cultura inglesi, ma ci sono delle differenze.  Ad esempio, le impostazioni cultura invarianti utilizzano il formato a 24 ore anziché a 12 ore.  
+ In alternativa, è possibile ottenere un'istanza del *invariabile* dalla <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>proprietà.</xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> Le impostazioni cultura invarianti sono basata sulla lingua inglese, ma esistono alcune differenze. Le impostazioni cultura invarianti ad esempio, specificano un formato di 24 ore anziché in un formato 12 ore.  
   
- Per convertire una data nella stringa delle impostazioni cultura, passare l'oggetto <xref:System.Globalization.CultureInfo> al metodo <xref:System.DateTime.ToString%28System.IFormatProvider%29> dell'oggetto della data.  Nel codice che segue, ad esempio, viene visualizzato "07\/04\/2005 00:00:00", indipendentemente dalle impostazioni cultura dell'applicazione.  
+ Per convertire una data nella stringa di impostazioni cultura, passare il <xref:System.Globalization.CultureInfo>oggetto dell'oggetto data <xref:System.DateTime.ToString%28System.IFormatProvider%29>metodo.</xref:System.DateTime.ToString%28System.IFormatProvider%29> </xref:System.Globalization.CultureInfo> Ad esempio, il codice seguente visualizza "07/04/2005 00:00:00", indipendentemente dalle impostazioni cultura dell'applicazione.  
   
- [!code-vb[VbVbalrConcepts#1](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)]  
+ [!code-vb[VbVbalrConcepts n.&1;](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/codesnippet/VisualBasic/how-culture-affects-strings_1.vb)]  
   
 > [!NOTE]
->  I valori letterali di data vengono sempre interpretati in base alle impostazioni cultura inglesi.  
+>  Valori letterali data vengono sempre interpretati in base alle impostazioni cultura inglesi.  
   
-## Confronto di stringhe  
+## <a name="comparing-strings"></a>Confronto di stringhe  
  Esistono due situazioni importanti in cui sono necessari i confronti di stringhe:  
   
--   **Ordinamento dei dati da visualizzare.**  Utilizzare operazioni basate sulle impostazioni cultura correnti in modo da permettere l'ordinamento appropriato delle stringhe.  
+-   **Ordinamento dei dati da visualizzare all'utente.** Utilizzare le operazioni in base alla lingua corrente in modo ordinamento delle stringhe in modo appropriato.  
   
--   **Determinare la corrispondenza esatta di due stringhe interne all'applicazione \(generalmente per motivi di sicurezza\).** Utilizzare operazioni che non tengono conto delle impostazioni cultura correnti.  
+-   **Determinazione della corrispondenza esatta di due stringhe interne all'applicazione (in genere per motivi di sicurezza).** Utilizzare le operazioni che non tengono conto delle impostazioni cultura correnti.  
   
- È possibile eseguire entrambi i tipi di confronto con la funzione [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Strings.StrComp%2A>.  Specificare l'argomento `Compare` facoltativo per controllare il tipo di confronto: `Text` per la maggior parte di input e output, `Binary` per la determinazione di corrispondenze esatte.  
+ È possibile eseguire entrambi i tipi di confronti con la [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] <xref:Microsoft.VisualBasic.Strings.StrComp%2A>funzione.</xref:Microsoft.VisualBasic.Strings.StrComp%2A> Specificare l'opzione facoltativa `Compare` argomento per controllare il tipo di confronto: `Text` per la maggior parte di input e output `Binary` per determinare le corrispondenze esatte.  
   
- La funzione `StrComp` restituisce un intero che indica la relazione tra le due stringhe confrontate in base ai criteri di ordinamento.  Un risultato di valore positivo indica che la prima stringa è maggiore della seconda.  Un risultato negativo indica che la prima stringa è minore, mentre zero indica l'eguaglianza delle stringhe.  
+ Il `StrComp` funzione restituisce un intero che indica la relazione tra le due stringhe confrontate in base ai criteri di ordinamento. Un valore positivo per il risultato indica che la prima stringa è maggiore della seconda stringa. Un risultato negativo indica la prima stringa è minore, mentre zero indica l'uguaglianza tra le stringhe.  
   
- [!code-vb[VbVbalrStrings#22](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
+ [!code-vb[VbVbalrStrings&#22;](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_2.vb)]  
   
- È possibile inoltre utilizzare il partner [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] della funzione `StrComp`, il metodo <xref:System.String.Compare%2A?displayProperty=fullName>.  Si tratta di un metodo della classe base stringa su cui avviene un overload statico.  Nell'esempio seguente è illustrato l'utilizzo di questo metodo:  
+ È inoltre possibile utilizzare il [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] i partner di `StrComp` funzione, il <xref:System.String.Compare%2A?displayProperty=fullName>(metodo).</xref:System.String.Compare%2A?displayProperty=fullName> Questo è un metodo statico, overload della classe string di base. Nell'esempio seguente viene illustrato come viene utilizzato questo metodo:  
   
- [!code-vb[VbVbalrStrings#48](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
+ [!code-vb[VbVbalrStrings n.&48;](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-culture-affects-strings_3.vb)]  
   
- Per un maggiore controllo sul modo in cui vengono eseguiti i confronti, è possibile utilizzare overload aggiuntivi del metodo <xref:System.String.Compare%2A>.  Con il metodo <xref:System.String.Compare%2A?displayProperty=fullName>, è possibile utilizzare l'argomento `comparisonType` per specificare il tipo di confronto da utilizzare.  
+ Per un maggiore controllo sul modo in cui vengono eseguiti i confronti, è possibile utilizzare altri overload di <xref:System.String.Compare%2A>(metodo).</xref:System.String.Compare%2A> Con il <xref:System.String.Compare%2A?displayProperty=fullName>(metodo), è possibile utilizzare il `comparisonType` argomento per specificare il tipo di confronto da utilizzare.</xref:System.String.Compare%2A?displayProperty=fullName>  
   
-||||  
-|-|-|-|  
-|Valore per l'argomento `comparisonType`|Tipo di confronto|Casi di utilizzo|  
-|`Ordinal`|Confronto basato sui byte dei componenti della stringa.|Utilizzare questo valore per il confronto tra: identificatori con distinzione tra maiuscole e minuscole, impostazioni relative alla sicurezza o altri identificatori non linguistici in cui i byte devono corrispondere in maniera esatta.|  
-|`OrdinalIgnoreCase`|Confronto basato sui byte dei componenti della stringa.<br /><br /> `OrdinalIgnoreCase` utilizza le informazioni delle impostazioni cultura invarianti per determinare se due caratteri si differenziano solo per l'uso di maiuscole e minuscole.|Utilizzare questo valore per il confronto tra: identificatori senza distinzione tra maiuscole e minuscole, impostazioni relative alla sicurezza e dati memorizzati in Windows.|  
-|`CurrentCulture` oppure `CurrentCultureIgnoreCase`|Confronto in base all'interpretazione delle stringhe nelle impostazioni cultura correnti.|Utilizzare questi valori per il confronto tra: dati visualizzati per l'utente, la maggior parte dell'input dell'utente e altri dati che necessitano di un'interpretazione linguistica.|  
-|`InvariantCulture` oppure `InvariantCultureIgnoreCase`|Confronto in base all'interpretazione delle stringhe nelle impostazioni cultura invarianti.<br /><br /> Questa è diversa da `Ordinal` e `OrdinalIgnoreCase`, in quanto le impostazioni cultura invarianti trattano i caratteri al di fuori dell'intervallo accettato come caratteri invarianti equivalenti.|Utilizzare questi valori solo durante il confronto di dati persistenti o la visualizzazione di dati rilevanti da un punto di vista linguistico che richiedono un tipo di ordinamento fisso.|  
+|Il valore per `comparisonType` argomento|Tipo di confronto|Quando utilizzarlo|  
+|---|---|---|  
+|`Ordinal`|Confronto in base ai byte componente stringhe.|Utilizzare questo valore quando si confrontano: gli identificatori tra maiuscole e minuscole, le impostazioni relative alla sicurezza o altri identificatori non linguistici in cui i byte devono corrispondere esattamente.|  
+|`OrdinalIgnoreCase`|Confronto in base ai byte componente stringhe.<br /><br /> `OrdinalIgnoreCase`utilizza le informazioni di impostazioni cultura invarianti per determinare se due caratteri si differenziano solo in lettere maiuscole/minuscole.|Utilizzare questo valore quando si confrontano: gli identificatori tra maiuscole e minuscole, le impostazioni relative alla sicurezza e dati archiviati in Windows.|  
+|`CurrentCulture` o `CurrentCultureIgnoreCase`|Confronto in base all'interpretazione delle stringhe nelle impostazioni cultura correnti.|Utilizzare questi valori quando si confrontano: i dati visualizzati all'utente, la maggior parte dell'input dell'utente e altri dati che richiedono interpretazione linguistica.|  
+|`InvariantCulture` o `InvariantCultureIgnoreCase`|Confronto in base all'interpretazione delle stringhe nelle impostazioni cultura invarianti.<br /><br /> Questo è diverso da quello di `Ordinal` e `OrdinalIgnoreCase`, in quanto le impostazioni cultura invarianti trattano i caratteri di fuori dell'intervallo accettato come caratteri invarianti equivalenti.|Utilizzare questi valori solo durante il confronto dei dati persistenti o la visualizzazione dei dati linguisticamente rilevanti che richiede un ordinamento fisso.|  
   
-### Considerazioni sulla sicurezza  
- Se l'applicazione prende decisioni di sicurezza in base al risultato di un confronto o un'operazione basata sul risultato di una modifica, l'operazione dovrebbe utilizzare il metodo <xref:System.String.Compare%2A?displayProperty=fullName> e passare `Ordinal` o `OrdinalIgnoreCase` per l'argomento `comparisonType`.  
+### <a name="security-considerations"></a>Considerazioni sulla sicurezza  
+ Se l'applicazione prende decisioni di protezione in base al risultato di un'operazione di modifica di maiuscole o confronto, quindi l'operazione deve utilizzare il <xref:System.String.Compare%2A?displayProperty=fullName>metodo e passare `Ordinal` o `OrdinalIgnoreCase` per il `comparisonType` argomento.</xref:System.String.Compare%2A?displayProperty=fullName>  
   
-## Vedere anche  
- <xref:System.Globalization.CultureInfo>   
- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+## <a name="see-also"></a>Vedere anche  
+ <xref:System.Globalization.CultureInfo></xref:System.Globalization.CultureInfo>   
+ [Introduzione alle stringhe in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
+ [Funzioni di conversione del tipo](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

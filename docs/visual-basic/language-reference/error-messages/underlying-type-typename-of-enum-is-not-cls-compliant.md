@@ -1,55 +1,71 @@
 ---
-title: "Underlying type &lt;typename&gt; of Enum is not CLS-compliant | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vbc40032"
-  - "bc40032"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC40032"
+title: "Tipo sottostante &lt;typename&gt; di Enum non è conforme a CLS | Documenti di Microsoft"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vbc40032
+- bc40032
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC40032
 ms.assetid: 32bf1949-fd73-456c-a323-bf1ffe1320ed
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 8
----
-# Underlying type &lt;typename&gt; of Enum is not CLS-compliant
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 51f9c520922260f6d38cf170f46f9c4d88ed4028
+ms.lasthandoff: 03/13/2017
 
-Il tipo di dati specificato per questa enumerazione non fa parte di CLS \([Indipendenza del linguaggio e componenti indipendenti dal linguaggio](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md)\).  Non si tratta di un errore all'interno del componente, in quanto [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] e [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] supportano questo tipo di dati.  Tuttavia è probabile che un altro componente scritto in codice strettamente conforme a CLS non supporti questo tipo di dati.  È probabile che tale componente non sia in grado di interagire correttamente con il componente.  
+---
+# <a name="underlying-type-lttypenamegt-of-enum-is-not-cls-compliant"></a>Tipo sottostante &lt;typename&gt; di Enum non è conforme a CLS
+Il tipo di dati specificato per questa enumerazione non è in parte il [indipendenza del linguaggio e componenti indipendenti dal linguaggio](https://msdn.microsoft.com/library/12a7a7h3) (CLS). Non si tratta di un errore all'interno del componente, poiché il [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] e [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] supporta questo tipo di dati. Tuttavia, un altro componente scritto in codice strettamente conforme a CLS potrebbe non supportare questo tipo di dati. Tale componente potrebbe non essere in grado di interagire correttamente con il componente.  
   
- I seguenti tipi di dati [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] non sono conformi a CLS:  
+ I tipi di dati di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] seguenti non sono compatibili con CLS:  
   
--   [SByte Data Type](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)  
+-   [Tipo di dati SByte](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)  
   
--   [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
+-   [Tipo di dati UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
   
--   [ULong Data Type](../../../visual-basic/language-reference/data-types/ulong-data-type.md)  
+-   [Tipo di dati ULong](../../../visual-basic/language-reference/data-types/ulong-data-type.md)  
   
--   [UShort Data Type](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
+-   [Tipo di dati UShort](../../../visual-basic/language-reference/data-types/ushort-data-type.md)  
   
- Per impostazione predefinita, si tratta di un messaggio di avviso.  Per ulteriori informazioni su come nascondere gli avvisi o considerarli come errori, vedere [Configurazione degli avvisi in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ Per impostazione predefinita, si tratta di un messaggio di avviso. Per ulteriori informazioni su come nascondere gli avvisi o considerarli come errori, vedere [configurazione degli avvisi in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **ID errore:** BC40032  
   
-### Per correggere l'errore  
+## <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Se per il componente si prevede l'interazione solo con altri componenti [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] o non si interfaccia con nessun altro componente, non è necessario modificare nulla.  
+-   Se il componente interagisce solo con altri [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] componenti o non si interfaccia con altri componenti, non occorre apportare alcuna modifica.  
   
--   Se si prevede l'interazione con un componente non scritto per [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)], è probabile che sia possibile determinare, tramite reflection o dalla documentazione, se supporta questo tipo di dati.  In tal caso non è necessario modificare nulla.  
+-   Se si prevede l'interazione con un componente non scritto per il [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], potrebbe essere in grado di determinare, tramite reflection o dalla documentazione, se supporta questo tipo di dati. In questo caso, non occorre apportare alcuna modifica.  
   
--   Se si prevede l'interazione con un componente che non supporta questo tipo di dati, è necessario sostituirlo con il tipo più conforme a CLS.  Al posto di `UInteger` ad esempio potrebbe essere possibile utilizzare `Integer` se non è necessario l'intervallo di valore al di sopra di 2.147.483.647.  Se è necessario l'intervallo esteso, è possibile sostituire `UInteger` con `Long`.  
+-   Se si prevede l'interazione con un componente che non supporta questo tipo di dati, è necessario sostituirlo con il tipo più conforme a CLS. Al posto di `UInteger` ad esempio può essere possibile usare `Integer` se non è necessario l'intervallo di valore al di sopra di 2.147.483.647. Se è necessario l'intervallo esteso, è possibile sostituire `UInteger` con `Long`.  
   
--   Se si prevede l'interazione con oggetti COM o di automazione, tenere presente che altri tipi presentano un'ampiezza di dati diversi da [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)].  `uint` , ad esempio, è spesso a 16 bit.  Se si stanno passando argomenti a 16 bit a tale componente, dichiararlo come `UShort` invece di `UInteger` nel codice [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] gestito.  
+-   Se si prevede l'interazione con gli oggetti COM o di automazione, tenere presente che alcuni tipi hanno un'ampiezza di dati diversa da [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]. Ad esempio, `uint` è spesso a 16 bit in altri ambienti. Se si passa un argomento a 16 bit a tale componente, dichiararla come `UShort` anziché `UInteger` in gestito [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] codice.  
   
-## Vedere anche  
- [Reflection](../Topic/Reflection%20\(C%23%20and%20Visual%20Basic\).md)   
- [Reflection](../Topic/Reflection%20in%20the%20.NET%20Framework.md)   
- [\<PAVE OVER\> Writing CLS\-Compliant Code](http://msdn.microsoft.com/it-it/4c705105-69a2-4e5e-b24e-0633bc32c7f3)
+## <a name="see-also"></a>Vedere anche  
+ [Reflection](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)   
+ [Reflection](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775)   
+ [\<PAVE su > la scrittura di codice conforme a CLS](http://msdn.microsoft.com/en-us/4c705105-69a2-4e5e-b24e-0633bc32c7f3)

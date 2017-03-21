@@ -1,72 +1,88 @@
 ---
-title: "Using Regular Expressions with the MaskedTextBox Control in Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "strings [Visual Basic], regular expressions"
-  - "strings [Visual Basic], masked edit"
+title: Utilizzo di espressioni regolari con il controllo MaskedTextBox in Visual Basic | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- strings [Visual Basic], regular expressions
+- strings [Visual Basic], masked edit
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 10
----
-# Using Regular Expressions with the MaskedTextBox Control in Visual Basic
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 15d8f131aa834321fcf7e8ca633929385c666e6a
+ms.lasthandoff: 03/13/2017
 
-In questo esempio viene illustrato come convertire espressioni regolari semplici da utilizzare con il controllo <xref:System.Windows.Forms.MaskedTextBox>.  
+---
+# <a name="using-regular-expressions-with-the-maskedtextbox-control-in-visual-basic"></a>Utilizzo di espressioni regolari con il controllo MaskedTextBox in Visual Basic
+In questo esempio viene illustrato come convertire espressioni regolari semplici da utilizzare con il <xref:System.Windows.Forms.MaskedTextBox>controllo.</xref:System.Windows.Forms.MaskedTextBox>  
   
-## Descrizione del linguaggio di definizione della maschera  
- Il linguaggio di definizione della maschera <xref:System.Windows.Forms.MaskedTextBox> standard è basato su quello utilizzato dal controllo `Masked Edit` in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 6.0 e dovrebbe essere noto agli utenti che eseguono la migrazione da questa piattaforma.  
+## <a name="description-of-the-masking-language"></a>Descrizione del linguaggio per la  
+ Lo standard <xref:System.Windows.Forms.MaskedTextBox>mascheramento language è basato su quello utilizzato per il `Masked Edit` del controllo [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 6.0 e dovrebbe essere noto agli utenti di eseguire la migrazione da questa piattaforma.</xref:System.Windows.Forms.MaskedTextBox>  
   
- La proprietà <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> del controllo <xref:System.Windows.Forms.MaskedTextBox> specifica la maschera di input da utilizzare.  È necessario che la maschera sia composta da una stringa di uno o più elementi di definizione della maschera inclusi nella seguente tabella.  
+ Il <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>di proprietà di <xref:System.Windows.Forms.MaskedTextBox>controllo specifica la maschera di input da utilizzare.</xref:System.Windows.Forms.MaskedTextBox> </xref:System.Windows.Forms.MaskedTextBox.Mask%2A> La maschera deve essere una stringa composta da uno o più elementi di maschera dalla tabella seguente.  
   
-|Elemento di definizione della maschera|Descrizione|Elemento di espressione regolare|  
-|--------------------------------------------|-----------------|--------------------------------------|  
-|0|Qualsiasi cifra tra 0 e 9.  Immissione obbligatoria.|\\d|  
-|9|Cifra o spazio.  Immissione facoltativa.|\[ \\d\]?|  
-|\#|Cifra o spazio.  Immissione facoltativa.  Se nella maschera questa posizione viene lasciata vuota, il rendering verrà eseguito come spazio.  Sono consentiti i segni più \(\+\) e meno \(\-\).|\[ \\d\+\-\]?|  
-|L|Carattere alfabetico ASCII.  Immissione obbligatoria.|\[a\-zA\-Z\]|  
-|?|Carattere alfabetico ASCII.  Immissione facoltativa.|\[a\-zA\-Z\]?|  
-|&|Character  Immissione obbligatoria.|\[\\p{Ll}\\p{Lu}\\p{Lt}\\p{Lm}\\p{Lo}\]|  
-|C|Character  Immissione facoltativa.|\[\\p{Ll}\\p{Lu}\\p{Lt}\\p{Lm}\\p{Lo}\]?|  
-|A|Alfanumerico.  Immissione facoltativa.|\\W|  
-|.|Segnaposto decimale appropriato per le impostazioni cultura.|Non disponibile.|  
-|,|Segnaposto delle migliaia appropriato per le impostazioni cultura.|Non disponibile.|  
-|:|Separatore dell'ora appropriato per le impostazioni cultura.|Non disponibile.|  
-|\/|Separatore della data appropriato per le impostazioni cultura.|Non disponibile.|  
-|$|Simbolo di valuta appropriato per le impostazioni cultura.|Non disponibile.|  
-|\<|Converte tutti i caratteri successivi in lettere minuscole.|Non disponibile.|  
-|\>|Converte tutti i caratteri successivi in lettere maiuscole.|Non disponibile.|  
-|&#124;|Annulla la precedente attivazione o disattivazione del tasto MAIUSC.|Non disponibile.|  
-|\\|Esegue l'escape di un carattere della maschera e lo trasforma in un valore letterale.    \\\\" è la sequenza di escape per una barra rovesciata.|\\|  
-|Tutti gli altri caratteri.|Valori letterali.  Tutti gli elementi che non appartengono alla definizione di maschera verranno visualizzati come tali nell'oggetto <xref:System.Windows.Forms.MaskedTextBox>.|Tutti gli altri caratteri.|  
+|Elemento|Descrizione|Elemento dell'espressione regolare|  
+|---------------------|-----------------|--------------------------------|  
+|0|Qualsiasi cifra singola compreso tra 0 e 9. Valore obbligatorio.|\d|  
+|9|Numero o spazio. Voce facoltativa.|[ \d]?|  
+|#|Numero o spazio. Voce facoltativa. Se questa posizione viene lasciata vuota nella maschera, verrà visualizzata come spazio. Segno più (+) e meno (-) sono consentiti i segni.|[ \d+-]?|  
+|L|Lettera ASCII. Valore obbligatorio.|[a-zA-Z]|  
+|?|Lettera ASCII. Voce facoltativa.|[a-zA-Z]?|  
+|&|Carattere. Valore obbligatorio.|[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo]}|  
+|C|Carattere. Voce facoltativa.|[\p{Ll}\p{Lu}\p{Lt}\p{Lm}\p{Lo}]?|  
+|A|Carattere alfanumerico. Voce facoltativa.|\W|  
+|.|Segnaposto decimale appropriato per la lingua.|Non disponibile.|  
+|,|Segnaposto appropriato per la lingua migliaia.|Non disponibile.|  
+|:|Separatore dell'ora appropriato per la lingua.|Non disponibile.|  
+|/|Separatore di data appropriato per la lingua.|Non disponibile.|  
+|$|Simbolo di valuta appropriato per la lingua.|Non disponibile.|  
+|\<|Converte tutti i caratteri che seguono in lettere minuscole.|Non disponibile.|  
+|>|Converte tutti i caratteri che seguono in lettere maiuscole.|Non disponibile.|  
+|&#124;|Annulla un turno precedente backup oppure spostare verso il basso.|Non disponibile.|  
+|\|Esegue l'escape di un carattere di maschera, trasformandolo in un valore letterale. "\\\\" è la sequenza di escape per una barra rovesciata.|\|  
+|Tutti gli altri caratteri.|Valori letterali. Tutti gli elementi di maschera non verranno visualizzati come tali all'interno di <xref:System.Windows.Forms.MaskedTextBox>.</xref:System.Windows.Forms.MaskedTextBox>|Tutti gli altri caratteri.|  
   
- I simboli dei decimali \(.\), delle migliaia \(,\), dell'ora \(:\), della data \(\/\) e della valuta \($\) vengono predefiniti in base alle impostazioni cultura dell'applicazione.  Per imporre la visualizzazione dei simboli di altre impostazioni cultura, è possibile utilizzare la proprietà <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A>.  
+ Decimale (.), migliaia (,), tempi (:), data (/) e predefinito di simboli di valuta ($) per i simboli, come definito dalle impostazioni cultura dell'applicazione. È possibile forzare la visualizzazione di simboli per un'altra lingua tramite il <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A>proprietà.</xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A>  
   
-## Espressioni regolari e maschere  
- Sebbene sia possibile utilizzare espressioni regolari e maschere per convalidare l'input dell'utente, le due operazioni non sono del tutto equivalenti.  Le espressioni regolari possono esprimere modelli più complessi rispetto alle maschere, ma queste ultime possono esprimere le stesse informazioni in modo più succinto e in formato più adeguato alla lingua.  
+## <a name="regular-expressions-and-masks"></a>Espressioni regolari e maschere  
+ Sebbene sia possibile utilizzare espressioni regolari e maschere per convalidare l'input dell'utente, non sono completamente equivalenti. Espressioni regolari possono esprimere modelli più complessi rispetto alle maschere, ma possono esprimere le stesse informazioni più conciso e in un formato alla lingua.  
   
- Nella seguente tabella vengono confrontate quattro espressioni regolari e le maschere equivalenti.  
+ Nella tabella seguente confronta quattro espressioni regolari e la maschera equivalente per ognuna.  
   
 |Espressione regolare|Maschera|Note|  
-|--------------------------|--------------|----------|  
-|`\d{2}/\d{2}/\d{4}`|`00/00/0000`|Il carattere `/` nella maschera è un separatore di data logico e verrà visualizzato dall'utente come separatore di data appropriato per le impostazioni cultura correnti dell'applicazione.|  
-|`\d{2}-[A-Z][a-z]{2}-\d{4}`|`00->L<LL-0000`|Data \(giorno, abbreviazione del mese, anno\) nel formato utilizzato negli Stati Uniti, in cui le tre lettere di abbreviazione del mese vengono visualizzate con l'iniziale maiuscola seguita da due minuscole.|  
-|`(\(\d{3}\)-)?  \d{3}-d{4}`|`(999)-000-0000`|Numero telefonico degli Stati Uniti, prefisso facoltativo.  Se l'utente non desidera immettere i caratteri facoltativi, può immettere spazi o posizionare il puntatore del mouse direttamente nella posizione della maschera rappresentata dal primo 0.|  
-|`$\d{6}.00`|`$999,999.00`|Valore della valuta compreso nell'intervallo tra 0 e 999999.  I caratteri della valuta, delle migliaia e dei decimali verranno sostituiti in fase di esecuzione dagli equivalenti specifici per le impostazioni cultura.|  
+|------------------------|----------|-----------|  
+|`\d{2}/\d{2}/\d{4}`|`00/00/0000`|Il `/` carattere nella maschera è un separatore di data logica e verrà visualizzato all'utente come separatore di data appropriato per impostazioni cultura correnti dell'applicazione.|  
+|`\d{2}-[A-Z][a-z]{2}-\d{4}`|`00->L<LL-0000`|Data in formato di Stati Uniti in cui viene visualizzata l'abbreviazione del mese di tre lettere con l'iniziale maiuscola seguita da due lettere minuscole (giorno, abbreviazione del mese e anno).|  
+|`(\(\d{3}\)-)?\d{3}-d{4}`|`(999)-000-0000`|Numero di telefono degli Stati Uniti, prefisso facoltativo. Se l'utente non desidera immettere i caratteri facoltativi, è possibile immettere spazi o posizionare il puntatore del mouse direttamente nella posizione della maschera rappresentata dal primo 0.|  
+|`$\d{6}.00`|`$999,999.00`|Un valore di valuta compreso tra 0 e 999999. La valuta, millesimi e caratteri decimali verranno sostituiti in fase di esecuzione con i relativi equivalenti specifici delle impostazioni cultura.|  
   
-## Vedere anche  
- <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>   
- <xref:System.Windows.Forms.MaskedTextBox>   
- [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)   
- [Controllo MaskedTextBox](../Topic/MaskedTextBox%20Control%20\(Windows%20Forms\).md)
+## <a name="see-also"></a>Vedere anche  
+ <xref:System.Windows.Forms.MaskedTextBox.Mask%2A></xref:System.Windows.Forms.MaskedTextBox.Mask%2A>   
+ <xref:System.Windows.Forms.MaskedTextBox></xref:System.Windows.Forms.MaskedTextBox>   
+ [Convalida delle stringhe in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)   
+ [MaskedTextBox (controllo)](http://msdn.microsoft.com/library/235d6121-027d-481d-8d59-4f6794d15d0c)

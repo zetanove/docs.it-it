@@ -1,38 +1,54 @@
 ---
-title: "Nested Control Structures (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, control flow"
-  - "control structures, nested"
-  - "conditional statements, nested"
-  - "statements [Visual Basic], control flow"
-  - "control flow, nested control statements"
-  - "structures, nested control"
-  - "nested control statements"
+title: Annidati strutture di controllo (Visual Basic) | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Visual Basic code, control flow
+- control structures, nested
+- conditional statements, nested
+- statements [Visual Basic], control flow
+- control flow, nested control statements
+- structures, nested control
+- nested control statements
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 20
----
-# Nested Control Structures (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 4afc0afc2ad63d03f2c4251640d3682b2b184504
+ms.lasthandoff: 03/13/2017
 
-È possibile inserire istruzioni di controllo all'interno di altre istruzioni di controllo, ad esempio un blocco `If...Then...Else` all'interno di un ciclo `For...Next`.  Un'istruzione di controllo inserita in un'altra istruzione di controllo è detta *annidata*.  
+---
+# <a name="nested-control-structures-visual-basic"></a>Strutture di controllo annidate (Visual Basic)
+È possibile inserire istruzioni di controllo all'interno di altre istruzioni di controllo, ad esempio un `If...Then...Else` blocco all'interno di un `For...Next` ciclo. Un'istruzione di controllo inserita in un'altra istruzione di controllo è detto *nidificate*.  
   
-## Livelli di annidamento  
- In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] le strutture di controllo possono essere annidate in un numero qualsiasi di livelli.  È pratica diffusa far rientrare il corpo di ogni struttura annidata per facilitarne la lettura.  Questa operazione viene eseguita automaticamente dall'editor dell'ambiente di sviluppo integrato \(IDE, Integrated Development Environment\).  
+## <a name="nesting-levels"></a>Livelli di annidamento  
+ In strutture di controllo [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] possono essere nidificate in un numero di livelli desiderato. È pratica comune per rendere più leggibile strutture annidate rientrare il corpo di ciascuna di esse. L'editor di sviluppo integrato (IDE) di ambiente esegue automaticamente questa.  
   
- Nell'esempio che segue viene utilizzata la routine `sumRows` per sommare gli elementi positivi di ogni riga della matrice.  
+ Nell'esempio seguente, la procedura `sumRows` sommare gli elementi positivi di ogni riga della matrice.  
   
 ```  
 Public Sub sumRows(ByVal a(,) As Double, ByRef r() As Double)  
@@ -48,15 +64,15 @@ Public Sub sumRows(ByVal a(,) As Double, ByRef r() As Double)
 End Sub  
 ```  
   
- Nell'esempio precedente la prima istruzione `Next` chiude il ciclo `For` interno mente l'ultima istruzione `Next` chiude il ciclo `For` esterno.  
+ Nell'esempio precedente, il primo `Next` istruzione chiude il `For` ciclo e l'ultimo `Next` istruzione chiude esterna `For` ciclo.  
   
- Analogamente, nelle istruzioni `If` annidate le istruzioni `End If` vengono applicate automaticamente all'istruzione `If` immediatamente precedente.  I cicli `Do` annidati hanno un funzionamento analogo in base al quale l'istruzione `Loop` più interna corrisponde all'istruzione `Do` più interna.  
+ Analogamente, nidificazione `If` istruzioni, il `End If` istruzioni vengono applicate automaticamente al più vicino prima `If` istruzione. Annidati `Do` cicli funzionano in modo simile, con più interna `Loop` corrispondente più interna `Do` istruzione.  
   
 > [!NOTE]
->  Per molte strutture di controllo quando si fa clic su una parola chiave, vengono evidenziate tutte le parole chiave nella struttura.  Ad esempio, quando si fa clic su `If` in una costruzione `If...Then...Else`, vengono evidenziate tutte le istanze di `If`, `Then`, `ElseIf`, `Else` e `End If` nella costruzione.  Per spostarsi alla parola chiave evidenziata successiva o precedente, premere CTRL\+MAIUSC\+FRECCIA GIÙ o CTRL\+MAIUSC\+FRECCIA SU.  
+>  Per molte strutture di controllo quando si fa clic su una parola chiave, vengono evidenziate tutte le parole chiave nella struttura. Ad esempio, quando fa clic su `If` in un `If...Then...Else` costruzione, tutte le istanze di `If`, `Then`, `ElseIf`, `Else`, e `End If` nella costruzione vengono evidenziati. Per passare alla parola chiave evidenziata successiva o precedente, premere CTRL + MAIUSC + freccia giù o CTRL + MAIUSC + freccia su.  
   
-## Annidamento di tipi diversi di strutture di controllo  
- È possibile annidare un tipo di struttura di controllo all'interno di un'altra.  Nell'esempio che segue vengono utilizzati un blocco `With` all'interno di un ciclo `For Each` e i blocchi `If` annidati all'interno del blocco `With`.  
+## <a name="nesting-different-kinds-of-control-structures"></a>Annidamento di tipi diversi di strutture di controllo  
+ È possibile annidare un tipo di struttura di controllo all'interno di un altro tipo. Nell'esempio seguente viene utilizzato un `With` blocco all'interno di un `For Each` ciclo e nidificati `If` blocchi all'interno di `With` blocco.  
   
 ```  
 For Each ctl As System.Windows.Forms.Control In Me.Controls  
@@ -73,16 +89,16 @@ For Each ctl As System.Windows.Forms.Control In Me.Controls
 Next ctl  
 ```  
   
-## Strutture di controllo sovrapposte  
- Non è possibile sovrapporre le strutture di controllo.  In altre parole, le strutture annidate devono essere contenute completamente nella successiva struttura più interna.  La seguente disposizione, ad esempio, non è valida in quanto il ciclo `For` termina prima del blocco `With` interno.  
+## <a name="overlapping-control-structures"></a>Strutture di controllo sovrapposte  
+ Non è possibile sovrapporre le strutture di controllo. Ciò significa che qualsiasi struttura annidata deve essere contenuta completamente nella successiva struttura più interna. Ad esempio, la disposizione seguente è valida perché il `For` ciclo termina prima del `With` termina.  
   
- ![Diagramma grafico di annidamento non valida](../../../../visual-basic/programming-guide/language-features/control-flow/media/nestexampleinvalid.png "NestExampleInvalid")  
-Annidamento non valido di strutture For e With  
+ ![Diagramma grafico di annidamento non valida](../../../../visual-basic/programming-guide/language-features/control-flow/media/nestexampleinvalid.gif "NestExampleInvalid")  
+Annidamento non valida di per e con strutture  
   
- Il compilatore di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] rileva le strutture di controllo sovrapposte e segnala un errore in fase di compilazione.  
+ Il [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compilatore rileva tale controllo sovrapposto strutture e segnala un errore in fase di compilazione.  
   
-## Vedere anche  
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)   
- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)   
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)
+## <a name="see-also"></a>Vedere anche  
+ [Flusso di controllo](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)   
+ [Strutture decisionali](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)   
+ [Cicli (strutture)](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)   
+ [Altre strutture di controllo](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)

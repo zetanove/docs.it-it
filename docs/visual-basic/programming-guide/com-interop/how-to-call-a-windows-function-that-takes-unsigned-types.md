@@ -1,49 +1,65 @@
 ---
-title: "How to: Call a Windows Function that Takes Unsigned Types (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Windows functions, calling"
-  - "unsigned data types"
-  - "UShort data type, using"
-  - "functions [Visual Basic], calling Windows functions"
-  - "ULong data type, using"
-  - "UInteger data type, using"
-  - "data types [Visual Basic], using"
-  - "unsigned types"
-  - "data types [Visual Basic], unsigned"
-  - "data types [Visual Basic], numeric"
-  - "unsigned types, using"
+title: 'Procedura: chiamare una funzione Windows che accetta tipi senza segno (Visual Basic) | Documenti di Microsoft'
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Windows functions, calling
+- unsigned data types
+- UShort data type, using
+- functions [Visual Basic], calling Windows functions
+- ULong data type, using
+- UInteger data type, using
+- data types [Visual Basic], using
+- unsigned types
+- data types [Visual Basic], unsigned
+- data types [Visual Basic], numeric
+- unsigned types, using
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 18
----
-# How to: Call a Windows Function that Takes Unsigned Types (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: fbff07f4923b0633a2bc9b4fd558d9d51f64370a
+ms.lasthandoff: 03/13/2017
 
-Se si utilizza una classe, un modulo o una struttura con membri di tipo integer senza segno, è possibile accedere a questi ultimi con [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  
+---
+# <a name="how-to-call-a-windows-function-that-takes-unsigned-types-visual-basic"></a>Procedura: chiamare una funzione Windows che accetta tipi senza segno (Visual Basic)
+Se si utilizza una classe, un modulo o una struttura che dispone di membri di tipi integer senza segno, è possibile accedere a questi membri con [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
-### Per chiamare una funzione Windows che accetta tipi senza segno  
+### <a name="to-call-a-windows-function-that-takes-an-unsigned-type"></a>Per chiamare una funzione Windows che accetta un tipo unsigned  
   
-1.  Utilizzare una [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md) per indicare a [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] la libreria che contiene la funzione in questione, il nome della funzione nella libreria specifica, la relativa sequenza di chiamata e la modalità di conversione delle stringhe in fase di chiamata della funzione.  
+1.  Utilizzare un [l'istruzione Declare](../../../visual-basic/language-reference/statements/declare-statement.md) per indicare [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] la libreria che contiene la funzione, che cos'è il nome in tale raccolta, che cos'è la sequenza di chiamata e come convertire le stringhe per la chiamata.  
   
-2.  Nell'istruzione `Declare` utilizzare come richiesto `UInteger`, `ULong`, `UShort` o `Byte` per ciascuno dei parametri con tipi senza segno.  
+2.  Nel `Declare` istruzione, utilizzare `UInteger`, `ULong`, `UShort`, o `Byte` come appropriato per ogni parametro con un tipo unsigned.  
   
-3.  Consultare la documentazione relativa alla funzione Windows chiamata per trovare i nomi e i valori delle costanti da essa utilizzati,  gran parte dei quali è definita nel file WinUser.h.  
+3.  Consultare la documentazione per la funzione di Windows che si sta chiamando per trovare i nomi e valori delle costanti utilizzate. Molte di queste sono definiti nel file winuser.  
   
-4.  Dichiarare le costanti necessarie nel codice.  Molte costanti Windows sono valori a 32 bit senza segno e devono essere dichiarate `As` `UInteger`.  
+4.  Dichiarare le costanti necessarie nel codice. Molte costanti Windows sono valori senza segno a 32 bit e devono essere dichiarate `As``UInteger`.  
   
-5.  Chiamare la funzione normalmente.  Nell'esempio che segue viene chiamata la funzione Windows `MessageBox`, che accetta un argomento integer senza segno.  
+5.  Chiamare la funzione nel modo consueto. Nell'esempio seguente viene chiamata la funzione Windows `MessageBox`, che accetta un argomento integer senza segno.  
   
     ```  
     Public Class windowsMessage  
@@ -68,7 +84,7 @@ Se si utilizza una classe, un modulo o una struttura con membri di tipo integer 
     End Class  
     ```  
   
-     È possibile verificare la funzione `messageThroughWindows` con il codice riportato di seguito.  
+     È possibile testare la funzione `messageThroughWindows` con il codice seguente.  
   
     ```  
     Public Sub consumeWindowsMessage()  
@@ -78,17 +94,17 @@ Se si utilizza una classe, un modulo o una struttura con membri di tipo integer 
     ```  
   
     > [!CAUTION]
-    >  I tipi di dati `UInteger`, `ULong`, `UShort` e `SByte` non fanno parte di CLS \([Indipendenza del linguaggio e componenti indipendenti dal linguaggio](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md)\). Pertanto, il codice compatibile con CLS non può utilizzare un componente che impiega questi tipi.  
+    >  Il `UInteger`, `ULong`, `UShort`, e `SByte` tipi di dati non sono in parte il [indipendenza del linguaggio e componenti indipendenti dal linguaggio](https://msdn.microsoft.com/library/12a7a7h3) (CLS), pertanto il codice conforme a CLS non può utilizzare un componente che li utilizza.  
   
     > [!IMPORTANT]
-    >  Una chiamata a codice non gestito, quale un'API \(Application Programming Interface\) Windows, lo espone a potenziali rischi di sicurezza.  
+    >  Effettua una chiamata a codice non gestito, ad esempio l'interfaccia di programmazione dell'applicazione di Windows (API), espone il codice a potenziali rischi di sicurezza.  
   
     > [!IMPORTANT]
-    >  Quando si chiama l'API Windows è necessaria l'autorizzazione di accesso al codice non gestito, che può influenzarne l'esecuzione in situazioni di attendibilità parziale.  Per ulteriori informazioni, vedere <xref:System.Security.Permissions.SecurityPermission> e [Code Access Permissions](http://msdn.microsoft.com/it-it/e5ae402f-6dda-4732-bbe8-77296630f675).  
+    >  Chiama l'API di Windows richiede l'autorizzazione per codice non gestito, che può influire sulla relativa esecuzione in situazioni di attendibilità parziale. Per ulteriori informazioni, vedere <xref:System.Security.Permissions.SecurityPermission>e [le autorizzazioni di accesso di codice](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).</xref:System.Security.Permissions.SecurityPermission>  
   
-## Vedere anche  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+## <a name="see-also"></a>Vedere anche  
+ [Tipi di dati](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
+ [Tipo di dati integer](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
+ [Tipo di dati UInteger](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)   
+ [Declare (istruzione)](../../../visual-basic/language-reference/statements/declare-statement.md)   
+ [Procedura dettagliata: Chiamata delle API di Windows](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

@@ -1,105 +1,121 @@
 ---
-title: "Structures and Classes (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "classes [Visual Basic], vs. structures"
-  - "structures"
-  - "classes [Visual Basic]"
-  - "structures, compared to classes"
-  - "structures, structure variables"
-  - "structure variables"
+title: Strutture e classi (Visual Basic) | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- classes [Visual Basic], vs. structures
+- structures
+- classes [Visual Basic]
+- structures, compared to classes
+- structures, structure variables
+- structure variables
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# Structures and Classes (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e7402ec0fcfc279470d39a4919d3b5ec8b5d9dff
+ms.lasthandoff: 03/13/2017
 
-In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] la sintassi per le strutture e le classi è stata unificata, di conseguenza entrambe le entità supportano in gran parte le stesse funzionalità.  Vi sono tuttavia alcune differenze rilevanti tra strutture e classi.  
+---
+# <a name="structures-and-classes-visual-basic"></a>Strutture e classi (Visual Basic)
+[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]Unisce la sintassi per le strutture e classi, con il risultato che entrambe le entità supportano la maggior parte delle stesse funzionalità. Tuttavia, esistono anche differenze importanti tra strutture e classi.  
   
- Le classi hanno il vantaggio di essere tipi di riferimento: il passaggio di un riferimento risulta più efficace del passaggio di una variabile di struttura con tutti i dati.  D'altra parte, le strutture non richiedono allocazione di memoria nell'heap globale.  
+ Presentano il vantaggio di essere tipi di riferimento, passando un riferimento è più efficiente passare una variabile di struttura con tutti i relativi dati. D'altra parte, le strutture non richiedono l'allocazione di memoria nell'heap globale.  
   
- Poiché non è possibile ereditare da una struttura, utilizzare le strutture solo per gli oggetti che non è necessario estendere.  Utilizzare le strutture quando l'oggetto che si desidera creare ricorre a un'istanza di piccole dimensioni e confrontare le caratteristiche delle prestazioni delle classi con quelle delle strutture.  
+ Poiché non è possibile ereditare da una struttura, utilizzare strutture solo per gli oggetti che non è necessario essere esteso. Utilizzare le strutture quando l'oggetto che si desidera creare ha una dimensione di un'istanza ridotta e prendere in considerazione le caratteristiche delle classi e strutture di prestazioni.  
   
-## Analogie  
- Le strutture e le classi sono analoghe per quanto riguarda i seguenti aspetti:  
+## <a name="similarities"></a>Analogie  
+ Classi e strutture sono simili per i seguenti aspetti:  
   
--   Entrambi sono tipi *contenitore* e contengono quindi altri tipi come membri.  
+-   Entrambi sono *contenitore* tipi, vale a dire che contengono altri tipi come membri.  
   
--   In entrambe sono presenti dei membri, che possono includere costruttori, metodi, proprietà, campi, costanti, enumerazioni, eventi e gestori eventi.  È importante tuttavia non confondere tali membri con gli *elementi* dichiarati di una struttura.  
+-   Entrambi sono membri, che possono includere costruttori, metodi, proprietà, campi, costanti, enumerazioni, eventi e gestori di eventi. Tuttavia, non confondere questi membri con il dichiarato *elementi* di una struttura.  
   
--   I membri di entrambe possono disporre di livelli di accesso personalizzati.  È possibile, ad esempio, dichiarare un membro `Public` e un altro `Private`.  
+-   I membri di entrambe possono avere livelli di accesso personalizzati. Ad esempio, è possibile dichiarare un membro `Public` e un altro `Private`.  
   
--   Entrambe sono in grado di implementare interfacce.  
+-   Entrambi possono implementare interfacce.  
   
--   Entrambe sono in grado di utilizzare costruttori condivisi, con o senza parametri.  
+-   Entrambe possono avere condivisi costruttori, con o senza parametri.  
   
--   Entrambe possono esporre una *proprietà predefinita*, purché essa accetti almeno un parametro.  
+-   Entrambe possono esporre un *predefiniti delle proprietà*, a condizione che accetti almeno un parametro.  
   
--   Entrambe possono dichiarare e generare eventi ed entrambe possono dichiarare delegati.  
+-   Entrambe possono dichiarare e generare eventi e sia possibile dichiarare i delegati.  
   
-## Differenze  
- Le strutture e le classi si differenziano per i seguenti aspetti:  
+## <a name="differences"></a>Differenze  
+ Classi e strutture sono diversi per le seguenti indicazioni:  
   
--   Le strutture sono *tipi di valore*, mentre le classi sono *tipi di riferimento*.  Una variabile di un tipo di struttura contiene i dati della struttura anziché un riferimento ai dati come avviene per un tipo di classe.  
+-   Le strutture sono *i tipi di valore*; le classi sono *tipi di riferimento*. Una variabile di un tipo di struttura contiene i dati della struttura, anziché contenente un riferimento a dati come un tipo di classe.  
   
--   Le strutture si avvalgono dell'allocazione dello stack, le classi dell'allocazione dell'heap.  
+-   Strutture di utilizzano l'allocazione dello stack; le classi utilizzano l'allocazione di heap.  
   
--   Per impostazione predefinita, tutti gli elementi di struttura sono `Public`, le variabili e le costanti di classe sono `Private` e gli altri membri di classe sono `Public`.  Tale comportamento relativo ai membri di classe garantisce la compatibilità con il sistema di impostazioni predefinite di Visual Basic 6.0.  
+-   Tutti gli elementi di struttura sono `Public` per impostazione predefinita; classe variabili e costanti sono `Private` per impostazione predefinita, mentre altri membri della classe sono `Public` per impostazione predefinita. Questo comportamento per i membri di classe fornisce la compatibilità con il sistema di Visual Basic 6.0 di valori predefiniti.  
   
--   Una struttura deve includere almeno una variabile non condivisa o un evento non condiviso e non personalizzato, mentre una classe può essere completamente vuota.  
+-   Una struttura deve contenere almeno uno non personalizzato non condiviso di variabile o condiviso, elemento di un evento; una classe può essere completamente vuota.  
   
--   A differenza dei membri di classe, gli elementi di struttura non possono essere dichiarati come `Protected`.  
+-   Elementi di struttura non possono essere dichiarati come `Protected`; i membri di classe possono.  
   
--   Una routine di struttura può gestire eventi solo se si tratta di una routine [Shared](../../../../visual-basic/language-reference/modifiers/shared.md) `Sub` e solo mediante l'[AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md). Qualsiasi routine di classe può gestire gli eventi utilizzando la parola chiave [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) o l'istruzione `AddHandler`.  Per ulteriori informazioni, vedere [Events](../../../../visual-basic/programming-guide/language-features/events/events.md).  
+-   Una routine di struttura può gestire eventi solo se è un [Shared](../../../../visual-basic/language-reference/modifiers/shared.md) `Sub` procedura e solo per mezzo di [AddHandler (istruzione)](../../../../visual-basic/language-reference/statements/addhandler-statement.md); qualsiasi routine di classe può gestire gli eventi utilizzando il [gestisce](../../../../visual-basic/language-reference/statements/handles-clause.md) (parola chiave) o `AddHandler` istruzione. Per ulteriori informazioni, vedere [eventi](../../../../visual-basic/programming-guide/language-features/events/index.md).  
   
--   Diversamente dalle dichiarazioni delle variabili di classe, nelle dichiarazioni delle variabili di struttura non è possibile specificare inizializzatori o dimensioni iniziali per le matrici.  
+-   Dichiarazioni di variabili di struttura non possono specificare inizializzatori o dimensioni iniziali per le matrici. dichiarazioni di variabili di classe possono.  
   
--   Le strutture sono in grado di ereditare implicitamente dalla classe <xref:System.ValueType?displayProperty=fullName>, ma non da altri tipi. Le classi sono in grado di ereditare da qualsiasi classe diversa da <xref:System.ValueType?displayProperty=fullName>.  
+-   Le strutture ereditano in modo implicito dalla <xref:System.ValueType?displayProperty=fullName>classe e non può ereditare da qualsiasi altro tipo; le classi possono ereditare da qualsiasi classe o una classe diversa da <xref:System.ValueType?displayProperty=fullName>.</xref:System.ValueType?displayProperty=fullName> </xref:System.ValueType?displayProperty=fullName>  
   
--   Le strutture non sono ereditabili, mentre le classi lo sono.  
+-   Strutture non sono ereditabili; le classi sono.  
   
--   Poiché le strutture non vengono mai terminate, Common Language Runtime \(CLR\) non chiama mai il metodo <xref:System.Object.Finalize%2A> per una struttura. Le classi vengono terminate dal Garbage Collector, che chiama <xref:System.Object.Finalize%2A> per una classe quando viene rilevato che non sono presenti riferimenti attivi.  
+-   Le strutture non vengono mai terminate, common language runtime (CLR) non chiama mai il <xref:System.Object.Finalize%2A>metodo in una struttura; le classi vengono terminate dal garbage collector (GC), che chiama <xref:System.Object.Finalize%2A>su una classe quando rilevato che non sono presenti riferimenti attivi.</xref:System.Object.Finalize%2A> </xref:System.Object.Finalize%2A>  
   
--   A differenza di una classe, una struttura non richiede un costruttore.  
+-   Una struttura non richiede un costruttore. esegue una classe.  
   
--   I costruttori non condivisi sono consentiti nelle strutture solo nel caso in cui accettino parametri. Tali costruttori sono consentiti nelle classi, con o senza parametri.  
+-   Strutture possono disporre di costruttori non condivisi solo se hanno parametri. le classi possono avere li con o senza parametri.  
   
- Ogni struttura dispone di un costruttore pubblico implicito senza parametri.  Tale costruttore consente di inizializzare tutti i dati della struttura sui rispettivi valori predefiniti.  Non è possibile ridefinire questa caratteristica.  
+ Ogni struttura dispone di un costruttore pubblico senza parametri. Questo costruttore inizializza gli elementi di dati della struttura sui valori predefiniti. È possibile ridefinire il problema.  
   
-## Istanze e variabili  
- Poiché le strutture sono tipi valore, ogni struttura disponibile è associata in modo permanente a un'istanza di struttura individuale.  Le classi sono invece tipi di riferimento e la variabile oggetto è in grado di fare riferimento a varie istanze di classe in momenti diversi.  Tale differenza influisce sull'utilizzo di classi e strutture nei modi seguenti:  
+## <a name="instances-and-variables"></a>Istanze e variabili  
+ Poiché le strutture sono tipi di valore, ogni variabile di struttura in modo permanente è associato a un'istanza di struttura individuale. Tuttavia, le classi sono tipi di riferimento e una variabile oggetto può fare riferimento a diverse istanze di classi in momenti diversi. Questa differenza influisce sull'utilizzo di strutture e classi nei modi seguenti:  
   
--   **Inizializzazione.** Una variabile di struttura include implicitamente un'inizializzazione degli elementi che utilizzano il costruttore senza parametri della struttura.  `Dim s As struct1` equivale quindi a `Dim s As struct1 = New struct1()`.  
+-   **Inizializzazione.** Una variabile di struttura include implicitamente un'inizializzazione degli elementi utilizzando il costruttore della struttura senza parametri. Di conseguenza, `Dim s As struct1` equivale a `Dim s As struct1 = New struct1()`.  
   
--   **Assegnazione di variabili.** Quando si assegna una variabile di struttura a un'altra o si passa un'istanza di struttura a un argomento di routine, i valori correnti di tutti gli elementi variabile vengono copiati nella nuova struttura.  Quando si assegna una variabile oggetto a un'altra o si passa una variabile oggetto a una routine, viene copiato solo il puntatore di riferimento.  
+-   **Assegnazione di variabili.** Quando si assegna una variabile di struttura a un altro, o passa un'istanza della struttura a un argomento di routine, i valori correnti di tutti gli elementi variabile vengono copiati nella nuova struttura. Quando si assegna una variabile oggetto a un altro o si passa una variabile oggetto a una routine, viene copiato solo il puntatore di riferimento.  
   
--   **Assegnazione di Nothing.** È possibile assegnare il valore [Nothing](../../../../visual-basic/language-reference/nothing.md) a una variabile di struttura, anche se l'istanza risulterà ancora associata alla variabile.  Sarà comunque possibile chiamarne i metodi e accedere ai relativi elementi dati, sebbene gli elementi variabile vengano reinizializzati in seguito all'assegnazione.  
+-   **Assegnare il valore Nothing.** È possibile assegnare il valore [nulla](../../../../visual-basic/language-reference/nothing.md) a una struttura variabile, ma l'istanza continua a essere associato alla variabile. È comunque possibile chiamarne i metodi e accedere ai relativi elementi di dati, anche se gli elementi variabile vengano reinizializzati dall'assegnazione.  
   
-     Se invece si imposta una variabile oggetto su `Nothing`, si dissocia tale variabile da qualunque istanza di classe e non sarà possibile accedere ad alcun membro mediante la variabile fino a quando non verrà assegnata un'altra istanza a tale variabile.  
+     Al contrario, se si imposta una variabile oggetto su `Nothing`, si dissocia tale variabile da qualsiasi istanza della classe e non può accedere ad alcun membro tramite la variabile finché non verrà assegnato un'altra istanza.  
   
--   **Istanze multiple.** È possibile che a una variabile oggetto siano associate istanze di classe differenti in diversi momenti e che più variabili oggetto facciano riferimento alla stessa istanza di classe contemporaneamente.  Le modifiche apportate ai valori dei membri di classe influiscono su tali membri quando vi si accede mediante un'altra variabile che punta alla stessa istanza.  
+-   **Più istanze.** Una variabile oggetto può disporre di istanze di classe diversi in momenti diversi, e diverse variabili di oggetto possono fare riferimento alla stessa istanza di classe nello stesso momento. Le modifiche apportate ai valori dei membri della classe influiscono su tali membri quando si accede tramite un'altra variabile che punta alla stessa istanza.  
   
-     Gli elementi di struttura, tuttavia, sono isolati all'interno della relativa istanza.  Le modifiche apportate ai valori di tali membri non vengono riflesse in altre variabili di struttura, né in altre istanze della stessa dichiarazione `Structure`.  
+     Elementi della struttura, tuttavia, sono isolati all'interno della relativa istanza. In base ai valori non vengono riflesse in altre variabili di struttura, anche in altre istanze dello stesso `Structure` dichiarazione.  
   
--   **Uguaglianza.** È necessario eseguire il test di uguaglianza di due strutture elemento per elemento.  Per confrontare due variabili oggetto utilizzare il metodo <xref:System.Object.Equals%2A>.  <xref:System.Object.Equals%2A> indica se le due variabili puntano alla stessa istanza.  
+-   **Uguaglianza.** Test di uguaglianza di due strutture deve essere eseguito con un elemento per elemento test. Due variabili di oggetto possono essere confrontate utilizzando il <xref:System.Object.Equals%2A>(metodo).</xref:System.Object.Equals%2A> <xref:System.Object.Equals%2A>indica se le due variabili puntano alla stessa istanza.</xref:System.Object.Equals%2A>  
   
-## Vedere anche  
- [Riepilogo dei tipi di dati](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)   
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
- [Structures and Other Programming Elements](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)   
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+## <a name="see-also"></a>Vedere anche  
+ [Tipi di dati](../../../../visual-basic/programming-guide/language-features/data-types/index.md)   
+ [Tipi di dati compositi](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)   
+ [Tipi di valore e tipi di riferimento](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)   
+ [Strutture](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
+ [Risoluzione dei tipi di dati](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)   
+ [Strutture e altri elementi di programmazione](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)   
+ [Oggetti e classi](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

@@ -1,49 +1,66 @@
 ---
-title: "Esempi di righe di comando di compilazione (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "riga di comando, compilatori"
-  - "compilazione, riga di comando"
-  - "riga di comando (compilatori)"
-  - "compilazione di codice sorgente, da riga di comando"
-  - "Visual Basic (compilatore), righe di comando di esempio"
+title: Esempio di righe di comando di compilazione (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- command line, compilers
+- compilation, command-line
+- command-line compilers
+- compiling source code, from command line
+- Visual Basic compiler, sample command lines
 ms.assetid: 5bfbb487-5f47-4267-969a-39dfb917beeb
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 14
----
-# Esempi di righe di comando di compilazione (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 918787b3377f2e5a636a6b098046ac2f455efcdd
+ms.lasthandoff: 03/13/2017
 
-In alternativa alla compilazione dei programmi [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] da [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs-md.md)], è possibile compilare dalla riga di comando per generare file eseguibili \(exe\) o di libreria a collegamento dinamico \(dll\).  
+---
+# <a name="sample-compilation-command-lines-visual-basic"></a>Esempi di righe di comando di compilazione (Visual Basic)
+In alternativa alla compilazione [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] programmi dall'interno [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)], è possibile compilare dalla riga di comando per generare file di libreria a collegamento dinamico (DLL) o eseguibili (.exe).  
   
- Il compilatore da riga di comando di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] supporta un insieme completo di opzioni per il controllo dei file di input e di output, degli assembly e delle opzioni di debug e del preprocessore.  Ciascuna opzione è disponibile in due formati intercambiabili: `-``option` e `/``option`.  In questa documentazione è illustrato solo il formato `/``option`.  
+ Il [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compilatore da riga di comando supporta un set completo di opzioni che controllano i file di input e outpui, assembly e il debug e le opzioni per il preprocessore. Ogni opzione è disponibile in due formati intercambiabili: `-``option` e `/``option`. Questa documentazione viene visualizzato soltanto il `/``option` form.  
   
- Nella tabella riportata di seguito vengono elencati alcuni esempi di righe di comando che è possibile modificare in base alle specifiche esigenze.  
+ Nella tabella seguente sono elencate alcune righe di comando di esempio che è possibile modificare per uso personale.  
   
-|Per|Utilizzo|  
-|---------|--------------|  
-|Compilare File.vb e creare File.exe|`vbc /reference:Microsoft.VisualBasic.dll File.vb`|  
-|Compilare File.vb e creare File.dll|`vbc /target:library File.vb`|  
-|Compilare File.vb e creare Mio.exe|`vbc /out:Mio.exe File.vb`|  
-|Compilare tutti i file di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] nella directory corrente, con ottimizzazioni attive e il simbolo `DEBUG` definito, generando File2.exe|`vbc /define:DEBUG=1 /optimize /out:File2.exe *.vb`|  
-|Compilare tutti i file [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] nella directory corrente, generando una versione di debug di File2.dll senza visualizzare il logo o gli avvisi|`vbc /target:library /out:File2.dll /nowarn /nologo /debug *.vb`|  
-|Compilare tutti i file di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] nella directory corrente in Qualcosa.dll|`vbc /target:library /out:Qualcosa.dll *.vb`|  
+|Per|Usare|  
+|--------|---------|  
+|Compilare i file. vb e creare File.exe|`vbc /reference:Microsoft.VisualBasic.dll File.vb`|  
+|Compilare i file. vb e creare file. dll|`vbc /target:library File.vb`|  
+|Compilare i file. vb e creare My.exe|`vbc /out:My.exe File.vb`|  
+|Compilare tutti [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] file nella directory corrente, con le ottimizzazioni e `DEBUG` simbolo definito, generando File2.exe|`vbc /define:DEBUG=1 /optimize /out:File2.exe *.vb`|  
+|Compilare tutti [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] file nella directory corrente, generando una versione di debug di File2. dll senza visualizzare il logo o avvisi|`vbc /target:library /out:File2.dll /nowarn /nologo /debug *.vb`|  
+|Compilare tutti [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] file nella directory corrente in qualcosa. dll|`vbc /target:library /out:Something.dll *.vb`|  
   
- Durante la compilazione dalla riga di comando, è necessario fare esplicito riferimento alla libreria di runtime di Microsoft [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] tramite l'opzione del compilatore `/reference`.  
+ Durante la compilazione dalla riga di comando, è necessario fare esplicitamente riferimento Microsoft [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] libreria di runtime tramite il `/reference` l'opzione del compilatore.  
   
 > [!TIP]
->  Quando si compila un progetto utilizzando l'ide di Visual Studio, è possibile visualizzare le informazioni sul comando collegato di **vbc** con le opzioni del compilatore nella finestra di output.  Per visualizzare queste informazioni, aprire [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](/visual-studio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run)quindi impostare **Livello di dettaglio output in compilazione progetto MSBuildNormale** o a un livello superiore di dettaglio.  Per ulteriori informazioni, vedere [Procedura: visualizzare, salvare e configurare file di log di compilazione](../Topic/How%20to:%20View,%20Save,%20and%20Configure%20Build%20Log%20Files.md).  
+>  Quando si compila un progetto utilizzando l'IDE di Visual Studio, è possibile visualizzare informazioni su associata **vbc** comando con le opzioni del compilatore nella finestra di output. Per visualizzare queste informazioni, aprire il [la finestra di dialogo Opzioni, progetti e soluzioni, compila ed Esegui](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run), quindi impostare il **livello di dettaglio di output di compilazione progetto MSBuild** a **normale** o un livello di dettaglio superiore. Per altre informazioni, vedere [Procedura: Visualizzare, salvare e configurare file di log di compilazione](http://msdn.microsoft.com/library/75d38b76-26d6-4f43-bbe7-cbacd7cc81e7).  
   
-## Vedere anche  
- [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+## <a name="see-also"></a>Vedere anche  
+ [Compilatore della riga di comando di Visual Basic](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [Compilazione condizionale](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)

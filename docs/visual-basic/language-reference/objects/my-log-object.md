@@ -1,34 +1,50 @@
 ---
-title: "My.Log Object | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My.Log object"
+title: Oggetto My. log | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- My.Log object
 ms.assetid: 309b14b4-8875-4b2f-9661-a734b8cbff07
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 12
----
-# My.Log Object
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 5150568b9f57640adf3ad959362df6a4059f6bf9
+ms.lasthandoff: 03/13/2017
 
-Fornisce la proprietà e i metodi per la scrittura dell'evento e delle informazioni sulle eccezioni nei listener del log dell'applicazione.  
+---
+# <a name="mylog-object"></a>Oggetto My.Log
+Fornisce una proprietà e metodi per la scrittura di eventi e informazioni sull'eccezione ai listener di log dell'applicazione.  
   
-## Note  
- Per informazioni sui metodi e le proprietà di `My.Log` oggetto, vedere <xref:Microsoft.VisualBasic.Logging.AspLog>.  
+## <a name="remarks"></a>Note  
+ Per informazioni sui metodi e proprietà del `My.Log` dell'oggetto, vedere <xref:Microsoft.VisualBasic.Logging.AspLog>.</xref:Microsoft.VisualBasic.Logging.AspLog>  
   
- L'oggetto di `My.Log` è disponibile per le applicazioni ASP.NET.  Per le applicazioni client, utilizzare [Oggetto My.Application.Log](../../../visual-basic/language-reference/objects/my-application-log-object.md).  
+ Il `My.Log` l'oggetto è disponibile per solo le applicazioni ASP.NET. Per le applicazioni client, utilizzare [My.Application.Log (oggetto)](../../../visual-basic/language-reference/objects/my-application-log-object.md).  
   
-## Requisiti  
- **Spazio dei nomi:** <xref:Microsoft.VisualBasic.Logging>  
+## <a name="requirements"></a>Requisiti  
+ **Namespace:**<xref:Microsoft.VisualBasic.Logging></xref:Microsoft.VisualBasic.Logging>  
   
- **Classe:** <xref:Microsoft.VisualBasic.Logging.AspLog>  
+ **Classe:**<xref:Microsoft.VisualBasic.Logging.AspLog></xref:Microsoft.VisualBasic.Logging.AspLog>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime-md.md)]
+ **Assembly:**[!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)]

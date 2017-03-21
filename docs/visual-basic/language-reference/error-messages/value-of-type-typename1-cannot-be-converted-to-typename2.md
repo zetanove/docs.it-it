@@ -1,33 +1,49 @@
 ---
-title: "Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39; | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vbc30955"
-  - "bc30955"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC30955"
+title: "Valore di tipo &quot;&lt;NomeTipo1&gt;&quot;non può essere convertito in&quot;&lt;in NomeTipo2&gt;&quot; | Documenti di Microsoft"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vbc30955
+- bc30955
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC30955
 ms.assetid: 966b61eb-441e-48b0-bedf-ca95384ecb8b
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 12
----
-# Value of type &#39;&lt;typename1&gt;&#39; cannot be converted to &#39;&lt;typename2&gt;&#39;
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: c973d5e2aa03d423e1dea8053946172655f08490
+ms.lasthandoff: 03/13/2017
 
-Impossibile convertire il valore di tipo '\<nometipo1\>' in '\<nometipo2\>'.La mancata corrispondenza del tipo potrebbe essere dovuta alla presenza simultanea di un riferimento al file e di un riferimento di progetto all'assembly '\<nomeassembly\>'.   Provare a sostituire il riferimento di file a '\<percorsofile\>' del progetto '\<nomeprogetto1\>' con un riferimento di progetto a '\<nomeprogetto2\>'.  
+---
+# <a name="value-of-type-39lttypename1gt39-cannot-be-converted-to-39lttypename2gt39"></a>Valore di tipo '&lt;NomeTipo1&gt;'non può essere convertito in'&lt;in NomeTipo2&gt;'
+Valore di tipo '\<NomeTipo1 >' non può essere convertito in '\<in NomeTipo2 >'. Mancata corrispondenza del tipo potrebbe essere dovuto all'unione di un riferimento al file con un riferimento progetto all'assembly '\<assemblyname >'. Provare a sostituire il riferimento al file '\<filepath >' nel progetto '\<projectname1 >' con un riferimento al progetto '\<projectname2 >'.  
   
- In una situazione in cui in un progetto viene creato un riferimento al progetto e un riferimento al file, il compilatore non sarà in grado di garantire che un tipo possa essere convertito in un altro.  
+ In una situazione in cui un progetto contiene sia un riferimento al progetto un riferimento al file, il compilatore non garantisce che un tipo può essere convertito in un altro.  
   
- Nello pseudo\-codice descritto di seguito viene illustrata una situazione che può generare questo errore.  
+ Il pseudo-codice seguente viene illustrata una situazione che può generare l'errore.  
   
  `' ================ Visual Basic project P1 ================`  
   
@@ -55,19 +71,19 @@ Impossibile convertire il valore di tipo '\<nometipo1\>' in '\<nometipo2\>'.La m
   
  `End Class`  
   
- Nel progetto `P1` viene creato un riferimento di progetto indiretto dal progetto `P2` al progetto `P3`, oltre a un riferimento di file diretto a `P3`.  La dichiarazione di `commonObject` utilizza il riferimento di file a `P3`, mentre la chiamata a `P2.getCommonClass` utilizza il riferimento di progetto a `P3`.  
+ Progetto `P1` rende un riferimento di progetto progetto indiretto `P2` al progetto `P3`e anche un riferimento al file diretto `P3`. La dichiarazione di `commonObject` utilizza il riferimento al file `P3`, mentre la chiamata a `P2.getCommonClass` utilizza il riferimento al progetto `P3`.  
   
- Il problema di questa situazione dipende dal fatto che nel riferimento di file vengono specificati un percorso e un nome di file per il file di output di `P3` \(generalmente p3.dll\), mentre nei riferimenti al progetto il progetto di origine \(`P3`\) viene identificato in base al nome del progetto.  Per questo motivo, il compilatore non sarà in grado di garantire che il tipo `P3.commonClass` proviene dallo stesso codice di origine tramite i due diversi riferimenti.  
+ Il problema in questa situazione è che il riferimento al file specifica un percorso e il nome del file di output di `P3` (in genere P3), mentre i riferimenti al progetto identificano il progetto di origine (`P3`) in base al nome di progetto. Per questo motivo, il compilatore non garantisce che il tipo `P3.commonClass` proviene dallo stesso codice di origine tramite i due diversi riferimenti.  
   
- Questa situazione si verifica generalmente quando sono presenti riferimenti di progetto e riferimenti di file contemporaneamente.  Nell'illustrazione precedente, il problema non si verificherà se `P1` farà un riferimento di progetto diretto a `P3` anziché un riferimento di file.  
+ Questa situazione si verifica in genere quando i riferimenti di progetto e i riferimenti ai file vengono combinati. Nell'illustrazione precedente, il problema non si verificherà se `P1` effettuato un riferimento diretto `P3` anziché un riferimento al file.  
   
  **ID errore:** BC30955  
   
-### Per correggere l'errore  
+## <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Trasformare un riferimento di file in un riferimento di progetto.  
+-   Modificare il riferimento al file a un riferimento al progetto.  
   
-## Vedere anche  
- [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
- [Gestione dei riferimenti in un progetto](/visual-studio/ide/managing-references-in-a-project)   
- [Procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/it-it/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)
+## <a name="see-also"></a>Vedere anche  
+ [Conversioni di tipi in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)   
+ [Gestione dei riferimenti in un progetto](https://docs.microsoft.com/visualstudio/ide/managing-references-in-a-project)   
+ [Procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)

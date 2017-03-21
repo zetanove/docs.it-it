@@ -1,71 +1,87 @@
 ---
-title: "Queries (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "queries [Visual Basic]"
-  - "LINQ, queries"
+title: Query (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- queries [Visual Basic]
+- LINQ, queries
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 11
----
-# Queries (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 683b0678e570c2dbb774ec724893acb5a7b10554
+ms.lasthandoff: 03/13/2017
 
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] consente di creare espressioni [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext-md.md)] nel codice.  
+---
+# <a name="queries-visual-basic"></a>Query (Visual Basic)
+[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]Consente di creare [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext_md.md)] espressioni nel codice.  
   
-## In questa sezione  
- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- Viene descritta la clausola `Aggregate` che applica una o più funzioni di aggregazione a una raccolta.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Clausola Aggregate](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
+ Viene descritto il `Aggregate` clausola, che applica uno o più funzioni di aggregazione a una raccolta.  
   
- [Distinct Clause](../../../visual-basic/language-reference/queries/distinct-clause.md)  
- Viene descritta la clausola `Distinct` che limita i valori della variabile di intervallo corrente per eliminare i valori duplicati nei risultati della query.  
+ [Clausola Distinct](../../../visual-basic/language-reference/queries/distinct-clause.md)  
+ Viene descritto il `Distinct` clausola che limita i valori della variabile di intervallo corrente per eliminare i valori duplicati nei risultati della query.  
   
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- Viene descritta la clausola `From` che specifica una raccolta e una variabile di intervallo per una query.  
+ [Clausola From](../../../visual-basic/language-reference/queries/from-clause.md)  
+ Viene descritto il `From` clausola che specifica una raccolta e una variabile di intervallo per una query.  
   
  [Clausola Group By](../../../visual-basic/language-reference/queries/group-by-clause.md)  
- Viene descritta la clausola `Group By`, che raggruppa gli elementi di un risultato della query e può essere utilizzata per applicare le funzioni di aggregazione a ogni gruppo.  
+ Viene descritto il `Group By` clausola, che raggruppa gli elementi del risultato della query e può essere utilizzato per applicare le funzioni di aggregazione a ogni gruppo.  
   
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
- Viene descritta la clausola `Group Join`, che combina due raccolte in un'unica raccolta gerarchica.  
+ [Clausola Group Join](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ Viene descritto il `Group Join` clausola, che combina due raccolte in un'unica raccolta gerarchica.  
   
- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
- Viene descritta la clausola `Join`, che combina due raccolte in un'unica raccolta.  
+ [Clausola Join](../../../visual-basic/language-reference/queries/join-clause.md)  
+ Viene descritto il `Join` clausola, che combina due raccolte in un'unica raccolta.  
   
- [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md)  
- Viene descritta la clausola `Let`, che calcola un valore e lo assegna a una nuova variabile nella query.  
+ [Clausola Let](../../../visual-basic/language-reference/queries/let-clause.md)  
+ Viene descritto il `Let` clausola, che calcola un valore e lo assegna a una nuova variabile nella query.  
   
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- Viene descritta la clausola `Order By`, che specifica l'ordinamento per le colonne in una query.  
+ [Clausola Order By](../../../visual-basic/language-reference/queries/order-by-clause.md)  
+ Viene descritto il `Order By` clausola che specifica l'ordinamento per le colonne in una query.  
   
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- Viene descritta la clausola `Select`, che dichiara una serie di variabili di intervallo per una query.  
+ [Clausola Select](../../../visual-basic/language-reference/queries/select-clause.md)  
+ Viene descritto il `Select` clausola, che dichiara una serie di variabili di intervallo per una query.  
   
- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)  
- Viene descritta la clausola `Skip`, che ignora un numero specificato di elementi di una raccolta e restituisce i rimanenti.  
+ [Clausola Skip](../../../visual-basic/language-reference/queries/skip-clause.md)  
+ Viene descritto il `Skip` clausola, che ignora un numero specificato di elementi in una raccolta e quindi restituisce gli elementi rimanenti.  
   
- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- Viene descritta la clausola `Skip While`, che ignora gli elementi di una raccolta finché la condizione specificata è `true` e poi restituisce gli elementi rimanenti.  
+ [Clausola Skip While](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
+ Viene descritto il `Skip While` clausola, che ignora gli elementi in una raccolta, purché una condizione specificata sia `true` e quindi restituisce gli elementi rimanenti.  
   
- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)  
- Viene descritta la clausola `Take`, che restituisce un numero specificato di elementi adiacenti dall'inizio di una raccolta.  
+ [Clausola Take](../../../visual-basic/language-reference/queries/take-clause.md)  
+ Viene descritto il `Take` clausola, che restituisce un numero specificato di elementi contigui dall'inizio di una raccolta.  
   
- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)  
- Viene descritta la clausola `Take While`, che include gli elementi di una raccolta finché la condizione specificata è `true` e poi ignora gli elementi rimanenti.  
+ [Clausola Take While](../../../visual-basic/language-reference/queries/take-while-clause.md)  
+ Viene descritto il `Take While` clausola, che include gli elementi in una raccolta, purché una condizione specificata sia `true` e ignora gli elementi rimanenti.  
   
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)  
- Viene descritta la clausola `Where`, che specifica una condizione di filtro per una query.  
+ [Clausola Where](../../../visual-basic/language-reference/queries/where-clause.md)  
+ Viene descritto il `Where` clausola che specifica una condizione di filtro per una query.  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)   
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+ [Introduzione a LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

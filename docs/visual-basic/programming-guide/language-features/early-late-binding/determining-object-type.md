@@ -1,62 +1,78 @@
 ---
-title: "Determining Object Type (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "classes [Visual Basic], discovering which an object belongs to"
-  - "types [Visual Basic], determining Visual Basic object types"
-  - "object variables, testing values"
-  - "TypeOf...Is expression, object type at run time"
-  - "TypeName function"
-  - "objects [Visual Basic], type determining"
+title: Determinazione del tipo di oggetto (Visual Basic) | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- classes [Visual Basic], discovering which an object belongs to
+- types [Visual Basic], determining Visual Basic object types
+- object variables, testing values
+- TypeOf...Is expression, object type at run time
+- TypeName function
+- objects [Visual Basic], type determining
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 13
----
-# Determining Object Type (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 2486d989801fc4866a50747aa963b509a627994d
+ms.lasthandoff: 03/13/2017
 
-Le variabili oggetto generiche \(ovvero le variabili dichiarate come `Object`\) possono contenere oggetti di qualunque classe.  Quando si utilizzano variabili di tipo `Object`, le operazioni consentite dipendono dalla classe dell'oggetto. È ad esempio possibile che alcuni oggetti non supportino un metodo o una proprietà specifici.  In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] sono disponibili due sistemi per la definizione del tipo di oggetto memorizzato nella variabile oggetto, ovvero la funzione `TypeName` e l'operatore `TypeOf...Is`.  
+---
+# <a name="determining-object-type-visual-basic"></a>Determinazione del tipo di un oggetto (Visual Basic)
+Le variabili oggetto generiche (ovvero, le variabili dichiarate come `Object`) possono contenere oggetti di qualsiasi classe. Quando si utilizzano variabili di tipo `Object`, potrebbe essere necessario eseguire azioni diverse in base alla classe dell'oggetto, ad esempio, alcuni oggetti potrebbero non supportare una determinata proprietà o metodo. [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]fornisce due modi per determinare quale tipo di oggetto viene archiviato in una variabile oggetto: il `TypeName` funzione e `TypeOf...Is` operatore.  
   
-## TypeName e TypeOf…Is  
- La funzione `TypeName` restituisce una stringa e rappresenta la scelta ideale per la memorizzazione o la visualizzazione del nome della classe di un oggetto, come illustrato nel seguente frammento di codice:  
+## <a name="typename-and-typeofis"></a>TypeName e TypeOf... È  
+ Il `TypeName` funzione restituisce una stringa ed è la scelta migliore quando è necessario archiviare o visualizzare il nome della classe di un oggetto, come illustrato nel frammento di codice seguente:  
   
- [!code-vb[VbVbalrOOP#92](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_1.vb)]  
+ [!code-vb[VbVbalrOOP&#92;](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_1.vb)]  
   
- L'uso dell'operatore `TypeOf...Is` è invece ideale per la verifica del tipo di oggetto, in quanto è più rapido rispetto a un confronto di stringhe equivalente nel quale viene adoperata la funzione `TypeName`.  Nel frammento di codice che segue viene utilizzato l'operatore `TypeOf...Is` all'interno di un'istruzione `If...Then...Else`:  
+ Il `TypeOf...Is` operatore è la scelta migliore per il test di un tipo di oggetto, perché è molto più veloce rispetto a un confronto di stringa equivalente con `TypeName`. Il frammento di codice seguente utilizza `TypeOf...Is` all'interno di un `If...Then...Else` istruzione:  
   
- [!code-vb[VbVbalrOOP#93](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_2.vb)]  
+ [!code-vb[&#93; VbVbalrOOP](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_2.vb)]  
   
- A questo punto è necessaria una raccomandazione.  L'operatore `TypeOf...Is` restituisce `True` se un oggetto appartiene a o è derivato da un tipo specifico.  Quasi tutte le operazioni eseguite in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] implicano l'utilizzo di oggetti, inclusi alcuni elementi normalmente non considerati oggetti, quali stringhe e Integer.  Questi oggetti derivano da <xref:System.Object> e ne ereditano i metodi.  Quando viene passato un `Integer` e valutato con `Object`, l'operatore `TypeOf...Is` restituisce `True`.  L'esempio che segue indica che il parametro `InParam` è sia un `Object` sia un `Integer`:  
+ Una precisazione è dovuta qui. Il `TypeOf...Is` operatore restituisce `True` se un oggetto è di un tipo specifico oppure è derivato da un tipo specifico. Quasi tutte le operazioni eseguite con [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] all'uso di oggetti, inclusi alcuni elementi che normalmente non vengono considerati come oggetti, ad esempio stringhe e numeri interi. Questi oggetti derivano da ed ereditano i metodi <xref:System.Object>.</xref:System.Object> Quando viene passato un `Integer` e valutato con `Object`, `TypeOf...Is` operatore restituisce `True`. L'esempio seguente segnala che il parametro `InParam` è sia un `Object` e `Integer`:  
   
- [!code-vb[VbVbalrOOP#94](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_3.vb)]  
+ [!code-vb[VbVbalrOOP&#94;](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_3.vb)]  
   
- Nell'esempio che segue vengono utilizzati sia `TypeOf...Is` sia `TypeName` per determinare il tipo di oggetto passato nell'argomento `Ctrl`.  La routine `TestObject` chiama `ShowType` con tre diversi tipi di controlli.  
+ Nell'esempio seguente utilizza sia `TypeOf...Is` e `TypeName` per determinare il tipo di oggetto passato nel `Ctrl` argomento. Il `TestObject` le chiamate di procedura `ShowType` con tre diversi tipi di controlli.  
   
-#### Per eseguire l'esempio  
+#### <a name="to-run-the-example"></a>Per eseguire l'esempio  
   
-1.  Creare un nuovo progetto di applicazione per Windows e aggiungere al form un controllo <xref:System.Windows.Forms.Button>, un controllo <xref:System.Windows.Forms.CheckBox> e un controllo <xref:System.Windows.Forms.RadioButton>.  
+1.  Creare un nuovo progetto applicazione Windows e aggiungere un <xref:System.Windows.Forms.Button>controllo, un <xref:System.Windows.Forms.CheckBox>, controllo e un <xref:System.Windows.Forms.RadioButton>al form.</xref:System.Windows.Forms.RadioButton> </xref:System.Windows.Forms.CheckBox> </xref:System.Windows.Forms.Button>  
   
-2.  Dal pulsante sul form, chiamare la routine `TestObject`.  
+2.  Dal pulsante sul form, chiamare il `TestObject` procedura.  
   
-3.  Aggiungere il seguente codice al form:  
+3.  Aggiungere il codice seguente al form:  
   
-     [!code-vb[VbVbalrOOP#95](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_4.vb)]  
+     [!code-vb[&#95; VbVbalrOOP](../../../../visual-basic/misc/codesnippet/VisualBasic/determining-object-type_4.vb)]  
   
-## Vedere anche  
- <xref:Microsoft.VisualBasic.Information.TypeName%2A>   
- [Calling a Property or Method Using a String Name](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)   
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
- [If...Then...Else Statement](../../../../visual-basic/language-reference/statements/if-then-else-statement.md)   
- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)   
- [Integer Data Type](../../../../visual-basic/language-reference/data-types/integer-data-type.md)
+## <a name="see-also"></a>Vedere anche  
+ <xref:Microsoft.VisualBasic.Information.TypeName%2A></xref:Microsoft.VisualBasic.Information.TypeName%2A>   
+ [Chiamata di una proprietà o metodo mediante un nome di stringa](../../../../visual-basic/programming-guide/language-features/early-late-binding/calling-a-property-or-method-using-a-string-name.md)   
+ [Tipo di dati Object](../../../../visual-basic/language-reference/data-types/object-data-type.md)   
+ [If... Quindi... Else (istruzione)](../../../../visual-basic/language-reference/statements/if-then-else-statement.md)   
+ [Tipo di dati String](../../../../visual-basic/language-reference/data-types/string-data-type.md)   
+ [Tipo di dati Integer](../../../../visual-basic/language-reference/data-types/integer-data-type.md)

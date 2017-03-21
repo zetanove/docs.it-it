@@ -1,33 +1,49 @@
 ---
-title: "/resource (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/resource compiler option [Visual Basic]"
-  - "-resource compiler option [Visual Basic]"
-  - "/res compiler option [Visual Basic]"
-  - "res compiler option [Visual Basic]"
-  - "-res compiler option [Visual Basic]"
-  - "resource compiler option [Visual Basic]"
+title: /Resource (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- /resource compiler option [Visual Basic]
+- -resource compiler option [Visual Basic]
+- /res compiler option [Visual Basic]
+- res compiler option [Visual Basic]
+- -res compiler option [Visual Basic]
+- resource compiler option [Visual Basic]
 ms.assetid: eee2f227-91f2-4f2b-a9d6-1c51c5320858
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 19
----
-# /resource (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: b46800322fd03eb2578cc558cc1d9bb78550aa61
+ms.lasthandoff: 03/13/2017
 
-Consente di incorporare una risorsa gestita in un assembly.  
+---
+# <a name="resource-visual-basic"></a>/resource (Visual Basic)
+Incorpora una risorsa gestita in un assembly.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 /resource:filename[,identifier[,public|private]]  
@@ -35,33 +51,32 @@ Consente di incorporare una risorsa gestita in un assembly.
 /res:filename[,identifier[,public|private]]  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
   
-|||  
-|-|-|  
 |Termine|Definizione|  
-|`filename`|Obbligatorio.  Nome del file di risorse da incorporare nel file di output.  Per impostazione predefinita, `filename` è pubblico nell'assembly.  Racchiudere il nome file tra virgolette \(""\) se contiene uno spazio.|  
-|`identifier`|Parametro facoltativo.  Nome logico della risorsa, utilizzato per caricare la risorsa stessa.  L'impostazione predefinita corrisponde al nome del file.  Se si desidera, è possibile specificare se la risorsa nel manifesto dell'assembly è pubblica o privata, come nel seguente esempio: `/res:``filename.res`,`myname.res`,`public`|  
+|---|---|  
+|`filename`|Obbligatorio. Il nome del file di risorse da incorporare nel file di output. Per impostazione predefinita, `filename` è pubblico nell'assembly. Racchiudere il nome del file tra virgolette ("") se contiene uno spazio.|  
+|`identifier`|Facoltativo. Il nome logico per la risorsa. il nome utilizzato per caricarla. Il valore predefinito è il nome del file. Facoltativamente, è possibile specificare se la risorsa è pubblica o privata nel manifesto dell'assembly, come le operazioni seguenti: `/res:``filename.res`,`myname.res`,`public`|  
   
-## Note  
+## <a name="remarks"></a>Note  
  Utilizzare `/linkresource` per collegare una risorsa a un assembly senza inserire il file di risorse nel file di output.  
   
- Se `filename` è un file di risorse [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] creato, ad esempio, mediante [Resgen.exe \(Resource File Generator\)](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md) o nell'ambiente di sviluppo, sarà possibile accedervi con i membri presenti nello spazio dei nomi <xref:System.Resources> \(per ulteriori informazioni, vedere <xref:System.Resources.ResourceManager>\).  Per accedere a tutte le altre risorse in fase di esecuzione, utilizzare uno dei seguenti metodi: <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>, <xref:System.Reflection.Assembly.GetManifestResourceNames%2A> o <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>.  
+ Se `filename` è un [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] file di risorse creato, ad esempio, mediante il [Resgen.exe (Generatore di File di risorse)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) o nell'ambiente di sviluppo, sono accessibili tramite i membri di <xref:System.Resources>dello spazio dei nomi (vedere <xref:System.Resources.ResourceManager>Per ulteriori informazioni).</xref:System.Resources.ResourceManager> </xref:System.Resources> Per accedere a tutte le altre risorse in fase di esecuzione, utilizzare uno dei metodi seguenti: <xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>, <xref:System.Reflection.Assembly.GetManifestResourceNames%2A>, o <xref:System.Reflection.Assembly.GetManifestResourceStream%2A>.</xref:System.Reflection.Assembly.GetManifestResourceStream%2A> </xref:System.Reflection.Assembly.GetManifestResourceNames%2A> </xref:System.Reflection.Assembly.GetManifestResourceInfo%2A>  
   
- La forma abbreviata di `/resource` è `/res`.  
+ La versione abbreviata di `/resource` è `/res`.  
   
- Per informazioni su come impostare `/resource` nell'IDE di Visual Studio, vedere [Gestione delle risorse delle applicazioni \(.NET\)](/visual-studio/ide/managing-application-resources-dotnet).  
+ Per informazioni su come impostare `/resource` nell'IDE di Visual Studio, vedere [risorse dell'applicazione di gestione (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-resources-dotnet).  
   
-## Esempio  
- Il codice riportato di seguito consente di compilare `In.vb` e di collegare il file di risorse `Rf.resource`.  
+## <a name="example"></a>Esempio  
+ Il codice seguente Compila `In.vb` e consente di collegare file di risorse `Rf.resource`.  
   
 ```  
 vbc /res:rf.resource in.vb  
 ```  
   
-## Vedere anche  
- [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [\/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)   
- [\/linkresource](../../../visual-basic/reference/command-line-compiler/linkresource.md)   
- [\/target](../../../visual-basic/reference/command-line-compiler/target.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Compilatore della riga di comando di Visual Basic](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md)   
+ [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md)   
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
  [Esempi di righe di comando di compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

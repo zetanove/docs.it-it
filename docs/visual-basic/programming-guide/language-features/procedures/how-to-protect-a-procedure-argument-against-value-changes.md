@@ -1,64 +1,80 @@
 ---
-title: "How to: Protect a Procedure Argument Against Value Changes (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "procedures, arguments"
-  - "procedures, parameters"
-  - "procedure arguments"
-  - "arguments [Visual Basic], passing by reference"
-  - "Visual Basic code, procedures"
-  - "arguments [Visual Basic], ByVal"
-  - "arguments [Visual Basic], passing by value"
-  - "procedure parameters"
-  - "procedures, calling"
-  - "arguments [Visual Basic], ByRef"
-  - "arguments [Visual Basic], changing value"
+title: 'Procedura: proteggere un argomento di routine modifica del valore (Visual Basic) | Documenti di Microsoft'
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- procedures, arguments
+- procedures, parameters
+- procedure arguments
+- arguments [Visual Basic], passing by reference
+- Visual Basic code, procedures
+- arguments [Visual Basic], ByVal
+- arguments [Visual Basic], passing by value
+- procedure parameters
+- procedures, calling
+- arguments [Visual Basic], ByRef
+- arguments [Visual Basic], changing value
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 14
----
-# How to: Protect a Procedure Argument Against Value Changes (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 6e18f7ceefeec9c1f422d0eae4e727700ebd8b6e
+ms.lasthandoff: 03/13/2017
 
-Se una routine dichiara un parametro come [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] assegna al codice della routine un riferimento diretto all'elemento di programmazione sottostante all'argomento nel codice chiamante.  In questo modo, la routine può modificare il valore sottostante all'argomento nel codice chiamante.  In alcuni casi è necessario proteggere il codice da questo tipo di modifica.  
+---
+# <a name="how-to-protect-a-procedure-argument-against-value-changes-visual-basic"></a>Procedura: impedire la modifica del valore di un argomento di una routine (Visual Basic)
+Se una routine dichiara un parametro come [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] fornisce il codice della routine un riferimento diretto all'elemento di programmazione sottostante all'argomento nel codice chiamante. In questo modo la procedura per modificare il valore sottostante all'argomento nel codice chiamante. In alcuni casi potrebbe essere necessario il codice chiamante per proteggersi da tali modifiche.  
   
- Per proteggere sempre un argomento da eventuali modifiche, è possibile dichiarare il parametro [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) corrispondente nella routine.  Per consentire la modifica di un determinato argomento in alcuni casi e non in altri, è possibile dichiararlo `ByRef` e lasciare che il codice chiamante determini il meccanismo di passaggio in ogni chiamata.  A tale scopo l'argomento corrispondente viene racchiuso o meno tra parentesi a seconda che debba essere passato per valore o per riferimento.  Per ulteriori informazioni, vedere [How to: Force an Argument to Be Passed by Value](../../../../visual-basic/programming-guide/language-features/procedures/how-to-force-an-argument-to-be-passed-by-value.md).  
+ È possibile proteggere sempre un argomento da modifica dichiarando il parametro corrispondente [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) nella procedura. Se si desidera essere in grado di modificare un determinato argomento in alcuni casi, ma non altri, è possibile dichiarare `ByRef` e consentire al codice chiamante di determinare il meccanismo di passaggio in ogni chiamata. Questo avviene racchiudere l'argomento corrispondente tra parentesi per passarlo come valore, viene racchiuso o meno tra parentesi essere passato per riferimento. Per ulteriori informazioni, vedere [procedura: forzare un argomento sia passati per valore](./how-to-force-an-argument-to-be-passed-by-value.md).  
   
-## Esempio  
- Nell'esempio riportato di seguito vengono illustrate due routine che accettano una variabile di matrice e operano sui relativi elementi.  La routine `increase` aggiunge semplicemente uno a ogni elemento.  La routine `replace` assegna una nuova matrice al parametro `a()`, quindi aggiunge uno a ogni elemento.  Tuttavia, la riassegnazione non ha effetto sulla variabile di matrice del codice chiamante.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente illustra due procedure che accettano una variabile di matrice e operano sui relativi elementi. Il `increase` procedura aggiunge semplicemente uno a ogni elemento. Il `replace` procedura assegna una nuova matrice al parametro `a()` , quindi aggiunge uno a ogni elemento. Tuttavia, la riassegnazione non influiscono sulla variabile di matrice sottostante il codice chiamante.  
   
- [!code-vb[VbVbcnProcedures#35](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_1.vb)]  
+ [!code-vb[VbVbcnProcedures&#35;](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_1.vb)]  
   
- [!code-vb[VbVbcnProcedures#38](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_2.vb)]  
+ [!code-vb[VbVbcnProcedures&#38;](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_2.vb)]  
   
- [!code-vb[VbVbcnProcedures#37](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_3.vb)]  
+ [!code-vb[VbVbcnProcedures&#37;](./codesnippet/VisualBasic/how-to-protect-a-procedure-argument-against-value-changes_3.vb)]  
   
- Alla prima chiamata di `MsgBox` viene visualizzato "After increase\(n\): 11, 21, 31, 41".  Poiché la matrice `n` è un tipo di riferimento, la routine `replace` può modificarne i membri, anche se il meccanismo di passaggio è `ByVal`.  
+ Il primo `MsgBox` chiamata viene visualizzato "dopo Increase (n): 11, 21, 31, 41". Poiché la matrice `n` è un tipo di riferimento, `replace` possibile modificare i relativi membri, anche se è il meccanismo di passaggio `ByVal`.  
   
- Alla seconda chiamata di `MsgBox` viene visualizzato "After replace\(n\): 11, 21, 31, 41".  Poiché `n` viene passata `ByVal`, la routine `replace` non può modificare la variabile `n` nel codice chiamante assegnandole una nuova matrice.  Quando `replace` crea la nuova istanza di matrice `k` e la assegna alla variabile locale `a`, perde il riferimento alla variabile `n` passata dal codice chiamante.  Quando la routine in questione modifica i membri di `a`, la modifica ha effetto solo sulla matrice locale `k` .  Pertanto, `replace` non incrementa i valori della matrice `n` nel codice chiamante.  
+ Il secondo `MsgBox` chiamata viene visualizzato "dopo Replace (n): 11, 21, 31, 41". Poiché `n` viene passato `ByVal`, `replace` non può modificare la variabile `n` nel codice chiamante assegnandole una nuova matrice. Quando `replace` crea una nuova istanza di matrice `k` e lo assegna alla variabile locale `a`, perde il riferimento a `n` passato al codice chiamante. Quando si trasforma i membri di `a`, solo la matrice locale `k` è interessato. Di conseguenza, `replace` incrementa i valori della matrice `n` nel codice chiamante.  
   
-## Compilazione del codice  
- Per impostazione predefinita, in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] gli argomenti vengono passati per valore.   È comunque buona norma di programmazione includere la parola chiave [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) o [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) con ogni parametro dichiarato,  al fine di agevolare la lettura del codice.  
+## <a name="compiling-the-code"></a>Compilazione del codice  
+ Il valore predefinito in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] gli argomenti vengono passati per valore. Tuttavia, è buona norma includere una programmazione di [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) o [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) (parola chiave) con ogni parametro dichiarato. In questo modo il codice più facile da leggere.  
   
-## Vedere anche  
- [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
- [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)   
- [How to: Pass Arguments to a Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-pass-arguments-to-a-procedure.md)   
- [Passing Arguments by Value and by Reference](../../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)   
- [Differences Between Modifiable and Nonmodifiable Arguments](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-modifiable-and-nonmodifiable-arguments.md)   
- [Differences Between Passing an Argument By Value and By Reference](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-passing-an-argument-by-value-and-by-reference.md)   
- [How to: Change the Value of a Procedure Argument](../../../../visual-basic/programming-guide/language-features/procedures/how-to-change-the-value-of-a-procedure-argument.md)   
- [How to: Force an Argument to Be Passed by Value](../../../../visual-basic/programming-guide/language-features/procedures/how-to-force-an-argument-to-be-passed-by-value.md)   
- [Passing Arguments by Position and by Name](../../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)   
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+## <a name="see-also"></a>Vedere anche  
+ [Procedure](./index.md)   
+ [Gli argomenti e parametri di routine](./procedure-parameters-and-arguments.md)   
+ [Procedura: passare argomenti a una routine](./how-to-pass-arguments-to-a-procedure.md)   
+ [Passaggio di argomenti per valore e per riferimento](./passing-arguments-by-value-and-by-reference.md)   
+ [Differenze tra argomenti modificabili e](./differences-between-modifiable-and-nonmodifiable-arguments.md)   
+ [Differenze tra il passaggio di un argomento per valore e per riferimento](./differences-between-passing-an-argument-by-value-and-by-reference.md)   
+ [Procedura: modificare il valore di un argomento di routine](./how-to-change-the-value-of-a-procedure-argument.md)   
+ [Procedura: forzare un argomento sia passati per valore](./how-to-force-an-argument-to-be-passed-by-value.md)   
+ [Passaggio di argomenti in base alla posizione e in base al nome](./passing-arguments-by-position-and-by-name.md)   
+ [Tipi valore e tipi di riferimento](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

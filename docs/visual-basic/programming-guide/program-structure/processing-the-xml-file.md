@@ -1,56 +1,71 @@
 ---
-title: "Processing the XML File (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "XML comments, parsing [Visual Basic]"
+title: Elaborazione del File XML (Visual Basic) | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- XML comments, parsing [Visual Basic]
 ms.assetid: 78a15cd0-7708-4e79-85d1-c154b7a14a8c
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 16
----
-# Processing the XML File (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 72b2832d0131adf39a37ebd9297b43fb34ea49ba
+ms.lasthandoff: 03/13/2017
 
-Il compilatore genera una stringa identificativa \(ID\) per ciascun costrutto del codice che contiene tag per la creazione della documentazione.  Per informazioni sull'inserimento di tag nel codice, vedere [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md). L'ID identifica in modo univoco il costrutto.  I programmi che elaborano il file XML sono in grado di utilizzare la stringa ID per identificare il corrispondente elemento metadati\/reflection di [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)].  
+---
+# <a name="processing-the-xml-file-visual-basic"></a>Elaborazione del file XML (Visual Basic)
+Il compilatore genera una stringa ID per ogni costrutto nel codice che contiene tag per generare la documentazione. (Per informazioni su come contrassegnare il codice, vedere [tag di commento XML](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md).) Stringa ID identifica in modo univoco il costrutto. I programmi che elaborano il file XML è possono utilizzare la stringa di ID per identificare il corrispondente [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] elemento metadati/reflection.  
   
- Il file XML non è una rappresentazione gerarchica del codice, bensì un normale elenco contenente gli ID generati per ciascun elemento.  
+ Il file XML non è una rappresentazione gerarchica del codice. è un elenco semplice con un ID generato per ogni elemento.  
   
- Per generare gli ID, il compilatore applica le regole descritte di seguito.  
+ Quando genera le stringhe di ID, il compilatore applica le regole seguenti:  
   
--   La stringa non deve contenere spazi vuoti.  
+-   Gli spazi vuoti non viene inserito nella stringa.  
   
--   La prima parte della stringa ID specifica il tipo di membro da identificare, con un singolo carattere seguito dai due punti.  Vengono utilizzati i tipi di membri descritti di seguito.  
+-   La prima parte della stringa di ID identifica il tipo di membro identificato, con un singolo carattere seguito da due punti. Vengono utilizzati i seguenti tipi di membro.  
   
-|||  
-|-|-|  
 |Carattere|Descrizione|  
-|N|Spazio dei nomi<br /><br /> Non è possibile aggiungere commenti relativi alla documentazione a uno spazio dei nomi, ma è possibile creare riferimenti CREF a essi, se supportati.|  
-|T|tipo: `Class`, `Module`, `Interface`, `Structure`, `Enum`, `Delegate`|  
-|F|campo: `Dim`|  
-|P|proprietà: `Property`, incluse le proprietà predefinite|  
-|M|metodo: `Sub`, `Function`, `Declare`, `Operator`|  
-|E|evento: `Event`|  
-|\!|stringa di errore<br /><br /> Nella parte restante della stringa vengono fornite informazioni sull'errore.  Il compilatore [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] genera informazioni sugli errori per i collegamenti che non è possibile risolvere.|  
+|---|---|  
+|N|namespace<br /><br /> È possibile aggiungere commenti sulla documentazione a uno spazio dei nomi, ma è possibile creare riferimenti CREF ad essi, in cui è supportata.|  
+|T|type: `Class`, `Module`, `Interface`, `Structure`, `Enum`,`Delegate`|  
+|F|campo:`Dim`|  
+|P|proprietà: `Property` (incluse le proprietà predefinite)|  
+|M|method: `Sub`, `Function`, `Declare`,`Operator`|  
+|E|evento:`Event`|  
+|!|stringa di errore<br /><br /> Il resto della stringa vengono fornite informazioni sull'errore. Il [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] il compilatore genera informazioni di errore per i collegamenti che non possono essere risolti.|  
   
--   La seconda parte della `String` identifica il nome completo dell'elemento, a partire dalla radice dello spazio dei nomi.  Il nome dell'elemento, i tipi che lo contengono e lo spazio dei nomi sono separati da punti.  Se il nome dell'elemento contiene punti, questi verranno sostituiti con il simbolo di cancelletto \(\#\),  in base al presupposto che nessun nome di elemento contiene direttamente il simbolo di cancelletto.  Ad esempio, il nome completo del costruttore `String` è `System.String.#ctor`.  
+-   La seconda parte di `String` è il nome completo dell'elemento, iniziando dalla radice dello spazio dei nomi. Il nome dell'elemento, il relativo tipo contenitore e lo spazio dei nomi sono separati da punti. Se il nome dell'elemento stesso contiene punti, vengono sostituiti con il simbolo di cancelletto (#). Si presuppone che nessun elemento è un simbolo di cancelletto direttamente nel relativo nome. Ad esempio, il nome completo di `String` costruttore sarebbe `System.String.#ctor`.  
   
--   Per le proprietà e i metodi, se il metodo ha degli argomenti, verrà incluso di seguito l'elenco degli argomenti racchiuso tra parentesi.  Se non vi sono argomenti, non si utilizzeranno le parentesi.  Gli argomenti sono separati da virgole.  La codifica di ciascun argomento è del tutto simile alla modalità di codifica utilizzata in una firma [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)].  
+-   Per le proprietà e metodi, se sono presenti argomenti del metodo, l'elenco di argomenti racchiuso tra parentesi. Se non sono presenti argomenti, le parentesi non sono presenti. Gli argomenti sono separati da virgole. La codifica di ciascun argomento simile alla modalità di codifica un [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] firma.  
   
-## Esempio  
- Nel codice seguente viene illustrato come vengono generate le stringhe ID per una classe e i relativi membri:  
+## <a name="example"></a>Esempio  
+ Nel codice seguente viene illustrato come le stringhe di ID per una classe e i relativi membri vengono generati.  
   
- [!code-vb[VbVbcnXmlDocComments#10](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/processing-the-xml-file_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments&#10;](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/processing-the-xml-file_1.vb)]  
   
-## Vedere anche  
- [\/doc](../../../visual-basic/reference/command-line-compiler/doc.md)   
- [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
+## <a name="see-also"></a>Vedere anche  
+ [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)   
+ [Procedura: Creare documentazione XML](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)

@@ -1,59 +1,75 @@
 ---
-title: "AddHandler Statement | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.AddHandlerMethod"
-  - "addhandler"
-  - "vb.addhandler"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "AddHandler statement"
+title: AddHandler (istruzione) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.AddHandlerMethod
+- addhandler
+- vb.addhandler
+dev_langs:
+- VB
+helpviewer_keywords:
+- AddHandler statement
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 15
----
-# AddHandler Statement
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 728d8393c44d777f9cc016d9cf66030036582ae4
+ms.lasthandoff: 03/13/2017
 
-Consente di associare un evento a un gestore eventi in fase di esecuzione.  
+---
+# <a name="addhandler-statement"></a>Istruzione AddHandler
+Associa un evento al gestore eventi in fase di esecuzione.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 AddHandler event, AddressOf eventhandler  
 ```  
   
-## Parti  
+## <a name="parts"></a>Parti  
  `event`  
  Il nome dell'evento da gestire.  
   
  `eventhandler`  
- Il nome della routine che gestisce l'evento.  
+ Il nome di una routine che gestisce l'evento.  
   
-## Note  
- Le istruzioni `AddHandler` e `RemoveHandler` consentono di avviare e interrompere la gestione degli eventi in qualunque momento durante l'esecuzione del programma.  
+## <a name="remarks"></a>Note  
+ Il `AddHandler` e `RemoveHandler` istruzioni consentono di avviare e interrompere la gestione degli eventi in qualsiasi momento durante l'esecuzione del programma.  
   
- La firma della routine `eventhandler` deve corrispondere a quella dell'evento `event`.  
+ La firma di `eventhandler` procedura deve corrispondere alla firma dell'evento `event`.  
   
- Sia la parola chiave `Handles` sia l'istruzione `AddHandler` consentono di specificare quali particolari routine devono gestire determinati eventi, ma con alcune differenze.  L'istruzione `AddHandler` consente la connessione di routine ed eventi in fase di esecuzione.  Durante la definizione di una routine, utilizzare la parola chiave `Handles` per specificare l'evento particolare da gestire.  Per ulteriori informazioni, vedere [Handles](../../../visual-basic/language-reference/statements/handles-clause.md).  
+ La parola chiave `Handles` e l'istruzione `AddHandler` consentono entrambe di specificare che quelle particolari routine gestiscono particolari eventi, ma esistono alcune differenze. L'istruzione `AddHandler` connette le routine agli eventi in fase di esecuzione. Usare la parola chiave `Handles` quando si definisce una routine, per specificare che questa gestisce un particolare evento. Per ulteriori informazioni, vedere [gestisce](../../../visual-basic/language-reference/statements/handles-clause.md).  
   
 > [!NOTE]
->  Per eventi personalizzati, l'istruzione `AddHandler` consente di richiamare la funzione di accesso `AddHandler` dell'evento.  Per ulteriori informazioni sugli eventi personalizzate, vedere [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
+>  Per gli eventi personalizzati, il `AddHandler` istruzione richiama l'evento `AddHandler` della funzione di accesso. Per ulteriori informazioni sugli eventi personalizzati, vedere [istruzione Event](../../../visual-basic/language-reference/statements/event-statement.md).  
   
-## Esempio  
- [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
+## <a name="example"></a>Esempio  
+ [!code-vb[VbVbalrEvents n.&17;](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/addhandler-statement_1.vb)]  
   
-## Vedere anche  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)   
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)   
- [Events](../../../visual-basic/programming-guide/language-features/events/events.md)
+## <a name="see-also"></a>Vedere anche  
+ [RemoveHandler (istruzione)](../../../visual-basic/language-reference/statements/removehandler-statement.md)   
+ [Handle](../../../visual-basic/language-reference/statements/handles-clause.md)   
+ [Istruzione Event](../../../visual-basic/language-reference/statements/event-statement.md)   
+ [Eventi](../../../visual-basic/programming-guide/language-features/events/index.md)

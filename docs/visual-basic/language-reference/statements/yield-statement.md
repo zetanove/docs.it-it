@@ -1,77 +1,93 @@
 ---
-title: "Istruzione Yield (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.Yield"
-helpviewer_keywords: 
-  - "iteratori, istruzione Yield [Visual Basic]"
-  - "iteratori [Visual Basic]"
-  - "Yield (istruzione) [Visual Basic]"
+title: Istruzione yield (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.Yield
+helpviewer_keywords:
+- iterators, Yield statement [Visual Basic]
+- iterators [Visual Basic]
+- Yield statement [Visual Basic]
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 22
----
-# Istruzione Yield (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 393a9f4de3e801aed5932aef0e2b13d76b003965
+ms.lasthandoff: 03/13/2017
 
-Invia il successivo elemento di una raccolta a un'istruzione di `For Each...Next`.  
+---
+# <a name="yield-statement-visual-basic"></a>Istruzione Yield (Visual Basic)
+Invia l'elemento successivo di una raccolta a un `For Each...Next` istruzione.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 Yield expression  
 ```  
   
-#### Parametri  
+#### <a name="parameters"></a>Parametri  
   
-|||  
-|-|-|  
 |Termine|Definizione|  
-|`expression`|Necessario.  Un'espressione che sono implicitamente convertibile nel tipo di funzione o iteratori di accesso a `Get` contenente l'istruzione di `Yield`.|  
+|---|---|  
+|`expression`|Obbligatorio. Un'espressione che è implicitamente convertibile nel tipo di funzione iteratore o `Get` funzione di accesso che contiene il `Yield` istruzione.|  
   
-## Note  
- L'istruzione di `Yield` restituisce un elemento di una raccolta alla volta.  L'istruzione di `Yield` viene incluso in una funzione iteratori o in una funzione di accesso di `Get`, che eseguono le iterazioni personalizzate in una raccolta.  
+## <a name="remarks"></a>Note  
+ Il `Yield` istruzione restituisce un elemento di una raccolta in una fase. Il `Yield` istruzione è inclusa in una funzione iteratore o `Get` funzione di accesso, che consentono di eseguire iterazioni personalizzate su una raccolta.  
   
- Si utilizza una funzione di iteratore utilizzando [Istruzione For Each...Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md) o una query LINQ.  Ogni iterazione del ciclo di `For Each` chiama la funzione di iteratore.  Quando un'istruzione di `Yield` viene raggiunto la funzione di iteratore, `expression` viene restituito e la posizione corrente nel codice vengono mantenute.  L'esecuzione verrà riavviata da tale percorso alla successiva apertura della funzione di iteratore è denominata.  
+ Si utilizza una funzione iteratore tramite un [For Each... Istruzione successiva](../../../visual-basic/language-reference/statements/for-each-next-statement.md) o una query LINQ. Ogni iterazione del `For Each` ciclo chiama la funzione iteratore. Quando un `Yield` viene raggiunta l'istruzione nella funzione iteratore `expression` viene restituito, e viene mantenuta la posizione corrente nel codice. L'esecuzione viene riavviata a partire da quella posizione la volta successiva che viene chiamata la funzione iteratore.  
   
- Una conversione implicita deve esistere dal tipo di `expression` nell'istruzione di `Yield` al tipo restituito dell'iteratore.  
+ Deve esistere una conversione implicita dal tipo di `expression` nel `Yield` istruzione per il tipo restituito dell'iteratore.  
   
- È possibile utilizzare un'istruzione di `Return` o di `Exit Function` per terminare l'iterazione.  
+ È possibile utilizzare un `Exit Function` o `Return` istruzione per terminare l'iterazione.  
   
- "Yield" non è una parola riservata e ha un significato speciale solo quando viene utilizzato in una funzione di `Iterator` o in una funzione di accesso di `Get`.  
+ "Rendimento" non è una parola riservata e ha un significato speciale solo quando viene utilizzato in un `Iterator` funzione o `Get` della funzione di accesso.  
   
- Per ulteriori informazioni sulle funzioni iteratori e sulle funzioni di accesso di `Get`, vedere [Iteratori](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ Per ulteriori informazioni sulle funzioni di iteratore e `Get` funzioni di accesso, vedere [iteratori](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
-## Funzioni e funzioni di accesso get di iteratore  
- La dichiarazione di una funzione iteratori o di una funzione di accesso `Get` deve soddisfare i seguenti requisiti:  
+## <a name="iterator-functions-and-get-accessors"></a>Funzioni di iteratore e funzioni di accesso Get  
+ La dichiarazione di una funzione iteratore o `Get` della funzione di accesso deve soddisfare i requisiti seguenti:  
   
--   Deve includere un modificatore di [Iteratore](../../../visual-basic/language-reference/modifiers/iterator.md).  
+-   Deve includere un [iteratore](../../../visual-basic/language-reference/modifiers/iterator.md) modificatore.  
   
--   Il tipo restituito deve essere <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, o <xref:System.Collections.Generic.IEnumerator%601>.  
+-   Il tipo restituito deve essere <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, o <xref:System.Collections.Generic.IEnumerator%601>.</xref:System.Collections.Generic.IEnumerator%601> </xref:System.Collections.IEnumerator> </xref:System.Collections.Generic.IEnumerable%601> </xref:System.Collections.IEnumerable>  
   
--   Non può avere parametri di `ByRef`.  
+-   Non può avere qualsiasi `ByRef` parametri.  
   
- Una funzione iteratori non può verificarsi di un evento, in un costruttore di istanza, in un costruttore statico, o un distruttore statico.  
+ Una funzione iteratore non può trovarsi in un evento, costruttore di istanza, un costruttore statico o distruttore statico.  
   
- Una funzione iteratori può essere una funzione anonima.  Per ulteriori informazioni, vedere [Iteratori](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ Una funzione iteratore può essere una funzione anonima. Per altre informazioni, vedere [Iteratori](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
-## Gestione delle eccezioni  
- Un'istruzione di `Yield` può essere in un blocco di `Try` di [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  Un blocco `Try` con un'istruzione `Yield` può contenere blocchi `Catch` e può presentare un blocco `Finally`.  
+## <a name="exception-handling"></a>Gestione delle eccezioni  
+ Un `Yield` istruzione può essere contenuta in un `Try` blocco di un [Try... Catch... Istruzione finally](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md). Oggetto `Try` blocco che ha un `Yield` istruzione possono essere presenti `Catch` blocca e può avere un `Finally` blocco.  
   
- Un'istruzione `Yield` non può trovarsi all'interno di un blocco `Catch` o di un blocco `Finally`.  
+ Oggetto `Yield` istruzione non può essere all'interno di un `Catch` blocco o un `Finally` blocco.  
   
- Se il corpo di `For Each` \(l'esterno della funzione iteratori\) genera un'eccezione, un blocco di `Catch` nella funzione iteratori non viene eseguito, ma un blocco di `Finally` nella funzione di iteratore viene eseguito.  Un blocco `Catch` in una funzione iteratore rileva solo le eccezioni che si verificano nella funzione iteratore.  
+ Se il `For Each` corpo (all'esterno della funzione iteratore) genera un'eccezione, un `Catch` blocco nella funzione iteratore non viene eseguita, ma un `Finally` try nella funzione iteratore. Oggetto `Catch` blocco all'interno di una funzione iteratore intercetta solo le eccezioni che si verificano all'interno della funzione iteratore.  
   
-## Implementazione tecnica  
- Il codice seguente restituisce `IEnumerable (Of String)` da una funzione iteratori e quindi scorrere gli elementi di `IEnumerable (Of String)`.  
+## <a name="technical-implementation"></a>Implementazione tecnica  
+ Il codice seguente restituisce un `IEnumerable (Of String)` da una funzione iteratore e quindi scorre gli elementi del `IEnumerable (Of String)`.  
   
 ```vb  
 Dim elements As IEnumerable(Of String) = MyIteratorFunction()  
@@ -80,29 +96,29 @@ For Each element As String In elements
 Next  
 ```  
   
- La chiamata a `MyIteratorFunction` non esegue il corpo della funzione.  Anziché la chiamata `IEnumerable(Of String)` nella variabile di `elements`.  
+ La chiamata a `MyIteratorFunction` non esegue il corpo della funzione. La chiamata restituisce invece `IEnumerable(Of String)` nella variabile `elements`.  
   
- In un'iterazione del ciclo di `For Each`, il metodo di <xref:System.Collections.IEnumerator.MoveNext%2A> viene chiamato per `elements`.  Questa chiamata viene eseguito il corpo di `MyIteratorFunction` fino a raggiungere la successiva istruzione di `Yield`.  L'istruzione di `Yield` restituisce un'espressione che determina non solo il valore della variabile di `element` per l'utilizzo dal corpo del ciclo ma anche la proprietà di <xref:System.Collections.Generic.IEnumerator%601.Current%2A> di elementi, che è `IEnumerable (Of String)`.  
+ In un'iterazione del `For Each` ciclo, il <xref:System.Collections.IEnumerator.MoveNext%2A>viene chiamato per `elements`.</xref:System.Collections.IEnumerator.MoveNext%2A> Questa chiamata esegue il corpo di `MyIteratorFunction` fino a quando non viene raggiunta l'istruzione `Yield` successiva. Il `Yield` l'istruzione restituisce un'espressione che determina non solo il valore del `element` variabile per l'utilizzo dal corpo del ciclo, ma anche la <xref:System.Collections.Generic.IEnumerator%601.Current%2A>proprietà degli elementi, ovvero un `IEnumerable (Of String)`.</xref:System.Collections.Generic.IEnumerator%601.Current%2A>  
   
- In ogni iterazione successiva del ciclo di `For Each`, l'esecuzione del corpo iteratori continua da dove era stato interrotto, ancora arrestando quando raggiunge un'istruzione di `Yield`.  Il ciclo di `For Each` completa quando la fine della funzione iteratori o un'istruzione di `Exit Function` o di `Return` viene soddisfatta.  
+ In ogni iterazione successiva del ciclo `For Each`, l'esecuzione del corpo dell'iteratore continua da dove è stata interrotta, fermandosi ancora quando raggiunge un'istruzione `Yield`. Il `For Each` ciclo viene completato quando la fine della funzione iteratore o un `Return` o `Exit Function` viene raggiunta l'istruzione.  
   
-## Esempio  
- L'esempio seguente contiene un'istruzione di `Yield` presente in un ciclo di [Per… next](../../../visual-basic/language-reference/statements/for-next-statement.md).  Ogni iterazione del corpo dell'istruzione [For Each](../../../visual-basic/language-reference/statements/for-each-next-statement.md) in `Main` crea una chiamata alla funzione iteratore di `Power`.  Ogni chiamata alla funzione iteratori procederà all'esecuzione di un'istruzione di `Yield`, che si verifica durante l'iterazione successiva del ciclo di `For…Next`.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente è presente un `Yield` istruzione all'interno di un [per... Avanti](../../../visual-basic/language-reference/statements/for-next-statement.md) ciclo. Ogni iterazione del [per ogni](../../../visual-basic/language-reference/statements/for-each-next-statement.md) corpo dell'istruzione in `Main` crea una chiamata per il `Power` funzione iteratore. Ogni chiamata alla funzione iteratore procede fino alla prossima esecuzione dell'istruzione `Yield`, che si verifica durante l'iterazione successiva del ciclo `For…Next`.  
   
- Il tipo restituito del metodo di iteratore è <xref:System.Collections.Generic.IEnumerable%601>, un tipo di interfaccia iteratori.  Quando il metodo di iteratore viene chiamato, restituisce un oggetto enumerabile che include potenze di un numero.  
+ Il tipo restituito del metodo iteratore è <xref:System.Collections.Generic.IEnumerable%601>, un tipo di interfaccia iteratore.</xref:System.Collections.Generic.IEnumerable%601> Quando il metodo iteratore viene chiamato, restituisce un oggetto enumerabile che contiene le potenze di un numero.  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
+ [!code-vb[&#98; VbVbalrStatements](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
   
-## Esempio  
- Il seguente esempio viene illustrata una funzione di accesso `Get` che è un iteratore.  La dichiarazione di proprietà include un modificatore di `Iterator`.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente viene illustrata una funzione di accesso `Get` che è un iteratore. La dichiarazione di proprietà include un `Iterator` modificatore.  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements&#99;](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
   
- Per ulteriori esempi, vedere [Iteratori](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md).  
+ Per ulteriori esempi, vedere [iteratori](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
-## Requisiti  
- [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs-dev11-long-md.md)]  
+## <a name="requirements"></a>Requisiti  
+ [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs_dev11_long_md.md)]  
   
-## Vedere anche  
- [Iteratori](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)   
- [Statements](../../../visual-basic/language-reference/statements/index.md)
+## <a name="see-also"></a>Vedere anche  
+ [Iteratori](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   
+ [Istruzioni](../../../visual-basic/language-reference/statements/index.md)

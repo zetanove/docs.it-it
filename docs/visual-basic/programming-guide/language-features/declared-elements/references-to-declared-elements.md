@@ -1,33 +1,49 @@
 ---
-title: "Riferimenti a elementi dichiarati (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "elementi dichiarati"
-  - "riferimenti, elementi dichiarati"
-  - "nomi completi"
+title: Riferimenti a elementi dichiarati (Visual Basic) | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- declared elements
+- references, declared elements
+- qualified names
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 19
----
-# Riferimenti a elementi dichiarati (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 48a04f81075accc073b0d1f5b7a61006bef807ae
+ms.lasthandoff: 03/13/2017
 
-Quando il codice fa riferimento a un elemento dichiarato, il [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] compilatore corrisponde al nome nel riferimento alla dichiarazione corretta di tale nome. Se più di un elemento viene dichiarato con lo stesso nome, è possibile controllare quale di questi elementi viene riferimento *qualificazione* il relativo nome.  
+---
+# <a name="references-to-declared-elements-visual-basic"></a>Riferimenti a elementi dichiarati (Visual Basic)
+Quando il codice fa riferimento a un elemento dichiarato, il [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compilatore corrisponde al nome nel riferimento alla dichiarazione corretta di tale nome. Se più di un elemento viene dichiarato con lo stesso nome, è possibile controllare quale di questi elementi viene riferimento *qualificazione* il relativo nome.  
   
- Il compilatore tenta di ottenere un riferimento a una dichiarazione del nome e il *nell'ambito più ristretto*. Ciò significa inizia con il codice di riferimento e spostandosi verso l'esterno per i livelli successivi di contenente gli elementi.  
+ Il compilatore tenta di ottenere un riferimento a una dichiarazione del nome e il *nell'ambito più ristretto*. Ciò significa inizia con il codice di riferimento e spostandosi verso l'esterno per i livelli successivi di che contiene elementi.  
   
- Nell'esempio seguente vengono visualizzati i riferimenti a due variabili con lo stesso nome. Nell'esempio vengono dichiarate due variabili, ciascuna denominata `totalCount`, con diversi livelli di ambito nel modulo `container`. Quando la procedura `showCount` Visualizza `totalCount` senza qualifica, il [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] compilatore risolve il riferimento alla dichiarazione con l'ambito più ristretto, ovvero la dichiarazione locale all'interno di `showCount`. Quando è qualificato `totalCount` con il modulo contenente `container`, il compilatore risolve il riferimento alla dichiarazione con l'ambito più ampio.  
+ Nell'esempio seguente vengono visualizzati i riferimenti a due variabili con lo stesso nome. Nell'esempio vengono dichiarate due variabili, ciascuna denominata `totalCount`, con diversi livelli di ambito nel modulo `container`. Quando la procedura `showCount` Visualizza `totalCount` senza qualifica, il [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compilatore risolve il riferimento alla dichiarazione con l'ambito più ristretto, ovvero la dichiarazione locale all'interno di `showCount`. Quando è qualificato `totalCount` con il modulo contenente `container`, il compilatore risolve il riferimento alla dichiarazione con l'ambito più ampio.  
   
 ```vb  
 ' Assume these two modules are both in the same assembly.  
@@ -104,7 +120,7 @@ End Module
   
 6.  Il compilatore utilizza la stringa di qualificazione per trovare una dichiarazione di non crittografata e non ambigua a cui può trovare il riferimento all'elemento di destinazione.  
   
- Inoltre, è necessario qualificare un riferimento al nome, se l'applicazione ha accesso a più di un elemento di programmazione che ha lo stesso nome. Ad esempio, il <xref:System.Windows.Forms> e <xref:System.Web.UI.WebControls> spazi dei nomi di entrambi contengono una `Label` classe (<xref:System.Windows.Forms.Label?displayProperty=fullName> e <xref:System.Web.UI.WebControls.Label?displayProperty=fullName>). Se l'applicazione utilizza entrambi, o se definisce il proprio `Label` (classe), è necessario distinguere i diversi `Label` oggetti. Includere l'alias dello spazio dei nomi o importazione nella dichiarazione di variabile. Nell'esempio seguente viene utilizzato l'alias di importazione.  
+ Inoltre, è necessario qualificare un riferimento al nome, se l'applicazione ha accesso a più di un elemento di programmazione che ha lo stesso nome. Ad esempio, il <xref:System.Windows.Forms>e <xref:System.Web.UI.WebControls>due spazi dei nomi contengono un `Label` (classe) (<xref:System.Windows.Forms.Label?displayProperty=fullName> e <xref:System.Web.UI.WebControls.Label?displayProperty=fullName>).</xref:System.Web.UI.WebControls.Label?displayProperty=fullName> </xref:System.Windows.Forms.Label?displayProperty=fullName> </xref:System.Web.UI.WebControls> </xref:System.Windows.Forms> Se l'applicazione utilizza entrambi, o se definisce il proprio `Label` (classe), è necessario distinguere i diversi `Label` oggetti. Includere l'alias dello spazio dei nomi o importazione nella dichiarazione di variabile. Nell'esempio seguente viene utilizzato l'alias di importazione.  
   
 ```vb  
 ' The following statement must precede all your declarations.  
@@ -121,7 +137,7 @@ Dim demoClass As class1 = New class1()
 demoClass.someSub[(argumentlist)]  
 ```  
   
- È possibile utilizzare il nome della classe per qualificare un membro che non [Shared](../../../../visual-basic/language-reference/modifiers/shared.md). È innanzitutto necessario creare un'istanza in una variabile oggetto (in questo caso `demoClass`) e quindi farvi riferimento tramite il nome della variabile.  
+ È possibile utilizzare il nome della classe per qualificare un membro che non è [Shared](../../../../visual-basic/language-reference/modifiers/shared.md). È innanzitutto necessario creare un'istanza in una variabile oggetto (in questo caso `demoClass`) e quindi farvi riferimento tramite il nome della variabile.  
   
  Se una classe o struttura ha un `Shared` membro, è possibile qualificare tale membro con il nome di classe o struttura o con una variabile o espressione che punta a un'istanza.  
   
@@ -159,9 +175,9 @@ End Module
 ```  
   
 ## <a name="references-to-projects"></a>Riferimenti a progetti  
- Utilizzare [Pubblica](../../../../visual-basic/language-reference/modifiers/public.md) elementi definiti in un altro progetto, è innanzitutto necessario impostare un *riferimento* alla raccolta di assembly o un tipo di progetto. Per impostare un riferimento, fare clic su **Aggiungi riferimento** nel **progetto** menu o utilizzare il [/reference (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/reference.md) l'opzione del compilatore da riga di comando.  
+ Utilizzare [pubblica](../../../../visual-basic/language-reference/modifiers/public.md) elementi definiti in un altro progetto, è innanzitutto necessario impostare un *riferimento* alla raccolta di assembly o un tipo di progetto. Per impostare un riferimento, fare clic su **Aggiungi riferimento** sul **progetto** menu o utilizzare il [/reference (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/reference.md) l'opzione del compilatore da riga di comando.  
   
- Ad esempio, è possibile utilizzare il modello a oggetti XML di [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)]. Se si imposta un riferimento il <xref:System.Xml> dello spazio dei nomi, è possibile dichiarare e utilizzare una delle relative classi, ad esempio <xref:System.Xml.XmlDocument>. Nell'esempio seguente viene utilizzato <xref:System.Xml.XmlDocument>.  
+ Ad esempio, è possibile utilizzare il modello a oggetti XML di [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]. Se si imposta un riferimento il <xref:System.Xml>dello spazio dei nomi, è possibile dichiarare e utilizzare una delle relative classi, ad esempio <xref:System.Xml.XmlDocument>.</xref:System.Xml.XmlDocument> </xref:System.Xml> L'esempio seguente usa <xref:System.Xml.XmlDocument>.</xref:System.Xml.XmlDocument>  
   
 ```vb  
 ' Assume this project has a reference to System.Xml  
@@ -170,7 +186,7 @@ Dim xDoc As System.Xml.XmlDocument
 ```  
   
 ## <a name="importing-containing-elements"></a>Importazione di elementi contenitore  
- È possibile utilizzare il [istruzione Imports (tipo e spazio dei nomi .NET)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) a *importare* gli spazi dei nomi che contengono i moduli o le classi che si desiderano utilizzare. In questo modo è possibile fare riferimento agli elementi definiti in uno spazio dei nomi importato senza i relativi nomi completi. Nell'esempio seguente viene riscritto l'esempio precedente per importare il <xref:System.Xml> dello spazio dei nomi.  
+ È possibile utilizzare il [istruzione Imports (tipo e Namespace .NET)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) a *importare* gli spazi dei nomi che contengono i moduli o le classi che si desiderano utilizzare. In questo modo è possibile fare riferimento agli elementi definiti in uno spazio dei nomi importato senza i relativi nomi completi. Nell'esempio seguente viene riscritto l'esempio precedente per importare il <xref:System.Xml>dello spazio dei nomi.</xref:System.Xml>  
   
 ```vb  
 ' Assume this project has a reference to System.Xml  
@@ -180,7 +196,7 @@ Imports System.Xml
 Dim xDoc As XmlDocument  
 ```  
   
- Inoltre, il `Imports` istruzione è possibile definire un *alias di importazione* per ogni spazio dei nomi importato. Ciò può rendere il codice sorgente più breve e facile da leggere. Nell'esempio seguente viene riscritto l'esempio precedente per utilizzare `xD` come alias per il <xref:System.Xml> dello spazio dei nomi.  
+ Inoltre, il `Imports` istruzione è possibile definire un *alias di importazione* per ogni spazio dei nomi importato. Ciò può rendere il codice sorgente più breve e facile da leggere. Nell'esempio seguente viene riscritto l'esempio precedente per utilizzare `xD` come alias per il <xref:System.Xml>dello spazio dei nomi.</xref:System.Xml>  
   
 ```vb  
 ' Assume this project has a reference to System.Xml  
@@ -200,13 +216,13 @@ Dim xDoc As xD.XmlDocument
  È possibile evitare ambiguità, assegnando a tutti gli elementi di nomi univoci. Quindi è possibile creare riferimento a qualsiasi elemento senza la necessità di qualificare il nome con un spazio dei nomi, modulo o classe. È anche possibile ridurre le probabilità di accidentalmente fare riferimento a un elemento non corretto.  
   
 ## <a name="shadowing"></a>Shadowing  
- Quando due elementi di programmazione condividono lo stesso nome, è possibile nascondere una di esse, o *shadow*, l'altro. Un elemento nascosto non è disponibile per riferimento; al contrario, quando il codice utilizza il nome dell'elemento nascosto, il [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] compilatore risolve tale nome nell'elemento di shadowing. Per una spiegazione più dettagliata con esempi, vedere [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).  
+ Quando due elementi di programmazione condividono lo stesso nome, è possibile nascondere una di esse, o *shadow*, l'altro. Un elemento nascosto non è disponibile per riferimento; al contrario, quando il codice utilizza il nome dell'elemento nascosto, il [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compilatore risolve tale nome nell'elemento di shadowing. Per una spiegazione più dettagliata con esempi, vedere [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Nomi elementi dichiarati](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)   
  [Caratteristiche di elementi dichiarati](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)   
- [NIB procedura: modificare le proprietà del progetto e le impostazioni di configurazione](http://msdn.microsoft.com/it-it/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
+ [NIB procedura: modificare le proprietà del progetto e le impostazioni di configurazione](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
  [Variabili](../../../../visual-basic/programming-guide/language-features/variables/index.md)   
  [Istruzione Imports (tipo e spazio dei nomi .NET)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)   
  [Operatore new](../../../../visual-basic/language-reference/operators/new-operator.md)   
- [Pubblica](../../../../visual-basic/language-reference/modifiers/public.md)
+ [Public](../../../../visual-basic/language-reference/modifiers/public.md)

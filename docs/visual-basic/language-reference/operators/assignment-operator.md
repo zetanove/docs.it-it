@@ -1,68 +1,85 @@
 ---
-title: "= Operator (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.Assign"
-  - "vb.="
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "= operator [Visual Basic]"
-  - "= assignment statements [Visual Basic]"
+title: = Operatore (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.Assign
+- vb.=
+dev_langs:
+- VB
+helpviewer_keywords:
+- = operator [Visual Basic]
+- = assignment statements [Visual Basic]
 ms.assetid: 2dac2e49-86c8-42f8-80c1-458452fb5e29
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 16
----
-# = Operator (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 47b69a908f12ec36daf2848da6ee4b04895fd3a4
+ms.lasthandoff: 03/13/2017
 
-Assegna un valore a una variabile o a una proprietà.  
+---
+# <a name="-operator-visual-basic"></a>Operatore = (Visual Basic)
+Assegna un valore a una variabile o proprietà.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
   
 variableorproperty = value  
 ```  
   
-## Parti  
+## <a name="parts"></a>Parti  
  `variableorproperty`  
  Qualsiasi variabile modificabile o qualsiasi proprietà.  
   
  `value`  
  Qualsiasi valore letterale, costante o espressione.  
   
-## Note  
- L'elemento a sinistra del segno di uguale \(`=`\) può essere una semplice variabile scalare, una proprietà oppure un elemento di una matrice.  La variabile o la proprietà non può essere [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md).  L'operatore `=` assegna il valore specificato a destra alla variabile o alla proprietà indicata a sinistra.  
+## <a name="remarks"></a>Note  
+ L'elemento a sinistra del segno di uguale (`=`) può essere una semplice variabile scalare, una proprietà o un elemento della matrice. La variabile o proprietà non può essere [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md). Il `=` operatore assegna il valore alla sua destra alla variabile o proprietà alla sua sinistra.  
   
 > [!NOTE]
->  L'operatore `=` viene utilizzato anche come operatore di confronto.  Per informazioni dettagliate, vedere [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md).  
+>  Il `=` operatore viene utilizzato anche come un operatore di confronto. Per informazioni dettagliate, vedere [operatori di confronto](../../../visual-basic/language-reference/operators/comparison-operators.md).  
   
-## Overload  
- L'operatore `=` può essere sottoposto a overload solo come operatore di confronto relazionale, non come operatore di assegnazione.  Per ulteriori informazioni, vedere [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+## <a name="overloading"></a>Overload  
+ Il `=` operatore può essere sottoposto a overload solo come operatore di confronto relazionale, non come un operatore di assegnazione. Per ulteriori informazioni, vedere [routine di operatore](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
   
-## Esempio  
- Nell'esempio riportato di seguito viene illustrato l'operatore di assegnazione.  Il valore a destra viene assegnato alla variabile a sinistra.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente viene illustrato l'operatore di assegnazione. Il valore a destra viene assegnato alla variabile a sinistra.  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
+ [!code-vb[9 VbVbalrOperators](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
   
-## Vedere anche  
- [&\= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   
- [\*\= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)   
- [\+\= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)   
- [\-\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
- [\/\= Operator](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)   
- [\\\= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)   
- [^\= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)   
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)   
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)   
- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)   
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## <a name="see-also"></a>Vedere anche  
+ [/ = (Operatore)](../../../visual-basic/language-reference/operators/and-assignment-operator.md)   
+ [* = (Operatore)](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)   
+ [+ = Operatore](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)   
+ [-= Operatore (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)   
+ [Operatore / = (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)   
+ [\\= Operatore](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)   
+ [^ = (Operatore)](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)   
+ [Istruzioni](../../../visual-basic/programming-guide/language-features/statements.md)   
+ [Operatori di confronto](../../../visual-basic/language-reference/operators/comparison-operators.md)   
+ [Sola lettura](../../../visual-basic/language-reference/modifiers/readonly.md)   
+ [Inferenza del tipo di variabile locale](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+

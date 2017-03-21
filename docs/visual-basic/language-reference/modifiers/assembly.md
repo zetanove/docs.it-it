@@ -1,39 +1,57 @@
 ---
-title: "Assembly (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.Assembly"
-  - "vb.AssemblyAttribute"
-  - "Assembly"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Assembly modifier"
-  - "Assembly keyword"
-  - "attribute blocks, Assembly keyword"
+title: Assembly (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.Assembly
+- vb.AssemblyAttribute
+- Assembly
+dev_langs:
+- VB
+helpviewer_keywords:
+- Assembly modifier
+- Assembly keyword
+- attribute blocks, Assembly keyword
 ms.assetid: 925e7471-3bdf-4b51-bb93-cbcfc6efc52f
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 15
----
-# Assembly (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: b496b96360ff891554ab71ba2b3227b2dabbc416
+ms.lasthandoff: 03/13/2017
 
+---
+# <a name="assembly-visual-basic"></a>Assembly (Visual Basic)
 Specifica che un attributo all'inizio di un file di origine viene applicato all'intero assembly.  
   
-## Note  
- Diversi attributi sono relativi a un singolo elemento di programmazione, quale una classe o una proprietà.  Per applicare questo tipo di attributo, collegare il blocco di attributi, racchiuso tra parentesi angolari \(`< >`\), direttamente all'istruzione per la dichiarazione.  
+## <a name="remarks"></a>Note  
+ Numero di attributi relativi a un singolo elemento di programmazione, ad esempio una classe o una proprietà. Per applicare tale attributo, collegare il blocco di attributi, parentesi angolari (`< >`), direttamente all'istruzione di dichiarazione.  
   
- Se un attributo è relativo solo al seguente elemento ma non all'intero assembly, il blocco di attributi viene inserito all'inizio del file di origine e l'attributo viene identificato con la parola chiave `Assembly`.  Se è relativo al modulo dell'assembly corrente, utilizzare la parola chiave [Module](../../../visual-basic/language-reference/modifiers/module-keyword.md).  
+ Se un attributo relativo non solo per il seguente elemento ma non l'intero assembly, inserire il blocco di attributi all'inizio del file di origine e di identificare l'attributo con il `Assembly` (parola chiave). Se si applica al modulo in assembly corrente, utilizzare il [modulo](../../../visual-basic/language-reference/modifiers/module-keyword.md) (parola chiave).  
   
- È possibile anche applicare un attributo a un assembly nel file AssemblyInfo.vb e in tal caso non è necessario utilizzare un blocco di attributi nel file del codice sorgente principale.  
+ È inoltre possibile applicare un attributo a un assembly nel file AssemblyInfo. vb, nel qual caso non è necessario utilizzare un blocco di attributi nel file di codice sorgente principale.  
   
-## Vedere anche  
- [Module \<keyword\>](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
- [Attributi](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)
+## <a name="see-also"></a>Vedere anche  
+ [Modulo \<parola chiave >](../../../visual-basic/language-reference/modifiers/module-keyword.md)   
+ [Panoramica degli attributi](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+
+

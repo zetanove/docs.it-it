@@ -1,167 +1,183 @@
 ---
-title: "Walkthrough: Calling Windows APIs (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "DLLs, calling"
-  - "Windows API, walkthroughs"
-  - "platform invoke, walkthroughs"
-  - "API calls, walkthroughs [Visual Basic]"
-  - "Windows API, calling"
-  - "walkthroughs [Visual Basic], API calls"
-  - "DllImport attribute, calling Windows API"
-  - "Declare statement, declaring DLL functions"
+title: 'Procedura dettagliata: Chiamata delle API di Windows (Visual Basic) | Documenti di Microsoft'
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- DLLs, calling
+- Windows API, walkthroughs
+- platform invoke, walkthroughs
+- API calls, walkthroughs [Visual Basic]
+- Windows API, calling
+- walkthroughs [Visual Basic], API calls
+- DllImport attribute, calling Windows API
+- Declare statement, declaring DLL functions
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 20
----
-# Walkthrough: Calling Windows APIs (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 5001ccebb0a5b8cadd4e856342601506cf1d033f
+ms.lasthandoff: 03/13/2017
 
-Le API di Windows sono librerie a collegamento dinamico \(DLL, Dynamic Link Library\) che fanno parte del sistema operativo Windows.  È possibile utilizzare le API di Windows per eseguire alcune attività quando è difficile scrivere routine equivalenti.  In Windows è disponibile ad esempio una funzione denominata `FlashWindowEx`, che consente di alternare sfumature chiare e scure nella barra del titolo delle applicazioni.  
+---
+# <a name="walkthrough-calling-windows-apis-visual-basic"></a>Procedura dettagliata: chiamata delle API di Windows (Visual Basic)
+API di Windows sono librerie a collegamento dinamico (DLL) che fanno parte del sistema operativo Windows. Utilizzarli per eseguire attività quando è difficile scrivere routine equivalenti. Ad esempio, Windows fornisce una funzione denominata `FlashWindowEx` che consente di rendere la barra del titolo di un'applicazione alternare sfumature chiare e scure.  
   
- Utilizzando le API di Windows è possibile velocizzare i tempi di programmazione, in quanto le API includono molte utili funzionalità già pronte per l'uso.  Tuttavia, utilizzare le API di Windows può essere difficile e, in caso di errore, si verificano grossi problemi.  
+ Il vantaggio di utilizzare le API di Windows nel codice è che è possibile risparmiare tempo sviluppo perché contengono molte utili funzionalità che sono già scritto e in attesa di essere utilizzato. Lo svantaggio è che le API di Windows può risultare difficile lavorare con e grossi quando le cose vanno male.  
   
- Le API di Windows rappresentano una categoria di interoperabilità speciale,  non utilizzano codice gestito, non dispongono di librerie dei tipi incorporate e utilizzano tipi di dati diversi da quelli utilizzati in Visual Studio.  Tenendo conto di tali differenze, e poiché le API di Windows non sono oggetti COM, l'interoperabilità con le API di Windows e [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] viene realizzata mediante platform invoke \(PInvoke\).  Le chiamate della piattaforma sono un servizio che consente al codice gestito di chiamare le funzioni non gestite implementate in una DLL.  Per ulteriori informazioni, vedere [Consuming Unmanaged DLL Functions](../Topic/Consuming%20Unmanaged%20DLL%20Functions.md).  È possibile utilizzare PInvoke in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] mediante l'istruzione `Declare` o attraverso l'applicazione dell'attributo `DllImport` a una routine vuota.  
+ API di Windows rappresentano una categoria speciale di interoperabilità. API di Windows non utilizzano codice gestito, non dispongono di librerie dei tipi e utilizzare tipi di dati che sono diversi da quelli utilizzati con Visual Studio. A causa di queste differenze, e poiché le API di Windows non sono oggetti COM, l'interoperabilità con le API di Windows e [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] viene realizzata mediante platform invoke, o PInvoke. Platform invoke è un servizio che consente al codice per chiamare funzioni non gestite implementate in DLL gestito. Per ulteriori informazioni, vedere [utilizzo di funzioni DLL non gestite](http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045). È possibile utilizzare PInvoke in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] utilizzando il `Declare` istruzione o l'applicazione di `DllImport` attributo a una routine vuota.  
   
- Le chiamate delle API di Windows costituivano un elemento importante della programmazione in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)], ma con [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] in genere non sono necessarie.  Se possibile, si consiglia di utilizzare codice gestito da [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] anziché chiamate di API di Windows, per eseguire le attività.  Nella procedura dettagliata descritta di seguito sono fornite tutte le informazioni necessarie per l'utilizzo delle API di Windows.  
+ Chiamate API Windows sono una parte importante di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] programmazione in passato, ma in genere non sono necessarie con [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]. Quando possibile, utilizzare codice gestito di [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] per eseguire attività, invece di chiamate API Windows. Questa procedura dettagliata vengono fornite informazioni per i casi in cui tramite le API di Windows è necessaria.  
   
- [!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note-settings-general-md.md)]  
+[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
-## Chiamate API tramite l'istruzione Declare  
- Il metodo più comune per chiamare le API di Windows consiste nell'utilizzare l'istruzione `Declare`.  
+## <a name="api-calls-using-declare"></a>Chiamate API tramite dichiarare  
+ È il modo più comune per chiamare le API di Windows utilizzando il `Declare` istruzione.  
   
-#### Per dichiarare una routine DLL  
+#### <a name="to-declare-a-dll-procedure"></a>Per dichiarare una routine DLL  
   
-1.  Determinare il nome della funzione che si desidera chiamare, gli argomenti, i tipi degli argomenti e i valori restituiti, nonché il nome e il percorso della DLL che li contiene.  
+1.  Determinare il nome della funzione da chiamare, più argomenti, tipi di argomenti e restituire valore, nonché il nome e percorso della DLL che lo contiene.  
   
     > [!NOTE]
-    >  Per informazioni dettagliate sulle API di Windows, fare riferimento alla documentazione dell'SDK di Windows a 32 bit in API di Windows in Platform SDK.  Per ulteriori informazioni sulle costanti utilizzate dalle API di Windows, vedere i file di intestazione disponibili in Platform SDK, ad esempio Windows.h.  
+    >  Per informazioni complete sulle API di Windows, vedere la documentazione di Win32 SDK nell'API di Windows Platform SDK. Per ulteriori informazioni sulle costanti che utilizzano le API di Windows, esaminare i file di intestazione, ad esempio incluso in SDK della piattaforma Windows. h.  
   
-2.  Aprire un nuovo progetto Applicazione Windows scegliendo **Nuovo** dal menu **File** e quindi **Progetto**.  Verrà visualizzata la finestra di dialogo **Nuovo progetto**.  
+2.  Aprire un nuovo progetto applicazione Windows, fare clic su **New** sul **File** menu e quindi fare clic su **progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-3.  Selezionare **Applicazione Windows** nell'elenco di modelli di progetto di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  Verrà visualizzato il nuovo progetto.  
+3.  Selezionare **applicazione Windows** dall'elenco di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] modelli di progetto. Viene visualizzato il nuovo progetto.  
   
-4.  Aggiungere la funzione `Declare` seguente alla classe o al modulo in cui si desidera utilizzare la DLL:  
+4.  Aggiungere il codice seguente `Declare` funzione alla classe o modulo in cui si desidera utilizzare la DLL:  
   
-     [!code-vb[VbVbalrInterop#9](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_1.vb)]  
+     [!code-vb[9 VbVbalrInterop](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_1.vb)]  
   
-### Parti dell'istruzione Declare  
- L'istruzione `Declare` include gli elementi descritti di seguito.  
+### <a name="parts-of-the-declare-statement"></a>Parti dell'istruzione Declare  
+ Il `Declare` istruzione include i seguenti elementi.  
   
-#### Modificatore Auto  
- Il modificatore `Auto` indica al runtime di convertire la stringa sulla base del nome del metodo o, se specificato, al nome di alias secondo le regole di Common Language Runtime.  
+#### <a name="auto-modifier"></a>Modificatore Auto  
+ Il `Auto` modificatore indica al runtime di convertire la stringa in base al nome di metodo in base alle regole di common language runtime (o nome di alias se specificato).  
   
-#### Parole chiave Lib e Alias  
- Il nome che segue la parola chiave `Function` è il nome utilizzato dal programma per accedere alla funzione importata.  Il nome può corrispondere al nome reale della funzione che si sta chiamando. In alternativa, è possibile utilizzare qualsiasi nome di routine valido e quindi utilizzare la parola chiave `Alias` per specificare il nome reale della funzione che si sta chiamando.  
+#### <a name="lib-and-alias-keywords"></a>Parole chiave lib e Alias  
+ Il nome che segue il `Function` (parola chiave) è il nome del programma utilizzato per accedere alla funzione importata. Può essere lo stesso nome reale della funzione che si sta chiamando oppure è possibile utilizzare qualsiasi nome di routine valido e quindi utilizzano il `Alias` (parola chiave) per specificare il nome reale della funzione che si sta chiamando.  
   
- Specificare la parola chiave `Lib` seguita dal nome e dalla posizione della DLL che contiene la funzione che si sta chiamando.  Non è necessario specificare il percorso dei file che si trovano nelle directory di sistema di Windows.  
+ Specificare il `Lib` (parola chiave), seguito dal nome e percorso della DLL che contiene la funzione che si sta chiamando. Non è necessario specificare il percorso dei file presenti nella directory di sistema Windows.  
   
- Utilizzare la parola chiave `Alias` se il nome della funzione che si sta chiamando non è un nome di routine di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] valido o se è in conflitto con il nome di altri elementi dell'applicazione.  `Alias` indica il nome reale della funzione chiamata.  
+ Utilizzare il `Alias` (parola chiave) se il nome della funzione che si sta chiamando non è valido [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] nome della stored procedure o in conflitto con il nome di altri elementi all'interno dell'applicazione. `Alias`indica il nome reale della funzione chiamata.  
   
-#### Dichiarazioni del tipo di dati e dell'argomento  
- Dichiarare gli argomenti e i relativi tipi di dati  Questa operazione può risultare impegnativa in quanto i tipi di dati utilizzati da Windows non corrispondono a quelli di Visual Studio.  In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] gran parte del lavoro viene svolta automaticamente mediante un processo denominato *marshalling*, che consiste nella conversione degli argomenti in tipi di dati compatibili.  Per controllare in modo esplicito il marshalling degli argomenti, è possibile utilizzare l'attributo <xref:System.Runtime.InteropServices.MarshalAsAttribute> definito nello spazio dei nomi <xref:System.Runtime.InteropServices>.  
+#### <a name="argument-and-data-type-declarations"></a>Argomento e le dichiarazioni di tipi di dati  
+ Dichiarare gli argomenti e i tipi di dati. Può essere difficile poiché i tipi di dati che utilizza Windows non corrispondono ai tipi di dati di Visual Studio. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]gran parte del lavoro è la conversione di argomenti di tipi di dati compatibili, un processo denominato *marshalling*. È possibile controllare in modo esplicito la modalità di marshalling di argomenti utilizzando il <xref:System.Runtime.InteropServices.MarshalAsAttribute>attributo definito nel <xref:System.Runtime.InteropServices>dello spazio dei nomi.</xref:System.Runtime.InteropServices> </xref:System.Runtime.InteropServices.MarshalAsAttribute>  
   
 > [!NOTE]
->  Le versioni precedenti di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] consentivano di dichiarare parametri `As Any`, pertanto era possibile utilizzare dati di qualsiasi tipo.  In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] è necessario utilizzare un tipo di dati specifico per tutte le istruzioni `Declare`.  
+>  Le versioni precedenti di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] consentivano di dichiarare parametri `As Any`, vale a dire che i dati di tutti i dati tipo può essere utilizzato. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]è necessario utilizzare un tipo di dati specifico per tutti `Declare` istruzioni.  
   
-#### Costanti di API di Windows  
- Alcuni argomenti includono più costanti.  L'API `MessageBox` descritta in questa procedura dettagliata, ad esempio, accetta un argomento Integer denominato `Typ` che controlla le modalità di visualizzazione della finestra di messaggio.  È possibile determinare il valore numerico di queste costanti esaminando le istruzioni `#define` nel file WinUser.h.  I valori numerici vengono in genere indicati come valori esadecimali, pertanto potrebbe essere necessario utilizzare una calcolatrice per sommarli e convertirli in decimali.  Se ad esempio si desidera combinare le costanti per lo stile esclamativo `MB_ICONEXCLAMATION` 0x00000030 e lo stile Sì\/No `MB_YESNO` 0x00000004, è possibile sommare i numeri e ottenere un risultato di 0x00000034 o 52 decimali.  Sebbene sia possibile utilizzare direttamente il risultato decimale, si consiglia di dichiarare questi valori come costanti nell'applicazione e di combinarli utilizzando l'operatore `Or`.  
+#### <a name="windows-api-constants"></a>Costanti di API Windows  
+ Alcuni argomenti sono combinazioni di costanti. Ad esempio, il `MessageBox` API descritta in questa procedura dettagliata accetta un argomento integer denominato `Typ` che controlla come viene visualizzata la finestra di messaggio. È possibile determinare il valore numerico di queste costanti esaminando il `#define` istruzioni nel file winuser. I valori numerici vengono in genere visualizzati in formato esadecimale, pertanto è consigliabile utilizzare una calcolatrice per sommarli e convertirli in decimale. Ad esempio, se si desidera combinare le costanti per lo stile esclamativo `MB_ICONEXCLAMATION` 0x00000030 e Sì/alcuno stile `MB_YESNO` 0x00000004, è possibile aggiungere i numeri e ottenere un risultato di 0x00000034 o 52 decimali. Anche se è possibile utilizzare direttamente il risultato decimale, è preferibile dichiarare questi valori come costanti nell'applicazione e combinarli tramite il `Or` operatore.  
   
-###### Per dichiarare costanti per le chiamate API di Windows  
+###### <a name="to-declare-constants-for-windows-api-calls"></a>Per dichiarare le costanti per le chiamate API Windows  
   
-1.  Consultare la documentazione relativa alla funzione di Windows che si sta chiamando.  Determinare il nome delle costanti utilizzate e il nome del file con estensione h contenente i valori numerici di tali costanti.  
+1.  Consultare la documentazione per la funzione Windows che si sta chiamando. Determinare il nome di costanti utilizzate e il nome del file con estensione h che contiene i valori numerici per queste costanti.  
   
-2.  Per visualizzare il contenuto del file di intestazione con estensione h e individuare i valori associati alle costanti utilizzate, utilizzare un editor di testo, ad esempio Blocco note.  L'API `MessageBox`, ad esempio, utilizza la costante `MB_ICONQUESTION` per visualizzare un punto interrogativo nella finestra del messaggio.  La definizione di `MB_ICONQUESTION`, che si trova nel file WinUser.h, è la seguente:  
+2.  Utilizzare un editor di testo, ad esempio Blocco note, per visualizzare il contenuto del file di intestazione (h) e trovare i valori associati alle costanti. Ad esempio, il `MessageBox` API utilizza la costante `MB_ICONQUESTION` per visualizzare un punto interrogativo nella finestra di messaggio. La definizione per `MB_ICONQUESTION` in winuser. H e viene visualizzato come segue:  
   
      `#define MB_ICONQUESTION             0x00000020L`  
   
-3.  Aggiungere istruzioni `Const` equivalenti alla classe o al modulo per rendere disponibili le costanti nell'applicazione.  Di seguito è riportato un esempio:  
+3.  Aggiungere equivalente `Const` istruzioni per la classe o un modulo per rendere le costanti disponibili per l'applicazione. Ad esempio:  
   
-     [!code-vb[VbVbalrInterop#11](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_2.vb)]  
+     [!code-vb[VbVbalrInterop&#11;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_2.vb)]  
   
-###### Per chiamare la routine DLL  
+###### <a name="to-call-the-dll-procedure"></a>Per chiamare la routine DLL  
   
-1.  Aggiungere un pulsante denominato `Button1` al form di avvio del progetto, quindi fare doppio clic su di esso per visualizzarne il codice.  Verrà visualizzato il gestore eventi per il pulsante.  
+1.  Aggiungere un pulsante denominato `Button1` per l'avvio del modulo per il progetto e quindi fare doppio clic per visualizzare il codice. Il gestore eventi per il pulsante viene visualizzato.  
   
-2.  Aggiungere codice al gestore eventi `Click` relativo al pulsante aggiunto per chiamare la routine e specificare gli argomenti appropriati.  
+2.  Aggiungere codice per il `Click` gestore dell'evento del pulsante aggiunto per chiamare la routine e specificare gli argomenti appropriati:  
   
-     [!code-vb[VbVbalrInterop#12](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_3.vb)]  
+     [!code-vb[VbVbalrInterop&#12;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_3.vb)]  
   
-3.  Premere F5 per eseguire il progetto.  Verrà visualizzata la finestra di messaggio con i pulsanti di risposta **Yes** e **No**.  Fare clic su uno dei pulsanti.  
+3.  Eseguire il progetto premendo F5. La finestra di messaggio viene visualizzata con entrambi **Sì** e **n** pulsanti di risposta. Fare clic su uno.  
   
-#### Marshalling dei dati  
- In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] i tipi di dati dei parametri e dei valori restituiti per le chiamate delle API di Windows vengono convertiti automaticamente, tuttavia è possibile utilizzare l'attributo `MarshalAs` per specificare in modo esplicito tipi di dati non gestiti previsti da un'API.  Per ulteriori informazioni sul marshalling di interoperabilità, vedere [Interop Marshaling](../Topic/Interop%20Marshaling.md).  
+#### <a name="data-marshaling"></a>Marshalling dei dati  
+ [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]Converte i tipi di dati dei parametri e valori restituiti per le chiamate API Windows, ma si possono utilizzare automaticamente il `MarshalAs` attributo per specificare in modo esplicito i tipi di dati non gestiti che prevede un'API. Per ulteriori informazioni sul marshalling di interoperabilità, vedere [marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
-###### Per utilizzare Declare e MarshalAs in una chiamata API  
+###### <a name="to-use-declare-and-marshalas-in-an-api-call"></a>Per utilizzare Declare e MarshalAs in una chiamata API  
   
-1.  Determinare il nome della funzione che si desidera chiamare, gli argomenti, i tipi di dati e i valori restituiti.  
+1.  Determinare il nome della funzione da chiamare, gli argomenti, tipi di dati e valore restituito.  
   
-2.  Per semplificare l'accesso all'attributo `MarshalAs`, aggiungere un'istruzione `Imports` all'inizio del codice della classe o del modulo, come nell'esempio seguente:  
+2.  Per semplificare l'accesso per il `MarshalAs` attributo, aggiungere un `Imports` all'inizio del codice per la classe o modulo, come nell'esempio seguente:  
   
-     [!code-vb[VbVbalrInterop#13](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)]  
+     [!code-vb[13 VbVbalrInterop](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)]  
   
-3.  Aggiungere un prototipo di funzione per la funzione importata nella classe o nel modulo utilizzato e applicare l'attributo `MarshalAs` ai parametri o al valore restituito.  Nell'esempio che segue viene eseguito il marshalling come `AsAny` di una chiamata API che prevede il tipo `void*`:  
+3.  Aggiungere un prototipo di funzione per la funzione importata nella classe o modulo si utilizza e applicare il `MarshalAs` per i parametri dell'attributo o valore restituito. Nell'esempio seguente, una chiamata API che prevede il tipo `void*` viene sottoposto a marshalling come `AsAny`:  
   
-     [!code-vb[VbVbalrInterop#14](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_5.vb)]  
+     [!code-vb[VbVbalrInterop&#14;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_5.vb)]  
   
-## Chiamate API tramite l'attributo DllImport  
- L'attributo `DllImport` fornisce un metodo alternativo di chiamata delle funzioni nelle DLL senza librerie dei tipi.  `DllImport` corrisponde per certi aspetti all'utilizzo di un'istruzione `Declare` ma consente di esercitare un maggiore controllo sulle modalità di chiamata delle funzioni.  
+## <a name="api-calls-using-dllimport"></a>Chiamate API tramite DllImport  
+ Il `DllImport` attributo fornisce un metodo alternativo di chiamare funzioni nelle DLL senza librerie dei tipi. `DllImport`è quasi equivalente all'utilizzo di un `Declare` istruzione ma fornisce maggiore controllo sulla modalità di chiamata delle funzioni.  
   
- È possibile utilizzare l'attributo `DllImport` con la maggior parte delle chiamate API di Windows purché la chiamata faccia riferimento a un metodo condiviso, o *statico*.  Non è possibile utilizzare metodi che richiedono un'istanza di una classe.  A differenza delle istruzioni `Declare`, le chiamate `DllImport` non possono utilizzare l'attributo `MarshalAs`.  
+ È possibile utilizzare `DllImport` con la maggior parte delle API di Windows chiama, purché la chiamata fa riferimento a una scheda SCSI (talvolta chiamato *statico*) metodo. È possibile utilizzare metodi che richiedono un'istanza di una classe. A differenza di `Declare` istruzioni `DllImport` chiamate è possono utilizzare il `MarshalAs` attributo.  
   
-#### Per chiamare un'API di Windows tramite l'attributo DllImport  
+#### <a name="to-call-a-windows-api-using-the-dllimport-attribute"></a>Per chiamare un'API di Windows utilizzando l'attributo DllImport  
   
-1.  Aprire un nuovo progetto Applicazione Windows scegliendo **Nuovo** dal menu **File** e quindi **Progetto**.  Verrà visualizzata la finestra di dialogo **Nuovo progetto**.  
+1.  Aprire un nuovo progetto applicazione Windows, fare clic su **New** sul **File** menu e quindi fare clic su **progetto**. Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-2.  Selezionare **Applicazione Windows** nell'elenco di modelli di progetto di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  Verrà visualizzato il nuovo progetto.  
+2.  Selezionare **applicazione Windows** dall'elenco di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] modelli di progetto. Viene visualizzato il nuovo progetto.  
   
-3.  Aggiungere al form di avvio un pulsante denominato `Button2`.  
+3.  Aggiungere un pulsante denominato `Button2` al form di avvio.  
   
-4.  Fare doppio clic su `Button2` per visualizzare il codice del form.  
+4.  Fare doppio clic su `Button2` per visualizzare il codice per il form.  
   
-5.  Per semplificare l'accesso all'attributo `DllImport`, aggiungere un'istruzione `Imports` all'inizio del codice della classe del form di avvio.  
+5.  Per semplificare l'accesso a `DllImport`, aggiungere un `Imports` all'inizio del codice per la classe di form di avvio:  
   
-     [!code-vb[VbVbalrInterop#13](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)]  
+     [!code-vb[13 VbVbalrInterop](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_4.vb)]  
   
-6.  Dichiarare una funzione vuota prima dell'istruzione `End Class` del form e nominare la funzione `MoveFile`.  
+6.  Dichiarare una funzione vuota prima di `End Class` istruzione per il form e il nome di funzione `MoveFile`.  
   
-7.  Applicare i modificatori `Public` e `Shared` alla dichiarazione di funzione e impostare i parametri per `MoveFile` sulla base degli argomenti utilizzati dalla funzione API di Windows.  
+7.  Applicare il `Public` e `Shared` i modificatori di dichiarazione di funzione e impostare i parametri per `MoveFile` basata sugli argomenti viene utilizzata la funzione API Windows:  
   
-     [!code-vb[VbVbalrInterop#16](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_6.vb)]  
+     [!code-vb[VbVbalrInterop&#16;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_6.vb)]  
   
-     È possibile assegnare alla funzione qualsiasi nome di routine valido; nella DLL il nome è specificato dall'attributo `DllImport`.  Poiché inoltre questo attributo gestisce il marshalling di interoperabilità per i parametri e i valori restituiti, è possibile scegliere tipi di dati di Visual Studio simili a quelli utilizzati dall'API.  
+     La funzione può avere qualsiasi nome di routine valido; il `DllImport` attributo specifica il nome della DLL. Gestisce inoltre il marshalling di interoperabilità per i parametri e valori restituiti, è possibile scegliere i tipi di dati di Visual Studio sono simili ai dati dei tipi utilizzati dall'API.  
   
-8.  Applicare l'attributo `DllImport` alla funzione vuota.  Il primo parametro indica il nome e il percorso della DLL che contiene la funzione che si sta chiamando.  Non è necessario specificare il percorso dei file che si trovano nelle directory di sistema di Windows.  Il secondo parametro è un argomento denominato che specifica il nome della funzione nell'API di Windows.  In questo esempio l'attributo `DllImport` impone che le chiamate a `MoveFile` vengano inoltrate a `MoveFileW` in KERNEL32.DLL.  Il metodo `MoveFileW` copia un file dal percorso `src` al percorso `dst`.  
+8.  Applicare il `DllImport` attributo alla funzione vuota. Il primo parametro è il nome e il percorso della DLL che contiene la funzione che si sta chiamando. Non è necessario specificare il percorso dei file presenti nella directory di sistema Windows. Il secondo parametro è un argomento denominato che specifica il nome della funzione nell'API di Windows. In questo esempio, il `DllImport` attributo impone che le chiamate a `MoveFile` deve essere inoltrato al `MoveFileW` in KERNEL32. DLL. Il `MoveFileW` metodo copia un file dal percorso di `src` al percorso `dst`.  
   
-     [!code-vb[VbVbalrInterop#17](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_7.vb)]  
+     [!code-vb[VbVbalrInterop n.&17;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_7.vb)]  
   
-9. Aggiungere codice al gestore eventi `Button2_Click` per chiamare la funzione:  
+9. Aggiungere codice per il `Button2_Click` gestore eventi per chiamare la funzione:  
   
-     [!code-vb[VbVbalrInterop#18](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_8.vb)]  
+     [!code-vb[VbVbalrInterop&#18;](../../../visual-basic/programming-guide/com-interop/codesnippet/VisualBasic/walkthrough-calling-windows-apis_8.vb)]  
   
-10. Creare un file denominato Test.txt e inserirlo nella directory C:\\Tmp del disco rigido.  Se necessario, creare la directory Tmp.  
+10. Creare un file denominato test. txt e inserirlo nella directory C:\Tmp sul disco rigido. Se necessario, creare la directory Tmp.  
   
-11. Premere F5 per avviare l’applicazione.  Verrà visualizzato il form principale.  
+11. Premere F5 per avviare l’applicazione. Viene visualizzato il form principale.  
   
-12. Fare clic su **Button2**.  Se è possibile spostare il file, verrà visualizzato un messaggio che informa che il file è stato spostato.  
+12. Fare clic su **Button2**. Se il file può essere spostato, viene visualizzato il messaggio "il file è stato spostato correttamente".  
   
-## Vedere anche  
- <xref:System.Runtime.InteropServices.DllImportAttribute>   
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)   
+## <a name="see-also"></a>Vedere anche  
+ <xref:System.Runtime.InteropServices.DllImportAttribute></xref:System.Runtime.InteropServices.DllImportAttribute>   
+ <xref:System.Runtime.InteropServices.MarshalAsAttribute></xref:System.Runtime.InteropServices.MarshalAsAttribute>   
+ [Declare (istruzione)](../../../visual-basic/language-reference/statements/declare-statement.md)   
+ [Automatico](../../../visual-basic/language-reference/modifiers/auto.md)   
  [Alias](../../../visual-basic/language-reference/statements/alias-clause.md)   
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Creating Prototypes in Managed Code](../Topic/Creating%20Prototypes%20in%20Managed%20Code.md)   
- [Marshaling a Delegate as a Callback Method](../Topic/Marshaling%20a%20Delegate%20as%20a%20Callback%20Method.md)
+ [Interoperabilità COM](../../../visual-basic/programming-guide/com-interop/index.md)   
+ [Creazione di prototipi nel codice gestito](http://msdn.microsoft.com/library/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d)   
+ [Marshalling di un delegato come metodo di Callback](http://msdn.microsoft.com/library/6ddd7866-9804-4571-84de-83f5cc017a5a)

@@ -1,78 +1,91 @@
 ---
-title: "/warnaserror (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "warnaserror compiler option [Visual Basic]"
-  - "/warnaserror compiler option [Visual Basic]"
-  - "-warnaserror compiler option [Visual Basic]"
+title: /warnaserror (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- warnaserror compiler option [Visual Basic]
+- /warnaserror compiler option [Visual Basic]
+- -warnaserror compiler option [Visual Basic]
 ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 18
----
-# /warnaserror (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 28f232b1ad8200455550f2f4c1204818c8b143ab
+ms.lasthandoff: 03/13/2017
 
-Indica al compilatore di considerare la prima occorrenza di un avviso come un errore.  
+---
+# <a name="warnaserror-visual-basic"></a>/warnaserror (Visual Basic)
+Indica al compilatore di considerare la prima occorrenza di un avviso come errore.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 /warnaserror[+ | -][:numberList]  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
   
-|||  
-|-|-|  
 |Termine|Definizione|  
-|\+ &#124; \-|Parametro facoltativo.  Per impostazione predefinita, è attiva l'opzione `/warnaserror-`, pertanto gli avvisi non impediscono la generazione di un file di output.  Con l'opzione `/warnaserror` , che equivale a `/warnaserror+`, gli avvisi vengono invece considerati come errori.|  
-|`numberList`|Parametro facoltativo.  Elenco delimitato da virgole di numeri di avviso a cui viene applicata l'opzione `/warnaserror`.  Se non vengono specificati ID di avviso, l'opzione `/warnaserror` si applica a tutti gli avvisi.|  
+|---|---|  
+|+ &#124; -|Facoltativo. Per impostazione predefinita, `/warnaserror-` è attivo, gli avvisi non impediscono il compilatore dalla produzione di un file di output. Il `/warnaserror` opzione, ovvero lo stesso come `/warnaserror+`, gli avvisi vengono considerati come errori.|  
+|`numberList`|Facoltativo. Elenco delimitato da virgole di ID di avviso di numeri a cui il `/warnaserror` opzione si applica. Se è specificato alcun ID avviso, il `/warnaserror` opzione si applica a tutti gli avvisi.|  
   
-## Note  
- Specificando l'opzione `/warnaserror`, gli avvisi vengono considerati come errori.  Tutti i messaggi che, in condizioni normali, verrebbero presentati come avvisi vengono invece segnalati come errori.  Le occorrenze successive dello stesso avviso vengono segnalate come avvisi.  
+## <a name="remarks"></a>Note  
+ Il `/warnaserror` opzione Considera tutti gli avvisi come errori. I messaggi che verranno in genere segnalati come avvisi vengono invece segnalati come errori. Il compilatore segnala le occorrenze successive dello stesso avviso come avvisi.  
   
- Per impostazione predefinita, l'opzione `/warnaserror-` è attiva, pertanto gli avvisi hanno scopo esclusivamente informativo.  Con l'opzione `/warnaserror` , che equivale a `/warnaserror+`, gli avvisi vengono invece considerati come errori.  
+ Per impostazione predefinita, `/warnaserror-` è attiva, pertanto gli avvisi per essere esclusivamente informativi. Il `/warnaserror` opzione, ovvero lo stesso come `/warnaserror+`, gli avvisi vengono considerati come errori.  
   
- Se si desidera che solo determinati avvisi vengano gestiti come errori, è possibile specificare un elenco delimitato da virgole contenente i numeri di avviso da considerare come tali.  
+ Se si desidera che solo determinati avvisi vengano considerati errori, è possibile specificare un elenco delimitato da virgole dei numeri degli avvisi da considerare come errori.  
   
 > [!NOTE]
->  L'opzione `/warnaserror` non controlla le modalità di visualizzazione degli avvisi.  Utilizzare l'opzione [\/nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md) per disabilitare gli avvisi.  
+>  Il `/warnaserror` opzione controlla la modalità di visualizzazione degli avvisi. Utilizzare il [/nowarn](../../../visual-basic/reference/command-line-compiler/nowarn.md) opzione per disattivare gli avvisi.  
   
-||  
-|-|  
-|Per impostare \/warnaserror in modo che tutti gli avvisi vengano considerati come errori all'interno dell'IDE di Visual Studio|  
-|1.  Selezionare un progetto in **Esplora soluzioni**.  Scegliere **Proprietà** dal menu **Progetto**.  Per ulteriori informazioni, vedere [Introduction to the Project Designer](http://msdn.microsoft.com/it-it/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Fare clic sulla scheda **Compila**.<br />3.  Verificare che la casella di controllo **Disabilita tutti gli avvisi** sia deselezionata.<br />4.  Selezionare la casella di controllo **Considera tutti gli avvisi come errori**.|  
+|Per impostare /warnaserror considerare tutti gli avvisi come errori nell'IDE di Visual Studio|  
+|---|  
+|1.  Selezionare un progetto in **Esplora soluzioni**. Nel **Project** menu, fare clic su **proprietà**. Per altre informazioni, vedere [Introduzione a Creazione progetti](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).<br />2.  Fare clic sulla scheda **Compila**.<br />3.  Assicurarsi che il **Disabilita tutti gli avvisi** casella di controllo è deselezionata.<br />4.  Controllare il **considera tutti gli avvisi come errori** casella di controllo.|  
   
-||  
-|-|  
-|Per impostare \/warnaserror in modo che solo determinati avvisi vengano considerati come errori all'interno dell'IDE di Visual Studio|  
-|1.  Selezionare un progetto in **Esplora soluzioni**.  Scegliere **Proprietà** dal menu **Progetto**.<br />2.  Fare clic sulla scheda **Compila**.<br />3.  Verificare che la casella di controllo **Disabilita tutti gli avvisi** sia deselezionata.<br />4.  Verificare che la casella di controllo **Considera tutti gli avvisi come errori** sia deselezionata.<br />5.  Selezionare **Errore** dalla colonna **Notifica** adiacente all'avviso da considerare come errore.|  
+|Per impostare /warnaserror specifici avvisi vengano considerati come errori nell'IDE di Visual Studio|  
+|---|  
+|1.  Selezionare un progetto in **Esplora soluzioni**. Nel **Project** menu, fare clic su **proprietà**.<br />2.  Fare clic sulla scheda **Compila**.<br />3.  Assicurarsi che il **Disabilita tutti gli avvisi** casella di controllo è deselezionata.<br />4.  Assicurarsi che il **considera tutti gli avvisi come errori** casella di controllo è deselezionata.<br />5.  Selezionare **errore** dal **notifica** colonna adiacente all'avviso che deve essere considerato come un errore.|  
   
-## Esempio  
- Nel codice riportato di seguito viene compilato `In.vb` viene visualizzato un errore per la prima occorrenza di ogni avviso generato.  
+## <a name="example"></a>Esempio  
+ Il codice seguente Compila `In.vb` viene visualizzato un errore per la prima occorrenza di ogni avviso generato.  
   
 ```  
 vbc /warnaserror in.vb  
 ```  
   
-## Esempio  
- Nel codice riportato di seguito viene compilato `T2.vb` e viene considerato come errore solo l'avviso relativo alle variabili locali non utilizzate \(42024\).  
+## <a name="example"></a>Esempio  
+ Il codice seguente Compila `T2.vb` e viene considerato come un errore solo l'avviso per le variabili locali inutilizzate (42024).  
   
 ```  
 vbc /warnaserror:42024 t2.vb  
 ```  
   
-## Vedere anche  
- [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [Esempi di righe di comando di compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [Configurazione degli avvisi in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic)
+## <a name="see-also"></a>Vedere anche  
+ [Compilatore della riga di comando di Visual Basic](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [Esempi di righe di comando compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [Configurazione degli avvisi in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic)

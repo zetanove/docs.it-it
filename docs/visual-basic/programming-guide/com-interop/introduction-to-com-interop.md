@@ -1,72 +1,88 @@
 ---
-title: "Introduction to COM Interop (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "interop assemblies"
-  - "COM interop, about COM interop"
+title: "Introduzione all&quot;interoperabilità COM (Visual Basic) | Documenti di Microsoft"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- interop assemblies
+- COM interop, about COM interop
 ms.assetid: 8bd62e68-383d-407f-998b-29aa0ce0fd67
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 12
----
-# Introduction to COM Interop (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 8866dbadca040c57ed2b59540dd2c341eb81758c
+ms.lasthandoff: 03/13/2017
 
-Il modello COM \(Component Object Model\) consente a un oggetto di esporre le proprie funzionalità ad altri componenti e ad applicazioni host.  Anche se gli oggetti COM sono stati a lungo un elemento essenziale della programmazione Windows, le applicazioni progettate per Common Language Runtime \(CLR\) offrono molti vantaggi.  
+---
+# <a name="introduction-to-com-interop-visual-basic"></a>Introduzione all'interoperabilità COM (Visual Basic)
+Il modello COM (Component Object) consente a un oggetto di esporre le proprie funzionalità per gli altri componenti e applicazioni host. Mentre gli oggetti COM sono stati fondamentali della programmazione per molti anni Windows, le applicazioni progettate per common language runtime (CLR) offrono numerosi vantaggi.  
   
- Con il tempo, le applicazioni [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] sostituiranno quelle sviluppate con il modello COM.  Fino a quando tale sostituzione non verrà completata, è possibile che sia necessario utilizzare o creare oggetti COM con [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs-md.md)].  L'*interoperabilità COM* consente di utilizzare gli oggetti COM esistenti in attesa del passaggio a [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)].  
+ [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]Infine, le applicazioni sostituiranno quelle sviluppate con COM. Fino ad allora, è necessario utilizzare o creare oggetti COM tramite [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]. Interoperabilità COM, o *l'interoperabilità COM*, consente di utilizzare gli oggetti COM esistenti durante la fase di transizione per il [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] a proprio piacimento.  
   
- Se si utilizza [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] per la creazione dei componenti COM, è possibile utilizzare l'interoperabilità COM senza registrazione.  Questo consente di determinare quale versione della DLL viene attivata quando in un computer sono installate più versioni e permette agli utenti finali di utilizzare XCOPY o FTP per copiare l'applicazione in una directory appropriata del proprio computer dalla quale possa essere eseguita.  Per ulteriori informazioni, vedere [Registration\-Free COM Interop](../Topic/Registration-Free%20COM%20Interop.md).  
+ Tramite il [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] per creare componenti COM, è possibile utilizzare l'interoperabilità COM senza registrazione. Ciò consente di controllare la versione della DLL viene attivata quando viene installata in un computer, più di una versione e consente agli utenti finali di utilizzare XCOPY o FTP per copiare l'applicazione in una directory appropriata nel computer in cui può essere eseguito. Per ulteriori informazioni, vedere [interoperabilità COM senza registrazione](http://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd).  
   
-## Codice e dati gestiti  
- Il codice sviluppato per [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] viene definito *codice gestito* e contiene i metadati utilizzati da Common Language Runtime \(CLR\).  I dati utilizzati dalle applicazioni [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] sono definiti *dati gestiti* poiché le attività correlate ai dati, ad esempio l'allocazione e il recupero della memoria e il controllo dei tipi, sono gestite dai servizi di runtime.  Per impostazione predefinita, [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] utilizza dati e codice gestiti. Tuttavia, per accedere al codice e ai dati non gestiti degli oggetti COM è possibile utilizzare assembly di interoperabilità \(descritti più avanti in questa pagina\).  
+## <a name="managed-code-and-data"></a>Il codice gestito e dati  
+ Il codice sviluppato per il [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] è detto *codice gestito*e contiene i metadati utilizzati da Common Language Runtime. I dati utilizzati dalle [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] applicazioni viene chiamato *dati gestiti* perché il runtime gestisce attività correlate ai dati, ad esempio l'allocazione e il recupero della memoria e dei tipi di controllo. Per impostazione predefinita, [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)] utilizza codice gestito e dati, ma è possibile accedere al codice non gestito e dati di oggetti COM tramite assembly di interoperabilità (descritto più avanti in questa pagina).  
   
-## Assembly  
- Un assembly è il blocco di compilazione principale di un'applicazione [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)].  Ogni assembly è una raccolta di funzionalità che vengono compilate, associate a una versione e distribuite come una singola unità di implementazione che contiene uno o più file.  Ogni assembly contiene un manifesto assembly.  
+## <a name="assemblies"></a>Assembly  
+ Un assembly costituisce la base di un [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] dell'applicazione. È un insieme di funzionalità che vengono compilate, con controllo delle versioni e distribuiti come unità singola implementazione che contiene uno o più file. Ogni assembly contiene un manifesto dell'assembly.  
   
-## Librerie dei tipi e manifesti assembly  
- Le librerie dei tipi descrivono le caratteristiche degli oggetti COM, ad esempio i nomi dei membri e i tipi di dati.  Nelle applicazioni [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] questa funzione viene svolta dai manifesti degli assembly.  Includono informazioni sugli elementi seguenti:  
+## <a name="type-libraries-and-assembly-manifests"></a>Manifesti dell'Assembly e librerie dei tipi  
+ Librerie dei tipi descrivono le caratteristiche di oggetti COM, ad esempio i nomi dei membri e tipi di dati. Manifesti dell'assembly eseguono la stessa funzione per [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] applicazioni. E che comprendono le seguenti informazioni:  
   
--   Identità, versione, impostazioni cultura e firma digitale dell'assembly.  
+-   Identità dell'assembly, versione, impostazioni cultura e firma digitale.  
   
--   File che formano l'implementazione dell'assembly.  
+-   File che compongono l'implementazione dell'assembly.  
   
--   Tipi e risorse che compongono l'assembly  inclusi quelli esportati.  
+-   Tipi e risorse che compongono l'assembly. Sono inclusi quelli che vengono esportati da esso.  
   
--   Dipendenze da altri assembly in fase di compilazione.  
+-   Dipendenze in fase di compilazione da altri assembly.  
   
--   Autorizzazioni necessarie per la corretta esecuzione dell'assembly.  
+-   Autorizzazioni necessarie per l'assembly venga eseguita correttamente.  
   
- Per ulteriori informazioni sugli assembly e sui manifesti degli assembly, vedere [Assembly e Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md).  
+ Per ulteriori informazioni sugli assembly e manifesti dell'assembly, vedere [assembly e Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md).  
   
-### Importazione ed esportazione delle librerie dei tipi  
- [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs-md.md)] contiene un'utilità, Tlbimp, che consente di importare informazioni da una libreria dei tipi in un'applicazione [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)].  Per generare librerie dei tipi da assembly, è possibile utilizzare l'utilità Tlbexp.  
+### <a name="importing-and-exporting-type-libraries"></a>Importazione ed esportazione delle librerie dei tipi  
+ [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)]contiene un'utilità, Tlbimp, che consente di importare le informazioni da una libreria dei tipi in un [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] dell'applicazione. È possibile generare librerie dei tipi da assembly utilizzando l'utilità Tlbexp.  
   
- Per informazioni su Tlbimp e Tlbexp, vedere [Tlbimp.exe \(Type Library Importer\)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md) e [Tlbexp.exe \(Type Library Exporter\)](../Topic/Tlbexp.exe%20\(Type%20Library%20Exporter\).md).  
+ Per informazioni su Tlbimp e Tlbexp, vedere [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382) e [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d).  
   
-## Assembly di interoperabilità  
- Gli assembly di interoperabilità sono assembly [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] che fungono da ponte tra codice gestito e codice non gestito, eseguendo il mapping dei membri degli oggetti COM ai membri gestiti [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] equivalenti.  Gli assembly di interoperabilità creati da [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong-md.md)] gestiscono molti dei dettagli relativi all'utilizzo degli oggetti COM, ad esempio il marshalling di interoperabilità.  
+## <a name="interop-assemblies"></a>Assembly di interoperabilità  
+ Assembly di interoperabilità sono [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] assembly bridge tra gestito e code, i membri dell'oggetto COM mapping equivalente [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] membri gestiti. Assembly di interoperabilità creati da [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)] gestiscono molti dei dettagli relativi all'utilizzo degli oggetti COM, ad esempio il marshalling di interoperabilità.  
   
-## Marshalling di interoperabilità  
- Tutte le applicazioni [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] condividono un insieme di tipi comuni che consentono l'interoperabilità tra oggetti, indipendentemente dal linguaggio di programmazione utilizzato.  I parametri e i valori restituiti degli oggetti COM a volte utilizzano tipi di dati diversi da quelli utilizzati dal codice gestito.  Il termine *marshalling di interoperabilità* indica il processo di assemblaggio dei parametri e dei valori restituiti in tipi di dati equivalenti durante lo spostamento da e verso oggetti COM.  Per ulteriori informazioni, vedere [Interop Marshaling](../Topic/Interop%20Marshaling.md).  
+## <a name="interoperability-marshaling"></a>Il marshalling di interoperabilità  
+ Tutti [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] applicazioni condividono un set di tipi comuni che consentono l'interoperabilità tra gli oggetti, indipendentemente dal linguaggio di programmazione utilizzato. I parametri e valori restituiti di oggetti COM in alcuni casi utilizzano tipi di dati che differiscono da quelli utilizzati nel codice gestito. *Il marshalling di interoperabilità* è il processo di creazione dei pacchetti parametri e valori restituiti in tipi di dati equivalenti durante lo spostamento da e verso oggetti COM. Per ulteriori informazioni, vedere [marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
-## Vedere anche  
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)   
- [Troubleshooting Interoperability](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)   
- [Assembly e Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)   
- [Tlbimp.exe \(Type Library Importer\)](../Topic/Tlbimp.exe%20\(Type%20Library%20Importer\).md)   
- [Tlbexp.exe \(Type Library Exporter\)](../Topic/Tlbexp.exe%20\(Type%20Library%20Exporter\).md)   
- [Interop Marshaling](../Topic/Interop%20Marshaling.md)   
- [Registration\-Free COM Interop](../Topic/Registration-Free%20COM%20Interop.md)
+## <a name="see-also"></a>Vedere anche  
+ [Interoperabilità COM](../../../visual-basic/programming-guide/com-interop/index.md)   
+ [Procedura dettagliata: Implementazione dell'ereditarietà con gli oggetti COM](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)   
+ [Interoperabilità con codice non gestito](https://msdn.microsoft.com/library/sd10k43k)   
+ [Risoluzione dei problemi di interoperabilità](../../../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md)   
+ [Gli assembly e Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)   
+ [Tlbimp.exe (Type Library Importer)](http://msdn.microsoft.com/library/ec0a8d63-11b3-4acd-b398-da1e37e97382)   
+ [Tlbexp.exe (Type Library Exporter)](http://msdn.microsoft.com/library/a487d61b-d166-467b-a7ca-d8b52fbff42d)   
+ [Marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Interoperabilità COM senza registrazione](http://msdn.microsoft.com/library/90f308b9-82dc-414a-bce1-77e0155e56bd)

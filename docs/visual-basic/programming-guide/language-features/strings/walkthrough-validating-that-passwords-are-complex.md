@@ -1,58 +1,74 @@
 ---
-title: "Walkthrough: Validating That Passwords Are Complex (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "String data type, validation"
+title: "Convalida della complessità delle password (Visual Basic) | Documenti di Microsoft"
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- String data type, validation
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 17
----
-# Walkthrough: Validating That Passwords Are Complex (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e899900d60bddb83fb640abcc7f11f333c1af870
+ms.lasthandoff: 03/13/2017
 
-Questo metodo verifica se sono presenti determinate caratteristiche di password complessa e aggiorna un parametro di tipo stringa con informazioni sui controlli che la password non supera.  
+---
+# <a name="walkthrough-validating-that-passwords-are-complex-visual-basic"></a>Procedura dettagliata: verifica della complessità delle password (Visual Basic)
+Questo metodo controlla alcune caratteristiche di password complesse e aggiorna un parametro di stringa con informazioni sui controlli che la password non riesce.  
   
- Le password vengono utilizzate in un sistema protetto per autorizzare un utente.  Per gli utenti non autorizzati, tuttavia, deve essere difficile indovinare una password.  Gli intrusi possono utilizzare un programma di *attacco con dizionario* che scorre tutte le parole di un dizionario, o di molti dizionari in lingue diverse, verificando se una delle parole funziona come password utente.  Password vulnerabili come "Americani" o "Mustang" sono facili da indovinare.  Password più complesse, quali "?Ale'L1N3vaFiNdMeyeP@sSWerd\!", verranno indovinate con molta più fatica.  In un sistema protetto con password è essenziale verificare che gli utenti scelgano password complesse.  
+ Le password è utilizzabile in un sistema sicuro per autorizzare un utente. Tuttavia, le password devono essere difficile per gli utenti non autorizzati di indovinare. Gli utenti malintenzionati possono utilizzare un *attacco con dizionario* programma che esegue l'iterazione attraverso tutte le parole in un dizionario (o più dizionari in lingue diverse), verifica se una delle parole funziona come password dell'utente. Password vulnerabili, ad esempio "Yankees" o "Mustang sono facili" può essere individuata rapidamente. Password più complesse, ad esempio "? È 'L1N3vaFiNdMeyeP@sSWerd! ", molto meno probabilità di essere individuato. Un sistema protetto da password è necessario assicurarsi che gli utenti scelgano password complesse.  
   
- Una password complessa contiene una combinazione di caratteri maiuscoli, minuscoli, numerici e speciali, e non è una parola.  Nell'esempio seguente viene mostrato come verificare la complessità di una password.  
+ Una password complessa è complessa (contenente una combinazione di caratteri maiuscoli, minuscoli, numerici e speciali) e non è una parola. In questo esempio viene illustrato come verificare la complessità.  
   
-## Esempio  
+## <a name="example"></a>Esempio  
   
-### Codice  
- [!code-vb[VbVbcnRegEx#1](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/walkthrough-validating-that-passwords-are-complex_1.vb)]  
+### <a name="code"></a>Codice  
+ [!code-vb[VbVbcnRegEx n.&1;](../../../../visual-basic/programming-guide/language-features/strings/codesnippet/VisualBasic/walkthrough-validating-that-passwords-are-complex_1.vb)]  
   
-## Compilazione del codice  
- Chiama questo metodo passando la stringa che contiene la password.  
+## <a name="compiling-the-code"></a>Compilazione del codice  
+ Chiamare questo metodo passando la stringa che contiene la password.  
   
- L'esempio presenta i seguenti requisiti:  
+ L'esempio presenta i requisiti seguenti:  
   
--   Accesso ai membri dello spazio dei nomi <xref:System.Text.RegularExpressions>.  Aggiungere un'istruzione `Imports` se i nomi dei membri all'interno del codice non sono specificati in modo completo.  Per ulteriori informazioni, vedere [Imports Statement \(.NET Namespace and Type\)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
+-   Accesso ai membri del <xref:System.Text.RegularExpressions>dello spazio dei nomi.</xref:System.Text.RegularExpressions> Aggiungere un `Imports` istruzione se non sono completamente qualifica i nomi dei membri nel codice. Per altre informazioni, vedere [Istruzione Imports (tipo e spazio dei nomi .NET)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
-## Sicurezza  
- Se si sta spostando una password su una rete, è necessario utilizzare un metodo sicuro per trasferire i dati.  Per ulteriori informazioni, vedere [ASP.NET Web Application Security](../Topic/ASP.NET%20Web%20Application%20Security.md).  
+## <a name="security"></a>Sicurezza  
+ Se si sta spostando la password attraverso una rete, è necessario utilizzare un metodo sicuro per il trasferimento dei dati. Per ulteriori informazioni, vedere [ASP.NET Web Application Security](https://msdn.microsoft.com/library/330a99hc).  
   
- È possibile migliorare la precisione della funzione `ValidatePassword` aggiungendo dei controlli di complessità supplementari:  
+ È possibile migliorare l'accuratezza del `ValidatePassword` funzione mediante l'aggiunta di controlli di complessità supplementari:  
   
--   Confrontare la password e le sue sottostringhe con il nome e l'identificativo dell'utente e un dizionario definito dall'applicazione.  Inoltre, considerare i caratteri visivamente simili come equivalenti quando si esegue il confronto.  Ad esempio, considerare le lettere "l" ed "e" come equivalenti ai numeri "1" e "3".  
+-   Confrontare la password e le sue sottostringhe con il nome dell'utente, identificatore utente e un dizionario definito dall'applicazione. Inoltre, gestiscono caratteri visivamente simili come equivalenti quando si esegue il confronto. Ad esempio, considerare le lettere "l" e "e" come equivalenti ai numeri "1" e "3".  
   
--   Se viene utilizzato un solo carattere maiuscolo, accertarsi che non sia il primo carattere della password.  
+-   Se è presente un solo carattere maiuscolo, assicurarsi che non è primo carattere della password.  
   
--   Verificare che gli ultimi due caratteri della password siano delle lettere.  
+-   Assicurarsi che gli ultimi due caratteri della password sono caratteri lettera.  
   
--   Non consentire l'utilizzo di password in cui tutti i simboli sono stati immessi dalla prima riga della tastiera.  
+-   Non consentire password nel quale sono inseriti tutti i simboli dalla prima riga della tastiera.  
   
-## Vedere anche  
- <xref:System.Text.RegularExpressions.Regex>   
- [ASP.NET Web Application Security](../Topic/ASP.NET%20Web%20Application%20Security.md)
+## <a name="see-also"></a>Vedere anche  
+ <xref:System.Text.RegularExpressions.Regex></xref:System.Text.RegularExpressions.Regex>   
+ [Protezione delle applicazioni Web ASP.NET](https://msdn.microsoft.com/library/330a99hc)

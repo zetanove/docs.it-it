@@ -1,45 +1,60 @@
 ---
-title: "Function evaluation is disabled because a previous function evaluation timed out | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "bc30957"
-  - "vbc30957"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC30957"
+title: Valutazione della funzione disabilitata a causa del timeout di una valutazione della funzione precedente | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- bc30957
+- vbc30957
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC30957
 ms.assetid: 561e593a-f50a-4b72-a708-4cab60ec7b28
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 7
----
-# Function evaluation is disabled because a previous function evaluation timed out
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: b861b5c6c151c5d3aeec2810c7f2a228f22fdf6e
+ms.lasthandoff: 03/13/2017
 
-Valutazione della funzione disabilitata a causa del timeout di una valutazione di funzione precedente.Per riattivare la valutazione della funzione, eseguire nuovamente la funzione o riavviare il debug.  
+---
+# <a name="function-evaluation-is-disabled-because-a-previous-function-evaluation-timed-out"></a>Valutazione della funzione disabilitata a causa del timeout di una valutazione di funzione precedente
+Valutazione della funzione disabilitata a causa del timeout di una valutazione della funzione precedente. Per abilitare nuovamente la valutazione della funzione, ripetere l'operazione o riavviare il debug.  
   
- Nel debugger di Visual Studio, un'espressione specifica una chiamata di routine, ma di è verificato il timeout di un'altra valutazione.  
+ Nel debugger di Visual Studio, un'espressione specifica una chiamata di procedura, ma un altro di valutazione è scaduta.  
   
- Fra le possibili cause del timeout di una chiamata di routine sono compresi un ciclo infinito o *ciclo senza termine*.  Per ulteriori informazioni, vedere [Istruzione For...Next](../../../visual-basic/language-reference/statements/for-next-statement.md).  
+ Possibili cause per una chiamata di procedura timeout includono un ciclo infinito o *ciclo infinito*. Per ulteriori informazioni, vedere [per... Istruzione successiva](../../../visual-basic/language-reference/statements/for-next-statement.md).  
   
- Un caso particolare di ciclo infinito è la *ricorsione*.  Per ulteriori informazioni, vedere [Recursive Procedures](../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md).  
+ Un caso speciale di ciclo infinito è *ricorsione*. Per ulteriori informazioni, vedere [routine ricorsive](../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md).  
   
  **ID errore:** BC30957  
   
-### Per correggere l'errore  
+## <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  Se possibile, determinare qual era la valutazione di funzione precedente e che cosa ne ha causato il timeout;  in caso contrario, è possibile che l'errore si verifichi nuovamente.  
+1.  Se possibile, stabilire qual è la valutazione della funzione precedente e la relativa causa il timeout. In caso contrario, questo errore potrebbe verificarsi nuovamente.  
   
-2.  Ripetere l'operazione tentata dal debugger oppure arrestare e riavviare il debug.  
+2.  Eseguire nuovamente il debugger o terminare e riavviare il debug.  
   
-## Vedere anche  
- [Debug in Visual Studio](/visual-studio/debugger/debugging-in-visual-studio)   
- [Spostarsi nel codice con il Debugger](/visual-studio/debugger/navigating-through-code-with-the-debugger)   
- [Espressioni in linguaggio Visual Basic](../Topic/Expressions%20in%20Visual%20Basic.md)
+## <a name="see-also"></a>Vedere anche  
+ [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugging-in-visual-studio)  (Debug in Visual Studio)  
+ [Spostarsi nel codice con il Debugger](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)

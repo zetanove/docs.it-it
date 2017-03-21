@@ -1,77 +1,92 @@
 ---
-title: "/bugreport | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "-bugreport compiler option [Visual Basic]"
-  - "bugreport compiler option [Visual Basic]"
-  - "/bugreport compiler option [Visual Basic]"
+title: /bugreport | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- -bugreport compiler option [Visual Basic]
+- bugreport compiler option [Visual Basic]
+- /bugreport compiler option [Visual Basic]
 ms.assetid: e4325406-8dbd-4b48-b311-9ee0799e48bb
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 22
----
-# /bugreport
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 9c64ec49d7e6842edbc0fed7407a34132a8f5a88
+ms.lasthandoff: 03/13/2017
 
-Crea un file utilizzabile quando si genera un report sui bug.  
+---
+# <a name="bugreport"></a>/bugreport
+Crea un file che è possibile utilizzare quando si invia una segnalazione di bug.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 /bugreport:file  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
   
-|||  
-|-|-|  
 |Termine|Definizione|  
-|`file`|Obbligatorio.  Nome del file che conterrà il report sui bug.  Racchiudere il nome del file tra virgolette \(" "\) se contiene uno spazio.|  
+|---|---|  
+|`file`|Obbligatorio. Il nome del file che conterrà il report sui bug. Racchiudere il nome del file tra virgolette ("") se il nome contiene uno spazio.|  
   
-## Note  
- Le informazioni riportati di seguito vengono aggiunte a `file`:  
+## <a name="remarks"></a>Note  
+ Le informazioni seguenti vengono aggiunte a `file`:  
   
--   Una copia di tutti i file di codice sorgente della compilazione.  
+-   Una copia di tutti i file di codice sorgente nella compilazione.  
   
--   Un elenco delle opzioni del compilatore utilizzate nella compilazione.  
+-   Un elenco di opzioni del compilatore utilizzate nella compilazione.  
   
--   Informazioni sulla versione del compilatore in uso, su Common Language Runtime e sul sistema operativo.  
+-   Informazioni sulla versione su cui il compilatore, common language runtime e del sistema operativo.  
   
--   Eventuale output del compilatore.  
+-   Compilatore di output, se presente.  
   
--   Una descrizione del problema, richiesta mediante un messaggio.  
+-   Descrizione del problema, per cui viene richiesto.  
   
--   Una descrizione, richiesta mediante un messaggio, delle possibili modalità di correzione del problema.  
+-   Una descrizione di come si ritiene che il problema deve essere corretto per il quale viene richiesto.  
   
- Poiché in `file` viene inserita una copia di tutti i file di codice sorgente, è possibile riprodurre il presunto errore di codice nel programma più breve.  
+ Poiché una copia di tutti i file di codice sorgente è incluso `file`, è possibile riprodurre l'errore del codice (sospetta) nel programma più breve.  
   
 > [!IMPORTANT]
->  L'opzione `/bugreport` genera un file che contiene informazioni potenzialmente riservate,  tra cui ora corrente, versione del compilatore, versione di [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] versione del sistema operativo, nome utente, argomenti della riga di comando con cui viene eseguito il compilatore, codice sorgente e formato binario di qualsiasi assembly a cui si fa riferimento.  A questa opzione è possibile accedere specificando le opzioni della riga di comando nel file Web.config per una compilazione sul lato server di un'applicazione [!INCLUDE[vstecasp](../../../csharp/language-reference/preprocessor-directives/includes/vstecasp-md.md)].  Per evitare questa operazione, modificare il file Machine.config per non consentire agli utenti di eseguire operazioni di compilazione sul server.  
+>  Il `/bugreport` opzione produce un file che contiene informazioni potenzialmente riservate. Ora corrente, versione del compilatore, [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] versione, versione del sistema operativo, nome utente, gli argomenti della riga di comando con cui il compilatore è stato eseguito, tutto il codice sorgente e il formato binario di qualsiasi assembly a cui viene fatto riferimento. Questa opzione è possibile accedere specificando le opzioni della riga di comando nel file Web. config per una compilazione sul lato server di un [!INCLUDE[vstecasp](../../../csharp/language-reference/preprocessor-directives/includes/vstecasp_md.md)] dell'applicazione. Per evitare questo problema, modificare il file Machine. config per impedire agli utenti di compilazione sul server.  
   
- Se questa opzione viene utilizzata con `/errorreport:prompt`, `/errorreport:queue` o `/errorreport:send` e nell'applicazione viene rilevato un errore interno del compilatore, le informazioni contenute in `file` verranno inviate a Microsoft Corporation.  Tali informazioni consentiranno al personale del supporto tecnico Microsoft di identificare la causa dell'errore e di apportare eventuali migliorie alla versione successiva di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  Per impostazione predefinita, non vengono inviate informazioni a Microsoft.  Tuttavia, durante la compilazione di un'applicazione con `/errorreport:queue`, la cui attivazione è predefinita, i report degli errori vengono raccolti automaticamente nell'applicazione.  Di conseguenza, all'accesso dell'amministratore, viene visualizzata una finestra popup dal sistema di segnalazione degli errori, che consente all'amministratore stesso di inoltrare a Microsoft i report degli errori generati dopo l'accesso.  
+ Se questa opzione viene utilizzata con `/errorreport:prompt`, `/errorreport:queue`, o `/errorreport:send`, e l'applicazione rileva un errore interno del compilatore, le informazioni contenute in `file` viene inviato a Microsoft Corporation. Tali informazioni consentirà tecnici Microsoft di identificare la causa dell'errore e di migliorare la prossima versione di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. Per impostazione predefinita, viene inviata alcuna informazione a Microsoft. Tuttavia, quando si compila un'applicazione utilizzando `/errorreport:queue`, che è attivata per impostazione predefinita, l'applicazione recupera i report degli errori. Quindi, quando l'amministratore del computer accede, il sistema di segnalazione errori visualizza una finestra popup che consente all'amministratore di inoltrare a Microsoft i report degli errori che si sono verificati dopo l'accesso.  
   
 > [!NOTE]
->  L'opzione `/bugreport` non è disponibile all'interno dell'ambiente di sviluppo di Visual Studio, ma solo durante la compilazione dalla riga di comando.  
+>  Il `/bugreport` opzione non è disponibile all'interno dell'ambiente di sviluppo di Visual Studio, è disponibile solo quando si compila dalla riga di comando.  
   
-## Esempio  
- Nell'esempio riportato di seguito viene compilato `T2.vb` e tutte le informazioni di segnalazione bug vengono inserite nel file `Problem.txt`.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente viene compilato `T2.vb` e tutte le informazioni di segnalazione dei bug nel file `Problem.txt`.  
   
 ```  
 vbc /bugreport:problem.txt t2.vb  
 ```  
   
-## Vedere anche  
- [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [\/debug](../../../visual-basic/reference/command-line-compiler/debug.md)   
- [\/errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)   
- [Esempi di righe di comando di compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
- [Elemento trustLevel per securityPolicy \(schema delle impostazioni ASP.NET\)](http://msdn.microsoft.com/it-it/729ab04c-03da-4ee5-86b1-be9d08a09369)
+## <a name="see-also"></a>Vedere anche  
+ [Compilatore della riga di comando di Visual Basic](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [/debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)   
+ [/errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)   
+ [Esempi di righe di comando compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)   
+ [Elemento trustLevel per securityPolicy (Schema delle impostazioni ASP.NET)](http://msdn.microsoft.com/en-us/729ab04c-03da-4ee5-86b1-be9d08a09369)

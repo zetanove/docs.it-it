@@ -1,33 +1,49 @@
 ---
-title: "/reference (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "/reference compiler option [Visual Basic]"
-  - "r compiler option [Visual Basic]"
-  - "-reference compiler option [Visual Basic]"
-  - "/r compiler option [Visual Basic]"
-  - "reference compiler option [Visual Basic]"
-  - "-r compiler option [Visual Basic]"
+title: /Reference (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- /reference compiler option [Visual Basic]
+- r compiler option [Visual Basic]
+- -reference compiler option [Visual Basic]
+- /r compiler option [Visual Basic]
+- reference compiler option [Visual Basic]
+- -r compiler option [Visual Basic]
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 16
----
-# /reference (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 12344dba82131d6be2c32127de287a6e9e3efa39
+ms.lasthandoff: 03/13/2017
 
-Indica al compilatore di rendere disponibili al progetto in corso di compilazione tutte le informazioni sui tipi presenti nei file specificati.  
+---
+# <a name="reference-visual-basic"></a>/reference (Visual Basic)
+Indica al compilatore di rendere disponibili per il progetto in corso di compilazione informazioni sui tipi negli assembly specificato.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 /reference:fileList  
@@ -35,40 +51,39 @@ Indica al compilatore di rendere disponibili al progetto in corso di compilazion
 /r:fileList  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
   
-|||  
-|-|-|  
 |Termine|Definizione|  
-|`fileList`|Obbligatorio.  Elenco delimitato da virgole di nomi di file di assembly.  Se il nome del file contiene uno spazio, racchiuderlo tra virgolette.|  
+|---|---|  
+|`fileList`|Obbligatorio. Elenco delimitato da virgole di nomi di file di assembly. Se il nome del file contiene uno spazio, racchiudere il nome tra virgolette.|  
   
-## Note  
- I file importati devono contenere metadati assembly.  Solo i tipi pubblici sono visibili all'esterno dell'assembly.  L'opzione [\/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md) consente di importare metadati da un modulo.  
+## <a name="remarks"></a>Note  
+ I file importati devono contenere i metadati dell'assembly. Solo i tipi pubblici sono visibili all'esterno dell'assembly. Il [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md) opzione Importa i metadati da un modulo.  
   
- Se si fa riferimento a un assembly \(assembly A\) che fa a sua volta riferimento a un secondo assembly \(assembly B\), sarà necessario fare riferimento all'assembly B nei seguenti casi:  
+ Se si fa riferimento a un assembly (Assembly a) che a sua volta fa riferimento a un altro assembly (Assembly B), è necessario fare riferimento all'Assembly B se:  
   
--   Se un tipo dell'assembly A eredita da un tipo o implementa un'interfaccia dall'assembly B.  
+-   Un tipo da Assembly A eredita da un tipo o implementa un'interfaccia dell'Assembly B.  
   
--   Se viene richiamato un campo, una proprietà, un evento o un metodo che presenta un tipo restituito o un tipo di parametro proveniente dall'assembly B.  
+-   Un campo, proprietà, evento o metodo che presenta un tipo di parametro o tipo restituito dall'Assembly B viene richiamato.  
   
- Per specificare la directory in cui si trovano uno o più riferimenti agli assembly, utilizzare [\/libpath](../../../visual-basic/reference/command-line-compiler/libpath.md).  
+ Utilizzare [/libpath](../../../visual-basic/reference/command-line-compiler/libpath.md) per specificare la directory in cui si trova una o più riferimenti agli assembly.  
   
- Per consentire al compilatore di riconoscere un tipo in un assembly e non in un modulo, è necessario imporre la risoluzione del tipo.  A tale scopo, è ad esempio possibile definire un'istanza del tipo.  Esistono altri modi per consentire al compilatore di risolvere i nomi dei tipi in un assembly.  Se si eredita da un tipo in un assembly, ad esempio, il nome del tipo diventa noto al compilatore.  
+ Per il compilatore di riconoscere un tipo in un assembly (non un modulo), è necessario imporre la risoluzione del tipo. Un esempio di come è possibile farlo consiste nel definire un'istanza del tipo. Esistono altri modi risolvere i nomi dei tipi in un assembly per il compilatore. Ad esempio, se si eredita da un tipo in un assembly, il nome del tipo quindi diventa noto al compilatore.  
   
- Per impostazione predefinita, viene utilizzato il file di risposta Vbc.rsp che fa riferimento agli assembly [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] comunemente utilizzati.  Se non si desidera che il compilatore utilizzi il file Vbc.rsp, specificare `/noconfig`.  
+ Il file di risposta Vbc. rsp, i riferimenti utilizzati comunemente [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] assembly, viene utilizzato per impostazione predefinita. Utilizzare `/noconfig` se non si desidera al compilatore di utilizzare vbc. rsp.  
   
- La forma abbreviata di `/reference` è `/r`.  
+ La versione abbreviata di `/reference` è `/r`.  
   
-## Esempio  
- Nel codice riportato di seguito viene compilato il file di origine I`nput.vb` e viene fatto riferimento agli assembly di M`etad1.dll` e M`etad2.dll` per generare O`ut.exe`.  
+## <a name="example"></a>Esempio  
+ Il seguente codice consente di compilare file di origine è`nput.vb` e fare riferimento agli assembly da M`etad1.dll` e M`etad2.dll` per generare O`ut.exe`.  
   
 ```  
 vbc /reference:metad1.dll,metad2.dll /out:out.exe input.vb  
 ```  
   
-## Vedere anche  
- [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
- [\/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)   
- [\/target](../../../visual-basic/reference/command-line-compiler/target.md)   
- [Public](../../../visual-basic/language-reference/modifiers/public.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Compilatore della riga di comando di Visual Basic](../../../visual-basic/reference/command-line-compiler/index.md)   
+ [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)   
+ [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
+ [Pubblica](../../../visual-basic/language-reference/modifiers/public.md)   
  [Esempi di righe di comando di compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

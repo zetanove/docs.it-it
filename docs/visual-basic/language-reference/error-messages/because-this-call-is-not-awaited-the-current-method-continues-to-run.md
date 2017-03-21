@@ -1,39 +1,56 @@
 ---
-title: "Poich&#233; la chiamata non pu&#242; essere attesa, l&#39;esecuzione del metodo corrente continua prima del completamento della chiamata | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "bc42358"
-  - "vbc42358"
-helpviewer_keywords: 
-  - "BC42358"
+title: "Poiché questa chiamata non può essere attesa, il metodo corrente continua prima del completamento della chiamata di | Documenti di Microsoft"
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- bc42358
+- vbc42358
+helpviewer_keywords:
+- BC42358
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 8
----
-# Poich&#233; la chiamata non pu&#242; essere attesa, l&#39;esecuzione del metodo corrente continua prima del completamento della chiamata
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a9165414bc08b62aab20410e7af187fa4b45c162
+ms.lasthandoff: 03/13/2017
 
+---
+# <a name="because-this-call-is-not-awaited-the-current-method-continues-to-run-before-the-call-is-completed"></a>Poiché la chiamata non può essere attesa, l'esecuzione del metodo corrente continua prima del completamento della chiamata
 Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrente continuerà prima del completamento della chiamata. È possibile applicare l'operatore "Await" al risultato della chiamata.  
   
- Con il metodo corrente viene chiamato un metodo asincrono che restituisce <xref:System.Threading.Tasks.Task> o <xref:System.Threading.Tasks.Task%601> e non applica l'operatore [Await](../../../visual-basic/language-reference/operators/await-operator.md) al risultato. Con la chiamata al metodo asincrono viene avviata un'attività asincrona. Tuttavia, poiché non viene applicato alcun operatore `Await`, l'esecuzione del programma continua senza attendere il completamento dell'attività. Nella maggior parte dei casi questo comportamento non è quello previsto. Di solito altri aspetti del metodo chiamante dipendono dai risultati della chiamata o, come minimo, si prevede che il metodo chiamato venga completato prima della restituzione da parte del metodo contenente la chiamata.  
+ Il metodo corrente viene chiamato un metodo asincrono che restituisce un <xref:System.Threading.Tasks.Task>o <xref:System.Threading.Tasks.Task%601>e non si applica il [Await](../../../visual-basic/language-reference/operators/await-operator.md) nel risultato.</xref:System.Threading.Tasks.Task%601> </xref:System.Threading.Tasks.Task> Con la chiamata al metodo asincrono viene avviata un'attività asincrona. Tuttavia, poiché non viene applicato alcun operatore `Await` , l'esecuzione del programma continua senza attendere il completamento dell'attività. Nella maggior parte dei casi questo comportamento non è quello previsto. Di solito altri aspetti del metodo chiamante dipendono dai risultati della chiamata o, come minimo, si prevede che il metodo chiamato venga completato prima della restituzione da parte del metodo contenente la chiamata.  
   
- Un problema ugualmente importante riguarda cosa accade con le eccezioni generate nel metodo asincrono richiamato. Un'eccezione generata in un metodo che restituisce <xref:System.Threading.Tasks.Task> o <xref:System.Threading.Tasks.Task%601> viene archiviata nell'attività restituita. Se non si attende l'attività o si controllano in modo esplicito le eccezioni, l'eccezione viene persa. Se si attende l'attività, la relativa eccezione viene generata di nuovo.  
+ Un problema ugualmente importante riguarda cosa accade con le eccezioni generate nel metodo asincrono richiamato. Un'eccezione generata in un metodo che restituisce un <xref:System.Threading.Tasks.Task>o <xref:System.Threading.Tasks.Task%601>viene archiviato nell'attività restituita.</xref:System.Threading.Tasks.Task%601> </xref:System.Threading.Tasks.Task> Se non si attende l'attività o si controllano in modo esplicito le eccezioni, l'eccezione viene persa. Se si attende l'attività, la relativa eccezione viene generata di nuovo.  
   
  Come procedura consigliata, attendere sempre la chiamata.  
   
- Per impostazione predefinita, si tratta di un messaggio di avviso. Per altre informazioni su come nascondere gli avvisi o considerarli come errori, vedere [Configurazione degli avvisi in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ Per impostazione predefinita, si tratta di un messaggio di avviso. Per ulteriori informazioni su come nascondere gli avvisi o considerarli come errori, vedere [configurazione degli avvisi in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
  **ID errore:** BC42358  
   
-### Per risolvere questo avviso  
+### <a name="to-address-this-warning"></a>Per risolvere questo avviso  
   
 -   Si consideri la possibilità di eliminare l'avviso solo se si è certi che non si desidera attendere il completamento della chiamata asincrona e che il metodo chiamato non generi alcuna eccezione. In tal caso, è possibile eliminare l'avviso assegnando il risultato dell'attività della chiamata a una variabile.  
   
@@ -88,7 +105,7 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
   
     ```  
   
-     Nell'esempio, se si sceglie Call \#1 o Call \#2, il metodo asincrono senza attesa \(`CalledMethodAsync`\) termina dopo che il relativo chiamante \(`CallingMethodAsync`\) e il chiamante del chiamante \(`StartButton_Click`\) sono completati. Nell'ultima riga nell'output seguente viene mostrato quando viene completato il metodo chiamato. L'entrata e l'uscita dal gestore eventi tramite cui viene chiamato `CallingMethodAsync` nell'esempio completo sono contrassegnate nell'output.  
+     Nell'esempio, se si sceglie Call #1 o Call #2, il metodo asincrono senza attesa (`CalledMethodAsync`) termina dopo che il relativo chiamante (`CallingMethodAsync`) e il chiamante del chiamante (`StartButton_Click`) sono completati. Nell'ultima riga nell'output seguente viene mostrato quando viene completato il metodo chiamato. L'entrata e l'uscita dal gestore eventi tramite cui viene chiamato `CallingMethodAsync` nell'esempio completo sono contrassegnate nell'output.  
   
     ```  
   
@@ -100,12 +117,12 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
         Task.Delay is finished--returning from called method.  
     ```  
   
-## Esempio  
- Nell'applicazione Windows Presentation Foundation \(WPF\) seguente sono inclusi i metodi dell'esempio precedente. L'applicazione viene configurata con i passaggi riportati di seguito.  
+## <a name="example"></a>Esempio  
+ Nell'applicazione Windows Presentation Foundation (WPF) seguente sono inclusi i metodi dell'esempio precedente. L'applicazione viene configurata con i passaggi riportati di seguito.  
   
 1.  Creare un'applicazione WPF e denominarla `AsyncWarning`.  
   
-2.  Nell'Editor di codice di Visual Studio scegliere la scheda **MainWindow.xaml**.  
+2.  Nell'Editor di codice di Visual Studio scegliere la scheda **MainWindow.xaml** .  
   
      Se la scheda non è visibile, aprire il menu di scelta rapida per MainWindow.xaml in **Esplora soluzioni**, quindi scegliere **Visualizza codice**.  
   
@@ -126,7 +143,7 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
   
      Una finestra semplice con un pulsante e una casella di testo viene visualizzata nella visualizzazione **Progettazione** di MainWindow.xaml.  
   
-     Per altre informazioni sulla finestra di progettazione XAML, vedere [Creazione di un'interfaccia utente tramite XAML Designer](/visual-studio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). Per informazioni su come compilare una semplice interfaccia utente, vedere le sezioni "Per creare un'applicazione WPF" e "Per progettare una finestra WPF MainWindow semplice"di [Procedura dettagliata: accesso al Web tramite Async e Await](../Topic/Walkthrough:%20Accessing%20the%20Web%20by%20Using%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md).  
+     Per ulteriori informazioni sulla finestra di progettazione XAML, vedere [la creazione di un'interfaccia utente tramite XAML Designer](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio). Per informazioni su come compilare una semplice interfaccia utente, vedere la "per creare un'applicazione WPF" e "per progettare una finestra principale semplice WPF" sezioni di [procedura dettagliata: accesso al Web tramite Async e Await](http://msdn.microsoft.com/library/25879a6d-fdee-4a38-bc98-bb8c24d16042).  
   
 4.  Sostituire il codice in MainWindow.xaml.vb con quello riportato di seguito.  
   
@@ -209,10 +226,10 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
     ' Exiting the Click event handler.  
     ```  
   
-5.  Premere il tasto F5 per eseguire il programma e quindi scegliere il pulsante **Start**.  
+5.  Premere il tasto F5 per eseguire il programma e quindi scegliere il pulsante **Start** .  
   
      L'output previsto viene visualizzato alla fine del codice.  
   
-## Vedere anche  
- [Await Operator](../../../visual-basic/language-reference/operators/await-operator.md)   
- [Programmazione asincrona con Async e Await](../Topic/Asynchronous%20Programming%20with%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md)
+## <a name="see-also"></a>Vedere anche  
+ [Await (operatore)](../../../visual-basic/language-reference/operators/await-operator.md)   
+ [Programmazione asincrona con Async e Await](../../../visual-basic/programming-guide/concepts/async/index.md)

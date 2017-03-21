@@ -1,218 +1,234 @@
 ---
-title: "Visual Basic Coding Conventions | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "coding conventions, Visual Basic"
-  - "examples [Visual Basic], coding conventions"
-  - "Visual Basic code, conventions"
+title: Convenzioni di codifica di Visual Basic | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- coding conventions, Visual Basic
+- examples [Visual Basic], coding conventions
+- Visual Basic code, conventions
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
 caps.latest.revision: 48
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 48
----
-# Visual Basic Coding Conventions
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 5712f14d53b86552a0b82af38ecf579577ef3fa1
+ms.lasthandoff: 03/13/2017
 
-Microsoft sviluppa esempi e documentazione che si attengono alle linee guida di questo argomento.  Se si seguono le stesse convenzioni di codifica, si possono ottenere i vantaggi seguenti:  
+---
+# <a name="visual-basic-coding-conventions"></a>Convenzioni di codifica di Visual Basic
+Microsoft sviluppa esempi e documentazione che seguire le istruzioni in questo argomento. Se si seguono le stesse convenzioni di codifica, è possibile ottenere i seguenti vantaggi:  
   
--   Il codice deve avere un aspetto coerente, in modo che chi legge possa concentrarsi meglio sul contenuto, anziché sul layout.  
+-   Il codice avrà un aspetto coerente, in modo che chi legge possa concentrarsi meglio sul contenuto, non layout.  
   
--   I lettori comprendono il codice più rapidamente, grazie alla possibilità di formulare presupposti basati sulle esperienze precedenti.  
+-   Lettori di comprendere il codice più rapidamente poiché è possibile apportare presupposti basati sulle esperienze precedenti.  
   
--   È possibile copiare, modificare e gestire il codice più facilmente.  
+-   È possibile copiare, modificare e gestire più facilmente il codice.  
   
--   Si garantisce che il codice dimostra le "procedure consigliate" per Visual Basic.  
+-   Consente di assicurare che il codice viene illustrato "procedure consigliate" per Visual Basic.  
   
-## Convenzioni di denominazione  
+## <a name="naming-conventions"></a>Convenzioni di denominazione  
   
--   Per informazioni sulle linee guida relative alla denominazione, vedere l'argomento [Convenzioni di denominazione](../Topic/Naming%20Guidelines.md).  
+-   Per informazioni sulle linee guida per la denominazione, vedere [convenzioni di denominazione per](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) argomento.  
   
--   Non utilizzare "My" o "my" come parte di un nome di variabile,  Questa pratica crea confusione con gli oggetti `My`.  
+-   Non utilizzare "My" o "my" come parte di un nome di variabile. Questa procedura crea confusione con il `My` oggetti.  
   
--   Non è necessario modificare i nomi degli oggetti con il codice generato automaticamente per adattarli alle linee guida.  
+-   Non è necessario modificare i nomi degli oggetti nel codice generato automaticamente per adattare le linee guida.  
   
-## Convenzioni di layout  
+## <a name="layout-conventions"></a>Convenzioni di layout  
   
--   Inserire le tabulazioni come spazi e utilizzare i rientri automatici con rientri a quattro spazi.  
+-   Inserire le schede come spazi e utilizzare rientri intelligenti con rientri di quattro spazi.  
   
--   Utilizzare **Riformattazione del listato di codice** per riformattare il codice nell'editor di codice.  Per ulteriori informazioni, vedere [Opzioni, Editor di testo, Base \(Visual Basic\)](/visual-studio/ide/reference/options-text-editor-basic-visual-basic).  
+-   Utilizzare **riformattazione del listato di codice (riformattazione) di** di riformattare il codice nell'editor di codice. Per ulteriori informazioni, vedere [opzioni, Editor di testo, base (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-basic-visual-basic).  
   
--   Utilizzare una sola istruzione per riga.  Non utilizzare il carattere separatore di riga di Visual Basic \(:\).  
+-   Utilizzare solo un'istruzione per riga. Non utilizzare il carattere di separatore di riga (:) di Visual Basic.  
   
--   Evitare di utilizzare il carattere esplicito "\_" di continuazione di riga a favore della continuazione di riga implicita quando il linguaggio lo consente.  
+-   Evitare di utilizzare il carattere di continuazione di riga esplicita "_" a favore di continuazione di riga implicita ovunque il linguaggio consente.  
   
 -   Utilizzare una sola dichiarazione per riga.  
   
--   Se tramite l'opzione **Riformatta il listato di codice** le righe di continuazione non vengono formattate automaticamente, impostare manualmente il rientro delle righe di continuazione di un punto di tabulazione.  Tuttavia, allineare sempre a sinistra gli elementi in un elenco.  
+-   Se **riformattazione del listato di codice (riformattazione) di** non righe di continuazione formato automaticamente, manualmente rientro continuazione righe di una tabulazione. Tuttavia, sempre sinistra-Allinea elementi in un elenco.  
   
     ```  
     a As Integer,  
     b As Integer  
     ```  
   
--   Aggiungere almeno una riga vuota tra le definizioni di metodi e di proprietà.  
+-   Aggiungere almeno una riga vuota tra le definizioni di metodo e proprietà.  
   
-## Convenzioni relative ai commenti  
+## <a name="commenting-conventions"></a>Convenzioni relative ai commenti  
   
--   Inserire i commenti in una riga distinta, anziché alla fine di una riga di codice.  
+-   Inserire i commenti su una riga separata anziché alla fine di una riga di codice.  
   
--   Iniziare il testo del commento con una lettera maiuscola e terminarlo con un punto.  
+-   Avviare commento con una lettera maiuscola e fine commento con un punto.  
   
--   Inserire uno spazio tra il delimitatore di commento \('\) e il testo del commento.  
+-   Inserire uno spazio tra i delimitatori di commento (') e il testo del commento.  
   
-     [!code-vb[VbVbalrGuidelines#2](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_1.vb)]  
+     [!code-vb[VbVbalrGuidelines n.&2;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_1.vb)]  
   
--   Non racchiudere i commenti in blocchi formattati di asterischi.  
+-   Non racchiudere i commenti con blocchi formattati di asterischi.  
   
-## Struttura del programma  
+## <a name="program-structure"></a>Struttura del programma  
   
--   Quando si utilizza il metodo `Main`, utilizzare il costrutto predefinito per le nuove applicazioni console e utilizzare `My` per gli argomenti della riga di comando.  
+-   Quando si utilizza il `Main` (metodo), utilizzare il costrutto predefinito per le nuove applicazioni console e `My` per gli argomenti della riga di comando.  
   
-     [!code-vb[VbVbalrGuidelines#3](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_2.vb)]  
+     [!code-vb[VbVbalrGuidelines n.&3;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_2.vb)]  
   
-## Istruzioni relative al linguaggio  
+## <a name="language-guidelines"></a>Linee guida della lingua  
   
-### Tipo di dati String  
+### <a name="string-data-type"></a>Tipo di dati String  
   
--   Per concatenare le stringhe, utilizzare una e commerciale \(&\).  
+-   Per concatenare stringhe, utilizzare una e commerciale (&).  
   
-     [!code-vb[VbVbalrGuidelines#4](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_3.vb)]  
+     [!code-vb[VbVbalrGuidelines n.&4;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_3.vb)]  
   
--   Per accodare stringhe nei cicli, utilizzare l'oggetto <xref:System.Text.StringBuilder>.  
+-   Per accodare stringhe nei cicli, utilizzare il <xref:System.Text.StringBuilder>oggetto.</xref:System.Text.StringBuilder>  
   
-     [!code-vb[VbVbalrGuidelines#5](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_4.vb)]  
+     [!code-vb[VbVbalrGuidelines n.&5;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_4.vb)]  
   
-### Delegati di tipo relaxed nei gestori eventi  
- Non qualificare esplicitamente gli argomenti \(Object e EventArgs\) nei gestori eventi.  Se non si utilizzano gli argomenti dell'evento che vengano passati a un evento \(ad esempio mittente come Object e come EventArgs\), utilizzare i delegati di tipo relaxed e omettere gli argomenti dell'evento nel codice:  
+### <a name="relaxed-delegates-in-event-handlers"></a>Delegati di tipo relaxed nei gestori eventi  
+ Non qualificare in modo esplicito gli argomenti (oggetto ed EventArgs) ai gestori eventi. Se non si utilizza gli argomenti dell'evento che vengono passati a un evento (ad esempio mittente come oggetto, e come EventArgs), utilizzare i delegati di tipo relaxed e omettere gli argomenti dell'evento nel codice:  
   
- [!code-vb[VbVbalrGuidelines#7](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_5.vb)]  
+ [!code-vb[VbVbalrGuidelines&#7;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_5.vb)]  
   
-### Tipi di dati senza segno  
+### <a name="unsigned-data-type"></a>Tipi di dati non firmati  
   
--   Utilizzare `Integer` anziché tipi senza segno, ad eccezione dei casi in cui sono necessari.  
+-   Utilizzare `Integer` anziché tipi non firmati, tranne quando sono necessari.  
   
-### Matrici  
+### <a name="arrays"></a>Matrici  
   
--   Utilizzare la sintassi breve quando si inizializzano matrici nella riga della dichiarazione.  Ad esempio, utilizzare la seguente sintassi.  
+-   Utilizzare la sintassi breve quando si inizializzano le matrici nella riga della dichiarazione. Ad esempio, utilizzare la sintassi seguente.  
   
-     [!code-vb[VbVbalrGuidelines#8](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_6.vb)]  
+     [!code-vb[VbVbalrGuidelines n.&8;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_6.vb)]  
   
-     Non utilizzare la seguente sintassi.  
+     Non utilizzare la sintassi seguente.  
   
-     [!code-vb[VbVbalrGuidelines#9](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_7.vb)]  
+     [!code-vb[9 VbVbalrGuidelines](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_7.vb)]  
   
--   Inserire l'identificatore di matrici nel tipo e non nella variabile:  Ad esempio, utilizzare la seguente sintassi:  
+-   Inserire l'identificatore di matrice del tipo, non sulla variabile. Ad esempio, utilizzare la sintassi seguente:  
   
-     [!code-vb[VbVbalrGuidelines#11](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_8.vb)]  
+     [!code-vb[VbVbalrGuidelines&#11;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_8.vb)]  
   
-     Non utilizzare la seguente sintassi:  
+     Non utilizzare la sintassi seguente:  
   
-     [!code-vb[VbVbalrGuidelines#10](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_9.vb)]  
+     [!code-vb[VbVbalrGuidelines&#10;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_9.vb)]  
   
--   Utilizzare la sintassi { } quando si dichiarano e si inizializzano le matrici dei tipi di dati di base.  Ad esempio, utilizzare la seguente sintassi:  
+-   Utilizzare la sintassi {} quando è necessario dichiarare e inizializzare matrici di tipi di dati di base. Ad esempio, utilizzare la sintassi seguente:  
   
-     [!code-vb[VbVbalrGuidelines#12](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_10.vb)]  
+     [!code-vb[VbVbalrGuidelines&#12;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_10.vb)]  
   
-     Non utilizzare la seguente sintassi:  
+     Non utilizzare la sintassi seguente:  
   
-     [!code-vb[VbVbalrGuidelines#13](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_11.vb)]  
+     [!code-vb[13 VbVbalrGuidelines](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_11.vb)]  
   
-### Utilizzare la parola chiave With  
- Quando si effettua una serie di chiamate a un oggetto, è consigliabile utilizzare la parola chiave `With`.  
+### <a name="use-the-with-keyword"></a>Utilizzare la parola chiave  
+ Quando si esegue una serie di chiamate a un oggetto, è consigliabile utilizzare il `With` (parola chiave):  
   
- [!code-vb[VbVbalrGuidelines#15](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_12.vb)]  
+ [!code-vb[VbVbalrGuidelines&#15;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_12.vb)]  
   
-### Utilizzo delle istruzioni Try...Catch e Using quando si utilizza Gestione delle eccezioni  
- Non utilizzare la proprietà `On Error Goto`.  
+### <a name="use-the-trycatch-and-using-statements-when-you-use-exception-handling"></a>Utilizzare l'istruzione Try... Catch e utilizzo di istruzioni quando si utilizza la gestione delle eccezioni  
+ Non utilizzare `On Error Goto`.  
   
-### Utilizzo della parola chiave IsNot  
- Utilizzare la parola chiave `IsNot` anziché `Not...Is Nothing`.  
+### <a name="use-the-isnot-keyword"></a>Utilizzare la parola chiave IsNot  
+ Utilizzare il `IsNot` (parola chiave) anziché `Not...Is Nothing`.  
   
-### Parola chiave New  
+### <a name="new-keyword"></a>Parola chiave New  
   
--   Utilizzare la creazione di istanze breve.  Ad esempio, utilizzare la seguente sintassi:  
+-   Utilizzare l'istanziazione breve. Ad esempio, utilizzare la sintassi seguente:  
   
-     [!code-vb[VbVbalrGuidelines#21](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_13.vb)]  
+     [!code-vb[VbVbalrGuidelines numero&21;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_13.vb)]  
   
-     La riga precedente è equivalente a:  
+     La riga precedente è equivalente a questa:  
   
-     [!code-vb[VbVbalrGuidelines#22](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_14.vb)]  
+     [!code-vb[VbVbalrGuidelines&#22;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_14.vb)]  
   
--   Per i nuovi oggetti, utilizzare inizializzatori di oggetti anziché il costruttore senza parametri:  
+-   Utilizzare gli inizializzatori di oggetto per i nuovi oggetti anziché il costruttore senza parametri:  
   
-     [!code-vb[VbVbalrGuidelines#23](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_15.vb)]  
+     [!code-vb[VbVbalrGuidelines&#23;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_15.vb)]  
   
-### Gestione di eventi  
+### <a name="event-handling"></a>Gestione di eventi  
   
--   Utilizzare `Handles` invece di `AddHandler`:  
+-   Utilizzare `Handles` anziché `AddHandler`:  
   
-     [!code-vb[VbVbalrGuidelines#24](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_16.vb)]  
+     [!code-vb[VbVbalrGuidelines&#24;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_16.vb)]  
   
--   Utilizzare `AddressOf` e non creare l'istanza del delegato in modo esplicito:  
+-   Utilizzare `AddressOf`e non creare un'istanza del delegato in modo esplicito:  
   
-     [!code-vb[VbVbalrGuidelines#25](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_17.vb)]  
+     [!code-vb[VbVbalrGuidelines&#25;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_17.vb)]  
   
--   Quando si definisce un evento, utilizzare la sintassi breve e lasciare che il delegato venga definito dal compilatore:  
+-   Quando si definisce un evento, utilizzare la sintassi breve e consentire al compilatore di definire il delegato:  
   
-     [!code-vb[VbVbalrGuidelines#26](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_18.vb)]  
+     [!code-vb[&#26; VbVbalrGuidelines](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_18.vb)]  
   
--   Non verificare se un evento è `Nothing` \(null\) prima di chiamare il metodo `RaiseEvent`.  Il metodo `RaiseEvent` esegue una ricerca per  `Nothing` prima di generare l'evento.  
+-   Verifica se un evento è `Nothing` (null) prima di chiamare il `RaiseEvent` metodo. `RaiseEvent`Cerca `Nothing` prima che venga generato l'evento.  
   
-### Utilizzo di membri condivisi  
- Per la chiamata a membri `Shared`, utilizzare il nome della classe anziché una variabile di istanza.  
+### <a name="using-shared-members"></a>Utilizzo di membri condivisi  
+ Chiamare `Shared` membri utilizzando il nome della classe, non una variabile di istanza.  
   
-### Utilizzo di valori letterali XML  
- I valori letterali XML semplificano le attività più comuni nell'utilizzo di XML \(caricamento, query, trasformazione e così via\).  Quando si utilizza XML a fini di sviluppo, attenersi alle seguenti linee guida:  
+### <a name="use-xml-literals"></a>Utilizzare valori letterali XML  
+ Valori letterali XML semplificano le attività più comuni che si verificano quando si lavora con XML (ad esempio, query, trasformazione e caricamento). Quando si sviluppa con XML, attenersi alle seguenti indicazioni:  
   
--   Utilizzare i valori letterali XML per creare documenti e frammenti XML anziché chiamare direttamente API XML.  
+-   Utilizzare valori letterali XML per creare documenti e frammenti anziché chiamare direttamente le API XML XML.  
   
--   Importare spazi dei nomi XML a livello di file o di progetto per sfruttare le ottimizzazioni delle prestazioni per i valori letterali XML.  
+-   Importare gli spazi dei nomi XML a livello di file o progetto in modo da sfruttare le ottimizzazioni delle prestazioni per i valori letterali XML.  
   
--   Utilizzare le proprietà axis XML per accedere a elementi e attributi in un documento XML.  
+-   Utilizzare le proprietà axis XML per accedere agli elementi e attributi in un documento XML.  
   
--   Utilizzare le espressioni incorporate per includere valori e creare XML da valori esistenti anziché utilizzare le chiamate API, ad esempio il metodo `Add`:  
+-   Utilizzare le espressioni incorporate per includere i valori e creare XML da valori esistenti anziché utilizzare chiamate API, ad esempio il `Add` metodo:  
   
-     [!code-vb[VbVbalrGuidelines#27](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_19.vb)]  
+     [!code-vb[VbVbalrGuidelines&#27;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_19.vb)]  
   
-### Query LINQ  
+### <a name="linq-queries"></a>Query LINQ  
   
 -   Utilizzare nomi significativi per le variabili di query:  
   
-     [!code-vb[VbVbalrGuidelines#28](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_20.vb)]  
+     [!code-vb[28 VbVbalrGuidelines](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_20.vb)]  
   
--   Fornire nomi per gli elementi delle query, in modo che i nomi di proprietà dei tipi anonimi vengano convertiti in maiuscole in modo corretto utilizzando la convenzione Pascal:  
+-   Fornire nomi di elementi in una query per assicurarsi che i nomi di proprietà di tipi anonimi sono in modo corretto utilizzando la convenzione Pascal maiuscole e minuscole:  
   
-     [!code-vb[VbVbalrGuidelines#29](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_21.vb)]  
+     [!code-vb[VbVbalrGuidelines&#29;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_21.vb)]  
   
--   Rinominare le proprietà quando i nomi potrebbero risultare ambigui nel risultato.  Ad esempio, se la query restituisce il nome di un cliente e l'ID di un ordine, anziché lasciarli come `Name` e `ID` nei risultati, sarà bene rinominarli come indicato di seguito:  
+-   Rinominare le proprietà quando i nomi delle proprietà nel risultato potrebbero risultare ambigui. Ad esempio, se la query restituisce un nome cliente un ID ordine, rinominarle anziché lasciarli come `Name` e `ID` nel risultato:  
   
-     [!code-vb[VbVbalrGuidelines#30](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_22.vb)]  
+     [!code-vb[&#30; VbVbalrGuidelines](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_22.vb)]  
   
--   Utilizzare l'inferenza dei tipi nella dichiarazione di variabili di query e variabili di intervallo:  
+-   Utilizzare l'inferenza del tipo nella dichiarazione di variabili di query e variabili di intervallo:  
   
-     [!code-vb[VbVbalrGuidelines#31](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_23.vb)]  
+     [!code-vb[VbVbalrGuidelines&#31;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_23.vb)]  
   
--   Allineare le clausole di query sotto l'istruzione `From`:  
+-   Allineare le clausole di query sotto il `From` istruzione:  
   
-     [!code-vb[VbVbalrGuidelines#32](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_24.vb)]  
+     [!code-vb[VbVbalrGuidelines n.&32;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_24.vb)]  
   
--   Utilizzare le clausole `Where` prima di altre clausole di query, in modo che le ultime clausole di query agiscano su un insieme di dati filtrato:  
+-   Utilizzare `Where` clausole prima delle altre clausole di query in modo che successive clausole di query agiscano su set di dati filtrati:  
   
-     [!code-vb[VbVbalrGuidelines#33](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_25.vb)]  
+     [!code-vb[VbVbalrGuidelines n.&33;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_25.vb)]  
   
--   Utilizzare la clausola `Join` per definire un'operazione di join in modo esplicito anziché utilizzare la clausola `Where` per definire l'operazione di join in modo implicito:  
+-   Utilizzare il `Join` clausola per definire in modo esplicito un'operazione di join anziché il `Where` clausola per definire in modo implicito un'operazione di join:  
   
-     [!code-vb[VbVbalrGuidelines#34](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_26.vb)]  
+     [!code-vb[VbVbalrGuidelines&#34;](../../../visual-basic/programming-guide/program-structure/codesnippet/VisualBasic/coding-conventions_26.vb)]  
   
-## Vedere anche  
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)
+## <a name="see-also"></a>Vedere anche  
+ [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

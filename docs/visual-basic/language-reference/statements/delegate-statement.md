@@ -1,84 +1,99 @@
 ---
-title: "Delegate Statement | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "vb.Delegate"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "delegate keyword"
-  - "Delegate statement"
+title: Istruzione Delegate | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- vb.Delegate
+dev_langs:
+- VB
+helpviewer_keywords:
+- delegate keyword
+- Delegate statement
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 27
----
-# Delegate Statement
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 9ac9e28c82f8a6b5a9c1398961d831c956a649e0
+ms.lasthandoff: 03/13/2017
 
-Viene utilizzata per dichiarare un delegato.  Per delegato si intende un tipo di riferimento associato a un metodo `Shared` di un tipo o a un metodo di istanza di un oggetto.  Per creare un'istanza della classe delegata, è possibile utilizzare qualsiasi routine con tipi di parametri e tipi restituiti corrispondenti.  La routine può in seguito essere richiamata attraverso l'istanza di delegato.  
+---
+# <a name="delegate-statement"></a>Istruzione Delegate
+Utilizzata per dichiarare un delegato. Un delegato è un tipo di riferimento che fa riferimento a un `Shared` metodo di un tipo o a un metodo di istanza di un oggetto. Per creare un'istanza della classe delegata, è possibile utilizzare qualsiasi routine con parametri e tipi restituiti corrispondenti. La procedura può quindi successivamente richiamata tramite l'istanza del delegato.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 [ <attrlist> ] [ accessmodifier ] _  
 [ Shadows ] Delegate [ Sub | Function ] name [( Of typeparamlist )] [([ parameterlist ])] [ As type ]  
 ```  
   
-## Parti  
+## <a name="parts"></a>Parti  
   
-|||  
-|-|-|  
 |Termine|Definizione|  
-|`attrlist`|Parametro facoltativo.  Elenco di attributi applicabili al delegato.  Gli attributi sono separati da una virgola.  È necessario racchiudere l'[Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) tra parentesi angolari \("`<`" e "`>`"\).|  
-|`accessmodifier`|Parametro facoltativo.  Consente di specificare il tipo di codice che può accedere al delegato,  ad esempio uno dei seguenti:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md).  Può accedere al delegato qualsiasi codice che sia in grado di accedere all'elemento che lo dichiara.<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md).  Può accedere al delegato solo il codice incluso nella relativa classe o in una classe derivata.<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md).  Può accedere al delegato solo il codice incluso nello stesso assembly.<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md).  Può accedere al delegato solo il codice incluso nell'elemento che lo dichiara.<br /><br /> È possibile specificare `Protected Friend` per consentire l'accesso dal codice incluso nella classe del delegato, in una classe derivata o nello stesso assembly.|  
-|`Shadows`|Parametro facoltativo.  Indica che il delegato ridichiara e nasconde un elemento di programmazione omonimo, o un insieme di elementi di overload, di una classe base.  È possibile nascondere qualsiasi tipo di elemento dichiarato con qualsiasi altro tipo.<br /><br /> Un elemento nascosto non è disponibile all'interno della classe derivata che lo nasconde, a meno che l'elemento di shadowing sia inaccessibile.  Se, ad esempio, un elemento `Private` nasconde un elemento della classe base, il codice che non dispone dell'autorizzazione per accedere all'elemento `Private` accede invece all'elemento della classe base.|  
-|`Sub`|Facoltativa. È necessario che sia specificato `Sub` o `Function`.  Consente di dichiarare la routine come delegata di tipo `Sub` senza la restituzione di un valore.|  
-|`Function`|Facoltativa. È necessario che sia specificato `Sub` o `Function`.  Consente di dichiarare la routine come delegata di tipo `Function` con la restituzione di un valore.|  
-|`name`|Obbligatorio.  Nome del tipo delegato. È necessario che sia conforme alle convenzioni di denominazione standard delle variabili.|  
-|`typeparamlist`|Parametro facoltativo.  Elenco di parametri di tipo per il delegato.  I parametri sono separati da una virgola.  Se lo si desidera, è possibile dichiarare ogni parametro di tipo come variant utilizzando i modificatori generici `In` e `Out`.  L'[Type List](../../../visual-basic/language-reference/statements/type-list.md) deve essere racchiuso tra parentesi e introdotto dalla parola chiave `Of`.|  
-|`parameterlist`|Parametro facoltativo.  Elenco dei parametri passati alla routine al momento della relativa chiamata.  L'[Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md) deve essere racchiuso tra parentesi.|  
-|`type`|Obbligatoria se viene specificata una routine `Function`.  Tipo di dati del valore restituito.|  
+|---|---|  
+|`attrlist`|Facoltativo. Elenco di attributi che si applicano a questo delegato. Gli attributi sono separati da una virgola. È necessario racchiudere il [elenco attributi](../../../visual-basic/language-reference/statements/attribute-list.md) parentesi angolari ("`<`"e"`>`").|  
+|`accessmodifier`|Facoltativo. Specifica il codice può accedere al delegato. Può essere uno dei seguenti:<br /><br /> -   [Pubblica](../../../visual-basic/language-reference/modifiers/public.md). Qualsiasi codice che può accedere all'elemento che dichiara il delegato può accedervi.<br />-   [Protetto](../../../visual-basic/language-reference/modifiers/protected.md). Solo il codice incluso nella classe del delegato o una classe derivata può accedervi.<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md). Solo codice all'interno dello stesso assembly può accedere al delegato.<br />-   [Privato](../../../visual-basic/language-reference/modifiers/private.md). Può accedere solo codice all'interno dell'elemento che dichiara il delegato.<br /><br /> È possibile specificare `Protected Friend` per abilitare l'accesso dal codice all'interno dello stesso assembly, una classe derivata o nella classe del delegato.|  
+|`Shadows`|Facoltativo. Indica che il delegato ridichiara e nasconde un elemento di programmazione omonimo o un set di elementi in overload, una classe di base. È possibile nascondere qualsiasi tipo di elemento dichiarato con qualsiasi altro tipo.<br /><br /> Un elemento nascosto non è disponibile all'interno della classe derivata che lo nasconde, a meno che l'elemento di shadowing sia inaccessibile. Ad esempio, se un `Private` elemento nasconde un elemento di classe di base, il codice che non dispone dell'autorizzazione di accesso di `Private` elemento accede invece all'elemento della classe base.|  
+|`Sub`|Parametro facoltativo, ma uno `Sub` o `Function` deve essere visualizzato. Dichiarare la routine come delegato `Sub` routine che restituisce un valore.|  
+|`Function`|Parametro facoltativo, ma uno `Sub` o `Function` deve essere visualizzato. Dichiarare la routine come delegato `Function` procedure che restituisce un valore.|  
+|`name`|Obbligatorio. Nome del tipo di delegato. segue le convenzioni di denominazione standard variabile.|  
+|`typeparamlist`|Facoltativo. Elenco di parametri di tipo per questo delegato. Più parametri di tipo sono separati da virgole. Facoltativamente, ogni parametro di tipo può essere dichiarato variante mediante `In` e `Out` modificatori generici. È necessario racchiudere il [tipo elenco](../../../visual-basic/language-reference/statements/type-list.md) tra parentesi e introdurre con il `Of` (parola chiave).|  
+|`parameterlist`|Facoltativo. Elenco di parametri passati alla routine quando viene chiamato. È necessario racchiudere il [elenco parametri](../../../visual-basic/language-reference/statements/parameter-list.md) tra parentesi.|  
+|`type`|Necessario se si specifica un `Function` procedura. Tipo di dati del valore restituito.|  
   
-## Note  
- L'istruzione `Delegate` consente di definire i tipi di parametri e i tipi restituiti di una classe delegata.  Per creare un'istanza della classe delegata, è possibile utilizzare qualsiasi routine con tipi di parametri e tipi restituiti corrispondenti.  La routine può essere utilizzata in seguito attraverso l'istanza del delegato chiamando il metodo `Invoke` del delegato.  
+## <a name="remarks"></a>Note  
+ Il `Delegate` istruzione definisce i parametri e tipi restituiti di una classe delegata. Per creare un'istanza della classe delegata, è possibile utilizzare qualsiasi routine con parametri e tipi restituiti corrispondenti. La procedura può quindi successivamente essere richiamata tramite l'istanza del delegato, mediante la chiamata del delegato `Invoke` metodo.  
   
- I delegati possono essere dichiarati a livello di spazio dei nomi, modulo, classe o struttura, ma non all'interno di routine.  
+ I delegati possono essere dichiarati di spazio dei nomi, modulo, classe o struttura, ma non all'interno di una routine.  
   
- Ogni classe delegata definisce un costruttore al quale viene passata la specifica di un metodo di oggetto.  Un argomento di un costruttore di delegato deve essere un riferimento a un metodo o a un'espressione lambda.  
+ Ogni classe delegata definisce un costruttore a cui viene passata la specifica di un metodo dell'oggetto. Un argomento a un costruttore di delegato deve essere un riferimento a un metodo o un'espressione lambda.  
   
- Per specificare un riferimento a un metodo, utilizzare la seguente sintassi:  
+ Per specificare un riferimento a un metodo, utilizzare la sintassi seguente:  
   
- `AddressOf` \[`expression`.\]`methodname`  
+ `AddressOf` [`expression`.]`methodname`  
   
- In fase di compilazione per il tipo di `expression` è necessario specificare il nome di una classe o di un'interfaccia contenente un metodo con il nome specificato e con firma corrispondente a quella della classe delegata.  `methodname` può essere un metodo condiviso o di istanza  ma `methodname`non è facoltativo, anche se si crea un delegato per il metodo predefinito della classe.  
+ Il tipo in fase di compilazione di `expression` deve essere il nome di una classe o un'interfaccia che contiene un metodo con il nome specificato, la cui firma corrisponde alla firma della classe delegata. Il `methodname` può essere un metodo condiviso o un metodo di istanza. Il `methodname` non è facoltativo, anche se si crea un delegato per il metodo predefinito della classe.  
   
- Per specificare un'espressione lambda, utilizzare la seguente sintassi:  
+ Per specificare un'espressione lambda, utilizzare la sintassi seguente:  
   
- `Function` \(\[`parm` As `type`, `parm2` As `type2`, ...\]\) `expression`  
+ `Function`([`parm` As `type`, `parm2` As `type2`, ...])`expression`  
   
- La firma della funzione deve corrispondere a quella del tipo delegato.  Per ulteriori informazioni sulle espressioni lambda, vedere [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
+ La firma della funzione deve corrispondere a quello del tipo di delegato. Per altre informazioni sulle espressioni lambda, vedere [Espressioni lambda in C++](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
- Per ulteriori informazioni sui delegati, vedere [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md).  
+ Per ulteriori informazioni sui delegati, vedere [delegati](../../../visual-basic/programming-guide/language-features/delegates/index.md).  
   
-## Esempio  
- Nell'esempio riportato di seguito l'istruzione `Delegate` viene utilizzata per dichiarare un delegato che consenta di eseguire operazioni su due numeri e restituire un numero.  Il metodo `DelegateTest` accetta un'istanza di tale tipo di delegato e la utilizza per eseguire operazioni su una coppia di numeri.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente viene utilizzata la `Delegate` istruzione per dichiarare un delegato per operazioni su due numeri e restituire un numero. Il `DelegateTest` metodo accetta un'istanza di questo tipo di delegato e lo utilizza per operare su coppie di numeri.  
   
- [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
+ [!code-vb[VbVbalrDelegates&#14;](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
   
-## Vedere anche  
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)   
+## <a name="see-also"></a>Vedere anche  
+ [AddressOf (operatore)](../../../visual-basic/language-reference/operators/addressof-operator.md)   
  [Of](../../../visual-basic/language-reference/statements/of-clause.md)   
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/delegates.md)   
+ [Delegati](../../../visual-basic/programming-guide/language-features/delegates/index.md)   
  [Procedura: utilizzare una classe generica](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)   
  [Tipi generici in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)   
- [Covarianza e controvarianza](../Topic/Covariance%20and%20Contravariance%20\(C%23%20and%20Visual%20Basic\).md)   
+ [Covarianza e controvarianza](http://msdn.microsoft.com/library/a58cc086-276f-4f91-a366-85b7f95f38b8)   
  [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)   
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+ [In uscita](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

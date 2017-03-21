@@ -1,49 +1,65 @@
 ---
-title: "/nologo (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "-nologo compiler option [Visual Basic]"
-  - "banners, suppressing startup"
-  - "nologo compiler option [Visual Basic]"
-  - "/nologo compiler option [Visual Basic]"
+title: /nologo (Visual Basic) | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- -nologo compiler option [Visual Basic]
+- banners, suppressing startup
+- nologo compiler option [Visual Basic]
+- /nologo compiler option [Visual Basic]
 ms.assetid: 25ef54b6-d676-4639-a2d2-a747a158bc07
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 16
----
-# /nologo (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a0e309a80082f19fb47ccbbb43c00f22c8addd3b
+ms.lasthandoff: 03/13/2017
 
-Consente di sopprimere la visualizzazione delle informazioni sul copyright e dei messaggi informativi durante la compilazione.  
+---
+# <a name="nologo-visual-basic"></a>/nologo (Visual Basic)
+Elimina visualizzazione di informazioni sul copyright e messaggi informativi durante la compilazione.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 /nologo  
 ```  
   
-## Note  
- Se si specifica `/nologo`, le informazioni sul copyright del compilatore non verranno visualizzate.  Per impostazione predefinita, l'opzione `/nologo` non è attiva.  
+## <a name="remarks"></a>Note  
+ Se si specifica `/nologo`, il compilatore non visualizza informazioni sul copyright. Per impostazione predefinita, l'opzione `/nologo` non è attiva.  
   
 > [!NOTE]
->  L'opzione `/nologo` non è disponibile all'interno dell'ambiente di sviluppo di Visual Studio, ma solo durante la compilazione dalla riga di comando.  
+>  Il `/nologo` opzione non è disponibile all'interno dell'ambiente di sviluppo di Visual Studio, è disponibile solo durante la compilazione dalla riga di comando.  
   
-## Esempio  
- Il codice seguente consente di compilare `T2.vb` senza visualizzare le informazioni sul copyright.  
+## <a name="example"></a>Esempio  
+ Il codice seguente Compila `T2.vb` e non visualizza informazioni sul copyright.  
   
 ```  
 vbc /nologo t2.vb  
 ```  
   
-## Vedere anche  
- [Visual Basic Command\-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Compilatore della riga di comando di Visual Basic](../../../visual-basic/reference/command-line-compiler/index.md)   
  [Esempi di righe di comando di compilazione](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

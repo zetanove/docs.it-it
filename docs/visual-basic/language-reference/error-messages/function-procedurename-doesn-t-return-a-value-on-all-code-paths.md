@@ -1,53 +1,69 @@
 ---
-title: "Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "bc42105"
-  - "vbc42105"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "BC42105"
+title: Funzione &quot;&lt;NomeProcedura&gt;&quot; non restituisce un valore in tutti i percorsi di codice | Documenti di Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- bc42105
+- vbc42105
+dev_langs:
+- VB
+helpviewer_keywords:
+- BC42105
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 12
----
-# Function &#39;&lt;procedurename&gt;&#39; doesn&#39;t return a value on all code paths
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 288fdf7c4845b20283681d9eb3504ac314f1ddd2
+ms.lasthandoff: 03/13/2017
 
-La funzione '\<nomeroutine\>' non restituisce un valore in tutti i percorsi del codice.Verificare che non manchi un'istruzione 'Return'.  
+---
+# <a name="function-39ltprocedurenamegt39-doesn39t-return-a-value-on-all-code-paths"></a>Funzione '&lt;NomeProcedura&gt;' non restituisce un valore in tutti i percorsi di codice
+Funzione '\<NomeProcedura >' non restituisce un valore in tutti i percorsi di codice. Manca un'istruzione 'Return'?  
   
- Una routine `Function` dispone di almeno un percorso possibile, tramite il codice, che non restituisce un valore.  
+ Oggetto `Function` procedura ha almeno un percorso possibile tramite il codice che non restituisce un valore.  
   
- È possibile restituire un valore da una routine `Function` in uno dei seguenti modi:  
+ È possibile restituire un valore da un `Function` procedura in uno dei modi seguenti:  
   
--   Includere il valore in [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
+-   Includere il valore in un [istruzione Return](../../../visual-basic/language-reference/statements/return-statement.md).  
   
--   Assegnare il valore al nome della routine `Function`, quindi eseguire un'istruzione `Exit Function`.  
+-   Assegnare il valore per il `Function` procedure un nome e quindi eseguire un `Exit Function` istruzione.  
   
--   Assegnare il valore al nome della procedura `Function`, quindi eseguire l'istruzione `End Function`.  
+-   Assegnare il valore per il `Function` procedure un nome e quindi eseguire il `End Function` istruzione.  
   
- Se il controllo passa a `Exit Function` o `End Function` e non si è assegnato alcun valore al nome della procedura, la procedura restituirà il valore predefinito del tipo di dati restituito.  Per ulteriori informazioni, vedere "Comportamento" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
+ Se il controllo passa al `Exit Function` o `End Function` e non è stato assegnato alcun valore per il nome della procedura, la procedura restituisce il valore predefinito del tipo di dati restituito. Per ulteriori informazioni, vedere "Comportamento" in [istruzione Function](../../../visual-basic/language-reference/statements/function-statement.md).  
   
- Per impostazione predefinita, si tratta di un messaggio di avviso.  Per ulteriori informazioni su come nascondere gli avvisi o considerarli come errori, vedere [Configurazione degli avvisi in Visual Basic](/visual-studio/ide/configuring-warnings-in-visual-basic).  
+ Per impostazione predefinita, si tratta di un messaggio di avviso. Per ulteriori informazioni su come nascondere gli avvisi o considerarli come errori, vedere [configurazione degli avvisi in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
- **ID errore:**  BC42105  
+ **ID errore:** BC42105  
   
-### Per correggere l'errore  
+## <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Verificare la logica del flusso di controllo e assicurarsi di assegnare un valore prima di ogni istruzione che provoca una restituzione.  
+-   Controllare la logica del flusso di controllo e assicurarsi di assegnare un valore prima di ogni istruzione che provoca una restituzione.  
   
-     È più semplice garantire che ogni restituzione della procedura restituisca un valore se si utilizza sempre l'istruzione `Return`.  In tal caso, l'ultima istruzione prima di `End Function` dovrebbe essere un'istruzione `Return`.  
+     È più semplice garantire che ogni restituito dalla routine restituisce un valore se si utilizza sempre il `Return` istruzione. In questo caso, l'ultima istruzione prima `End Function` deve essere un `Return` istruzione.  
   
-## Vedere anche  
- [Routine Function](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)   
- [Compilazione \(pagina\), Creazione progetti \(Visual Basic\)](/visual-studio/ide/reference/compile-page-project-designer-visual-basic)
+## <a name="see-also"></a>Vedere anche  
+ [Routine di funzione](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)   
+ [Istruzione Function](../../../visual-basic/language-reference/statements/function-statement.md)   
+ [Pagina Compilazione, Creazione progetti (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic)

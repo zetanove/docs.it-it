@@ -1,70 +1,86 @@
 ---
-title: "How to: Call an Event Handler in Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic code, procedures"
-  - "event handlers, calling"
-  - "event handlers"
-  - "procedures, event handlers"
-  - "procedures, calling"
+title: 'Procedura: chiamare un gestore eventi in Visual Basic | Documenti di Microsoft'
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Visual Basic code, procedures
+- event handlers, calling
+- event handlers
+- procedures, event handlers
+- procedures, calling
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 19
----
-# How to: Call an Event Handler in Visual Basic
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: c5b300feca3415d1283d24179795a4ae92c61e52
+ms.lasthandoff: 03/13/2017
 
-Un *evento* è un'operazione o un'occorrenza, come un clic del mouse o il superamento di un limite di credito, riconosciuta da un componente del programma e per la quale è possibile scrivere un codice di risposta.  Un *gestore eventi* è il codice scritto in risposta a un evento.  
+---
+# <a name="how-to-call-an-event-handler-in-visual-basic"></a>Procedura: chiamare un gestore eventi in Visual Basic
+Un *evento* è un'azione o un'occorrenza, ad esempio un mouse superato un limite di credito o fare clic su, che è riconosciuto da un componente di programma e per cui è possibile scrivere codice per rispondere. Un *gestore dell'evento* è il codice scritto in risposta a un evento.  
   
- Un gestore eventi in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] è una routine `Sub`.  In genere, tuttavia, tale routine non viene chiamata in modo simile alle altre routine `Sub` ma viene piuttosto identificata come gestore per l'evento.  A tale scopo è possibile utilizzare una clausola [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) e una variabile [WithEvents](../../../../visual-basic/language-reference/modifiers/withevents.md) oppure un'[AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md).  L'utilizzo di una clausola `Handles` rappresenta la modalità predefinita per dichiarare un gestore eventi in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  I gestori eventi vengono scritti in questo modo dagli addetti alla progettazione quando si programma nell'ambiente di sviluppo integrato \(IDE\).  L'istruzione `AddHandler` consente di generare eventi in modo dinamico in fase di esecuzione.  
+ Un gestore dell'evento [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] è un `Sub` procedura. Tuttavia, si non viene in genere chiamato lo stesso modo di altri `Sub` procedure. Al contrario, la procedura per identificare come un gestore per l'evento. È possibile eseguire questa operazione con un [gestisce](../../../../visual-basic/language-reference/statements/handles-clause.md) clausola e [WithEvents](../../../../visual-basic/language-reference/modifiers/withevents.md) variabile, o con un [AddHandler (istruzione)](../../../../visual-basic/language-reference/statements/addhandler-statement.md). Utilizzando un `Handles` clausola è la modalità predefinita per dichiarare un gestore dell'evento [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. Questo è il modo in cui che i gestori eventi vengono scritti dalle finestre di progettazione quando si programma nell'ambiente di sviluppo integrato (IDE). Il `AddHandler` istruzione è adatta per la generazione di eventi in modo dinamico in fase di esecuzione.  
   
- Quando si verifica l'evento, la routine del gestore eventi viene chiamata automaticamente.  Qualsiasi codice che disponga di accesso all'evento può causarne la generazione mediante l'esecuzione di un'[RaiseEvent Statement](../../../../visual-basic/language-reference/statements/raiseevent-statement.md).  
+ Quando si verifica l'evento, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] automaticamente chiama la routine del gestore eventi. Qualsiasi codice che dispone dell'accesso per l'evento può causare la generazione mediante l'esecuzione di un [istruzione RaiseEvent](../../../../visual-basic/language-reference/statements/raiseevent-statement.md).  
   
- È possibile associare più gestori eventi allo stesso evento.  In alcuni casi è possibile dissociare un gestore da un evento.  Per ulteriori informazioni, vedere [Events](../../../../visual-basic/programming-guide/language-features/events/events.md).  
+ È possibile associare più gestori di eventi con lo stesso evento. In alcuni casi è possibile dissociare un gestore a un evento. Per ulteriori informazioni, vedere [eventi](../../../../visual-basic/programming-guide/language-features/events/index.md).  
   
-### Per chiamare un gestore eventi mediante Handles e WithEvents  
+### <a name="to-call-an-event-handler-using-handles-and-withevents"></a>Per chiamare un gestore eventi mediante Handles e WithEvents  
   
-1.  Verificare che l'evento venga dichiarato mediante un'[Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md).  
+1.  Assicurarsi che l'evento è dichiarato con un [istruzione Event](../../../../visual-basic/language-reference/statements/event-statement.md).  
   
-2.  Dichiarare una variabile oggetto a livello di modulo o classe utilizzando la parola chiave [WithEvents](../../../../visual-basic/language-reference/modifiers/withevents.md).  La clausola `As` per questa variabile deve specificare la classe che genera l'evento.  
+2.  Dichiarare una variabile oggetto livello di modulo o classe utilizzando il [WithEvents](../../../../visual-basic/language-reference/modifiers/withevents.md) (parola chiave). Il `As` clausola per questa variabile deve specificare la classe che genera l'evento.  
   
-3.  Nella dichiarazione della routine di gestione degli eventi `Sub` aggiungere una clausola [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) che specifichi la variabile `WithEvents` e il nome dell'evento.  
+3.  Nella dichiarazione della gestione dell'evento `Sub` procedura, aggiungere un [gestisce](../../../../visual-basic/language-reference/statements/handles-clause.md) clausola che specifica il `WithEvents` variabile e il nome dell'evento.  
   
-4.  Quando si verifica l'evento, la routine `Sub` viene chiamata automaticamente.  Nel codice è possibile specificare un'istruzione `RaiseEvent` per generare l'evento.  
+4.  Quando si verifica l'evento, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] chiama automaticamente il `Sub` procedura. Il codice può usare un `RaiseEvent` istruzione per generare l'evento.  
   
-     Nell'esempio seguente vengono definiti un evento e una variabile `WithEvents` che fa riferimento alla classe che genera l'evento.  La routine di gestione degli eventi `Sub` utilizza una clausola `Handles` per specificare la classe e l'evento che gestisce.  
+     Nell'esempio seguente definisce un evento e un `WithEvents` variabile che fa riferimento alla classe che genera l'evento. La gestione dell'evento `Sub` procedura vengono utilizzati un `Handles` clausola per specificare la classe gestisce l'evento.  
   
-     [!code-vb[VbVbcnProcedures#4](./codesnippet/VisualBasic/how-to-call-an-event-handler_1.vb)]  
+     [!code-vb[VbVbcnProcedures n.&4;](./codesnippet/VisualBasic/how-to-call-an-event-handler_1.vb)]  
   
-### Per chiamare un gestore eventi mediante AddHandler  
+### <a name="to-call-an-event-handler-using-addhandler"></a>Per chiamare un gestore eventi mediante AddHandler  
   
-1.  Verificare che l'evento venga dichiarato mediante un'istruzione `Event`.  
+1.  Assicurarsi che l'evento è dichiarato con un `Event` istruzione.  
   
-2.  Eseguire un'[AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md) per collegare in modo dinamico la routine di gestione degli eventi `Sub` all'evento stesso.  
+2.  Eseguire un [AddHandler (istruzione)](../../../../visual-basic/language-reference/statements/addhandler-statement.md) in grado di connettersi in modo dinamico la gestione dell'evento `Sub` procedure con l'evento.  
   
-3.  Quando si verifica l'evento, la routine `Sub` viene chiamata automaticamente.  Nel codice è possibile specificare un'istruzione `RaiseEvent` per generare l'evento.  
+3.  Quando si verifica l'evento, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] chiama automaticamente il `Sub` procedura. Il codice può usare un `RaiseEvent` istruzione per generare l'evento.  
   
-     Nell'esempio seguente viene definita una routine `Sub` per la gestione dell'evento <xref:System.Windows.Forms.Form.Closing> di un form.  Viene quindi utilizzata l'[AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md) per associare la routine `catchClose` come gestore eventi per <xref:System.Windows.Forms.Form.Closing>.  
+     L'esempio seguente definisce una `Sub` procedura per gestire il <xref:System.Windows.Forms.Form.Closing>evento di un form.</xref:System.Windows.Forms.Form.Closing> Viene quindi utilizzato il [AddHandler (istruzione)](../../../../visual-basic/language-reference/statements/addhandler-statement.md) per associare il `catchClose` procedura come un gestore eventi per <xref:System.Windows.Forms.Form.Closing>.</xref:System.Windows.Forms.Form.Closing>  
   
-     [!code-vb[VbVbcnProcedures#5](./codesnippet/VisualBasic/how-to-call-an-event-handler_2.vb)]  
+     [!code-vb[VbVbcnProcedures n.&5;](./codesnippet/VisualBasic/how-to-call-an-event-handler_2.vb)]  
   
-     È possibile dissociare un gestore eventi da un evento mediante l'esecuzione dell'[RemoveHandler Statement](../../../../visual-basic/language-reference/statements/removehandler-statement.md).  
+     È possibile dissociare un gestore eventi da un evento mediante l'esecuzione di [istruzione RemoveHandler](../../../../visual-basic/language-reference/statements/removehandler-statement.md).  
   
-## Vedere anche  
- [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)   
- [Sub Procedures](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md)   
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)   
- [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)   
- [How to: Create a Procedure](../../../../visual-basic/programming-guide/language-features/procedures/how-to-create-a-procedure.md)   
- [How to: Call a Procedure that Does Not Return a Value](../../../../visual-basic/programming-guide/language-features/procedures/how-to-call-a-procedure-that-does-not-return-a-value.md)
+## <a name="see-also"></a>Vedere anche  
+ [Procedure](./index.md)   
+ [Sub (routine)](./sub-procedures.md)   
+ [Sub (istruzione)](../../../../visual-basic/language-reference/statements/sub-statement.md)   
+ [AddressOf (operatore)](../../../../visual-basic/language-reference/operators/addressof-operator.md)   
+ [Procedura: creare una stored Procedure](./how-to-create-a-procedure.md)   
+ [Procedura: Chiamare una routine che non restituisce un valore](./how-to-call-a-procedure-that-does-not-return-a-value.md)

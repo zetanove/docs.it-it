@@ -1,37 +1,53 @@
 ---
-title: "Troubleshooting Arrays (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "troubleshooting arrays"
-  - "arrays [Visual Basic], initialization errors"
-  - "troubleshooting Visual Basic, arrays"
-  - "arrays [Visual Basic], compilation errors"
-  - "arrays [Visual Basic], declaration errors"
-  - "arrays [Visual Basic], troubleshooting"
+title: Risoluzione dei problemi di matrici (Visual Basic) | Documenti di Microsoft
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- troubleshooting arrays
+- arrays [Visual Basic], initialization errors
+- troubleshooting Visual Basic, arrays
+- arrays [Visual Basic], compilation errors
+- arrays [Visual Basic], declaration errors
+- arrays [Visual Basic], troubleshooting
 ms.assetid: f4e971c7-c0a4-4ed7-a77a-8d71039f266f
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 17
----
-# Troubleshooting Arrays (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: db38c0c2a4f8b74a6b862f86f426b4d8837f4424
+ms.lasthandoff: 03/13/2017
 
-In questa pagina sono elencati alcuni problemi comuni che possono verificarsi durante l'utilizzo delle matrici.  
+---
+# <a name="troubleshooting-arrays-visual-basic"></a>Risoluzione dei problemi relativi alle matrici (Visual Basic)
+Questa pagina sono elencati alcuni problemi comuni che possono verificarsi quando si lavora con le matrici.  
   
-## Errori di compilazione durante la dichiarazione e l'inizializzazione di una matrice  
- Gli errori di compilazione possono dipendere da un'incomprensione delle regole relative alla dichiarazione, alla creazione e all'inizializzazione delle matrici.  Le cause di errore più comuni sono le seguenti:  
+## <a name="compilation-errors-declaring-and-initializing-an-array"></a>Errori di compilazione dichiarazione e inizializzazione di una matrice  
+ Errori di compilazione possono dipendere da un'incomprensione delle regole per la dichiarazione, la creazione e inizializzazione di matrici. Le cause più comuni di errori sono i seguenti:  
   
--   Definizione di una clausola [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) dopo aver specificato le lunghezze delle dimensioni nella dichiarazione della variabile della matrice.  Nel codice seguente vengono illustrate le dichiarazioni non corrette di questo tipo.  
+-   Fornendo un [nuovo operatore](../../../../visual-basic/language-reference/operators/new-operator.md) clausola dopo aver specificato le lunghezze delle dimensioni nella dichiarazione di variabile di matrice. Le righe di codice seguente mostrano le dichiarazioni non valide di questo tipo.  
   
      `Dim INVALIDsingleDimByteArray(2) As Byte = New Byte()`  
   
@@ -39,15 +55,15 @@ In questa pagina sono elencati alcuni problemi comuni che possono verificarsi du
   
      `Dim INVALIDjaggedByteArray(1)() As Byte = New Byte()()`  
   
--   Definizione di lunghezze di dimensioni per altre matrici oltre a quella di primo livello in una matrice di matrici.  Nel codice seguente viene illustrata una dichiarazione non corretta di questo tipo.  
+-   Specifica le lunghezze delle dimensioni per più di una matrice di livello superiore di una matrice di matrici. L'esempio di codice seguente viene illustrata una dichiarazione di questo tipo non valida.  
   
      `Dim INVALIDjaggedByteArray(1)(1) As Byte`  
   
--   Omissione della parola chiave `New` durante la definizione dei valori di un elemento.  Nel codice seguente viene illustrata una dichiarazione non corretta di questo tipo.  
+-   L'omissione di `New` parola chiave quando si specificano i valori dell'elemento. L'esempio di codice seguente viene illustrata una dichiarazione di questo tipo non valida.  
   
      `Dim INVALIDoneDimShortArray() As Short = Short() {0, 1, 2, 3}`  
   
--   Definizione di una clausola `New` non racchiusa tra parentesi graffe \(`{}`\).  Nel codice seguente vengono illustrate le dichiarazioni non corrette di questo tipo.  
+-   Fornendo un `New` clausola senza parentesi graffe (`{}`). Le righe di codice seguente mostrano le dichiarazioni non valide di questo tipo.  
   
      `Dim INVALIDsingleDimByteArray() As Byte = New Byte()`  
   
@@ -57,15 +73,15 @@ In questa pagina sono elencati alcuni problemi comuni che possono verificarsi du
   
      `Dim INVALIDtwoDimShortArray(,) As Short = New Short(1, 1)`  
   
-## Accesso a una matrice al di fuori dei limiti  
- Durante il processo di inizializzazione di una matrice viene assegnato un limite superiore e un limite inferiore a ciascuna di queste dimensioni.  Per accedere a un elemento della matrice, è necessario specificare un indice, o pedice, valido per ogni dimensione.  Se il valore dell'indice è al di sotto del limite inferiore o al di sopra del limite superiore, viene generata un'eccezione <xref:System.IndexOutOfRangeException>.  Poiché il compilatore non è in grado di rilevare questo errore, si verifica un errore in fase di esecuzione.  
+## <a name="accessing-an-array-out-of-bounds"></a>Accesso a una matrice fuori dai limiti  
+ Il processo di inizializzazione di una matrice assegna un limite superiore e inferiore di ogni dimensione. L'accesso a un elemento della matrice debba specificare un indice valido o un indice, per ogni dimensione. Se il valore dell'indice è di sotto del limite inferiore o di sopra del limite superiore, un <xref:System.IndexOutOfRangeException>risultati dell'eccezione.</xref:System.IndexOutOfRangeException> Il compilatore non è in grado di rilevare un errore di questo tipo, si verifica un errore in fase di esecuzione.  
   
-### Definizione di limiti  
- Quando un altro componente passa una matrice al codice, ad esempio l'argomento di una routine, le dimensioni della matrice o le lunghezze delle sue dimensioni sono sconosciute.  Si consiglia di definire sempre il limite superiore di ciascuna dimensione di una matrice prima di provare ad accedere a un elemento.  Se la matrice non è stata creata con una clausola `New` di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)], è possibile che il valore del limite inferiore sia diverso da 0. Per questo motivo, è consigliabile definire anche il limite inferiore.  
+### <a name="determining-bounds"></a>Determinazione dei limiti  
+ Se un altro componente passa una matrice al codice, ad esempio come un argomento di routine, non si conosce la dimensione della matrice o le lunghezze delle dimensioni. È sempre necessario determinare il limite superiore per ogni dimensione della matrice prima di tentare di accedere a tutti gli elementi. Se la matrice è stata creata in modo diverso da un [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] `New` clausola, potrebbe essere il limite inferiore diverso da 0 ed è più sicuro determinare tale limite.  
   
-### Definizione della dimensione  
- Durante la definizione dei limiti di una matrice multidimensionale, è necessario prestare particolare attenzione al modo in cui viene specificata la dimensione.  I parametri `dimension` dei metodi <xref:System.Array.GetLowerBound%2A> e <xref:System.Array.GetUpperBound%2A> sono in base 0 e i parametri `Rank` delle funzioni [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Information.LBound%2A> e <xref:Microsoft.VisualBasic.Information.UBound%2A> sono in base 1.  
+### <a name="specifying-the-dimension"></a>Specifica la dimensione  
+ Durante la determinazione dei limiti di una matrice multidimensionale, prestare attenzione a come specificare la dimensione. Il `dimension` parametri della <xref:System.Array.GetLowerBound%2A>e <xref:System.Array.GetUpperBound%2A>metodi sono basati su 0, mentre il `Rank` parametri di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] <xref:Microsoft.VisualBasic.Information.LBound%2A>e <xref:Microsoft.VisualBasic.Information.UBound%2A>funzioni sono basati su 1.</xref:Microsoft.VisualBasic.Information.UBound%2A> </xref:Microsoft.VisualBasic.Information.LBound%2A> </xref:System.Array.GetUpperBound%2A> </xref:System.Array.GetLowerBound%2A>  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  [Matrici](../../../../visual-basic/programming-guide/language-features/arrays/index.md)   
- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)
+ [Procedura: inizializzare una variabile di matrice in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)
