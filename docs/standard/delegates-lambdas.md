@@ -21,7 +21,7 @@ ms.lasthandoff: 03/02/2017
 
 I delegati definiscono un tipo che specifica una firma di metodo specifica. Un metodo (statico o istanza) che soddisfa questa firma può essere assegnato a una variabile del tipo, quindi chiamato direttamente (con gli argomenti appropriati) o passato come argomento a un altro metodo e quindi chiamato. L'esempio seguente mostra l'uso dei delegati.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -55,7 +55,7 @@ Per semplificare il processo di sviluppo, .NET include un set di tipi di delegat
 
 L'esempio precedente può essere ora riscritto usando il delegato `Func<>` anziché un tipo personalizzato. Il programma continuerà a essere eseguito nello stesso modo.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -78,7 +78,7 @@ In questo esempio semplice, la presenza di un metodo definito all'esterno del me
 
 In questo esempio il delegato anonimo viene configurato e usato per visualizzare un elenco dei soli numeri pari che vengono quindi stampati nella console.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -115,7 +115,7 @@ Le espressioni lambda, chiamate anche "lambda", sono state usate per la prima vo
 
 Poiché un'espressione lambda è soltanto un modo diverso di specificare un delegato, è possibile riscrivere l'esempio precedente per usare un'espressione lambda anziché un delegato anonimo.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -143,7 +143,7 @@ Nelle righe evidenziate è possibile osservare l'aspetto di un'espressione lambd
 
 Le lambda sono semplicemente delegati, ovvero possono essere usate come gestori di eventi come mostra il frammento di codice seguente.
 
-```cs
+```csharp
 public MainWindow()
 {
     InitializeComponent();

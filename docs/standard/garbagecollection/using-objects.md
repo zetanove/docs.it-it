@@ -31,7 +31,7 @@ L'istruzione `using` in C# e l'istruzione `Using` in Visual Basic semplificano i
 
 L'esempio seguente impiega l'istruzione `using` per creare e rilasciare un oggetto [System.IO.StreamReader](xref:System.IO.StreamReader).
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -77,7 +77,7 @@ End Module
 
 Si noti che, anche se la classe [StreamReader](xref:System.IO.StreamReader) implementa l'interfaccia [IDisposable](xref:System.IDisposable), a indicare che usa una risorsa non gestita, nell'esempio non viene chiamato il metodo [StreamReader.Dispose](xref:System.IO.StreamReader.Dispose(System.Boolean)) in modo esplicito. Quando nel compilatore C# o Visual Basic viene rilevata l'istruzione `using`, viene generato il linguaggio intermedio (IL) equivalente al codice seguente, che contiene un blocco `try/finally` in modo esplicito. 
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -134,7 +134,7 @@ End Module
 
 L'istruzione `using` C# è consente anche di acquisire più risorse in un'unica istruzione, che equivale internamente all'uso di più istruzioni "using" annidate. Nell'esempio seguente viene creata l'istanza di due oggetti [StreamReader](xref:System.IO.StreamReader) per leggere il contenuto di due file diversi. 
 
-```cs
+```csharp
 using System;
 using System.IO;
 
@@ -171,7 +171,7 @@ Anziché eseguire il wrapping di un blocco `try/finally` in un'istruzione `using
 
 L'esempio seguente è simile a quello precedente, con la differenza che in questo viene usato un blocco `try/catch/finally` per creare un'istanza di un oggetto [StreamReader](xref:System.IO.StreamReader), usarla ed eliminarla, e per gestire le eccezioni generate dal costruttore [StreamReader](xref:System.IO.StreamReader) e dal relativo metodo [ReadToEnd](xref:System.IO.StreamReader.ReadToEnd). Si noti che il codice nel blocco `finally` controlla che l'oggetto che implementa [IDisposable](xref:System.IDisposable) non sia `null` prima di chiamare il metodo [Dispose](xref:System.IDisposable.Dispose). Diversamente potrebbe generarsi un'eccezione [NullReferenceException](xref:System.NullReferenceException) in fase di esecuzione. 
 
-```cs
+```csharp
 using System;
 using System.Globalization;
 using System.IO;
