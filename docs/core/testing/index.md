@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 76ab06edfed3cb124ac79f0d5d0c3480c0a5f170
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 095ebad90e3f0b188d208d22f6f16b9552f8ea86
+ms.openlocfilehash: ca9d57a3ef3382c4957de5edb55959f1a3f13ee0
+ms.lasthandoff: 03/06/2017
 
 ---
 
@@ -34,7 +34,9 @@ Quando si scrivono unit test, fare attenzione a non introdurre accidentalmente d
 
 Altre informazioni sul testing unità sono disponibili nei progetti .NET Core:
 
-Provare questa [procedura dettagliata per la creazione di unit test con xUnit e l'interfaccia della riga di comando .NET](unit-testing-with-dotnet-test.md).
+Provare questa [procedura dettagliata per la creazione di unit test con xUnit e l'interfaccia CLI di .NET](unit-testing-with-dotnet-test.md). 
 
 Il team di xUnit ha scritto un'esercitazione che illustra [come usare xUnit con .NET Core e Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
+
+Se si preferisce usare MSTest, provare la [procedura dettagliata sulla creazione di unit test con MSTest e l'interfaccia CLI di .NET](unit-testing-with-mstest.md).
 

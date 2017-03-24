@@ -1,25 +1,23 @@
 ---
 title: Comando dotnet-restore | Microsoft Docs
-description: Informazioni sul ripristino delle dipendenze e degli strumenti specifici per il progetto tramite il comando dotnet-restore
+description: Informazioni sul ripristino delle dipendenze e degli strumenti specifici per il progetto tramite il comando dotnet-restore.
 keywords: dotnet-restore, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
+ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 translationtype: Human Translation
-ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
-ms.openlocfilehash: df8174aa3252568d7112305af07e6399d96ca32f
+ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
+ms.openlocfilehash: a55cd932045a59f08146dff367a87eb6fe61f6e5
+ms.lasthandoff: 03/07/2017
 
 ---
 
 #<a name="dotnet-restore"></a>dotnet-restore
-
-> [!WARNING]
-> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [dotnet-restore (strumenti di .NET Core RC4)](../preview3/tools/dotnet-restore.md).
 
 ## <a name="name"></a>Nome
 
@@ -27,33 +25,30 @@ ms.openlocfilehash: df8174aa3252568d7112305af07e6399d96ca32f
 
 ## <a name="synopsis"></a>Riepilogo
 
-`dotnet restore [root] [--help] [--force-english-output] [--source]  
-    [--packages] [--disable-parallel] [--fallbacksource] [--configfile] 
-    [--no-cache] [--infer-runtimes] [--verbosity] [--ignore-failed-sources]`
+```
+dotnet restore [root] [-s|--source] [-r|--runtime] [--packages] [--disable-parallel] [--configfile] [--no-cache] [--ignore-failed-sources] [--no-dependencies] [-v|--verbosity]
+dotnet restore [-h|--help]
+```
 
 ## <a name="description"></a>Descrizione
 
-Il comando `dotnet restore` usa NuGet per ripristinare le dipendenze e gli strumenti specifici del progetto definiti nel file [project.json](project-json.md). Per impostazione predefinita, il ripristino delle dipendenze e degli strumenti viene eseguito in parallelo.
+Il comando `dotnet restore` usa NuGet per ripristinare le dipendenze e gli strumenti specifici del progetto definiti nel file di progetto. Per impostazione predefinita, il ripristino delle dipendenze e degli strumenti viene eseguito in parallelo.
 
 Per ripristinare le dipendenze, NuGet necessita dei feed in cui si trovano i pacchetti. I feed in genere vengono forniti tramite il file di configurazione NuGet.config. Un feed predefinito è presente durante l'installazione degli strumenti dell'interfaccia della riga di comando. È possibile specificare più feed creando un file NuGet.config nella directory del progetto. È possibile specificare i feed anche tramite chiamata sul prompt dei comandi. 
 
 Per le dipendenze è possibile specificare dove vengono inseriti i pacchetti ripristinati durante l'operazione di ripristino, usando l'argomento `--packages`. Se il percorso non è specificato, viene usata la cache predefinita dei pacchetti NuGet. Si trova nella directory `.nuget/packages` nella directory home dell'utente in tutti i sistemi operativi (ad esempio, */home/user1* in Linux or *C:\Users\user1* in Windows).
 
-Per gli strumenti specifici del progetto, `dotnet restore` ripristina innanzitutto il pacchetto in cui viene compresso lo strumento e quindi ripristina le dipendenze dello strumento come specificato nel file [project.json](project-json.md). 
+Per gli strumenti specifici del progetto, `dotnet restore` ripristina innanzitutto il pacchetto in cui viene compresso lo strumento e quindi ripristina le dipendenze dello strumento come specificato nel file di progetto.
 
 ## <a name="options"></a>Opzioni
 
-`[root]` 
+`root` 
     
- Elenco di progetti o cartelle di progetto da ripristinare. Ciascun valore può essere un percorso di un file [project.json](project-json.md), di un file [global.json](global-json.md) o di una cartella. Se è specificata una cartella, l'operazione di ripristino cercherà in modo ricorsivo un file [project.json](project-json.md) in tutte le sottodirectory ed eseguirà il ripristino per ogni file [project.json](project-json.md) trovato.
+Percorso facoltativo del file di progetto da ripristinare. 
 
 `-h|--help`
 
 Stampa una breve guida per il comando.
-
- `--force-english-output`
-
-Impone all'applicazione l'esecuzione con una cultura invariante e di lingua inglese.
 
 `-s|--source <SOURCE>`
 
@@ -67,10 +62,6 @@ Specifica la directory in cui inserire i pacchetti ripristinati.
 
 Disabilita il ripristino di più progetti in parallelo. 
 
-`-f|--fallbacksource <FEED>`
-
-Specifica un elenco di origini di pacchetti da usare come fallback nell'operazione di ripristino se tutte le altre origini hanno esito negativo. Sono consentiti tutti i formati di feed validi. È possibile specificare più origini di fallback selezionando questa opzione più volte.
-
 `--configfile <FILE>`
 
 File di configurazione NuGet (NuGet.config) da usare per l'operazione di ripristino.
@@ -79,17 +70,17 @@ File di configurazione NuGet (NuGet.config) da usare per l'operazione di riprist
 
 Specifica di non memorizzare nella cache pacchetti e richieste HTTP.
 
-`--infer-runtimes`
-
-Opzione temporanea per consentire a NuGet di dedurre gli identificatori di runtime (RID) per i repository legacy.
-
-`--verbosity [LEVEL]`
-
-Livello di dettaglio della registrazione da usare. Valori consentiti: `Debug`, `Verbose`, `Information`, `Minimal`, `Warning` o `Error`.
-
 ` --ignore-failed-sources`
 
 Segnala le origini con esito negativo solo se sono presenti pacchetti che soddisfano il requisito di versione.
+
+`--no-dependencies`
+
+Quando si ripristina un progetto con riferimenti P2P, non vengono ripristinati i riferimenti, ma solo il progetto radice.
+
+`--verbosity <LEVEL>`
+
+Visualizza la quantità di dettagli nell'output. Il livello può essere `normal`, `quiet` o `detailed`.
 
 ## <a name="examples"></a>Esempi
 
@@ -99,7 +90,7 @@ Ripristinare le dipendenze e gli strumenti per il progetto nella directory corre
 
 Ripristinare le dipendenze e gli strumenti per il progetto `app1` che si trova nel percorso specificato:
 
-`dotnet restore ~/projects/app1/project.json`
+`dotnet restore ~/projects/app1/app1.csproj`
     
 Ripristinare le dipendenze e gli strumenti per il progetto nella directory corrente usando il percorso di file specificato come origine di fallback:
 
@@ -112,8 +103,4 @@ Ripristinare le dipendenze e gli strumenti per il progetto nella directory corre
 Ripristinare le dipendenze e gli strumenti per il progetto nella directory corrente e includere solo gli errori nell'output:
 
 `dotnet restore --verbosity Error`
-
-
-<!--HONumber=Feb17_HO2-->
-
 

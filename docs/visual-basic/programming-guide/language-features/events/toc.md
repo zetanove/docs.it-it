@@ -1,0 +1,6 @@
+# [Eventi](index.md)
+## [Procedura dettagliata: Dichiarazione e generazione di eventi](walkthrough-declaring-and-raising-events.md)
+## [Procedura dettagliata: Gestione di eventi](walkthrough-handling-events.md)
+## [Procedura: Dichiarare eventi personalizzati per evitare il blocco](how-to-declare-custom-events-to-avoid-blocking.md)
+## [Procedura: Dichiarare eventi personalizzati per proteggere la memoria](how-to-declare-custom-events-to-conserve-memory.md)
+## [Risoluzione dei problemi relativi ai gestori eventi ereditati](troubleshooting-inherited-event-handlers.md)

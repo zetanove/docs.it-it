@@ -3,17 +3,17 @@ title: Scelta di .NET Core o .NET Framework per le app server
 description: Guida alla scelta della tipologia di .NET da prendere in considerazione per creare un&quot;app server in .NET.
 keywords: .NET, .NET Core, .NET Framework
 author: cartermp
-manager: wpickett
-ms.author: phcart
+ms.author: mairaw
 ms.date: 11/16/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 155553e4-89a2-418d-be88-4e75f6c3cc69
 translationtype: Human Translation
-ms.sourcegitcommit: d6ce9e3dd3c1189f35d147d140bb45095b3d77a5
-ms.openlocfilehash: a0563f7437711ddbee309803e97ab653aa160337
+ms.sourcegitcommit: 053e296db67b9dde23c4d6295dbc7246d2b486ed
+ms.openlocfilehash: 816fb524000eb96ed5a157934cabc51b90f11dc0
+ms.lasthandoff: 02/23/2017
 
 ---
 
@@ -50,13 +50,13 @@ Chiaramente, se l'obiettivo è disporre di un'applicazione (Web/servizio) esegui
 
 .NET Core è la scelta ottimale se si intende adottare un sistema orientato ai microservizi, costituito da più microservizi con o senza stato, indipendenti e scalabili in modo dinamico. .NET Core è leggero e la sua interfaccia API può essere ridotta in base all'ambito del microservizio. Un'architettura di microservizi permette anche di unire le tecnologie di più servizi, consentendo la graduale adozione di .NET Core per nuovi microservizi che si attivano in combinazione con altri o per servizi sviluppati con .NET Framework, Java, Ruby o altre tecnologie monolitiche.
 
-Le piattaforme di infrastruttura che è possibile usare sono numerose. Per i sistemi di microservizi complessi e di grandi dimensioni è possibile usare [Azure Service Fabric](https://azure.microsoft.com/en-us/services/service-fabric/). Per i microservizi senza stato è possibile usare anche altri prodotti come [Servizio app di Azure](https://azure.microsoft.com/en-us/services/app-service/). Le alternative basate su Docker sono inoltre adatte a qualsiasi tipo di approccio ai microservizi, come descritto di seguito. Grazie al supporto di .NET Core, tutte queste piattaforme rappresentano soluzioni ideali per l'hosting dei microservizi.
+Le piattaforme di infrastruttura che è possibile usare sono numerose. Per i sistemi di microservizi complessi e di grandi dimensioni è possibile usare [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/). Per i microservizi senza stato è possibile usare anche altri prodotti come [Servizio app di Azure](https://azure.microsoft.com/services/app-service/). Le alternative basate su Docker sono inoltre adatte a qualsiasi tipo di approccio ai microservizi, come descritto di seguito. Grazie al supporto di .NET Core, tutte queste piattaforme rappresentano soluzioni ideali per l'hosting dei microservizi.
 
 ### <a name="containers"></a>Contenitori
 
-I contenitori vengono comunemente usati in combinazione con un'architettura di microservizi, sebbene possano essere impiegati anche per creare contenitori di servizi o app Web basati su qualsiasi modello architettonico. Sarà possibile usare i contenitori di .NET Framework per Windows, ma le caratteristiche di modularità e leggerezza rendono .NET Core la scelta ideale per i contenitori.  Quando si crea e si distribuisce un contenitore, la sua immagine risulta notevolmente più piccola con .NET Core rispetto a .NET Framework.  Trattandosi di un'opzione multipiattaforma, è ad esempio possibile distribuire le app server in contenitori Docker di Linux.
+I contenitori vengono comunemente usati in combinazione con un'architettura di microservizi, sebbene possano essere impiegati anche per creare contenitori di servizi o app Web basati su qualsiasi modello architettonico. Sarà possibile usare i contenitori di .NET Framework per Windows, ma le caratteristiche di modularità e leggerezza rendono .NET Core la scelta ideale per i contenitori. Quando si crea e si distribuisce un contenitore, la sua immagine risulta notevolmente più piccola con .NET Core rispetto a .NET Framework. Trattandosi di un'opzione multipiattaforma, è ad esempio possibile distribuire le app server in contenitori Docker di Linux.
 
-È quindi possibile ospitare i contenitori Docker nell'infrastruttura Linux o Windows in uso oppure usare un servizio cloud, ad esempio il [servizio contenitore di Azure](https://azure.microsoft.com/en-us/services/container-service/), per gestire, orchestrare e ridimensionare l'applicazione basata su contenitore nel cloud.
+È quindi possibile ospitare i contenitori Docker nell'infrastruttura Linux o Windows in uso oppure usare un servizio cloud, ad esempio il [servizio contenitore di Azure](https://azure.microsoft.com/services/container-service/), per gestire, orchestrare e ridimensionare l'applicazione basata su contenitore nel cloud.
 
 ### <a name="a-need-for-high-performance-and-scalable-systems"></a>Esigenze di elevate prestazioni e scalabilità
 
@@ -108,8 +108,4 @@ Alcune piattaforme Microsoft o di terze parti non supportano .NET Core. Alcuni s
 * [Porting from .NET Framework to .NET Core](../core/porting/index.md) (Portabilità da .NET Framework a .NET Core)
 * [.NET Framework on Docker Guide](../framework/index.md) (Guida a .NET Framework su Docker)
 * [.NET Components Overview](components.md) (Panoramica dei componenti .NET)
-
-
-<!--HONumber=Nov16_HO3-->
-
 

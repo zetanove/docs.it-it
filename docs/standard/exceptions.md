@@ -11,8 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bf116df6-0042-46bf-be13-b69864816210
 translationtype: Human Translation
-ms.sourcegitcommit: 9584699ad7e745ae3cb059b1bb8327301c9a3286
-ms.openlocfilehash: 5271b63a47aa2fcc81cd9c8b1ffd22e618829412
+ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
+ms.openlocfilehash: 7c9ccd455bf0d14122c0547177cc29ace6ebde42
+ms.lasthandoff: 02/17/2017
 
 ---
 
@@ -57,12 +58,12 @@ La classe @System.Exception include le proprietà seguenti che facilitano la com
 | ------------- | ----------- |
 | @System.Exception.Data | @System.Collections.IDictionary contenente dati arbitrari in coppie chiave-valore. |
 | @System.Exception.HelpLink | Può contenere un URL (o URN) di un file della Guida che offre informazioni dettagliate sulla causa di un'eccezione. |
-| @System.Exception.InnerException | Questa proprietà può essere usata per creare e mantenere una serie di eccezioni durante la gestione delle eccezioni. È possibile usarla per creare una nuova eccezione contenente le eccezioni rilevate in precedenza. L'eccezione originale può essere acquisita dalla seconda eccezione nella proprietà @System.Exception.InnerException, consentendo al codice che gestisce la seconda eccezione di esaminare le informazioni aggiuntive. Ad esempio, si supponga di avere un metodo che riceve un argomento non formattato correttamente.  Il codice tenta di leggere l'argomento, ma viene generata un'eccezione. Il metodo rileva l'eccezione e genera un'eccezione @System.FormatException. Per migliorare la capacità del chiamante di determinare il motivo per il quale viene generata un'eccezione, è a volte utile che un metodo rilevi un'eccezione generata da una routine di supporto e quindi generi un'eccezione più indicativa dell'errore che si è verificato. Sarà possibile creare un'eccezione nuova e più significativa in cui il riferimento all'eccezione interna può essere impostato sull'eccezione originale. Questa eccezione più significativa può quindi essere inviata al chiamante. Si noti che con questa funzionalità è possibile creare una serie di eccezioni collegate che termina con l'eccezione che è stata generata per prima. |
+| @System.Exception.InnerException | Questa proprietà può essere usata per creare e mantenere una serie di eccezioni durante la gestione delle eccezioni. È possibile usarla per creare una nuova eccezione contenente le eccezioni rilevate in precedenza. L'eccezione originale può essere acquisita dalla seconda eccezione nella proprietà @System.Exception.InnerException, consentendo al codice che gestisce la seconda eccezione di esaminare le informazioni aggiuntive. Ad esempio, si supponga di avere un metodo che riceve un argomento non formattato correttamente.  Il codice tenta di leggere l'argomento, ma viene generata un'eccezione. Il metodo rileva l'eccezione e genera @System.FormatException. Per migliorare la capacità del chiamante di determinare il motivo per il quale viene generata un'eccezione, è a volte utile che un metodo rilevi un'eccezione generata da una routine di supporto e quindi generi un'eccezione più indicativa dell'errore che si è verificato. Sarà possibile creare un'eccezione nuova e più significativa in cui il riferimento all'eccezione interna può essere impostato sull'eccezione originale. Questa eccezione più significativa può quindi essere inviata al chiamante. Si noti che con questa funzionalità è possibile creare una serie di eccezioni collegate che termina con l'eccezione che è stata generata per prima. |
 | @System.Exception.Message | Offre informazioni dettagliate sulla causa di un'eccezione.
 | @System.Exception.Source | Ottiene o imposta il nome dell'oggetto o dell'applicazione che ha generato l'errore. |
 | @System.Exception.StackTrace | Contiene un'analisi dello stack che può essere usata per determinare dove si è verificato un errore. L'analisi dello stack include il nome del file di origine e il numero di riga del programma, se sono disponibili informazioni di debug. |
 
-La maggior parte delle classi che ereditano da @System.Exception non implementa membri aggiuntivi, né offre funzionalità aggiuntive, ma si limita a ereditare da @System.Exception. Per questa ragione, le informazioni più importanti per un'eccezione si trovano nella gerarchia delle classi delle eccezioni, nel nome dell'eccezione e nelle informazioni contenute nell'eccezione.
+La maggior parte delle classi che ereditano da @System.Exception non implementano membri aggiuntivi né offrono funzionalità supplementari, ma si limitano a ereditare da @System.Exception. Per questa ragione, le informazioni più importanti per un'eccezione si trovano nella gerarchia delle classi delle eccezioni, nel nome dell'eccezione e nelle informazioni contenute nell'eccezione.
 
 Si consiglia di generare e rilevare solo oggetti che derivano da @System.Exception,, ma è possibile generare qualsiasi oggetto che deriva dalla classe @System.Object come eccezione. Si noti che non tutti i linguaggi supportano la generazione e il rilevamento degli oggetti che non derivano da @System.Exception.
 
@@ -112,7 +113,7 @@ public class ProcessFile
 Common Language Runtime rileva le eccezioni non rilevate da un blocco catch. A seconda della configurazione del runtime, viene visualizzata una finestra di dialogo di debug, viene interrotta l'esecuzione del programma e viene visualizzata una finestra di dialogo con le informazioni sull'eccezione o viene stampato un errore in STDERR.
 
 > [!NOTE] 
-> Quasi tutte le righe di codice possono causare un'eccezione, in particolare le eccezioni che vengono generate direttamente da Common Language Runtime, come @System.OutOfMemoryException. Sebbene nella maggior parte delle applicazioni non sia necessario gestire queste eccezioni, considerare questa eventualità quando si creano librerie che devono essere usate da altri utenti. Per suggerimenti su quando impostare il codice di un blocco Try, vedere [Procedure consigliate per le eccezioni](#best-practices-for-exceptions).
+> Quasi tutte le righe di codice possono causare un'eccezione, in particolare eccezioni generate da Common Language Runtime, ad esempio @System.OutOfMemoryException. Sebbene nella maggior parte delle applicazioni non sia necessario gestire queste eccezioni, considerare questa eventualità quando si creano librerie che devono essere usate da altri utenti. Per suggerimenti su quando impostare il codice di un blocco Try, vedere [Procedure consigliate per le eccezioni](#best-practices-for-exceptions).
  
 ## <a name="how-to-use-specific-exceptions-in-a-catch-block"></a>Come usare eccezioni specifiche in un blocco Catch
 
@@ -120,7 +121,7 @@ L'esempio di codice precedente illustra un'istruzione `catch` di base che rileva
 
 Quando si verifica un'eccezione, l'eccezione viene passata nello stack e a ogni blocco catch viene data la possibilità di gestirla. L'ordine delle istruzioni catch è importante. Inserire i blocchi catch per il rilevamento di eccezioni specifiche prima di un blocco catch generale per il rilevamento delle eccezioni per evitare che il compilatore generi un errore. Il blocco catch appropriato viene determinato tramite la corrispondenza del tipo di eccezione al nome dell'eccezione specificato nel blocco catch. Se non è presente alcun blocco catch specifico, l'eccezione viene rilevata da un blocco catch generale, se disponibile.
 
-Nel codice seguente viene usato un blocco `try`/`catch` per rilevare un'eccezione @System.InvalidCastException. L'esempio crea una classe denominata `Employee` con un'unica proprietà, il livello del dipendente (`Emlevel`). Il metodo `PromoteEmployee` accetta un oggetto e incrementa il livello del dipendente. Un'eccezione @System.InvalidCastException si verifica quando viene passata un'istanza di @System.DateTime al metodo `PromoteEmployee`.
+L'esempio di codice seguente usa un blocco `try`/`catch` per rilevare @System.InvalidCastException. L'esempio crea una classe denominata `Employee` con un'unica proprietà, il livello del dipendente (`Emlevel`). Il metodo `PromoteEmployee` accetta un oggetto e incrementa il livello del dipendente. Un'eccezione @System.InvalidCastException si verifica quando viene passata un'istanza di @System.DateTime al metodo `PromoteEmployee`.
 
 C#
 ```
@@ -177,7 +178,7 @@ public class Ex13
 
 Quando si verifica un'eccezione, l'esecuzione viene arrestata e il controllo viene assegnato al gestore di eccezioni appropriato. Spesso questo significa che le righe di codice che si prevede di eseguire vengono ignorate. La pulizia di alcune risorse, ad esempio la chiusura di un file, deve essere eseguita anche se viene generata un'eccezione. A tale scopo è possibile usare un blocco `finally`. Un blocco `finally` viene sempre eseguito, indipendentemente dalla generazione di un'eccezione.
 
-Nell'esempio di codice seguente viene usato un blocco `try`/`catch` per rilevare un'eccezione @System.ArgumentOutOfRangeException. Il metodo `Main` crea due matrici e prova a copiarle una sull'altra. L'azione genera un'eccezione @System.ArgumentOutOfRangeException e l'errore viene scritto nella console. Il blocco `finally` viene eseguito indipendentemente dal risultato dell'azione di copia.
+L'esempio di codice seguente usa un blocco `try`/`catch` per rilevare @System.ArgumentOutOfRangeException. Il metodo `Main` crea due matrici e tenta di copiarle una sull'altra. L'azione genera un'eccezione @System.ArgumentOutOfRangeException e l'errore viene scritto nella console. Il blocco `finally` viene eseguito indipendentemente dal risultato dell'azione di copia.
 
 C#
 ```
@@ -210,7 +211,7 @@ class ArgumentOutOfRangeExample
 
 È possibile generare in modo esplicito un'eccezione usando l'istruzione `throw`. È anche possibile generare di nuovo un'eccezione rilevata usando l'istruzione `throw`. Si consiglia di aggiungere informazioni a un'eccezione generata di nuovo per offrire ulteriori informazioni durante il debug.
 
-Nell'esempio di codice seguente viene usato un blocco `try`/`catch` per rilevare una possibile eccezione @System.IO.FileNotFoundException. Il blocco `try` è seguito da un blocco `catch` che rileva l'eccezione @System.IO.FileNotFoundException e scrive un messaggio nella console se il file di dati non viene trovato. L'istruzione successiva è l'istruzione `throw` che genera una nuova eccezione @System.IO.FileNotFoundException e aggiunge informazioni di testo all'eccezione.
+L'esempio di codice seguente usa un blocco `try`/`catch` per rilevare una possibile eccezione @System.IO.FileNotFoundException. Il blocco `try` è seguito da un blocco `catch` che rileva @System.IO.FileNotFoundException e scrive un messaggio nella console se il file di dati non viene trovato. L'istruzione successiva è l'istruzione `throw` che genera una nuova eccezione @System.IO.FileNotFoundException e aggiunge informazioni di testo all'eccezione.
 
 C#
 ```
@@ -249,7 +250,7 @@ public class ProcessFile
 
 ## <a name="how-to-create-user-defined-exceptions"></a>Come creare eccezioni definite dall'utente
 
-.NET fornisce una gerarchia di classi di eccezione derivate in ultima istanza dalla classe di base @System.Exception. Se però nessuna delle eccezioni predefinite soddisfa le proprie esigenze, è possibile creare classi di eccezione personalizzate derivandole dalla classe @System.Exception.
+.NET offre una gerarchia di classi di eccezioni derivate dalla classe di base @System.Exception. Tuttavia, se nessuna delle eccezioni predefinite soddisfa le proprie esigenze, è possibile creare classi di eccezioni personalizzate mediante la derivazione dalla classe @System.Exception.
 
 Quando si creano eccezioni personalizzate, terminare il nome della classe dell'eccezione definita dall'utente con la parola "Exception" e implementare i tre costruttori comuni, come illustrato nell'esempio seguente. L'esempio definisce una nuova classe di eccezione denominata `EmployeeListNotFoundException`. La classe è derivata da @System.Exception e include tre costruttori.
 
@@ -506,9 +507,4 @@ catch (Exception ex)
 ## <a name="see-also"></a>Vedere anche
 
 Per altre informazioni sull'uso delle eccezioni in .NET, vedere [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md) (Informazioni per gli sviluppatori sulle eccezioni nel runtime).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

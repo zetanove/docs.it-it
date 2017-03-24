@@ -56,7 +56,7 @@ Non esiste una parola chiave analoga per deallocare la memoria, in quanto la dea
 
 I tipi presenti all'interno di un ambito in genere escono dall'ambito dopo il completamento del metodo e a quel punto possono essere raccolte. È tuttavia possibile indicare al Garbage Collector che un particolare oggetto è fuori ambito prima del completamento del metodo usando l'istruzione `using`:
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L6-L9)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
 Dopo il completamento del blocco `using`, il Garbage Collector saprà che l'oggetto `stream` dell'esempio precedente può essere raccolto e che la relativa memoria può essere recuperata.
 
@@ -68,7 +68,8 @@ Per garantire la sicurezza della memoria, il runtime .NET offre servizi aggiunti
 
 L'esempio seguente genera un'eccezione come risultato della sicurezza della memoria.
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L11-L12)]
+[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5
+)]
 
 ## <a name="type-safety"></a>Indipendenza dai tipi
 

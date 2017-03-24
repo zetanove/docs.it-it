@@ -1,0 +1,5 @@
+# [Tipi nullable](index.md)
+## [Uso dei tipi nullable](using-nullable-types.md)
+## [Conversione boxing dei tipi nullable](boxing-nullable-types.md)
+## [Procedura: Identificare un tipo nullable](how-to-identify-a-nullable-type.md)
+## [Procedura: Eseguire il cast sicuro da bool? a bool](how-to-safely-cast-from-bool-to-bool.md)

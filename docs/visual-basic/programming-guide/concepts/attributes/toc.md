@@ -1,0 +1,6 @@
+# [Attributi](index.md)
+## [Creazione di attributi personalizzati](creating-custom-attributes.md)
+### [AttributeUsage](attributeusage.md)
+## [Accesso agli attributi tramite reflection](accessing-attributes-by-using-reflection.md)
+## [Procedura: Creare un'unione C/C++ tramite attributi](how-to-create-a-c-cpp-union-by-using-attributes.md)
+## [Attributi comuni](common-attributes.md)

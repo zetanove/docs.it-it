@@ -4,117 +4,93 @@ description: Il comando `dotnet test` viene usato per eseguire unit test in un d
 keywords: dotnet-test, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 3a0fa917-eb0a-4d7e-9217-d06e65455675
+ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 translationtype: Human Translation
-ms.sourcegitcommit: 796df1549a7553aa93158598d62338c02d4df73e
-ms.openlocfilehash: 871a6f736272309f6fae74b06f437c7271df2321
+ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
+ms.openlocfilehash: 21f3850520b922f16c77f831a045ec58bdf1b5c1
+ms.lasthandoff: 03/07/2017
 
 ---
 
 #<a name="dotnet-test"></a>dotnet-test
 
-> [!WARNING]
-> Questo argomento si applica agli strumenti dell'anteprima 2 di .NET Core. Per gli strumenti di .NET Core versione RC4, vedere l'argomento [dotnet-test (strumenti di .NET Core RC4)](../preview3/tools/dotnet-test.md).
-
 ## <a name="name"></a>Nome
 
-`dotnet-test`: esegue unit test con il Test Runner configurato.
+`dotnet-test` - Driver di test .NET
 
 ## <a name="synopsis"></a>Riepilogo
 
-`dotnet test [project] [--help] 
-    [--parentProcessId] [--port] [--configuration]   
-    [--output] [--build-base-path] [--framework] [--runtime]
-    [--no-build]`  
+```
+dotnet test [project] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity]
+dotnet test [-h|--help]
+```
 
 ## <a name="description"></a>Descrizione
 
 Il comando `dotnet test` viene usato per eseguire unit test in un determinato progetto. Gli unit test sono progetti della libreria di classi con dipendenze dal framework di unit test (ad esempio, NUnit o xUnit) e dal Test Runner dotnet per tale framework di unit test. Sono disponibili come pacchetti NuGet e vengono ripristinati come dipendenze ordinarie per il progetto.
 
-Per i progetti di test è inoltre necessario specificare una proprietà del Test Runner nel file project.json tramite il nodo "testRunner". Questo valore deve contenere il nome del framework di unit test.
+Anche i progetti di test devono specificare il test runner. Quest'ultimo viene specificato usando un normale elemento `<PackageReference>`, come illustrato nel file di progetto di esempio seguente:
 
-Il file project.json di esempio seguente mostra le proprietà necessarie:
-
-```json
-{
-  "version": "1.0.0-*",
-  "buildOptions": {
-    "debugType": "portable"
-  },
-  "dependencies": {
-    "System.Runtime.Serialization.Primitives": "4.1.1",
-    "xunit": "2.1.0",
-    "dotnet-test-xunit": "1.0.0-rc2-192208-24"
-  },
-  "testRunner": "xunit",
-  "frameworks": {
-    "netcoreapp1.0": {
-      "dependencies": {
-        "Microsoft.NETCore.App": {
-          "type": "platform",
-          "version": "1.0.0"
-        }
-      },
-      "imports": [
-        "dotnet5.4",
-        "portable-net451+win8"
-      ]
-    }
-  }
-}
-```
-
-`dotnet test` supporta due modalità di esecuzione:
-
-1. Console: in modalità console `dotnet test` esegue completamente qualsiasi comando passato e restituisce i risultati. Ogni volta che `dotnet test` viene richiamato senza passare la porta --port, viene eseguito in modalità console e ciò comporterà a sua volta l'esecuzione del Test Runner in modalità console.
-2. Fase di progettazione: usata nel contesto di altri strumenti, ad esempio editor o ambienti di sviluppo integrato (IDE, Integrated Development Environment). Per altre informazioni su questa modalità, vedere il documento sul [protocollo dotnet-test](test-protocol.md). 
+[!code-xml[Modello di base XUnit](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
 ## <a name="options"></a>Opzioni
 
-`[project]`
+`project`
     
 Specifica un percorso del progetto di test. Se omesso, per impostazione predefinita sarà la directory corrente.
 
-`-?|-h|--help`
+`-h|--help`
 
 Stampa una breve guida per il comando.
 
-`--parentProcessId`
+`-s|--settings <SETTINGS_FILE>`
 
-Usato dagli ambienti di sviluppo integrato per specificare il relativo ID processo. Se il processo padre viene interrotto, anche il test si interromperà.
+Impostazioni da usare durante l'esecuzione di test. 
 
-`--port`
+`-t|--list-tests`
 
-Usato dagli ambienti di sviluppo integrato per specificare un numero di porta per l'ascolto di una connessione.
+Elenca tutti i test individuati nel progetto corrente. 
+
+`--filter <EXPRESSION>`
+
+Filtra i test nel progetto corrente usando l'espressione specificata. Per altre informazioni sul supporto dei filtri, vedere [Running selective unit tests in Visual Studio using TestCaseFilter](https://aka.ms/vstest-filtering) (Esecuzione di unit test selettivi in Visual Studio con TestCaseFilter).
+
+`-a|--test-adapter-path <PATH_TO_ADAPTER>`
+
+Usa gli adattatori di test personalizzati dal percorso specificato nell'esecuzione del test. 
+
+`-l|--logger <LoggerUri/FriendlyName>`
+
+Specifica un logger per i risultati di test. 
 
 `-c|--configuration <Debug|Release>`
 
-Configurazione in cui eseguire la compilazione. Il valore predefinito è `Release`. 
+Configurazione in cui eseguire la compilazione. Il valore predefinito è `Debug` ma la configurazione del progetto potrebbe eseguire l'override di questa impostazione predefinita dell'SDK.
 
-`-o|--output [OUTPUT_DIRECTORY]`
-
-Directory in cui trovare i file binari da eseguire.
-
-`-b|--build-base-path <OUTPUT_DIRECTORY>`
-
-Directory in cui inserire gli output temporanei.
-
-`-f|--framework [FRAMEWORK]`
+`-f|--framework <FRAMEWORK>`
 
 Cerca i file binari di test per un framework specifico.
 
-`-r|--runtime [RUNTIME_IDENTIFIER]`
+`-o|--output <OUTPUT_DIRECTORY>`
 
-Cerca i file binari di test per il runtime specificato.
+Directory in cui trovare i file binari da eseguire.
+
+`-d|--diag <PATH_TO_DIAGNOSTICS_FILE>`
+
+Abilita la modalità di diagnostica per la piattaforma di test e scrive messaggi di diagnostica nel file specificato. 
 
 `--no-build` 
 
-Non compila il progetto di test prima di eseguirlo. 
+Non compila il progetto di test prima di eseguirlo.
+
+`-v|--verbosity <LEVEL>`
+
+Imposta il livello di dettaglio del comando. I valori consentiti sono `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` e `diag[nostic]`.
 
 ## <a name="examples"></a>Esempi
 
@@ -124,17 +100,10 @@ Eseguire i test nel progetto nella directory corrente:
 
 Eseguire i test nel progetto test1:
 
-`dotnet test /projects/test1/project.json` 
+`dotnet test ~/projects/test1/test1.csproj` 
 
 ## <a name="see-also"></a>Vedere anche
-
-[Protocollo di comunicazione dotnet-test](test-protocol.md)
 
 [Framework](../../standard/frameworks.md)
 
 [Catalogo RID (Runtime IDentifier)](../rid-catalog.md)
-
-
-<!--HONumber=Feb17_HO2-->
-
-
