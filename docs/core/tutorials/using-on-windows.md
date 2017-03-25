@@ -1,9 +1,9 @@
 ---
 redirect_url: /dotnet/articles/csharp/getting-started/with-visual-studio-2017
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 0d75ae4e162296e5879daa712e48a75ed1f0126c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9d770d008ff1223499de36b2b7b731d8ff6f0f2b
+ms.openlocfilehash: b2f82cacd37387a9bb8f593887be64b0e626913f
+ms.lasthandoff: 03/08/2017
 
 ---
 
@@ -11,4 +11,4 @@ ms.lasthandoff: 03/07/2017
 
 ## <a name="content-retired"></a>Contenuto rimosso.
 
-Per un'esercitazione introduttiva a .NET Core e Visual Studio 2017, vedere [(Building a C# Hello World application with .NET Core in Visual Studio 2017](../../csharp/getting-started/with-visual-studio-2017.md) (Compilazione di un'applicazione C# Hello World con .NET Core in Visual Studio 2017).
+Per un'esercitazione introduttiva a .NET Core e Visual Studio 2017, vedere [(Building a C# Hello World application with .NET Core in Visual Studio 2017](../../csharp/getting-started/with-visual-studio.md) (Compilazione di un'applicazione C# Hello World con .NET Core in Visual Studio 2017).
