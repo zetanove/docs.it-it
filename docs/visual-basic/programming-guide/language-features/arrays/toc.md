@@ -1,0 +1,6 @@
+# [Matrici in Visual Basic](index.md)
+## [Dimensioni di matrice](array-dimensions.md)
+## [Procedura: Inizializzare una variabile di matrice](how-to-initialize-an-array-variable.md)
+## [Procedura: Ordinare una matrice](how-to-sort-an-array.md)
+## [Procedura: Assegnare una matrice a un'altra matrice](how-to-assign-one-array-to-another-array.md)
+## [Risoluzione dei problemi relativi alle matrici](troubleshooting-arrays.md)

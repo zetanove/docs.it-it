@@ -1,57 +1,73 @@
 ---
-title: "Development with My (Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-f1_keywords: 
-  - "My.MyWpfExtension.Windows"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My object"
-  - "My namespace"
-  - "My feature"
-  - "Visual Basic, programming in"
+title: Sviluppo con My (Visual Basic) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+f1_keywords:
+- My.MyWpfExtension.Windows
+dev_langs:
+- VB
+helpviewer_keywords:
+- My object
+- My namespace
+- My feature
+- Visual Basic, programming in
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 26
----
-# Development with My (Visual Basic)
-[!INCLUDE[vs2017banner](../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 815f459a651adf98dfb78a8444f4b873dece8283
+ms.lasthandoff: 03/13/2017
 
-In Visual Basic sono disponibili nuove funzionalità per lo sviluppo rapido di applicazioni, che consentono di migliorare la produttività e la facilità di utilizzo senza ridurre le prestazioni.  Una di queste caratteristiche, `My`, fornisce l'accesso alle informazioni e alle istanze di oggetti predefinite associate all'applicazione e al relativo ambiente di runtime.  Queste informazioni sono organizzate in un formato rilevabile tramite IntelliSense e sono definite a livello logico in base all'utilizzo.  
+---
+# <a name="development-with-my-visual-basic"></a>Sviluppo con My (Visual Basic)
+Visual Basic fornisce nuove funzionalità per lo sviluppo rapido di applicazioni che migliorano la produttività e aumentano la facilità d'uso, garantendo al tempo stesso maggiore potenza. Una di queste funzionalità, denominata `My`, consente di accedere a informazioni e istanze di oggetti predefinite correlate all'applicazione e al relativo ambiente di run-time. Queste informazioni sono organizzate in un formato riconoscibile tramite IntelliSense e delineato in modo logico in base all'uso.  
   
- I membri di `My` di primo livello sono esposti come oggetti.   Ogni oggetto si comporta in modo analogo agli spazi di nomi e alle classi con membri `Shared`, ed espone un insieme di membri correlati.  
+ I membri di `My` di primo livello sono esposti come oggetti. Ogni oggetto si comporta in modo analogo a uno spazio dei nomi o a una classe con membri `Shared` ed espone un set di membri correlati.  
   
- In questa tabella sono riportati gli oggetti `My` di primo livello con le reciproche relazioni.  
+ Questa tabella mostra gli oggetti `My` di primo livello e le relazioni tra tali oggetti.  
   
- ![Modello a oggetti per My](../../../visual-basic/developing-apps/development-with-my/media/myobjmodel.png "MyObjModel")  
+ ![Modello a oggetti per My](../../../visual-basic/developing-apps/development-with-my/media/myobjmodel.gif "MyObjModel")  
   
-## In questa sezione  
- [Performing Tasks with My.Application, My.Computer, and My.User](../../../visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)  
- Vengono descritti i tre oggetti `My` centrali, `My.Application`, `My.Computer` e `My.User`, che consentono di accedere a informazioni e funzionalità.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Esecuzione di attività mediante My.Application, My.Computer e My.User](../../../visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)  
+ Vengono descritti i tre principali oggetti `My`, `My.Application`, `My.Computer` e `My.User`, che consentono di accedere a informazioni e funzionalità.  
   
- [Default Object Instances Provided by My.Forms and My.WebServices](../../../visual-basic/developing-apps/development-with-my/default-object-instances-provided-by-my-forms-and-my-webservices.md)  
- Vengono descritti gli oggetti `My.Forms` e `My.WebServices`, i quali forniscono l'accesso a form, origini dati e servizi Web XML utilizzati dalla propria applicazione.  
+ [Istanze predefinite degli oggetti fornite da My.Forms e My.WebServices](../../../visual-basic/developing-apps/development-with-my/default-object-instances-provided-by-my-forms-and-my-webservices.md)  
+ Vengono descritti gli oggetti `My.Forms` e `My.WebServices`, che consentono di accedere a form, origini dati e servizi Web XML usati dall'applicazione.  
   
- [Rapid Application Development with My.Resources and My.Settings](../../../visual-basic/developing-apps/development-with-my/rapid-application-development-with-my-resources-and-my-settings.md)  
- Vengono descritti gli oggetti `My.Resources` e `My.Settings`, i quali forniscono l'accesso alle risorse e alle impostazioni di un'applicazione.  
+ [Sviluppo rapido di applicazioni con My.Resources e My.Settings](../../../visual-basic/developing-apps/development-with-my/rapid-application-development-with-my-resources-and-my-settings.md)  
+ Vengono descritti gli oggetti `My.Resources` e `My.Settings`, che consentono di accedere alle risorse e alle impostazioni di un'applicazione.  
   
- [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
- Viene descritto il modello di avvio\/arresto dell'applicazione di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  
+ [Cenni preliminari sul modello di applicazione Visual Basic](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
+ Viene descritto il modello di [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] per l'avvio e l'arresto dell'applicazione.  
   
- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)  
- Viene spiegato quali caratteristiche di `My` sono disponibili in funzione dei diversi tipi di progetto.  
+ [Dipendenza di My dal tipo di progetto](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)  
+ Vengono forniti dettagli sulle caratteristiche di `My` disponibili per i diversi tipi di progetto.  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>   
  <xref:Microsoft.VisualBasic.Devices.Computer>   
  <xref:Microsoft.VisualBasic.ApplicationServices.User>   
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)   
- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)   
- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+ [Oggetto My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.md)   
+ [Oggetto My.WebServices](../../../visual-basic/language-reference/objects/my-webservices-object.md)   
+ [Dipendenza di My dal tipo di progetto](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
