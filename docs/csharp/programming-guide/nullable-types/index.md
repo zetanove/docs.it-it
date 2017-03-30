@@ -1,75 +1,94 @@
 ---
-title: "Tipi nullable (Guida per programmatori C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "linguaggio C#, tipi nullable"
-  - "nullable (tipi) [C#]"
-  - "tipi [C#], nullable"
+title: Tipi nullable (Guida per programmatori C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- nullable types [C#]
+- C# language, nullable types
+- types [C#], nullable
 ms.assetid: e473cb01-28ca-42be-9cea-f717055d72c6
 caps.latest.revision: 44
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 44
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 75726b9864abc0c9b556085e5215c6692d80fb12
+ms.lasthandoff: 03/13/2017
+
 ---
-# Tipi nullable (Guida per programmatori C#)
-I tipi nullable sono istanze della struttura <xref:System.Nullable%601?displayProperty=fullName>.  Un tipo nullable può rappresentare l'intervallo corretto di valori per il relativo tipo di valore sottostante, più un valore `null` aggiuntivo.  Ad esempio, a un oggetto `Nullable<Int32>`, che si legge "Nullable di Int32", può essere assegnato un qualsiasi valore compreso tra \-2147483648 e 2147483647 oppure il valore `null`.  A un oggetto `Nullable<bool>` è possibile assegnare i valori [true](../../../csharp/language-reference/keywords/true.md), [false](../../../csharp/language-reference/keywords/false.md) o [null](../../../csharp/language-reference/keywords/null.md).  La possibilità di assegnare `null` a tipi numerici e booleani è particolarmente utile quanto si utilizzano database e altri tipi di dati contenenti elementi a cui non sarebbe possibile assegnare un valore.  Ad esempio, in un campo Boolean di un database è possibile archiviare il valore `true` o `false` oppure è possibile lasciarlo indefinito.  
+# <a name="nullable-types-c-programming-guide"></a>Tipi nullable (Guida per programmatori C#)
+I tipi nullable sono istanze del tipo struct <xref:System.Nullable%601?displayProperty=fullName>. Un tipo nullable può rappresentare l'intervallo di valori corretto del tipo valore sottostante, più un valore `null` aggiuntivo. Ad esempio, a un tipo `Nullable<Int32>`, detto anche "Nullable of Int32", può essere assegnato qualsiasi valore compreso tra -2147483648 e 2147483647. In alternativa, può essere assegnato il valore `null`. A un tipo `Nullable<bool>` può essere assegnato il valore [true](../../../csharp/language-reference/keywords/true.md), [false](../../../csharp/language-reference/keywords/false.md) o [null](../../../csharp/language-reference/keywords/null.md). La possibilità di assegnare il valore `null` a tipi numerici e booleani è particolarmente utile quando si gestiscono database e altri tipi di dati contenenti elementi a cui non è possibile assegnare un valore. Ad esempio, un campo booleano di un database può archiviare i valori `true` o `false` oppure può essere non definito.  
   
  [!code-cs[csProgGuideTypes#3](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/index_1.cs)]  
   
- Nell'esempio viene visualizzato l'output:  
+ L'esempio visualizzerà l'output seguente:  
   
  `num = Null`  
   
  `Nullable object must have a value.`  
   
- Per ulteriori esempi, vedere [Utilizzo dei tipi nullable](../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
+ Per altri esempi, vedere [Uso dei tipi nullable](../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
   
-## Informazioni preliminari sui tipi nullable  
- Di seguito sono riportate le caratteristiche dei tipi nullable:  
+## <a name="nullable-types-overview"></a>Panoramica dei tipi nullable  
+ I tipi nullable hanno le caratteristiche seguenti:  
   
--   I tipi nullable rappresentano variabili di tipo di valore a cui è possibile assegnare il valore di `null`.  Non è possibile creare un tipo nullable basato su un tipo di riferimento.  \(I tipi di riferimento supportano già il valore `null`.\)  
+-   I tipi nullable rappresentano variabili di tipo valore a cui può essere assegnato il valore `null`. Non è possibile creare un tipi nullable sulla base di un tipo riferimento. I tipi riferimento supportano già il valore `null`.  
   
--   La sintassi `T?` è una forma abbreviata dell'oggetto <xref:System.Nullable%601>, in cui l'oggetto `T` è un tipo di valore.  Le due forme sono intercambiabili.  
+-   La sintassi `T?` è l'abbreviazione di <xref:System.Nullable%601>, dove `T` è un tipo valore. Le due forme sono intercambiabili.  
   
--   Assegnare un valore a un tipo nullable come se fosse un tipo di valore ordinario, ad esempio `int? x = 10;` o `double? d = 4.108`.  È possibile inoltre assegnare un valore `null`: `int? x = null.` al tipo nullable.  
+-   Per assegnare un valore a un tipo nullable è possibile procedere come per un comune tipo valore, ad esempio `int? x = 10;` o `double? d = 4.108`. A un tipo nullable può essere assegnato anche il valore `null`: `int? x = null.`  
   
--   Utilizzare il metodo <xref:System.Nullable%601.GetValueOrDefault%2A?displayProperty=fullName> per restituire il valore assegnato o il valore predefinito per il tipo sottostante se il valore è `null`, ad esempio  `int j = x.GetValueOrDefault();`  
+-   Usare il metodo <xref:System.Nullable%601.GetValueOrDefault%2A?displayProperty=fullName> per restituire il valore assegnato oppure il valore predefinito del tipo sottostante se il valore è `null`, ad esempio `int j = x.GetValueOrDefault();`  
   
--   Utilizzare le proprietà di sola lettura <xref:System.Nullable%601.HasValue%2A> e <xref:System.Nullable%601.Value%2A> per controllare i valori Null e recuperare il valore, come illustrato nell'esempio seguente: `if(x.HasValue) j = x.Value;`  
+-   Usare le proprietà di sola lettura <xref:System.Nullable%601.HasValue%2A> e <xref:System.Nullable%601.Value%2A> per verificare l'eventuale presenza di un valore null e recuperarlo, come mostrato nell'esempio seguente: `if(x.HasValue) j = x.Value;`  
   
     -   La proprietà `HasValue` restituisce `true` se la variabile contiene un valore o `false` se è `null`.  
   
-    -   La proprietà `Value` restituisce un valore se ne è stato assegnato uno.  In caso contrario, verrà generata un'eccezione <xref:System.InvalidOperationException?displayProperty=fullName>.  
+    -   La proprietà `Value` restituisce un valore se ne è stato assegnato uno. In caso contrario, viene restituito <xref:System.InvalidOperationException?displayProperty=fullName>.  
   
-    -   Il valore predefinito di `HasValue` è `false`.  La proprietà `Value` non ha valori predefiniti.  
+    -   Il valore predefinito per la proprietà `HasValue` è `false`. La proprietà `Value` non ha alcun valore predefinito.  
   
-    -   È anche possibile utilizzare gli operatori `==` e `!=` con un tipo nullable, come illustrato nel seguente esempio: `if (x != null) y = x;`  
+    -   Con un tipo nullable è anche possibile usare gli operatori `==` e `!=`, come mostrato nell'esempio seguente: `if (x != null) y = x;`  
   
--   Utilizzare l'operatore `??` per assegnare un valore predefinito che verrà applicato quando un tipo nullable, il cui valore corrente è `null`, viene assegnato a un tipo non nullable, ad esempio `int? x = null; int y = x ?? -1;`  
+-   Usare l'operatore `??` per assegnare un valore predefinito che verrà applicato quando un tipo nullable il cui valore corrente è `null` viene assegnato a un tipo non-nullable, ad esempio `int? x = null; int y = x ?? -1;`  
   
--   I tipi nullable annidati non sono consentiti.  La riga seguente non eseguirà la compilazione: `Nullable<Nullable<int>> n;`  
+-   I tipi nullable nidificati non sono consentiti. La riga seguente non verrà compilata: `Nullable<Nullable<int>> n;`  
   
-## Sezioni correlate  
+## <a name="related-sections"></a>Sezioni correlate  
  Per ulteriori informazioni:  
   
--   [Utilizzo dei tipi nullable](../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
+-   [Uso dei tipi nullable](../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
   
 -   [Conversione boxing dei tipi nullable](../../../csharp/programming-guide/nullable-types/boxing-nullable-types.md)  
   
--   [?? Operatore](../../../csharp/language-reference/operators/null-conditional-operator.md)  
+-   [?? (operatore)](../../../csharp/language-reference/operators/null-conditional-operator.md)  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:System.Nullable>   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [C\#](../../../csharp/csharp.md)   
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Cosa fare esattamente media “sollevata„?](http://go.microsoft.com/fwlink/?LinkId=112382)
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [C#](../../../csharp/csharp.md)   
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Cosa significa esattamente "elevato"?](http://go.microsoft.com/fwlink/?LinkId=112382)
+
