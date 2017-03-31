@@ -1,88 +1,104 @@
 ---
-title: "Creating and Using Components in Visual Basic | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "components [Visual Basic]"
+title: Creazione e uso di componenti in Visual Basic | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- components [Visual Basic]
 ms.assetid: ee6a4156-73f7-4e9b-8e01-c74c4798b65c
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 9
----
-# Creating and Using Components in Visual Basic
-[!INCLUDE[vs2017banner](../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 9ca4df41897fafc5d7981c85741ae4fa1a8c641f
+ms.lasthandoff: 03/13/2017
 
-Un *componente* è una classe che implementa l'interfaccia <xref:System.ComponentModel.IComponent?displayProperty=fullName> o che deriva direttamente o indirettamente da una classe che implementa <xref:System.ComponentModel.IComponent>.  Un componente [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort-md.md)] è un oggetto riutilizzabile che interagisce con altri oggetti, consente di esercitare il controllo sulle risorse esterne e fornisce supporto in fase di progettazione.  
+---
+# <a name="creating-and-using-components-in-visual-basic"></a>Creazione e utilizzo di componenti in Visual Basic
+Un *componente* è una classe che implementa l'interfaccia <xref:System.ComponentModel.IComponent?displayProperty=fullName> o che deriva direttamente o indirettamente da una classe che implementa <xref:System.ComponentModel.IComponent>. Un componente di [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] è un oggetto riutilizzabile in grado di interagire con altri oggetti, che consente di controllare le risorse esterne e il supporto in fase di progettazione.  
   
- Una funzionalità importante dei componenti è che sono progettabili, pertanto una classe che rappresenta un componente può essere utilizzata nell'ambiente di sviluppo integrato di [!INCLUDE[vsprvs](../../csharp/includes/vsprvs-md.md)].  I componenti possono essere aggiunti alla Casella degli strumenti, trascinati e rilasciati su un form nonché modificati su una superficie di progettazione.  Si noti che il supporto base per la fase di progettazione per i componenti è incorporato in [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort-md.md)]. La fruizione di tale supporto non richiede allo sviluppatore di componenti alcun intervento aggiuntivo.  
+ Una caratteristica importante dei componenti è che possono essere manipolati in fase di progettazione, quindi se una classe è un componente può essere usata nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)]. Un componente può essere aggiunto alla casella degli strumenti, trascinato e rilasciato in un form e manipolato in un'area di progettazione. Si noti che il supporto di base per i componenti in fase di progettazione è incorporato in [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)], quindi uno sviluppatore di componenti non deve effettuare operazioni aggiuntive per sfruttare la funzionalità di base in fase di progettazione.  
   
- I *controlli* sono simili ai componenti poiché anch'essi sono progettabili.  Al contrario dei componenti, tuttavia, i controlli forniscono un'interfaccia utente.  I controlli devono derivare da una delle classi di controlli base: <xref:System.Windows.Forms.Control> e <xref:System.Web.UI.Control>.  
+ Un *controllo* è simile a un componente, poiché entrambi possono essere manipolati. A differenza di un componente, un controllo produce però un'interfaccia utente. Un controllo deve derivare da una delle classi di controllo di base: <xref:System.Windows.Forms.Control> o <xref:System.Web.UI.Control>.  
   
-## Quando creare un componente  
- Se la classe verrà utilizzata su un'area di progettazione, quale la finestra di progettazione di Windows Form o di Web Form, ma è priva di interfaccia utente, deve essere un componente e implementare <xref:System.ComponentModel.IComponent> oppure derivare da una classe che implementa direttamente o indirettamente <xref:System.ComponentModel.IComponent>.  
+## <a name="when-to-create-a-component"></a>Quando si crea un componente  
+ Se la classe verrà usata su un'area di progettazione, ad esempio Windows Forms o Progettazione Web Form, ma non ha un'interfaccia utente, deve essere un componente e implementare <xref:System.ComponentModel.IComponent> oppure derivare da una classe che implementa direttamente o indirettamente <xref:System.ComponentModel.IComponent>.  
   
- Le classi <xref:System.ComponentModel.Component> e <xref:System.ComponentModel.MarshalByValueComponent> sono implementazioni base dell'interfaccia <xref:System.ComponentModel.IComponent>.  La principale differenza fra queste classi risiede nel fatto che la classe <xref:System.ComponentModel.Component> è sottoposta al marshalling per riferimento, mentre la classe <xref:System.ComponentModel.IComponent> al marshalling per valore.  Nell'elenco che segue vengono fornite indicazioni di massima per l'implementazione.  
+ Le classi <xref:System.ComponentModel.Component> e <xref:System.ComponentModel.MarshalByValueComponent> sono implementazioni di base dell'interfaccia <xref:System.ComponentModel.IComponent>. La differenza principale tra queste classi è che la classe <xref:System.ComponentModel.Component> viene sottoposta a marshalling per riferimento, mentre <xref:System.ComponentModel.IComponent> viene sottoposta a marshalling per valore. L'elenco seguente contiene indicazioni generali per gli implementatori.  
   
--   Se è necessario sottoporre un componente al marshalling per riferimento, eseguire una derivazione da <xref:System.ComponentModel.Component>.  
+-   Se il componente deve essere sottoposto a marshalling per riferimento, derivare da <xref:System.ComponentModel.  
   
--   Se è necessario sottoporre un componente al marshalling per valore, eseguire una derivazione da <xref:System.ComponentModel.MarshalByValueComponent>.  
+-   Se il componente deve essere sottoposto a marshalling per valore, derivare da <xref:System.ComponentModel.MarshalByValueComponent>.  
   
--   Se a causa dell'ereditarietà singola non è possile eseguire una derivazione del componente da una delle implementazioni base, implementare <xref:System.ComponentModel.IComponent>.  
+-   Se il componente non può derivare da una delle implementazioni di base a causa dell'ereditarietà singola, implementare <xref:System.ComponentModel.IComponent>.  
   
- Per ulteriori informazioni sul supporto di base in fase di progettazione, vedere [Design\-Time Attributes for Components](../Topic/Design-Time%20Attributes%20for%20Components.md) e [Extending Design\-Time Support](../Topic/Extending%20Design-Time%20Support.md).  
+ Per altre informazioni sul supporto in fase di progettazione, vedere [Attributi per componenti in fase di progettazione](http://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3) e [Estensione del supporto in fase di progettazione](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
-## Classi di componenti  
- Lo spazio dei nomi <xref:System.ComponentModel> fornisce classi che vengono utilizzate per implementare il comportamento di componenti e controlli in fase di esecuzione e in fase di progettazione.  In questo spazio dei nomi sono comprese le classi base e le interfacce per l'implementazione di convertitori di attributo e tipo, associazioni a origini dati e componenti relativi alle licenze.  
+## <a name="component-classes"></a>Classi di componenti  
+ Lo spazio dei nomi <xref:System.ComponentModel> offre classi che vengono usate per implementare il comportamento di componenti e controlli in fase di esecuzione e in fase di progettazione. Questo spazio dei nomi include le classi e le interfacce di base per l'implementazione di attributi e convertitori, l'associazione a origini dati e le licenze per i componenti.  
   
- Le principali classi di componenti sono le seguenti:  
+ Le classi di componenti principali sono:  
   
--   <xref:System.ComponentModel.Component>.  Un'implementazione di base per l'interfaccia <xref:System.ComponentModel.IComponent>.  Questa classe consente di condividere oggetti fra applicazioni diverse.  
+-   <xref:System.ComponentModel.Component>. Implementazione di base per l'interfaccia <xref:System.ComponentModel.IComponent>. Questa classe abilita la condivisione degli oggetti tra applicazioni.  
   
--   <xref:System.ComponentModel.MarshalByValueComponent>.  Un'implementazione di base per l'interfaccia <xref:System.ComponentModel.IComponent>.  
+-   <xref:System.ComponentModel.MarshalByValueComponent>. Implementazione di base per l'interfaccia <xref:System.ComponentModel.IComponent>.  
   
--   <xref:System.ComponentModel.Container>.  L'implementazione di base per l'interfaccia <xref:System.ComponentModel.IContainer>.  Questa classe incapsula zero o più componenti.  
+-   <xref:System.ComponentModel.Container>. Implementazione di base per l'interfaccia <xref:System.ComponentModel.IContainer>. Questa classe incapsula zero o più componenti.  
   
- Di seguito sono riportate alcune delle classi utilizzate per le licenze relative ai componenti.  
+ Alcune delle classi utilizzate per le licenze dei componenti sono:  
   
--   <xref:System.ComponentModel.License>.  La classe base astratta per tutte le licenze.  La licenza viene concessa per una specifica istanza di un componente.  
+-   <xref:System.ComponentModel.License>. Classe di base astratta per tutte le licenze. La licenza viene concessa a un'istanza specifica di un componente.  
   
--   <xref:System.ComponentModel.LicenseManager>.  Fornisce proprietà e metodi per aggiungere una licenza a un componente e per gestire un oggetto <xref:System.ComponentModel.LicenseProvider>.  
+-   <xref:System.ComponentModel.LicenseManager>. Offre proprietà e metodi che consentono di aggiungere una licenza a un componente e gestire un oggetto <xref:System.ComponentModel.LicenseProvider>.  
   
--   <xref:System.ComponentModel.LicenseProvider>.  La classe base astratta per l'implementazione di un provider di licenze.  
+-   <xref:System.ComponentModel.LicenseProvider>. Classe di base astratta per l'implementazione di un provider di licenza.  
   
--   <xref:System.ComponentModel.LicenseProviderAttribute>.  Specifica la classe <xref:System.ComponentModel.LicenseProvider> da utilizzare con una classe.  
+-   <xref:System.ComponentModel.LicenseProviderAttribute>. Specifica la classe <xref:System.ComponentModel.LicenseProvider> da usare con una classe.  
   
- Classi maggiormente utilizzate per descrivere e rendere permanenti i componenti.  
+ Classi usate in genere per descrivere e rendere persistenti i componenti.  
   
--   <xref:System.ComponentModel.TypeDescriptor>.  Fornisce informazioni sulle caratteristiche di un componente, quali attributi, proprietà ed eventi.  
+-   <xref:System.ComponentModel.TypeDescriptor>. Offre informazioni sulle caratteristiche di un componente, ad esempio gli attributi, le proprietà e gli eventi.  
   
--   <xref:System.ComponentModel.EventDescriptor>.  Fornisce informazioni su un evento.  
+-   <xref:System.ComponentModel.EventDescriptor>. Include informazioni su un evento.  
   
--   <xref:System.ComponentModel.PropertyDescriptor>.  Fornisce informazioni relative a una proprietà.  
+-   <xref:System.ComponentModel.PropertyDescriptor>. Include informazioni su una proprietà.  
   
-## Sezioni correlate  
- [Class vs. Component vs. Control](../Topic/Class%20vs.%20Component%20vs.%20Control.md)  
- Vengono fornite le definizioni di *componente* e *controllo* e illustrate le differenze che esistono fra di essi e le classi.  
+## <a name="related-sections"></a>Sezioni correlate  
+ [Confronto tra classe, componente e controllo](http://msdn.microsoft.com/library/db8b842e-44d9-40cc-a0f8-70fd189632c3)  
+ Definisce *componenti* e *controlli*e spiega le differenze tra questi elementi e le classi.  
   
- [Component Authoring](../Topic/Component%20Authoring.md)  
- Guida di orientamento all'utilizzo dei componenti.  
+ [Modifica di componenti](http://msdn.microsoft.com/library/4a5a5e49-0378-4a31-83bc-24da0f1a727d)  
+ Guida di orientamento per iniziare a usare i componenti.  
   
- [Component Authoring Walkthroughs](../Topic/Component%20Authoring%20Walkthroughs.md)  
- Vengono forniti collegamenti a istruzioni dettagliate per la programmazione dei componenti.  
+ [Procedure dettagliate per la modifica di componenti](http://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)  
+ Collegamenti ad argomenti che offrono istruzioni dettagliate per la programmazione dei componenti.  
   
- [Component Classes](../Topic/Component%20Classes.md)  
- Vengono descritti gli aspetti che fanno di una classe un componente, alcune modalità per esporre le funzionalità dei componenti, il controllo dell'accesso ai componenti e il controllo della modalità di creazione delle istanze dei componenti.  
+ [Classi di componenti](http://msdn.microsoft.com/library/ce2e5647-e673-4c2b-8125-ffebbd9d71bc)  
+ Descrive che cosa fa di una classe un componente, i modi per esporre la funzionalità del componente, il controllo dell'accesso ai componenti e il controllo delle modalità di creazione delle istanze dei componenti.  
   
- [Risoluzione dei problemi relativi alla modifica di controlli e componenti](../Topic/Troubleshooting%20Control%20and%20Component%20Authoring.md)  
- Viene illustrato come risolvere alcuni problemi comuni.  
+ [Risoluzione dei problemi relativi alla modifica di controlli e componenti](http://msdn.microsoft.com/library/e9c8c099-2271-4737-882f-50f336c7a55e)  
+ Viene illustrato come risolvere i problemi comuni.  
   
-## Vedere anche  
- [How to: Access Design\-Time Support in Windows Forms](../Topic/How%20to:%20Access%20Design-Time%20Support%20in%20Windows%20Forms.md)   
- [How to: Extend the Appearance and Behavior of Controls in Design Mode](../Topic/How%20to:%20Extend%20the%20Appearance%20and%20Behavior%20of%20Controls%20in%20Design%20Mode.md)   
- [How to: Perform Custom Initialization for Controls in Design Mode](../Topic/How%20to:%20Perform%20Custom%20Initialization%20for%20Controls%20in%20Design%20Mode.md)
+## <a name="see-also"></a>Vedere anche  
+ [Procedura: Accedere al supporto in fase di progettazione in Windows Forms](http://msdn.microsoft.com/library/a84f8579-1f47-41b9-ba37-69030b0aff09)   
+ [Procedura: Estendere l'aspetto e il comportamento di controlli in modalità progettazione](http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b)   
+ [Procedura: Eseguire un'inizializzazione personalizzata per i controlli in modalità progettazione](http://msdn.microsoft.com/library/914eaa03-092f-4556-9160-b8a2a40641d9)

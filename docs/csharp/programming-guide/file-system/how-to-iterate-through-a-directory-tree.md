@@ -1,66 +1,84 @@
 ---
-title: "Procedura: scorrere una struttura ad albero di directory (Guida per programmatori C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "iterazione di file [C#]"
-  - "iterazione in cartelle [C#]"
+title: 'Procedura: Eseguire l&quot;iterazione in un albero di directory (Guida per programmatori di C#) | Microsoft Docs'
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- iterating through folders [C#]
+- file iteration [C#]
 ms.assetid: c4be4a75-6b1b-46a7-9d38-bab353091ed7
 caps.latest.revision: 10
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 10
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: c63e18bc7e23a9fda4a005745174bdd6c85b3f08
+ms.lasthandoff: 03/13/2017
+
 ---
-# Procedura: scorrere una struttura ad albero di directory (Guida per programmatori C#)
-Per "scorrere una struttura ad albero di directory" si intende accedere a ogni file in ogni sottodirectory annidata sotto una specifica cartella radice, a qualsiasi profondità.  Non si deve necessariamente aprire ogni file.  È possibile recuperare solo il nome del file o della sottodirectory come `string` o recuperare informazioni aggiuntive nella forma di oggetto <xref:System.IO.FileInfo?displayProperty=fullName> o <xref:System.IO.DirectoryInfo?displayProperty=fullName>.  
+# <a name="how-to-iterate-through-a-directory-tree-c-programming-guide"></a>Procedura: Scorrere un albero di directory (Guida per programmatori C#)
+Eseguire l'iterazione in un albero di directory significa accedere a ogni file in ogni sottodirectory annidata in una cartella radice specificata, a qualsiasi livello. Non è necessario aprire ogni file. È possibile recuperare semplicemente il nome del file o della sottodirectory come `string`, oppure è possibile recuperare informazioni aggiuntive sotto forma di un oggetto <xref:System.IO.FileInfo?displayProperty=fullName> o <xref:System.IO.DirectoryInfo?displayProperty=fullName>.  
   
 > [!NOTE]
->  In Windows, i termini "directory" e "cartella" sono utilizzati indifferentemente.  Nella maggior parte della documentazione e del testo dell'interfaccia utente si utilizza il termine "cartella", ma nella libreria di classi [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort-md.md)] si utilizza il termine "directory".  
+>  In Windows i termini "directory" e "cartella" vengono usati indifferentemente. Nella maggior parte della documentazione e dell'interfaccia utente viene usato il termine "cartella", ma nella libreria di classi [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] viene usato il termine "directory".  
   
- Nel caso più semplice, nel quale si è certi di disporre delle autorizzazioni di accesso per tutte le directory sotto una radice specificata, è possibile utilizzare il flag `System.IO.SearchOption.AllDirectories`.  Questo flag restituisce tutte le sottodirectory annidate che corrispondono al modello specificato.  Nell'esempio seguente viene illustrato come utilizzare questo flag.  
+ Nel caso più semplice in cui si è certi di avere autorizzazioni di accesso per tutte le directory di una radice specificata, è possibile usare il flag `System.IO.SearchOption.AllDirectories`. Questo flag restituisce tutte le sottodirectory annidate che corrispondono al modello specificato. L'esempio seguente illustra come usare questo flag.  
   
-```c#  
+```csharp  
 root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);  
 ```  
   
- La debolezza di questo approccio sta nel fatto che, se una delle sottodirectory sotto la radice specificata provoca <xref:System.IO.DirectoryNotFoundException> o <xref:System.UnauthorizedAccessException>, l'esecuzione dell'intero metodo ha esito negativo e non viene restituita alcuna directory.  La stessa situazione può verificarsi quando si utilizza il metodo <xref:System.IO.DirectoryInfo.GetFiles%2A>.  Se è necessario gestire queste eccezioni sulle sottocartelle specifiche, occorre procedere manualmente nella struttura ad albero di directory, come mostrato negli esempi seguenti.  
+ Il problema di questo approccio è che se una delle sottodirectory della radice specificata genera un'eccezione <xref:System.IO.DirectoryNotFoundException> o <xref:System.UnauthorizedAccessException>, l'intero metodo ha esito negativo e non restituisce alcuna directory. Lo stesso vale quando si usa il metodo <xref:System.IO.DirectoryInfo.GetFiles%2A>. Se è necessario gestire queste eccezioni in sottocartelle specifiche, procedere manualmente nell'albero di directory, come illustrato negli esempi seguenti.  
   
- Quando si procede manualmente in una struttura ad albero di directory, è possibile gestire prima le sottodirectory \(*attraversamento pre\-ordine*\) o prima i file \(*attraversamento post\-ordine*\).  Se si esegue un attraversamento pre\-ordine, si procede lungo l'intera struttura ad albero sotto la cartella corrente prima di scorrere i file che sono direttamente in quella cartella.  Negli esempi disponibili più avanti in questo documento viene eseguito l'attraversamento post\-ordine, ma è possibile modificare tali esempi facilmente per eseguire l'attraversamento pre\-ordine.  
+ Quando si procede manualmente in un albero di directory, è possibile gestire prima le sottodirectory (*attraversamento pre-ordine*), o prima i file (*attraversamento post-ordine*). Se si esegue un attraversamento pre-ordine, è necessario procedere lungo l'intero albero della cartella corrente prima di eseguire l'iterazione nei file direttamente in quella cartella. Gli esempi riportati più avanti nel documento eseguono l'attraversamento post-ordine ma è possibile modificarli per eseguire l'attraversamento pre-ordine.  
   
- Un'altra opzione consiste nel decidere se utilizzare un attraversamento ricorsivo o basato su stack.  Negli esempi disponibili più avanti in questo documento sono mostrati entrambi gli approcci.  
+ Un'altra opzione consiste nell'usare la ricorsione o l'attraversamento basato su stack. Gli esempi più avanti in questo documento illustrano entrambi gli approcci.  
   
- Se è necessario eseguire svariate operazioni su file e cartelle, è possibile modularizzare questi esempi effettuando il refactoring dell'operazione in funzioni separate che è possibile richiamare tramite un solo delegato.  
+ Se è necessario eseguire una serie di operazioni su file e cartelle, è possibile modularizzare questi esempi effettuando il refactoring dell'operazione in funzioni separate che è possibile richiamare tramite un delegato unico.  
   
 > [!NOTE]
->  I file system NTFS possono contenere *punti di analisi* nella forma di  *punti di giunzione*, *collegamenti simbolici* e *collegamenti reali*.  I metodi .NET Framework come <xref:System.IO.DirectoryInfo.GetFiles%2A> e <xref:System.IO.DirectoryInfo.GetDirectories%2A> non restituiranno le sottodirectory sotto un punto di analisi.  Questo comportamento protegge dal rischio di entrare in un ciclo infinito quando due punti di analisi si riferiscono l'uno all'altro.  In generale, è necessario prestare estrema attenzione nella gestione dei punti di analisi per assicurarsi di non modificare o eliminare file in modo accidentale.  Se si richiede un controllo preciso sui punti di analisi, utilizzare pInvoke o codice nativo per chiamare direttamente i metodi appropriati del file system Win32.  
+>  I file system NTFS possono contenere *reparse point* sotto forma di *punti di giunzione*, *collegamenti simbolici* e *collegamenti reali*. I metodi di .NET Framework, come ad esempio <xref:System.IO.DirectoryInfo.GetFiles%2A> e <xref:System.IO.DirectoryInfo.GetDirectories%2A>, non restituiranno sottodirectory in un reparse point. Questo comportamento protegge dal rischio di entrare in un ciclo infinito quando due reparse point fanno riferimento uno all'altro. In generale, è necessario usare estrema cautela quando si usano i reparse point per evitare di modificare o eliminare file involontariamente. Se è necessario un controllo preciso dei reparse point, usare platform invoke o codice nativo per chiamare direttamente i metodi del file system Win32 appropriato.  
   
-## Esempio  
- Nell'esempio seguente viene mostrato come procedere in una struttura ad albero di directory tramite ricorsione.  L'approccio ricorsivo è elegante ma può potenzialmente provocare un'eccezione di overflow dello stack se la struttura ad albero di directory è ampia e annidata in modo profondo.  
+## <a name="example"></a>Esempio  
+ L'esempio seguente illustra come procedere in un albero di directory usando la ricursione. L'approccio ricorsivo è elegante ma può provocare un'eccezione di overflow dello stack se l'albero di directory è grande ed eccessivamente annidato.  
   
- Le specifiche eccezioni gestite e le specifiche azioni eseguite su ogni file o cartella vengono fornite solo come esempi.  Questo codice va modificato per soddisfare requisiti specifici.  Per ulteriori informazioni, vedere i commenti nel codice.  
+ Le eccezioni specifiche che vengono gestite e le azioni specifiche eseguite su ogni file o cartella vengono illustrate solo a titolo esemplificativo. Per soddisfare esigenze specifiche, è necessario modificare il codice. Per altre informazioni, vedere i commenti nel codice.  
   
  [!code-cs[csFilesandFolders#1](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-iterate-through-a-directory-tree_1.cs)]  
   
-## Esempio  
- Nell'esempio seguente viene mostrato come scorrere file e cartelle in una struttura ad albero di directory senza utilizzare la ricorsione.  Questa tecnica utilizza il tipo di raccolta <xref:System.Collections.Generic.Stack%601> generica, che è uno stack LIFO \(Last In, First Out\).  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente viene illustrato come eseguire l'iterazione nei file e nelle cartelle in un albero di directory senza usare la ricorsione. Questa tecnica usa il tipo di raccolta generico <xref:System.Collections.Generic.Stack%601>, che è uno stack LIFO (Last in First out).  
   
- Le specifiche eccezioni gestite e le specifiche azioni eseguite su ogni file o cartella vengono fornite solo come esempi.  Questo codice va modificato per soddisfare requisiti specifici.  Per ulteriori informazioni, vedere i commenti nel codice.  
+ Le eccezioni specifiche che vengono gestite e le azioni specifiche eseguite su ogni file o cartella vengono illustrate solo a titolo esemplificativo. Per soddisfare esigenze specifiche, è necessario modificare il codice. Per altre informazioni, vedere i commenti nel codice.  
   
  [!code-cs[csFilesandFolders#2](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-iterate-through-a-directory-tree_2.cs)]  
   
- L'operazione di verifica su ogni cartella per determinare se l'applicazione dispone dell'autorizzazione ad aprirla richiede in genere troppo tempo.  L'esempio di codice, pertanto, include solo quella parte dell'operazione in un blocco `try/catch`.  È possibile modificare il blocco `catch` in modo da tentare di elevare le autorizzazioni e provare nuovamente l'accesso in caso di accesso negato a una cartella.  Di regola, rilevare solo le eccezioni che è possibile gestire senza lasciare l'applicazione in stato sconosciuto.  
+ In genere testare ogni cartella per determinare se l'applicazione ha l'autorizzazione per aprirla richiede troppo tempo. Pertanto, l'esempio di codice racchiude quella parte dell'operazione in un blocco `try/catch`. È possibile modificare il blocco `catch` in modo che quando l'accesso a una cartella viene negato, si tenti di innalzare il livello delle autorizzazioni e quindi di accedere nuovamente. Come regola, rilevare solo le eccezioni che è possibile gestire senza lasciare l'applicazione in uno stato sconosciuto.  
   
- Se è necessario archiviare il contenuto di una struttura ad albero di directory, in memoria o su disco, la migliore opzione è archiviare solo la proprietà <xref:System.IO.FileSystemInfo.FullName%2A> \(di tipo `string`\) per ogni file.  È possibile utilizzare quindi questa stringa per creare un nuovo oggetto <xref:System.IO.FileInfo> o <xref:System.IO.DirectoryInfo>, in base alle esigenze, o aprire i file che richiedono ulteriore elaborazione.  
+ Se è necessario archiviare il contenuto di un albero di directory, in memoria o su disco, l'opzione migliore consiste nell'archiviare solo la proprietà <xref:System.IO.FileSystemInfo.FullName%2A>, di tipo `string`, per ogni file. È quindi possibile usare questa stringa per creare un nuovo oggetto <xref:System.IO.FileInfo> o <xref:System.IO.DirectoryInfo> in base alle esigenze o aprire i file che richiedono un'elaborazione ulteriore.  
   
-## Programmazione efficiente  
- Un codice di iterazione di file efficiente deve tenere in considerazione le molte complessità del file system.  Per ulteriori informazioni, vedere [NTFS Technical Reference](http://go.microsoft.com/fwlink/?LinkId=79488) \(informazioni in lingua inglese\).  
+## <a name="robust-programming"></a>Programmazione efficiente  
+ Un codice di iterazione file efficiente deve prendere in considerazione diversi aspetti complessi del file system. Per altre informazioni, vedere [NTFS Technical Reference](http://go.microsoft.com/fwlink/?LinkId=79488) (Riferimenti tecnici di NTFS).  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:System.IO>   
- [LINQ and File Directories](../../../visual-basic/programming-guide/concepts/linq/linq-and-file-directories.md)   
- [File system e Registro di sistema](../../../csharp/programming-guide/file-system/file-system-and-the-registry.md)
+ [Directory di file e LINQ (C#)](http://msdn.microsoft.com/library/5a5d516c-0279-4a84-ac84-b87f54caa808)   
+ [File system e Registro di sistema (Guida per programmatori C#)](../../../csharp/programming-guide/file-system/index.md)

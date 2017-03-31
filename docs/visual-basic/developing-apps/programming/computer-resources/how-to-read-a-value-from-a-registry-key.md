@@ -1,67 +1,83 @@
 ---
-title: "How to: Read a Value from a Registry Key in Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "registry keys, determining if a value exists in"
-  - "My.Computer.Registry object, examples"
-  - "registry, determining if values exist"
-  - "registry keys, reading from"
-  - "registry, reading"
+title: 'Procedura: Leggere un valore da una chiave del Registro di sistema in Visual Basic | Microsoft Docs'
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- registry keys, determining if a value exists in
+- My.Computer.Registry object, examples
+- registry, determining if values exist
+- registry keys, reading from
+- registry, reading
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
 caps.latest.revision: 31
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 31
----
-# How to: Read a Value from a Registry Key in Visual Basic
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e68cde6d56d4de584861b8bcf29e072a5fc18928
+ms.lasthandoff: 03/13/2017
 
-Il metodo `GetValue` dell'oggetto `My.Computer.Registry` consente di leggere valori nel Registro di sistema di Windows.  
+---
+# <a name="how-to-read-a-value-from-a-registry-key-in-visual-basic"></a>Procedura: leggere un valore da una chiave del Registro di sistema in Visual Basic
+Il metodo `GetValue` dell'oggetto `My.Computer.Registry` può essere usato per leggere i valori nel Registro di sistema di Windows.  
   
- Se la chiave, “software \\MyApp„ nell' esempio seguente, non esiste, viene generata un'eccezione.  Se `ValueName`, “nome„ nell' esempio seguente, non esiste, `Nothing` viene restituito.  
+ Se la chiave, "Software\MyApp" nell'esempio seguente, non esiste, viene generata un'eccezione. Se `ValueName`,  "Name" nell'esempio seguente, non esiste, viene restituito `Nothing`.  
   
- Il metodo di `GetValue` può essere utilizzato per determinare se un valore specificato è presente in una chiave specifica del Registro di sistema.  
+ Il metodo `GetValue` può essere usato anche per determinare se esiste un determinato valore in una chiave del Registro di sistema specifica.  
   
- Quando il codice viene letto il Registro di sistema da un'applicazione Web, l'utente corrente è determinato dall' autenticazione e dalla rappresentazione che viene implementata nell' applicazione Web.  
+ Quando il codice legge il Registro di sistema da un'applicazione Web, l'utente corrente viene determinato tramite l'autenticazione e la rappresentazione implementata nell'applicazione Web.  
   
-### Per leggere un valore da una chiave del Registro di sistema  
+### <a name="to-read-a-value-from-a-registry-key"></a>Per leggere un valore da una chiave del Registro di sistema  
   
--   Utilizzare il metodo `GetValue`, specificando il percorso e il nome, per leggere un valore dalla chiave del Registro di sistema.  Nell'esempio che segue il valore `Name` viene letto da `HKEY_CURRENT_USER\Software\MyApp` e visualizzato in una finestra di messaggio.  
+-   Usare il metodo `GetValue` (specificando il percorso e il nome) per leggere un valore dalla chiave del Registro di sistema. L'esempio seguente legge il valore `Name` da `HKEY_CURRENT_USER\Software\MyApp` e lo visualizza in una finestra di messaggio.  
   
      [!code-vb[VbResourceTasks#4](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-read-a-value-from-a-registry-key_1.vb)]  
   
- Questo esempio di codice è inoltre disponibile come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice si trova in **Sistema operativo Windows \> Registro di sistema**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
+ Questo esempio di codice è disponibile anche come frammento di codice IntelliSense. Nello strumento di selezione dei frammenti di codice il frammento si trova in **Sistema operativo Windows > Registro di sistema**. Per altre informazioni, vedere [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets) (Frammenti di codice).  
   
-### Per determinare se un valore è presente in una chiave del Registro di sistema  
+### <a name="to-determine-whether-a-value-exists-in-a-registry-key"></a>Per determinare se esiste un valore in una chiave del Registro di sistema  
   
--   Utilizzare il metodo `GetValue` per recuperare il valore.  I controlli di codice se il valore è presente e restituisce un messaggio in caso contrario.  
+-   Usare il metodo `GetValue` per recuperare il valore. Il codice seguente controlla se il valore esiste e restituisce un messaggio se il valore non esiste.  
   
      [!code-vb[VbResourceTasks#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-read-a-value-from-a-registry-key_2.vb)]  
   
-## Programmazione efficiente  
- Il Registro di sistema contiene le chiavi di primo livello che vengono utilizzate per l'archiviazione dei dati.  La chiave di primo livello HKEY\_LOCAL\_MACHINE viene ad esempio utilizzata per archiviare le impostazioni a livello di computer impiegate da tutti gli utenti, mentre HKEY\_CURRENT\_USER viene utilizzata per l'archiviazione dei dati specifici di un singolo utente.  
+## <a name="robust-programming"></a>Programmazione efficiente  
+ Nel Registro di sistema sono contenute chiavi di primo livello, o radice, usate per memorizzare i dati. Ad esempio, la chiave radice HKEY_LOCAL_MACHINE è usata per memorizzare le impostazioni a livello di computer usate da tutti gli utenti, mentre la chiave HKEY_CURRENT_USER viene usata per memorizzare i dati specifici di un singolo utente.  
   
  Le seguenti condizioni possono generare un'eccezione:  
   
--   Il nome della chiave è `Nothing` \(<xref:System.ArgumentNullException>\).  
+-   Il nome della chiave è `Nothing` (<xref:System.ArgumentNullException>).  
   
--   L'utente non dispone di autorizzazioni per la lettura dalle chiavi del Registro di sistema \(<xref:System.Security.SecurityException>\).  
+-   L'utente non ha le autorizzazioni per la lettura delle chiavi del Registro di sistema (<xref:System.Security.SecurityException>).  
   
--   Il nome della chiave supera il limite di 255 caratteri \(<xref:System.ArgumentException>\).  
+-   Il nome della chiave supera il limite di 255 caratteri (<xref:System.ArgumentException>).  
   
-## Sicurezza di .NET Framework  
- Per eseguire questo processo, l'assembly richiede un livello di privilegio concesso dalla classe <xref:System.Security.Permissions.RegistryPermission>.  Se viene eseguito in un contesto ad affidabilità parziale, il processo può generare un'eccezione a causa dell'insufficienza di privilegi.  Allo stesso modo, l'utente deve disporre degli ACL corretti per la creazione o la scrittura nelle impostazioni.  Un'applicazione locale che dispone dell'autorizzazione di sicurezza per l'accesso di codice potrebbe ad esempio non disporre dell'autorizzazione del sistema operativo.  Per ulteriori informazioni, vedere [Code Access Security Basics](../Topic/Code%20Access%20Security%20Basics.md).  
+## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
+ Per eseguire questo processo, l'assembly richiede un livello di privilegio concesso dalla classe <xref:System.Security.Permissions.RegistryPermission>. Se viene eseguito in un contesto parzialmente attendibile, il processo potrebbe generare un'eccezione a causa di privilegi insufficienti. Allo stesso modo, l'utente deve disporre degli ACL corretti per la creazione o la scrittura nelle impostazioni. Ad esempio, un'applicazione locale che ha l'autorizzazione di sicurezza dall'accesso di codice potrebbe non avere l'autorizzazione del sistema operativo. Per altre informazioni, vedere [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8) (Nozioni di base sulla sicurezza dell'accesso di codice).  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>   
  <xref:Microsoft.Win32.RegistryHive>   
- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+ [Lettura e scrittura nel Registro di sistema](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)

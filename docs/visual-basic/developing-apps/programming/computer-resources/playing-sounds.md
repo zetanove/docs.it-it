@@ -1,80 +1,96 @@
 ---
-title: "Playing Sounds (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "system sounds, playing"
-  - "system sounds"
-  - "playing sounds, Visual Basic"
-  - "sound loops"
-  - "My.Computer.Audio object, tasks"
-  - "sounds, playing"
-  - "sounds, background"
-  - "playing sounds"
+title: Riproduzione di suoni (Visual Basic) | Microsoft Docs
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- system sounds, playing
+- system sounds
+- playing sounds, Visual Basic
+- sound loops
+- My.Computer.Audio object, tasks
+- sounds, playing
+- sounds, background
+- playing sounds
 ms.assetid: f0d9e4ab-57c7-47b6-86d3-99ff07078040
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# Playing Sounds (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: ed4ee0a09067900a6bead04abec02f141936ba42
+ms.lasthandoff: 03/13/2017
 
-L'oggetto `My.Computer.Audio` fornisce metodi per la riproduzione dei suoni.  
+---
+# <a name="playing-sounds-visual-basic"></a>Riproduzione di suoni (Visual Basic)
+Il metodo `My.Computer.Audio` offre metodi per la riproduzione di suoni.  
   
-## Riprodurre suoni  
- La riproduzione dei suoni di sottofondo consente all'applicazione di eseguire altro codice mentre riproduce la musica.  Il metodo `My.Computer.Audio.Play` consente all'applicazione di riprodurre solo un suono di sottofondo alla volta. Quando l'applicazione riproduce un nuovo suono di sottofondo, interrompe la riproduzione di quello precedente.  È inoltre possibile riprodurre un suono e attendere che la riproduzione sia completata.  
+## <a name="playing-sounds"></a>Riproduzione di suoni  
+ La riproduzione in background consente all'applicazione di eseguire altro codice durante la riproduzione di suoni. Il metodo `My.Computer.Audio.Play` consente all'applicazione di riprodurre un solo suono di sottofondo alla volta: quando l'applicazione riproduce un nuovo suono di sottofondo, viene interrotta la riproduzione del suono di sottofondo precedente. È anche possibile riprodurre un suono e attendere il completamento della riproduzione.  
   
- In l ' esempio seguente, il metodo di `My.Computer.Audio.Play` riproduce un suono.  Quando è specificato `AudioPlayMode.WaitToComplete`, il metodo `My.Computer.Audio.Play` attende il completamento del suono prima di continuare a chiamare codice.  Quando si utilizza questo esempio, sarà necessario assicurarsi che il nome file fa riferimento a un file audio .wav presente sul computer  
+ Nell'esempio seguente il metodo `My.Computer.Audio.Play` riproduce un suono. Quando è specificato `AudioPlayMode.WaitToComplete`, `My.Computer.Audio.Play` attende il completamento del suono prima di continuare a chiamare codice. Quando si usa questo esempio è necessario assicurarsi che il nome file faccia riferimento a un file audio con estensione wav presente nel computer.  
   
  [!code-vb[VbVbalrMyComputer#15](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_1.vb)]  
   
- In l ' esempio seguente, il metodo di `My.Computer.Audio.Play` riproduce un suono.  Quando si utilizza questo esempio, è necessario assicurarsi che le risorse dell' applicazione includono un file audio .wav denominato Waterfall.  
+ Nell'esempio seguente il metodo `My.Computer.Audio.Play` riproduce un suono. Quando si usa questo esempio è necessario assicurarsi che le risorse dell'applicazione includano un file audio con estensione wav denominato Waterfall.  
   
  [!code-vb[VbVbalrMyComputer#16](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_2.vb)]  
   
-## La riproduzione in ciclo i suoni  
- In l ' esempio seguente, il metodo di `My.Computer.Audio.Play` riprodurre il suono specificato in background quando `PlayMode.BackgroundLoop` è specificato.  Quando si utilizza questo esempio, sarà necessario assicurarsi che il nome file fa riferimento a un file audio .wav presente sul computer.  
+## <a name="playing-looping-sounds"></a>Riproduzione di file audio a ciclo continuo  
+ Nell'esempio seguente il metodo `My.Computer.Audio.Play` riproduce il file audio specificato in background quando è specificato `PlayMode.BackgroundLoop`. Quando si usa questo esempio è necessario assicurarsi che il nome file faccia riferimento a un file audio con estensione wav presente nel computer.  
   
  [!code-vb[VbVbalrMyComputer#11](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_3.vb)]  
   
- In l ' esempio seguente, il metodo di `My.Computer.Audio.Play` riprodurre il suono specificato in background quando `PlayMode.BackgroundLoop` è specificato.  Quando si utilizza questo esempio, è necessario assicurarsi che le risorse dell' applicazione includono un file audio .wav denominato Waterfall.  
+ Nell'esempio seguente il metodo `My.Computer.Audio.Play` riproduce il file audio specificato in background quando è specificato `PlayMode.BackgroundLoop`. Quando si usa questo esempio è necessario assicurarsi che le risorse dell'applicazione includano un file audio con estensione wav denominato Waterfall.  
   
  [!code-vb[VbVbalrMyComputer#12](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_4.vb)]  
   
- L'esempio di codice precedente è disponibile anche come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice, si trova in **Sistema operativo Windows \> Sound**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
+ L'esempio di codice precedente è disponibile anche come frammento di codice IntelliSense. Nello strumento di selezione dei frammenti di codice il frammento di codice si trova in **Applicazioni Windows Form > Audio**. Per altre informazioni, vedere [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets) (Frammenti di codice).  
   
- In genere, quando un'applicazione riproduce un suono ciclico, finirà per dover interrompere la riproduzione del suono.  
+ In generale, quando un'applicazione riproduce un file audio a ciclo continuo, la riproduzione dovrà prima o poi essere interrotta.  
   
-## Interrompendo la riproduzione dei suoni in background  
- Per interrompere la riproduzione di un suono ciclico o in background, utilizzare il metodo `My.Computer.Audio.Stop`.  
+## <a name="stopping-the-playing-of-sounds-in-the-background"></a>Interruzione della riproduzione di suoni in background  
+ Usare il metodo `My.Computer.Audio.Stop` per interrompere la riproduzione di file audio in background o a ciclo continuo dell'applicazione.  
   
- In generale, quando un'applicazione riproduce un suono ripetitivo, a un certo punto dovrebbe smettere.  
+ In generale, quando un'applicazione riproduce un file audio a ciclo continuo, la riproduzione dovrà prima o poi essere interrotta.  
   
- In l ' esempio viene interrotta un suono che viene riprodotto in background.  
+ L'esempio seguente interrompe la riproduzione di un file audio in background.  
   
  [!code-vb[VbVbalrMyComputer#18](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_5.vb)]  
   
- L'esempio di codice precedente è disponibile anche come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice, si trova in **Sistema operativo Windows \> Sound**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
+ L'esempio di codice precedente è disponibile anche come frammento di codice IntelliSense. Nello strumento di selezione dei frammenti di codice il frammento di codice si trova in **Applicazioni Windows Form > Audio**. Per altre informazioni, vedere [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets) (Frammenti di codice).  
   
-## Riprodurre i suoni del sistema  
- Utilizzare il metodo `My.Computer.Audio.PlaySystemSound` per riprodurre il suono di sistema specificato.  
+## <a name="playing-system-sounds"></a>Riproduzione di suoni di sistema  
+ Usare il metodo `My.Computer.Audio.PlaySystemSound` per riprodurre il suono di sistema specificato.  
   
- Il metodo `My.Computer.Audio.PlaySystemSound` richiede come parametro uno dei membri condivisi dalla classe <xref:System.Media.SystemSound>.  In genere, il suono di sistema <xref:System.Media.SystemSounds.Asterisk%2A> denota la presenza di errori.  
+ Il metodo `My.Computer.Audio.PlaySystemSound` accetta come parametro uno dei membri condivisi della classe <xref:System.Media.SystemSound>. Il suono di sistema <xref:System.Media.SystemSounds.Asterisk%2A> indica in genere la presenza di errori.  
   
- In l ' esempio seguente viene utilizzato il metodo di `My.Computer.Audio.PlaySystemSound` per riprodurre un suono di sistema.  
+ L'esempio seguente usa il metodo `My.Computer.Audio.PlaySystemSound` per riprodurre un suono di sistema.  
   
  [!code-vb[VbVbalrMyComputer#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_6.vb)]  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.Devices.Audio>   
  <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A>   
  <xref:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound%2A>   

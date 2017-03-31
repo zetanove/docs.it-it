@@ -1,63 +1,79 @@
 ---
-title: "How to: Rename a File in Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "I/O [Visual Basic], renaming files"
-  - "files, renaming"
+title: 'Procedura: Rinominare un file in Visual Basic | Microsoft Docs'
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- I/O [Visual Basic], renaming files
+- files, renaming
 ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# How to: Rename a File in Visual Basic
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a0a31353ce3ee0c48907f9550f6961260f92b64a
+ms.lasthandoff: 03/13/2017
 
-Utilizzare il metodo `RenameFile` dell'oggetto `My.Computer.FileSystem` per rinominare un file fornendo la posizione corrente, il nome file e il nuovo nome file.  Questo metodo non può essere utilizzato per spostare un file; utilizzare il metodo `MoveFile` per spostare e rinominare il file.  
+---
+# <a name="how-to-rename-a-file-in-visual-basic"></a>Procedura: rinominare un file in Visual Basic
+Usare il metodo `RenameFile` dell'oggetto `My.Computer.FileSystem` per rinominare un file fornendo la posizione corrente, il nome file attuale e il nuovo nome file. Questo metodo non può essere usato per spostare un file. Per spostare e rinominare un file, usare il metodo `MoveFile`.  
   
-### Per rinominare un file  
+### <a name="to-rename-a-file"></a>Per rinominare un file  
   
--   Utilizzare il metodo `My.Computer.FileSystem.RenameFile` per rinominare un file.  In questo esempio il file `Test.txt` viene rinominato in `SecondTest.txt`.  
+-   Usare il metodo `My.Computer.FileSystem.RenameFile`per rinominare un file. In questo esempio il file `Test.txt` viene rinominato in `SecondTest.txt`.  
   
      [!code-vb[VbVbcnMyFileSystem#9](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-rename-a-file_1.vb)]  
   
- Questo esempio di codice è anche disponibile come frammento di codice IntelliSense.  Nella casella di selezione dei frammenti di codice, il frammento si trova in **File system \- Elaborazione di unità, cartelle e file**.  Per ulteriori informazioni, vedere [Frammenti di codice](/visual-studio/ide/code-snippets).  
+ Questo esempio di codice è disponibile anche come frammento di codice IntelliSense. Nella casella di selezione dei frammenti di codice il frammento si trova in **File system - Elaborazione di unità, cartelle e file**. Per altre informazioni, vedere [Code Snippets](https://docs.microsoft.com/visualstudio/ide/code-snippets) (Frammenti di codice).  
   
-## Programmazione efficiente  
+## <a name="robust-programming"></a>Programmazione efficiente  
  Le seguenti condizioni possono generare un'eccezione:  
   
--   Il percorso non è valido per uno dei seguenti motivi: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo, ovvero inizia con \\\\  \\\) \(<xref:System.ArgumentException>\).  
+-   Il percorso non è valido per uno dei motivi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo, ovvero inizia con \\\\.\\ (<xref:System.ArgumentException>).  
   
--   `newName` contiene informazioni sul percorso \(<xref:System.ArgumentException>\).  
+-   `newName` contiene informazioni sul percorso (<xref:System.ArgumentException>).  
   
--   Il percorso non è valido in quanto `Nothing` \(<xref:System.ArgumentNullException>\).  
+-   Il percorso non è valido in quanto `Nothing` (<xref:System.ArgumentNullException>).  
   
--   `newName` è `Nothing` o una stringa vuota \(<xref:System.ArgumentNullException>\).  
+-   `newName` è `Nothing` o una stringa vuota (<xref:System.ArgumentNullException>).  
   
--   Il file di origine non è valido o non esiste \(<xref:System.IO.FileNotFoundException>\).  
+-   Il file di origine non è valido o non esiste (<xref:System.IO.FileNotFoundException>).  
   
--   Esiste un file o directory esistente con il nome specificato in `newName` \(<xref:System.IO.IOException>\).  
+-   Esiste un file o directory con il nome specificato in `newName` (<xref:System.IO.IOException>).  
   
--   La lunghezza del percorso supera la lunghezza massima definita dal sistema \(<xref:System.IO.PathTooLongException>\).  
+-   La lunghezza del percorso supera la lunghezza massima definita dal sistema (<xref:System.IO.PathTooLongException>).  
   
--   Il nome di un file o di una directory nel percorso contiene i due punti \(:\) o ha un formato non valido \(<xref:System.NotSupportedException>\).  
+-   Il nome di un file o di una directory nel percorso contiene i due punti (:) o ha un formato non valido (<xref:System.NotSupportedException>).  
   
--   L'utente non dispone delle autorizzazioni necessarie per visualizzare il percorso \(<xref:System.Security.SecurityException>\).  
+-   L'utente non ha le autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
   
--   L'utente non dispone delle autorizzazioni necessarie \(<xref:System.UnauthorizedAccessException>\).  
+-   L'utente non dispone delle autorizzazioni necessarie (<xref:System.UnauthorizedAccessException>).  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.RenameFile%2A>   
- [Procedura: spostare un file](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)   
- [Creating, Deleting, and Moving Files and Directories](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)   
- [How to: Create a Copy of a File in the Same Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md)   
- [How to: Create a Copy of a File in a Different Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-a-different-directory.md)
+ [Procedura: Spostare un file](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)   
+ [Creazione, eliminazione e spostamento di file e directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)   
+ [Procedura: Creare una copia di un file nella stessa directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md)   
+ [Procedura: creare una copia di un file in una directory diversa](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-a-different-directory.md)

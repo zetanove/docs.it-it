@@ -1,51 +1,67 @@
 ---
-title: "Reading from and Writing to the Registry (Visual Basic) | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "My.Computer.Registry object, tasks"
-  - "registry, writing to"
-  - "registry, reading"
+title: Lettura e scrittura nel Registro di sistema (Visual Basic) | Microsoft Docs
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- My.Computer.Registry object, tasks
+- registry, writing to
+- registry, reading
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 21
----
-# Reading from and Writing to the Registry (Visual Basic)
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 1f148b00181c6c6a152b2f08ab765e0a385a7c89
+ms.lasthandoff: 03/13/2017
 
-In questo argomento vengono descritte le attività e gli argomenti concettuali in cui sono associati al Registro di sistema.  
+---
+# <a name="reading-from-and-writing-to-the-registry-visual-basic"></a>Lettura e scrittura nel Registro di sistema (Visual Basic)
+Questo argomento descrive attività e concetti correlati al Registro di sistema.  
   
- Durante la programmazione in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] è possibile scegliere di accedere al Registro di sistema tramite le funzioni disponibili in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] o le classi Registry di .NET Framework.  Nel Registro di sistema sono memorizzate informazioni provenienti dal sistema operativo, nonché informazioni provenienti dalle applicazioni presenti nel computer.  L'utilizzo del Registro di sistema potrebbe comportare problemi di sicurezza, consentendo accesso non appropriato a risorse di sistema o informazioni protette.  
+ Durante la programmazione in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] è possibile scegliere di accedere al Registro di sistema usando le funzioni di [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] o le classi del Registro di sistema di .NET Framework. Il Registro di sistema contiene informazioni provenienti dal sistema operativo nonché informazioni provenienti dalle applicazioni presenti nel computer. L'uso del Registro di sistema può compromettere la sicurezza poiché consente l'accesso inappropriato alle risorse di sistema o alle informazioni protette.  
   
-## In questa sezione  
- [How to: Create a Registry Key and Set Its Value](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)  
- Viene descritto come utilizzare `CreateSubKey` e  `SetValue` metodi di  `My.Computer.Registry` oggetto per creare una chiave del Registro di sistema e per impostarne il valore.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: Creare una chiave del Registro di sistema e impostarne il valore](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-create-a-registry-key-and-set-its-value.md)  
+ Viene descritto come usare i metodi `CreateSubKey` e `SetValue` dell'oggetto `My.Computer.Registry` per creare una chiave del Registro di sistema e impostarne il valore.  
   
- [How to: Read a Value from a Registry Key](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)  
- Viene descritto come utilizzare `GetValue` metodo di  `My.Computer.Registry` oggetto per leggere un valore da una chiave del Registro di sistema.  
+ [Procedura: Leggere un valore da una chiave del Registro di sistema](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-read-a-value-from-a-registry-key.md)  
+ Viene descritto come usare il metodo `GetValue` dell'oggetto `My.Computer.Registry` per leggere un valore da una chiave del Registro di sistema.  
   
- [How to: Delete a Registry Key](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)  
- Viene descritto come utilizzare `DeleteSubKey` metodo di  `My.Computer.Registry.CurrentUser` proprietà per eliminare una chiave del Registro di sistema.  
+ [Procedura: Eliminare una chiave del Registro di sistema](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)  
+ Viene descritto come usare il metodo `DeleteSubKey` della proprietà `My.Computer.Registry.CurrentUser` per eliminare una chiave del Registro di sistema.  
   
  [Lettura e scrittura nel Registro di sistema mediante lo spazio dei nomi Microsoft.Win32](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace.md)  
- Viene descritto come utilizzare `Registry` e  `RegistryKey` classi di  [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] per accedere al Registro di sistema.  
+ Viene descritto come usare le classi `Registry` e `RegistryKey` di [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] per accedere al Registro di sistema.  
   
- [Security and the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/security-and-the-registry.md)  
- Vengono illustrati i problemi di sicurezza relativi al Registro di sistema.  
+ [Sicurezza e Registro di sistema](../../../../visual-basic/developing-apps/programming/computer-resources/security-and-the-registry.md)  
+ Vengono illustrati i problemi di sicurezza che riguardano il Registro di sistema.  
   
-## Sezioni correlate  
+## <a name="related-sections"></a>Sezioni correlate  
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>  
- Vengono elencati ed illustrati i membri dell'oggetto `My.Computer.Registry`.  
+ Vengono elencati e illustrati i membri dell'oggetto `My.Computer.Registry`.  
   
  <xref:Microsoft.Win32.Registry>  
- Viene fornita una descrizione generale della classe `Registry` e vengono forniti collegamenti a singole chiavi e singoli membri.
+ Viene presentata una panoramica della classe `Registry`, oltre a collegamenti a singoli membri e chiavi.

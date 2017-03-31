@@ -1,34 +1,58 @@
 ---
-title: "nameof (Riferimenti di C# e Visual Basic) | Microsoft Docs"
-ms.date: "2017-03-03"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+title: nameof (Riferimenti di C# e Visual Basic) | Microsoft Docs
+ms.date: 2017-03-03
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- nameof_CSharpKeyword
+- nameof
+dev_langs:
+- CSharp
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 3
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: ce73de9177d6138b9acb00f3c7d3ace8e7a064f2
+ms.lasthandoff: 03/13/2017
+
 ---
-# nameof (Riferimenti di C# e Visual Basic)
-Usata per ottenere il nome di stringa semplice \(non qualificata\) di una variabile, un tipo o un membro.  Quando si segnalano errori nel codice, si associano collegamenti MVC \(Model\-View\-Controller\), si attivano eventi di modifica delle proprietà, è spesso necessario acquisire il nome di stringa di un metodo.  Con `nameof` è possibile garantire la validità del codice in caso di ridenominazione delle definizioni.  In precedenza, per fare riferimento alle definizioni, era necessario usare valori letterali di stringa, ma questo approccio non è efficace quando si rinominano elementi del codice perché gli strumenti non sanno come verificare questi valori letterali di stringa.  
+# <a name="nameof-c-and-visual-basic-reference"></a>nameof (Riferimenti di C# e Visual Basic)
+
+Usata per ottenere il nome di stringa semplice (non qualificata) di una variabile, un tipo o un membro.  
+
+Quando si segnalano errori nel codice, si associano collegamenti MVC (Model-View-Controller), si attivano eventi di modifica delle proprietà, è spesso necessario acquisire il nome di stringa di un metodo.  Con `nameof` è possibile garantire la validità del codice in caso di ridenominazione delle definizioni.  In precedenza, per fare riferimento alle definizioni era necessario usare valori letterali di stringa. Questo approccio tuttavia non è efficace quando si rinominano elementi del codice poiché gli strumenti non hanno l'indicazione di verificare questi valori letterali di stringa.  
   
  Il formato dell'espressione `nameof` è il seguente:  
   
-```c#  
+```csharp  
 if (x == null) throw new ArgumentNullException(nameof(x));  
 WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”  
   
 ```  
   
-## Casi di utilizzo principali  
+## <a name="key-use-cases"></a>Casi di utilizzo principali  
  Questi esempi illustrano i casi di utilizzo principali relativi a `nameof`.  
   
  Convalida dei parametri:  
- ```c#  
+ ```csharp  
 void f(string s) {  
     if (s == null) throw new ArgumentNullException(nameof(s));  
 }  
@@ -45,7 +69,7 @@ void f(string s) {
 ```  
   
  INotifyPropertyChanged:  
- ```c#  
+ ```csharp  
 int p {  
     get { return this.p; }  
     set { this.p = value; PropertyChanged(this, new PropertyChangedEventArgs(nameof(this.p)); } // nameof(p) works too  
@@ -54,13 +78,13 @@ int p {
 ```  
   
  Proprietà di dipendenza XAML:  
- ```c#  
+ ```csharp  
 public static DependencyProperty AgeProperty = DependencyProperty.Register(nameof(Age), typeof(int), typeof(C));  
   
 ```  
   
  Registrazione:  
- ```c#  
+ ```csharp  
 void f(int i) {  
     Log(nameof(f), "method entry");  
 }  
@@ -68,17 +92,17 @@ void f(int i) {
 ```  
   
  Attributi:  
- ```c#  
+ ```csharp  
 [DebuggerDisplay("={" + nameof(GetString) + "()}")]  
 class C {  
     string GetString() { }  
 }  
 ```  
   
-## Esempi  
- Alcuni esempi per C\#:  
+## <a name="examples"></a>Esempi  
+ Alcuni esempi per C#:  
   
-```c#  
+```csharp  
 using Stuff = Some.Cool.Functionality  
 class C {  
     static int Method1 (string x, int y) {}  
@@ -118,27 +142,27 @@ NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of ins
   
 ```  
   
-## Note  
+## <a name="remarks"></a>Note  
  L'argomento di `nameof` deve essere un nome semplice, un nome qualificato, un accesso di tipo membro, un accesso di base con un membro specificato oppure questo accesso con un membro specificato.  L'espressione dell'argomento identifica una definizione di codice, ma non viene mai valutata.  
   
- Dal momento che l'argomento deve essere un'espressione dal punto di vista sintattico, sono presenti molti elementi non consentiti che non è utile elencare.  Vale la pena di menzionare i seguenti, che sono quelli che producono errori, ovvero tipi predefiniti \(ad esempio `int` o `void`\), tipi nullable \(`Point?`\), tipi di matrice \(`Customer[,]`\), tipi di puntatore \(`Buffer*`\), alias qualificati \(`A::B`\) e tipi generici non associati \(`Dictionary<,>`\), nonché simboli di pre\-elaborazione \(`DEBUG`\) ed etichette \(`loop:`\).  
+ Dal momento che l'argomento deve essere un'espressione dal punto di vista sintattico, sono presenti molti elementi non consentiti che non è utile elencare.  Vale la pena di menzionare i seguenti, che sono quelli che producono errori, ovvero tipi predefiniti (ad esempio `int` o `void`), tipi nullable (`Point?`), tipi di matrice (`Customer[,]`), tipi di puntatore (`Buffer*`), alias qualificati (`A::B`) e tipi generici non associati (`Dictionary<,>`), nonché simboli di pre-elaborazione (`DEBUG`) ed etichette (`loop:`).  
   
  Se è necessario ottenere il nome completo, è possibile usare l'espressione `typeof` unitamente a `nameof`.  
   
- Negli esempi si nota che è possibile usare un nome di tipi e accedere a un nome di metodo di istanza.  Non è necessario disporre di un'istanza del tipo, come richiesto nelle espressioni valutate.  In alcune situazioni può risultare molto comodo usare il nome del tipo, ma, dal momento che viene fatto riferimento solo al nome senza usare i dati dell'istanza, non è necessario optare per un'espressione o una variabile di istanza.  
+ Negli esempi si nota che è possibile usare un nome di tipi e accedere a un nome di metodo di istanza.  Non è necessario disporre di un'istanza del tipo, come richiesto nelle espressioni valutate.  In alcune situazioni può risultare molto comodo usare il nome del tipo ma, dal momento che viene fatto riferimento solo al nome senza usare i dati dell'istanza, non è necessario optare per un'espressione o una variabile di istanza.  
   
  È possibile fare riferimento ai membri di una classe in espressioni di attributo nella classe.  
   
- Non esiste alcun modo per ottenere informazioni sulle firme, ad esempio con "`Method1 (str, str)`".  A tale scopo è possibile usare un'espressione `Expression e = () => A.B.Method1("s1", "s2")` e estrarre MemberInfo dall'albero delle espressioni risultante.  
+ Non esiste alcun modo per ottenere informazioni sulle firme, ad esempio con "`Method1 (str, str)`".  A tale scopo è possibile usare un'espressione `Expression e = () => A.B.Method1("s1", "s2")` ed estrarre MemberInfo dall'albero delle espressioni risultante.  
   
-## Specifiche del linguaggio  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="language-specifications"></a>Specifiche del linguaggio  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
- Per altre informazioni, vedere [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
+ Per altre informazioni, vedere [Riferimenti per il linguaggio Visual Basic](../../../visual-basic/language-reference/index.md).  
   
-## Vedere anche  
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [typeof](../../../csharp/language-reference/keywords/typeof.md)   
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)   
- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+ [Riferimenti per il linguaggio Visual Basic](../../../visual-basic/language-reference/index.md)   
+ [Guida per programmatori Visual Basic](../../../visual-basic/programming-guide/index.md)

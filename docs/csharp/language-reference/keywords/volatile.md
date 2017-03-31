@@ -1,59 +1,77 @@
 ---
-title: "volatile (Riferimenti per C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "volatile_CSharpKeyword"
-  - "volatile"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "volatile (parola chiave) [C#]"
+title: volatile (Riferimenti per C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- volatile_CSharpKeyword
+- volatile
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- volatile keyword [C#]
 ms.assetid: 78089bc7-7b38-4cfd-9e49-87ac036af009
 caps.latest.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 29
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: d31ba6dd73ec4f5abcb34dc481144b154301f1af
+ms.lasthandoff: 03/13/2017
+
 ---
-# volatile (Riferimenti per C#)
-La parola chiave `volatile` indica che un campo potrebbe essere modificato da più thread in esecuzione contemporaneamente.  I campi dichiarati `volatile` non sono soggetti a ottimizzazioni del compilatore che presuppongono l'accesso da un singolo thread.  In questo modo nel campo è sempre presente il valore più aggiornato.  
+# <a name="volatile-c-reference"></a>volatile (Riferimenti per C#)
+La parola chiave `volatile` indica che un campo potrebbe essere modificato da più thread eseguiti contemporaneamente. Un campo dichiarato `volatile` non è soggetto a ottimizzazioni del compilatore che presuppongono l'accesso da parte di un singolo thread. Ciò garantisce che il valore più aggiornato sia sempre presente nel campo.  
   
- Il modificatore `volatile` è utilizzato in genere per un campo al quale accedono più thread senza ricorrere all'istruzione [lock](../../../csharp/language-reference/keywords/lock-statement.md) per la serializzazione dell'accesso.  
+ Il modificatore `volatile` si usa in genere per un campo a cui accedono più thread senza usare l'istruzione [lock](../../../csharp/language-reference/keywords/lock-statement.md) per serializzare l'accesso.  
   
- La parola chiave `volatile` può essere applicata ai seguenti tipi di campi:  
+ La parola chiave `volatile` può essere applicata ai campi di questi tipi:  
   
 -   Tipi di riferimento.  
   
--   Tipi puntatore in un contesto unsafe.  Si noti che mentre il puntatore stesso può essere volatile, l'oggetto al quale punta non può esserlo.  In altre parole, non è possibile dichiarare un "puntatore volatile".  
+-   Tipi di puntatore (in un contesto non sicuro). Si noti che sebbene il puntatore in sé possa essere volatile, non può esserlo l'oggetto a cui punta. In altre parole, non è possibile dichiarare un "puntatore a volatile".  
   
--   Tipi quali sbyte, byte, short, ushort, int, uint, char, float e bool.  
+-   Tipi come sbyte, byte, short, ushort, int, uint, char, float e bool.  
   
--   Il tipo enum con uno dei tipi di base seguenti: byte, sbyte, short, ushort, int o uint.  
+-   Un tipo enum con uno dei seguenti tipi di base: byte, sbyte, short, ushort, int o uint.  
   
--   Parametri di tipo generico riconosciuti come tipi di riferimento.  
+-   Parametri di tipo generico noti come tipi di riferimento.  
   
--   <xref:System.IntPtr> e <xref:System.UIntPtr>.  
+-   <xref:System.IntPtr> and <xref:System.UIntPtr>.  
   
- La parola chiave volatile può essere applicata solo a campi di una classe o una struttura.  Le variabili locali non possono essere dichiarate `volatile`.  
+ La parola chiave volatile può essere applicata solo a campi di una classe o struct. Le variabili locali non possono essere dichiarate `volatile`.  
   
-## Esempio  
- Nell'esempio riportato di seguito viene illustrato come dichiarare la variabile di un campo pubblico come `volatile`.  
+## <a name="example"></a>Esempio  
+ Nell'esempio riportato di seguito viene illustrato come dichiarare `volatile` una variabile di campo pubblico.  
   
  [!code-cs[csrefKeywordsModifiers#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_1.cs)]  
   
-## Esempio  
- Nell'esempio riportato di seguito viene illustrato come creare un thread ausiliario o di lavoro da utilizzare per eseguire l'elaborazione in parallelo con quella del thread primario.  Per informazioni complementari sul multithreading, vedere [Threading](../Topic/Managed%20Threading.md) e [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md).  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente viene illustrato come un thread di lavoro o ausiliario può essere creato e usato per eseguire l'elaborazione in parallelo con quella del thread principale. Per informazioni di base sul multithreading, vedere [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) and [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c).  
   
  [!code-cs[csProgGuideThreading#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_2.cs)]  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [Parole chiave di C\#](../../../csharp/language-reference/keywords/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
  [Modificatori](../../../csharp/language-reference/keywords/modifiers.md)

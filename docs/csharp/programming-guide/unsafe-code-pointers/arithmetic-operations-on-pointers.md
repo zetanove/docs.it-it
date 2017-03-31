@@ -1,52 +1,70 @@
 ---
-title: "Operazioni aritmetiche sui puntatori (Guida per programmatori C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "puntatori [C#], operazioni aritmetiche"
+title: Operazioni aritmetiche sui puntatori (Guida per programmatori C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- pointers [C#], arithmetic operations
 ms.assetid: d4f0b623-827e-45ce-8649-cfcebc8692aa
 caps.latest.revision: 18
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 18
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: fc675600526dcaa6afd488fdee57acdc577cf71f
+ms.lasthandoff: 03/13/2017
+
 ---
-# Operazioni aritmetiche sui puntatori (Guida per programmatori C#)
-In questo argomento viene illustrato l'utilizzo degli operatori aritmetici `+` e **\-** per la gestione dei puntatori.  
+# <a name="arithmetic-operations-on-pointers-c-programming-guide"></a>Operazioni aritmetiche sui puntatori (Guida per programmatori C#)
+Questo argomento illustra l'uso degli operatori aritmetici `+` e **-** per modificare i puntatori.  
   
 > [!NOTE]
->  Non è possibile eseguire operazioni aritmetiche su puntatori a void.  
+>  È possibile eseguire qualsiasi operazione aritmetica sui puntatori void.  
   
-## Aggiunta e sottrazione di valori numerici a e da puntatori  
- È possibile aggiungere un valore `n` di tipo [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md) o [ulong](../../../csharp/language-reference/keywords/ulong.md) a un puntatore `p`, `` di qualsiasi tipo tranne `void*`.  Il `p+n` restituito è il puntatore risultante dall'aggiunta di `n * sizeof(p) to the address of p`.  Analogamente, `p-n` è il puntatore risultante dalla sottrazione di `n * sizeof(p)` dall'indirizzo di `p`.  
+## <a name="adding-and-subtracting-numeric-values-to-or-from-pointers"></a>Aggiunta e sottrazione di valori numerici dai puntatori  
+ È possibile aggiungere un valore `n` di tipo [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md) o [ulong](../../../csharp/language-reference/keywords/ulong.md) a un puntatore `p` di qualsiasi tipo, ad eccezione di `void*`. `p+n` è il puntatore risultante dall'aggiunta di `n * sizeof(p) to the address of p`. Analogamente, `p-n` è il puntatore risultante dalla sottrazione di `n * sizeof(p)` dall'indirizzo di `p`.  
   
-## Sottrazione di puntatori  
- È anche possibile sottrarre puntatori dello stesso tipo.  Il risultato è sempre di tipo `long`.  Se, ad esempio, `p1` e `p2` sono puntatori di tipo `pointer-type*`, l'espressione `p1-p2` determinerà il seguente risultato:  
+## <a name="subtracting-pointers"></a>Sottrazione di puntatori  
+ È anche possibile sottrarre puntatori dello stesso tipo. Il risultato è sempre il tipo `long`. Ad esempio, se `p1` e `p2` sono puntatori di tipo `pointer-type*`, l'espressione `p1-p2` è simile alla seguente:  
   
  `((long)p1 - (long)p2)/sizeof(pointer_type)`  
   
- Quando l'operazione aritmetica causa un overflow del dominio del puntatore, non vengono generate eccezioni e il risultato dipende dall'implementazione.  
+ Non viene generata nessuna eccezione quando l'operazione aritmetica supera il dominio del puntatore e il risultato dipende dall'implementazione.  
   
-## Esempio  
+## <a name="example"></a>Esempio  
  [!code-cs[csProgGuidePointers#14](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_1.cs)]  
   
  [!code-cs[csProgGuidePointers#15](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/arithmetic-operations-on-pointers_2.cs)]  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [Codice unsafe e puntatori](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [Codice di tipo unsafe e puntatori](../../../csharp/programming-guide/unsafe-code-pointers/index.md)   
  [Espressioni puntatore](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)   
- [Operatori](../../../csharp/language-reference/operators/index.md)   
+ [Operatori di C#](../../../csharp/language-reference/operators/index.md)   
  [Modifica dei puntatori](../../../csharp/programming-guide/unsafe-code-pointers/manipulating-pointers.md)   
- [Tipi di puntatori](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)   
+ [Tipi di puntatore](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)   
  [Tipi](../../../csharp/language-reference/keywords/types.md)   
- [non protette](../../../csharp/language-reference/keywords/unsafe.md)   
+ [unsafe](../../../csharp/language-reference/keywords/unsafe.md)   
  [Istruzione fixed](../../../csharp/language-reference/keywords/fixed-statement.md)   
  [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

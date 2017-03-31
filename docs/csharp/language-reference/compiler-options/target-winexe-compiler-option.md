@@ -1,45 +1,63 @@
 ---
-title: "/target:winexe (C# Compiler Options) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "/target:winexe"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "/target compiler options [C#], /target:winexe"
-  - "-target compiler options [C#], /target:winexe"
-  - "target compiler options [C#], /target:winexe"
+title: /target:winexe (opzioni del compilatore C#) | Documentazione Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- /target:winexe
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- /target compiler options [C#], /target:winexe
+- -target compiler options [C#], /target:winexe
+- target compiler options [C#], /target:winexe
 ms.assetid: b5a0619c-8caa-46a5-a743-1cf68408ad7a
 caps.latest.revision: 11
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 11
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: e9a640c0cfa1d0494457f8ffe94bf15877b24919
+ms.lasthandoff: 03/13/2017
+
 ---
-# /target:winexe (C# Compiler Options)
-Specificando l'opzione **\/target:winexe**, il compilatore crea un programma eseguibile \(EXE\) per Windows.  
+# <a name="targetwinexe-c-compiler-options"></a>/target:winexe (opzioni del compilatore C#)
+L'opzione **/target: winexe** indica al compilatore di creare un file eseguibile (con estensione EXE), il programma di Windows.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
 ```  
 /target:winexe  
 ```  
   
-## Note  
- Il file eseguibile creato avrà estensione EXE.  Per programma per Windows si intende un programma che fornisce un'interfaccia utente dalla libreria di .NET Framework o con le API Win32.  
+## <a name="remarks"></a>Note  
+ Il file eseguibile verrà creato con estensione .exe. È un programma di Windows che fornisce un'interfaccia utente dalla libreria di .NET Framework o con le API Win32.  
   
- Per creare un'applicazione console, utilizzare [\/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md).  
+ Usare [/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md) per creare un'applicazione console.  
   
- Se non diversamente specificato mediante l'opzione [\/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md), il nome del file di output corrisponderà al nome del file di input che contiene il metodo [Main](../../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md).  
+ A meno che diversamente specificato con l'opzione [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md), il nome del file di output corrisponderà al nome del file di input contenente il metodo [Main](../../../csharp/programming-guide/main-and-command-args/index.md).  
   
- Quando specificato alla riga di comando, tutti i file fino alla successiva opzione **\/out** o [\/target](../../../csharp/language-reference/compiler-options/target-compiler-option.md) verranno utilizzati per creare il programma per Windows.  
+ Quando specificato nella riga di comando, tutti i file fino alla successiva opzione **/out** o [/target](../../../csharp/language-reference/compiler-options/target-compiler-option.md) vengono usati per creare il programma Windows.  
   
- È necessario un unico metodo **Main** nei file di codice sorgente che vengono compilati in un file EXE.  L'opzione [\/main](../../../csharp/language-reference/compiler-options/main-compiler-option.md) consente di specificare la classe contenente il metodo **Main**, nei casi in cui il codice presenti più classi con un metodo **Main**.  
+ Un solo metodo **Main** è necessario nei file del codice sorgente che vengono compilati in un file con estensione exe. L'opzione [/main](../../../csharp/language-reference/compiler-options/main-compiler-option.md) consente di specificare la classe che contiene il metodo **Main**, nei casi in cui il codice ha più di una classe con un metodo **Main**.  
   
-### Per impostare l'opzione del compilatore nell'ambiente di sviluppo di Visual Studio  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Per impostare l'opzione del compilatore nell'ambiente di sviluppo di Visual Studio  
   
 1.  Aprire la pagina **Proprietà** del progetto.  
   
@@ -49,13 +67,13 @@ Specificando l'opzione **\/target:winexe**, il compilatore crea un programma ese
   
  Per informazioni su come impostare questa opzione del compilatore a livello di codice, vedere <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
-## Esempio  
- Compilare `in.cs` in un programma per Windows:  
+## <a name="example"></a>Esempio  
+ Compilare `in.cs` in un programma di Windows:  
   
 ```  
 csc /target:winexe in.cs  
 ```  
   
-## Vedere anche  
- [\/target \(Specify Output File Format\)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)   
- [C\# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+## <a name="see-also"></a>Vedere anche  
+ [/target (opzioni del compilatore C#)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)   
+ [Opzioni del compilatore C#](../../../csharp/language-reference/compiler-options/index.md)

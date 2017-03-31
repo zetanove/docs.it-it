@@ -10,9 +10,9 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d9efc2b1b8ad38a6444e7362da13ce3838476abd
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 75908d895017c31e36da6702f1b69816afb91d14
+ms.openlocfilehash: 8721c71bf69210cf73d7e703f19a22e267e36a28
+ms.lasthandoff: 03/28/2017
 
 ---
 
@@ -27,7 +27,7 @@ La Guida a C# offre un'ampia gamma di informazioni sul linguaggio C#. Questo sit
     - Gli utenti che hanno già esperienza di sviluppo ma non conoscono il linguaggio C# possono iniziare leggendo [Panoramica del linguaggio C#](tour-of-csharp/index.md). Nella panoramica vengono descritte la sintassi e le strutture di base del linguaggio. È possibile usare le informazioni offerte per confrontare C# con gli altri linguaggi usati. È inoltre possibile eseguire le [Esercitazioni su C#](tutorials/index.md) per provare programmi C# di base. In alternativa, vedere [Concetti relativi a C#](concepts.md) per informazioni approfondite sulle funzionalità del linguaggio C#.
 
 * Sviluppatori C# esperti:
-    - Gli utenti che hanno già usato C# possono iniziare leggendo le novità dell'ultima versione del linguaggio. Per informazioni sulle nuove funzionalità disponibili nella versione corrente, vedere [Novità di C#6](csharp-6.md). Vedere quindi [Concetti relativi a C#](concepts.md), dove sono riportate informazioni più approfondite.
+    - Gli utenti che hanno già usato C# possono iniziare leggendo le novità dell'ultima versione del linguaggio. Per informazioni sulle nuove funzionalità disponibili nella versione corrente, vedere [Novità di C#](whats-new/index.md). Vedere quindi [Concetti relativi a C#](concepts.md), dove sono riportate informazioni più approfondite.
  
 ## <a name="how-the-c-guide-is-organized"></a>Organizzazione della Guida a C#
 
@@ -42,7 +42,7 @@ La Guida a C# è organizzata in sette sezioni. È possibile leggere le sezioni n
 * [Panoramica di C#](tour-of-csharp/index.md): 
     - Questa sezione offre una panoramica del linguaggio. Vengono descritti gli elementi che costituiscono il linguaggio C# e vengono illustrate le funzionalità di quest'ultimo. Vengono offerti piccoli esempi di tutti gli elementi della sintassi C# e vengono discussi i principali aspetti del linguaggio. 
 
-* [Funzionalità più recenti](whats-new.md):
+* [Funzionalità più recenti](whats-new/index.md):
     - Questa sezione offre informazioni sulle funzionalità più recenti di C# nonché su nuovi strumenti quali C# Interactive (REPL di C#) e .NET Compiler Platform SDK, così da illustrare l'evoluzione del linguaggio. Viene spiegato il modo in cui i nuovi strumenti consentono di aumentare la produttività esplorando il linguaggio e automatizzando le attività. 
 
 * [C# Interactive](interactive/index.md):

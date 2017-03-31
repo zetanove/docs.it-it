@@ -1,40 +1,59 @@
 ---
-title: "Operatore =&gt; (Riferimenti per C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "=>_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "lambda (operatore) [C#]"
-  - "=> (operatore) (C#)"
-  - "espressioni lambda [C#], => (operatore)"
+title: =&gt; Operatore (Riferimenti per C#) | Documentazione Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- =>_CSharpKeyword
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- lambda operator [C#]
+- => operator [C#]
+- lambda expressions [C#], => operator
 ms.assetid: 8c899251-dafa-4594-bec7-243b39072880
 caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 19
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a75967e61d2c674e87e321de1fb6e4062cca4f19
+ms.lasthandoff: 03/13/2017
+
 ---
-# Operatore =&gt; (Riferimenti per C#)
-Il token `=>` è chiamato l'operatore lambda.  Viene utilizzato nelle *espressioni lambda* per separare le variabili di input sul lato sinistro dal corpo della lambda sul lato destro.  Le espressioni lambda sono espressioni in linea simili ai metodi anonimi, ma più flessibili. Vengono utilizzate spesso nelle query LINQ espresse in sintassi del metodo.  Per ulteriori informazioni, vedere [Espressioni lambda](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+# <a name="gt-operator-c-reference"></a>=&gt; Operatore (Riferimenti per C#)
+Il token `=>` viene chiamato operatore lambda. Viene usato nelle *espressioni lambda* per separare le variabili di input sul lato sinistro dal corpo dell'espressione lambda da quelle sul lato destro. Le espressioni lambda sono espressioni inline simili ai metodi anonimi ma più flessibili. Vengono usate ampiamente nelle query LINQ espresse nella sintassi del metodo. Per altre informazioni, vedere [Espressioni lambda](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
- Nell'esempio seguente vengono illustrate due modalità per individuare e visualizzare la lunghezza di più breve stringa in una matrice di stringhe.  La prima parte dell'esempio viene applicata un'espressione lambda \(`w => w.Length`\) a ogni elemento della matrice di `words` quindi utilizzato il metodo di <xref:System.Linq.Enumerable.Min%2A> per trovare la lunghezza.  Per il confronto, la seconda parte dell'esempio viene illustrata una soluzione più lunga che la sintassi della query per eseguire la stessa operazione.  
+ Nell'esempio seguente vengono illustrate due modalità per individuare e visualizzare la lunghezza della stringa più breve in una matrice di stringhe. La prima parte dell'esempio applica un'espressione lambda (`w => w.Length`) a ogni elemento della matrice`words` e usa quindi il metodo <xref:System.Linq.Enumerable.Min%2A> per individuare la lunghezza minima. La seconda parte dell'esempio mostra invece una soluzione più lunga che usa la sintassi della query per eseguire la stessa operazione.  
   
 <CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
-## Note  
- L'operatore `=>` ha la stessa precedenza dell'operatore di assegnazione \(`=`\) e prevede l'associazione all'operando di destra.  
+## <a name="remarks"></a>Note  
+ L'operatore `=>` ha la stessa priorità dell'operatore di assegnazione (`=`) e si associa all'operando a destra.  
   
- È possibile specificare il tipo della variabile di input in modo esplicito oppure lasciare che il compilatore dedurlo; in entrambi i casi, la variabile è fortemente tipizzata in fase di compilazione.  Quando si specifica un tipo, è necessario racchiudere il nome del tipo e il nome della variabile tra parentesi, come illustrato di seguito.  
+ È possibile specificare il tipo di variabile di input in modo esplicito o consentendo al compilatore di dedurlo; in entrambi i casi, la variabile è fortemente tipizzata in fase di compilazione. Quando si specifica un tipo, è necessario racchiudere tra parentesi il nome del tipo e il nome della variabile, come illustrato nell'esempio seguente.  
   
 <CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
-## Esempio  
- Di seguito viene illustrato come scrivere un'espressione lambda per l'overload di <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> degli operatori di query standard che accetta due argomenti.  Poiché l'espressione lambda dispone di più di un parametro, i parametri devono essere racchiusi tra parentesi.  Il secondo parametro, `index`, rappresenta l'indice dell'elemento corrente nella raccolta.  L'espressione di `Where` restituisce tutte le stringhe delle lunghezze inferiori alla posizione di indice nella matrice.  
+## <a name="example"></a>Esempio  
+ Nell'esempio riportato di seguito viene illustrato come scrivere un'espressione lambda per eseguire l'overload dell'operatore query standard <xref:System.Linq.Enumerable.Where%2A?displayProperty=fullName> che accetta due argomenti. Poiché l'espressione lambda contiene più di un parametro, i parametri devono essere racchiusi tra parentesi. Il secondo parametro, `index`, rappresenta l'indice dell'elemento corrente nella raccolta. L'espressione `Where` restituisce tutte le stringhe la cui lunghezza è minore rispetto alla loro posizione nell'indice nella matrice.  
   
-```c#  
+```cs  
 static void Main(string[] args)  
 {  
     string[] digits = { "zero", "one", "two", "three", "four", "five",   
@@ -47,29 +66,8 @@ static void Main(string[] args)
         Console.WriteLine(sD);  
     }  
   
-    // Compare the following code, which arrives at the same list of short  
-    // digits but takes more work to get there.  
-    Console.WriteLine("\nExample that uses a for loop:");  
-    List<string> shortDigits2 = new List<string>();  
-    for (var i = 0; i < digits.Length; i++)  
-    {  
-        if (digits[i].Length < i)  
-            shortDigits2.Add(digits[i]);  
-    }  
-  
-    foreach (var d in shortDigits2)  
-    {  
-        Console.WriteLine(d);  
-    }  
     // Output:  
     // Example that uses a lambda expression:  
-    // five  
-    // six  
-    // seven  
-    // eight  
-    // nine  
-  
-    // Example that uses a for loop:  
     // five  
     // six  
     // seven  
@@ -78,7 +76,7 @@ static void Main(string[] args)
 }  
 ```  
   
-## Vedere anche  
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Espressioni lambda](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
