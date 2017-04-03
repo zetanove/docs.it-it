@@ -1,76 +1,92 @@
 ---
-title: "Reading from Files in Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "data [Visual Basic], reading from files"
-  - "I/O [Visual Basic], reading from files"
-  - "examples [Visual Basic], reading from files"
-  - "files, reading"
-  - "reading files"
+title: Lettura da file in Visual Basic | Microsoft Docs
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- data [Visual Basic], reading from files
+- I/O [Visual Basic], reading from files
+- examples [Visual Basic], reading from files
+- files, reading
+- reading files
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 16
----
-# Reading from Files in Visual Basic
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a21629921a04f26aa8cb6d18acdf923888d32ef9
+ms.lasthandoff: 03/13/2017
 
-In questa sezione viene illustrato come eseguire le attività associate alla lettura dai file.  
+---
+# <a name="reading-from-files-in-visual-basic"></a>Lettura da file in Visual Basic
+In questa sezione viene illustrato come eseguire attività associate alla lettura dai file.  
   
-## In questa sezione  
- [How to: Read from Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)  
- Viene descritto come leggere da un file di testo.  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: leggere da file di testo](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)  
+ Spiega come leggere da un file di testo.  
   
- [How to: Read From Comma\-Delimited Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)  
- Viene descritto come leggere da un file di testo delimitato.  
+ [Procedura: leggere da file di testo delimitati da virgola](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)  
+ Spiega come leggere da un file di testo delimitato.  
   
- [How to: Read From Fixed\-width Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
- Viene descritto come leggere da un file di testo a larghezza fissa.  
+ [Procedura: leggere da file di testo a larghezza fissa](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-fixed-width-text-files.md)  
+ Spiega come leggere da un file di testo a larghezza fissa.  
   
- [How to: Read From Text Files with Multiple Formats](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)  
- Viene descritto come leggere da un file di testo con più formati.  
+ [Procedura: leggere da file di testo con più formati](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)  
+ Spiega come leggere da un file di testo con più formati.  
   
- [How to: Read From Binary Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-binary-files.md)  
- Viene descritto come leggere da un file binario.  
+ [Procedura: leggere da file binari](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-binary-files.md)  
+ Spiega come leggere da un file binario.  
   
- [How to: Read Text from Files with a StreamReader](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md)  
- Viene descritto come utilizzare una <xref:System.IO.StreamReader> per eseguire la lettura da un file.  
+ [Procedura: leggere il testo da file con un oggetto StreamReader](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md)  
+ Spiega come usare <xref:System.IO.StreamReader> per leggere da un file.  
   
-## Riferimenti  
+## <a name="reference"></a>Riferimento  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- Viene illustrato l'oggetto `My.Computer.FileSystem` e i relativi membri.  
+ Descrive l'oggetto `My.Computer.FileSystem` e i relativi membri.  
   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A>  
- Viene illustrato il metodo `ReadAllText`.  
+ Descrive il metodo `ReadAllText`.  
   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllBytes%2A>  
- Viene illustrato il metodo `ReadAllBytes`.  
+ Descrive il metodo `ReadAllBytes`.  
   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser%2A>  
- Viene illustrato il metodo `OpenTextFieldParser`.  
+ Descrive il metodo `OpenTextFieldParser`.  
   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A>  
- Viene illustrato il metodo `OpenTextFileReader`.  
+ Descrive il metodo `OpenTextFileReader`.  
   
-## Sezioni correlate  
- [Storing Data to and Reading from the Clipboard](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
- Viene illustrato come eseguire le attività cui essere associato a `My.Computer.Clipboard`oggetto, quale la lettura o la scrittura di dati negli Appunti.  
+## <a name="related-sections"></a>Sezioni correlate  
+ [Archiviazione e lettura di dati negli Appunti](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
+ Spiega come eseguire attività associate a `My.Computer.Clipboard`, ad esempio la lettura o la scrittura di dati negli Appunti.  
   
- [Parsing Text Files with the TextFieldParser Object](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
- Vengono forniti cenni preliminari sulla lettura dei file di testo mediante l'oggetto `TextFieldParser`.  
+ [Analisi dei file di testo con l'oggetto TextFieldParser](../../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
+ Offre una panoramica della lettura dei file di testo con l'oggetto `TextFieldParser`.  
   
- [Walkthrough: Manipulating Files and Directories in Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
- Viene descritto come utilizzare la funzionalità `My` con i file e le directory.  
+ [Procedura dettagliata: Modifica di file e directory in Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
+ Illustra come usare la funzionalità `My` con i file e le directory.  
   
- [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- Viene descritto come utilizzare i metodi [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] con i file e le directory.
+ [Procedura dettagliata: Modifica di file mediante i metodi .NET Framework](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
+ Illustra come usare i metodi [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] con i file e le directory.

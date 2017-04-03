@@ -1,53 +1,71 @@
 ---
-title: "try...finally (Riferimenti per C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "finally"
-  - "finally_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "finally (parola chiave) [C#]"
-  - "try-finally (istruzioni) [C#]"
+title: try...finally (Riferimenti per C#) | Documentazione Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- finally
+- finally_CSharpKeyword
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- finally keyword [C#]
+- try-finally statement [C#]
 ms.assetid: c27623fb-7261-4464-862c-7a369d3c8f0a
 caps.latest.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 25
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 3f7618aa6d4ae3535b2b6cb562349650b3eba1ed
+ms.lasthandoff: 03/13/2017
+
 ---
-# try...finally (Riferimenti per C#)
-Utilizzando un blocco `finally`, è possibile liberare le risorse allocate in un blocco [try](../../../csharp/language-reference/keywords/try-catch.md), quindi eseguire il codice anche se viene generata un'eccezione in tale blocco `try`.  In genere, le istruzioni di un blocco `finally` vengono eseguite quando il controllo lascia un'istruzione `try`.  Il trasferimento di controllo può verificarsi come risultato della normale esecuzione, dell'esecuzione di un'istruzione `break`, `continue`, `goto` o `return` o della propagazione di un'eccezione al di fuori dell'istruzione `try`.  
+# <a name="try-finally-c-reference"></a>try...finally (Riferimenti per C#)
+Usando un blocco `finally`, è possibile eliminare le risorse allocate in un blocco [try](../../../csharp/language-reference/keywords/try-catch.md) ed è possibile eseguire codice anche se viene generata un'eccezione di blocco `try`. In genere, le istruzioni di un blocco `finally` vengono eseguite quando il controllo lascia un'istruzione `try`. Il trasferimento del controllo può verificarsi come risultato dell'esecuzione normale, dell'esecuzione di un'istruzione `break`, `continue`, `goto` o `return` o della propagazione di un'eccezione dell'istruzione `try`.  
   
- In un'eccezione gestita, il blocco `finally` associato viene sicuramente eseguito.  Tuttavia, se l'eccezione non è gestita, l'esecuzione del blocco `finally` dipende da come viene attivata l'operazione di rimozione eccezione.  Questa, a sua volta, dipende dalla configurazione del computer.  Per ulteriori informazioni, vedere [Elaborazione delle eccezioni non gestite in CRL](http://go.microsoft.com/fwlink/?LinkId=128371).  
+ All'interno di un'eccezione gestita, l'esecuzione del blocco `finally` associato è garantita. Tuttavia, se l'eccezione non è gestita, l'esecuzione del blocco `finally` dipende da come viene attivata l'operazione di rimozione dell'eccezione. Ciò, a sua volta, dipende da come viene configurato il computer. Per altre informazioni, vedere [Unhandled Exception Processing in the CLR](http://go.microsoft.com/fwlink/?LinkId=128371) (Elaborazione di eccezioni non gestite nel CLR).  
   
- In genere, quando un'eccezione non gestita termina un'applicazione, che il blocco `finally` sia eseguito o meno non è importante.  Tuttavia, se si dispone di istruzioni in un blocco `finally` che devono essere eseguite anche in tale situazione, una soluzione è di aggiungere un blocco `catch` all'istruzione `try`\-`finally`.  In alternativa, è possibile rilevare l'eccezione che può essere generata nel blocco `try` di un'istruzione `try`\-`finally` collocata nella parte superiore dello stack di chiamate.  È possibile rilevare l'eccezione nel metodo che chiama il metodo contenente l'istruzione `try`\-`finally` o nel metodo che chiama quel metodo o in qualsiasi metodo dello stack di chiamate.  Se l'eccezione non viene rilevata, l'esecuzione del blocco `finally` dipende dall'attivazione o meno da parte del sistema operativo dell'operazione di rimozione eccezione.  
+ In genere, quando un'eccezione non gestita termina un'applicazione non è importante sapere se il blocco `finally` è in esecuzione. Tuttavia, se si dispone di istruzioni in un blocco `finally` che deve essere eseguito anche in questo caso, una soluzione consiste nell'aggiungere un blocco `catch` all'istruzione `try`-`finally`. In alternativa, è possibile intercettare l'eccezione che potrebbe essere generata nel blocco `try` di un'istruzione `try`-`finally` in alto nello stack di chiamate. Vale a dire, è possibile intercettare l'eccezione nel metodo che chiama il metodo che contiene l'istruzione `try`-`finally`, nel metodo che chiama questo metodo o in qualsiasi metodo nello stack di chiamate. Se non viene rilevata l'eccezione, l'esecuzione del blocco `finally` varia a seconda che il sistema operativo scelga di generare un'operazione di rimozione dell'eccezione o meno.  
   
-## Esempio  
- In questo esempio un'istruzione di conversione non valida genera un'eccezione `System.InvalidCastException`.  L'eccezione non è gestita.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente un'istruzione di conversione non valida causa un'eccezione `System.InvalidCastException`. L'eccezione viene non è gestita.  
   
  [!code-cs[csrefKeywordsExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-finally_1.cs)]  
   
- Nell'esempio seguente, viene rilevata un'eccezione dal metodo `TryCast` in un metodo allocato nello stack di chiamata.  
+ Nell'esempio seguente viene intercettata un'eccezione del metodo `TryCast` in un metodo nella parte più in alto dello stack di chiamate.  
   
  [!code-cs[csrefKeywordsExceptions#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-finally_2.cs)]  
   
- Per ulteriori informazioni su `finally`, vedere [try\-catch\-finally](../../../csharp/language-reference/keywords/try-catch-finally.md).  
+ Per altre informazioni su `finally`, vedere [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md).  
   
- C\# contiene anche l'[istruzione using](../../../csharp/language-reference/keywords/using-statement.md), la quale fornisce una funzionalità simili per gli oggetti <xref:System.IDisposable> con sintassi di facile utilizzo.  
+ C# contiene anche l'[istruzione using](../../../csharp/language-reference/keywords/using-statement.md), che fornisce funzionalità simili agli oggetti <xref:System.IDisposable> con una sintassi comoda.  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [Parole chiave di C\#](../../../csharp/language-reference/keywords/index.md)   
- [Istruzioni try, throw e catch \(C\+\+\)](/visual-cpp/cpp/try-throw-and-catch-statements-cpp)   
+## <a name="see-also"></a>Vedere anche  
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
+ [Istruzioni try, throw e catch (C++)](https://docs.microsoft.com/cpp/cpp/try-throw-and-catch-statements-cpp)   
  [Istruzioni di gestione delle eccezioni](../../../csharp/language-reference/keywords/exception-handling-statements.md)   
  [throw](../../../csharp/language-reference/keywords/throw.md)   
- [try\-catch](../../../csharp/language-reference/keywords/try-catch.md)   
- [Procedura: generare eccezioni in modo esplicito](../Topic/How%20to:%20Explicitly%20Throw%20Exceptions.md)
+ [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
+ [Procedura: Come generare in modo esplicito le eccezioni](https://msdn.microsoft.com/library/xhcbs8fz)

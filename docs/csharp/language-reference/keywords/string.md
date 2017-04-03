@@ -1,32 +1,51 @@
 ---
-title: "string (Riferimenti per C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "string"
-  - "string_CSharpKeyword"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "stringhe [C#], riferimenti"
-  - "@ (valore letterale stringa)"
-  - "valori letterali stringa [C#]"
-  - "string (parola chiave) [C#]"
+title: string (Riferimenti per C#) | Documentazione Microsoft
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- string
+- string_CSharpKeyword
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- strings [C#], reference
+- '@ string literal'
+- string literals [C#]
+- string keyword [C#]
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
 caps.latest.revision: 31
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 31
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: a616808a8e6ff5e259c503c0143db4b8f73bdef2
+ms.lasthandoff: 03/13/2017
+
 ---
-# string (Riferimenti per C#)
-Il tipo `string` rappresenta una sequenza di zero o più caratteri Unicode.  Il tipo `string` è un alias dell'elemento <xref:System.String> in .NET Framework.  
+# <a name="string-c-reference"></a>string (Riferimenti per C#)
+Il tipo `string` rappresenta una sequenza di zero o più caratteri Unicode. `string` è un alias di <xref:System.String> in .NET Framework.  
   
- Sebbene `string` sia un tipo di riferimento, gli operatori di uguaglianza \(`==` e `!=`\) vengono definiti per confrontare i valori degli oggetti `string`, non i riferimenti.  Questo rende più intuitiva la verifica dell'uguaglianza delle stringhe.  Ad esempio:  
+ Sebbene `string` sia un tipo riferimento, gli operatori di uguaglianza (`==` e `!=`) vengono definiti per confrontare i valori degli oggetti `string` e non dei riferimenti. In questo modo il test di uguaglianza delle stringhe è più intuitivo. Ad esempio:  
   
-```c#  
+```csharp  
   
       string a = "hello";  
 string b = "h";  
@@ -36,40 +55,40 @@ Console.WriteLine(a == b);
 Console.WriteLine((object)a == (object)b);  
 ```  
   
- Viene visualizzato "True" e quindi "False" perché i contenuti delle stringhe sono equivalenti, ma `a` e `b` non fanno riferimento alla stessa istanza di stringa.  
+ Viene visualizzato "True" e quindi "False" perché il contenuto delle stringhe è equivalente, ma `a` e `b` non fanno riferimento alla stessa istanza della stringa.  
   
- L'operatore \+ concatena le stringhe:  
+ L'operatore + concatena le stringhe:  
   
-```c#  
+```csharp  
   
 string a = "good " + "morning";  
 ```  
   
- Viene creato un oggetto stringa che contiene "good morning".  
+ Questo crea un oggetto stringa contenente "good morning".  
   
- Le stringhe *non sono modificabili*, ovvero il contenuto di un oggetto di tipo stringa non può essere modificato dopo che l'oggetto è stato creato, nonostante la sintassi faccia inferire il contrario.  Ad esempio, scrivendo il codice definito, il compilatore creerà in realtà un nuovo oggetto di tipo stringa nel quale archiviare la nuova sequenza di caratteri, quindi il nuovo oggetto verrà assegnato a b.  La stringa "h" è quindi idonea per Garbage Collection.  
+ Le stringhe sono *immutabili*: non è possibile modificare il contenuto di un oggetto stringa dopo la creazione dell'oggetto, sebbene la sintassi sembri indicare che è possibile apportare modifiche. Ad esempio, quando si scrive il codice, il compilatore crea un nuovo oggetto stringa per archiviare la nuova sequenza di caratteri e il nuovo oggetto viene assegnato a b. La stringa "h" è quindi idonea per Garbage Collection.  
   
-```c#  
+```csharp  
   
       string b = "h";  
 b += "ello";  
 ```  
   
- È possibile utilizzare l'operatore \[\] per accedere in sola lettura ai singoli caratteri di un oggetto `string`:  
+ L'operatore [] può essere usato per accedere in lettura ai singoli caratteri di un `string`:  
   
-```c#  
+```csharp  
   
       string str = "test";  
 char x = str[2];  // x = 's';  
 ```  
   
- Le stringhe letterali sono di tipo `string` e possono essere scritte in due formati, tra virgolette oppure tra virgolette e preceduti da @.  Le stringhe letterali racchiuse tra virgolette sono precedute e seguite da virgolette doppie \("\):  
+ I valori letterali della stringa sono di tipo `string` e possono essere scritti in due formati, tra virgolette e @-quoted. I valori letterali della stringa tra virgolette sono racchiusi in virgolette doppie ("):  
   
-```c#  
+```csharp  
 "good morning"  // a string literal  
 ```  
   
- I valori letterali stringa possono contenere qualsiasi valore letterale carattere.  Le sequenze di escape sono incluse.  Nell'esempio seguente vengono utilizzate le sequenze di escape `\\` per la barra rovesciata, `\u0066` per la lettera f e `\n` per l'indicatore di nuova riga.  
+ I valori letterali della stringa possono contenere qualsiasi carattere letterale. Sono incluse le sequenze di escape. L'esempio seguente usa una sequenza di escape `\\` per la barra rovesciata, `\u0066` per la lettera f e `\n` per la nuova riga.  
   
 ```  
   
@@ -78,44 +97,44 @@ Console.WriteLine(a);
 ```  
   
 > [!NOTE]
->  Il codice di escape `\`u`dddd`, dove `dddd` è un numero a quattro cifre, rappresenta il carattere Unicode U\+`dddd`.  Sono inoltre riconosciuti i codici di escape Unicode a otto cifre: `\Udddddddd`.  
+>  Il codice di escape `\`u`dddd` (dove `dddd` è un numero a quattro cifre) rappresenta il carattere Unicode U +`dddd`. Vengono riconosciuti anche i codici di escape Unicode a otto cifre: `\Udddddddd`.  
   
- I valori letterali stringa verbatim iniziano con @ e sono anche racchiusi tra virgolette doppie.  Ad esempio:  
+ I valori letterali della stringa verbatim iniziano con @ e sono anche racchiusi tra virgolette doppie. Ad esempio:  
   
-```c#  
+```csharp  
 @"good morning"  // a string literal  
 ```  
   
- Il vantaggio dell'utilizzo delle stringhe verbatim è che le sequenze di escape *non* vengono elaborate e questo semplifica la scrittura, ad esempio, di un nome di file completo:  
+ Il vantaggio delle stringhe verbatim è che le sequenze di escape *non* sono elaborate, e quindi rendono più semplice scrivere, ad esempio, un nome completo del file:  
   
-```c#  
+```csharp  
 @"c:\Docs\Source\a.txt"  // rather than "c:\\Docs\\Source\\a.txt"  
 ```  
   
- Per includere delle virgolette doppie in una stringa tra virgolette preceduta da @, sarà necessario raddoppiare le virgolette:  
+ Per includere le virgolette doppie in una stringa @-quoted, duplicarla:  
   
-```c#  
+```csharp  
 @"""Ahoy!"" cried the captain." // "Ahoy!" cried the captain.  
 ```  
   
- È inoltre possibile utilizzare il simbolo @ per avvalersi di identificatori a cui si fa riferimento \([\/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)\) e che rappresentano parole chiave C\#.  
+ Un altro impiego del simbolo @ è l'uso di identificatori ([/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)) con riferimento che sono parole chiave di C#.  
   
- Per ulteriori informazioni sulle stringhe in C\#, vedere [Stringhe](../../../csharp/programming-guide/strings/index.md).  
+ Per altre informazioni sulle stringhe in C#, vedere [Stringhe](../../../csharp/programming-guide/strings/index.md).  
   
-## Esempio  
+## <a name="example"></a>Esempio  
  [!code-cs[csrefKeywordsTypes#17](../../../csharp/language-reference/keywords/codesnippet/CSharp/string_1.cs)]  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [Procedure consigliate per l'utilizzo di stringhe](../Topic/Best%20Practices%20for%20Using%20Strings%20in%20the%20.NET%20Framework.md)   
- [Parole chiave di C\#](../../../csharp/language-reference/keywords/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [Procedure consigliate per l'uso delle stringhe](http://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7)   
+ [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Tipi di riferimento](../../../csharp/language-reference/keywords/reference-types.md)   
- [Tipi valore](../../../csharp/language-reference/keywords/value-types.md)   
- [Operazioni di base su stringhe](../Topic/Basic%20String%20Operations%20in%20the%20.NET%20Framework.md)   
- [Creazione di nuove stringhe](../Topic/Creating%20New%20Strings%20in%20the%20.NET%20Framework.md)   
+ [Tipi di valore](../../../csharp/language-reference/keywords/value-types.md)   
+ [Operazioni di base su stringhe](http://msdn.microsoft.com/library/8133d357-90b5-4b62-9927-43323d99b6b6)   
+ [Creazione di nuove stringhe](http://msdn.microsoft.com/library/06fdf123-2fac-4459-8904-eb48ab908a30)   
  [Tabella di formattazione dei risultati numerici](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)

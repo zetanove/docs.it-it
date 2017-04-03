@@ -1,75 +1,94 @@
 ---
-title: "Classi (Guida per programmatori C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "classi [C#]"
-  - "C# (linguaggio), classi"
+title: Classi (Guida per programmatori C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- classes [C#]
+- C# language, classes
 ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
 caps.latest.revision: 40
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 40
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 1a7d66be3ce0a4a24fd95d5b77787dcad5598f4d
+ms.lasthandoff: 03/13/2017
+
 ---
-# Classi (Guida per programmatori C#)
-Una *classe* è un costrutto che consente di creare tipi personalizzati raggruppando insieme variabili di altri tipi, metodi ed eventi.  Una classe è simile a un progetto iniziale.  Definisce i dati e il comportamento di un tipo.  Se la classe non è dichiarata come statica, il codice client può utilizzarla creando *oggetti* o *istanze* assegnati a una variabile.  La variabile rimane in memoria finché tutti i riferimenti ad essa non escono dall'ambito.  In quel momento, CLR la contrassegna come idonea per la procedura di Garbage Collection.  Se la classe è dichiarata come [statica](../../../csharp/language-reference/keywords/static.md), in memoria ne esiste una sola copia accessibile dal codice client solo tramite la classe stessa, non una *variabile dell'istanza*.  Per ulteriori informazioni, vedere [Classi statiche e membri di classi statiche](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
+# <a name="classes-c-programming-guide"></a>Classi (Guida per programmatori C#)
+Una *classe* è un costrutto che consente di creare tipi personalizzati raggruppando insieme variabili di altri tipi, metodi e eventi. Una classe è simile a un progetto. Definisce i dati e il comportamento di un tipo. Se la classe non è dichiarata come statica, il codice client può usarla creando *oggetti* o *istanze* che vengono assegnate a una variabile. La variabile rimane in memoria fino a quando tutti i riferimenti non escono dall'ambito. In questa fase, CLR la contrassegna come idonea per Garbage Collection. Se la classe viene dichiarata come [statica](../../../csharp/language-reference/keywords/static.md), viene mantenuta in memoria solo una copia e il codice client può accedervi solo tramite la classe stessa, non con una *variabile di istanza*. Per altre informazioni, vedere [Classi statiche e membri di classi statiche](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
   
- A differenza delle strutture, le classi supportano l'*ereditarietà*, una caratteristica fondamentale della programmazione orientata a oggetti.  Per ulteriori informazioni, vedere [Ereditarietà](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
+ Diversamente da struct, le classi supportano l'*ereditarietà*, una caratteristica fondamentale della programmazione orientata a oggetti. Per altre informazioni, vedere [Ereditarietà](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
   
-## Dichiarazioni di classi  
- Le classi vengono dichiarate utilizzando la parola chiave [class](../../../csharp/language-reference/keywords/class.md), come illustrato nell'esempio seguente:  
+## <a name="declaring-classes"></a>Dichiarazione di classi  
+ Le classi vengono dichiarate usando la parola chiave [class](../../../csharp/language-reference/keywords/class.md), come illustrato nell'esempio seguente:  
   
  [!code-cs[csProgGuideObjects#79](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_1.cs)]  
   
- La parola chiave `class` è preceduta dal livello di accesso.  Poiché in questo caso viene utilizzato [public](../../../csharp/language-reference/keywords/public.md), qualsiasi utente può creare oggetti da questa classe.  Il nome della classe segue la parola chiave `class`.  Il resto della definizione è costituito dal corpo della classe, in cui vengono definiti il comportamento e i dati.  I campi, le proprietà, i metodi e gli eventi di una classe vengono collettivamente definiti *membri della classe*.  
+ La parola chiave `class` è preceduta dal livello di accesso. Poiché in questo caso viene usata la parola chiave [public](../../../csharp/language-reference/keywords/public.md), chiunque può creare oggetti da questa classe. Il nome della classe segue la parola chiave `class`. Il resto della definizione è il corpo della classe, in cui vengono definiti il comportamento e i dati. I campi, le proprietà, i metodi e gli eventi in una classe vengono collettivamente definiti *membri della classe*.  
   
-## Creazione di oggetti  
- Anche se a volte vengono utilizzati in modo interscambiabile, classi e oggetti sono differenti.  Una classe definisce un tipo di oggetto, ma non l'oggetto stesso.  Un oggetto è un'entità concreta basata su una classe e viene a volte definito istanza di una classe.  
+## <a name="creating-objects"></a>Creazione di oggetti  
+ Anche se vengono talvolta usati in modo intercambiabile, una classe e un oggetto sono elementi diversi. Una classe definisce un tipo di oggetto, ma non è un oggetto. Un oggetto è un'entità concreta ed è basato su una classe. Talvolta si fa riferimento all'oggetto come istanza di una classe.  
   
- Gli oggetti possono essere creati utilizzando la parola chiave [new](../../../csharp/language-reference/keywords/new.md) seguita dal nome della classe su cui sarà basato l'oggetto, come illustrato di seguito:  
+ Gli oggetti possono essere creati tramite la parola chiave [new](../../../csharp/language-reference/keywords/new.md) seguita dal nome della classe su cui si baserà l'oggetto, nel modo seguente:  
   
  [!code-cs[csProgGuideObjects#80](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_2.cs)]  
   
- Quando viene creata un'istanza di una classe, al programmatore viene restituito un riferimento all'oggetto.  Nell'esempio precedente `object1` è un riferimento a un oggetto basato su `Customer`.  Fa riferimento al nuovo oggetto, ma non contiene i dati dell'oggetto stesso.  In realtà è possibile creare un riferimento a un oggetto anche senza creare l'oggetto:  
+ Quando viene creata un'istanza di una classe, viene passato al programmatore un riferimento all'oggetto. Nell'esempio precedente, `object1` è un riferimento a un oggetto basato su `Customer`. Questo riferimento indica il nuovo oggetto, ma non contiene i dati dell'oggetto. Infatti, è possibile creare un riferimento all'oggetto senza creare un oggetto:  
   
  [!code-cs[csProgGuideObjects#81](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_3.cs)]  
   
- Non è consigliabile creare riferimenti a oggetti come questo che non fa riferimento a un oggetto, perché il tentativo di accedere a un oggetto tramite tale riferimento genererà un errore in fase di esecuzione.  È tuttavia possibile creare un riferimento a un oggetto, creando un nuovo oggetto oppure assegnandolo a un oggetto esistente, come illustrato di seguito:  
+ Non è consigliabile creare riferimenti a oggetti come questo che non fanno riferimento a un oggetto reale perché il tentativo di accedere a un oggetto tramite tale riferimento avrà esito negativo in fase di esecuzione. Tuttavia, tale riferimento può essere creato per fare riferimento a un oggetto, creando un nuovo oggetto oppure assegnandolo a un oggetto esistente, come illustrato di seguito:  
   
  [!code-cs[csProgGuideObjects#82](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_4.cs)]  
   
- Con questo codice vengono creati due riferimenti allo stesso oggetto.  Pertanto le modifiche effettuate all'oggetto tramite `object3` si rifletteranno nei successivi utilizzi di `object4`,  perché agli oggetti basati su classi viene fatto riferimento mediante riferimento, in quanto le classi sono note come tipi riferimento.  
+ Questo codice crea due riferimenti a oggetti che fanno entrambi riferimento allo stesso oggetto. Tutte le modifiche effettuate all'oggetto tramite `object3` si rifletteranno tuttavia nei successivi usi di `object4`. Poiché gli oggetti che si basano su classi vengono indicati tramite riferimenti, le classi sono note come tipi di riferimento.  
   
-## Ereditarietà delle classi  
- L'ereditarietà si ottiene tramite l'utilizzo di una *derivazione*, ossia una classe viene dichiarata mediante una *classe di base* da cui eredita dati e comportamenti.  Una classe base viene specificata aggiungendo un segno di due punti e il nome della classe base dopo il nome della classe derivata, come illustrato di seguito:  
+## <a name="class-inheritance"></a>Ereditarietà di classe  
+ L'ereditarietà si ottiene usando una *derivazione*, vale a dire che una classe viene dichiarata usando una *classe di base* da cui eredita dati e comportamento. Una classe di base viene specificata tramite l'aggiunta di due punti e il nome della classe di base dopo il nome della classe derivata, nel modo seguente:  
   
  [!code-cs[csProgGuideObjects#83](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_5.cs)]  
   
- Quando una classe dichiara una classe di base, eredita tutti i membri di quest'ultima, tranne i costruttori.  
+ Quando una classe dichiara una classe di base, eredita tutti i membri della classe di base, a eccezione dei costruttori.  
   
- A differenza del C\+\+, in C\# una classe può ereditare direttamente da una sola classe base.  Tuttavia, dato che una classe base può ereditare a sua volta da un'altra classe, una classe può ereditare indirettamente da più classi base.  Inoltre, una classe può implementare direttamente più di un'interfaccia.  Per ulteriori informazioni, vedere [Interfacce](../../../csharp/programming-guide/interfaces/index.md).  
+ Diversamente da C++, una classe di C# può ereditare direttamente solo da una classe di base. Tuttavia, poiché una classe di base può ereditare da un'altra classe, una classe può ereditare indirettamente più classi di base. Una classe può anche implementare direttamente più di un'interfaccia. Per altre informazioni, vedere [Interfacce](../../../csharp/programming-guide/interfaces/index.md).  
   
- Una classe può essere dichiarata [astratta](../../../csharp/language-reference/keywords/abstract.md).  Una classe astratta contiene metodi astratti che dispongono di una definizione della firma, ma non dispongono di implementazione.  Non è possibile creare istanze di una classe astratta.  È possibile utilizzarla solo tramite classi derivate che implementano i metodi astratti.  Al contrario, una classe [sealed](../../../csharp/language-reference/keywords/sealed.md) non consente alle altre classi di derivare da sé stessa.  Per ulteriori informazioni, vedere [Classi e membri delle classi astratte e sealed](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
+ Una classe può essere dichiarata come [astratta](../../../csharp/language-reference/keywords/abstract.md). Una classe astratta contiene metodi astratti che hanno una definizione di firma, ma senza implementazione. Non è possibile creare un'istanza di classi astratte. Le classi astratte possono essere usate solo tramite classi derivate che implementano i metodi astratti. Al contrario, una classe [sealed](../../../csharp/language-reference/keywords/sealed.md) non consente ad altre classi di derivare da tale classe. Per altre informazioni, vedere [Classi e membri delle classi astratte e sealed](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
- Le definizioni di classe possono essere suddivise tra file di origine differenti.  Per ulteriori informazioni, vedere [Classi e metodi parziali](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md).  
+ Le definizioni di classe possono essere suddivise tra file di origine diversa. Per altre informazioni, vedere [Classi e metodi parziali](../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md).  
   
-## Descrizione  
- Nell'esempio seguente viene definita una classe pubblica, contenente un unico campo, un metodo e un metodo speciale denominato costruttore.  Per ulteriori informazioni, vedere [Costruttori](../../../csharp/programming-guide/classes-and-structs/constructors.md).  Viene quindi creata un'istanza di questa classe con la parola chiave `new`.  
+## <a name="description"></a>Descrizione  
+ Nell'esempio seguente vengono definiti una classe pubblica che contiene un singolo campo, un metodo e un metodo speciale denominato costruttore. Per altre informazioni, vedere [Costruttori](../../../csharp/programming-guide/classes-and-structs/constructors.md). Viene quindi creata un'istanza alla classe con la parola chiave `new`.  
   
-## Esempio  
+## <a name="example"></a>Esempio  
  [!code-cs[csProgGuideObjects#84](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_6.cs)]  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [Programmazione orientata ad oggetti](../Topic/Object-Oriented%20Programming%20\(C%23%20and%20Visual%20Basic\).md)   
+## <a name="see-also"></a>Vedere anche  
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [Programmazione orientata ad oggetti](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)   
  [Polimorfismo](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)   
  [Membri](../../../csharp/programming-guide/classes-and-structs/members.md)   
  [Metodi](../../../csharp/programming-guide/classes-and-structs/methods.md)   

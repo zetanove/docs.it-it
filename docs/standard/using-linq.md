@@ -25,7 +25,7 @@ LINQ offre funzionalità per eseguire query a livello di linguaggio e un'API con
 
 Sintassi di query a livello di linguaggio:
 
-```cs
+```csharp
 var linqExperts = from p in programmers
                   where p.IsNewToLINQ
                   select new LINQExpert(p);
@@ -34,7 +34,7 @@ var linqExperts = from p in programmers
 
 Stesso esempio usando l'API `IEnumerable<T>`:
 
-```cs
+```csharp
 var linqExperts = programmers.Where(p => IsNewToLINQ)
                              .Select(p => new LINQExpert(p));
 
@@ -46,7 +46,7 @@ Si supponga di avere un elenco di animali domestici e di volerlo convertire in u
 
 Codice imperativo tradizionale:
 
-```cs
+```csharp
 var petLookup = new Dictionary<int, Pet>();
 
 foreach (var pet in pets)
@@ -60,7 +60,7 @@ Scopo del codice non è creare un nuovo `Dictionary<int, Pet>` e aggiungerlo tra
 
 Espressione LINQ equivalente:
 
-```cs
+```csharp
 var petLookup = pets.ToDictionary(pet => pet.RFID);
 
 ```
@@ -73,7 +73,7 @@ Per gran parte dei software in circostanze normali, tutto è basato sulla gestio
 
 Nell'esempio seguente vengono individuati tutti gli elementi XML con un valore dell'attributo specifico.
 
-```cs
+```csharp
 public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement documentRoot, string elementName,
                                            string attributeName, string value)
 {
@@ -92,14 +92,14 @@ I provider LINQ non consentono solo di interagire con XML. [LINQ to SQL](https:/
 
 È una domanda frequente. Dopo tutto, questa sintassi
 
-```cs
+```csharp
 var filteredItems = myItems.Where(item => item.Foo);
 
 ```
 
 è molto più breve rispetto alla seguente:
 
-```cs
+```csharp
 var filteredItems = from item in myItems
                     where item.Foo
                     select item;
@@ -132,7 +132,7 @@ Di seguito una rapida dimostrazione di alcune delle parti essenziali di LINQ. No
 
 *   Essenziali sono `Where`, `Select` e `Aggregate`:
 
-```cs
+```csharp
 // Filtering a list
 var germanShepards = dogs.Where(dog => dog.Breed == DogBreed.GermanShepard);
 
@@ -156,7 +156,7 @@ int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
 
 *   Elenco di elenchi bidimensionale:
 
-```cs
+```csharp
 // Transforms the list of kennels into a list of all their dogs.
 var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
 
@@ -164,7 +164,7 @@ var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
 
 *   Unione tra due set, con criteri di confronto personalizzati:
 
-```cs
+```csharp
 public class DogHairLengthComparer : IEqualityComparer<Dog>
 {
     public bool Equals(Dog a, Dog b)
@@ -200,7 +200,7 @@ var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthCompa
 
 *   Intersezione tra due set:
 
-```cs
+```csharp
 // Gets the volunteers who spend share time with two humane societies.
 var volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
                                                      new VolunteerTimeComparer());
@@ -209,7 +209,7 @@ var volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
 
 *   Ordinamento:
 
-```cs
+```csharp
 // Get driving directions, ordering by if it's toll-free before estimated driving time.
 var results = DirectionsProcessor.GetDirections(start, end)
               .OrderBy(direction => direction.HasNoTolls)
@@ -219,7 +219,7 @@ var results = DirectionsProcessor.GetDirections(start, end)
 
 *   Infine, un esempio più avanzato: determinare se i valori delle proprietà di due istanze dello stesso tipo sono uguali. L'esempio è stato preso in prestito e modificato da [questo articolo di StackOverflow](http://stackoverflow.com/a/844855):
 
-```cs
+```csharp
 public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params string[] ignore) where T : class
 {
     if (self != null && to != null)
@@ -248,7 +248,7 @@ PLINQ o Parallel LINQ è un motore di esecuzione parallela per le espressioni LI
 
 Si consideri quanto segue.
 
-```cs
+```csharp
 public static string GetAllFacebookUserLikesMessage(IEnumerable<FacebookUser> facebookUsers)
 {
     var seed = default(UInt64);

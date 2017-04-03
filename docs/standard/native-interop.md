@@ -38,7 +38,7 @@ P/Invoke è una tecnologia che consente di accedere dal codice gestito a struttu
 
 Per iniziare viene mostrato l'esempio più comune, ovvero la chiamata di funzioni non gestite nel codice gestito. Di seguito viene visualizzata una finestra di messaggio da un'applicazione della riga di comando:
 
-```cs
+```csharp
 using System.Runtime.InteropServices;
 
 public class Program {
@@ -66,7 +66,7 @@ La restante parte dell'esempio è semplicemente la chiamata del metodo, analoga 
 
 L'esempio è simile per macOS. Uno degli elementi che è necessario cambiare è, naturalmente, il nome della libreria nell'attributo `DllImport`, poiché macOS utilizza un differente schema di denominazione delle librerie dinamiche. Nell'esempio seguente viene usata la funzione `getpid(2)` per ottenere l'ID processo dell'applicazione e stamparlo nella console.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -89,7 +89,7 @@ namespace PInvokeSamples {
 
 Naturalmente, il procedimento è simile in Linux. Il nome della funzione è lo stesso, dal momento che `getpid(2)` è la chiamata di sistema [POSIX](https://en.wikipedia.org/wiki/POSIX).
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -116,7 +116,7 @@ Il runtime consente naturalmente la comunicazione in entrambe le direzioni, perm
 
 La modalità di uso di questa funzionalità è simile al processo di passaggio dal codice gestito a quello nativo descritto in precedenza. Per un determinato callback, viene definito un delegato corrispondente alla firma. Tale delegato viene quindi passato al metodo esterno. Il runtime eseguirà tutte le altre operazioni.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -160,7 +160,7 @@ Tenendo presente questo, passare ad analizzare l'esempio:
 
 Gli esempi Linux e macOS sono riportati di seguito. Per questi esempi viene usata la funzione `ftw` disponibile in `libc`, la libreria C. Questa funzione viene usata per scorrere le gerarchie di directory e accetta un puntatore a una funzione come uno dei propri parametri. Tale funzione ha la firma seguente: `int (*fn) (const char *fpath, const struct stat *sb, int typeflag)`.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -213,7 +213,7 @@ namespace PInvokeSamples {
 
 Nell'esempio macOS viene usata la stessa funzione. L'unica differenza è l'argomento dell'attributo `DllImport`, dal momento che macOS mantiene `libc` in una posizione differente.
 
-```cs
+```csharp
 using System;
 using System.Runtime.InteropServices;
 
@@ -272,7 +272,7 @@ Il termine **marshalling** indica il processo di trasformazione dei tipi quando 
 
 Il motivo per cui il marshalling è necessario è che i tipi presenti nel codice gestito e quelli presenti nel codice non gestito sono differenti. Nel codice gestito, ad esempio, si ha un elemento `String`, mentre nell'ambiente non gestito le stringhe possono essere Unicode ("wide"), non Unicode, con terminazione null, ASCII, e così via. Per impostazione predefinita, il sottosistema di P/Invoke tenterà di eseguire le operazioni necessarie in base al comportamento predefinito descritto in [MSDN](https://msdn.microsoft.com/library/zah6xy75.aspx). Tuttavia, per i casi in cui è necessario un controllo aggiuntivo, è possibile usare l'attributo `MarshalAs` per specificare il tipo previsto sul lato non gestito. Ad esempio, se si vuole che la stringa venga inviata come stringa ANSI con terminazione null, è possibile usare un codice simile al seguente:
 
-```cs
+```csharp
 [DllImport("somenativelibrary.dll"]
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
@@ -282,7 +282,7 @@ static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
 Un altro aspetto del marshalling dei tipi è il modo in cui è possibile passare una struttura a un metodo non gestito. Ad esempio, alcuni dei metodi non gestiti richiedono una struttura come parametro. In questi casi, è necessario creare una classe o una struttura corrispondente nel codice gestito per usarla come parametro. La semplice definizione della classe, tuttavia, non è sufficiente. È necessario anche indicare al gestore di marshalling come eseguire il mapping dei campi della classe alla struttura non gestita. A questo punto entra in gioco l'attributo `StructLayout`.
 
-```cs
+```csharp
 [DllImport("kernel32.dll")]
 static extern void GetSystemTime(SystemTime systemTime);
 
@@ -324,7 +324,7 @@ typedef struct _SYSTEMTIME {
 
 La procedura per Linux e macOS è già stata mostrata nell'esempio precedente. Viene comunque mostrata anche di seguito.
 
-```cs
+```csharp
 [StructLayout(LayoutKind.Sequential)]
 public class StatClass {
         public uint DeviceID;

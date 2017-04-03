@@ -1,90 +1,106 @@
 ---
-title: "Visual Basic Language Walkthroughs | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Visual Basic, walkthroughs"
-  - "examples [Visual Basic]"
-  - "Visual Basic code, walkthroughs"
-  - "walkthroughs [Visual Basic]"
+title: Procedure dettagliate relative al linguaggio Visual Basic | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- Visual Basic, walkthroughs
+- examples [Visual Basic]
+- Visual Basic code, walkthroughs
+- walkthroughs [Visual Basic]
 ms.assetid: e4e1f849-e1ce-4cf7-8483-d9b4c4887a8e
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 18
----
-# Visual Basic Language Walkthroughs
-[!INCLUDE[vs2017banner](../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 07743cabc00f65b1369c2733e5119cf1eaf47e0a
+ms.lasthandoff: 03/13/2017
 
-Le istruzioni passo passo relative a situazioni comuni disponibili nelle procedure dettagliate sono un ottimo strumento per chi si accosta per la prima volta a un prodotto o ad alcune funzionalità.  
+---
+# <a name="visual-basic-language-walkthroughs"></a>Procedure dettagliate relative al linguaggio Visual Basic
+Le procedure dettagliate forniscono istruzioni specifiche per scenari comuni, che li rende un ottimo strumento per apprendere l'utilizzo del prodotto o di una determinata area funzionale.  
   
- [Scrittura di un programma di Async](../Topic/Walkthrough:%20Accessing%20the%20Web%20by%20Using%20Async%20and%20Await%20\(C%23%20and%20Visual%20Basic\).md)  
- Viene illustrato come creare una soluzione asincrona tramite [Asincrono](../visual-basic/language-reference/modifiers/async.md) e [Attendere](../visual-basic/language-reference/operators/await-operator.md), introdotti in [!INCLUDE[vs_dev11_long](../csharp/includes/vs-dev11-long-md.md)].  
+ [Scrittura di un programma asincrono](./programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
+ Spiega come creare una soluzione asincrona usando [async ](../visual-basic/language-reference/modifiers/async.md) e [await](../visual-basic/language-reference/operators/await-operator.md), introdotte in [!INCLUDE[vs_dev11_long](../csharp/includes/vs_dev11_long_md.md)].  
   
  [Dichiarazione e generazione di eventi](../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)  
- Viene illustrato come dichiarare e implementare eventi in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  
+ Viene illustrato come dichiarare e generare eventi in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
  [Gestione degli eventi](../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)  
- Viene illustrato come gestire gli eventi utilizzando la parola chiave `WithEvents` standard o le nuove parole chiave `AddHandler`\/`RemoveHandler`.  
+ Spiega come gestire gli eventi usando la parola chiave standard `WithEvents` o le nuove parole chiave `AddHandler` / `RemoveHandler`.  
   
  [Creazione e implementazione di interfacce](../visual-basic/programming-guide/language-features/interfaces/walkthrough-creating-and-implementing-interfaces.md)  
- Viene illustrato come dichiarare e implementare interfacce in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  
+ Viene illustrato come dichiarare e implementare le interfacce in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
  [Definizione delle classi](../visual-basic/programming-guide/language-features/objects-and-classes/walkthrough-defining-classes.md)  
- Viene illustrato come dichiarare una classe e i relativi campi, proprietà, metodi ed eventi.  
+ Descrive la procedura di dichiarazione di una classe e dei relativi campi, proprietà, metodi ed eventi.  
   
- [Scrittura di query in Visual Basic](../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)  
- Viene descritto come utilizzare le funzionalità del linguaggio Visual Basic per scrivere espressioni di query [!INCLUDE[vbteclinqext](../csharp/getting-started/includes/vbteclinqext-md.md)].  
+ [Scrittura delle query in Visual Basic](../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)  
+ Viene illustrato come usare le funzionalità del linguaggio Visual Basic per scrivere le espressioni di query [!INCLUDE[vbteclinqext](../csharp/getting-started/includes/vbteclinqext_md.md)].  
   
- [Implementazione di IEnumerable\(Of T\) in Visual Basic](../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)  
- Viene descritto come creare una classe che implementa l'interfaccia `IEnumerable(Of String)` e una classe che implementa l'interfaccia `IEnumerator(Of String)` per leggere un file di testo una riga per volta.  
+ [Implementazione di IEnumerable(Of T) in Visual Basic](../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)  
+ Viene illustrato come creare una classe che implementa l'interfaccia `IEnumerable(Of String)` e una classe che implementa l'interfaccia `IEnumerator(Of String)` per leggere un file di testo una riga alla volta.  
   
- [Chiamata ad API di Windows](../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
- Viene descritto come utilizzare le istruzioni `Declare` e come chiamare le API di Windows.  Vengono inoltre fornite informazioni su come utilizzare gli attributi per controllare il marshalling per la chiamata API e su come esporre una chiamata API come metodo di una classe.  
+ [Chiamata delle API di Windows](../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
+ Spiega come usare le istruzioni `Declare` e chiamare le API di Windows. Include informazioni sull'uso degli attributi per controllare il marshalling per la chiamata API e su come esporre una chiamata API come metodo di una classe.  
   
  [Creazione di oggetti COM con Visual Basic](../visual-basic/programming-guide/com-interop/walkthrough-creating-com-objects.md)  
- Viene illustrato come creare oggetti COM in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] con e senza il modello di classe COM.  
+ Viene illustrato come creare oggetti COM in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], con e senza il modello di classe COM.  
   
  [Implementazione dell'ereditarietà con gli oggetti COM](../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
- Viene descritto come utilizzare [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] 6.0 per creare un oggetto COM contenente una classe e quindi come utilizzare tale oggetto come classe di base in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)].  
+ Spiega come usare [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] 6.0 per creare un oggetto COM contenente una classe che verrà poi usata come classe di base in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
- [Multithreading](../Topic/Walkthrough:%20Multithreading%20with%20the%20BackgroundWorker%20Component%20\(C%23%20and%20Visual%20Basic\).md)  
- Viene illustrato come creare un'applicazione con multithreading per cercare le occorrenze di una parola in un file di testo.  
+ [Multithreading](http://msdn.microsoft.com/library/2cbf5116-8499-4af9-818c-6f7c1c2ad2c9)  
+ Viene illustrato come creare un'applicazione multithreading che cerca le occorrenze di una parola in un file di testo.  
   
  [Individuazione della posizione di inserimento delle informazioni con My.Application.Log](../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)  
- Vengono descritte le impostazioni `My.Application.Log` predefinite e viene illustrato come determinare le impostazioni per l'applicazione.  
+ Descrive le impostazioni predefinite di `My.Application.Log` e spiega come determinare le impostazioni dell'applicazione.  
   
  [Modifica della posizione di inserimento delle informazioni con My.Application.Log](../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)  
- Viene illustrato come eseguire l'override delle impostazioni `My.Application.Log` e `My.Log` predefinite per la registrazione di informazioni relative agli eventi e come fare in modo che l'oggetto `Log` scriva in altri listener di log.  
+ Spiega come eseguire l'override delle impostazioni predefinite di `My.Application.Log` e `My.Log` per registrare le informazioni sull'evento e fare in modo che l'oggetto `Log` scriva in altri listener di log.  
   
- [Operazioni di filtro dell'output di My.Application.Log](../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md)  
- Viene illustrato come modificare le operazioni di filtro del log predefinite per l'oggetto `My.Application.Log`.  
+ [Filtro dell'output di My.Application.Log](../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md)  
+ Viene illustrato come modificare il filtro di log predefinito per l'oggetto `My.Application.Log`.  
   
  [Creazione di listener di log personalizzati](../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)  
- Viene illustrato come creare un listener di log personalizzato e configurarlo per l'attesa dell'output dell'oggetto `My.Application.Log`.  
+ Spiega come creare un listener di log personalizzato e configurarlo in modo che resti in ascolto dell'output dell'oggetto `My.Application.Log`.  
   
- [Incorporare tipi da assembly gestiti](../Topic/Walkthrough:%20Embedding%20Types%20from%20Managed%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md)  
- Viene descritto come creare un assembly e un programma client che incorpori tipi dall'assembly.  
+ [Incorporamento dei tipi da assembly gestiti](http://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
+ Viene descritto come creare un assembly e un programma client che ne incorpori i tipi.  
   
- [Verificare che le password siano complesse \(Visual Basic\)](../visual-basic/programming-guide/language-features/strings/walkthrough-validating-that-passwords-are-complex.md)  
- Viene illustrato come verificare le caratteristiche delle password complesse e aggiornare un parametro stringa con informazioni sui controlli non superati da una password.  
+ [Verifica della complessità delle password (Visual Basic)](../visual-basic/programming-guide/language-features/strings/walkthrough-validating-that-passwords-are-complex.md)  
+ Spiega come verificare le caratteristiche delle password complesse e aggiornare un parametro di stringa con le informazioni sui controlli che una password non ha superato.  
   
  [Crittografia e decrittografia di stringhe in Visual Basic](../visual-basic/programming-guide/language-features/strings/walkthrough-encrypting-and-decrypting-strings.md)  
- Viene illustrato come utilizzare la classe <xref:System.Security.Cryptography.DESCryptoServiceProvider> per crittografare e decrittografare stringhe.  
+ Spiega come usare la classe <xref:System.Security.Cryptography.DESCryptoServiceProvider> per crittografare e decrittografare le stringhe.  
   
  [Modifica di file e cartelle in Visual Basic](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
- Viene descritto come utilizzare le funzioni di [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] per individuare informazioni su un file, cercare una stringa in un file e scrivere in un file.  
+ Viene illustrato come usare le funzioni [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] per determinare informazioni su un file, cercare una stringa in un file e scrivere in un file.  
   
- [Modifica di file tramite metodi di .NET Framework](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- Viene descritto come utilizzare i metodi di [!INCLUDE[dnprdnshort](../csharp/getting-started/includes/dnprdnshort-md.md)] per individuare informazioni su un file, cercare una stringa in un file e scrivere in un file.  
+ [Modifica di file mediante i metodi .NET Framework](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
+ Viene illustrato come usare i metodi [!INCLUDE[dnprdnshort](../csharp/getting-started/includes/dnprdnshort_md.md)] per determinare informazioni su un file, cercare una stringa in un file e scrivere in un file.  
   
- [Mantenimento di un oggetto in Visual Basic](../Topic/Walkthrough:%20Persisting%20an%20Object%20\(C%23%20and%20Visual%20Basic\).md)  
- Viene descritto come creare un oggetto semplice e mantenerne i dati in un file.  
+ [Persistenza di un oggetto in Visual Basic](http://msdn.microsoft.com/library/cb0a0917-08d5-4578-ad2b-3764ccf6167f)  
+ Viene illustrato come creare un oggetto semplice e rendere persistenti i relativi dati in un file.  
   
- [Supporto test Preliminare con la funzionalità di generazione dall'utilizzo](../Topic/Walkthrough:%20Test-First%20Support%20with%20the%20Generate%20From%20Usage%20Feature.md)  
- Viene illustrato come eseguire il sviluppo con test preliminare, in cui innanzitutto necessario scrivere unit test e quindi si scrive il codice sorgente per eseguire i test riuscita.
+ [Supporto test preliminare con la funzionalità di generazione dall'utilizzo](http://msdn.microsoft.com/library/764c17a4-cd95-4c23-bf63-d92d9c5adfb2)  
+ Spiega come eseguire uno sviluppo con test preliminare, in cui prima si scrivono gli unit test e successivamente il codice sorgente in modo che il test abbia esito positivo.

@@ -29,7 +29,7 @@ I generics sono anche disponibili in fase di esecuzione o **reified**. Ciò sign
 
 Questo è un breve programma che illustra l'efficienza di conoscere il tipo di struttura dei dati in fase di esecuzione:
 
-```cs
+```csharp
   using System;
   using System.Collections;
   using System.Collections.Generic;

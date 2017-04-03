@@ -1,36 +1,54 @@
 ---
-title: "Guida per programmatori C# | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "cs.langref"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "linguaggio C#, concetti"
-  - "linguaggio C#, manuale di programmazione"
-  - "tabelle di riferimento [C#]"
-  - "Visual C#, concetti di programmazione"
+title: Guida per programmatori C# | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- cs.langref
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- reference tables [C#]
+- C# language, programming guide
+- Visual C#, programming concepts
+- C# language, concepts
 ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
 caps.latest.revision: 45
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 45
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 4a4c3f5dbe375f723b70f62ccee1a91d577f4949
+ms.lasthandoff: 03/13/2017
+
 ---
-# Guida per programmatori C# #
-In questa sezione vengono fornite informazioni dettagliate sulle funzionalità principali del linguaggio C\# e sulle funzionalità accessibili a C\# tramite .NET Framework.  
+# <a name="c-programming-guide"></a>Guida per programmatori C#
+Questa sezione include informazioni dettagliate sulle principali funzionalità del linguaggio C# e sulle funzionalità accessibili a C# tramite .NET Framework.  
   
- Per la maggior parte di questa sezione, si presuppone che si disponga già di conoscenze su C\# e sui concetti di programmazione generali.  Se non si hanno conoscenze in ambito di programmazione o relativamente a C\#, è possibile visitare il sito Web [Centro per sviluppatori C\#](http://go.microsoft.com/fwlink/?linkid=95125), in cui sono disponibili esercitazioni, esempi e video introduttivi.  
+ La maggior parte di questa sezione presuppone che siano già noti i concetti principali relativi a C# e alla programmazione in generale. Gli utenti senza alcuna conoscenza di programmazione o del linguaggio C# possono visitare il [Centro per sviluppatori di C#](http://go.microsoft.com/fwlink/?linkid=95125), dove è possibile trovare numerosi esempi, esercitazioni e video per iniziare più facilmente.  
   
- Per informazioni su parole chiave specifiche, operatori e direttive per il preprocessore, vedere [Riferimenti per C\#](../../csharp/language-reference/index.md).  Per informazioni sulla specifica del linguaggio C\#, vedere [Specifiche del linguaggio C\#](../../csharp/language-reference/language-specification.md).  
+ Per informazioni su parole chiave, operatori e direttive per il preprocessore specifici, vedere [Riferimenti per C#](../../csharp/language-reference/index.md). Per informazioni sulla specifica del linguaggio C++, vedere [Specifiche del linguaggio C#](../../csharp/language-reference/language-specification.md).  
   
-## Sezioni relative al linguaggio  
- [Contenuto di un programma C\#](../../csharp/programming-guide/inside-a-program/index.md)  
+## <a name="language-sections"></a>Sezioni relative al linguaggio  
+ [Contenuto di un programma C#](../../csharp/programming-guide/inside-a-program/index.md)  
   
- [Main\(\) e argomenti della riga di comando](../../csharp/programming-guide/main-and-command-args/main-and-command-line-arguments.md)  
+ [Main() e argomenti della riga di comando](../../csharp/programming-guide/main-and-command-args/index.md)  
   
  [Tipi](../../csharp/programming-guide/types/index.md)  
   
@@ -56,7 +74,7 @@ In questa sezione vengono fornite informazioni dettagliate sulle funzionalità p
   
  [Generics](../../csharp/programming-guide/generics/index.md)  
   
- [Iteratori](../Topic/Iterators%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Iteratori](../../csharp/programming-guide/concepts/iterators.md)
   
  [Espressioni di query LINQ](../../csharp/programming-guide/linq-query-expressions/index.md)  
   
@@ -70,26 +88,26 @@ In questa sezione vengono fornite informazioni dettagliate sulle funzionalità p
   
  [Commenti relativi alla documentazione XML](../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
   
-## Sezioni relative alla piattaforma  
- [Application Domains \(C\# and Visual Basic\)](http://msdn.microsoft.com/it-it/1bc2939a-79db-4a4a-a677-4a2ce6de2b1e)  
+## <a name="platform-sections"></a>Sezioni relative alla piattaforma  
+ [Domini applicazione (C# e Visual Basic)](http://msdn.microsoft.com/en-us/1bc2939a-79db-4a4a-a677-4a2ce6de2b1e)  
   
- [Assembly e Global Assembly Cache](../Topic/Assemblies%20and%20the%20Global%20Assembly%20Cache%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Assembly e Global Assembly Cache](../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
   
- [Attributi](../Topic/Attributes%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Attributi](../../csharp/programming-guide/concepts/attributes/index.md)  
   
- [Raccolte](../Topic/Collections%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Raccolte](../../csharp/programming-guide/concepts/collections.md)  
   
- [Eccezioni e gestione delle eccezioni](../../csharp/programming-guide/exceptions/exceptions-and-exception-handling.md)  
+ [Eccezioni e gestione delle eccezioni](../../csharp/programming-guide/exceptions/index.md)  
   
- [File system e Registro di sistema](../../csharp/programming-guide/file-system/file-system-and-the-registry.md)  
+ [File system e Registro di sistema (Guida per programmatori C#)](../../csharp/programming-guide/file-system/index.md)  
   
- [Interoperabilità](../../csharp/programming-guide/interop/interoperability.md)  
+ [Interoperabilità](../../csharp/programming-guide/interop/index.md)  
   
- [Reflection](../Topic/Reflection%20\(C%23%20and%20Visual%20Basic\).md)  
+ [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
   
-## Capitoli del libro rappresentati  
- [Advanced C\#](http://go.microsoft.com/fwlink/?LinkId=195407) in [C\# 3.0 in a Nutshell, Third Edition: A Desktop Quick Reference](http://go.microsoft.com/fwlink/?LinkId=195406)  
+## <a name="featured-book-chapter"></a>Capitoli del libro rappresentati  
+ [Advanced C#](http://go.microsoft.com/fwlink/?LinkId=195407) in [C# 3.0 in a Nutshell, Third Edition: A Desktop Quick Reference](http://go.microsoft.com/fwlink/?LinkId=195406)  
   
-## Vedere anche  
- [Riferimenti per C\#](../../csharp/language-reference/index.md)   
- [C\#](../../csharp/csharp.md)
+## <a name="see-also"></a>Vedere anche  
+ [Riferimenti per C#](../../csharp/language-reference/index.md)   
+ [C#](../../csharp/csharp.md)

@@ -3,17 +3,17 @@ title: Panoramica di .NET
 description: "Panoramica guidata di alcune delle principali funzionalità della piattaforma .NET."
 keywords: .NET, .NET Core, panoramica, linguaggi di programmazione, unsafe, gestione della memoria, indipendenza dai tipi, asincrono
 author: cartermp
-manager: wpickett
-ms.author: phcart
-ms.date: 11/16/2016
+ms.author: wiwagn
+ms.date: 02/09/2016
 ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
+ms.prod: .net
+ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 translationtype: Human Translation
-ms.sourcegitcommit: 2c57b5cebd63b1d94b127cd269e3b319fb24dd97
-ms.openlocfilehash: 02e2fa22e36fd2f6618527ad3c89cbbd8587dfe2
+ms.sourcegitcommit: 48563be13dc07000ced2e6817b3028e6117abd93
+ms.openlocfilehash: ee6ced104137a453267b409fea05716d781ef83f
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -34,7 +34,7 @@ In futuro, da questo sito di programmazione sarà possibile eseguire i codici di
 
 ## <a name="programming-languages"></a>Linguaggi di programmazione
 
-.NET supporta più linguaggi di programmazione.  I runtime .NET implementano l'[interfaccia della riga di comando](https://www.visualstudio.com/en-us/mt639507) (CLI, Common Language Infrastructure) che, tra altre cose, specifica un runtime indipendente dal linguaggio e l'interoperabilità di linguaggio.  In questo modo, è possibile scegliere qualsiasi linguaggio .NET per creare applicazioni e servizi in .NET.
+.NET supporta più linguaggi di programmazione.  I runtime .NET implementano l'[interfaccia della riga di comando](https://www.visualstudio.com/license-terms/ecma-c-common-language-infrastructure-standards/) (CLI, Common Language Infrastructure) che, tra altre cose, specifica un runtime indipendente dal linguaggio e l'interoperabilità di linguaggio.  In questo modo, è possibile scegliere qualsiasi linguaggio .NET per creare applicazioni e servizi in .NET.
 
 Microsoft sviluppa e supporta attivamente tre linguaggi .NET: C#, F# e Visual Basic .NET. 
 
@@ -54,22 +54,27 @@ Le due righe di codice seguenti allocano entrambe memoria:
 
 Non esiste una parola chiave analoga per deallocare la memoria, in quanto la deallocazione viene eseguita automaticamente quando il Garbage Collector recupera la memoria durante l'esecuzione pianificata.
 
-I tipi presenti all'interno di un ambito in genere escono dall'ambito dopo il completamento del metodo e a quel punto possono essere raccolte. È tuttavia possibile indicare al Garbage Collector che un particolare oggetto è fuori ambito prima del completamento del metodo usando l'istruzione `using`:
+Garbage Collector è solo uno dei servizi che consentono di garantire la *sicurezza della memoria*.  L'invariante di sicurezza della memoria è molto semplice: un programma garantisce la sicurezza della memoria se accede soltanto alla memoria che è stata allocata (e non liberata).  Ad esempio, il runtime assicura che i programmi non eseguano l'indicizzazione oltre la fine di una matrice o accedano a un campo fantasma oltre la fine di un oggetto.
+
+Nell'esempio seguente il runtime genera un'eccezione `InvalidIndexException` per garantire la sicurezza della memoria.
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
-Dopo il completamento del blocco `using`, il Garbage Collector saprà che l'oggetto `stream` dell'esempio precedente può essere raccolto e che la relativa memoria può essere recuperata.
+## <a name="working-with-unmanaged-resources"></a>Utilizzo di risorse non gestite
 
-In F # queste regole hanno una semantica leggermente diversa.  Per altre informazioni sulla gestione delle risorse in F#, vedere [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md) (Gestione delle risorse: parola chiave `use`)
+Alcuni oggetti fanno riferimento a *risorse non gestite*. Le risorse non gestite sono risorse che non vengono gestite automaticamente dal runtime di .NET.  Ad esempio, un handle di file è una risorsa non gestita.  Un oggetto @System.IO.FileStream è un oggetto gestito, ma fa riferimento a un handle di file, che non è gestito.  Dopo aver usato FileStream, è necessario rilasciare l'handle di file.
 
-Una delle funzionalità meno ovvie, ma più potenti di Garbage Collector è la sicurezza della memoria. L'invariante di sicurezza della memoria è molto semplice: un programma garantisce la sicurezza della memoria se accede soltanto alla memoria che è stata allocata (e non liberata). I puntatori tralasciati rappresentano sempre un errore e tenerne traccia è spesso piuttosto difficile.
+In .NET gli oggetti che fanno riferimento a risorse non gestite implementano l'interfaccia @System.IDisposable.  Dopo aver usato l'oggetto, è possibile chiamare il metodo @System.IDisposable.Dispose dell'oggetto, che è responsabile del rilascio delle risorse non gestite.  I linguaggi .NET specificano una comoda sintassi `using` per tali oggetti, come nell'esempio seguente:
 
-Per garantire la sicurezza della memoria, il runtime .NET offre servizi aggiuntivi che non sono normalmente forniti da un Garbage Collector. Assicura infatti che i programmi non eseguano l'indicizzazione oltre la fine di un array o accedano a un campo fantasma oltre la fine di un oggetto.
+[!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
 
-L'esempio seguente genera un'eccezione come risultato della sicurezza della memoria.
+Una volta che il blocco `using` è stato completato, il runtime di .NET chiama automaticamente il metodo @System.IDisposable.Dispose dell'oggetto `stream`, che rilascia l'handle di file.  Il runtime esegue questa operazione anche se un'eccezione fa sì che il controllo lasci il blocco.
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5
-)]
+Per altre informazioni, vedere le pagine seguenti:
+
+* Per C#, [using Statement](../csharp/language-reference/keywords/using-statement.md) (Istruzione using)
+* Per F#, [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md) (Gestione risorse: la parola chiave `use`)
+* Per Visual Basic, [Using Statement](../visual-basic/language-reference/statements/using-statement.md) (Istruzione Using (Visual Basic))
 
 ## <a name="type-safety"></a>Indipendenza dai tipi
 
@@ -103,7 +108,7 @@ I generics sono una funzionalità aggiunta a .NET Framework 2.0. In breve, i gen
 
 I generics sono stati aggiunti per consentire ai programmatori di implementare strutture dati generiche. Prima della loro introduzione, per rendere un tipo `List` generico sarebbe stato necessario usare elementi di tipo `object`. Questa soluzione poteva determinare diversi problemi sia a livello semantico che delle prestazioni, per non parlare dei possibili subdoli errori di runtime. Il più noto di questi ultimi è la situazione in cui una struttura di dati contiene, ad esempio, sia numeri interi che stringhe. Quando si usano i membri dell'elenco, viene generata un'eccezione di tipo `InvalidCastException`.
 
-L'esempio seguente mostra un programma di base in esecuzione mediante un'istanza dei tipi @System.Collections.Generic.List%601.
+L'esempio seguente illustra un programma di base in esecuzione mediante un'istanza dei tipi @System.Collections.Generic.List%601.
 
 [!code-csharp[GenericsShort](../../samples/csharp/snippets/tour/GenericsShort.csx)]
 
@@ -148,8 +153,4 @@ Per una panoramica delle funzionalità di F#, vedere l'articolo [Tour of F#](../
 Per un'introduzione alla scrittura di codice personalizzato, vedere [Introduzione](getting-started.md).
 
 Per informazioni sui componenti principali di .NET, vedere [Componenti dell'architettura .NET](components.md).
-
-
-<!--HONumber=Nov16_HO3-->
-
 

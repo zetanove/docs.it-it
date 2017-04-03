@@ -1,25 +1,43 @@
 ---
-title: "Istruzione lock (Riferimenti per C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "lock_CSharpKeyword"
-  - "lock"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "lock (parola chiave) [C#]"
+title: Istruzione lock (Riferimenti per C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- lock_CSharpKeyword
+- lock
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- lock keyword [C#]
 ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
 caps.latest.revision: 43
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 43
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 020be199391789360ae9a25858bef54d8259ae56
+ms.lasthandoff: 03/13/2017
+
 ---
-# Istruzione lock (Riferimenti per C#)
-La parola chiave `lock` contrassegna un blocco di istruzioni come sezione critica ottenendo il blocco a esclusione reciproca per un determinato oggetto, eseguendo un'istruzione e rilasciando in seguito il blocco.  L'esempio seguente illustra un'istruzione `lock`.  
+# <a name="lock-statement-c-reference"></a>Istruzione lock (Riferimenti per C#)
+La parola chiave `lock` contrassegna un blocco di istruzioni come sezione critica ottenendo il blocco a esclusione reciproca per un determinato oggetto, eseguendo un'istruzione e rilasciando in seguito il blocco. L'esempio seguente illustra un'istruzione `lock`.  
   
 ```  
   
@@ -43,49 +61,49 @@ class Account
   
 ```  
   
- Per ulteriori informazioni, vedere [Sincronizzazione di thread](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md).  
+ Per altre informazioni, vedere [Sincronizzazione di thread](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4).  
   
-## Note  
- La parola chiave `lock` impedisce a un thread di entrare in una sezione critica del codice se è già presente un altro thread.  Se un altro thread tenta di accedere a un codice bloccato, attenderà \(in stato di blocco\) finché l'oggetto non verrà rilasciato.  
+## <a name="remarks"></a>Note  
+ La parola chiave `lock` impedisce a un thread di entrare in una sezione critica del codice se è già presente un altro thread. Se un altro thread tenta di accedere a un codice bloccato, attenderà (in stato di blocco) finché l'oggetto non verrà rilasciato.  
   
- Nella sezione [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md) vengono fornite informazioni sul threading.  
+ Nella sezione [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c) vengono specificate informazioni sul threading.  
   
- La parola chiave `lock` chiama <xref:System.Threading.Monitor.Enter%2A> all'inizio del blocco e <xref:System.Threading.Monitor.Exit%2A> alla fine del blocco.  <xref:System.Threading.ThreadInterruptedException> viene generato se <xref:System.Threading.Thread.Interrupt%2A> interrompere un thread in attesa di per immettere un'istruzione `lock`.  
+ La parola chiave `lock` chiama <xref:System.Threading.Monitor.Enter%2A> all'inizio del blocco e <xref:System.Threading.Monitor.Exit%2A> alla fine del blocco. <xref:System.Threading.ThreadInterruptedException> viene generato se <xref:System.Threading.Thread.Interrupt%2A> interrompe un thread in attesa di immettere un'istruzione `lock`.  
   
- In generale è opportuno evitare il blocco su un tipo `public` o su istanze oltre il controllo del codice.  I costrutti comuni `lock (this)`, `lock (typeof (MyType))` e `lock ("myLock")` non rispettano questa regola:  
+ In generale è opportuno evitare il blocco su un tipo `public` o su istanze oltre il controllo del codice. I costrutti comuni `lock (this)`, `lock (typeof (MyType))` e `lock ("myLock")` non rispettano questa regola:  
   
 -   `lock (this)` costituisce un problema se l'accesso all'istanza può avvenire pubblicamente.  
   
 -   `lock (typeof (MyType))` costituisce un problema se l'accesso a `MyType` può avvenire pubblicamente.  
   
--   `lock("myLock")` costituisce un problema poiché qualsiasi altro codice nel processo che utilizza la stessa stringa condividerà lo stesso blocco.  
+-   `lock("myLock")` costituisce un problema poiché qualsiasi altro codice nel processo che usa la stessa stringa condividerà lo stesso blocco.  
   
- La procedura migliore consiste nel definire un oggetto `private` da bloccare o una variabile oggetto `private static` per proteggere i dati comuni a tutte le istanze.  
+ La procedura consigliata consiste nel definire un oggetto `private` da bloccare o una variabile oggetto `private static` per proteggere i dati comuni a tutte le istanze.  
   
- Non è possibile utilizzare la parola chiave [attendere](../../../csharp/language-reference/keywords/await.md) nel corpo di un'istruzione `lock`.  
+ Non è possibile usare la parola chiave [await](../../../csharp/language-reference/keywords/await.md) nel corpo di un'istruzione `lock`.  
   
-## Esempio  
- Nell'esempio seguente viene illustrato un utilizzo semplificato dei thread senza blocco in C\#.  
+## <a name="example"></a>Esempio  
+ Nell'esempio seguente viene illustrato un uso semplificato dei thread senza blocco in C#.  
   
  [!code-cs[csrefKeywordsFixedLock#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_1.cs)]  
   
-## Esempio  
- Nell'esempio riportato di seguito vengono utilizzati thread e `lock`.  Finché l'istruzione `lock` è presente, il blocco di istruzioni rimarrà una sezione critica e `balance` non diventerà mai un numero negativo.  
+## <a name="example"></a>Esempio  
+ Nell'esempio riportato di seguito vengono usati thread e `lock`. Finché è presente l'istruzione `lock`, il blocco di istruzioni rimarrà una sezione critica e `balance` non diventerà mai un numero negativo.  
   
  [!code-cs[csrefKeywordsFixedLock#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/lock-statement_2.cs)]  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:System.Reflection.MethodImplAttributes>   
  <xref:System.Threading.Mutex>   
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [Threading](../Topic/Threading%20\(C%23%20and%20Visual%20Basic\).md)   
- [Parole chiave di C\#](../../../csharp/language-reference/keywords/index.md)   
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
+ [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
  [Parole chiave per le istruzioni](../../../csharp/language-reference/keywords/statement-keywords.md)   
- [Monitor](../Topic/Monitors.md)   
- [Interlocked Operations](../Topic/Interlocked%20Operations.md)   
- [AutoResetEvent](../Topic/AutoResetEvent.md)   
- [Sincronizzazione di thread](../Topic/Thread%20Synchronization%20\(C%23%20and%20Visual%20Basic\).md)
+ @System.Threading.Monitor   
+ [Operazioni interlocked](http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b)   
+ [AutoResetEvent](http://msdn.microsoft.com/library/6d39c48d-6b37-4a9b-8631-f2924cfd9c18)   
+ [Sincronizzazione di thread](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4)

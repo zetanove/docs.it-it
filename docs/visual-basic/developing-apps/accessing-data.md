@@ -1,77 +1,81 @@
 ---
-title: "Accessing Data in Visual Basic Applications | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "data [Visual Basic]"
-  - "Visual Basic, data access"
+title: Accesso ai dati nelle applicazioni Visual Basic | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- data [Visual Basic]
+- Visual Basic, data access
 ms.assetid: 3086ab38-3be5-4b22-9385-7d0e16b04f6a
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 23
----
-# Accessing Data in Visual Basic Applications
-[!INCLUDE[vs2017banner](../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 01c5dfdd118d1db9adfd1c8e83c3ed63348e4c43
+ms.lasthandoff: 03/13/2017
 
-In [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] sono state introdotte alcune nuove funzionalità che consentono di semplificare lo sviluppo di applicazioni che richiedono l'accesso ai dati.  I form con associazione a dati per applicazioni Windows vengono creati trascinando gli elementi dalla [Origini dati \(finestra\)](../Topic/Data%20Sources%20Window.md) al form.  Per associare i controlli ai dati è possibile trascinare gli elementi dalla **finestra Origini dati** ai controlli esistenti.  
+---
+# <a name="accessing-data-in-visual-basic-applications"></a>Accesso ai dati nelle applicazioni Visual Basic
+[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] include numerose nuove funzionalità per semplificare lo sviluppo di applicazioni che accedono ai dati. I moduli associati ai dati per applicazioni Windows vengono creati trascinando elementi dalla [finestra Origine dati](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) nel modulo. I controlli ai dati si associano trascinando elementi dalla **finestra Origini dati** nei controlli esistenti.  
   
-## Sezioni correlate  
- [Creazione di applicazioni dati](/visual-studio/data-tools/creating-data-applications)  
- Vengono forniti collegamenti alle pagine che illustrano come inserire la funzionalità di accesso ai dati nelle applicazioni.  
-  
- [Procedure dettagliate relative ai dati](../Topic/Data%20Walkthroughs.md)  
- Vengono forniti collegamenti a pagine relative a determinati scenari che riguardano l'accesso ai dati.  
-  
- [Cenni preliminari sulle applicazioni dati in Visual Studio](/visual-studio/data-tools/overview-of-data-applications-in-visual-studio)  
- Vengono forniti collegamenti a pagine relative alla creazione di applicazioni per la gestione dei dati mediante [!INCLUDE[vsprvs](../../csharp/includes/vsprvs-md.md)].  
+## <a name="related-sections"></a>Sezioni correlate  
+ [Creazione di applicazioni dati](https://docs.microsoft.com/visualstudio/data-tools/creating-data-applications)  
+ Include collegamenti alle pagine sulla incorporazione della funzionalità di accesso ai dati nelle applicazioni.
+
+ [Panoramica delle applicazioni dati in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/overview-of-data-applications-in-visual-studio)  
+ Include collegamenti alle pagine sulla creazione di applicazioni che usano i dati tramite [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
   
  [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
- Vengono forniti collegamenti agli argomenti relativi all'utilizzo di LINQ con Visual Basic.  
+ Include collegamenti agli argomenti che descrivono come usare LINQ con Visual Basic.  
   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)  
- Vengono fornite informazioni su [!INCLUDE[vbtecdlinq](../../csharp/includes/vbtecdlinq-md.md)].  Sono inclusi esempi di programmazione.  
+ [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
+ Include informazioni su [!INCLUDE[vbtecdlinq](../../csharp/includes/vbtecdlinq_md.md)]. Include esempi di programmazione.  
   
- [Progettazione relazionale oggetti](/visual-studio/data-tools/linq-to-sql-tools-in-visual-studio2)  
- Vengono forniti collegamenti ad argomenti su come creare un modello a oggetti [LINQ to SQL](../Topic/LINQ%20to%20SQL.md) nelle applicazioni.  
+ [Strumenti LINQ to SQL in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
+ Include collegamenti agli argomenti che illustrano come creare un modello di oggetto [LINQ to SQL](https://msdn.microsoft.com/library/bb386976) nelle applicazioni.  
   
- [Utilizzo dei dataset nelle applicazioni a più livelli](/visual-studio/data-tools/work-with-datasets-in-n-tier-applications)  
- Vengono forniti collegamenti ad argomenti su come creare applicazioni dati a più livelli.  
+ [Uso dei set di dati nelle applicazioni a più livelli](https://docs.microsoft.com/visualstudio/data-tools/work-with-datasets-in-n-tier-applications)  
+ Include collegamenti agli argomenti che illustrano come creare applicazioni dati a più livelli.  
+     
+ [Connessione ai dati in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/connecting-to-data-in-visual-studio)  
+ Include collegamenti alle pagine che illustrano come connettere le applicazioni ai dati con gli strumenti di progettazione e gli oggetti di connessione ADO.NET tramite [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+
+ [Recupero di dati nell'applicazione](https://docs.microsoft.com/visualstudio/data-tools/fetching-data-into-your-application)  
+ Include collegamenti alle pagine che descrivono come caricare dati nei set di dati e come eseguire le istruzioni SQL e le stored procedure.  
   
- [Occasionally Connected Applications](http://msdn.microsoft.com/it-it/5f261728-a9a9-4304-8447-b94404a63099)  
- Vengono forniti collegamenti ad argomenti che descrivono come incorporare [!INCLUDE[sql_sync_long](../../visual-basic/developing-apps/includes/sql-sync-long-md.md)] in applicazioni che consentono la sincronizzazione di dati tra dati locali e remoti.  
+ [Associare controlli ai dati in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)  
+ Include collegamenti alle pagine che illustrano come visualizzare dati in Windows Form tramite i controlli associati ai dati.  
   
- [PAVE OVER Using SQL Server Compact \(Visual Studio\)](http://msdn.microsoft.com/it-it/13320dd1-94e5-4077-bf76-8df253695ccc)  
- Vengono forniti collegamenti ad argomenti sulla gestione di dati utilizzando SQL Server Compact con Visual Studio.  
+ [Modifica di dati nell'applicazione](https://docs.microsoft.com/visualstudio/data-tools/editing-data-in-your-application)  
+ Include collegamenti alle pagine che descrivono come manipolare i dati nelle tabelle dati di un set di dati.  
   
- [Connessione ai dati in Visual Studio](/visual-studio/data-tools/connecting-to-data-in-visual-studio)  
- Vengono forniti collegamenti a pagine relative alla connessione dell'applicazione ai dati con strumenti della fase di progettazione e oggetti connessione ADO.NET mediante [!INCLUDE[vsprvs](../../csharp/includes/vsprvs-md.md)].  
+ [Convalida dei dati nei set di dati](https://docs.microsoft.com/visualstudio/data-tools/validate-data-in-datasets)  
+ Include collegamenti alle pagine che illustrano come aggiungere una convalida a un set di dati durante le modifiche di colonne e righe.  
   
- [Preparazione dell'applicazione al ricevimento di dati](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)  
- Vengono forniti collegamenti a pagine in cui si descrivono i dataset e si spiega come crearne di nuovi, nonché come creare e modificare i singoli oggetti di cui sono composti.  
+ [Salvataggio di dati](https://docs.microsoft.com/visualstudio/data-tools/saving-data)  
+ Include collegamenti alle pagine che illustrano come inviare dati aggiornati da un'applicazione al database.  
   
- [Recupero di dati nell'applicazione](/visual-studio/data-tools/fetching-data-into-your-application)  
- Vengono forniti collegamenti a pagine in cui viene descritto come caricare dati nei dataset ed eseguire istruzioni SQL e stored procedure.  
-  
- [Associazione di controlli ai dati in Visual Studio](/visual-studio/data-tools/bind-controls-to-data-in-visual-studio)  
- Vengono forniti collegamenti a pagine in cui viene spiegato come visualizzare dati nei Windows Form mediante controlli associati a dati.  
-  
- [Modifica di dati nell'applicazione](/visual-studio/data-tools/editing-data-in-your-application)  
- Vengono forniti collegamenti a pagine in cui viene descritto come modificare i dati nelle tabelle dati di un dataset.  
-  
- [Convalida dei dati](../Topic/Validating%20Data.md)  
- Vengono forniti collegamenti a pagine in cui si descrive come aggiungere codice di convalida a un dataset durante la modifica di righe e colonne.  
-  
- [Salvataggio di dati](/visual-studio/data-tools/saving-data)  
- Vengono forniti collegamenti a pagine in cui viene descritto come inviare dati aggiornati da un'applicazione al database.  
-  
- [ADO.NET](../Topic/ADO.NET.md)  
- Vengono descritte le classi ADO.NET che espongono servizi di accesso ai dati al programmatore .NET Framework.  
-  
- [Dati nelle soluzioni Office](/office-dev/office-dev/data-in-office-solutions)  
- Vengono forniti collegamenti a pagine che illustrano il funzionamento dei dati nelle soluzioni Office e a informazioni sulla programmazione orientata allo schema, sulla memorizzazione dei dati nella cache e sull'accesso ai dati sul lato server.
+ [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)  
+ Descrive le classi ADO.NET, che espongono i servizi di accesso ai dati per il programmatore .NET Framework.
+
+ [Dati nelle soluzioni Office](https://msdn.microsoft.com/library/xx069ybh)  
+ Include collegamenti alle pagine che illustrano il funzionamento dei dati nelle soluzioni Office, incluse le informazioni sulla programmazione orientata agli schemi, sulla memorizzazione di dati nella cache e sull'accesso ai dati sul lato server.

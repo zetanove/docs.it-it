@@ -1,40 +1,57 @@
 ---
-title: "Procedura dettagliata: filtro dell&#39;output di My.Application.Log | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "Oggetto My. log, il filtro di output"
-  - "My.Application.Log (oggetto), il filtro di output"
-  - "filtraggio dell'output di registro eventi dell'applicazione,"
+title: Filtro dell&quot;output di My.Application.Log (Visual Basic) | Microsoft Docs
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- My.Log object, filtering output
+- My.Application.Log object, filtering output
+- application event logs, output filtering
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 22
----
-# Procedura dettagliata: filtro dell&#39;output di My.Application.Log
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: caa4b8be16e5000d02d82a83199a25d13ad07bba
+ms.lasthandoff: 03/13/2017
 
-Questa procedura dettagliata viene illustrato come modificare il log predefinito applicazione di filtri per il `My.Application.Log` oggetto, per controllare quali informazioni vengono passate dal `Log` per i listener e quali informazioni vengono scritte dai listener. È possibile modificare il comportamento di registrazione anche dopo la compilazione dell'applicazione, poiché le informazioni di configurazione vengono archiviate nel file di configurazione dell'applicazione.  
+---
+# <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>Procedura dettagliata: filtro dell'output di My.Application.Log
+Questa procedura dettagliata illustra come modificare il filtro di log predefinito per l'oggetto `My.Application.Log` per stabilire quali informazioni vengono passate dall'oggetto `Log` ai listener e quali informazioni vengono scritte dai listener. È possibile modificare il comportamento di registrazione anche dopo la compilazione dell'applicazione, poiché le informazioni di configurazione vengono archiviate nel file di configurazione dell'applicazione.  
   
 ## <a name="getting-started"></a>Introduzione  
- Ogni messaggio che `My.Application.Log` scritture ha un livello di gravità, utilizzano i meccanismi di filtraggio per controllare l'output del log. Applicazione di esempio Usa `My.Application.Log` metodi per scrivere numerosi messaggi di log con diversi livelli di gravità.  
+ A ogni messaggio scritto da `My.Application.Log` è associato un livello di gravità, che i meccanismi di filtro usano per controllare l'output del log. Questa applicazione di esempio usa i metodi `My.Application.Log` per scrivere alcuni messaggi di log con diversi livelli di gravità.  
   
 #### <a name="to-build-the-sample-application"></a>Per compilare l'applicazione di esempio  
   
-1.  Aprire un nuovo [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb-md.md)] progetto applicazione Windows.  
+1.  Aprire un nuovo progetto Applicazione Windows in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
 2.  Aggiungere un pulsante denominato Button1 a Form1.  
   
-3.  Nel <xref:System.Windows.Forms.Control.Click> gestore eventi per Button1, aggiungere il codice seguente:  
+3.  Aggiungere il codice seguente al gestore eventi <xref:System.Windows.Forms.Control.Click> per Button1:  
   
      [!code-vb[VbVbcnMyApplicationLogFiltering#1](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/walkthrough-filtering-my-application-log-output_1.vb)]  
   
@@ -42,7 +59,7 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
 5.  Premere **Button1**.  
   
-     L'applicazione scrive le informazioni seguenti al file di log e di output di debug dell'applicazione.  
+     L'applicazione scrive le informazioni seguenti nel file di log e di output di debug dell'applicazione.  
   
      `DefaultSource Information: 0 : In Button1_Click`  
   
@@ -50,21 +67,20 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
 6.  Chiudere l'applicazione.  
   
-     Per informazioni su come visualizzare una finestra di output di debug dell'applicazione, vedere [finestra di Output](/visual-studio/ide/reference/output-window). Per informazioni sulla posizione del file di log dell'applicazione, vedere [procedura dettagliata: determinazione della destinazione di scrittura delle informazioni con My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
+     Per informazioni su come visualizzare la finestra di output di debug dell'applicazione, vedere [Finestra di output](https://docs.microsoft.com/visualstudio/ide/reference/output-window). Per informazioni sul percorso del file di log dell'applicazione, vedere [Procedura dettagliata: Individuazione della posizione di inserimento delle informazioni con My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  
   
     > [!NOTE]
-    >  Per impostazione predefinita, l'applicazione scarica l'output del file di log alla chiusura dell'applicazione.  
+    >  Per impostazione predefinita, l'applicazione elimina l'output del file di log alla chiusura dell'applicazione.  
   
-     Nell'esempio precedente, la seconda chiamata al <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A> metodo e la chiamata al <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A> genera output del log, mentre il primo e l'ultima chiamata per il `WriteEntry` metodo non. Infatti i livelli di gravità di `WriteEntry` e `WriteException` sono "Informazioni" e "Error", che sono consentiti per il `My.Application.Log` dell'oggetto predefinito il filtraggio di log. Tuttavia, gli eventi con i livelli di gravità "Start" e "Stop" non è possibile creare output di log.  
+     Nell'esempio precedente la seconda chiamata al metodo <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A> e la chiamata al metodo <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A> generano output del log, mentre la prima e l'ultima chiamata al metodo `WriteEntry` non ne generano. Questo avviene poiché i livelli di gravità di `WriteEntry` e `WriteException` sono "Information" ed "Error", entrambi consentiti dal filtro di log predefinito dell'oggetto `My.Application.Log`. Tuttavia, agli eventi con i livelli di gravità "Start" e "Stop" non è consentito creare output di log.  
   
-## <a name="filtering-for-all-myapplicationlog-listeners"></a>Il filtro per tutti i listener My.Application.Log  
- Il `My.Application.Log` viene utilizzata da object un <xref:System.Diagnostics.SourceSwitch> denominato `DefaultSwitch` per controllare quali messaggi vengono inviati dalla `WriteEntry` e `WriteException` metodi ai listener di log. È possibile configurare `DefaultSwitch` nel file di configurazione dell'applicazione impostando il relativo valore su uno del <xref:System.Diagnostics.SourceLevels> valori di enumerazione. Per impostazione predefinita, il valore è "Informazioni".  
+## <a name="filtering-for-all-myapplicationlog-listeners"></a>Filtro per tutti i listener di My.Application.Log  
+ L'oggetto `My.Application.Log` usa un oggetto <xref:System.Diagnostics.SourceSwitch> denominato `DefaultSwitch` per stabilire quali messaggi vengono passati dai metodi `WriteEntry` e `WriteException` ai listener di log. È possibile configurare `DefaultSwitch` nel file di configurazione dell'applicazione impostando il relativo valore su uno dei valori di enumerazione di <xref:System.Diagnostics.SourceLevels>. Per impostazione predefinita, il valore è "Information".  
   
- Questa tabella mostra il livello di gravità richiesto per il Log scrivere un messaggio ai listener, fornendo una particolare `DefaultSwitch` impostazione.  
+ Questa tabella illustra il livello di gravità richiesto al log per la scrittura di un messaggio ai listener, data un'impostazione `DefaultSwitch` specifica.  
   
-|||  
-|-|-|  
-|Valore DefaultSwitch|Gravità del messaggio di richiesta per l'output|  
+|Valore DefaultSwitch|Gravità del messaggio richiesto per l'output|  
+|---|---| 
 |`Critical`|`Critical`|  
 |`Error`|`Critical` o `Error`|  
 |`Warning`|`Critical`, `Error` o `Warning`|  
@@ -75,13 +91,13 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
 |`Off`|Tutti i messaggi vengono bloccati.|  
   
 > [!NOTE]
->  Il `WriteEntry` e `WriteException` i metodi hanno un overload che non specifica un livello di gravità. Il livello di gravità implicito per il `WriteEntry` overload è "Informazioni" e il livello di gravità implicito per il `WriteException` overload è "Error".  
+>  I metodi `WriteEntry` e `WriteException` hanno entrambi un overload che non specifica un livello di gravità. Il livello di gravità implicito per l'overload di `WriteEntry` è "Information" e il livello di gravità implicito per l'overload `WriteException` è "Error".  
   
- Questa tabella viene illustrato l'output di log mostrato nell'esempio precedente: con il valore predefinito `DefaultSwitch` l'impostazione di "Informazioni", solo la seconda chiamata al `WriteEntry` (metodo) e la chiamata al `WriteException` output del metodo producono log.  
+ In questa tabella viene illustrato l'output di log dell'esempio precedente: con l'impostazione predefinita "Information" per `DefaultSwitch` solo la seconda chiamata al metodo `WriteEntry` e la chiamata al `WriteException` producono output di log.  
   
-#### <a name="to-log-only-activity-tracing-events"></a>Per registrare gli eventi di traccia solo attività  
+#### <a name="to-log-only-activity-tracing-events"></a>Per registrare solo gli eventi di traccia attività  
   
-1.  Fare doppio clic su app. config nel **Esplora** e selezionare **aprire**.  
+1.  Fare clic con il pulsante destro del mouse su app.config **Esplora soluzioni** e selezionare **Apri**.  
   
      -oppure-  
   
@@ -93,13 +109,13 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
     3.  Fare clic su **Aggiungi**.  
   
-2.  Individuare il `<switches>` sezione, ovvero nel `<system.diagnostics>` sezione, ovvero nel primo livello `<configuration>` sezione.  
+2.  Individuare la sezione `<switches>` nella sezione `<system.diagnostics>` all'interno della sezione di primo livello `<configuration>` .  
   
-3.  Trovare l'elemento che consente di aggiungere `DefaultSwitch` alla raccolta di parametri. Dovrebbe essere simile a questo elemento:  
+3.  Trovare l'elemento che consente di aggiungere `DefaultSwitch` alla raccolta di opzioni. Deve essere simile all'elemento seguente:  
   
      `<add name="DefaultSwitch" value="Information" />`  
   
-4.  Modificare il valore di `value` attributo in "ActivityTracing".  
+4.  Modificare il valore dell'attributo `value` impostandolo su "ActivityTracing".  
   
 5.  Il contenuto del file app.config dovrebbe essere simile al codice XML seguente.  
   
@@ -134,7 +150,7 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
 7.  Premere **Button1**.  
   
-     L'applicazione scrive le informazioni seguenti al file di log e di output di debug dell'applicazione:  
+     L'applicazione scrive le informazioni seguenti nel file di log e di output di debug dell'applicazione:  
   
      `DefaultSource Start: 4 : Entering Button1_Click`  
   
@@ -142,21 +158,21 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
 8.  Chiudere l'applicazione.  
   
-9. Modificare il valore di `value` attributo "Informazioni".  
+9. Impostare di nuovo il valore dell'attributo `value` su "Information".  
   
     > [!NOTE]
-    >  Il `DefaultSwitch` switch impostazione controlla solo `My.Application.Log`. Non modifica il [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort-md.md)] <xref:System.Diagnostics.Trace?displayProperty=fullName> e <xref:System.Diagnostics.Debug?displayProperty=fullName> comportamento delle classi.  
+    >  L'impostazione dell'opzione `DefaultSwitch` controlla solo `My.Application.Log`. Non modifica il comportamento delle classi <xref:System.Diagnostics.Trace?displayProperty=fullName> e <xref:System.Diagnostics.Debug?displayProperty=fullName> di [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)].  
   
-## <a name="individual-filtering-for-myapplicationlog-listeners"></a>Filtraggio individuale per i listener My.Application.Log  
- Nell'esempio precedente viene illustrato come modificare il filtro per tutti `My.Application.Log` output. In questo esempio viene illustrato come filtrare un listener di log individuali. Per impostazione predefinita, un'applicazione dispone di due listener che consentono di scrivere output di debug dell'applicazione e il file di log.  
+## <a name="individual-filtering-for-myapplicationlog-listeners"></a>Filtro individuale per i listener di My.Application.Log  
+ Nell'esempio precedente viene illustrato come modificare il filtro per tutto l'output di `My.Application.Log`. Questo esempio illustra come filtrare un singolo listener di log. Per impostazione predefinita, un'applicazione ha due listener che scrivono nell'output di debug dell'applicazione e nel file di log.  
   
- Il file di configurazione controlla il comportamento dei listener di log, consentendo di disporre di un filtro che è simile a un'opzione per ciascuno di essi `My.Application.Log`. Un listener di log verrà visualizzato un messaggio solo se la gravità del messaggio è consentita sia il log `DefaultSwitch` e filtro del listener di log.  
+ Il file di configurazione controlla il comportamento dei listener di log, consentendo a ognuno di essi di avere un filtro, che è simile a un'opzione per `My.Application.Log`. Un listener di log genera un messaggio solo se la gravità del messaggio è consentita sia dall'opzione `DefaultSwitch` del log, sia dal filtro del listener di log.  
   
- In questo esempio viene illustrato come configurare il filtro per un nuovo listener di debug e aggiungerlo al `Log` oggetto. Il listener di debug predefinito deve essere rimossa la `Log` dell'oggetto, in modo chiaro che i messaggi di debug provengano dal nuovo listener di debug.  
+ In questo esempio viene illustrato come configurare il filtro per un nuovo listener di debug e aggiungerlo all'oggetto `Log`. Il listener di debug predefinito deve essere rimosso dall'oggetto `Log` in modo che sia chiaro che i messaggi di debug provengono dal nuovo listener di debug.  
   
-#### <a name="to-log-only-activity-tracing-events"></a>Per registrare solo gli eventi di traccia di attività  
+#### <a name="to-log-only-activity-tracing-events"></a>Per registrare solo gli eventi di traccia attività  
   
-1.  Fare doppio clic su app. config nel **Esplora** e scegliere **aprire**.  
+1.  Fare clic con il pulsante destro del mouse su app.config in **Esplora soluzioni** e scegliere **Apri**.  
   
      -oppure-  
   
@@ -168,11 +184,11 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
     3.  Fare clic su **Aggiungi**.  
   
-2.  Fare doppio clic su app. config in **Esplora**. Scegliere **aprire**.  
+2.  Fare clic con il pulsante destro del mouse su app.config in **Esplora soluzioni**. Scegliere **Apri**.  
   
-3.  Individuare il `<listeners>` nella sezione di `<source>` sezione con il `name` attributo "DefaultSource", che si trova il `<sources>` sezione. Il `<sources>` sezione si trova il `<system.diagnostics>` della sezione di primo livello `<configuration>` sezione.  
+3.  Individuare la sezione `<listeners>` all'interno della sezione `<source>` con l'attributo `name` "DefaultSource" che si trova nella sezione `<sources>` . La sezione `<sources>` si trova nella sezione `<system.diagnostics>` all'interno della sezione di primo livello `<configuration>` .  
   
-4.  Aggiungere questo elemento per il `<listeners>` sezione:  
+4.  Aggiungere l'elemento seguente alla sezione `<listeners>`:  
   
     ```xml  
     <!-- Remove the default debug listener. -->  
@@ -196,7 +212,7 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
     </add>  
     ```  
   
-     Il <xref:System.Diagnostics.EventTypeFilter> filtro accetta uno dei valori di <xref:System.Diagnostics.SourceLevels> valori di enumerazione come relativo `initializeData` attributo.  
+     Il filtro <xref:System.Diagnostics.EventTypeFilter> accetta uno dei valori di enumerazione di <xref:System.Diagnostics.SourceLevels> come proprio attributo `initializeData`.  
   
 7.  Il contenuto del file app.config dovrebbe essere simile al codice XML seguente.  
   
@@ -243,24 +259,24 @@ Questa procedura dettagliata viene illustrato come modificare il log predefinito
   
 9. Premere **Button1**.  
   
-     L'applicazione scrive le informazioni seguenti al file di log dell'applicazione:  
+     L'applicazione scrive le informazioni seguenti nel file di log dell'applicazione:  
   
      `Default Information: 0 : In Button1_Click`  
   
      `Default Error: 2 : Error in the application.`  
   
-     L'applicazione scrive meno informazioni sull'output di debug dell'applicazione a causa di filtro più restrittivo.  
+     L'applicazione scrive meno informazioni nell'output di debug dell'applicazione perché il filtro è più restrittivo.  
   
      `Default Error   2   Error`  
   
 10. Chiudere l'applicazione.  
   
- Per ulteriori informazioni su come modificare le impostazioni del log dopo la distribuzione, vedere [utilizzo dei log applicazione](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
+ Per altre informazioni sulla modifica delle impostazioni del log dopo la distribuzione, vedere [Utilizzo dei log applicazione](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Individuazione della posizione di inserimento delle informazioni con My.Application.log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)   
- [Procedura dettagliata: Modifica della posizione di inserimento delle informazioni con My.Application.log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)   
- [Procedura dettagliata: Creazione di listener di Log personalizzati](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)   
- [Procedura: scrivere messaggi di Log](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
- [Opzioni di traccia](../Topic/Trace%20Switches.md)   
- [Registrazione di informazioni dell'applicazione](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
+ [Procedura dettagliata: Individuazione della posizione di inserimento delle informazioni con My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)   
+ [Procedura dettagliata: Modifica della posizione di inserimento delle informazioni con My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)   
+ [Procedura dettagliata: Creazione di listener di log personalizzati](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)   
+ [Procedura: Scrivere messaggi di log](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
+ [Opzioni di traccia](http://msdn.microsoft.com/library/8ab913aa-f400-4406-9436-f45bc6e54fbe)   
+ [Registrazione di informazioni relative all'applicazione](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)

@@ -1,22 +1,40 @@
 ---
-title: "Operatori condizionali Null (C# e Visual Basic) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
+title: Operatori condizionali Null (C# e Visual Basic) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
 caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 3
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 0ecdf3c610bb09d1ecdf01e25b75c8f01802e852
+ms.lasthandoff: 03/13/2017
+
 ---
-# Operatori condizionali Null (C# e Visual Basic)
-Vengono usati per verificare la presenza di valori Null prima di eseguire un'operazione di accesso ai membri \(`?.`\) o di indice \(`?[`\).  Questi operatori consentono di scrivere meno codice per gestire i controlli null, soprattutto per l'ordinamento decrescente delle strutture di dati.  
+# <a name="null-conditional-operators-c-and-visual-basic"></a>Operatori condizionali Null (C# e Visual Basic)
+Vengono usati per verificare la presenza di valori Null prima di eseguire un'operazione di accesso ai membri (`?.`) o di indice (`?[`).  Questi operatori consentono di scrivere meno codice per gestire i controlli null, soprattutto per l'ordinamento decrescente delle strutture di dati.  
   
-```c#  
+```csharp  
 int? length = customers?.Length; // null if customers is null   
 Customer first = customers?[0];  // null if customers is null  
 int? count = customers?[0]?.Orders?.Count();  // null if customers, the first customer, or Orders is null  
@@ -38,9 +56,9 @@ A?.B?.C?[0] == E
   
 ```  
   
- L'accesso ai membri con condizione Null viene usato anche per richiamare delegati in modo thread\-safe scrivendo molto meno codice.  In passato era necessario codice simile al seguente:  
+ L'accesso ai membri con condizione Null viene usato anche per richiamare delegati in modo thread-safe scrivendo molto meno codice.  In passato era necessario codice simile al seguente:  
   
-```c#  
+```csharp  
 var handler = this.PropertyChanged;  
 if (handler != null)  
     handler(…)  
@@ -61,17 +79,18 @@ PropertyChanged?.Invoke(e)
   
 ```  
   
- Il codice creato in questo modo è thread\-safe perché il compilatore genera il codice per valutare `PropertyChanged` una sola volta, mantenendo il risultato nella variabile temporanea.  
+ Il codice creato in questo modo è thread-safe perché il compilatore genera il codice per valutare `PropertyChanged` una sola volta, mantenendo il risultato nella variabile temporanea.  
   
  È necessario chiamare esplicitamente il metodo `Invoke` perché non esiste una sintassi di chiamata dei delegati con condizione Null `PropertyChanged?(e)`.  In precedenza esistevano troppe situazioni di analisi ambigue che lo consentivano.  
   
-## Specifiche del linguaggio  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="language-specifications"></a>Specifiche del linguaggio  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
- Per altre informazioni, vedere [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
+ Per altre informazioni, vedere [Riferimenti per il linguaggio Visual Basic](../../../visual-basic/language-reference/index.md).  
   
-## Vedere anche  
- [Riferimenti per C\#](../../../csharp/language-reference/index.md)   
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)   
- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+## <a name="see-also"></a>Vedere anche  
+ [?? (null-coalescing operator)](null-conditional-operator.md)  ?? (operatore null-coalescing)  
+ [Riferimenti per C#](../../../csharp/language-reference/index.md)   
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
+ [Riferimenti per il linguaggio Visual Basic](../../../visual-basic/language-reference/index.md)   
+ [Guida per programmatori Visual Basic](../../../visual-basic/programming-guide/index.md)

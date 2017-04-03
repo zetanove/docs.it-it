@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 translationtype: Human Translation
-ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
-ms.openlocfilehash: f681b1663d1a2e6c2fbbd1cc415290d26bbbe429
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 633dcc6d966125139cb21c4e70dac4d4794ee9a4
+ms.openlocfilehash: da326fb823c16c7795a6a05ad302c13918b435aa
+ms.lasthandoff: 03/20/2017
 
 ---
 
@@ -68,7 +68,7 @@ La specifica della libreria .NET Standard è un set standardizzato di API. La sp
 
 La specifica ufficiale è un insieme di file con estensione cs che definiscono le API che sono parte dello standard. La [directory ref](https://github.com/dotnet/corefx/tree/master/src/System.Runtime/ref) di ciascun [componente](https://github.com/dotnet/corefx/tree/master/src) definisce le API della libreria .NET Standard. Anche se si trovano nel [repository CoreFX](https://github.com/dotnet/corefx), gli elementi di riferimento non sono specifici di .NET Core.
 
-Il metapacchetto [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) ([origine](https://github.com/dotnet/corefx/blob/master/pkg/NETStandard.Library/NETStandard.Library.packages.targets)) descrive il set di librerie che definiscono (in parte) una o più versioni della libreria Standard.
+Il metapacchetto [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library) ([origine](https://github.com/dotnet/standard/blob/master/netstandard/pkg/NETStandard.Library.dependencies.props)) descrive il set di librerie che definiscono (in parte) una o più versioni della libreria Standard.
 
 Un componente specifico, ad esempio System.Runtime, descrive quanto segue:
 

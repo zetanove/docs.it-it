@@ -1,90 +1,108 @@
 ---
-title: "Modificatori di accesso (Guida per programmatori C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "modificatori di accesso [C#], informazioni"
-  - "Linguaggio C#, modificatori di accesso"
+title: Modificatori di accesso (Guida per programmatori C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- C# Language, access modifiers
+- access modifiers [C#], about
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
 caps.latest.revision: 32
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 32
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 9940012829038f585ad78a10b70fe2941753e40e
+ms.lasthandoff: 03/13/2017
+
 ---
-# Modificatori di accesso (Guida per programmatori C#)
-Tutti i tipi e i membri dei tipi prevedono un livello di accessibilità che controlla se possono essere utilizzati da altro codice nell'assembly o in altri assembly.  È possibile utilizzare i seguenti modificatori di accesso per specificare l'accessibilità di un tipo o di un membro durante la relativa dichiarazione:  
+# <a name="access-modifiers-c-programming-guide"></a>Modificatori di accesso (Guida per programmatori C#)
+Tutti i tipi e i membri dei tipi hanno un livello di accessibilità, che controlla se possono essere usati da altro codice nell'assembly o in assembly di terze parti. È possibile usare i modificatori di accesso seguenti per specificare l'accessibilità di un tipo o di un membro quando viene dichiarato:  
   
  [public](../../../csharp/language-reference/keywords/public.md)  
  Il tipo o il membro è accessibile da altro codice nello stesso assembly o in un altro assembly che vi fa riferimento.  
   
  [private](../../../csharp/language-reference/keywords/private.md)  
- Il tipo o il membro è accessibile solo dal codice nella stessa classe o struttura.  
+ Il tipo o il membro è accessibile solo dal codice nella stessa classe o struct.  
   
  [protected](../../../csharp/language-reference/keywords/protected.md)  
- Il tipo o il membro è accessibile solo dal codice nella stessa classe o struttura o in una classe derivata dalla prima.  
+ Il tipo o membro è accessibile solo dal codice nella stessa classe o struct o in una classe derivata da tale classe.  
   
  [internal](../../../csharp/language-reference/keywords/internal.md)  
  Il tipo o il membro è accessibile dal codice nello stesso assembly ma non da un altro assembly.  
   
  `protected internal`  
- Il tipo o il membro è accessibile dal codice nello stesso assembly in cui è dichiarato o da una classe derivata in un altro assembly.  L'accesso da un altro assembly deve avvenire all'interno di una dichiarazione di classe che deriva dalla classe in cui l'elemento interno protetto viene dichiarato e tramite un'istanza del tipo di classe derivata.  
+ Il tipo o il membro è accessibile da qualsiasi codice dell'assembly in cui viene dichiarato o dall'interno di una classe derivata in un altro assembly. L'accesso da un altro assembly deve essere eseguito all'interno di una dichiarazione di classe che deriva dalla classe in cui viene dichiarato l'elemento interno protetto, e tramite un'istanza del tipo di classe derivata.  
   
- Negli esempi seguenti viene illustrato come specificare i modificatori di accesso su un tipo e su un membro:  
+ L'esempio seguente illustra come specificare i modificatori di accesso in un tipo e in un membro:  
   
  [!code-cs[csProgGuideObjects#72](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/access-modifiers_1.cs)]  
   
- Non tutti i modificatori di accesso possono essere utilizzati da tutti i tipi o membri in tutti i contesti e in alcuni casi l'accessibilità di un membro di un tipo è vincolata da quella del tipo che lo contiene.  Nelle sezioni seguenti sono fornite ulteriori informazioni sull'accessibilità.  
+ Non tutti i modificatori di accesso possono essere usati da tutti i tipi o membri in tutti i contesti e in alcuni casi l'accessibilità di un membro del tipo è vincolato all'accessibilità del tipo contenitore. Le sezioni seguenti offrono altre informazioni dettagliate sull'accessibilità.  
   
-## Accessibilità a classi e strutture  
- Classi e struct dichiarate direttamente all'interno di uno spazio dei nomi ovvero che non sono annidate all'interno di altre classi o struct,  possono essere pubbliche o interne.  Per impostazione predefinita, se non viene specificato alcun modificatore di accesso, sono interne.  
+## <a name="class-and-struct-accessibility"></a>Accessibilità di classi e struct  
+ Le classi e gli struct dichiarati direttamente all'interno di uno spazio dei nomi (in altre parole, che non sono annidati all'interno di altre classi o struct) possono essere public o internal. Internal è l'opzione predefinita se non viene specificato nessun modificatore di accesso.  
   
- I membri struct, incluse le strutture e le classi annidate, possono essere dichiarate pubbliche, interne o private.  I membri della classe, incluse le classi annidate e le strutture, possono essere public, protected internal, protected, internal o private.  Il livello di accesso per i membri della classe e i membri struct, comprese strutture e classi annidate, è privato per impostazione predefinita.  I tipi annidati privati non sono accessibili dall'esterno del tipo che li contiene.  
+ I membri struct, incluse le classi e gli struct annidati, possono essere dichiarati come public, internal o private. I membri struct, incluse le classi e gli struct annidati, possono essere public, protected internal, protected, internal o private. Il livello di accesso per i membri di classe e per i membri struct, incluse le classi e gli struct annidati, è private per impostazione predefinita. I tipi annidati private non sono accessibili all'esterno del tipo contenitore.  
   
- Le classi derivate non possono avere un'accessibilità maggiore di quella dei relativi tipi di base.  In altri termini, non è possibile disporre di una classe pubblica `B` che deriva da una classe interna `A`.  Se questo scenario fosse consentito, la classe `A` diventerebbe pubblica, perché tutti i membri protetti o interni di `A` sono accessibili dalla classe derivata.  
+ Le classi derivate non possono avere un'accessibilità maggiore di quella dei tipi di base. In altre parole, non è possibile avere una classe `B` public che deriva da una classe `A` internal. Se questo fosse consentito, avrebbe l'effetto di rendere `A` pubblic, perché tutti i membri protected e internal di `A` sarebbero accessibili dalla classe derivata.  
   
- È possibile consentire ad altri assembly specifici di accedere ai tipi interni utilizzando InternalsVisibleToAttribute.  Per ulteriori informazioni, vedere [Assembly friend](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
+ È possibile abilitare altri assembly specifici per accedere ai tipi internal usando InternalsVisibleToAttribute. Per altre informazioni, vedere [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055) (Assembly friend).  
   
-## Accessibilità a membri di classi e strutture  
- I membri delle classi \(incluse classi e strutture annidate\) possono essere dichiarati con uno dei cinque tipi di accesso disponibili.  I membri delle strutture non possono essere dichiarati come protetti perché le strutture non supportano l'ereditarietà.  
+## <a name="class-and-struct-member-accessibility"></a>Accessibilità dei membri struct e di classe  
+ I membri di classe (inclusi le classi e gli struct annidati) possono essere dichiarati con uno qualsiasi dei cinque tipi di accesso. I membri struct non possono essere dichiarati protected perché struct non supporta l'ereditarietà.  
   
- Normalmente, l'accessibilità di un membro non può mai essere maggiore di quella del tipo che lo contiene.  Tuttavia, un membro pubblico di una classe interna potrebbe essere accessibile all'esterno dell'assembly se il membro implementa i metodi dell'interfaccia o esegue l'override dei metodi virtuali definiti in una classe base pubblica.  
+ In genere l'accessibilità di un membro non è maggiore dell'accessibilità del tipo contenitore. Un membro public di una classe internal potrebbe tuttavia essere accessibile dall'esterno dell'assembly se il membro implementa metodi di interfaccia o esegue l'override di metodi virtuali definiti in una classe di base public.  
   
- Il tipo del membro rappresentato da un campo, una proprietà o un evento deve essere accessibile almeno quanto il membro stesso.  Allo stesso modo, il tipo restituito e i tipi di parametro di qualsiasi membro che sia un metodo, un indicizzatore o un delegato devono essere almeno accessibili quanto il membro stesso.  Ad esempio, non è possibile disporre di un metodo `M` pubblico che restituisce una classe `C`, a meno che non sia pubblica anche `C`.  Analogamente, non è possibile disporre di una proprietà protetta di tipo `A` se `A` è dichiarato come privato.  
+ Il tipo di qualsiasi membro che è un campo, proprietà o evento deve essere accessibile almeno quanto il membro stesso. Analogamente, il tipo restituito e i tipi di parametri di qualsiasi membro, che è un metodo, indicizzatore o delegato, devono essere accessibili almeno quanto il membro stesso. Ad esempio, non è possibile avere un metodo `M` public che restituisce una classe `C` a meno che `C` non sia anche public. Analogamente, non è possibile avere una proprietà protected di tipo `A` se `A` è dichiarato come private.  
   
- Gli operatori definiti dall'utente devono essere sempre dichiarati come pubblici.  Per ulteriori informazioni, vedere [operatore](../../../csharp/language-reference/keywords/operator.md).  
+ Gli operatori definiti dall'utente devono sempre essere dichiarati come public. Per altre informazioni, vedere [operatore (Riferimenti per C#)](../../../csharp/language-reference/keywords/operator.md).  
   
- I distruttori non possono includere modificatori di accesso.  
+ I distruttori non possono avere modificatori di accessibilità.  
   
- Per impostare il livello di accesso per il membro di una classe o di una struttura, aggiungere la parola chiave appropriata alla dichiarazione del membro, come illustrato nell'esempio seguente.  
+ Per impostare il livello di accesso per un membro struct o di classe, aggiungere la parola chiave appropriata alla dichiarazione del membro, come illustrato nell'esempio seguente.  
   
  [!code-cs[csProgGuideObjects#73](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/access-modifiers_2.cs)]  
   
 > [!NOTE]
->  Il livello di accessibilità interna protetto significa protetto O interno, non protetto E interno.  In altre parole, un membro interno protetto è accessibile da qualsiasi classe all'interno dello stesso assembly, incluso le classi derivate.  Per limitare l'accesso solo alle classi derivate presenti nello stesso assembly, dichiarare la classe stessa interna e dichiarare i relativi membri come protetti.  
+>  Il livello di accessibilità protected internal significa protected O internal, ma non protected E internal. In altre parole, un membro protected internal è accessibile da qualsiasi classe dello stesso assembly, incluse le classi derivate. Per limitare l'accessibilità solo alle classi derivate dello stesso assembly, dichiarare la classe stessa come internal e dichiarare i relativi membri come protected.  
   
-## Altri tipi  
- Le interfacce dichiarate direttamente in uno spazio dei nomi possono essere dichiarate come pubbliche o interne e, analogamente alle classi e alle struct, per impostazione predefinita prevedono l'accesso interno.  I membri delle interfacce sono sempre pubblici, perché lo scopo di un'interfaccia è di consentire ad altri tipi l'accesso a una classe o a una struttura.  Non è possibile applicare modificatori di accesso ai membri delle interfacce.  
+## <a name="other-types"></a>Altri tipi  
+ Le interfacce dichiarate direttamente all'interno di uno spazio dei nomi possono essere dichiarate come public o internal e, analogamente a classi e struct, le interfacce vengono impostate a accesso internal. I membri di interfaccia sono sempre public poiché lo scopo di un'interfaccia è abilitare altri tipi ad accedere a una classe o struct. Nessun modificatore di accesso può essere applicato ai membri di interfaccia.  
   
- I membri delle enumerazioni sono sempre pubblici e non è possibile applicare modificatori di accesso.  
+ I membri di enumerazione sono sempre public e non può essere applicato nessun modificatore di accesso.  
   
- I delegati si comportano come le classi e le strutture.  Per impostazione predefinita, hanno accesso interno se dichiarati direttamente all'interno di uno spazio dei nomi e accesso se annidati.  
+ I delegati si comportano come classi e struct. Per impostazione predefinita, hanno accesso internal quando dichiarati direttamente all'interno di uno spazio dei nomi e accesso private se annidati.  
   
-## Specifiche del linguaggio C\#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec-md.md)]  
+## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
+ [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   
-## Vedere anche  
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Classi e struct](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [Interfacce](../../../csharp/programming-guide/interfaces/index.md)   
  [private](../../../csharp/language-reference/keywords/private.md)   
  [public](../../../csharp/language-reference/keywords/public.md)   
- [interne](../../../csharp/language-reference/keywords/internal.md)   
- [Protected](../../../csharp/language-reference/keywords/protected.md)   
- [classe](../../../csharp/language-reference/keywords/class.md)   
+ [internal](../../../csharp/language-reference/keywords/internal.md)   
+ [protected](../../../csharp/language-reference/keywords/protected.md)   
+ [class](../../../csharp/language-reference/keywords/class.md)   
  [struct](../../../csharp/language-reference/keywords/struct.md)   
- [interfaccia](../../../csharp/language-reference/keywords/interface.md)
+ [interface](../../../csharp/language-reference/keywords/interface.md)
