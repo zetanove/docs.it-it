@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 2dbed1bc-86f5-43cd-9a57-adbb1c5efba4
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: e36eab49717e6a5872c5812fce160d61eee50a4f
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: 815d9c24c139ef738b256c7bee791756a2fdb3b3
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -195,7 +195,7 @@ Overload | [Overload](#overloads) |Le proprietà e i metodi possono essere sotto
 Overload | -- | Se due o più metodi conformi a CLS dichiarati in un tipo hanno lo stesso nome e, per un set specifico di creazioni di istanze del tipo, dispongono dello stesso parametro e dei tipi restituiti, tutti questi metodi saranno semanticamente equivalenti alle creazioni di istanze del tipo. | 48
 Proprietà | [Proprietà](#properties) | I metodi che implementano i metodi Get e Set di una proprietà devono essere contrassegnati come `SpecialName` nei metadati. | 24
 Proprietà | [Proprietà](#properties) | Le funzioni di accesso di una proprietà devono essere tutte statiche, tutte virtuali o tutte istanze. | 26
-Proprietà | [Proprietà](#properties) | Il tipo di una proprietà deve essere il tipo restituito del metodo Get e il tipo dell'ultimo argomento del metodo Set. I tipi dei parametri della proprietà devono essere i tipi dei parametri per il metodo Get e i tipi di tutti i parametri del metodo Set tranne l'ultimo. Tutti questi tipi devono essere conformi a CLS e non devono essere puntatori gestiti, cioè non devono essere passati per riferimento. | 27
+Proprietà | [Proprietà](#properties) | Il tipo di una proprietà deve essere il tipo restituito del metodo Get e il tipo dell'ultimo argomento del metodo Set. I tipi dei parametri della proprietà devono essere i tipi dei parametri per il metodo Get e i tipi di tutti i parametri del metodo Set tranne l'ultimo. Tutti questi tipi devono essere conformi a CLS e non devono essere puntatori gestiti, ossia non devono essere passati per riferimento. | 27
 Proprietà | [Proprietà](#properties) | Le proprietà devono essere conformi a un pattern di nome specifico. L'attributo `SpecialName` indicato nella regola CLS 24 deve essere ignorato nei confronti tra nomi appropriati e deve essere conforme alle regole dell'identificatore. Una proprietà deve disporre di un metodo Get, un metodo Set o di entrambi. | 28
 Conversione di tipi | [Conversione di tipi](#type-conversion) | Se viene specificato op_Implicit oppure op_Explicit, sarà necessario fornire un metodo alternativo di coercizione. | 39
 Tipi | [Tipi e firme dei membri di tipo](#types-and-type-member-signatures) | I tipi di valore boxed non sono conformi a CLS. | 3
@@ -321,10 +321,10 @@ In [common type system](common-type-system.md) di .NET Framework è incluso un n
 
 Tipo conforme a CLS | Descrizione
 ------------------ | -----------
-[Byte](xref:System.Byte) | Unsigned Integer a&8; bit 
-[Int16](xref:System.Int16) | Signed Integer a&16; bit 
-[Int32](xref:System.Int32) | Intero con segno a&32; bit 
-[Int64](xref:System.Int64) | Intero con segno a&64; bit
+[Byte](xref:System.Byte) | Unsigned Integer a 8 bit 
+[Int16](xref:System.Int16) | Signed Integer a 16 bit 
+[Int32](xref:System.Int32) | Intero con segno a 32 bit 
+[Int64](xref:System.Int64) | Intero con segno a 64 bit
 [Single](xref:System.Single) | Valore a virgola mobile e precisione singola
 [Double](xref:System.Double) | Valore a virgola mobile e precisione doppia
 [Boolean](xref:System.Boolean) | tipo di valore true o false 
@@ -338,15 +338,15 @@ I tipi intrinseci elencati nella tabella seguente non sono conformi a CLS.
 
 Tipo non conforme | Descrizione | Alternativa alla conformità a CLS
 ------------------ | ----------- | -------------------------
-[SByte](xref:System.SByte) | Tipo di dati Signed Integer a&8; bit | [Int16](xref:System.Int16)
-[UInt16](xref:System.UInt16) | Intero senza segno a&16; bit | [Int32](xref:System.Int32)
-[UInt32](xref:System.UInt32) | Intero senza segno a&32; bit | [Int64](xref:System.Int64)
-[UInt64](xref:System.UInt64) | Intero senza segno a&64; bit | [Int64](xref:System.Int64) (possibile overflow), [BigInteger](xref:System.Numerics.BigInteger) o [Double](xref:System.Double)
+[SByte](xref:System.SByte) | Tipo di dati Signed Integer a 8 bit | [Int16](xref:System.Int16)
+[UInt16](xref:System.UInt16) | Intero senza segno a 16 bit | [Int32](xref:System.Int32)
+[UInt32](xref:System.UInt32) | Intero senza segno a 32 bit | [Int64](xref:System.Int64)
+[UInt64](xref:System.UInt64) | Intero senza segno a 64 bit | [Int64](xref:System.Int64) (possibile overflow), [BigInteger](xref:System.Numerics.BigInteger) o [Double](xref:System.Double)
 [UIntPtr](xref:System.UIntPtr) | Puntatore o handle senza segno | [IntPtr](xref:System.IntPtr)
  
  Nella libreria di classi .NET Framework o in qualsiasi altra libreria di classi possono essere inclusi altri tipi non conformi a CLS; ad esempio: 
  
- * Tipi di valore boxed. Nell'esempio C# seguente viene creata una classe con una proprietà pubblica di tipo `int`* denominata `Value`. Poiché `int`* è un tipo di valore boxed, il compilatore lo contrassegna come non conforme a CLS.
+ * Tipi di valore boxed. Nell'esempio C# seguente viene creata una classe con una proprietà pubblica di tipo `int`*denominata `Value`. Poiché `int`* è un tipo di valore boxed, il compilatore lo contrassegna come non conforme a CLS.
 
   ```csharp
   using System;

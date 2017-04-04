@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: e67270cf713857a5fea16ebdd0abab774f555808
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: b4fb772973607b94e120377879a5dbdde2a25271
+ms.openlocfilehash: cd0b59b4a91dc4a83d73db55d8d0e611f73f63a6
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -36,9 +36,9 @@ Poiché ora si fa riferimento ai metapacchetti `Microsoft.NETCore.App` o `NetSta
 ## <a name="default-compilation-includes-in-net-core-projects"></a>Dichiarazioni Include di compilazione predefinite nei progetti .NET Core
 Con il passaggio al formato *csproj* nelle ultime versioni dell'SDK, per gli elementi di compilazione e le risorse incorporate le dichiarazioni Include ed Exclude predefinite sono state spostate nei file delle proprietà dell'SDK. Ciò significa che non è più necessario specificare queste dichiarazioni nel file di progetto. 
 
-Il motivo principale di questo cambiamento è l'intenzione di ridurre il disordine nel file di progetto. Le dichiarazioni predefinite presenti nell'SDK coprono i casi di utilizzo più comuni, pertanto non c'è alcuna necessità di ripeterle per ogni progetto creato. Di conseguenza, i file di progetto sono più piccoli e molto più semplici da comprendere e, se necessario, da modificare manualmente. 
+Il motivo principale di questo cambiamento è la riduzione del disordine nel file di progetto. Le dichiarazioni predefinite presenti nell'SDK coprono i casi di utilizzo più comuni, pertanto non c'è alcuna necessità di ripeterle per ogni progetto creato. Di conseguenza, i file di progetto sono più piccoli e molto più semplici da comprendere e, se necessario, da modificare manualmente. 
 
-La tabella seguente mostra gli elementi e i GLOB Include ed Exclude nell'SDK: 
+La tabella seguente mostra gli elementi e i [GLOB](https://en.wikipedia.org/wiki/Glob_(programming)) Include ed Exclude nell'SDK: 
 
 | Elemento              | GLOB Include                               | GLOB Exclude                                                     | GLOB Remove                  |
 |-------------------|-------------------------------------------|---------------------------------------------------------------|----------------------------|
@@ -62,7 +62,7 @@ Se si imposta questa proprietà su `false`, si esegue l'override dell'inclusione
 Questa modifica non influisce sulle funzioni principali delle altre dichiarazioni Include. Se tuttavia si vogliono specificare, ad esempio, alcuni file da pubblicare con l'app, è ancora possibile usare i meccanismi noti in *csproj*, ad esempio l'elemento `<Content>`.
 
 ### <a name="recommendation"></a>Consiglio
-Con csproj è consigliabile rimuovere i GLOB predefiniti dal progetto e aggiungere i percorsi di file GLOB solo per gli artifact necessari all'apps o alla libreria per diversi scenari (runtime, NuGet pacchetti e così via).
+Con csproj è consigliabile rimuovere i GLOB predefiniti dal progetto e aggiungere i percorsi di file con GLOB solo per gli artifact necessari all'app o alla libreria per diversi scenari (runtime, creazione di pacchetti NuGet e così via).
 
 
 ## <a name="additions"></a>Aggiornamenti
@@ -109,11 +109,11 @@ In alternativa, l'attributo può contenere:
 * `None`: nessuno degli asset viene usato.
 * `All`: vengono usati tutti gli asset.
 
-### <a name="dotnetclitoolreference"></a>DotnetCliToolReference
-L'elemento `<DotnetCliToolReference>` specifica lo strumento dell'interfaccia della riga di comando che si vuole ripristinare nel contesto del progetto. Si tratta di una sostituzione per il nodo `tools` in *project.json*. 
+### <a name="dotnetclitoolreference"></a>DotNetCliToolReference
+L'elemento `<DotNetCliToolReference>` specifica lo strumento dell'interfaccia della riga di comando che si vuole ripristinare nel contesto del progetto. Si tratta di una sostituzione per il nodo `tools` in *project.json*. 
 
 ```xml
-<DotnetCliToolReference Include="<package-id>" Version="" />
+<DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
 #### <a name="version"></a>Versione
@@ -243,3 +243,4 @@ Percorso di base per il file *.nuspec*.
 
 ### <a name="nuspecproperties"></a>NuspecProperties
 Elenco con valori delimitati da punto e virgola di coppie chiave=valore.
+

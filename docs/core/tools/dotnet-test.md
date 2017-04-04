@@ -1,19 +1,19 @@
 ---
-title: Comando dotnet-test | Microsoft Docs
+title: Comando dotnet-test - Interfaccia della riga di comando di .NET Core | Microsoft Docs
 description: Il comando `dotnet test` viene usato per eseguire unit test in un determinato progetto.
 keywords: dotnet-test, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 21f3850520b922f16c77f831a045ec58bdf1b5c1
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
+ms.openlocfilehash: 26b5834135db8041995a137f5008d00cdf14d820
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -21,26 +21,23 @@ ms.lasthandoff: 03/07/2017
 
 ## <a name="name"></a>Nome
 
-`dotnet-test` - Driver di test .NET
+`dotnet-test`: driver di test .NET usato per eseguire gli unit test.
 
 ## <a name="synopsis"></a>Riepilogo
 
-```
-dotnet test [project] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity]
-dotnet test [-h|--help]
-```
+`dotnet test [<PROJECT>] [-s|--settings] [-t|--list-tests] [--filter] [-a|--test-adapter-path] [-l|--logger] [-c|--configuration] [-f|--framework] [-o|--output] [-d|--diag] [--no-build] [-v|--verbosity] [-h|--help]`
 
 ## <a name="description"></a>Descrizione
 
-Il comando `dotnet test` viene usato per eseguire unit test in un determinato progetto. Gli unit test sono progetti della libreria di classi con dipendenze dal framework di unit test (ad esempio, NUnit o xUnit) e dal Test Runner dotnet per tale framework di unit test. Sono disponibili come pacchetti NuGet e vengono ripristinati come dipendenze ordinarie per il progetto.
+Il comando `dotnet test` viene usato per eseguire unit test in un determinato progetto. Gli unit test sono progetti della libreria di classi con dipendenze dal framework di unit test (ad esempio, MSText, NUnit o xUnit) e dal Test Runner dotnet per il framework di unit test. Sono disponibili come pacchetti NuGet e vengono ripristinati come dipendenze ordinarie per il progetto.
 
-Anche i progetti di test devono specificare il test runner. Quest'ultimo viene specificato usando un normale elemento `<PackageReference>`, come illustrato nel file di progetto di esempio seguente:
+Anche i progetti di test devono specificare il Test Runner. Quest'ultimo viene specificato usando un normale elemento `<PackageReference>`, come illustrato nel file di progetto di esempio seguente:
 
 [!code-xml[Modello di base XUnit](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
 ## <a name="options"></a>Opzioni
 
-`project`
+`PROJECT`
     
 Specifica un percorso del progetto di test. Se omesso, per impostazione predefinita sarà la directory corrente.
 
@@ -68,13 +65,13 @@ Usa gli adattatori di test personalizzati dal percorso specificato nell'esecuzio
 
 Specifica un logger per i risultati di test. 
 
-`-c|--configuration <Debug|Release>`
+`-c|--configuration <CONFIGURATION>`
 
-Configurazione in cui eseguire la compilazione. Il valore predefinito è `Debug` ma la configurazione del progetto potrebbe eseguire l'override di questa impostazione predefinita dell'SDK.
+Configurazione in cui eseguire la compilazione. Il valore predefinito è `Debug`, ma la configurazione del progetto può eseguire l'override di questa impostazione predefinita dell'SDK.
 
 `-f|--framework <FRAMEWORK>`
 
-Cerca i file binari di test per un framework specifico.
+Cerca i file binari di test per un [framework](../../standard/frameworks.md) specifico.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
@@ -98,12 +95,11 @@ Eseguire i test nel progetto nella directory corrente:
 
 `dotnet test` 
 
-Eseguire i test nel progetto test1:
+Eseguire i test nel progetto `test1`:
 
 `dotnet test ~/projects/test1/test1.csproj` 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Framework](../../standard/frameworks.md)
-
-[Catalogo RID (Runtime IDentifier)](../rid-catalog.md)
+* [Framework di destinazione](../../standard/frameworks.md)
+* [Catalogo RID (Runtime IDentifier)](../rid-catalog.md)

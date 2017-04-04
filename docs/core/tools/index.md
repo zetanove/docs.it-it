@@ -1,103 +1,108 @@
 ---
 title: Strumenti dell&quot;interfaccia della riga di comando di .NET Core | Microsoft Docs
-description: "Una panoramica dell&quot;interfaccia della riga di comando e delle relative funzionalità principali"
+description: "Panoramica degli strumenti e delle funzionalità dell&quot;interfaccia della riga di comando."
 keywords: interfaccia della riga di comando, strumenti dell&quot;interfaccia della riga di comando, .NET, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/06/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 7c5eee9f-d873-4224-8f5f-ed83df329a59
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 4e3137d8506342662d145481d5e9fde1d53b9ba3
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 4a1f0c88fb1ccd6694f8d4f5687431646adbe000
+ms.openlocfilehash: d00277ceb7fd1c8a7186da330ab2bc4ad40c59a7
+ms.lasthandoff: 03/22/2017
 
 ---
 
-# <a name="net-core-command-line-interface-tools-net-core-sdk-10-tools"></a>Strumenti dell'interfaccia della riga di comando di .NET Core (strumenti di .NET Core SDK 1.0)
+# <a name="net-core-command-line-interface-cli-tools"></a>Strumenti dell'interfaccia della riga di comando di .NET Core
 
-L'interfaccia della riga di comando di .NET Core è un nuova toolchain di base multipiattaforma per lo sviluppo di applicazioni .NET Core. È una toolchain "di base" perché corrisponde al livello primario su cui possono essere costruiti gli altri strumenti di livello più alto, ad esempio gli ambienti di sviluppo integrato (IDE, Integrated Development Environment), gli editor e gli agenti di orchestrazione della compilazione. 
-
-È inoltre multipiattaforma per impostazione predefinita e ha la stessa superficie su ciascuna delle piattaforme supportate. Ciò significa che, una volta appresa la modalità di funzionamento degli strumenti, è possibile usare l'interfaccia della riga di comando allo stesso modo da qualsiasi piattaforma supportata. 
+L'interfaccia della riga di comando di .NET Core è una nuova toolchain multipiattaforma per lo sviluppo di applicazioni .NET. È un elemento di base su cui possono essere costruiti altri strumenti di livello più elevato, come gli ambienti di sviluppo integrato (IDE, Integrated Development Environment), gli editor e gli agenti di orchestrazione della compilazione.
 
 ## <a name="installation"></a>Installazione
-Come per qualsiasi strumento, è innanzitutto necessario eseguire l'installazione nel computer. A seconda dello scenario, per installare l'interfaccia della riga di comando è possibile usare programmi nativi oppure lo script della shell di installazione.
 
-I programmi di installazione nativi sono principalmente destinati ai computer degli sviluppatori. L'interfaccia della riga di comando viene distribuita mediante il meccanismo di installazione nativo di ogni piattaforma supportata, ad esempio i pacchetti DEB in Ubuntu o i bundle MSI in Windows. Questi programmi di installazione installano e configurano l'ambiente in base alle esigenze per consentire all'utente di usare l'interfaccia della riga di comando immediatamente dopo l'installazione. Tuttavia, richiedono anche privilegi amministrativi sul computer. È possibile visualizzare le istruzioni di installazione nella [pagina introduttiva di .NET Core](https://aka.ms/dotnetcoregs).
+È possibile usare programmi di installazione nativi o script della shell di installazione:
 
-Al contrario, gli script di installazione non richiedono privilegi amministrativi. Tuttavia, non installano tutti i prerequisiti nel computer ed è quindi necessario eseguire questa operazione manualmente. Gli script sono progettati principalmente per configurare i server di compilazione o possono essere usati quando si desidera installare gli strumenti senza privilegi amministrativi (tenendo conto della precedente precisazione relativa ai prerequisiti). È possibile trovare altre informazioni nell'[ argomento di riferimento dello script di installazione](dotnet-install-script.md). Se si è interessati alla procedura per configurare l'interfaccia della riga di comando nel server di compilazione di integrazione continua, è possibile vedere l'argomento sull'uso dell'[interfaccia della riga di comando con server di integrazione continua](using-ci-with-cli.md). 
+* I programmi di installazione nativi sono destinati essenzialmente ai computer degli sviluppatori e si avvalgono del meccanismo di installazione nativo di ogni piattaforma supportata, ad esempio i pacchetti DEB in Ubuntu o i bundle MSI in Windows. Questi programmi installano e configurano l'ambiente in modo da poter essere immediatamente usato dallo sviluppatore ma richiedono privilegi amministrativi sul computer. È possibile visualizzare le istruzioni di installazione nel sito Web [.NET Core installation guide](https://aka.ms/dotnetcoregs) (Guida all'installazione di .NET Core).
+* Gli script vengono usati principalmente per configurare i server di compilazione o quando si vuole installare gli strumenti senza privilegi amministrativi. Con l'installazione degli script non vengono installati nel computer anche i prerequisiti, che devono essere installati manualmente. Per altre informazioni, vedere l'[argomento di riferimento sugli script di installazione](dotnet-install-script.md). Per informazioni su come configurare l'interfaccia della riga di comando nel server di compilazione di integrazione continua (CI, Continuous Integration), vedere [Uso di .NET Core SDK e dei relativi strumenti in integrazione continua](using-ci-with-cli.md).
 
-Per impostazione predefinita, l'interfaccia della riga di comando viene installata in modalità side-by-side (SxS). Ciò significa che più versioni degli strumenti dell'interfaccia della riga di comando possono coesistere in un determinato momento su un singolo computer. Il modo in cui viene identificata la versione corretta è illustrato più dettagliatamente nella sezione [Driver](#driver). 
+Per impostazione predefinita, l'interfaccia della riga di comando viene installata in modalità side-by-side (SxS). Pertanto, in un unico computer possono coesistere più versioni degli strumenti dell'interfaccia della riga di comando. La procedura per determinare la versione usata in un computer in cui sono installate più versioni è illustrata nella sezione [Driver](#driver).
 
-### <a name="what-commands-come-in-the-box"></a>Comandi predefiniti
+## <a name="cli-commands"></a>Comandi dell'interfaccia della riga di comando
+
 Per impostazione predefinita vengono installati i comandi seguenti:
 
+### <a name="basic-commands"></a>Comandi di base
+
 * [new](dotnet-new.md)
-* [migrate](dotnet-migrate.md)
 * [restore](dotnet-restore.md)
-* [run](dotnet-run.md)
 * [build](dotnet-build.md)
-* [test](dotnet-test.md)
 * [publish](dotnet-publish.md)
+* [run](dotnet-run.md)
+* [test](dotnet-test.md)
+* [vstest](dotnet-vstest.md)
 * [pack](dotnet-pack.md)
+* [migrate](dotnet-migrate.md)
+* [clean](dotnet-clean.md)
+* [sln](dotnet-sln.md)
 
-È inoltre possibile importare altri comandi in base al progetto e aggiungere comandi personalizzati. Questa operazione è illustrata in dettaglio nella sezione [Estendibilità](#extensibility). 
+### <a name="project-modification-commands"></a>Comandi di modifica dei progetti
 
-## <a name="working-with-the-cli"></a>Uso dell'interfaccia della riga di comando
+* [add package](dotnet-add-package.md)
+* [add reference](dotnet-add-reference.md)
+* [remove package](dotnet-remove-package.md)
+* [remove reference](dotnet-remove-reference.md)
+* [list reference](dotnet-list-reference.md)
 
-Prima di approfondire l'argomento con dettagli specifici, è possibile esaminare una panoramica generale del funzionamento dell'interfaccia della riga di comando. Nell'esempio seguente sono inclusi alcuni comandi dell'installazione standard dell'interfaccia della riga di comando per inizializzare una nuova applicazione console semplice, ripristinare le dipendenze, compilare l'applicazione e quindi eseguirla. 
+### <a name="advanced-commands"></a>Comandi avanzati
+
+* [nuget delete](dotnet-nuget-delete.md)
+* [nuget locals](dotnet-nuget-locals.md)
+* [nuget push](dotnet-nuget-push.md)
+* [msbuild](dotnet-msbuild.md)
+* [dotnet install script](dotnet-install-script.md)
+
+L'interfaccia della riga di comando adotta un modello di estendibilità che consente di specificare altri strumenti per i progetti. Per altre informazioni, vedere l'argomento [Modello di estendibilità dell'interfaccia della riga di comando di .NET Core](extensibility.md).
+
+## <a name="command-structure"></a>Struttura dei comandi
+
+La struttura dei comandi dell'interfaccia della riga di comando è composta dal [driver ("dotnet")](#driver), dal [comando (o "verbo")](#command-verb) e, in alcuni casi, dagli [argomenti](#arguments) e dalle [opzioni](#options). Questo modello può essere osservato nella maggior parte delle operazioni eseguite dalla riga di comando, inclusa la creazione di una nuova app console e la relativa esecuzione dalla riga di comando, come illustrato dai comandi seguenti quando vengono eseguiti da una directory denominata *my_app*:
 
 ```console
 dotnet new console
 dotnet restore
-dotnet build --output /stuff
-dotnet /stuff/new.dll
+dotnet build --output /build_output
+dotnet /build_output/my_app.dll
 ```
 
-Come si può notare nell'esempio precedente, gli strumenti dell'interfaccia della riga di comando vengono usati in base a un modello specifico. All'interno di questo modello, è possibile identificare tre parti principali di ogni comando:
-
-1. [Il driver ("dotnet")](#driver)
-2. [Il comando, o "verbo"](#the-verb)
-3. [Gli argomenti del comando](#the-arguments)
-
 ### <a name="driver"></a>Driver
-Il driver, denominato [dotnet](dotnet.md), è la prima parte del comando che viene richiamato. Il driver ha due compiti:
 
-1. Eseguire le applicazioni portabili
-2. Eseguire il verbo
+Il driver, denominato [dotnet](dotnet.md), ha due compiti: eseguire un'[app dipendente dal framework](../app-types.md) ed eseguire un comando. `dotnet` non è accompagnato da un comando solo quando viene usato per avviare un'applicazione.
 
-L'operazione eseguita dipende dalle informazioni specificate sulla riga di comando. Nel primo caso, si specifica la DLL di un'applicazione portabile che `dotnet` esegue in modo simile al seguente: `dotnet /path/to/your.dll`. 
+Per eseguire un'applicazione dipendente dal framework, specificare l'app dopo il driver, ad esempio `dotnet /path/to/my_app.dll`. Se si esegue il comando dalla cartella in cui si trova la DLL dell'app, è sufficiente eseguire `dotnet my_app.dll`.
 
-Nel secondo caso, il driver prova a richiamare il comando specificato. Viene così avviato il processo di esecuzione del comando dell'interfaccia della riga di comando. Innanzitutto, il driver determina la versione degli strumenti desiderata. È possibile specificare la versione nel file [global.json](global-json.md) usando la proprietà `version`. Se non è disponibile, il driver individua la versione più recente degli strumenti installata nel disco e usa tale versione. Una volta determinata la versione, il driver esegue il comando. 
+Nel momento in cui si fornisce un comando al driver, `dotnet.exe` avvia il processo di esecuzione del comando dell'interfaccia della riga di comando. Come prima operazione, il driver determina la versione degli strumenti da usare. Se la versione non è specificata nelle opzioni di comando, il driver usa la versione più recente disponibile. Per specificare una versione diversa dall'ultima versione installata, usare l'opzione `--fx-version <VERSION>` (vedere l'articolo di riferimento sul [comando dotnet](dotnet.md)). Dopo aver determinato la versione dell'SDK, il driver esegue il comando.
 
-### <a name="the-verb"></a>Verbo
-Il verbo è semplicemente un comando che esegue un'azione. `dotnet build` compila il codice. `dotnet publish` pubblica il codice. Il verbo viene implementato come applicazione console, che per convenzione è denominata nel modo seguente: `dotnet-{verb}`. Tutta la logica viene implementata nell'applicazione console che rappresenta il verbo. 
+### <a name="command-verb"></a>Comando ("verbo")
 
-### <a name="the-arguments"></a>Argomenti
-Gli argomenti passati alla riga di comando sono gli argomenti relativi all'effettivo verbo o comando richiamato. Ad esempio, quando si digita `dotnet publish --output publishedapp`, l'argomento `--output` viene passato al comando `publish`. 
+Il comando (o "verbo") è semplicemente un comando che esegue un'azione. Ad esempio, `dotnet build` compila il codice, mentre `dotnet publish` pubblica il codice. I comandi vengono implementati come un'applicazione console usando una convenzione `dotnet-{verb}`. 
 
-## <a name="types-of-application-portability"></a>Tipi di portabilità delle applicazioni
-L'interfaccia della riga di comando consente la portabilità delle applicazioni in due modi principali:
+### <a name="arguments"></a>Argomenti
 
-1. Installazione di applicazioni completamente portabili che possono essere eseguite ovunque sia installato .NET Core
-2. Distribuzioni autonome
+Gli argomenti passati alla riga di comando sono gli argomenti per il comando richiamato. Quando si esegue `dotnet publish my_app.csproj`, ad esempio, l'argomento `my_app.csproj` indica il progetto da pubblicare e viene passato al comando `publish`.
 
-Altre informazioni su entrambe le modalità di distribuzione sono disponibili nell'argomento [Distribuzione di applicazioni .NET Core](../deploying/index.md). 
+### <a name="options"></a>Opzioni
+
+Le opzioni passate alla riga di comando sono le opzioni per il comando richiamato. Quando si esegue `dotnet publish --output /build_output`, ad esempio, l'opzione `--output` e il relativo valore vengono passati al comando `publish`. 
 
 ## <a name="migration-from-projectjson"></a>Migrazione da project.json
-Se si usano gli strumenti dell'anteprima 2 e i progetti *project.json*, è possibile vedere la documentazione sul comando [dotnet migrate](dotnet-migrate.md) per acquisire familiarità con il comando e su come eseguire la migrazione del progetto. 
 
-> [!NOTE]
-> Il comando `dotnet migrate` non esegue attualmente la migrazione dei file *project.json* precedenti all'anteprima 2. 
+Se si sono usati gli strumenti della Preview 2 per generare progetti basati su *project.json*, consultare l'argomento [dotnet migrate](dotnet-migrate.md) per informazioni sulla migrazione del progetto in MSBuild/*.csproj* per l'uso con gli strumenti di rilascio. Per i progetti .NET Core creati prima del rilascio degli strumenti della Preview 2, aggiornare manualmente il progetto seguendo le istruzioni disponibili in [Migrazione da DNX all'interfaccia della riga di comando di .NET Core (project.json)](../migration/from-dnx.md) e usare `dotnet migrate` o aggiornare direttamente i progetti.
 
-## <a name="extensibility"></a>Estendibilità
-Naturalmente, non ogni singolo strumento che è possibile usare nel flusso di lavoro farà parte degli strumenti dell'interfaccia della riga di comando. Tuttavia, l'interfaccia della riga di comando di .NET Core ha un modello di estendibilità che consente di specificare altri strumenti per i progetti. Per altre informazioni, vedere l'argomento [Modello di estendibilità dell'interfaccia della riga di comando di .NET Core](extensibility.md).
+## <a name="additional-resources"></a>Risorse aggiuntive
 
-## <a name="summary"></a>Riepilogo
-In questa breve panoramica sono state illustrate le funzionalità più importanti dell'interfaccia della riga di comando. Altre informazioni sono disponibili negli argomenti concettuali e di riferimento pubblicati su questo sito. È anche possibile usare altre risorse:
-* Repository GitHub [dotnet/CLI](https://github.com/dotnet/cli/)
-* [Istruzioni introduttive](https://aka.ms/dotnetcoregs/)
+* [Repository GitHub dotnet/CLI](https://github.com/dotnet/cli/)
+* [.NET Core installation guide](https://aka.ms/dotnetcoregs/) (Guida all'installazione di .NET Core)
 

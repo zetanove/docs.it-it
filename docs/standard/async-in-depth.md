@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 4c66c1dc6fb1d51eb2a7d6566fbf62b5f19b556b
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: 92d94fd7f148bb4c1bbad50212d90d722214085f
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -88,7 +88,7 @@ Ad esempio, in Windows un thread del sistema operativo esegue una chiamata al dr
 
 Quando la richiesta viene soddisfatta e i dati vengono restituiti tramite il driver di dispositivo, viene inviata una notifica alla CPU del ricevimento dei nuovi dati tramite un interrupt.  La modalità con cui viene gestito l'interrpt varia a seconda del sistema operativo, ma alla fine i dati vengono passati tramite il sistema operativo finché non raggiungono una chiamata di interoperabilità di sistema. Ad esempio, in Linux un gestore di interrupt pianificherà la metà inferiore dell'IRQ perché passi i dati nel sistema operativo in modo asincrono.  Si noti che *anche* questo avviene in modo asincrono.  Il risultato viene inserito in coda fino a quando il thread disponibile successivo può eseguire il metodo asincrono e "dispiegare" il risultato dell'attività completata.
 
-In tutto questo processo il punto chiave è che **nessun thread è dedicato all'esecuzione dell'attività**.  Sebbene il lavoro venga eseguito in un determinato contesto, ad esempio il sistema operativo deve passare i dati a un driver di dispositivo e rispondere a un interrupt, nessun thread è dedicato ad *attendere* che i dati della richiesta ritornino.  Ciò consente al sistema di gestire un volume di lavoro maggiore, anziché attendere il completamento delle chiamate I/O.
+In tutto questo processo il punto chiave è che **nessun thread è dedicato all'esecuzione dell'attività**.  Sebbene il lavoro venga eseguito in un determinato contesto, ad esempio il sistema operativo deve passare i dati a un driver di dispositivo e rispondere a un interrupt, nessun thread è dedicato all'*attesa* del ritorno dei dati della richiesta.  Ciò consente al sistema di gestire un volume di lavoro maggiore, anziché attendere il completamento delle chiamate I/O.
 
 Tutto ciò può sembrare una mole di lavoro davvero imponente ma, se misurato in termini di tempo, è solo una frazione minima di quanto occorre per il lavoro I/O effettivo. Anche se tutt'altro che precisa, la seguente potrebbe essere la sequenza temporale per tale chiamata:
 

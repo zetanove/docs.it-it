@@ -4,16 +4,16 @@ description: Esercitazione dettagliata che illustra come iniziare a usare .NET C
 keywords: .NET Core, interfaccia della riga di comando
 author: cartermp
 ms.author: mairaw
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 240061d2515c14ba7ab733f4cc9e7e38fb2a5c7c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: e30414ac3dd48bbb060ad6f2a33a0a124cba0fa3
+ms.openlocfilehash: 6ffca900d5649823e6aa2e28486a64a2f7844efc
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -25,7 +25,7 @@ Se non si ha familiarità con il set di strumenti dell'interfaccia della riga di
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- [.NET Core SDK 1.0.0](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 1.0](https://www.microsoft.com/net/download/core).
 - Editor di testo o editor di codice a scelta.
 
 ## <a name="hello-console-app"></a>Creazione di un'applicazione console
@@ -163,3 +163,4 @@ Si noti che i comandi e i passaggi illustrati in questa esercitazione per esegui
 ## <a name="see-also"></a>Vedere anche
 
 [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md) (Organizzazione e test di progetti con gli strumenti dell'interfaccia della riga di comando di .NET Core)
+

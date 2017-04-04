@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: a6f90a43b5f129cd246546f2cc36c4b97c3fb15c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 4a1f0c88fb1ccd6694f8d4f5687431646adbe000
+ms.openlocfilehash: d32c73ac3a724d4701b7f6c1d548aedb3fb00c56
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -74,10 +74,10 @@ Come mostrato dalla tabella sopra riportata, esistono alcune funzionalità di DN
 ### <a name="global-commands"></a>Comandi globali
 DNU integrava un concetto denominato "comandi globali". Si trattava essenzialmente di applicazioni console create come pacchetti NuGet con uno script della shell che richiamava il DNX specificato per l'esecuzione dell'applicazione. 
 
-L'interfaccia della riga di comando non supporta questo concetto. Supporta tuttavia l'aggiunta di comandi per progetto che è possibile richiamare usando la comune sintassi `dotnet <command>`. Per altre informazioni, vedere [Extensibility overview](../tools/index.md#extensibility) (Panoramica sull'estendibilità). 
+L'interfaccia della riga di comando non supporta questo concetto. Supporta tuttavia l'aggiunta di comandi per progetto che è possibile richiamare usando la comune sintassi `dotnet <command>`.
 
 ### <a name="installing-dependencies"></a>Installazione delle dipendenze
-A partire dalla versione&1;, gli strumenti dell'interfaccia della riga di comando di .NET Core non dispongono di un comando `install` per l'installazione delle dipendenze. Per installare un pacchetto da NuGet, è necessario aggiungerlo come dipendenza al file `project.json` e quindi eseguire `dotnet restore`. 
+A partire dalla versione 1, gli strumenti dell'interfaccia della riga di comando di .NET Core non dispongono di un comando `install` per l'installazione delle dipendenze. Per installare un pacchetto da NuGet, è necessario aggiungerlo come dipendenza al file `project.json` e quindi eseguire `dotnet restore`. 
 
 ### <a name="running-your-code"></a>Esecuzione del codice
 È possibile eseguire il codice in due modi: Dal sorgente, con `dotnet run`. A differenza di `dnx run`, questo comando non esegue alcuna compilazione in memoria, ma richiama `dotnet build` per compilare il codice e quindi eseguire il file binario compilato. 
@@ -117,7 +117,7 @@ Se si sta creando un'applicazione console, è necessario aggiungere al file di p
 
 Questo frammento indica a `dotnet build` di creare un punto di ingresso per l'applicazione, consentendo così l'esecuzione del codice. Se si sta creando una libreria di classi, ignorare semplicemente questa sezione. Naturalmente, dopo aver aggiunto al file `project.json` il frammento sopra riportato, è necessario aggiungere un punto di ingresso statico. Con la sospensione di DNX, i servizi DI forniti da quest'ultimo non sono più disponibili e il punto di ingresso statico deve essere un punto di ingresso .NET di base: `static void Main()`.
 
-Se nel file `project.json` è presente una sezione "commands", è possibile rimuoverla. Alcuni comandi usati per rappresentare comandi DNU, ad esempio comandi dell'interfaccia della riga di comando di Entity Framework, vengono trasferiti nell'interfaccia della riga di comando come estensioni per progetto. Se sono stati creati comandi personalizzati che vengono usati nei progetti, è necessario sostituirli con estensioni dell'interfaccia della riga di comando. In questo caso, il nodo `commands` di `project.json` deve essere sostituito dal nodo `tools`. Tale nodo deve elencare le dipendenze degli strumenti, come illustrato nella sezione [CLI extensibility](../tools/index.md#extensibility) (Estendibilità dell'interfaccia della riga di comando). 
+Se nel file `project.json` è presente una sezione "commands", è possibile rimuoverla. Alcuni comandi usati per rappresentare comandi DNU, ad esempio comandi dell'interfaccia della riga di comando di Entity Framework, vengono trasferiti nell'interfaccia della riga di comando come estensioni per progetto. Se sono stati creati comandi personalizzati che vengono usati nei progetti, è necessario sostituirli con estensioni dell'interfaccia della riga di comando. In questo caso, il nodo `commands` di `project.json` deve essere sostituito dal nodo `tools` e deve elencare le dipendenze degli strumenti. 
 
 Al termine di queste operazioni, è necessario decidere il tipo di portabilità per l'app. Con .NET Core, Microsoft ha reso disponibile un'ampia gamma di opzioni di portabilità. È possibile, ad esempio, creare un'applicazione completamente *portabile* o un'applicazione *autonoma*. Il funzionamento di un'applicazione portabile è simile a quello delle applicazioni .NET Framework: è necessario un componente condiviso (.NET Core) da eseguire nel computer di destinazione. L'applicazione autonoma non richiede l'installazione di .NET Core nel computer di destinazione, ma è necessario creare un'applicazione per ogni sistema operativo che si vuole supportare. Questi e altri tipi di portabilità sono discussi nel documento  [Application portability type](../deploying/index.md) (Tipo di portabilità delle applicazioni). 
 

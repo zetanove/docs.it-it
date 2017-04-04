@@ -3,8 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Documentazione di .NET
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
+ms.sourcegitcommit: 8cd0b51fd9527f575d8bd6797a6f69a3e44e1f77
+ms.openlocfilehash: e6b03b427356cb6b4a12902a60763c294405f5fa
+ms.lasthandoff: 03/24/2017
 
 ---
 <div id="main" class="v2">
@@ -128,7 +129,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                                 <p><a href="https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx">Introduzione</a></p>
                                                 <p><a href="https://msdn.microsoft.com/library/hh156542(v=vs.110).aspx">Esercitazioni</a></p>
                                                 <p><a href="https://msdn.microsoft.com/library/54xbah2z(v=vs.110).aspx">Sviluppo client</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET&2;.0</a></p>
+                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET 2.0</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -211,17 +212,23 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     </div>
                                 </div>
                             </li>
+                            <li class="fullSpan">
+                                <div class="container footer">
+                                    <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contributi agli esempi e alla documentazione .NET</a></p>
+                                    <p><a href="https://docs.microsoft.com/en-us/dotnet/articles/project-json">Versione di Visual Studio 2015/project.json della documentazione</a></p>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#web">Web</a>
-                        <ul id="web" class="cardsG">
+                        <ul id="web" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -240,7 +247,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -259,7 +266,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -278,7 +285,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-4.svg" alt="" />
                                                 </div>
                                             </div>
@@ -297,7 +304,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-5.svg" alt="" />
                                                 </div>
                                             </div>
@@ -316,7 +323,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-6.svg" alt="" />
                                                 </div>
                                             </div>
@@ -334,13 +341,13 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                     </li>
                     <li>
                         <a href="#cloud">Cloud</a>
-                        <ul id="cloud" class="cardsG">
+                        <ul id="cloud" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -359,7 +366,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -378,7 +385,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -397,7 +404,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-4.svg" alt="" />
                                                 </div>
                                             </div>
@@ -415,13 +422,13 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                     </li>
                     <li>
                         <a href="#mobile">Dispositivi mobili</a>
-                        <ul id="mobile" class="cardsG">
+                        <ul id="mobile" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-mobile-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -440,7 +447,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-mobile-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -459,7 +466,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-mobile-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -477,13 +484,13 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                     </li>
                     <li>
                         <a href="#desktop">Desktop</a>
-                        <ul id="desktop" class="cardsG">
+                        <ul id="desktop" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -503,7 +510,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -522,7 +529,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -541,7 +548,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-4.svg" alt="" />
                                                 </div>
                                             </div>
@@ -559,13 +566,13 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                     </li>
                     <li>
                         <a href="#gaming">Giochi</a>
-                        <ul id="gaming" class="cardsG">
+                        <ul id="gaming" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -585,7 +592,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -604,7 +611,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -623,7 +630,7 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-4.svg" alt="" />
                                                 </div>
                                             </div>
@@ -645,9 +652,4 @@ ms.openlocfilehash: 44b21665593717023aef7a85fe88a60d07519327
         </ul>
     </div>
 </div>
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 
