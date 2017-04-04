@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 155553e4-89a2-418d-be88-4e75f6c3cc69
 translationtype: Human Translation
-ms.sourcegitcommit: 053e296db67b9dde23c4d6295dbc7246d2b486ed
-ms.openlocfilehash: 816fb524000eb96ed5a157934cabc51b90f11dc0
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 405bac1faa446687a4acdcf2d5536ee31f31f246
+ms.openlocfilehash: 7151c87d373afce88c83239499ba33980383ab98
+ms.lasthandoff: 03/15/2017
 
 ---
 
@@ -93,6 +93,8 @@ Esistono tecnologie di .NET Framework non disponibili in .NET Core. Alcune saran
 * Implementazione di servizi WCF: anche se, da giugno 2016, è presente una [libreria WCF client](https://github.com/dotnet/wcf) per l'utilizzo di servizi WCF da .NET Core, l'implementazione di server WCF è disponibile solo in .NET Framework. Questo scenario non è attualmente previsto per .NET Core, ma verrà preso in considerazione per il futuro.
 
 * Servizi correlati al flusso di lavoro: Windows Workflow Foundation (WF), Servizi flusso di lavoro (WCF e WF in un unico servizio) e WCF Data Services (in precedenza "ADO.NET Data Services") sono disponibili solo in .NET Framework e non è previsto alcun trasferimento a .NET Core.
+
+* App Windows Presentation Foundation (WPF) e Windows Form: le applicazioni WPF e Windows Form sono disponibili soltanto in .NET Framework. Attualmente non ne è previsto il trasferimento in .NET Core. 
 
 * Supporto per i linguaggi: Visual Basic e F# non dispongono attualmente di strumenti per il supporto di .NET Core, ma entrambi saranno supportati in Visual Studio 2017 e versioni successive di Visual Studio.
 

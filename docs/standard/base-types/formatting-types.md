@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: cf497639-9f91-45cb-836f-998d1cea2f43
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: dc0693c2e2c034c4c71b4270ef2812be4af72e72
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: e9b8ad13a48dd43236769b130d6f8a75b7b023ca
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -1185,7 +1185,7 @@ Console.WriteLine(result)
 
 Oltre a sostituire un elemento di formato con la rappresentazione di stringa dell'oggetto corrispondente, gli elementi di formato consentono anche di controllare gli aspetti seguenti: 
 
-* Il modo specifico in cui un oggetto è rappresentato come stringa, se l'oggetto implementa l'interfaccia [IFormattable](xref:System.IFormattable) e supporta le stringhe di formato. A tale scopo, dopo l'indice dell'elemento di formato è necessario aggiungere un simbolo : (due punti) seguito da una stringa di formato valida. Nell'esempio precedente viene eseguita questa operazione formattando un valore di data con la stringa di formato "d" (modello di data breve) (ad esempio, `{0:d}`) e formattando un valore numerico con la stringa di formato "C2" (ad esempio, `{2:C2}`) per rappresentare il numero come valore di valuta con due cifre decimali frazionarie. 
+* Il modo specifico in cui un oggetto è rappresentato come stringa, se l'oggetto implementa l'interfaccia [IFormattable](xref:System.IFormattable) e supporta le stringhe di formato. A tale scopo, dopo l'indice dell'elemento di formato è necessario aggiungere un simbolo : (due punti) seguito da una stringa di formato valida. Nell'esempio precedente viene eseguita questa operazione formattando un valore di data con la stringa di formato "d" (modello di data breve) (ad esempio, `{0:d}`) e formattando un valore numerico con la stringa di formato "C2" (ad esempio, `{2:C2}`) per rappresentare il numero come valore di valuta con due cifre decimali. 
 
 * La larghezza del campo che contiene la rappresentazione di stringa dell'oggetto e l'allineamento della rappresentazione di stringa in tale campo. A tale scopo, dopo l'indice dell'elemento di formato è necessario aggiungere un simbolo , (virgola) seguito dalla larghezza del campo. La stringa viene allineata a destra nel campo se la larghezza del campo è un valore positivo e viene allineata a sinistra se la larghezza del campo è un valore negativo. L'esempio seguente consente di allineare a sinistra i valori di data in un campo di 20 caratteri e di allineare a destra i valori decimali con una cifra frazionaria in un campo di 11 caratteri. 
 

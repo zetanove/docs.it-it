@@ -4,15 +4,15 @@ description: Distribuzione di applicazioni .NET Core
 keywords: .NET, .NET Core, distribuzione di .NET Core
 author: rpetrusha
 ms.author: ronpet
-ms.date: 03/06/2017
+ms.date: 03/14/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
 translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: 0e186665619bd76c5ba3d1e605b885a12aa15c66
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 24bca179bc153a6bb469e38067e457fa61a9d2b3
+ms.openlocfilehash: ef742b932a3a76359e3f06129dce0bf127a1977e
+ms.lasthandoff: 03/14/2017
 
 ---
 
@@ -48,11 +48,11 @@ Sono presenti anche alcuni svantaggi:
 
 Una distribuzione dipendente dal framework senza dipendenze di terze parti richiede la compilazione, il testing e la pubblicazione dell'app. Il processo viene illustrato da un semplice esempio scritto in C#. L'esempio usa l'[utilità dotnet](../tools/dotnet.md) dalla riga di comando; tuttavia, è possibile usare anche un ambiente di sviluppo, come Visual Studio o Visual Studio Code, per compilare, testare e pubblicare l'esempio.
 
-1. Creare una directory per il progetto e, nella riga di comando, digitare `[dotnet new console](../tools/dotnet-new.md)` per creare un nuovo progetto console C#.
+1. Creare una directory per il progetto e, dalla riga di comando, digitare [`dotnet new console`](../tools/dotnet-new.md) per creare un nuovo progetto console C#.
 
 2. Aprire il file `Program.cs` in un editor e sostituire il codice generato automaticamente con il codice seguente. Richiede all'utente di immettere il testo e quindi visualizza le singole parole immesse dall'utente. Usa l'espressione regolare `\w+` per separare le parole nel testo di input.
 
-    ```cs
+    ```csharp
     using System;
     using System.Text.RegularExpressions;
 
@@ -91,9 +91,9 @@ Una distribuzione dipendente dal framework senza dipendenze di terze parti richi
 
 4. Creare una build di debug dell'app usando il comando [dotnet-build](../tools/dotnet-build.md).
 
-5. Dopo aver eseguito il debug e aver testato il programma, è possibile creare i file da distribuire con l'app usando il comando `dotnet publish -f netcoreapp1.1 -c release`. In questo modo, viene creata la versione finale dell'app (anziché un debug).
+5. Dopo aver eseguito il debug e aver testato il programma, è possibile creare i file da distribuire con l'app usando il comando `dotnet publish -f netcoreapp1.1 -c Release`. In questo modo viene creata una versione di rilascio dell'app anziché una versione di debug.
 
-   I file risultanti vengono inseriti in una directory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netcoreapp1.1`.
+   I file risultanti vengono inseriti in una directory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\Release\netcoreapp1.1`.
 
 6. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
 
@@ -103,7 +103,7 @@ Oltre ai file binari dell'applicazione, il programma di installazione deve anche
 
 ### <a name="deploying-a-framework-dependent-deployment-with-third-party-dependencies"></a>Pubblicazione di una distribuzione dipendente dal framework con dipendenze di terze parti ###
 
-Una distribuzione dipendente dal framework con una o più dipendenze di terze parti prevede tre passaggi aggiuntivi prima di poter eseguire il comando `dotnet restore`:
+Una distribuzione dipendente dal framework con una o più dipendenze di terze parti prevede due passaggi aggiuntivi prima che sia possibile eseguire il comando `dotnet restore`:
 
 1. Aggiungere i riferimenti alle librerie di terze parti alla sezione `<ItemGroup>` del file `csproj`. La sezione `<ItemGroup>` seguente descrive l'elemento `<ItemGroup>` contenente le dipendenze nel progetto predefinito con Json.NET come libreria di terze parti.
 
@@ -147,7 +147,7 @@ La pubblicazione di una distribuzione autonoma senza dipendenze di terze parti c
 
 2. Aprire il file `Program.cs` in un editor e sostituire il codice generato automaticamente con il codice seguente. Richiede all'utente di immettere il testo e quindi visualizza le singole parole immesse dall'utente. Usa l'espressione regolare `\w+` per separare le parole nel testo di input.
 
-    ```cs
+    ```csharp
     using System;
     using System.Text.RegularExpressions;
 
@@ -195,24 +195,22 @@ Si noti che è inoltre necessario aggiungere un punto e virgola per separare i R
 5. Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando `dotnet publish` per entrambe le piattaforme di destinazione, come indicato di seguito:
 
    ```console
-   dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.11-x64
+   dotnet publish -c Release -r win10-x64
+   dotnet publish -c Release -r osx.10.11-x64
    ```
-In questo modo, viene creata la versione finale dell'app per ogni piattaforma di destinazione (anziché un debug). I file risultanti vengono inseriti in una sottodirectory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netcoreapp1.1\<runtime_identifier>`. Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.
+In questo modo, viene creata una versione di rilascio dell'app per ogni piattaforma di destinazione anziché una versione di debug. I file risultanti vengono inseriti in una sottodirectory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\Release\netcoreapp1.1\<runtime_identifier>`. Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.
 
 6. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
 
 I file pubblicati possono essere distribuiti nel modo desiderato. Ad esempio, è possibile inserirli in un file zip, usare un semplice comando `copy` o distribuirli con qualsiasi pacchetto di installazione di propria scelta. 
 
-Di seguito è riportato il file `csproj` completo per questo progetto.
+Di seguito è riportato il file `csproj` completo per questo progetto:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
@@ -239,8 +237,6 @@ Di seguito è riportato il file csproj completo per questo progetto:
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
@@ -292,24 +288,22 @@ Questa operazione indica che, anziché usare l'intero framework `netcoreapp1.0`,
 5. Dopo aver eseguito il debug e il testing del programma, è possibile creare i file da distribuire con l'app per ogni piattaforma di destinazione usando il comando `dotnet publish` per entrambe le piattaforme di destinazione, come indicato di seguito:
 
    ```console
-   dotnet publish -c release -r win10-x64
-   dotnet publish -c release -r osx.10.11-x64
+   dotnet publish -c Release -r win10-x64
+   dotnet publish -c Release -r osx.10.11-x64
    ```
-In questo modo, viene creata la versione finale dell'app per ogni piattaforma di destinazione (anziché un debug). I file risultanti vengono inseriti in una sottodirectory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\release\netstandard1.6\<runtime_identifier>`. Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.
+In questo modo, viene creata una versione di rilascio dell'app per ogni piattaforma di destinazione anziché una versione di debug. I file risultanti vengono inseriti in una sottodirectory denominata `publish` che si trova in una sottodirectory della sottodirectory del progetto `.\bin\Release\netstandard1.6\<runtime_identifier>`. Si noti che ogni sottodirectory contiene il set completo di file (i file dell'app e tutti i file di .NET Core) necessario per avviare l'app.
 
 6. Insieme ai file dell'applicazione, il processo di pubblicazione genera un file del database di programma (con estensione pdb) che contiene le informazioni di debug relative all'app. Il file è particolarmente utile per il debug di eccezioni. È possibile scegliere di non inserirlo nel pacchetto dei file dell'applicazione.
 
 I file pubblicati possono essere distribuiti nel modo desiderato. Ad esempio, è possibile inserirli in un file zip, usare un semplice comando `copy` o distribuirli con qualsiasi pacchetto di installazione di propria scelta. 
 
-Di seguito è riportato il file `csproj` completo per questo progetto.
+Di seguito è riportato il file `csproj` completo per questo progetto:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netstandard1.6</TargetFramework>
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <DebugType>Portable</DebugType>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>

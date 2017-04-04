@@ -11,9 +11,9 @@ ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: 3b1f5725-ac94-4f17-8e5f-244442438a4d
 translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 58c0d68b6840a07c9e5eb1848b3531181f14e973
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: b967d8e55347f44a012e4ad8e916440ae228c8ec
+ms.openlocfilehash: 1680934b40c3055d2c33ed7457d8734dccbd0a8c
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -30,7 +30,7 @@ Per poter far ciò in modo trasparente, deve esistere una modalità comune per d
 *   Stabilire un framework per l'esecuzione di diversi linguaggi.
 *   Offrire un modello orientato a oggetti per supportare l'implementazione di vari linguaggi sulla piattaforma .NET.
 *   Definire un set di regole che tutti i linguaggi devono seguire quando si tratta di uso dei tipi.
-*   Specificare una libreria che contenga i tipi di dati primitivi di base, ad esempio `Boolean`, `Byte`, `Char`, e così via, usati nello sviluppo delle applicazioni.
+*   Specificare una libreria che contenga i tipi di dati primitivi di base, ad esempio `Boolean`, `Byte`, `Char` e così via, usati nello sviluppo delle applicazioni.
 
 CTS definisce due tipologie principali di tipi che devono essere supportati: riferimento e valore. I rispettivi nomi ne indicano la definizione.
 

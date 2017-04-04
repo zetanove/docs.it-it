@@ -10,8 +10,9 @@ ms.prod: .net
 ms.devlang: dotnet
 ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 translationtype: Human Translation
-ms.sourcegitcommit: 2ad428dcda9ef213a8487c35a48b33929259abba
-ms.openlocfilehash: f44193d8f7bc9f67acb8b04966e02beca18a0653
+ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
+ms.openlocfilehash: c10736e81d4f43d6ba70b71c25878dc4068a4a10
+ms.lasthandoff: 03/20/2017
 
 ---
 
@@ -86,6 +87,14 @@ Questa esercitazione illustra molte delle funzionalità di LINQ e gli elementi d
 
 Questa esercitazione illustra la procedura per creare un microservizio ASP.NET Core e ospitarlo in Docker. Una versione definitiva del codice che verrà compilato è disponibile [nel repository core-docs su GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice).
 
+**[Introduzione all'uso di .NET Core su macOS con Visual Studio per Mac](../core/tutorials/using-on-mac-vs.md)**
+
+In questa esercitazione viene illustrato come creare una semplice applicazione console .NET Core usando Visual Studio per Mac.
+
+**[Creazione di una soluzione .NET Core completa in macOS con Visual Studio per Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
+
+In questa esercitazione viene illustrato come creare una soluzione .NET Core completa contenente librerie riutilizzabili e unit test.
+
 ## <a name="deploying-to-containers"></a>Distribuzione nei contenitori
 
 **[Running ASP.NET MVC Applications in Windows Docker Containers](../framework/docker/aspnetmvc.md)** (Esecuzione di applicazioni MVC ASP.NET nei contenitori Docker di Windows)
@@ -96,8 +105,3 @@ Una versione definitiva del codice che verrà compilato è disponibile [nel repo
 **[Running .NET Framework Console Applications in Windows Containers](../framework/docker/console.md)** (Esecuzione di applicazioni console .NET Framework nei contenitori di Windows)
 
 Questa esercitazione illustra come distribuire un'applicazione console esistente in un contenitore di Windows. Una versione definitiva del codice che verrà compilato è disponibile [nel repository core-docs su GitHub](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator).
-
-
-<!--HONumber=Jan17_HO3-->
-
-
