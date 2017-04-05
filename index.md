@@ -5,7 +5,7 @@ title: Documentazione di .NET
 translationtype: Human Translation
 ms.sourcegitcommit: 8cd0b51fd9527f575d8bd6797a6f69a3e44e1f77
 ms.openlocfilehash: e6b03b427356cb6b4a12902a60763c294405f5fa
-ms.lasthandoff: 03/24/2017
+ms.lasthandoff: 04/05/2017
 
 ---
 <div id="main" class="v2">
