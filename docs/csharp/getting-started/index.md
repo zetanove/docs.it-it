@@ -11,9 +11,9 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b77c7263-7cbf-4729-9626-8fbc3f5f14d9
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 2e2ad151a91e5aabb36f18a7478e39d972573eb1
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 0a01ec92a90d99fafaacbd3f71f5177e5cf94a68
+ms.openlocfilehash: ca0acaaf61d87a9a55204d1ff44e3572c64d54d0
+ms.lasthandoff: 04/04/2017
 
 ---
 
@@ -35,6 +35,7 @@ Sono disponibili gli argomenti seguenti:
 
 - [Introduzione a Visual Studio Code](with-visual-studio-code.md)
 
-   Visual Studio Code è un editor di programmazione per Windows, Linux e macOS che supporta IntelliSense (completamento del codice) e il debug.
+   Visual Studio Code è un editor di codice gratuito ottimizzato per la compilazione e il debug di applicazioni cloud e Web moderne. Supporta IntelliSense ed è disponibile per Linux, macOS e Windows.
 
    Questo argomento illustra come creare ed eseguire una semplice applicazione Hello World con Visual Studio Code e .NET Core.
+
