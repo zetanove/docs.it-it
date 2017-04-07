@@ -31,9 +31,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d4fb156e095d4cec9a0e690a516414282359356a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
+ms.openlocfilehash: c29504e18aa716cbe106dbbe00c608fd465d9ac2
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="interoperability-c-programming-guide"></a>Interoperabilità (Guida per programmatori C#)
@@ -46,7 +46,7 @@ L'interoperabilità consente di preservare e sfruttare appieno gli investimenti 
  Vengono descritti i metodi per l'interoperabilità tra codice C# gestito e non gestito.  
   
  [Procedura: Accedere agli oggetti di interoperabilità di Office usando le funzionalità di Visual C#](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)  
- Vengono descritte le funzionalità introdotte in Visual C# 2010 per facilitare la programmazione di Office.  
+ Vengono descritte le funzionalità introdotte in Visual C# per facilitare la programmazione di Office.  
   
  [Procedura: Usare proprietà indicizzate nella programmazione dell'interoperabilità COM](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)  
  Viene illustrato come usare le proprietà indicizzate per accedere alle proprietà COM con parametri.  
