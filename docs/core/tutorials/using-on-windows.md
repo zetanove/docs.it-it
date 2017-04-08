@@ -12,3 +12,4 @@ ms.lasthandoff: 03/08/2017
 ## <a name="content-retired"></a>Contenuto rimosso.
 
 Per un'esercitazione introduttiva a .NET Core e Visual Studio 2017, vedere [(Building a C# Hello World application with .NET Core in Visual Studio 2017](../../csharp/getting-started/with-visual-studio.md) (Compilazione di un'applicazione C# Hello World con .NET Core in Visual Studio 2017).
+
