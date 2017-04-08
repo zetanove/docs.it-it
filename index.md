@@ -3,9 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Documentazione di .NET
 translationtype: Human Translation
-ms.sourcegitcommit: 8cd0b51fd9527f575d8bd6797a6f69a3e44e1f77
-ms.openlocfilehash: e6b03b427356cb6b4a12902a60763c294405f5fa
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
+ms.openlocfilehash: 9e0f22f00ea2ef0e3919768a36410a5025300f6d
+ms.lasthandoff: 04/08/2017
 
 ---
 <div id="main" class="v2">
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/05/2017
                 </a>
             </li>
             <li>
-                <a href="/dotnet/core/api/">
+                <a href="/dotnet/api/?view=netcore-1.1.0">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -48,7 +48,7 @@ ms.lasthandoff: 04/05/2017
                 </a>
             </li>
             <li>
-                <a href="https://msdn.microsoft.com/library/mt472912(v=vs.110).aspx">
+                <a href="/dotnet/api/?view=netframework-4.7">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -125,11 +125,11 @@ ms.lasthandoff: 04/05/2017
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://msdn.microsoft.com/library/w0x726c2(v=vs.110).aspx">Guida a .NET Framework</a></h3>
-                                                <p><a href="https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx">Introduzione</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/hh156542(v=vs.110).aspx">Esercitazioni</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/54xbah2z(v=vs.110).aspx">Sviluppo client</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET 2.0</a></p>
+                                                <h3><a href="/dotnet/articles/framework/">Guida a .NET Framework</a></h3>
+                                                <p><a href="/dotnet/articles/framework/get-started/">Introduzione</a></p>
+                                                <p><a href="/dotnet/articles/framework/development-guide">Esercitazioni</a></p>
+                                                <p><a href="/dotnet/articles/framework/develop-client-apps">Sviluppo client</a></p>
+                                                <p><a href="/aspnet/#pivot=aspnet">ASP.NET 2.0</a></p>
                                             </div>
                                         </div>
                                     </div>
