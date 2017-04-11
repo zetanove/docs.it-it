@@ -108,7 +108,6 @@ using Prime.Services;
 
 namespace Prime.UnitTests.Services
 {
-    [TestClass]
     public class PrimeService_IsPrimeShould
     {
         private readonly PrimeService _primeService;
