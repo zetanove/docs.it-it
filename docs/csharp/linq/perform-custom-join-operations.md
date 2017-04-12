@@ -2,7 +2,7 @@
 title: Eseguire operazioni di join personalizzate
 description: Come eseguire operazioni di join personalizzate.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

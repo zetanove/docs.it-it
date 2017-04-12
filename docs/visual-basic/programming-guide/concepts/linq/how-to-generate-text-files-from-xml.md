@@ -13,8 +13,8 @@ dev_langs:
 - VB
 ms.assetid: 3b33f191-4abe-4419-b81b-3cb81d9a317f
 caps.latest.revision: 3
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 0c45218ab9330c0b67ebfbbcedd5e5f699c3e6e2

@@ -12,8 +12,8 @@ helpviewer_keywords:
 - DataRepeater, master/detail tables
 ms.assetid: eec43ae3-05d8-45a1-8d41-3803c6359dbe
 caps.latest.revision: 7
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 translation.priority.ht:
 - cs-cz
 - de-de

@@ -2,7 +2,7 @@
 title: Raggruppare i risultati per chiavi contigue
 description: Come raggruppare i risultati per chiavi contigue.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

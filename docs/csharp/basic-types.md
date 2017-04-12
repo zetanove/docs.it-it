@@ -2,8 +2,8 @@
 title: Tipi di base | Guida per programmatori C#
 description: Informazioni sui tipi di base (dati numerici, stringhe e oggetto) in tutti i programmi C#
 keywords: .NET, .NET Core, C#
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/10/2016
 ms.topic: article
 ms.prod: .net

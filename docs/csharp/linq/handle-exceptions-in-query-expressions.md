@@ -2,7 +2,7 @@
 title: Gestire le eccezioni nelle espressioni di query
 description: Come gestire le eccezioni nelle espressioni di query.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

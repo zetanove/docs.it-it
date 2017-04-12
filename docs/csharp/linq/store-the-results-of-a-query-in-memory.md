@@ -2,7 +2,7 @@
 title: Archiviare i risultati di una query in memoria
 description: Come archiviare i risultati.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

@@ -2,8 +2,8 @@
 title: Pubblicazione dell&quot;applicazione Hello World con Visual Studio 2017
 description: Pubblicazione dell&quot;applicazione Hello World con Visual Studio 2017
 keywords: .NET, .NET Core, applicazione console .NET Core, pubblicazione (.NET Core), distribuzione (.NET Core)
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core
