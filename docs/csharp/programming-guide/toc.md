@@ -11,7 +11,6 @@
 ## [Indicizzatori](indexers/)
 ## [Interfacce](interfaces/)
 ## [Interoperabilità](interop/)
-## [Espressioni di query LINQ](linq-query-expressions/)
 ## [Main() e argomenti della riga di comando](main-and-command-args/)
 ## [Spazi dei nomi](namespaces/)
 ## [Tipi nullable](nullable-types/)
