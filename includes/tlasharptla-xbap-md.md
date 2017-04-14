@@ -1,0 +1,1 @@
+applicazione browser XAML (XBAP)

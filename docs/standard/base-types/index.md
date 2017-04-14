@@ -1,35 +1,44 @@
 ---
-title: Uso dei tipi di base
-description: Uso dei tipi di base
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 07/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: e53e414f-e0b6-4076-a6ab-189ba93e23cd
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 2be90e0a3e6627152532ff607768dbbb333045d7
-ms.lasthandoff: 04/05/2017
-
+title: "Uso dei tipi di base in .NET Framework | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-standard"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "tipi, di base"
+  - "tipi di base"
+  - "sistema di tipi, tipi di base"
+ms.assetid: 028d0ce8-ebc2-4a88-a16f-17508f6d0bd6
+caps.latest.revision: 14
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+caps.handback.revision: 14
 ---
-
-# <a name="working-with-base-types"></a>Uso dei tipi di base
-
-Questa sezione descrive le operazioni sui tipi di base .NET, tra cui la formattazione, la conversione e le operazioni comuni.
-
-## <a name="in-this-section"></a>Contenuto della sezione
-
-[Conversione di tipi](type-conversion.md): descrive come eseguire la conversione da un tipo in un altro.
-
-[Formattazione di tipi](formatting-types.md): descrive come formattare le stringhe usando gli specificatori del formato stringa.
-
-[Modifica di stringhe](manipulating-strings.md): descrive come modificare e formattare le stringhe.
-
-[Analisi di stringhe](parsing-strings.md): descrive come eseguire la conversione di stringhe in tipi.
-
-[Common Type System](common-type-system.md): descrive i tipi usati in .NET.
-
+# Uso dei tipi di base in .NET Framework
+In questa sezione sono descritte le operazioni sui tipi di base .NET Framework, quali la formattazione, la conversione e le operazioni comuni.  
+  
+## In questa sezione  
+ [Conversione di tipi in .NET Framework](../../../docs/standard/base-types/type-conversion.md)  
+ Viene descritto come eseguire la conversione da un tipo a un altro.  
+  
+ [Formattazione di tipi](../../../docs/standard/base-types/formatting-types.md)  
+ Viene illustrato come formattare le stringhe utilizzando gli specificatori di formato stringa.  
+  
+ [Modifica di stringhe](../../../docs/standard/base-types/manipulating-strings.md)  
+ Viene descritta la modalità di modifica e formattazione delle stringhe.  
+  
+ [Analisi di stringhe](../../../docs/standard/base-types/parsing-strings.md)  
+ Viene descritta la modalità di conversione delle stringhe in tipi .NET Framework.  
+  
+## Sezioni correlate  
+ [Common Type System](../../../docs/standard/base-types/common-type-system.md)  
+ Vengono descritti i tipi utilizzati da .NET Framework.  
+  
+ [Date, ora e fusi orari](../../../docs/standard/datetime/index.md)  
+ Viene descritto come utilizzare fusi orari e conversioni di fusi orari in applicazioni che dipendono dal fuso orario.

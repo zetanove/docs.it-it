@@ -1,0 +1,5 @@
+# [Applicazioni a 64 bit](64-bit-apps.md)
+# [.NET Framework 4.6 e 4.5](index.md)
+# [Applicazioni Web con ASP.NET](develop-web-apps-with-aspnet.md)
+# [Applicazioni client](develop-client-apps.md)
+# [Guida di sviluppo](development-guide.md)

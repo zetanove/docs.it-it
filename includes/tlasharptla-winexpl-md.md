@@ -1,0 +1,1 @@
+Esplora risorse di Microsoft Windows

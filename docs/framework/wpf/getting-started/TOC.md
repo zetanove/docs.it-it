@@ -1,0 +1,6 @@
+# [Novità di WPF versione 4.5](whats-new.md)
+# [Procedure dettagliate di WPF](wpf-walkthroughs.md)
+# [Procedura dettagliata: introduzione a WPF](walkthrough-my-first-wpf-desktop-application.md)
+# [Introduzione a WPF in Visual Studio 2015](introduction-to-wpf-in-vs.md)
+# [Commenti della community di WPF](community-feedback.md)
+# [Guida introduttiva](index.md)

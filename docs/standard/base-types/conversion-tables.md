@@ -1,77 +1,80 @@
 ---
-title: Tabelle di conversione dei tipi
-description: Tabelle di conversione dei tipi
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 07/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: d602f260-e7cf-49c8-a37f-731f40e4a538
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: a27f78bc3c0753a7c5bc752bb6391839bfc21e75
-ms.lasthandoff: 03/02/2017
-
+title: "Tabelle di conversione dei tipi in .NET Framework | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-standard"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "conversioni verso un tipo di dati più grande"
+  - "conversioni verso un tipo di dati più piccolo"
+  - "conversione dei tipi, tabella"
+  - "conversione dei tipi, conversione verso un tipo di dati più grande"
+  - "conversione dei tipi, conversione verso un tipo di dati più piccolo"
+  - "tipi di base, conversione"
+  - "tabelle [.NET Framework], conversione dei tipi"
+  - "tipi di dati [.NET Framework], conversione"
+ms.assetid: 0ea65c59-85eb-4a52-94ca-c36d3bd13058
+caps.latest.revision: 11
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+caps.handback.revision: 11
 ---
-
-# <a name="type-conversion-tables"></a>Tabelle di conversione dei tipi
-
-Si parla di conversione verso un tipo di dati più grande quando un valore di un certo tipo viene convertito in un altro tipo di dimensioni identiche o maggiori. Si parla di conversione verso un tipo di dati più piccolo quando un valore di un certo tipo viene convertito in un valore di un altro tipo di dimensioni inferiori. Le tabelle in questo argomento illustrano i comportamenti di entrambi i tipi di conversioni.
-
-## <a name="widening-conversions"></a>Conversioni verso un tipo di dati più grande
-
-Tipo | Conversione senza perdita di dati in
----- | -------------------------------------
-[Byte](xref:System.Byte) | [UInt16](xref:System.UInt16), [Int16](xref:System.Int16), [UInt32](xref:System.UInt32), [Int32](xref:System.Int32), [UInt64](xref:System.UInt64), [Int64](xref:System.Int64), [Single](xref:System.Single), [Double](xref:System.Double), [Decimal](xref:System.Decimal)
-[SByte](xref:System.SByte) | [Int16](xref:System.Int16), [Int32](xref:System.Int32), [Int64](xref:System.Int64), [Single](xref:System.Single), [Double](xref:System.Double), [Decimal](xref:System.Decimal)
-[Int16](xref:System.Int16) | [Int32](xref:System.Int32), [Int64](xref:System.Int64), [Single](xref:System.Single), [Double](xref:System.Double), [Decimal](xref:System.Decimal)
-[UInt16](xref:System.UInt16) | [UInt32](xref:System.UInt32), [Int32](xref:System.Int32), [UInt64](xref:System.UInt64), [Int64](xref:System.Int64), [Single](xref:System.Single), [Double](xref:System.Double), [Decimal](xref:System.Decimal)
-[Char](xref:System.Char) | [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32), [Int32](xref:System.Int32), [UInt64](xref:System.UInt64), [Int64](xref:System.Int64), [Single](xref:System.Single), [Double](xref:System.Double), [Decimal](xref:System.Decimal)
-[Int32](xref:System.Int32) | [Int64](xref:System.Int64), [Double](xref:System.Double), [Decimal](xref:System.Decimal)
-[UInt32](xref:System.UInt32) | [Int64](xref:System.Int64), [UInt64](xref:System.UInt64), [Double](xref:System.Double), [Decimal](xref:System.Decimal)
-[Int64](xref:System.Int64) | [Decimal](xref:System.Decimal)
-[UInt64](xref:System.UInt64) | [Decimal](xref:System.Decimal)
-[Single](xref:System.Single) | [Double](xref:System.Double)
-
-Alcune conversioni verso il tipo di dati più grande [Single](xref:System.Single) o [Double](xref:System.Double) possono causare una perdita di precisione. Nella tabella seguente sono elencate le conversioni verso un tipo di dati più grande che possono generare una perdita di informazioni.
-
-Tipo | Conversione in
----- | -------------------
-[Int32](xref:System.Int32) | [Single](xref:System.Single)
-[UInt32](xref:System.UInt32) | [Single](xref:System.Single)
-[Int64](xref:System.Int64) | [Single](xref:System.Single), [Double](xref:System.Double)
-[UInt64](xref:System.UInt64) | [Single](xref:System.Single), [Double](xref:System.Double)
-[Decimal](xref:System.Decimal) | [Single](xref:System.Single), [Double](xref:System.Double)
-
-## <a name="narrowing-conversions"></a>Conversioni verso un tipo di dati più piccolo
-
-Alcune conversioni verso il tipo di dati più piccolo [Single](xref:System.Single) o [Double](xref:System.Double) possono causare una perdita di informazioni. Se il tipo di destinazione non è in grado di rappresentare in modo appropriato l'ordine di grandezza dell'origine, il tipo risultante viene impostato sulla costante `PositiveInfinity` o `NegativeInfinity`. `PositiveInfinity` è il risultato della divisione di un numero positivo per zero e viene restituito anche quando il valore di un tipo [Single](xref:System.Single) o [Double](xref:System.Double) supera il valore del campo `MaxValue`. `NegativeInfinity` è il risultato della divisione di un numero negativo per zero e viene restituito anche quando il valore di un tipo [Single](xref:System.Single) o [Double](xref:System.Double) è minore del valore del campo `MinValue`. Una conversione da un tipo [Double](xref:System.Double) a un tipo [Single](xref:System.Single) potrebbe avere come risultato un valore `PositiveInfinity` o `NegativeInfinity`.
-
-Una conversione verso un tipo di dati più piccolo può generare una perdita di informazioni anche per altri tipi di dati. Viene tuttavia generato un evento [OverflowException](xref:System.OverflowException)se il valore di un tipo da convertire non rientra nell'intervallo specificato dai campi `MaxValue` e `MinValue` del tipo di destinazione e il processo di conversione viene controllato dal runtime in modo da assicurare che il valore del tipo di destinazione non superi `MaxValue` o `MinValue`. Le conversioni eseguite tramite la classe [System.Convert](xref:System.Convert) vengono sempre controllate in questo modo.
-
-Nella tabella seguente sono elencate le conversioni che generano un evento [OverflowException](xref:System.OverflowException) tramite la classe [System.Convert](xref:System.Convert) o qualsiasi conversione controllata se il valore del tipo convertito non rientra nell'intervallo specificato per il tipo risultante.
-
-Tipo | Conversione in
----- | -------------------
-[Byte](xref:System.Byte) | [SByte](xref:System.SByte)
-[SByte](xref:System.SByte) | [Byte](xref:System.Byte), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32), [UInt64](xref:System.UInt64)
-[Int16](xref:System.Int16) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [UInt16](xref:System.UInt16)
-[UInt16](xref:System.UInt16) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16)
-[Int32](xref:System.Int32) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [UInt16](xref:System.UInt16), [UInt32](xref:System.UInt32)
-[UInt32](xref:System.UInt32) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [UInt16](xref:System.UInt16), [Int32](xref:System.Int32)
-[Int64](xref:System.Int64) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [UInt16](xref:System.UInt16), [Int32](xref:System.Int32), [UInt32](xref:System.UInt32), [UInt64](xref:System.UInt64)
-[UInt64](xref:System.UInt64) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [UInt16](xref:System.UInt16), [Int32](xref:System.Int32), [UInt32](xref:System.UInt32), [Int64](xref:System.Int64)
-[Decimal](xref:System.Decimal) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [UInt16](xref:System.UInt16), [Int32](xref:System.Int32), [UInt32](xref:System.UInt32), [Int64](xref:System.Int64), [UInt64](xref:System.UInt64)
-[Single](xref:System.Single) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [UInt16](xref:System.UInt16), [Int32](xref:System.Int32), [UInt32](xref:System.UInt32), [Int64](xref:System.Int64), [UInt64](xref:System.UInt64)
-[Double](xref:System.Double) | [Byte](xref:System.Byte), [SByte](xref:System.SByte), [Int16](xref:System.Int16), [UInt16](xref:System.UInt16), [Int32](xref:System.Int32), [UInt32](xref:System.UInt32), [Int64](xref:System.Int64), [UInt64](xref:System.UInt64)
-
-## <a name="see-also"></a>Vedere anche
-
-[System.Convert](xref:System.Convert)
-
-[Conversione di tipi](type-conversion.md)
-
-
+# Tabelle di conversione dei tipi in .NET Framework
+Si parla di conversione di ampliamento quando un valore di un certo tipo viene convertito in un altro tipo di dimensioni identiche o maggiori.  Si parla di conversione di restrizione quando un valore di un certo tipo viene convertito in un valore di un altro tipo di dimensioni inferiori.  Nelle tabelle riportate in questa sezione sono illustrate le caratteristiche di entrambi i tipi di conversione.  
+  
+## Conversioni di ampliamento  
+ Nella tabella riportata di seguito sono elencate le conversioni di ampliamento che possono essere eseguite senza alcuna perdita di informazioni.  
+  
+|Type|Conversione senza perdita di dati in|  
+|----------|------------------------------------------|  
+|<xref:System.Byte>|<xref:System.UInt16>, <xref:System.Int16>, <xref:System.UInt32>, <xref:System.Int32>, <xref:System.UInt64>, <xref:System.Int64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>|  
+|<xref:System.SByte>|<xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>|  
+|<xref:System.Int16>|<xref:System.Int32>, <xref:System.Int64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>|  
+|<xref:System.UInt16>|<xref:System.UInt32>, <xref:System.Int32>, <xref:System.UInt64>, <xref:System.Int64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>|  
+|<xref:System.Char>|<xref:System.UInt16>, <xref:System.UInt32>, <xref:System.Int32>, <xref:System.UInt64>, <xref:System.Int64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Decimal>|  
+|<xref:System.Int32>|<xref:System.Int64>, <xref:System.Double>, <xref:System.Decimal>|  
+|<xref:System.UInt32>|<xref:System.Int64>, <xref:System.UInt64>, <xref:System.Double>, <xref:System.Decimal>|  
+|<xref:System.Int64>|<xref:System.Decimal>|  
+|<xref:System.UInt64>|<xref:System.Decimal>|  
+|<xref:System.Single>|<xref:System.Double>|  
+  
+ Alcune conversioni di ampliamento verso <xref:System.Single> o <xref:System.Double> possono provocare una perdita di precisione.  Nella tabella seguente sono elencate le conversioni di ampliamento che possono generare una perdita di informazioni.  
+  
+|Type|Conversione in|  
+|----------|--------------------|  
+|<xref:System.Int32>|<xref:System.Single>|  
+|<xref:System.UInt32>|<xref:System.Single>|  
+|<xref:System.Int64>|<xref:System.Single>, <xref:System.Double>|  
+|<xref:System.UInt64>|<xref:System.Single>, <xref:System.Double>|  
+|<xref:System.Decimal>|<xref:System.Single>, <xref:System.Double>|  
+  
+## Conversioni di restrizione  
+ Una conversione di restrizione verso <xref:System.Single> o <xref:System.Double> può provocare una perdita di informazioni.  Se il tipo di destinazione non è in grado di rappresentare in modo appropriato l'ordine di grandezza dell'origine, il tipo risultante viene impostato sulla costante `PositiveInfinity` o `NegativeInfinity`.  `PositiveInfinity` è il risultato della divisione di un numero positivo per zero e viene restituito anche quando il valore di un tipo <xref:System.Single> o <xref:System.Double> supera il valore del campo `MaxValue`.  `NegativeInfinity` è il risultato della divisione di un numero negativo per zero e viene restituito anche quando il valore di un tipo <xref:System.Single> o <xref:System.Double> è minore del valore del campo `MinValue`.  Una conversione da un tipo <xref:System.Double> a un tipo <xref:System.Single> potrebbe avere come risultato un valore `PositiveInfinity` o `NegativeInfinity`.  
+  
+ Una conversione di restrizione può generare una perdita di informazioni anche per altri tipi di dati.  Viene tuttavia generato un evento <xref:System.OverflowException> se il valore di un tipo da convertire non rientra nell'intervallo specificato dai campi `MaxValue` e `MinValue` del tipo di destinazione e il processo di conversione viene controllato dal runtime in modo da assicurare che il valore del tipo di destinazione non superi `MaxValue` o `MinValue`.  Le conversioni eseguite mediante la classe <xref:System.Convert?displayProperty=fullName> vengono sempre controllate in questo modo.  
+  
+ Nella tabella seguente sono elencate le conversioni che generano un evento <xref:System.OverflowException> utilizzando la classe <xref:System.Convert?displayProperty=fullName> o qualsiasi conversione controllata se il valore del tipo convertito non rientra nell'intervallo specificato per il tipo risultante.  
+  
+|Type|Conversione in|  
+|----------|--------------------|  
+|<xref:System.Byte>|<xref:System.SByte>|  
+|<xref:System.SByte>|<xref:System.Byte>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>|  
+|<xref:System.Int16>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.UInt16>|  
+|<xref:System.UInt16>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>|  
+|<xref:System.Int32>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>,<xref:System.UInt32>|  
+|<xref:System.UInt32>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>|  
+|<xref:System.Int64>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>,<xref:System.UInt32>,<xref:System.UInt64>|  
+|<xref:System.UInt64>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>|  
+|<xref:System.Decimal>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>|  
+|<xref:System.Single>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>|  
+|<xref:System.Double>|<xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.UInt16>, <xref:System.Int32>, <xref:System.UInt32>, <xref:System.Int64>, <xref:System.UInt64>|  
+  
+## Vedere anche  
+ <xref:System.Convert?displayProperty=fullName>   
+ [Conversione di tipi in .NET Framework](../../../docs/standard/base-types/type-conversion.md)
