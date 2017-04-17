@@ -40,5 +40,5 @@ In questa sezione sono descritte le operazioni sui tipi di base .NET Framework, 
  [Common Type System](../../../docs/standard/base-types/common-type-system.md)  
  Vengono descritti i tipi utilizzati da .NET Framework.  
   
- [Date, ora e fusi orari](../../../docs/standard/datetime/index.md)  
+ [Date, ora e fusi orari](../../../ml/index.xml)  
  Viene descritto come utilizzare fusi orari e conversioni di fusi orari in applicazioni che dipendono dal fuso orario.

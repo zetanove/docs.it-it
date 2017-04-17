@@ -282,7 +282,7 @@ Common Type System definisce le modalità di dichiarazione, utilizzo e gestione 
   
 <a name="Events"></a>   
 ### Eventi  
- Un evento definisce una situazione a cui è possibile fornire risposta e metodi per la sottoscrizione, l'annullamento della sottoscrizione e la generazione dell'evento.  Gli eventi sono spesso utilizzati per indicare modifiche di stato a tipi diversi.  Per altre informazioni, vedere [Eventi](../../../docs/standard/events/index.md).  
+ Un evento definisce una situazione a cui è possibile fornire risposta e metodi per la sottoscrizione, l'annullamento della sottoscrizione e la generazione dell'evento.  Gli eventi sono spesso utilizzati per indicare modifiche di stato a tipi diversi.  Per altre informazioni, vedere [Eventi](../../../ml/index.xml).  
   
 <a name="NestedTypes"></a>   
 ### Tipi annidati  
@@ -323,5 +323,5 @@ Common Type System definisce le modalità di dichiarazione, utilizzo e gestione 
   
 ## Vedere anche  
  [Libreria di classi .NET Framework](http://go.microsoft.com/fwlink/?LinkID=217856)   
- [Common Language Runtime](../../../docs/standard/clr.md)   
+ [Common Language Runtime](../../../ocs/standard/clr.md)   
  [Conversione di tipi in .NET Framework](../../../docs/standard/base-types/type-conversion.md)

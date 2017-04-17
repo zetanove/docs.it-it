@@ -102,5 +102,5 @@ In molte applicazioni un valore di data e ora consente di identificare in modo i
   
 ## Vedere anche  
  [Esecuzione di operazioni di formattazione](../../../docs/standard/base-types/performing-formatting-operations.md)   
- [Scelta tra DateTime, DateTimeOffset, TimeSpan e TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)   
+ [Scelta tra DateTime, DateTimeOffset, TimeSpan e TimeZoneInfo](../../../ocs/standard/datetime/choosing-between-datetime.md)   
  [Stringhe di formato di data e ora standard](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)

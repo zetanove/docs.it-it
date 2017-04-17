@@ -267,4 +267,4 @@ I caratteri sono entità astratte rappresentabili in molti modi. La codifica dei
  <xref:System.Text.DecoderFallback>   
  <xref:System.Text.Encoding>   
  <xref:System.Text.EncoderFallback>   
- [Globalizzazione e localizzazione](../../../docs/standard/globalization-localization/index.md)
+ [Globalizzazione e localizzazione](../../../ml/index.xml)
