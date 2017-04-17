@@ -62,7 +62,7 @@ Modifica il comportamento della compilazione XAML nei casi in cui viene fornito 
   
 ## Vedere anche  
  [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)   
- [Code\-behind e XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)   
+ [Code\-behind e XAML in WPF](../../../ocs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)   
  [x:FieldModifier Directive](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md)   
- [Sicurezza \(WPF\)](../../../docs/framework/wpf/security-wpf.md)   
+ [Sicurezza \(WPF\)](../../../ocs/framework/wpf/security-wpf.md)   
  [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)

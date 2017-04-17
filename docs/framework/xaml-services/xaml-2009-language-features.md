@@ -26,7 +26,7 @@ XAML 2009 è il termine abbreviato per le nuove funzionalità del linguaggio XA
 ## Supporto XAML 2009 in WPF e Visual Studio  
  In WPF è possibile usare le funzionalità di XAML 2009, ma solo per il codice XAML non compilato dal markup WPF. Il codice XAML compilato dal markup e il modulo BAML di XAML non supportano attualmente le parole chiave e le funzionalità di XAML 2009.  
   
- Si noti che per le tecniche esistenti per il caricamento di XAML separato in WPF esistono anche possibili restrizioni ai tipi CLR e al sistema di tipi che sono più restrittive rispetto a quelle per XAML compilato dal markup. Per altre informazioni vedere [Sicurezza \(WPF\)](../../../docs/framework/wpf/security-wpf.md) o [Strategia di sicurezza di WPF \- Sicurezza della piattaforma](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md).  
+ Si noti che per le tecniche esistenti per il caricamento di XAML separato in WPF esistono anche possibili restrizioni ai tipi CLR e al sistema di tipi che sono più restrittive rispetto a quelle per XAML compilato dal markup. Per altre informazioni vedere [Sicurezza \(WPF\)](../../../ocs/framework/wpf/security-wpf.md) o [Strategia di sicurezza di WPF \- Sicurezza della piattaforma](../../../ocs/framework/wpf/wpf-security-strategy-platform-security.md).  
   
  XAML 2009 introduce anche funzionalità aggiuntive che modificano i costrutti XAML 2006 precedenti o che modificano i moduli del markup di base.  
   
@@ -40,4 +40,4 @@ XAML 2009 è il termine abbreviato per le nuove funzionalità del linguaggio XA
  Per gli attributi supportati dagli eventi, XAML 2006 presuppone che sia coinvolta la compilazione del markup e invia gli eventi alla compilazione del markup. XAML 2009 supporta un modulo di markup che assomiglia a un'estensione di markup, che rinvia il collegamento di eventi fino all'analisi e al caricamento in fase di esecuzione di XAML. Le applicazioni WPF e gli scenari XAML per l'interfaccia utente tuttavia in genere non usano questa funzionalità. WPF e la relativa implementazione XAML 2006 usano la combinazione del collegamento del gestore eventi per eventi indirizzati, definiti al livello <xref:System.Windows.UIElement>, e il passaggio del compilatore di markup per la maggior parte dell'elaborazione di attributi evento. Il compilatore di markup preelabora anche gli attributi dell'evento trovati in XAML in cui le operazioni di compilazione dichiarano di usare il compilatore di markup.  
   
 ## Vedere anche  
- [Panoramica di XAML \(WPF\)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+ [Panoramica di XAML \(WPF\)](../../../ocs/framework/wpf/advanced/xaml-overview-wpf.md)

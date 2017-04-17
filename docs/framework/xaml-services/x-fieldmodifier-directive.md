@@ -58,8 +58,8 @@ Modifica il comportamento di compilazione XAML in modo che i campi per riferimen
  Per impostazione predefinita, la classe parziale per l'elemento radice è pubblica, per impostazione predefinita tuttavia è possibile renderla non pubblica utilizzando [x:ClassModifier Directive](../../../docs/framework/xaml-services/x-classmodifier-directive.md).  [x:ClassModifier Directive](../../../docs/framework/xaml-services/x-classmodifier-directive.md) influisce anche sul livello di accesso dell'istanza della classe di elementi radice.  È possibile inserire `x:Name` e `x:FieldModifier` nell'elemento radice, tuttavia questa operazione consente solo di creare una copia del campo pubblico dell'elemento radice, mentre il livello di accesso della classe del vero elemento radice è ancora controllato da [x:ClassModifier Directive](../../../docs/framework/xaml-services/x-classmodifier-directive.md).  
   
 ## Vedere anche  
- [Classi XAML e personalizzate per WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)   
- [Code\-behind e XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)   
+ [Classi XAML e personalizzate per WPF](../../../ocs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)   
+ [Code\-behind e XAML in WPF](../../../ocs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)   
  [x:Name Directive](../../../docs/framework/xaml-services/x-name-directive.md)   
- [Compilazione di un'applicazione WPF \(WPF\)](../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)   
+ [Compilazione di un'applicazione WPF \(WPF\)](../../../ocs/framework/wpf/app-development/building-a-wpf-application-wpf.md)   
  [x:ClassModifier Directive](../../../docs/framework/xaml-services/x-classmodifier-directive.md)

@@ -74,8 +74,8 @@ Fornisce supporto generale per matrici di oggetti in XAML, tramite una gestione 
   
  `</x:Array>`  
   
- Per i tipi personalizzati utilizzati come elementi matrice, la classe deve inoltre supportare i requisiti che ne consentono la creazione di istanze in XAML come elementi oggetto.  Per ulteriori informazioni, vedere [Classi XAML e personalizzate per WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
+ Per i tipi personalizzati utilizzati come elementi matrice, la classe deve inoltre supportare i requisiti che ne consentono la creazione di istanze in XAML come elementi oggetto.  Per ulteriori informazioni, vedere [Classi XAML e personalizzate per WPF](../../../ocs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
   
 ## Vedere anche  
- [Estensioni di markup e XAML WPF](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)   
+ [Estensioni di markup e XAML WPF](../../../ocs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)   
  [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)

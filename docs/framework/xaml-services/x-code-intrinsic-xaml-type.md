@@ -57,5 +57,5 @@ Consente di posizionare il codice all'interno di una produzione XAML.  Tale codi
   
 ## Vedere anche  
  [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)   
- [Code\-behind e XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)   
- [Cenni preliminari su XAML \(WPF\)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+ [Code\-behind e XAML in WPF](../../../ocs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)   
+ [Cenni preliminari su XAML \(WPF\)](../../../ocs/framework/wpf/advanced/xaml-overview-wpf.md)

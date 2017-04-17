@@ -68,7 +68,7 @@ Fornisce l'oggetto <xref:System.Type> CLR che è il tipo sottostante per un tipo
 ## Note sull'utilizzo di WPF  
   
 ### Spazio dei nomi XAML e mapping del tipo predefiniti  
- Lo spazio dei nomi XAML predefinito per la programmazione WPF contiene la maggior parte dei tipi XAML di cui si ha bisogno per gli scenari XAML tipici; pertanto è spesso possibile evitare prefissi quando si fa riferimento a valori di tipo XAML.  È possibile che sia necessario eseguire il mapping di un prefisso se si fa riferimento a un tipo da un assembly personalizzato oppure per i tipi che esistono in un assembly WPF ma provengono da uno spazio dei nomi CLR per il quale non è stato eseguito il mapping allo spazio dei nomi XAML predefinito.  Per ulteriori informazioni sui prefissi, spazi dei nomi XAML e mapping degli spazi dei nomi CLR, vedere [Spazi dei nomi XAML e mapping dello spazio dei nomi per XAML WPF](../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ Lo spazio dei nomi XAML predefinito per la programmazione WPF contiene la maggior parte dei tipi XAML di cui si ha bisogno per gli scenari XAML tipici; pertanto è spesso possibile evitare prefissi quando si fa riferimento a valori di tipo XAML.  È possibile che sia necessario eseguire il mapping di un prefisso se si fa riferimento a un tipo da un assembly personalizzato oppure per i tipi che esistono in un assembly WPF ma provengono da uno spazio dei nomi CLR per il quale non è stato eseguito il mapping allo spazio dei nomi XAML predefinito.  Per ulteriori informazioni sui prefissi, spazi dei nomi XAML e mapping degli spazi dei nomi CLR, vedere [Spazi dei nomi XAML e mapping dello spazio dei nomi per XAML WPF](../../../ocs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 ### Proprietà di tipi che supportano Nometipo\-come\-Stringa  
  WPF supporta tecniche che consentono di specificare il valore di alcune proprietà di tipo <xref:System.Type> senza richiedere un utilizzo dell'estensione di markup `x:Type`.  Al contrario, è possibile specificare il valore come una stringa che nomini il tipo.  Esempi di oggetti includono <xref:System.Windows.Controls.ControlTemplate.TargetType%2A?displayProperty=fullName> e <xref:System.Windows.Style.TargetType%2A?displayProperty=fullName>.  Il supporto per questo comportamento non è fornito mediante convertitori di tipi o estensioni di markup.  Al contrario, questo è un comportamento della proroga implementato mediante <xref:System.Windows.FrameworkElementFactory>.  
@@ -88,6 +88,6 @@ Fornisce l'oggetto <xref:System.Type> CLR che è il tipo sottostante per un tipo
   
 ## Vedere anche  
  <xref:System.Windows.Style>   
- [Applicazione di stili e modelli](../../../docs/framework/wpf/controls/styling-and-templating.md)   
- [Cenni preliminari su XAML \(WPF\)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)   
- [Estensioni di markup e XAML WPF](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+ [Applicazione di stili e modelli](../../../ocs/framework/wpf/controls/styling-and-templating.md)   
+ [Cenni preliminari su XAML \(WPF\)](../../../ocs/framework/wpf/advanced/xaml-overview-wpf.md)   
+ [Estensioni di markup e XAML WPF](../../../ocs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

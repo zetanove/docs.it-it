@@ -65,4 +65,4 @@ Modifica il comportamento della compilazione di markup XAML nei casi in cui vien
   
 ## Vedere anche  
  [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)   
- [Classi XAML e personalizzate per WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+ [Classi XAML e personalizzate per WPF](../../../ocs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
