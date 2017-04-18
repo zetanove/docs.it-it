@@ -2,7 +2,7 @@
 title: Eseguire query in una raccolta di oggetti
 description: Come eseguire una query nelle raccolte.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

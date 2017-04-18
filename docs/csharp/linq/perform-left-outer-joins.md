@@ -2,7 +2,7 @@
 title: Eseguire left outer join
 description: Come eseguire i left outer join.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

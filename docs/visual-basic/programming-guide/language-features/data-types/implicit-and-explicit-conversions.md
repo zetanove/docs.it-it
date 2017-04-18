@@ -30,8 +30,8 @@ helpviewer_keywords:
 - implicit data type conversions
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
 caps.latest.revision: 25
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 translation.priority.ht:
 - cs-cz
 - de-de

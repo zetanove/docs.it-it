@@ -2,7 +2,7 @@
 title: Specificare dinamicamente i filtri dei predicati in fase di esecuzione
 description: 'Procedura: specificare dinamicamente i filtri dei predicati in fase di esecuzione.'
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

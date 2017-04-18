@@ -2,7 +2,7 @@
 title: LINQ (Language-Integrated Query)
 description: Introduzione a LINQ (Language-Integrated Query) in C#
 keywords: .NET, .NET Core, LINQ, C#
-author: stevehoag
+author: BillWagner
 ms.author: wiwagn
 ms.date: 11/30/2016
 ms.topic: article

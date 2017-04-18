@@ -35,8 +35,8 @@ helpviewer_keywords:
 - procedures, parameter lists
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
 caps.latest.revision: 26
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 translation.priority.ht:
 - cs-cz
 - de-de

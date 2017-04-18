@@ -44,6 +44,8 @@
 	"**/includes/**", 
 	"***/contributing.md",
 	"csharp/misc/**",
+	"framework/**",
+	"standard/**",
 	"visual-basic/developing-apps/customizing-extending-my/**",
 	"visual-basic/developing-apps/development-with-my/**",
 	"visual-basic/developing-apps/includes/**",

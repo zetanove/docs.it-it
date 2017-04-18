@@ -2,7 +2,7 @@
 title: Eseguire una sottoquery su un&quot;operazione di raggruppamento
 description: Come eseguire una sottoquery su un&quot;operazione di raggruppamento.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

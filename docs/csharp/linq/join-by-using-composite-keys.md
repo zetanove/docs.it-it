@@ -2,7 +2,7 @@
 title: Eseguire un join usando chiavi composte
 description: Come creare un join usando un chiavi composte
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

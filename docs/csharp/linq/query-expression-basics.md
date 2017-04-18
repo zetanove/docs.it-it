@@ -2,7 +2,7 @@
 title: Nozioni fondamentali sulle espressioni di query
 description: Vengono introdotti concetti relativi alle espressioni di query
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

@@ -2,7 +2,7 @@
 title: Ottenere una query da un metodo
 description: Come ottenere una query.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016
