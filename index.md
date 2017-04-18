@@ -30,7 +30,7 @@ ms.lasthandoff: 04/08/2017
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-1.1.0">
+                <a href="/dotnet/api/?view=netcore-1.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
