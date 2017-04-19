@@ -21,9 +21,9 @@ author: mairaw
 ms.author: mairaw
 manager: wpickett
 translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: 887ddf85b1da556feee211c4b29f0a08550c84ad
-ms.lasthandoff: 04/08/2017
+ms.sourcegitcommit: 1fabc43044b6e0fa765a7c2f225add8b7eb923f5
+ms.openlocfilehash: 1d0c203313b33aeba26aded268467b1a1b181118
+ms.lasthandoff: 04/13/2017
 
 ---
 # <a name="file-and-stream-io"></a>I/O di file e di flussi
@@ -150,7 +150,7 @@ I/O (input/output) di file e di flussi fa riferimento al trasferimento di dati d
   
 -   I tipi di compressione basati sul percorso <xref:System.IO.Compression.ZipFile> e <xref:System.IO.Compression.ZipFileExtensions> non sono disponibili. Usare invece i tipi nello spazio dei nomi [Windows.Storage.Compression](http://msdn.microsoft.com/library/windows/apps/windows.storage.compression.aspx).  
   
- Se necessario è possibile passare da flussi di .NET Framework a flussi di Windows Runtime e viceversa. Per altre informazioni, vedere [Procedura: eseguire la conversione tra flussi di .NET Framework e flussi di Windows Runtime](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md) o <xref:System.IO.WindowsRuntimeStreamExtensions>.  
+ Se necessario è possibile passare da flussi di .NET Framework a flussi di Windows Runtime e viceversa. Per altre informazioni, vedere [Procedura: eseguire la conversione tra flussi di .NET Framework e flussi di Windows Runtime](../../../docs/standard/io/how-to-convert-between-dotnet-streams-and-winrt-streams.md) o [System.IO.WindowsRuntimeStreamExtensions](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions.aspx). <!--zz TODO: <xref:System.IO.WindowsRuntimeStreamExtensions>--> 
   
  Per altre informazioni sulle operazioni di I/O in un'applicazione [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)], vedere [Guida rapida: Lettura e scrittura di un file](http://go.microsoft.com/fwlink/p/?LinkId=243072) nel Windows Dev Center.  
   
@@ -182,3 +182,4 @@ I/O (input/output) di file e di flussi fa riferimento al trasferimento di dati d
 -   [File mappati alla memoria](../../../docs/standard/io/memory-mapped-files.md)  
   
  Vengono descritti i file mappati alla memoria, che includono il contenuto dei file su disco nella memoria virtuale. È possibile usare file mappati alla memoria per modificare file molto grandi e per creare memoria condivisa per la comunicazione interprocesso.
+
