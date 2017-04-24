@@ -23,7 +23,7 @@ caps.handback.revision: 24
 # Cenni preliminari sulle origini di associazione
 Nell'associazione dati, l'oggetto [origine di associazione](GTMT) fa riferimento all'oggetto da cui si ottengono i dati.  In questo argomento vengono descritti i tipi di oggetto che è possibile utilizzare come origine di associazione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="binding_sources"></a>   
 ## Tipi di origine di associazione  

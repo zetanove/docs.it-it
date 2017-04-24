@@ -26,7 +26,7 @@ caps.handback.revision: 25
 # Risoluzione dei problemi relativi ad applicazioni ibride
 <a name="introduction"></a> In questo argomento vengono elencati alcuni problemi comuni che possono verificarsi durante la creazione di applicazioni che utilizzano tecnologie sia [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], sia [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="overlapping_controls"></a>   
 ## Sovrapposizione di controlli  

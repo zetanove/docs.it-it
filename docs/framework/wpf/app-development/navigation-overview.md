@@ -43,7 +43,7 @@ caps.handback.revision: 65
 > [!NOTE]
 >  Il termine "browser" qui utilizzato fa riferimento soltanto ai browser in grado di ospitare applicazioni [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], che attualmente includono [!INCLUDE[TLA#tla_ie](../../../../includes/tlasharptla-ie-md.md)] e Firefox.  Nel caso in cui determinate funzionalità di [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] siano supportate unicamente da un particolare browser, verrà fatto riferimento alla versione del browser.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="XAMLBrowserApplications"></a>   
 ## Navigazione nelle applicazioni WPF  

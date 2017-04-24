@@ -22,7 +22,7 @@ caps.handback.revision: 18
 # Metadati delle propriet&#224; del framework
 Per le proprietà degli elementi oggetto considerati come situati [a livello di framework WPF](GTMT) nell'architettura [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], vengono segnalate delle opzioni di metadati delle proprietà del framework.  In generale, la designazione [a livello di framework WPF](GTMT) implica che funzionalità quali il rendering, l'associazione dati e i miglioramenti del sistema di proprietà siano gestite dalle [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] di presentazione di [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] e dai file eseguibili.  Questi sistemi eseguono una query sui metadati della proprietà del framework per determinare le caratteristiche specifiche delle funzionalità di particolari proprietà dell'elemento.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

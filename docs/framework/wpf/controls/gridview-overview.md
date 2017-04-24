@@ -23,7 +23,7 @@ caps.handback.revision: 25
 # Cenni preliminari su GridView
 La modalità di visualizzazione <xref:System.Windows.Controls.GridView> rappresenta una delle modalità di visualizzazione di un controllo <xref:System.Windows.Controls.ListView>.  La classe <xref:System.Windows.Controls.GridView> e le relative classi di supporto consentono agli utenti di visualizzare raccolte di elementi in una tabella che utilizza in genere i pulsanti come intestazioni di colonna interattive.  In questo argomento viene presentata la classe <xref:System.Windows.Controls.GridView> e ne viene definito l'utilizzo.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="DefiningaListViewthatusesGridViewView"></a>   
 ## Definizione di visualizzazione GridView  

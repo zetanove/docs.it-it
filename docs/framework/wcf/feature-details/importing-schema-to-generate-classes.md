@@ -68,7 +68,7 @@ Per generare classi da schemi che possono essere usati con [!INCLUDE[indigo1](..
   
  Si consideri ad esempio lo schema seguente.  
   
- [!code[c_SchemaImportExport#10](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#10)]  
+ <!-- TODO: review snippet reference [!code[c_SchemaImportExport#10](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#10)]  -->  
   
  Nell'esempio seguente viene usata la proprietà `Namespaces` per associare lo spazio dei nomi "http://schemas.contoso.com/carSchema" a "Contoso.Cars".  
   
@@ -98,18 +98,18 @@ Per generare classi da schemi che possono essere usati con [!INCLUDE[indigo1](..
 ### <a name="import-options-choosing-collection-types"></a>Opzioni di importazione: scelta dei tipi di raccolta  
  Due modelli speciali in XML rappresentano raccolte di elementi: elenchi di elementi e associazioni tra due elementi. Di seguito è riportato un esempio di un elenco di stringhe.  
   
- [!code[C_SchemaImportExport#11](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#11)]  
+ <!-- TODO: review snippet reference [!code[C_SchemaImportExport#11](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#11)]  -->  
   
  Nell'esempio seguente viene mostrata un'associazione tra una stringa e un numero intero (`city name` e `population`).  
   
- [!code[C_SchemaImportExport#12](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]  
+ <!-- TODO: review snippet reference [!code[C_SchemaImportExport#12](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]  -->  
   
 > [!NOTE]
 >  Qualsiasi associazione può essere considerata un elenco. Ad esempio, è possibile visualizzare l'associazione precedente come un elenco di oggetti `city` complessi che presentano due campi (un campo stringa e un campo numero intero). Entrambi i modelli sono rappresentati nello schema XSD. Non è possibile differenziare un elenco da un'associazione, pertanto tali modelli vengono sempre considerati come elenchi a meno che nello schema sia presente un'annotazione speciale, specifica di [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. L'annotazione indica che un modello specifico rappresenta un'associazione. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Riferimento allo Schema del contratto dati](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
  In genere, un elenco viene importato come un contratto dati della raccolta che deriva da un elenco generico o come una matrice [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], a seconda che lo schema segua o meno il modello di denominazione standard per le raccolte. Questo è descritto in dettaglio in [tipi di raccolta nei contratti dati](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). Le associazioni normalmente vengono importate come un <xref:System.Collections.Generic.Dictionary%602> oppure un contratto dati della raccolta che deriva dall'oggetto dizionario.\</TKey, TValue> Si consideri ad esempio lo schema seguente.  
   
- [!code[c_SchemaImportExport#13](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#13)]  
+ <!-- TODO: review snippet reference [!code[c_SchemaImportExport#13](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#13)]  -->  
   
  Questo schema viene importato come segue (vengono visualizzati i campi anziché le proprietà per migliorare la leggibilità).  
   

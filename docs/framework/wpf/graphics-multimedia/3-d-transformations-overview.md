@@ -22,7 +22,7 @@ caps.handback.revision: 17
 # Cenni preliminari sulle trasformazioni tridimensionali
 In questo argomento viene descritto come applicare trasformazioni a modelli tridimensionali nel sistema grafico [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  Le trasformazioni consentono allo sviluppatore di riposizionare, ridimensionare e orientare nuovamente i modelli senza modificare i valori di base che li definiscono.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 ## Spazio della Coordinata tridimensionale  
  Il contenuto grafico tridimensionale in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] è incapsulato in un elemento, <xref:System.Windows.Controls.Viewport3D>, che può far parte della struttura dell'elemento bidimensionale.  Il sistema grafico considera Viewport3D come un elemento visivo bidimensionale come molti altri in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  Viewport3D funziona come una finestra, un riquadro di visualizzazione, in una scena tridimensionale.  Più precisamente, è una superficie sulla quale è proiettata una scena tridimensionale.  Anche se è possibile utilizzare Viewport3D con altri oggetti disegno bidimensionali nello stesso grafico della scena, non si possono inserire oggetti bidimensionali e tridimensionali all'interno di un Viewport3D.  Nella discussione seguente, lo spazio delle coordinate descritto è contenuto nell'elemento Viewport3D.  

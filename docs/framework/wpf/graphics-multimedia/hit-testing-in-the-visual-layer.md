@@ -22,7 +22,7 @@ caps.handback.revision: 41
 # Hit testing a livello visivo
 In questo argomento vengono forniti dei cenni preliminari sulle funzionalità di hit testing fornite dal livello visivo.  Il supporto per l'hit testing consente di determinare se il valore di una geometria o di un punto è compreso all'interno del contenuto di rendering di un oggetto <xref:System.Windows.Media.Visual>, rendendo possibile l'implementazione di un comportamento dell'interfaccia utente, ad esempio un rettangolo per la selezione di più oggetti.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="hit_testing_scenarios"></a>   
 ## Scenari di hit testing  

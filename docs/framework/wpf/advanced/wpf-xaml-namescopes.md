@@ -32,7 +32,7 @@ caps.handback.revision: 18
 # NameScope XAML WPF
 Con NameScope XAML vengono identificati oggetti definiti in XAML.  I nomi in un NameScope XAML può essere utilizzato per stabilire relazioni tra i nomi di oggetti definiti in XAML e gli equivalenti delle istanze in una struttura ad albero di oggetti.  In genere, i NameScope XAML in codice gestito [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] vengono creati quando si caricano i singoli elementi radice di pagina per un'applicazione XAML.  I NameScope XAML come oggetto di programmazione vengono definiti dall'interfaccia <xref:System.Windows.Markup.INameScope> e sono anche implementati dalla classe pratica <xref:System.Windows.NameScope>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Namescopes_in_Loaded_XAML_Applications"></a>   
 ## Ambiti dei nomi in applicazioni XAML caricate  

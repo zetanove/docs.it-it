@@ -21,7 +21,7 @@ caps.handback.revision: 52
 # Cenni preliminari sulla gestione di applicazioni
 Tutte le applicazioni tendono a condividere un insieme comune di funzionalità che si applica all'implementazione e alla gestione.  In questo argomento viene fornita una panoramica delle funzionalità in <xref:System.Windows.Application> classe per creare e gestire applicazioni.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 ## Classe Application  
  in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], la funzionalità con ambito di applicazione vengono incapsulate in  <xref:System.Windows.Application> classe.  <xref:System.Windows.Application> la classe include le funzionalità seguenti:  
@@ -133,7 +133,7 @@ Tutte le applicazioni tendono a condividere un insieme comune di funzionalità c
 ## Durata dell'applicazione  
  La durata di un'applicazione [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] è segnata da diversi eventi generati da <xref:System.Windows.Application>, grazie ai quali è possibile sapere quando l'applicazione è stata avviata, attivata e disattivata, nonché chiusa.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Splash_Screen"></a>   
 ### Schermata iniziale  

@@ -48,13 +48,13 @@ Tutta la comunicazione con un servizio [!INCLUDE[indigo1](../../../includes/indi
 ## <a name="defining-endpoint-addresses-in-configuration"></a>Definizione degli indirizzi endpoint nella configurazione  
  Per definire un endpoint in un file di configurazione, utilizzare il [ <> \> ](http://msdn.microsoft.com/it-it/13aa23b7-2f08-4add-8dbf-a99f8127c017) elemento.  
   
- [!code[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]  
+ <!-- TODO: review snippet reference [!code[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]  -->  
   
  Quando il <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> viene chiamato (ovvero, quando l'applicazione host tenta di avviare il servizio), il sistema ricerca un [ <> \> ](../../../docs/framework/configure-apps/file-schema/wcf/service.md) elemento con un attributo name che specifica "UE. Samples.HelloService". Se il [ <> \> ](../../../docs/framework/configure-apps/file-schema/wcf/service.md) elemento viene trovato, il sistema carica la classe specificata e crea gli endpoint utilizzando le definizioni di endpoint specificate nel file di configurazione. Questo meccanismo consente di caricare e avviare un servizio con due righe di codice, mentre tiene le informazioni sull'associazione e l'indirizzamento fuori dal codice. Il vantaggio di tale approccio è che queste modifiche possono essere apportate senza dover ricompilare o ridistribuire l'applicazione.  
   
  Le intestazioni facoltative vengono dichiarate in un [ <> \</> \> ](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md). Di seguito è riportato un esempio degli elementi utilizzati per specificare gli endpoint di un servizio in un file di configurazione in cui vengono distinte due intestazioni: client "Gold" all'indirizzo http://tempuri1.org/ e client "Standard" all'indirizzo http://tempuri2.org/. Il client che chiama questo servizio deve disporre delle appropriate [ <> \> ](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) nel file di configurazione.  
   
- [!code[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]  
+ <!-- TODO: review snippet reference [!code[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]  -->  
   
  Le intestazioni possono essere impostate anche su singoli messaggi anziché su tutti i messaggi su un endpoint (come illustrato in precedenza). Questa operazione viene eseguita utilizzando <xref:System.ServiceModel.OperationContextScope> per creare un nuovo contesto in un'applicazione client per aggiungere un'intestazione personalizzata al messaggio in uscita, come illustrato nell'esempio seguente.  
   

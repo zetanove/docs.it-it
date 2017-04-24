@@ -59,7 +59,7 @@ L'infrastruttura del modello di identità in [!INCLUDE[indigo1](../../../../incl
          Nell'esempio di codice seguente viene definito un tipo di risorsa personalizzato denominato `MyResourceType`.  
   
          [!code-csharp[c_CustomClaim#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#2)]
-         [!code-vb[c_CustomClaim#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#2)]  
+         <!-- TODO: review snippet reference [!code-vb[c_CustomClaim#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#2)]  -->  
   
     3.  Scegliere un diritto definito da [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] o un valore univoco per un diritto personalizzato.  
   
@@ -70,7 +70,7 @@ L'infrastruttura del modello di identità in [!INCLUDE[indigo1](../../../../incl
          Esempio di codice seguente crea un'attestazione personalizzata con un tipo di attestazione `http://example.org/claims/complexcustomclaim`, un tipo di risorsa personalizzata `MyResourceType`e con il <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> destra.  
   
      [!code-csharp[c_CustomClaim#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customclaim/cs/c_customclaim.cs#5)]
-     [!code-vb[c_CustomClaim#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#5)]  
+     <!-- TODO: review snippet reference [!code-vb[c_CustomClaim#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customclaim/vb/c_customclaim.vb#5)]  -->  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio di codice seguente viene illustrato come creare un'attestazione personalizzata con un tipo di risorsa primitivo e un'attestazione personalizzata con un tipo di risorsa non primitivo.  

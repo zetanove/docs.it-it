@@ -35,7 +35,7 @@ caps.handback.revision: 33
   
  Inoltre, è importante conoscere le risorse, che consentono il riutilizzo dei modelli e stili. Per ulteriori informazioni sulle risorse, vedere [risorse XAML](../../../../docs/framework/wpf/advanced/xaml-resources.md).  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="styling_and_templating_sample"></a>   
 ## <a name="styling-and-templating-sample"></a>Applicazione di stili e modelli  

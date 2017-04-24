@@ -22,7 +22,7 @@ caps.handback.revision: 9
 # Cenni preliminari sulla classe TextBox
 La classe <xref:System.Windows.Controls.TextBox> consente di visualizzare o modificare testo non formattato.  Un utilizzo comune di un controllo <xref:System.Windows.Controls.TextBox> consiste nel modificare testo non formattato in un form.  Ad esempio, un form in cui viene richiesto di immettere il nome utente, il numero di telefono e così via richiede l'utilizzo dei controlli <xref:System.Windows.Controls.TextBox> per l'input di testo.  In questo argomento viene presentata la classe <xref:System.Windows.Controls.TextBox> e vengono forniti esempi del relativo utilizzo sia in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] che in [!INCLUDE[TLA#tla_lhcshrp](../../../../includes/tlasharptla-lhcshrp-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="textbox_or_richtextbox"></a>   
 ## TextBox o RichTextBox?  

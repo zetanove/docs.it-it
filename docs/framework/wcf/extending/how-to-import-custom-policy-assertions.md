@@ -50,9 +50,9 @@ Le asserzioni di criteri descrivono le funzionalità e i requisiti di un endpoin
   
 1.  Aggiungere il tipo di unità di importazione di `<extensions>` elemento all'interno di [ <> \> ](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) elemento nel file di configurazione client.  
   
-     [!code[CustomPolicySample#7](../../../../samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/client.exe.config#7)]
-     [!code-csharp[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]
-     [!code-vb[CustomPolicySample#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/client.exe.config#7)]  
+     <!-- TODO: review snippet reference [!code[CustomPolicySample#7](../../../../samples/snippets/common/VS_Snippets_CFX/custompolicysample/common/client.exe.config#7)]  -->
+     <!-- TODO: review snippet reference [!code-csharp[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]  -->
+     <!-- TODO: review snippet reference [!code-vb[CustomPolicySample#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/custompolicysample/vb/client.exe.config#7)]  -->  
   
 2.  Nell'applicazione client, utilizzare il <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=fullName> o <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=fullName> per risolvere i metadati e l'utilità di importazione viene richiamata automaticamente.  
   

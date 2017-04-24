@@ -35,7 +35,7 @@ caps.handback.revision: 23
 # Estensioni di markup e XAML WPF
 In questo argomento viene introdotto il concetto di estensioni di markup per XAML, incluse le regole di sintassi, lo scopo e il modello a oggetti delle classi sottostante.  Le estensioni di markup rappresentano una funzionalità generale del linguaggio XAML e dell'implementazione .NET di servizi XAML.  Questo argomento fornisce informazioni dettagliate sulle estensioni di markup per l'utilizzo in XAML WPF.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="XAML_Processors_and_Markup_Extensions"></a>   
 ## Processori XAML ed estensioni di markup  

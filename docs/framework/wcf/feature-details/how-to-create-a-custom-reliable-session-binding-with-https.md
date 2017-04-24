@@ -35,7 +35,7 @@ In questo argomento viene illustrato l'uso della protezione del trasporto SSL \(
   
 3.  Creare un file Web.config per configurare un endpoint per `CalculatorService` con un'associazione personalizzata denominata "reliableSessionOverHttps" che usa una sessione affidabile e il trasporto HTTPS.  
   
-     [!code[c_HowTo_CreateReliableSessionHTTPS#2111](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/web.config#2111)]  
+     <!-- TODO: review snippet reference [!code[c_HowTo_CreateReliableSessionHTTPS#2111](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/web.config#2111)]  -->  
   
 4.  Creare un file Service.svc che contenga la riga:  
   
@@ -63,7 +63,7 @@ In questo argomento viene illustrato l'uso della protezione del trasporto SSL \(
   
 4.  Configurare un'associazione personalizzata denominata "reliableSessionOverHttps" per usare il trasporto HTTPS e sessioni affidabili.  
   
-     [!code[C_HowTo_CreateReliableSessionHTTPS#2211](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/app.config#2211)]  
+     <!-- TODO: review snippet reference [!code[C_HowTo_CreateReliableSessionHTTPS#2211](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/app.config#2211)]  -->  
   
 5.  Creare un'istanza di `ClientCalculator` in un'applicazione, quindi chiamare le operazioni del servizio.  
   

@@ -27,7 +27,7 @@ In questo argomento vengono forniti cenni preliminari su come disegnare con ogge
   
  In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] vengono offerti molti livelli di accesso alla grafica e ai servizi di rendering.  Al livello superiore, gli oggetti <xref:System.Windows.Shapes.Shape> sono facili da utilizzare e forniscono varie funzionalità utili, ad esempio il layout e la partecipazione nel sistema di eventi [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="shapes"></a>   
 ## Oggetti Shape  

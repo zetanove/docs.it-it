@@ -21,7 +21,7 @@ caps.handback.revision: 9
 # Controlli
 <a name="introduction"></a> [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] viene fornito con molti dei più comuni componenti dell'interfaccia utente utilizzati in quasi ogni applicazione Windows, ad esempio <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.Menu> e <xref:System.Windows.Controls.ListBox>.  Questi oggetti sono denominati controlli.  Sebbene [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] SDK continui a utilizzare il termine "controllo" per indicare in modo generale qualsiasi classe che rappresenta un oggetto visibile in un'applicazione, è importante notare che una classe non deve ereditare dalla classe <xref:System.Windows.Controls.Control> per essere visibilmente presente.  Le classi che ereditano dalla classe <xref:System.Windows.Controls.Control> contengono un oggetto <xref:System.Windows.Controls.ControlTemplate> che consente all'utente di un controllo di modificarne radicalmente l'aspetto senza dover creare una nuova sottoclasse.  In questo argomento viene illustrato il tipico utilizzo dei controlli in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], sia quelli che ereditano dalla classe <xref:System.Windows.Controls.Control> sia gli altri.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="creating_an_instance_of_a_control"></a>   
 ## Creazione di un'istanza di un controllo  

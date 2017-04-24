@@ -53,7 +53,7 @@ caps.handback.revision: 14
   
  Ad esempio, non è possibile importare il frammento di schema seguente utilizzando le impostazioni di importazione predefinite.  
   
- [!code[c_SchemaImportExport#9](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#9)]  
+ <!-- TODO: review snippet reference [!code[c_SchemaImportExport#9](../../../../samples/snippets/common/VS_Snippets_CFX/c_schemaimportexport/common/source.config#9)]  -->  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Riferimento allo Schema del contratto dati](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md). Se un schema non è conforme alle regole del contratto dati, utilizzare un motore di serializzazione diverso. Ad esempio, il <xref:System.Xml.Serialization.XmlSerializer> utilizza un proprio meccanismo di importazione dello schema separato. È inoltre disponibile una modalità di importazione speciale in cui l'intervallo dello schema supportato viene espanso. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)]la sezione sulla generazione <xref:System.Xml.Serialization.IXmlSerializable> tipi [importazione dello Schema per generare classi](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md).  
   

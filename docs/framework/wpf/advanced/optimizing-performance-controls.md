@@ -23,7 +23,7 @@ caps.handback.revision: 21
 # Ottimizzazione delle prestazioni: controlli
 In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] sono inclusi molti dei componenti dell'interfaccia utente comuni utilizzati nella maggior parte delle applicazioni Windows.  In questo argomento sono descritte le tecniche che consentono di migliorare le prestazioni dell'interfaccia utente.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Displaying"></a>   
 ## Visualizzazione di set di dati di grandi dimensioni  

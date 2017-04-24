@@ -24,7 +24,7 @@ caps.handback.revision: 25
 # Interoperativit&#224; di WPF e Win32
 In questo argomento vengono forniti cenni preliminari sull'interoperatività tra codice [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] e [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)].  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] fornisce un ambiente dettagliato per la creazione di applicazioni.  Tuttavia, in caso di un investimento ingente in codice [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)], può essere più efficiente riutilizzare parte di tale codice.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="basics"></a>   
 ## Nozioni fondamentali sull'interoperatività di WPF e Win32  

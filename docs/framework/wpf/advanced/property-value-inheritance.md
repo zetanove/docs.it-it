@@ -23,7 +23,7 @@ caps.handback.revision: 15
 # Ereditariet&#224; del valore della propriet&#224;
 L'ereditarietà del valore della proprietà è una funzionalità del sistema di proprietà [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  L'ereditarietà del valore della proprietà consente agli elementi figlio in una struttura ad albero di elementi di ottenere il valore di una determinata proprietà dagli elementi padre, ereditando tale valore con le impostazioni specificate in un punto qualsiasi dell'elemento padre più vicino.  Anche l'elemento padre potrebbe aver ottenuto il valore tramite l'ereditarietà del valore della proprietà; pertanto il sistema potrebbe procedere in modo ricorsivo fino alla radice della pagina.  L'ereditarietà del valore della proprietà non è il comportamento predefinito del sistema di proprietà; è necessario stabilire una particolare impostazione dei metadati di una proprietà affinché quest'ultima attivi l'ereditarietà del valore per gli elementi figlio.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Property_Value_Inheritance_is_Containment_Inheritance"></a>   
 ## L'ereditarietà del valore della proprietà è un'ereditarietà di contenimento  

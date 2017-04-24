@@ -97,7 +97,7 @@ In questo argomento vengono delineati i passaggi di base necessari per creare un
   
 4.  La configurazione per il client che utilizza il <xref:System.ServiceModel.NetTcpBinding> viene generata anche da Svcutil.exe. Quando si utilizza Visual Studio, questo file deve essere denominato App.config.  
   
-     [!code[C_HowTo_HostInWAS#2211](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_hostinwas/common/app.config#2211)]  
+     <!-- TODO: review snippet reference [!code[C_HowTo_HostInWAS#2211](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_hostinwas/common/app.config#2211)]  -->  
   
 5.  Creare un'istanza di `ClientCalculator` in un'applicazione, quindi chiamare le operazioni del servizio.  
   

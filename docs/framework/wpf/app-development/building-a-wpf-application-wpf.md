@@ -21,7 +21,7 @@ caps.handback.revision: 42
 # Compilazione di un&#39;applicazione WPF (WPF)
 Le applicazioni [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] possono essere compilate come file eseguibili [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] \(.exe\), librerie \(.dll\) o come combinazione dei due tipi di assembly.  In questo argomento viene illustrato come compilare applicazioni [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] e vengono descritti i passaggi chiave del processo di compilazione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Building_a_WPF_Application_using_Command_Line"></a>   
 ## Compilazione di un'applicazione WPF  

@@ -35,7 +35,7 @@ caps.handback.revision: 20
   
  Per compilare questo insieme di applicazioni, in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] viene implementato un host di servizi.  In questo argomento vengono presentati cenni preliminari su questi servizi e vengono fornite indicazioni per reperire ulteriori informazioni.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Application_Management"></a>   
 ## Gestione delle applicazioni  

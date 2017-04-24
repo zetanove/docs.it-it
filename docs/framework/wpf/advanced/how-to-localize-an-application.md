@@ -26,7 +26,7 @@ Questa esercitazione spiega come creare un'applicazione localizzata usando lo st
 > [!NOTE]
 >  Lo strumento LocBaml non è un'applicazione di produzione.  Viene presentato come esempio in cui vengono usate alcune delle API di localizzazione e illustra come scrivere uno strumento di localizzazione.  
 >   
->  [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+>    
   
 <a name="Introduction"></a>   
 ## Panoramica  

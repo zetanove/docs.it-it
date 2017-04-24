@@ -21,7 +21,7 @@ caps.handback.revision: 34
 # Cenni preliminari sugli strumenti decorativi visuali
 Gli strumenti decorativi visuali sono un tipo speciale di <xref:System.Windows.FrameworkElement> che fornisce all'utente segnali visivi.  Gli strumenti decorativi visuali possono anche essere utilizzati per aggiungere handle funzionali a elementi o fornire informazioni sullo stato di un controllo.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="about_Adorners"></a>   
 ## Informazioni sugli strumenti decorativi visuali  

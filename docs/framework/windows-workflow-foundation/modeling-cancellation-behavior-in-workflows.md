@@ -84,7 +84,7 @@ Le attività possono essere annullate all'interno di un flusso di lavoro, ad ese
   
  Nell'esempio seguente, viene definito l'override <xref:System.Activities.NativeActivity.Cancel%2A> di un'attività `ParallelForEach` personalizzata basata sull'oggetto <xref:System.Activities.NativeActivity>.Quando l'attività viene annullata, questo override gestisce la logica di annullamento per l'attività.Questo esempio fa parte dell'esempio [Attività ParallelForEach non generica](../../../docs/framework/windows-workflow-foundation/samples/non-generic-parallelforeach.md).  
   
- [!code-csharp[CFX_WorkflowApplicationExample#1010](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#1010)]  
+ <!-- TODO: review snippet reference [!code-csharp[CFX_WorkflowApplicationExample#1010](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#1010)]  -->  
   
  Le attività derivate da <xref:System.Activities.NativeActivity> possono determinare se l'annullamento è stato richiesto in seguito al controllo della proprietà <xref:System.Activities.NativeActivityContext.IsCancellationRequested%2A> e possono contrassegnarsi come annullate chiamando il metodo <xref:System.Activities.NativeActivityContext.MarkCanceled%2A>.La chiamata al metodo <xref:System.Activities.NativeActivityContext.MarkCanceled%2A> non completa immediatamente l'attività.Come al solito, il runtime completerà l'attività quando non dispone più di alcuna operazione in attesa, tuttavia se viene chiamato il metodo <xref:System.Activities.NativeActivityContext.MarkCanceled%2A>, lo stato finale sarà <xref:System.Activities.ActivityInstanceState> anziché <xref:System.Activities.ActivityInstanceState>.  
   

@@ -34,7 +34,7 @@ caps.handback.revision: 18
 # Contrassegno degli eventi indirizzati come gestiti e gestione delle classi
 I gestori per un evento indirizzato possono contrassegnare l'evento come gestito all'interno dei dati di evento.  La gestione dell'evento consente di abbreviare efficacemente la route.  La gestione delle classi è un concetto di programmazione supportato dagli eventi indirizzati.  Un gestore di classi ha la possibilità di gestire un determinato evento indirizzato a livello di classe con un gestore richiamato prima di qualsiasi gestore di istanze su qualsiasi istanza della classe.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

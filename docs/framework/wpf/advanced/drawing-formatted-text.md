@@ -24,7 +24,7 @@ caps.handback.revision: 13
 # Disegno di testo formattato
 In questo argomento vengono forniti dei cenni preliminari sulle funzionalità dell'oggetto <xref:System.Windows.Media.FormattedText>.  Questo oggetto fornisce un controllo di basso livello per il disegno di testo nelle applicazioni [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="technology_overview"></a>   
 ## Cenni preliminari sulla tecnologia  

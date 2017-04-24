@@ -52,8 +52,8 @@ In questo argomento vengono introdotte le animazioni con fotogrammi chiave.  Le 
   
  Nell'esempio riportato di seguito viene utilizzato un oggetto <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> per animare un elemento <xref:System.Windows.Shapes.Rectangle> in quattro diverse posizioni.  
   
- [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]
- [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  -->  
   
  Analogamente a un'animazione From\/To\/By, è possibile applicare un'animazione con fotogrammi chiave a una proprietà tramite uno <xref:System.Windows.Media.Animation.Storyboard> nel markup e nel codice oppure tramite il metodo <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> nel codice.  È inoltre possibile utilizzare un'animazione con fotogrammi chiave per creare un oggetto <xref:System.Windows.Media.Animation.AnimationClock> e applicarlo a una o più proprietà.  Per ulteriori informazioni sui diversi metodi per l'applicazione delle animazioni, vedere [Cenni preliminari sulle tecniche di animazione delle proprietà](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
   
@@ -130,8 +130,8 @@ In questo argomento vengono introdotte le animazioni con fotogrammi chiave.  Le 
   
 -   Poiché la proprietà <xref:System.Windows.Media.Animation.Timeline.Duration%2A> dell'animazione era stata impostata su 10 secondi, l'animazione mantiene il suo valore finale per due secondi prima di terminare alle 0:0:10.  
   
- [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]
- [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#BasicKeyFrameExampleWholePage](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  -->  
   
 <a name="interpolationmethods"></a>   
 ## Metodi di interpolazione  
@@ -173,8 +173,8 @@ In questo argomento vengono introdotte le animazioni con fotogrammi chiave.  Le 
 ### Interpolazione spline  
  L'interpolazione spline può essere utilizzata per realizzare effetti più realistici in termini di tempo.  Perché le animazioni vengono spesso utilizzate per simulare effetti riscontrabili nel mondo reale, gli sviluppatori devono poter controllare in modo accurato l'accelerazione e la decelerazione degli oggetti e modificare con precisione i segmenti temporali.  I fotogrammi chiave spline consentono di utilizzare l'interpolazione spline per le animazioni.  Con altri fotogrammi chiave, si specificano le proprietà <xref:System.Windows.Media.Animation.IKeyFrame.Value%2A> e <xref:System.Windows.Media.Animation.IKeyFrame.KeyTime%2A>.  Con un fotogramma chiave spline, si specifica anche la proprietà <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame.KeySpline%2A>.  Nell'esempio riportato di seguito viene illustrato un singolo fotogramma chiave spline per un oggetto <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>.  Si noti la proprietà <xref:System.Windows.Media.Animation.KeySpline>: è ciò che rende diverso un fotogramma chiave spline da altri tipi di fotogrammi chiave.  
   
- [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]
- [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]  -->  
   
  Una [curva di Bezier cubica](GTMT) è definita da un punto iniziale, da un punto finale e da due punti di controllo.  La proprietà <xref:System.Windows.Media.Animation.KeySpline> di un fotogramma chiave spline definisce i due punti di controllo di una curva di Bezier che si estende da \(0,0\) a \(1,1\).  Il primo punto di controllo determina il fattore di curvatura della prima parte della curva di Bezier, mentre il secondo punto di controllo stabilisce il fattore di curvatura della seconda parte.  La curva risultante descrive la velocità di modifica di quel fotogramma chiave spline.  Più stretta è la curva, più elevata sarà la velocità con la quale il fotogramma chiave modifica i suoi valori.  Man mano che la curva diventa più larga, la velocità di modifica dei valori diminuisce.  
   
@@ -185,8 +185,8 @@ In questo argomento vengono introdotte le animazioni con fotogrammi chiave.  Le 
  ![Curva di Bézier](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-keyspline-0-1-1-0.png "graphicsmm\_keyspline\_0\_1\_1\_0")  
 Spline chiave con punti di controllo \(0,0, 1,0\) e \(1,0, 0,0\)  
   
- [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]
- [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#singlesplinekeyframeexample)]  -->  
   
  Questo fotogramma chiave si anima rapidamente all'avvio, rallenta e quindi riaccelera prima della fine.  
   
@@ -195,15 +195,15 @@ Spline chiave con punti di controllo \(0,0, 1,0\) e \(1,0, 0,0\)
  ![Curva di Bézier](../../../../docs/framework/wpf/graphics-multimedia/media/graphicsmm-keyspline-025-050-075-10.png "graphicsmm\_keyspline\_025\_050\_075\_10")  
 Spline chiave con punti di controllo \(0,25, 0,5\) e \(0,75, 1,0\)  
   
- [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExampleInline3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexampleinline3)]
- [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExampleInline3](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#singlesplinekeyframeexampleinline3)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExampleInline3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexampleinline3)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SingleSplineKeyFrameExampleInline3](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#singlesplinekeyframeexampleinline3)]  -->  
   
  Poiché la curvatura del curva di Bézier cambia in modo irrilevante, questo fotogramma chiave si anima a una velocità quasi costante e rallenta leggermente verso la fine.  
   
  Nell'esempio riportato di seguito viene utilizzato un oggetto <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> per animare la posizione del rettangolo.  Poiché <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> utilizza gli oggetti <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame>, la transizione tra ogni valore di fotogramma chiave utilizza l'interpolazione spline.  
   
- [!code-xml[keyframes_ovw_snip#SplinedInterpolationExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#splinedinterpolationexample)]
- [!code-xml[keyframes_ovw_snip#SplinedInterpolationExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#splinedinterpolationexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SplinedInterpolationExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#splinedinterpolationexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#SplinedInterpolationExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#splinedinterpolationexample)]  -->  
   
  Poiché l'interpolazione spline può risultare di difficile comprensione, fare delle prove con le diverse impostazioni.  L'[esempio di animazione con spline chiave](http://go.microsoft.com/fwlink/?LinkID=160011) consente di modificare i valori della spline chiave e di osservarne gli effetti su un'animazione.  
   
@@ -213,8 +213,8 @@ Spline chiave con punti di controllo \(0,25, 0,5\) e \(0,75, 1,0\)
   
  Nell'esempio riportato di seguito, viene creato un <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> che utilizza l'interpolazione lineare, spline e discreta.  
   
- [!code-xml[keyframes_ovw_snip#ComboInterpolationExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#combointerpolationexample)]
- [!code-xml[keyframes_ovw_snip#ComboInterpolationExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#combointerpolationexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#ComboInterpolationExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/InterpolationMethodsExample.xaml#combointerpolationexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#ComboInterpolationExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/InterpolationMethodsExample.xaml#combointerpolationexample)]  -->  
   
 <a name="keytimes"></a>   
 ## Ulteriori informazioni sulla durata e sulle chiavi temporali  
@@ -235,8 +235,8 @@ Spline chiave con punti di controllo \(0,25, 0,5\) e \(0,75, 1,0\)
   
 -   Il quarto fotogramma chiave aggiunge un'animazione da 500 a 600.  Viene avviato dopo la fine del terzo fotogramma chiave \(9 secondi\), viene riprodotto per 1 secondo e quindi viene terminato alle 0:0:10.  
   
- [!code-xml[keyframes_ovw_snip#TimeSpanKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#timespankeytimeexample)]
- [!code-xml[keyframes_ovw_snip#TimeSpanKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#timespankeytimeexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#TimeSpanKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#timespankeytimeexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#TimeSpanKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#timespankeytimeexample)]  -->  
   
 ### Valori percentuali  
  Un valore percentuale specifica che il fotogramma chiave viene terminato trascorso un determinato valore percentuale della proprietà <xref:System.Windows.Media.Animation.Timeline.Duration%2A> dell'animazione.  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] è possibile specificare la percentuale come un numero seguito dal simbolo `%`.  Nel codice, si utilizza il metodo <xref:System.Windows.Media.Animation.KeyTime.FromPercent%2A> e lo si passa all'oggetto <xref:System.Double> che indica la percentuale.  Il valore deve essere maggiore o uguale a 0 e minore o uguale a 100 percento.  Nell'esempio riportato di seguito viene illustrata un'animazione con una durata di 10 secondi e quattro fotogrammi chiave le cui chiavi temporali sono specificate come percentuali.  
@@ -249,8 +249,8 @@ Spline chiave con punti di controllo \(0,25, 0,5\) e \(0,75, 1,0\)
   
 -   Il quarto fotogramma chiave aggiunge un'animazione da 500 a 600.  Viene avviato dopo la fine del terzo fotogramma chiave \(9 secondi\), viene riprodotto per 1 secondo e quindi viene terminato alle 0:0:10 \(1 \* 10 \= 10\).  
   
- [!code-xml[keyframes_ovw_snip#PercentageKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#percentagekeytimeexample)]
- [!code-xml[keyframes_ovw_snip#PercentageKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#percentagekeytimeexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#PercentageKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#percentagekeytimeexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#PercentageKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#percentagekeytimeexample)]  -->  
   
 ### Valore speciale, Uniform  
  Utilizzare la proprietà <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A> quando si desidera che ogni fotogramma chiave assuma la stessa quantità di tempo.  
@@ -265,16 +265,16 @@ Spline chiave con punti di controllo \(0,25, 0,5\) e \(0,75, 1,0\)
   
 -   Il quarto fotogramma chiave aggiunge un'animazione da 500 a 600.  Viene avviato dopo la fine del secondo fotogramma chiave \(7,5 secondi\), viene riprodotto per 2,5 secondi e quindi viene terminato alle 0:0:1.  
   
- [!code-xml[keyframes_ovw_snip#UniformKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#uniformkeytimeexample)]
- [!code-xml[keyframes_ovw_snip#UniformKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#uniformkeytimeexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#UniformKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#uniformkeytimeexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#UniformKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#uniformkeytimeexample)]  -->  
   
 ### Valore speciale, Paced  
  Utilizzare la proprietà <xref:System.Windows.Media.Animation.KeyTime.Paced%2A> se si desidera che l'animazione presenti una velocità costante.  
   
  Una chiave temporale <xref:System.Windows.Media.Animation.KeyTime.Paced%2A> assegna il tempo disponibile secondo la lunghezza di ogni fotogramma chiave per determinare la durata di ogni fotogramma.  In questo modo, la velocità dell'animazione rimarrà costante.  Nell'esempio riportato di seguito viene illustrata un'animazione con una durata di 10 secondi e tre fotogrammi chiave le cui chiavi temporali sono specificate come <xref:System.Windows.Media.Animation.KeyTime.Paced%2A>.  
   
- [!code-xml[keyframes_ovw_snip#PacedKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#pacedkeytimeexample)]
- [!code-xml[keyframes_ovw_snip#PacedKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#pacedkeytimeexample)]  
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#PacedKeyTimeExample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/KeyTimesExample.xaml#pacedkeytimeexample)]  -->
+ <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#PacedKeyTimeExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/KeyTimesExample.xaml#pacedkeytimeexample)]  -->  
   
  Si noti che, se la chiave temporale dell'ultimo fotogramma chiave è <xref:System.Windows.Media.Animation.KeyTime.Paced%2A> o <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A>, la chiave temporale risolta sarà impostata su 100 percento.  Se il primo fotogramma chiave di un'animazione a più fotogrammi presenta il valore speciale Paced, la relativa chiave temporale risolta sarà impostata su 0.  Se la raccolta di fotogrammi chiave contiene solo un singolo fotogramma chiave con valore speciale Paced, la relativa chiave temporale risolta sarà impostata su 100 percento.  
   

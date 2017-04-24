@@ -22,7 +22,7 @@ caps.handback.revision: 11
 # Cenni preliminari sugli oggetti TileBrush
 Gli oggetti <xref:System.Windows.Media.TileBrush> forniscono un elevato livello di controllo sulla modalità di disegno di un'area con un'immagine, un oggetto <xref:System.Windows.Media.Drawing> oppure un oggetto <xref:System.Windows.Media.Visual>.  In questo argomento viene descritto l'utilizzo delle funzionalità di <xref:System.Windows.Media.TileBrush> per acquisire un controllo maggiore sul modo in cui un'area viene disegnata utilizzando <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush> o <xref:System.Windows.Media.VisualBrush>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisite"></a>   
 ## Prerequisiti  

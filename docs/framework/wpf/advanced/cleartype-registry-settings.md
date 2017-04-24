@@ -22,7 +22,7 @@ caps.handback.revision: 12
 # Impostazioni del Registro di sistema ClearType
 In questo argomento viene fornita una panoramica delle impostazioni del Registro di sistema [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] utilizzate dalle applicazioni [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="overview"></a>   
 ## Cenni preliminari sulla tecnologia  

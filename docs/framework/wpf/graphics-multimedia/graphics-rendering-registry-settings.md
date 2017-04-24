@@ -25,7 +25,7 @@ caps.handback.revision: 17
 # Impostazioni del Registro di sistema per il rendering della grafica
 In questo argomento viene fornita una panoramica delle impostazioni del Registro di sistema per il rendering della grafica di [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] che influiscono sulle applicazioni di [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="overview"></a>   
 ## Utilizzo delle impostazioni del Registro di sistema per il rendering della grafica  

@@ -25,7 +25,7 @@ caps.handback.revision: 13
   
  In questa esercitazione viene illustrato come scrivere un'applicazione di esempio, disponibile in [Esempio di hit test con interoperatività Win32](http://go.microsoft.com/fwlink/?LinkID=159995) \(la pagina potrebbe essere in inglese\), che ospita oggetti visivi [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] in una finestra [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="requirements"></a>   
 ## Requisiti  

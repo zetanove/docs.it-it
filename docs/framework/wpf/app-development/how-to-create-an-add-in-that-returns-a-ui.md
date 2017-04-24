@@ -36,7 +36,7 @@ In questo esempio viene illustrato come creare un componente aggiuntivo che rest
 ## Esempio  
  La creazione di un componente aggiuntivo che restituisce un'[!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] di [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] richiede l'utilizzo di codice specifico per ciascun segmento di pipeline, per il componente aggiuntivo e per l'applicazione host.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Contract"></a>   
 ## Implementazione del segmento di pipeline di contratto  

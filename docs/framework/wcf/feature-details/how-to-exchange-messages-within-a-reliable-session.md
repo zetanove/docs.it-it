@@ -35,7 +35,7 @@ In questo argomento vengono delineati i passaggi necessari per attivare una sess
   
 3.  Creare un file Web.config per configurare un endpoint per il servizio `CalculatorService` che utilizza la classe <xref:System.ServiceModel.WSHttpBinding> con sessione affidabile attivata e recapito ordinato dei messaggi obbligatorio.  
   
-     [!code[c_HowTo_UseReliableSession#2111](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_usereliablesession/common/web.config#2111)]  
+     <!-- TODO: review snippet reference [!code[c_HowTo_UseReliableSession#2111](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_usereliablesession/common/web.config#2111)]  -->  
   
 4.  Creare un file Service.svc che contenga la riga:  
   
@@ -63,7 +63,7 @@ In questo argomento vengono delineati i passaggi necessari per attivare una sess
   
 4.  Svcutil.exe genera inoltre la configurazione per il client che utilizza la classe <xref:System.ServiceModel.WSHttpBinding>.Questo file deve essere denominato App.config quando si utilizza [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
   
-     [!code[C_HowTo_UseReliableSession#2211](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_usereliablesession/common/app.config#2211)]  
+     <!-- TODO: review snippet reference [!code[C_HowTo_UseReliableSession#2211](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_usereliablesession/common/app.config#2211)]  -->  
   
 5.  Creare un'istanza di `ClientCalculator` in un'applicazione, quindi chiamare le operazioni del servizio.  
   

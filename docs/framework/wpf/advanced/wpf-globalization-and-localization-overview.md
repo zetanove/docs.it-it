@@ -26,7 +26,7 @@ Quando si limita la disponibilità di un prodotto a una sola lingua, si limita l
   
  La localizzazione consiste nella traduzione delle risorse dell'applicazione in versioni appositamente localizzate per le impostazioni cultura supportate dall'applicazione.  La localizzazione in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], richiede l'utilizzo delle API nello spazio dei nomi <xref:System.Windows.Markup.Localizer>. Queste API vengono utilizzate con lo strumento da riga di comando illustrato in [Esempio di strumento LocBaml](http://go.microsoft.com/fwlink/?LinkID=160016).  Per informazioni sulla compilazione e l'utilizzo di LocBaml, vedere [Localizzare un'applicazione](../../../../docs/framework/wpf/advanced/how-to-localize-an-application.md).  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 ## Procedure consigliate per la globalizzazione e la localizzazione in WPF  
  Per sfruttare al meglio le funzionalità di globalizzazione e localizzazione integrate in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], seguire i suggerimenti relativi alla progettazione e localizzazione dell'interfaccia utente forniti in questa sezione.  

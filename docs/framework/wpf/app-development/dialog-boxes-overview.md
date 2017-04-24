@@ -38,7 +38,7 @@ Applicazioni autonome sono in genere una finestra principale in cui vengono visu
   
  [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)]Consente di creare tipi diversi di finestre di dialogo, incluse le finestre di messaggio, finestre di dialogo comuni e finestre di dialogo personalizzate. Questo argomento vengono illustrate e [Dialog Box Sample](http://go.microsoft.com/fwlink/?LinkID=159984) sono disponibili alcuni esempi.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Message_Boxes"></a>   
 ## <a name="message-boxes"></a>Finestre di messaggio  

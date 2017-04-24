@@ -35,7 +35,7 @@ Oltre a fornire molteplici servizi di sicurezza, [!INCLUDE[TLA#tla_wpf](../../..
   
  Nella parte rimanente di questo argomento verranno illustrate le funzionalità specifiche di questi livelli che riguardano in modo specifico [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Operating_System_Security"></a>   
 ## Sicurezza del sistema operativo  

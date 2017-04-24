@@ -81,7 +81,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
   
  Ad esempio, un file di configurazione generato per un servizio `ISampleService` usato negli esempi precedenti contiene le informazioni sull'endpoint riportate di seguito.  
   
- [!code[C_GeneratedCodeFiles#19](../../../samples/snippets/common/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]  
+ <!-- TODO: review snippet reference [!code[C_GeneratedCodeFiles#19](../../../samples/snippets/common/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]  -->  
   
  Questo file di configurazione specifica un endpoint di destinazione nell'elemento `<client>`. [!INCLUDE[crabout](../../../includes/crabout-md.md)]utilizzo di più endpoint di destinazione, vedere il <xref:System.ServiceModel.ClientBase%601.%23ctor%2A?displayProperty=fullName> o <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A?displayProperty=fullName> costruttori.  
   

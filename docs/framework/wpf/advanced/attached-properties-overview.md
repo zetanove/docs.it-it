@@ -21,7 +21,7 @@ caps.handback.revision: 27
 # Cenni preliminari sulle propriet&#224; associate
 Una proprietà associata è un concetto definito da XAML.  Una proprietà associata deve essere utilizzata come un tipo di proprietà globale che è possibile impostare su qualsiasi oggetto.  in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], le proprietà associate sono in genere definito come un tipo specializzato di proprietà di dipendenza che non dispone della proprietà “wrapper„ convenzionale.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

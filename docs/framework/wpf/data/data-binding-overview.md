@@ -28,7 +28,7 @@ L'associazione dati [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptl
   
  In questo argomento vengono innanzitutto trattati i concetti fondamentali dell'associazione dati [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], per poi analizzare l'utilizzo della classe <xref:System.Windows.Data.Binding> e altre funzionalità dell'associazione dati.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="what_is_data_binding"></a>   
 ## Definizione di associazione dati  
@@ -64,7 +64,7 @@ L'associazione dati [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptl
   
 <a name="basic_data_binding_concepts"></a>   
 ## Concetti di base sull'associazione dati  
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
  Indipendentemente dall'elemento associato e dalla natura dell'origine dati, ogni associazione segue sempre il modello illustrato nella figura seguente:  
   
@@ -128,7 +128,7 @@ L'associazione dati [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptl
   
 <a name="creating_a_binding"></a>   
 ## Creazione di un'associazione  
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
  Per riepilogare alcuni dei concetti illustrati nelle sezioni precedenti, un'associazione viene stabilita utilizzando l'oggetto <xref:System.Windows.Data.Binding> e ogni associazione è costituita in genere da quattro componenti: la destinazione dell'associazione, la proprietà di destinazione, l'origine dell'associazione e un percorso del valore di origine da utilizzare.  In questa sezione viene illustrato come impostare un'associazione.  
   
@@ -220,7 +220,7 @@ L'associazione dati [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptl
   
 <a name="binding_to_collections"></a>   
 ## Associazione alle raccolte  
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
  Un oggetto origine dell'associazione può essere considerato come un unico oggetto le cui proprietà contengono dati oppure come una raccolta di dati di oggetti polimorfici che spesso vengono raggruppati. Un esempio può essere il risultato di una query in un database.  Finora è stata illustrata soltanto l'associazione a singoli oggetti, tuttavia l'associazione a una raccolta di dati è uno scenario comune.  È possibile ad esempio utilizzare un oggetto <xref:System.Windows.Controls.ItemsControl> quale <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView> o <xref:System.Windows.Controls.TreeView> per visualizzare una raccolta dati, come avviene nell'applicazione illustrata nella sezione [Definizione di associazione dati](#what_is_data_binding)  
   
@@ -242,7 +242,7 @@ L'associazione dati [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptl
 ### Visualizzazioni di raccolte  
  Una volta associato <xref:System.Windows.Controls.ItemsControl> a una raccolta di dati, è possibile ordinare, filtrare o raggruppare tali dati.  A tale scopo si utilizzano le visualizzazioni di raccolte, ovvero classi che implementano l'interfaccia <xref:System.ComponentModel.ICollectionView>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="what_are_collection_views"></a>   
 #### Definizione di visualizzazione di raccolta  
@@ -369,7 +369,7 @@ L'associazione dati [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptl
   
 <a name="data_validation"></a>   
 ## Convalida dei dati  
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
  Gran parte delle applicazioni che accettano input dell'utente devono avere una logica di convalida per garantire che l'utente immetta le informazioni previste.  I controlli di convalida possono basarsi sul tipo, l'intervallo, il formato o altri requisiti specifici dell'applicazione.  In questa sezione viene illustrato il funzionamento della convalida dei dati in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   

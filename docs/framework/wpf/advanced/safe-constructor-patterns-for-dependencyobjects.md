@@ -23,7 +23,7 @@ caps.handback.revision: 11
 # Modelli di costruttore sicuri per DependencyObject
 In genere, i costruttori di classe non devono chiamare callback quali metodi virtuali o delegati, in quanto possono essere chiamati come inizializzazione di base di costruttori per una classe derivata.  L'utilizzo di elementi virtuali può avvenire a un stato incompleto dell'inizializzazione di qualsiasi dato oggetto.  Tuttavia, il sistema di proprietà stesso chiama ed espone internamente i callback come parte del sistema di proprietà di dipendenza.  Un'operazione semplice quale l'impostazione del valore di una proprietà di dipendenza con la chiamata di <xref:System.Windows.DependencyObject.SetValue%2A> potrebbe includere un callback in un punto qualsiasi del processo di determinazione.  Per questa ragione, è necessario impostare i valori delle proprietà di dipendenza all'interno del corpo di un costruttore con una certa attenzione, in quanto tale operazione può divenire problematica se il tipo viene utilizzato come classe di base.  Di seguito, viene documentato un modello particolare per l'implementazione di costruttori <xref:System.Windows.DependencyObject> che evitano problemi specifici con gli stati delle proprietà di dipendenza e i callback inerenti.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Property_System_Virtual_Methods"></a>   
 ## Metodi virtuali del sistema di proprietà  

@@ -24,7 +24,7 @@ caps.handback.revision: 17
   
  In questo argomento viene illustrata un'applicazione, [Esempio di hosting di un controllo ListBox Win32 in WPF](http://go.microsoft.com/fwlink/?LinkID=159998), che ospita un controllo casella di riepilogo [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)].  Questa procedura generale può essere estesa all'hosting di qualsiasi finestra [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="requirements"></a>   
 ## Requisiti  

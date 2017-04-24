@@ -24,7 +24,7 @@ caps.handback.revision: 24
 # Cenni preliminari sui modelli di dati
 Il [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] modello ai modelli di dati offre una notevole flessibilità per definire la presentazione dei dati. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]controlli dispongono di funzionalità incorporate per supportare la personalizzazione della presentazione dei dati. In questo argomento viene illustrato innanzitutto come definire un <xref:System.Windows.DataTemplate> e vengono presentate altre funzionalità di modello di dati, ad esempio la selezione di modelli in base a logica personalizzata e il supporto per la visualizzazione di dati gerarchici.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Prerequisites"></a>   
 ## <a name="prerequisites"></a>Prerequisiti  
@@ -36,7 +36,7 @@ Il [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
 <a name="DataTemplating_Basic"></a>   
 ## <a name="data-templating-basics"></a>Nozioni fondamentali sui modelli di dati  
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
  Per illustrare il motivo <xref:System.Windows.DataTemplate> è importante, passiamo a esaminare un esempio di associazione dati. In questo esempio, abbiamo un <xref:System.Windows.Controls.ListBox> associato a un elenco di `Task` oggetti. Ogni `Task` oggetto ha un `TaskName` (stringa), un `Description` (stringa), un `Priority` (int) e una proprietà di tipo `TaskType`, ovvero un `Enum` con valori `Home` e `Work`.  
   

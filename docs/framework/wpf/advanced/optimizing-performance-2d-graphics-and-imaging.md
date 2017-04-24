@@ -26,7 +26,7 @@ caps.handback.revision: 7
 # Ottimizzazione delle prestazioni: grafica bidimensionale e creazione di immagini
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] fornisce un'ampia gamma di funzionalità di grafica bidimensionale e di creazione dell'immagine che possono essere ottimizzate in base ai requisiti dell'applicazione.  In questo argomento sono fornite informazioni sull'ottimizzazione delle prestazioni in tali aree.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Drawing_and_Shapes"></a>   
 ## Disegno e forme  

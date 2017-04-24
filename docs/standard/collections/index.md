@@ -30,7 +30,7 @@ Dati simili possono spesso essere gestiti in modo più efficiente quando memoriz
   
  A partire dal [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], gli insiemi di <xref:System.Collections.Concurrent> dello spazio dei nomi forniscono operazioni thread-safe efficienti per accedere agli elementi della raccolta da più thread. Le classi di raccolte non modificabili nello spazio dei nomi System.Collections.Immutable ([pacchetto NuGet](https://www.nuget.org/packages/System.Collections.Immutable)) sono intrinsecamente thread-safe in quanto le operazioni su una copia della raccolta originale e della raccolta originale non può essere modificata.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="BKMK_Commoncollectionfeatures"></a>   
 ## <a name="common-collection-features"></a>Funzionalità comuni delle raccolte  

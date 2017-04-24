@@ -27,7 +27,7 @@ caps.handback.revision: 7
 # Sicurezza della propriet&#224; di dipendenza
 Le proprietà di dipendenza in genere devono essere considerate come proprietà pubbliche.  A causa della natura stessa del sistema di proprietà di [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], è impossibile avere delle garanzie di sicurezza sul valore di una proprietà di dipendenza.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="AccessSecurity"></a>   
 ## Accesso e sicurezza delle proprietà wrapper e di dipendenza  

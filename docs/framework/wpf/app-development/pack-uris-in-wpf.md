@@ -46,7 +46,7 @@ In [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)], gli [!IN
   
  Per fornire un meccanismo coerente di identificazione e caricamento di questi tipi di file dai diversi percorsi, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] sfrutta l'estensibilità dello *schema URI di tipo pack*.  In questo argomento vengono fornite informazioni preliminari sullo schema, viene illustrato come costruire [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] di tipo pack per diversi scenari, vengono trattati gli [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] assoluti e relativi nonché la risoluzione degli [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)], fino a illustrare come utilizzare gli [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] di tipo pack dal markup e dal codice.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="The_Pack_URI_Scheme"></a>   
 ## Schema URI di tipo pack  

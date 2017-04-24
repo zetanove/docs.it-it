@@ -24,7 +24,7 @@ caps.handback.revision: 23
 # Serializzazione e archiviazione di documenti
 [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] offre un ambiente avanzato per la creazione e la visualizzazione di documenti di alta qualità.  Funzionalità avanzate che supportano documenti sia statici sia dinamici e controlli di visualizzazione avanzati combinati con potenti funzionalità grafiche 2D e 3D consentono la creazione di applicazioni [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] di livello elevato in termini di qualità ed esperienza utente.  La possibilità di gestire in modo flessibile la rappresentazione in memoria di un documento è una funzionalità chiave di [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] e la capacità di salvare e caricare documenti in modo efficiente da un archivio dati è l'esigenza di ogni applicazione.  Il processo di conversione di un documento da una rappresentazione in memoria interna a un archivio dati esterno è detto [serializzazione](GTMT).  Il processo inverso di lettura di un archivio dati e creazione dell'istanza in memoria originale è detto deserializzazione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="AboutSerialization"></a>   
 ## Informazioni sulla serializzazione di documenti  

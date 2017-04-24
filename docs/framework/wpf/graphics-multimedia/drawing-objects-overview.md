@@ -26,7 +26,7 @@ caps.handback.revision: 24
 # Cenni preliminari sugli oggetti Drawing
 In questo argomento viene fornita un'introduzione agli oggetti <xref:System.Windows.Media.Drawing> e ne viene descritto l'utilizzo per creare forme, bitmap, testo e contenuti multimediali in modo efficace.  Utilizzare gli oggetti <xref:System.Windows.Media.Drawing> quando si creano ClipArt, si disegna con <xref:System.Windows.Media.DrawingBrush> o si utilizzano oggetti <xref:System.Windows.Media.Visual>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="whatisadrawingsection"></a>   
 ## Definizione di oggetto Drawing  

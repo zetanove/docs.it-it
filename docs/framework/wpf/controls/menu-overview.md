@@ -22,7 +22,7 @@ caps.handback.revision: 18
 # Cenni preliminari sulla classe Menu
 Il <xref:System.Windows.Controls.Menu> classe consente di organizzare gli elementi associati a comandi e gestori di eventi in ordine gerarchico. Ogni <xref:System.Windows.Controls.Menu> elemento contiene una raccolta di <xref:System.Windows.Controls.MenuItem> elementi.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="menu_control"></a>   
 ## <a name="menu-control"></a>Controllo menu  

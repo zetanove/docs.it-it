@@ -22,7 +22,7 @@ caps.handback.revision: 48
 # Cenni preliminari sul rendering della grafica WPF
 In questo argomento vengono forniti cenni preliminari sul livello visivo di [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  Viene analizzato il ruolo della classe <xref:System.Windows.Media.Visual> per il supporto del rendering nel modello [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="role_of_visual_object"></a>   
 ## Ruolo dell'oggetto visivo  

@@ -22,7 +22,7 @@ caps.handback.revision: 19
 # Cenni preliminari sul controllo Expander
 Il controllo <xref:System.Windows.Controls.Expander> consente di fornire contenuto in un'area espandibile dall'aspetto di una finestra e che include un'intestazione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="CreatinganExpanderinXAML"></a>   
 ## Creazione di un controllo Expander semplice  

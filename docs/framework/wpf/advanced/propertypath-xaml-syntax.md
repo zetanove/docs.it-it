@@ -22,7 +22,7 @@ caps.handback.revision: 22
 # Sintassi XAML di PropertyPath
 L'oggetto <xref:System.Windows.PropertyPath> supporta una sintassi [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] inline complessa per l'impostazione di varie proprietà che accettano il tipo <xref:System.Windows.PropertyPath> come valore.  In questo argomento viene illustrata la sintassi di <xref:System.Windows.PropertyPath> applicata alle sintassi di animazione e di associazione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="where"></a>   
 ## Utilizzo di PropertyPath  

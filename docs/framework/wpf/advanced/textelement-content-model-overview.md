@@ -24,7 +24,7 @@ caps.handback.revision: 7
 # Cenni preliminari sul modello di contenuto TextElement
 In questi cenni preliminari sul modello di contenuto viene descritto il contenuto supportato per un oggetto <xref:System.Windows.Documents.TextElement>.  La classe <xref:System.Windows.Documents.Paragraph> è un tipo di <xref:System.Windows.Documents.TextElement>.  Un modello di contenuto consente di descrivere gli oggetti o gli elementi che possono essere contenuti in altri oggetti o elementi.  In questi cenni preliminari viene riepilogato il modello di contenuto utilizzato per gli oggetti derivati da <xref:System.Windows.Documents.TextElement>.  Per ulteriori informazioni, vedere [Cenni preliminari sui documenti dinamici](../../../../docs/framework/wpf/advanced/flow-document-overview.md).  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="text_element_classes"></a>   
 ## Diagramma del modello di contenuto  

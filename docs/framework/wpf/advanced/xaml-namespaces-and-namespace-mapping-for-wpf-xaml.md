@@ -28,7 +28,7 @@ caps.handback.revision: 22
 # Spazi dei nomi XAML e mapping dello spazio dei nomi per XAML WPF
 In questo argomento vengono illustrati la presenza e lo scopo dei due mapping dello spazio dei nomi XAML nel tag radice di ogni file XAML WPF.  Viene inoltre illustrato come produrre mapping simili per l'utilizzo di elementi definiti nel codice e\/o all'interno di assembly separati.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 ## Definizione di spazio dei nomi XAML  
  Uno spazio dei nomi XAML è in realtà un'estensione del concetto di uno spazio dei nomi XML.  Le tecniche di specifica di uno spazio dei nomi XAML si basano sulla sintassi dello spazio dei nomi XML, sulla convenzione dell'utilizzo di URI come identificatori dello spazio dei nomi, sull'utilizzo di prefissi per fare riferimento a più spazi dei nomi dalla stessa origine del markup e così via.  Il concetto principale aggiunto alla definizione XAML dello spazio dei nomi XML consiste nel fatto che uno spazio dei nomi XAML implica un ambito di univocità per gli utilizzi del markup e influenza il modo in cui le entità del markup vengono potenzialmente supportate da spazi dei nomi e da assembly di riferimento CLR specifici.  Questa seconda considerazione viene inoltre influenzata dal concetto di un contesto dello schema XAML.  Tuttavia per quanto riguarda il funzionamento di WPF rispetto agli spazi dei nomi XAML, è possibile considerare gli spazi dei nomi XAML nei termini di uno spazio dei nomi XAML predefinito, dello spazio dei nomi del linguaggio XAML e di qualsiasi ulteriore spazio dei nomi XAML mappato direttamente dal markup XAML agli spazi dei nomi e agli assembly di riferimento CLR di supporto specifici.  

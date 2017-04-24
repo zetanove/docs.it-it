@@ -23,7 +23,7 @@ caps.handback.revision: 9
 # Limitazioni relative alla serializzazione di XamlWriter.Save
 È possibile utilizzare [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] <xref:System.Windows.Markup.XamlWriter.Save%2A> per serializzare il contenuto di un'applicazione [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] come file [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  Esistono tuttavia delle limitazioni considerevoli relative alla definizione precisa dell'oggetto della serializzazione.  Tali limitazioni e alcune considerazioni generali vengono esaminate in questo argomento.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Run_Time__Not_Design_Time_Representation"></a>   
 ## Rappresentazione della fase di esecuzione e delle fasi esterne alla progettazione  

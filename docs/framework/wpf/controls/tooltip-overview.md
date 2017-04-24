@@ -22,7 +22,7 @@ caps.handback.revision: 21
 # Panoramica sul controllo ToolTip
 Una descrizione comandi è una piccola finestra popup che viene visualizzata quando l'utente posiziona il puntatore del mouse su un elemento, ad esempio <xref:System.Windows.Controls.Button>.  In questo argomento viene definita la descrizione comandi e viene descritto come creare e personalizzare il relativo contenuto.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="what_is_a_tooltip"></a>   
 ## Definizione di descrizione comandi  

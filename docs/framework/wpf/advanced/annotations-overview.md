@@ -25,7 +25,7 @@ La scrittura di note o commenti su documenti cartacei è un'attività comune che
   
  In questo argomento vengono esaminati molti tipi comuni di annotazioni, in modo specifico note di Sticky Notes ed evidenziazioni e viene descritto il modo in cui [!INCLUDE[TLA#tla_caf](../../../../includes/tlasharptla-caf-md.md)] facilita questi tipi di annotazioni nelle applicazioni tramite i controlli di visualizzazione del documento [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)].  I controlli di visualizzazione del documento [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] che supportano le annotazioni includono <xref:System.Windows.Controls.FlowDocumentReader> e <xref:System.Windows.Controls.FlowDocumentScrollViewer>, nonché i controlli derivati da <xref:System.Windows.Controls.Primitives.DocumentViewerBase> quali <xref:System.Windows.Controls.DocumentViewer> e <xref:System.Windows.Controls.FlowDocumentPageViewer>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="caf1_type_stickynotes"></a>   
 ## Note di Sticky Notes  

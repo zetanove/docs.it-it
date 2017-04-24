@@ -29,7 +29,7 @@ caps.handback.revision: 20
 # Cenni preliminari sulle trasformazioni
 In questo argomento viene descritto come utilizzare le classi <xref:System.Windows.Media.Transform> [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] per ruotare, ridimensionare, spostare \(traslare\) e inclinare oggetti <xref:System.Windows.FrameworkElement>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="whatIsATransformSection"></a>   
 ## Definizione di trasformazione  

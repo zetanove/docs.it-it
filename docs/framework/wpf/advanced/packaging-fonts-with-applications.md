@@ -27,7 +27,7 @@ In questo argomento vengono forniti cenni preliminari su come creare un package 
 > [!NOTE]
 >  Come accade con la maggior parte dei software, i file dei tipi di carattere vengono concessi in licenza anziché venduti.  Le licenze che regolano l'utilizzo dei tipi di carattere variano in base al fornitore, ma in generale la maggior parte delle licenze, incluse quelle relative ai tipi di carattere [!INCLUDE[TLA#tla_ms#initcap](../../../../includes/tlasharptla-mssharpinitcap-md.md)], viene fornita con le applicazioni e [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] non consente di incorporare i tipi di carattere all'interno delle applicazioni o di ridistribuirli in altro modo.  Pertanto, è responsabilità dello sviluppatore accertarsi di disporre dei diritti di licenza necessari per qualsiasi tipo di carattere incorporato all'interno di un'applicazione o ridistribuito in altro modo.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="introduction_to_packaging_fonts"></a>   
 ## Introduzione alla creazione di package di tipi di carattere  

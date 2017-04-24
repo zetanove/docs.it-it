@@ -26,7 +26,7 @@ caps.handback.revision: 27
 # Disegnare con oggetti Image, Drawing e Visual
 In questo argomento viene descritto l'utilizzo degli oggetti <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush> e <xref:System.Windows.Media.VisualBrush> per disegnare un'area con un oggetto Image, <xref:System.Windows.Media.Drawing> o <xref:System.Windows.Media.Visual>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prereqs"></a>   
 ## Prerequisiti  

@@ -28,7 +28,7 @@ caps.handback.revision: 22
 # Cenni preliminari sulle classi Geometry
 In questi cenni preliminari viene descritto come utilizzare le classi <xref:System.Windows.Media.Geometry> di [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] per descrivere le forme.  In questo argomento vengono confrontate le differenze tra gli oggetti <xref:System.Windows.Media.Geometry> e gli elementi <xref:System.Windows.Shapes.Shape>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="wcpsdk_graphics_geometry_introduction"></a>   
 ## Definizione di Geometry  

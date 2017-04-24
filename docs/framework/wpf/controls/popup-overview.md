@@ -22,7 +22,7 @@ caps.handback.revision: 33
 # Cenni preliminari sul controllo Popup
 Il controllo <xref:System.Windows.Controls.Primitives.Popup> consente di visualizzare il contenuto relativo a uno specifico elemento o coordinata dello schermo in una finestra separata, mobile rispetto alla finestra dell'applicazione corrente.  In questo argomento viene descritto il controllo <xref:System.Windows.Controls.Primitives.Popup> e vengono fornite informazioni sul relativo utilizzo.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="What_Is_a_Popup_"></a>   
 ## Definizione di un controllo Popup  

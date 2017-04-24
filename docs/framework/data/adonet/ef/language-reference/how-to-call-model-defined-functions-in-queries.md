@@ -33,7 +33,7 @@ In questo argomento viene descritto come chiamare funzioni definite nel modello 
  La funzione del modello concettuale seguente restituisce il numero di anni di servizio di un docente.  Per informazioni sull'aggiunta della funzione a un modello concettuale, vedere [How to: Define Custom Functions in the Conceptual Model](http://msdn.microsoft.com/it-it/0dad7b8b-58f6-4271-b238-f34810d68e5f).  
   
  [!code-xml[DP ConceptualModelFunctions#1](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp conceptualmodelfunctions/xml/school.edmx#1)]
- [!code-xml[DP ConceptualModelFunctions#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp conceptualmodelfunctions/cs/obj/debug/edmxresourcestoembed/school.csdl#1)]  
+ <!-- TODO: review snippet reference [!code-xml[DP ConceptualModelFunctions#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp conceptualmodelfunctions/cs/obj/debug/edmxresourcestoembed/school.csdl#1)]  -->  
   
 ## Esempio  
  Successivamente aggiungere il metodo seguente all'applicazione e usare un oggetto <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> per eseguirne il mapping alla funzione del modello concettuale:  

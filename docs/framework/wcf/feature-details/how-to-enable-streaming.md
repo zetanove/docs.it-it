@@ -52,7 +52,7 @@ caps.handback.revision: 13
   
     1.  Nel frammento seguente di configurazione, preso dall'esempio, viene illustrata l'impostazione della proprietà `TransferMode` su trasmissione in `basicHttpBinding` e un'associazione HTTP personalizzata:  
   
-         [!code[c_HowTo_EnableStreaming#103](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_enablestreaming/common/app.config#103)]  
+         <!-- TODO: review snippet reference [!code[c_HowTo_EnableStreaming#103](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_enablestreaming/common/app.config#103)]  -->  
   
     2.  Nel frammento di codice seguente viene illustrata l'impostazione della proprietà `TransferMode` su trasmissione in `basicHttpBinding` e un'associazione HTTP personalizzata.  
   

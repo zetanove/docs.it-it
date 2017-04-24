@@ -24,7 +24,7 @@ caps.handback.revision: 29
 # Cenni preliminari sui documenti dinamici
 I documenti dinamici sono stati progettati per ottimizzare la visualizzazione e la leggibilità.  Anziché essere impostati su un layout predefinito, questi documenti consentono di regolare e di far scorrere il contenuto in modo dinamico in base alle variabili in fase di esecuzione, ad esempio, le dimensioni della finestra, la risoluzione del dispositivo e le preferenze facoltative dell'utente.  Questi documenti offrono inoltre funzionalità avanzate del documento, quali paginazione e colonne.  In questo argomento vengono forniti i cenni preliminari sui documenti dinamici e su come crearli.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="what_is_a_flow_document"></a>   
 ## Definizione di documento dinamico  

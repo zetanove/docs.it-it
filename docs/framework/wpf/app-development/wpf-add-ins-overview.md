@@ -29,7 +29,7 @@ caps.handback.revision: 35
 # Cenni preliminari sui componenti aggiuntivi di WPF
 <a name="Introduction"></a> [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] include un modello di componente aggiuntivo utilizzabile dagli sviluppatori per creare applicazioni che supportano l'estensibilità mediante componenti aggiuntivi.  Questo modello consente di creare componenti aggiuntivi che integrano ed estendono le funzionalità dell'applicazione.  In alcuni scenari, le applicazioni devono anche visualizzare le [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] fornite dai componenti aggiuntivi.  In questo argomento viene illustrato come [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] integra il modello di componente aggiuntivo [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] per consentire i suddetti scenari, oltre all'architettura di base, i vantaggi e le limitazioni.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Requirements"></a>   
 ## Prerequisiti  

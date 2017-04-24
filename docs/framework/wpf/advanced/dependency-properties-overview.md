@@ -27,7 +27,7 @@ caps.handback.revision: 29
 # Cenni preliminari sulle propriet&#224; di dipendenza
 In [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] viene fornito un set di servizi che è possibile utilizzare per estendere la funzionalità di una proprietà [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)].  In genere, questi servizi vengono definiti collettivamente come sistema di proprietà [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  Una proprietà supportata dal sistema delle proprietà [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] è nota come [proprietà di dipendenza](GTMT). Nei cenni preliminari vengono descritti il sistema delle proprietà [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] e le funzionalità di una [proprietà di dipendenza](GTMT). Viene anche spiegato come utilizzare le [proprietà di dipendenza](GTMT) esistenti in XAML e nel codice.  In questi cenni preliminari vengono anche illustrati aspetti specifici delle proprietà di dipendenza, ad esempio i metadati della proprietà di dipendenza e la creazione della proprietà di dipendenza in una classe personalizzata.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

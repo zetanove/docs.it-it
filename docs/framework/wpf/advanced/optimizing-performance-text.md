@@ -33,7 +33,7 @@ caps.handback.revision: 9
   
  In questo argomento fornisce testo consigli relativi alle prestazioni di rendering.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Glyph_Level"></a>   
 ## <a name="rendering-text-at-the-glyph-level"></a>Il rendering del testo a livello di glifo  

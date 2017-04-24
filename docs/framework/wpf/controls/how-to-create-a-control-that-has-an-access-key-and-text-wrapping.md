@@ -31,8 +31,8 @@ In questo esempio viene illustrato come creare un controllo con un [tasto di sce
   
  Il controllo <xref:System.Windows.Controls.Label> non supporta la disposizione testo.  Se è necessaria un'etichetta disposta su più righe, è possibile annidare un altro elemento che supporta la disposizione testo e inserirlo nell'etichetta.  Nell'esempio riportato di seguito viene illustrato come utilizzare un oggetto <xref:System.Windows.Controls.TextBlock> per creare un'etichetta disposta su più righe di testo.  
   
- [!code-xml[Label#5](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#5)]
- [!code-xml[Label#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#5)]  
+ <!-- TODO: review snippet reference [!code-xml[Label#5](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#5)]  -->
+ <!-- TODO: review snippet reference [!code-xml[Label#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#5)]  -->  
   
  **Aggiungere un tasto di scelta e una disposizione testo all'etichetta**  
   
@@ -42,8 +42,8 @@ In questo esempio viene illustrato come creare un controllo con un [tasto di sce
   
  Nell'esempio riportato di seguito viene illustrato come creare un oggetto <xref:System.Windows.Controls.Label> con un tasto di scelta e con supporto della disposizione testo.  Per abilitare la disposizione testo, nell'esempio viene impostata la proprietà <xref:System.Windows.Controls.AccessText.TextWrapping%2A> e viene utilizzato un carattere di sottolineatura per specificare il tasto di scelta.  Il carattere immediatamente successivo al carattere di sottolineatura è il tasto di scelta.  
   
- [!code-xml[Label#4](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#4)]
- [!code-xml[Label#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#4)]  
+ <!-- TODO: review snippet reference [!code-xml[Label#4](../../../../samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#4)]  -->
+ <!-- TODO: review snippet reference [!code-xml[Label#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#4)]  -->  
   
 ## Vedere anche  
  [How to: Set the Target Property of a Label](http://msdn.microsoft.com/it-it/b24c6977-ebcb-4855-a9bb-3fd4435af8f8)

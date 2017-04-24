@@ -23,7 +23,7 @@ caps.handback.revision: 37
 # Funzionalit&#224; dei tipi di carattere OpenType
 In questo argomento viene fornita una panoramica di alcune delle principali funzionalità di [!INCLUDE[TLA#tla_opentype](../../../../includes/tlasharptla-opentype-md.md)] tecnologia in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="overview"></a>   
 ## <a name="opentype-font-format"></a>Formato di carattere OpenType  

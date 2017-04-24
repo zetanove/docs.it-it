@@ -22,7 +22,7 @@ caps.handback.revision: 12
 # Cenni preliminari su ClearType
 In questo argomento viene fornita una panoramica della tecnologia [!INCLUDE[TLA#tla_ct](../../../../includes/tlasharptla-ct-md.md)] presente in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="overview"></a>   
 ## Cenni preliminari sulla tecnologia  

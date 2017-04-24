@@ -22,7 +22,7 @@ caps.handback.revision: 24
 # Panoramica sul controllo ListView
 Il controllo <xref:System.Windows.Controls.ListView> fornisce l'infrastruttura per la visualizzazione di un insieme di elementi dei dati in layout o visualizzazioni diverse.  Ad esempio, un utente può scegliere di visualizzare gli elementi dei dati in una tabella e anche di ordinare le relative colonne.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="WhatisaListView"></a>   
 ## Definizione di ListView  

@@ -28,7 +28,7 @@ caps.handback.revision: 24
 # Propriet&#224; Dependency personalizzate
 In questo argomento vengono descritte le ragioni per cui sviluppatori di applicazioni [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] e autori di componenti potrebbero decidere di creare una [proprietà di dipendenza](GTMT) personalizzata e vengono illustrati i passaggi dell'implementazione nonché alcune opzioni di implementazione in grado di migliorare le prestazioni, l'usabilità o la versatilità della proprietà.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

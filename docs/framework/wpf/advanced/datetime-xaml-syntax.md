@@ -26,7 +26,7 @@ caps.handback.revision: 9
 # Sintassi DateTime XAML
 Alcuni controlli, ad esempio <xref:System.Windows.Controls.Calendar> e <xref:System.Windows.Controls.DatePicker>, dispongono di proprietà che utilizzano il tipo <xref:System.DateTime>.  Sebbene in genere venga specificata una data o un'ora iniziale per questi controlli nel code\-behind in fase di esecuzione, è possibile specificare una data o un'ora iniziale in XAML.  Il parser XAML WPF gestisce analisi di valori <xref:System.DateTime> utilizzando una sintassi del testo XAML incorporata.  Questo argomento descrive le specifiche della sintassi del testo XAML <xref:System.DateTime>.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="where_datetime_xaml_syntax_is_used"></a>   
 ## Quando utilizzare la sintassi DateTime XAML  

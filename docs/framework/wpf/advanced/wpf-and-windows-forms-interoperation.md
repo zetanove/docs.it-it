@@ -28,7 +28,7 @@ caps.handback.revision: 22
 > [!NOTE]
 >  Una considerazione particolare viene data allo scenario di *controllo ibrido*.  Un controllo ibrido dispone di un controllo di una tecnologia annidato in un controllo di un'altra tecnologia.  Ciò è anche definito *interazione annidata*.  Un *controllo ibrido multilivello* dispone di più di un livello di annidamento dei controlli ibridi.  Un esempio di interazione annidata a più livelli è un controllo [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] che contiene un controllo [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], che contiene un altro controllo [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)].  I controlli ibridi multilivello non sono supportati:  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Windows_Presentation_Foundation_Application_Hosting"></a>   
 ## Hosting di controlli Windows Form in WPF  

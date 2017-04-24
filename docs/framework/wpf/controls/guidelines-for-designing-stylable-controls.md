@@ -22,7 +22,7 @@ caps.handback.revision: 17
 # Linee guida per la progettazione di controlli a cui &#232; possibile applicare degli stili
 In questo documento viene riepilogata una serie di procedure ottimali da tenere in considerazione per la progettazione di un controllo a cui siano facilmente applicabili stili e modelli.  Tali procedure sono il risultato di numerosi tentativi ed errori durante l'elaborazione degli stili dei controlli dei temi per il set di controlli [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] incorporato.  Una corretta applicazione degli stili non dipende solo da un modello a oggetti ben progettato ma anche dallo stile stesso.  Questo documento è destinato in primo luogo agli autori dei controlli, non agli autori degli stili.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Terminology"></a>   
 ## Terminologia  

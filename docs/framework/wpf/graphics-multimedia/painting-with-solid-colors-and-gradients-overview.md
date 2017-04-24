@@ -26,7 +26,7 @@ caps.handback.revision: 18
 # Cenni sul disegno con colori a tinta unita e sfumature
 In questo argomento viene illustrata la modalità di utilizzo degli oggetti <xref:System.Windows.Media.SolidColorBrush>, <xref:System.Windows.Media.LinearGradientBrush> e <xref:System.Windows.Media.RadialGradientBrush> per disegnare con colori a tinta unita, sfumature lineari e sfumature radiali.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="solidcolor"></a>   
 ## Disegno di un'area con tinte unite  

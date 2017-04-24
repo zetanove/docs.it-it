@@ -21,7 +21,7 @@ caps.handback.revision: 18
 # Cenni preliminari sugli elementi di base
 Una percentuale elevata di classi in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] deriva da quattro classi alle quali viene comunemente fatto riferimento nella documentazione [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)] come classi degli elementi di base.  Queste classi sono <xref:System.Windows.UIElement>, <xref:System.Windows.FrameworkElement>, <xref:System.Windows.ContentElement> e <xref:System.Windows.FrameworkContentElement>.  La classe <xref:System.Windows.DependencyObject> è correlata in quanto si tratta di una classe di base comune di <xref:System.Windows.UIElement> e <xref:System.Windows.ContentElement>  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="base_apis"></a>   
 ## API degli elementi di base nelle classi WPF  

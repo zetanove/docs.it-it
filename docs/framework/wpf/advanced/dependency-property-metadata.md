@@ -24,7 +24,7 @@ caps.handback.revision: 23
 # Metadati della propriet&#224; di dipendenza
 Il sistema di proprietà di [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] include un sistema di segnalazione dei metadati che va al di là di ciò che è possibile segnalare riguardo una proprietà tramite la reflection o le caratteristiche [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] generali.  I metadati di una [proprietà di dipendenza](GTMT) possono anche essere assegnati in modo univoco dalla classe che definisce una [proprietà di dipendenza](GTMT), possono essere modificati quando la [proprietà di dipendenza](GTMT) viene aggiunta a una classe diversa ed è possibile eseguirne specificatamente l'override tramite tutte le classi derivate che ereditano la [proprietà di dipendenza](GTMT) dalla classe base in fase di definizione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

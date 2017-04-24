@@ -22,7 +22,7 @@ caps.handback.revision: 7
 # Propriet&#224; di dipendenza di sola lettura
 In questo argomento vengono descritte le proprietà di dipendenza di sola lettura, incluse proprietà di dipendenza di sola lettura esistenti e gli scenari e le tecniche per la creazione di una proprietà di dipendenza di sola lettura personalizzata.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

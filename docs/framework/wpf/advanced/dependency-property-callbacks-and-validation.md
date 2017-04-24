@@ -25,7 +25,7 @@ caps.handback.revision: 16
 # Callback e convalida delle propriet&#224; di dipendenza
 In questo argomento viene descritto come creare proprietà di dipendenza utilizzando le implementazioni personalizzate alternative per funzionalità correlate alle proprietà, ad esempio la determinazione della convalida, i callback richiamati ogni volta che il valore effettivo della proprietà viene modificato e l'override delle possibili influenze esterne sulla determinazione del valore.  In questo argomento vengono anche discussi scenari in cui è possibile espandere i comportamenti predefiniti del sistema di proprietà utilizzando queste tecniche.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

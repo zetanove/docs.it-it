@@ -22,7 +22,7 @@ caps.handback.revision: 29
 # Cenni preliminari sulla modifica di controlli
 L'estensibilità del modello di controlli [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] riduce notevolmente l'esigenza di creare un nuovo controllo.  Tuttavia, in certi casi può ancora essere necessario creare un controllo personalizzato.  In questo argomento vengono illustrate le funzionalità che riducono al minimo l'esigenza di creare un controllo personalizzato e i diversi modelli di modifica dei controlli in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  In questo argomento viene inoltre illustrato come creare un nuovo controllo.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="when_to_write_a_new_control"></a>   
 ## Alternative alla scrittura di un nuovo controllo  

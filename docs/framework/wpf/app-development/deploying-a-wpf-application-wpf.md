@@ -22,7 +22,7 @@ caps.handback.revision: 26
 # Distribuzione di un&#39;applicazione WPF (WPF)
 Dopo la compilazione, è necessario distribuire le applicazioni [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)].  [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] e [!INCLUDE[TLA2#tla_winfx](../../../../includes/tla2sharptla-winfx-md.md)] includono diverse tecnologie di distribuzione.  La tecnologia di distribuzione utilizzata per distribuire un'applicazione [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] dipende dal tipo di applicazione.  In questo argomento vengono forniti alcuni cenni preliminari su ogni tecnologia di distribuzione e sul relativo utilizzo in relazione ai requisiti di distribuzione di ogni tipo di applicazione [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Deployment_Technologies"></a>   
 ## Tecnologie di distribuzione  

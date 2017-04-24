@@ -50,7 +50,7 @@ caps.handback.revision: 38
   
 -   WindowsBase.dll  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Provider_Interfaces"></a>   
 ### Interfacce del provider  

@@ -26,7 +26,7 @@ caps.handback.revision: 33
 # Cenni preliminari sulle dichiarazioni di associazione
 In questo argomento vengono presentati i diversi modi in cui è possibile dichiarare un'associazione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Prereq"></a>   
 ## Prerequisiti  

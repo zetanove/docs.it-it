@@ -29,7 +29,7 @@ caps.handback.revision: 28
 # Cenni preliminari sugli eventi indirizzati
 In questo argomento viene descritto il concetto di eventi indirizzati in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  Nell'argomento viene definita la terminologia degli eventi indirizzati e vengono illustrate la modalità in cui questi eventi sono indirizzati attraverso una struttura ad albero di elementi, la modalità di gestione degli eventi indirizzati e la modalità di creazione di eventi indirizzati personalizzati.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

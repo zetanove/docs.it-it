@@ -25,7 +25,7 @@ caps.handback.revision: 43
 # Livelli di rendering della grafica
 Un livello di rendering definisce un livello di funzionalità e prestazioni dell'hardware grafico per un dispositivo che esegue un'applicazione [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="graphics_hardware"></a>   
 ## Hardware grafico  

@@ -26,7 +26,7 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
  La classe <xref:System.Windows.Input.Keyboard> riguarda principalmente lo stato attivo della tastiera, mentre la classe <xref:System.Windows.Input.FocusManager> riguarda lo stato attivo logico, tuttavia tale distinzione non può essere considerata assoluta.  Un elemento con lo stato attivo della tastiera presenta anche lo stato attivo logico, mentre un elemento che ha ottenuto lo stato attivo logico non ha necessariamente lo stato attivo della tastiera.  Questo è evidente quando si utilizza la classe <xref:System.Windows.Input.Keyboard> per impostare l'elemento che ha lo stato attivo della tastiera, in quanto in tal modo viene anche impostato lo stato attivo logico.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Keyboard_Focus"></a>   
 ## Stato attivo della tastiera  

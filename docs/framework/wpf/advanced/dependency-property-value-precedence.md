@@ -24,7 +24,7 @@ caps.handback.revision: 26
 # Precedenza del valore della propriet&#224; di dipendenza
 <a name="introduction"></a> In questo argomento viene illustrato il modo in cui i meccanismi del sistema di proprietà [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] possono influire sul valore di una [proprietà di dipendenza](GTMT) e viene descritta la precedenza in base alla quale gli aspetti del sistema di proprietà si applicano al valore effettivo di una proprietà.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

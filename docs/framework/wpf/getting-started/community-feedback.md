@@ -31,7 +31,7 @@ caps.handback.revision: 22
 > [!NOTE]
 >  Non utilizzare il collegamento **commenti** posizionato nella parte inferiore di ogni pagina per inviare commenti e suggerimenti sui prodotti.  Questi collegamenti sono dedicati esclusivamente ai commenti e ai suggerimenti sulla documentazione.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Blogs"></a>   
 ## Blog  

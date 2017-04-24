@@ -22,7 +22,7 @@ caps.handback.revision: 27
 # Cenni preliminari sui controlli ToolBar
 I controlli <xref:System.Windows.Controls.ToolBar> funzionano da contenitori per un gruppo di comandi o controlli le cui funzioni sono in genere correlate.  Di solito, un controllo <xref:System.Windows.Controls.ToolBar> include pulsanti per richiamare dei comandi.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="ToolBarControl"></a>   
 ## Controllo ToolBar  

@@ -46,7 +46,7 @@ Le finestre consentono l'interazione degli utenti con le applicazioni autonome [
 > [!NOTE]
 >  Le applicazioni [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] ospitate da browser, incluse le [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] e le pagine [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] separate, non dispongono di finestre proprie.  Al contrario, vengono ospitate nelle finestre fornite da [!INCLUDE[TLA#tla_iegeneric](../../../../includes/tlasharptla-iegeneric-md.md)].  Vedere [Panoramica delle applicazioni browser XAML di WPF](../../../../docs/framework/wpf/app-development/wpf-xaml-browser-applications-overview.md).  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="TheWindowClass"></a>   
 ## Classe Window  
@@ -136,7 +136,7 @@ Le finestre consentono l'interazione degli utenti con le applicazioni autonome [
 ## Durata di una finestra  
  Come accade per qualsiasi classe, la durata di una finestra ha inizio nel momento in cui ne viene creata un'istanza, dopo di che la finestra verrà aperta, attivata, disattivata ed eventualmente chiusa.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Opening_a_Window"></a>   
 ### Apertura di una finestra  
@@ -414,7 +414,7 @@ Le finestre consentono l'interazione degli utenti con le applicazioni autonome [
   
  È anche possibile modificare l'aspetto e il comportamento del bordo dell'area non client configurando la modalità di ridimensionamento e lo stile di una finestra, nonché la possibilità che questa venga visualizzata come pulsante nella barra delle applicazioni sul desktop.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Resize_Mode"></a>   
 ### Modalità di ridimensionamento  

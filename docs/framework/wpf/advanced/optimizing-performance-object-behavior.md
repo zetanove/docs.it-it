@@ -25,7 +25,7 @@ caps.handback.revision: 11
 # Ottimizzazione delle prestazioni: comportamento degli oggetti
 La comprensione del comportamento intrinseco degli oggetti [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] facilita l'individuazione del compromesso ideale tra funzionalità e prestazioni.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="Not_Removing_Event_Handlers"></a>   
 ## La mancata rimozione dei gestori eventi dagli oggetti può mantenere gli oggetti attivi  

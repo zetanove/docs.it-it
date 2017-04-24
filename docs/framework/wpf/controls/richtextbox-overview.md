@@ -22,7 +22,7 @@ caps.handback.revision: 10
 # Cenni generali sul controllo RichTextBox
 Il controllo <xref:System.Windows.Controls.RichTextBox> consente di visualizzare o modificare il contenuto del flusso, compresi i paragrafi, le immagini, le tabelle e così via.  In questo argomento viene presentata la classe <xref:System.Windows.Controls.TextBox> e vengono forniti esempi del relativo utilizzo sia in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] che in [!INCLUDE[TLA#tla_lhcshrp](../../../../includes/tlasharptla-lhcshrp-md.md)].  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="textbox_or_richtextbox"></a>   
 ## TextBox o RichTextBox?  

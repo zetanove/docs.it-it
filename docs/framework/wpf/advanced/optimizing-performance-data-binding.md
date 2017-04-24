@@ -24,7 +24,7 @@ L'associazione dati [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptl
   
  In questo argomento vengono forniti i requisiti relativi alle prestazioni dell'associazione dati.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="HowDataBindingReferencesAreResolved"></a>   
 ## Risoluzione dei riferimenti per l'associazione dati  

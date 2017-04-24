@@ -36,7 +36,7 @@ Pulsante che utilizza un modello di controllo personalizzato
  ![Pulsante con un bordo rosso.](../../../../docs/framework/wpf/controls/media/ndp-buttonmouseover.png "NDP\_ButtonMouseOver")  
 Pulsante che utilizza un modello di controllo personalizzato sul quale è posizionato il puntatore del mouse  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="prerequisites"></a>   
 ## Prerequisiti  

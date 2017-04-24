@@ -22,7 +22,7 @@ caps.handback.revision: 18
 # Panoramica delle funzionalit&#224; multimediali
 In questo argomento vengono introdotte le funzionalità multimediali in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], che consentono di integrare audio e video nelle applicazioni, in modo da migliorare l'esperienza utente.  
   
- [!INCLUDE[autoOutline](../Token/autoOutline_md.md)]  
+   
   
 <a name="mediaapi"></a>   
 ## API multimediali  
