@@ -39,11 +39,7 @@ ms.lasthandoff: 04/08/2017
   
  Per compilare questo set di applicazioni, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implementa una serie di servizi. Questo argomento offre una panoramica dei servizi, con indicazioni sulle risorse in cui trovare altre informazioni.  
   
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 91db859... fix build error
   
 <a name="Application_Management"></a>   
 ## <a name="application-management"></a>Gestione applicazioni  
