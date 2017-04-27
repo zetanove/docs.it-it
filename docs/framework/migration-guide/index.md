@@ -1,5 +1,5 @@
 ---
-title: Guida di migrazione a .NET Framework 4.6 e 4.5 | Microsoft Docs
+title: Guida di migrazione a .NET Framework 4.7, 4.6 e 4.5 |Microsoft Docs
 ms.custom: 
 ms.date: 03/30/2017
 ms.prod: .net-framework
@@ -18,12 +18,12 @@ author: rpetrusha
 ms.author: ronpet
 manager: wpickett
 translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: 9004e102dac346e7d7d627f5adc573a18a53952e
-ms.lasthandoff: 04/08/2017
+ms.sourcegitcommit: d745ff3729fed78cdaf7402d8e8847e95a4ed400
+ms.openlocfilehash: aa587b7ca0beaabae8eb44f83355427579241b47
+ms.lasthandoff: 04/13/2017
 
 ---
-# <a name="migration-guide-to-the-net-framework-46-and-45"></a>Guida di migrazione a .NET Framework 4.6 e 4.5 
+# <a name="migration-guide-to-the-net-framework-47-46-and-45"></a>Guida di migrazione a .NET Framework 4.7, 4.6 e 4.5 
 Se un'app è stata creata usando una versione precedente di .NET Framework, in genere è possibile aggiornarla facilmente alla versione 4.5 e versioni intermedie (4.5.1 e 4.5.2), alla versione 4.6 e versioni intermedie (4.6.1 e 4.6.2) o alla versione 4.7. Aprire il progetto in Visual Studio. Se il progetto è stato creato in una versione precedente, verrà automaticamente aperta la finestra di dialogo **Project Compatibility** (Compatibilità progetto). Per altre informazioni sull'aggiornamento di un progetto in Visual Studio, vedere [Conversione, migrazione e aggiornamento dei progetti di Visual Studio](https://docs.microsoft.com/en-us/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects) e [Selezione della piattaforma e compatibilità di Visual Studio 2017](https://www.visualstudio.com/en-us/productinfo/vs2017-compatibility-vs).  
   
  Tuttavia, alcune modifiche in .NET Framework richiedono modifiche al codice. È possibile che si voglia sfruttare le nuove funzionalità incluse in .NET Framework 4.5 e versioni intermedie, in .NET Framework 4.6 e versioni intermedie o in .NET Framework 4.7. L'introduzione di questo tipo di modifiche in un'app per una nuova versione di .NET Framework viene in genere definita *migrazione*. Se non è necessario eseguire la migrazione dell'app, è possibile eseguirla in .NET Framework 4.5 o versioni successive senza ricompilazione.  
