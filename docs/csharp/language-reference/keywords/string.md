@@ -46,8 +46,7 @@ Il tipo `string` rappresenta una sequenza di zero o più caratteri Unicode. `str
  Sebbene `string` sia un tipo riferimento, gli operatori di uguaglianza (`==` e `!=`) vengono definiti per confrontare i valori degli oggetti `string` e non dei riferimenti. In questo modo il test di uguaglianza delle stringhe è più intuitivo. Ad esempio:  
   
 ```csharp  
-  
-      string a = "hello";  
+string a = "hello";  
 string b = "h";  
 // Append to contents of 'b'  
 b += "ello";  
@@ -60,7 +59,6 @@ Console.WriteLine((object)a == (object)b);
  L'operatore + concatena le stringhe:  
   
 ```csharp  
-  
 string a = "good " + "morning";  
 ```  
   
@@ -68,17 +66,15 @@ string a = "good " + "morning";
   
  Le stringhe sono *immutabili*: non è possibile modificare il contenuto di un oggetto stringa dopo la creazione dell'oggetto, sebbene la sintassi sembri indicare che è possibile apportare modifiche. Ad esempio, quando si scrive il codice, il compilatore crea un nuovo oggetto stringa per archiviare la nuova sequenza di caratteri e il nuovo oggetto viene assegnato a b. La stringa "h" è quindi idonea per Garbage Collection.  
   
-```csharp  
-  
-      string b = "h";  
+```csharp
+string b = "h";  
 b += "ello";  
 ```  
   
  L'operatore [] può essere usato per accedere in lettura ai singoli caratteri di un `string`:  
   
 ```csharp  
-  
-      string str = "test";  
+string str = "test";  
 char x = str[2];  // x = 's';  
 ```  
   
@@ -91,8 +87,7 @@ char x = str[2];  // x = 's';
  I valori letterali della stringa possono contenere qualsiasi carattere letterale. Sono incluse le sequenze di escape. L'esempio seguente usa una sequenza di escape `\\` per la barra rovesciata, `\u0066` per la lettera f e `\n` per la nuova riga.  
   
 ```  
-  
-      string a = "\\\u0066\n";  
+string a = "\\\u0066\n";  
 Console.WriteLine(a);  
 ```  
   
@@ -138,3 +133,4 @@ Console.WriteLine(a);
  [Operazioni di base su stringhe](http://msdn.microsoft.com/library/8133d357-90b5-4b62-9927-43323d99b6b6)   
  [Creazione di nuove stringhe](http://msdn.microsoft.com/library/06fdf123-2fac-4459-8904-eb48ab908a30)   
  [Tabella di formattazione dei risultati numerici](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)
+
