@@ -12,7 +12,7 @@ ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 translationtype: Human Translation
 ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
 ms.openlocfilehash: 977dd60bb21b466a6bec357a6dec73aa9a931ead
-ms.lasthandoff: 04/12/2017
+ms.lasthandoff: 05/02/2017
 
 ---
 
