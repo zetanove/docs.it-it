@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 48cac496-2dc2-4dc7-b8fd-b9ade0fcdfd2
+redirect_url: /dotnet/articles/csharp/getting-started/index
 translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: a769400bb037ce98c20896dfda17928a4028c144
