@@ -131,7 +131,7 @@ SampleImplementation<Button> button = new SampleImplementation<Button>();
  Quando si estende un'interfaccia generica variante è necessario usare le parole chiave `in` e `out` per specificare in modo esplicito se l'interfaccia derivata supporta la varianza. Il compilatore non deduce la varianza dall'interfaccia che viene estesa. Si considerino ad esempio le interfacce seguenti.  
   
 ```csharp  
-nterface ICovariant<out T> { }  
+interface ICovariant<out T> { }  
 interface IInvariant<T> : ICovariant<T> { }  
 interface IExtCovariant<out T> : ICovariant<T> { }  
 ```  
@@ -204,3 +204,4 @@ class Program
 ## <a name="see-also"></a>Vedere anche  
  [Varianza nelle interfacce generiche (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)   
  [Uso della varianza per i delegati generici Func e Action (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
+
