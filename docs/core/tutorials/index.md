@@ -10,9 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 translationtype: Human Translation
-ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
-ms.openlocfilehash: 3f8c62a6a3b179e146874761465ad2665c20a6dd
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: 39e8e757a446b30ab18914465853138e1c239e40
+ms.openlocfilehash: 5630e2202f822015437bbb1d3f2cb751825e382b
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -23,11 +23,11 @@ Le esercitazioni seguenti includono informazioni e istruzioni sull'uso di .NET C
 ## <a name="building-applications-with-visual-studio-2017"></a>Creazione di applicazioni con Visual Studio 2017
 
 - [Creazione di un'applicazione C# denominata Hello World](../../csharp/getting-started/with-visual-studio.md)
-- [Debug di un'applicazione C# denominata Hello World](../../csharp/getting-started/debugging-with-visual-studio-2017.md)
-- [Pubblicazione di un'applicazione C# denominata Hello World](../../csharp/getting-started/publishing-with-visual-studio-2017.md)
-- [Compilazione di una libreria di classi C#](../../csharp/getting-started/library-with-visual-studio-2017.md)
+- [Debug di un'applicazione C# denominata Hello World](../../csharp/getting-started/debugging-with-visual-studio.md)
+- [Pubblicazione di un'applicazione C# denominata Hello World](../../csharp/getting-started/publishing-with-visual-studio.md)
+- [Compilazione di una libreria di classi C#](../../csharp/getting-started/library-with-visual-studio.md)
 - [Test di una libreria di classi C#](../../csharp/getting-started/testing-library-with-visual-studio.md)
-- [Uso di una libreria di classi C# con .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio-2017.md)
+- [Uso di una libreria di classi C# con .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio.md)
 - [Compilare una soluzione completa C# con .NET in Windows](using-on-windows-full-solution.md)
 - [Esercitazione su NoSQL: Compilare un'applicazione console C# di DocumentDB in .Net Core](https://docs.microsoft.com/azure/documentdb/documentdb-dotnetcore-get-started)
 
