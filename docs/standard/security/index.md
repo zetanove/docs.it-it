@@ -26,7 +26,7 @@ manager: wpickett
 translationtype: Human Translation
 ms.sourcegitcommit: 1fabc43044b6e0fa765a7c2f225add8b7eb923f5
 ms.openlocfilehash: a1914325966fc1b65cf4677328a165fbe1e0f776
-ms.lasthandoff: 04/13/2017
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="security-in-the-net-framework"></a>Sicurezza in .NET Framework
