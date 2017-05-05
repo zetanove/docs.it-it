@@ -29,7 +29,7 @@ manager: wpickett
 translationtype: Human Translation
 ms.sourcegitcommit: 3dbadeec14ce9c023af39ae4ff95d0183826e7c1
 ms.openlocfilehash: eb0f0636abb39eabb387388fcdd39df8aca88c34
-ms.lasthandoff: 04/13/2017
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="deploying-the-net-framework-and-applications"></a>Distribuzione di .NET Framework e delle applicazioni
