@@ -13,7 +13,7 @@ ms.author: ronpet
 translationtype: Human Translation
 ms.sourcegitcommit: 9ff485d8791960f24f727cfc60fbc5ab77203a92
 ms.openlocfilehash: fc062bf205db5b2f8883785eb2656eb9d3d8ca16
-ms.lasthandoff: 04/15/2017
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="windows-forms-configuration-section"></a>Sezione di configurazione di Windows Form
