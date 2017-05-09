@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: b828bb1d6c8fb750ad9ef34f8a7a1b7d2574f4c6
 ms.openlocfilehash: 51be46ee06ed11b526d43d21f00aeabbe1b28798
+ms.contentlocale: it-it
 
 ---
 LINQ to XML
