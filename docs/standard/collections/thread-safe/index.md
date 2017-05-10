@@ -15,9 +15,10 @@ caps.latest.revision: 24
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
 ms.openlocfilehash: b35c47a7d77038cc6a213b221e0081a4d83c8dae
+ms.contentlocale: it-it
 ms.lasthandoff: 04/08/2017
 
 ---

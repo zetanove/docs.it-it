@@ -10,9 +10,10 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 07352a2807c08ad19b8d5a47c5a42a0e1c455ab6
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -200,6 +201,23 @@ public class ParameterVisitor : Visitor
     {
         Console.WriteLine($"{prefix}This is an {NodeType} expression type");
         Console.WriteLine($"{prefix}Type: {node.Type.ToString()}, Name: {node.Name}, ByRef: {node.IsByRef}");
+    }
+}
+
+// Constant visitor:
+public class ConstantVisitor : Visitor
+{
+    private readonly ConstantExpression node;
+    public ConstantVisitor(ConstantExpression node) : base(node)
+    {
+        this.node = node;
+    }
+
+    public override void Visit(string prefix)
+    {
+        Console.WriteLine($"{prefix}This is an {NodeType} expression type");
+        Console.WriteLine($"{prefix}The type of the constant value is {node.Type}");
+        Console.WriteLine($"{prefix}The value of the constant value is {node.Value}");
     }
 }
 ```

@@ -13,9 +13,10 @@ caps.latest.revision: 15
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
 ms.openlocfilehash: 8f8a9661cbb15f583ed6b1dbde307c9b8cb51675
+ms.contentlocale: it-it
 ms.lasthandoff: 05/02/2017
 
 ---
