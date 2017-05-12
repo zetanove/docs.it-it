@@ -19,10 +19,11 @@ caps.latest.revision: 75
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: b6874fe1d3730d2d05a862ee60417a7ce90f226c
-ms.lasthandoff: 04/08/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 22822d80170e33be59253ecb0d74ec5eb2344751
+ms.openlocfilehash: 933d5f6a864820f5e694c0a9c7eab7b4fe5f790f
+ms.contentlocale: it-it
+ms.lasthandoff: 05/04/2017
 
 ---
 
@@ -56,7 +57,8 @@ Vengono descritte le nuove funzionalità e le modifiche principali incluse nelle
 [Introduzione](../../docs/framework/get-started/index.md)  
 Offre una panoramica completa di .NET Framework, oltre ai collegamenti a risorse aggiuntive.  
   
-La [Guida alla migrazione](../../docs/framework/migration-guide/index.md) fornisce risorse e un elenco di modifiche che è necessario considerare se si sta migrando l'applicazione a una nuova versione di .NET Framework.  
+[Guida alla migrazione](../../docs/framework/migration-guide/index.md)   
+Fornisce risorse e un elenco di modifiche che è necessario considerare se si sta migrando l'applicazione a una nuova versione di .NET Framework.  
   
 [Guida di sviluppo](../../docs/framework/development-guide.md)  
 Viene fornita una guida per tutte le aree e attività principali per lo sviluppo di applicazioni, quali la creazione, la configurazione, il debug, la sicurezza e la distribuzione dell'applicazione e informazioni su programmazione dinamica, interoperabilità, estendibilità, gestione della memoria e threading.  
@@ -64,7 +66,8 @@ Viene fornita una guida per tutte le aree e attività principali per lo sviluppo
 [Strumenti](../../docs/framework/tools/index.md)  
 Vengono descritti gli strumenti che consentono di sviluppare, configurare e distribuire applicazioni tramite le tecnologie .NET Framework.  
   
-[Libreria di classi .NET Framework](/dotnet/api/?view=netframework-4.7) Fornisce sintassi, esempi di codice e informazioni correlate per ogni classe contenuta negli spazi dei nomi .NET Framework.  
+[Libreria di classi .NET Framework](/dotnet/api/?view=netframework-4.7)   
+Vengono fornite sintassi, esempi di codice e informazioni correlate per ogni classe contenuta negli spazi dei nomi .NET Framework.  
   
 [Librerie di classi e API aggiuntive](../../docs/framework/additional-apis/index.md)  
 Fornisce la documentazione per le classi contenute nelle versioni in fuori banda (OOB), nonché per le classi destinate a piattaforme o implementazioni specifiche di .NET Framework.

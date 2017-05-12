@@ -9,9 +9,10 @@ ms.prod: .net-framework-4.6
 ms.technology: vs-ide-deployment
 ms.devlang: dotnet
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
 ms.openlocfilehash: 4f1034763e4dae3711694b441b7a64b40cc99456
+ms.contentlocale: it-it
 ms.lasthandoff: 04/18/2017
 
 ---
