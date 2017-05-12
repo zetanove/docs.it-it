@@ -1,0 +1,1 @@
+.NET per app di Windows 8.x Store
