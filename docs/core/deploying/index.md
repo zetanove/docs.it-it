@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: da7a31a0-8072-4f23-82aa-8a19184cb701
-translationtype: Human Translation
-ms.sourcegitcommit: 6b30f41e3fb07a962542a09a41c698efee7ebb5a
-ms.openlocfilehash: 0a37c8dd2e1264d0b1b946ef9fe479ce4cf828fb
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3ffe3909902659a22cb25bac6dc5aaa4f5b9fde2
+ms.openlocfilehash: 31503e39d8a96092dbce03c17397e1adfec6421e
+ms.contentlocale: it-it
+ms.lasthandoff: 05/13/2017
 
 ---
 
@@ -72,7 +73,6 @@ Per esempi dettagliati della distribuzione di app .NET Core con gli strumenti de
 - Distribuzione dipendente dal framework con dipendenze di terze parti
 - Distribuzione autonoma
 - Distribuzione autonoma con dipendenze di terze parti
-- Distribuzione autonoma con footprint limitato
 
 # <a name="see-also"></a>Vedere anche
 
