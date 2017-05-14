@@ -10,9 +10,10 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 633dcc6d966125139cb21c4e70dac4d4794ee9a4
 ms.openlocfilehash: da326fb823c16c7795a6a05ad302c13918b435aa
+ms.contentlocale: it-it
 ms.lasthandoff: 03/20/2017
 
 ---
@@ -86,7 +87,7 @@ Il principale veicolo di distribuzione degli assembly di riferimento della libre
 
 I pacchetti NuGet hanno come destinazione uno o più [framework](frameworks.md). I pacchetti della libreria .NET Standard hanno come destinazione il framework ".NET Standard". È possibile definire come destinazione il framework .NET Standard usando il `netstandard` [TFM (Target Framework Moniker) compatto](frameworks.md) (ad esempio `netstandard1.4`). Le librerie che devono essere eseguite in più runtime devono avere come destinazione questo framework. 
 
-Il metapacchetto `NETStandard.Library` fa riferimento al set completo di pacchetti NuGet che definiscono la libreria .NET Standard.  Il modo più comune di definire `netstandard` come destinazione è fare riferimento a questo metapacchetto. Questo metapacchetto descrive e fornisce l'accesso alle circa&40; librerie .NET e alle API associate che definiscono la libreria .NET Standard. Per accedere ad API aggiuntive, è possibile fare riferimento ad altri pacchetti che hanno come destinazione `netstandard`. 
+Il metapacchetto `NETStandard.Library` fa riferimento al set completo di pacchetti NuGet che definiscono la libreria .NET Standard.  Il modo più comune di definire `netstandard` come destinazione è fare riferimento a questo metapacchetto. Questo metapacchetto descrive e fornisce l'accesso alle circa 40 librerie .NET e alle API associate che definiscono la libreria .NET Standard. Per accedere ad API aggiuntive, è possibile fare riferimento ad altri pacchetti che hanno come destinazione `netstandard`. 
 
 ### <a name="versioning"></a>Versionamento
 
