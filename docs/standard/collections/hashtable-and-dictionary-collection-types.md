@@ -20,9 +20,10 @@ caps.latest.revision: 16
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: 59aa4bd6160491ac6c6a4f45131531226ec7e58f
+ms.contentlocale: it-it
 ms.lasthandoff: 04/18/2017
 
 ---
@@ -35,7 +36,7 @@ Tramite la classe <xref:System.Collections.Hashtable?displayProperty=fullName> e
   
  Una funzione hash è un algoritmo che restituisce un codice hash numerico basato su una chiave. La chiave è il valore di una proprietà dell'oggetto che viene archiviato. Una funzione hash deve sempre restituire lo stesso codice hash per la stessa chiave. È possibile per una funzione hash generare lo stesso codice hash per due chiavi diverse, ma una funzione hash che genera un codice hash univoco per ogni chiave univoca offre prestazioni migliori durante il recupero di elementi dalla tabella hash.  
   
- Ogni oggetto usato come elemento in un oggetto <xref:System.Collections.Hashtable> deve essere in grado di generare un codice hash per se stesso tramite un'implementazione del metodo <xref:System.Object.GetHashCode%2A>. Tuttavia, è possibile specificare anche una funzione hash per tutti gli elementi in un elemento <xref:System.Collections.Hashtable> usando un costruttore <xref:System.Collections.Hashtable> che accetta un'implementazione di <xref:System.Collections.IHashCodeProvider> come uno dei relativi parametri.  
+ Ogni oggetto usato come elemento in un oggetto <xref:System.Collections.Hashtable> deve essere in grado di generare un codice hash per se stesso tramite un'implementazione del metodo <xref:System.Object.GetHashCode%2A> . Tuttavia, è possibile specificare anche una funzione hash per tutti gli elementi in un elemento <xref:System.Collections.Hashtable> usando un costruttore <xref:System.Collections.Hashtable> che accetta un'implementazione di <xref:System.Collections.IHashCodeProvider> come uno dei relativi parametri.  
   
  Quando un oggetto viene aggiunto a <xref:System.Collections.Hashtable>, viene archiviato nel bucket associato al codice hash corrispondente al codice hash dell'oggetto. Quando viene cercato un valore in <xref:System.Collections.Hashtable>, viene generato il codice hash per tale valore e viene eseguita la ricerca nel bucket associato a tale codice hash.  
   
