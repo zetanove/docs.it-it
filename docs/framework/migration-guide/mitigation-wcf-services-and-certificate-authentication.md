@@ -15,9 +15,10 @@ caps.latest.revision: 3
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: 4c2156087ca168bafb1b7333310066cef73f3334
+ms.contentlocale: it-it
 ms.lasthandoff: 04/18/2017
 
 ---
@@ -67,3 +68,4 @@ ms.lasthandoff: 04/18/2017
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifiche al runtime](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)
+

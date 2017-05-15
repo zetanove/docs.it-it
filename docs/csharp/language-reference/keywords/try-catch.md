@@ -195,3 +195,4 @@ static void Main()
  [throw](../../../csharp/language-reference/keywords/throw.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
  [Procedura: Come generare in modo esplicito le eccezioni](https://msdn.microsoft.com/library/xhcbs8fz)
+
