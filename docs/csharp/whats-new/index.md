@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
-translationtype: Human Translation
-ms.sourcegitcommit: 0184e07012ffe1a1300dc5af7e99e0d5a3517d6b
-ms.openlocfilehash: a5abc801decbcedb4980b8b4992d128aa1e1bb2e
-ms.lasthandoff: 05/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.openlocfilehash: 4ff34455c7cc6135f7324b18d3aebca576d70edf
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 05/02/2017
 Di seguito sono elencate le principali funzionalità introdotte in versioni precedenti del linguaggio C# e Visual Studio .NET.  
   
  * Visual Studio .NET 2013: 
-     - Questa versione di Visual Studio include correzioni di bug, miglioramenti delle prestazioni e Technology Preview di .NET Compiler Platform ("Roslyn") che è diventato <!--Link to ../roslyn/index.md-->.NET Compiler Platform SDK.
+     - Questa versione di Visual Studio include correzioni di bug, miglioramenti delle prestazioni e Technology Preview di .NET Compiler Platform ("Roslyn") che è diventato .NET Compiler Platform SDK<!--Link to ../roslyn/index.md-->.
 
  * C# 5, Visual Studio .NET 2012: 
      - `Async` / `await` e attributi delle [informazioni sul chiamante](../programming-guide/concepts/caller-information.md).
