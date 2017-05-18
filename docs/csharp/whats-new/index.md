@@ -32,6 +32,7 @@ ms.lasthandoff: 05/14/2017
 -->
 * [Supporto per più piattaforme](../../core/index.md):
     - Grazie al supporto per .NET Core, è possibile eseguire C# su diverse piattaforme. Gli utenti interessati a provare C# in macOS o su una delle diverse distribuzioni Linux supportate possono leggere le informazioni relative a .NET Core.
+
 <!--
 - [.NET Compiler Platform SDK](../roslyn/index.md):
     - The .NET Compiler Platform SDK enables you to write code that performs static analysis on C# code. You can use these APIs to find potential errors, or bad practices, suggest fixes, and even implement those fixes.
