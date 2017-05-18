@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 256e468e-eaaa-4715-b5fb-8cbddcf80e69
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: a470403e703ffb55de3d91cd5334c09bf11be06d
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
+ms.openlocfilehash: 02779e1ac5db1a7a68ddede6d30063366270dc50
+ms.contentlocale: it-it
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/22/2017
 
 Ogni funzionalità specifica viene implementata come un comando. Per usare la funzionalità, il comando viene specificato dopo `dotnet`, ad esempio [`dotnet build`](dotnet-build.md). Tutti gli argomenti che seguono il comando sono gli argomenti del comando.
 
-`dotnet` viene usato come comando autonomo solo per eseguire [app dipendenti dal framework](../app-types.md). Per eseguire l'applicazione, ad esempio `dotnet myapp.dll`, specificare una DLL di applicazione dopo il verbo `dotnet`.
+`dotnet` viene usato come comando autonomo solo per eseguire [app dipendenti dal framework](../deploying/index.md). Per eseguire l'applicazione, ad esempio `dotnet myapp.dll`, specificare una DLL di applicazione dopo il verbo `dotnet`.
 
 ## <a name="options"></a>Opzioni
 
