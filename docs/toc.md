@@ -6,7 +6,7 @@
 
 <!-- .NET Core Content -->
 # [Guida a .NET Core](core/index.md)
-## [Introduzione](core/getting-started.md)
+## [Introduzione](core/get-started.md)
 ## [Prerequisiti di Windows](core/windows-prerequisites.md)
 ## [Prerequisiti di macOS](core/macos-prerequisites.md)
 ## [Esercitazioni](core/tutorials/index.md)
@@ -85,7 +85,7 @@
 ## [Novità](framework/whats-new/)
 ## [Introduzione](framework/get-started/)
 ## [Guida alla migrazione](framework/migration-guide/)
-## [.NET Framework on Docker Guide](framework/docker/index.md) (Guida a .NET Framework su Docker)
+## [Guida a .NET Framework su Docker](framework/docker/index.md)
 ### [Esecuzione di applicazioni console nei contenitori](framework//docker/console.md)
 ## [Guida di sviluppo](framework/development-guide.md)
 ### [Domini applicazione e assembly](framework/app-domains/)
