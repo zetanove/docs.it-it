@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 25c2bf8830d80f0f41855d0fa9e292b0edcbe052
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: 9a580d0426038036f2e64167de8c540041c0a6b4
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="interfaces-c-programming-guide"></a>Interfacce (Guida per programmatori C#)
@@ -49,7 +50,7 @@ Un'interfaccia contiene le definizioni per un gruppo di funzionalità correlate 
   
  Per altre informazioni sulle classi astratte, vedere [Classi e membri delle classi astratte e sealed](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
- Le interfacce possono contenere metodi, proprietà, eventi, indicizzatori o qualsiasi combinazione di questi quattro membri. Per collegamenti a esempi, vedere [Sezioni correlate](../../../csharp/programming-guide/interfaces/index.md#BKMK_RelatedSections). Un'interfaccia non può contenere costanti, campi, operatori, costruttori di istanze, distruttori o tipi. I membri di interfaccia sono automaticamente pubblici e non possono includere modificatori di accesso. I membri non possono nemmeno essere [statici](../../../csharp/language-reference/keywords/static.md).  
+ Le interfacce possono contenere metodi, proprietà, eventi, indicizzatori o qualsiasi combinazione di questi quattro membri. Per collegamenti a esempi, vedere [Sezioni correlate](../../../csharp/programming-guide/interfaces/index.md#BKMK_RelatedSections). Un'interfaccia non può contenere costanti, campi, operatori, costruttori di istanze, finalizzatori o tipi. I membri di interfaccia sono automaticamente pubblici e non possono includere modificatori di accesso. I membri non possono nemmeno essere [statici](../../../csharp/language-reference/keywords/static.md).  
   
  Per implementare un membro di interfaccia, il corrispondente membro della classe di implementazione deve essere pubblico e non statico e avere lo stesso nome e la stessa firma del membro di interfaccia.  
   

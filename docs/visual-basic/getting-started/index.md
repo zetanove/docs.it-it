@@ -1,6 +1,6 @@
 ---
 title: Guida introduttiva a Visual Basic | Microsoft Docs
-ms.date: 2015-07-20
+ms.date: 2017-05-01
 ms.prod: .net
 ms.technology:
 - devlang-visual-basic
@@ -29,17 +29,22 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 50e128137fde445f64e10cf7c2a1ee5fdecb34e6
-ms.openlocfilehash: 31c50b38b2bfdc68e0f2ab03bc4d3b67e843a09d
-ms.lasthandoff: 05/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d3f21e32c162133e70a124da125c30afc7303738
+ms.openlocfilehash: ada42b9a033b548f5e2967040c44f7c790014211
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="getting-started-with-visual-basic"></a>Guida introduttiva a Visual Basic
 Questa sezione della documentazione fornisce informazioni introduttive per lo sviluppo di applicazione di Visual Basic.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Modifiche importanti apportate a Visual Basic in Visual Studio ](breaking-changes-in-visual-studio.md)  
+
+[Novità in Visual Basic](whats-new.md)   
+Elenca le nuove funzionalità di ogni versione di Visual Basic .NET.
+
+[Modifiche importanti apportate a Visual Basic in Visual Studio ](breaking-changes-in-visual-studio.md)  
  Vengono elencate le modifiche in questa versione che potrebbero impedire la compilazione di un'applicazione o che potrebbero modificarne il comportamento in fase di esecuzione.  
   
  [Risorse aggiuntive per i programmatori Visual Basic](../../visual-basic/getting-started/additional-resources.md)  
