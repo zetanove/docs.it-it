@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 92750040466914389abc3e8bf1de84c44bb0987c
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: 02491e64813f84d031debdca09161d88aab1b94c
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="class-c-reference"></a>class (Riferimenti per C#)
@@ -71,12 +72,12 @@ Le classi vengono dichiarate usando la parola chiave `class`, come illustrato ne
   
 -   [Costruttori](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Distruttori](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-  
 -   [Costanti](../../../csharp/programming-guide/classes-and-structs/constants.md)  
   
 -   [Campi](../../../csharp/programming-guide/classes-and-structs/fields.md)  
   
+-   [Finalizzatori](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+
 -   [Metodi](../../../csharp/programming-guide/classes-and-structs/methods.md)  
   
 -   [Proprietà](../../../csharp/programming-guide/classes-and-structs/properties.md)  

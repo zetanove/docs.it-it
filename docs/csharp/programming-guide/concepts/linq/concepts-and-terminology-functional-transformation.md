@@ -14,10 +14,11 @@ ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3e4ff1807605164afc95eaebf37a131d9dddb79c
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 87a8efd8e8631ac200a95069f889d6756cbd5a4a
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -48,7 +49,7 @@ In questo argomento vengono presentati i concetti e i termini associati alle tra
  Per altre informazioni sulla programmazione funzionale, vedere [Differenze tra programmazione funzionale e programmazione imperativa (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md).  
   
 #### <a name="domain-specific-fp-languages"></a>Strumenti della programmazione funzionale specifici per il dominio  
- Sebbene i linguaggi di programmazione funzionale generici non sono stati adottati diffusamente, quelli specifici per il dominio hanno trovato miglior accoglienza. Ad esempio, i CSS (Cascading Style Sheets) vengono usati per determinare l'aspetto di molte pagine Web, mentre i fogli di stile XSLT (Extensible Stylesheet Language Transformations) vengono ampiamente usati per la modifica dei dati XML. Per altre informazioni su XSLT, vedere [Trasformazioni XSLT](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03).  
+ Sebbene i linguaggi di programmazione funzionale generici non sono stati adottati diffusamente, quelli specifici per il dominio hanno trovato miglior accoglienza. Ad esempio, i CSS (Cascading Style Sheets) vengono usati per determinare l'aspetto di molte pagine Web, mentre i fogli di stile XSLT (Extensible Stylesheet Language Transformations) vengono ampiamente usati per la modifica dei dati XML. Per altre informazioni su XSLT, vedere [Trasformazioni XSLT](../../../../standard/data/xml/xslt-transformations.md).  
   
 ## <a name="terminology"></a>Terminologia  
  Nella tabella seguente sono riportate le definizioni di alcuni termini correlati alle trasformazioni funzionali.  
@@ -64,7 +65,7 @@ In questo argomento vengono presentati i concetti e i termini associati alle tra
  Per altre informazioni, vedere [Espressioni lambda](../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
  raccolta  
- Set strutturato di dati, in genere di tipo uniforme. Per essere compatibile con LINQ, è necessario implementare l'interfaccia <xref:System.Collections.IEnumerable> o l'interfaccia <xref:System.Linq.IQueryable> o una delle controparti generiche quali <xref:System.Collections.Generic.IEnumerator%601> o <xref:System.Linq.IQueryable%601>.  
+ Set strutturato di dati, in genere di tipo uniforme. Per essere compatibile con LINQ una raccolta deve implementare le interfacce <xref:System.Collections.IEnumerable> o <xref:System.Linq.IQueryable> (o una delle controparti generiche <xref:System.Collections.Generic.IEnumerator%601> o <xref:System.Linq.IQueryable%601>).  
   
  tupla (tipi anonimi)  
  Concetto matematico. Corrisponde a una sequenza finita di oggetti, ognuno di un tipo specifico, Una tupla è anche nota come elenco ordinato. I tipi anonimi costituiscono un'implementazione del linguaggio di questo concetto e consentono di dichiarare un tipo di classe senza nome e contemporaneamente di creare un'istanza di un oggetto di tale tipo.  

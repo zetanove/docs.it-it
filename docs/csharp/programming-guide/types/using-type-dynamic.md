@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f9ee1f0cae90120692fa4f41d2f432551281ab6d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 7e2310df174a7c38fafba3fed4e4bd3de4fa377a
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="using-type-dynamic-c-programming-guide"></a>Utilizzo del tipo dinamico (Guida per programmatori C#)
@@ -45,7 +46,7 @@ ms.lasthandoff: 03/13/2017
   
  Il ruolo del compilatore in questi esempi consiste nel raggruppare le informazioni sull'operazione prevista da ogni istruzione in relazione all'oggetto o all'espressione tipizzata come `dynamic`. In fase di esecuzione, le informazioni archiviate vengono esaminate e qualsiasi istruzione non valida provoca un'eccezione in fase di esecuzione.  
   
- Il risultato della maggior parte delle operazioni dinamiche è `dynamic`. Se, ad esempio, si posiziona il puntatore del mouse sull'utilizzo di `testSum` nell'esempio seguente, IntelliSense visualizza il tipo **(variabile locale) dynamic testSum**.  
+ Il risultato della maggior parte delle operazioni dinamiche è `dynamic`. Se, ad esempio, si posiziona il puntatore del mouse sull'utilizzo di `testSum` nell'esempio seguente, IntelliSense visualizza il tipo  **(variabile locale) dynamic testSum**.  
   
  [!code-cs[CsProgGuideTypes#51](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-type-dynamic_3.cs)]  
   
@@ -72,7 +73,7 @@ ms.lasthandoff: 03/13/2017
  [!code-cs[CsProgGuideTypes#55](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/using-type-dynamic_7.cs)]  
   
 ## <a name="dynamic-language-runtime"></a>Dynamic Language Runtime  
- DLR (Dynamic Language Runtime) è una nuova API in [!INCLUDE[net_v40_short](../../../csharp/programming-guide/types/includes/net_v40_short_md.md)]. Fornisce l'infrastruttura che supporta il tipo `dynamic` in C# oltre all'implementazione di linguaggi di programmazione dinamici, quali IronPython e IronRuby. Per altre informazioni su DLR, vedere [Dynamic Language Runtime Overview](http://msdn.microsoft.com/library/f769a271-8aff-4bea-bfab-6160217ce23d) (Panoramica su Dynamic Language Runtime).  
+ DLR (Dynamic Language Runtime) è una nuova API in [!INCLUDE[net_v40_short](../../../csharp/programming-guide/types/includes/net_v40_short_md.md)]. Fornisce l'infrastruttura che supporta il tipo `dynamic` in C# oltre all'implementazione di linguaggi di programmazione dinamici, quali IronPython e IronRuby. Per altre informazioni su DLR, vedere [Dynamic Language Runtime Overview](../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md) (Panoramica su Dynamic Language Runtime).  
   
 ## <a name="com-interop"></a>Interoperabilità COM  
  [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)] include diverse funzionalità che migliorano l'interoperabilità con le API COM, ad esempio le API di automazione di Office. Tra i miglioramenti è compreso l'utilizzo del tipo `dynamic` e di [argomenti denominati e facoltativi](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md).  
@@ -88,6 +89,6 @@ ms.lasthandoff: 03/13/2017
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[dynamic](../../../csharp/language-reference/keywords/dynamic.md)|Viene descritto l'utilizzo della parola chiave `dynamic`.|  
-|[Dynamic Language Runtime Overview](http://msdn.microsoft.com/library/f769a271-8aff-4bea-bfab-6160217ce23d) (Panoramica su Dynamic Language Runtime)|Viene fornita una panoramica di DLR, un ambiente di runtime che estende Common Language Runtime (CLR) con un set di servizi per linguaggi dinamici.|  
+|[Dynamic Language Runtime Overview](../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md) (Panoramica su Dynamic Language Runtime)|Viene fornita una panoramica di DLR, un ambiente di runtime che estende Common Language Runtime (CLR) con un set di servizi per linguaggi dinamici.|  
 |[Procedura dettagliata: Creazione e utilizzo di oggetti dinamici](../../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)|Fornisce istruzioni dettagliate per la creazione di un oggetto dinamico personalizzato e per la creazione di un progetto che accede a una libreria `IronPython`.|  
 |[Procedura: Accedere agli oggetti di interoperabilità di Office usando le funzionalità di Visual C#](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)|Viene illustrato come creare un progetto che usa argomenti denominati e facoltativi, il tipo `dynamic` e altri miglioramenti che semplificano l'accesso agli oggetti API di Office.|

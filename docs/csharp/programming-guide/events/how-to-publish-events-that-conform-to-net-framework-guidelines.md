@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 78d069249c8131a091a206703c475faaf641d17b
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
+ms.openlocfilehash: 6d529e60643966fbabd5290543146977b4dc83c5
+ms.contentlocale: it-it
+ms.lasthandoff: 03/24/2017
 
 ---
 # <a name="how-to-publish-events-that-conform-to-net-framework-guidelines-c-programming-guide"></a>Procedura: pubblicare eventi conformi alle linee guida di .NET Framework (Guida per programmatori C#)
 La procedura seguente illustra come aggiungere a classi e struct gli eventi che seguono il modello standard [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]. Tutti gli eventi della libreria di classi [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] si basano sul delegato <xref:System.EventHandler>, che viene definito come segue:  
   
-```  
+```csharp  
 public delegate void EventHandler(object sender, EventArgs e);  
 ```  
   
@@ -49,10 +50,24 @@ public delegate void EventHandler(object sender, EventArgs e);
   
 1.  Ignorare questo passaggio e andare al passaggio 3a se non è necessario inviare i dati personalizzati con l'evento. Dichiarare la classe per i dati personalizzati in un ambito che sia visibile sia per la classe dell'editore che per quella del sottoscrittore. Aggiungere i membri necessari per contenere i dati di evento personalizzati. In questo esempio viene restituita una semplice stringa.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+    ```csharp  
+    public class CustomEventArgs : EventArgs  
+    {  
+        public CustomEventArgs(string s)  
+        {  
+            msg = s;  
+        }  
+        private string msg;  
+        public string Message  
+        {  
+            get { return msg; }  
+        }   
+    }  
+    ```  
+  
 2.  Ignorare questo passaggio se si usa la versione generica di <xref:System.EventHandler%601>. Dichiarare un delegato nella classe di pubblicazione. Assegnargli un nome che termini con *EventHandler*. Il secondo parametro specifica il tipo EventArgs personalizzato.  
   
-    ```  
+    ```csharp  
     public delegate void CustomEventHandler(object sender, CustomEventArgs a);  
     ```  
   
@@ -60,20 +75,19 @@ public delegate void EventHandler(object sender, EventArgs e);
   
     1.  Se non si ha una classe EventArgs personalizzata, il tipo di evento sarà il delegato EventHandler non generico. Non è necessario dichiarare il delegato poiché è già stato dichiarato nello spazio dei nomi <xref:System> che viene incluso quando si crea il progetto in C#. Aggiungere il codice seguente alla classe dell'editore.  
   
-        ```  
+        ```csharp  
         public event EventHandler RaiseCustomEvent;  
         ```  
   
     2.  Se si usa la versione non generica di <xref:System.EventHandler> e si ha una classe personalizzata derivata da <xref:System.EventArgs>, dichiarare l'evento all'interno della classe di pubblicazione e usare il delegato del passaggio 2 come tipo.  
   
-        ```  
+        ```csharp  
         public event CustomEventHandler RaiseCustomEvent;  
-  
         ```  
   
     3.  Se si usa la versione generica, non è necessario un delegato personalizzato. Al contrario, nella classe di pubblicazione specificare il tipo di evento come `EventHandler<CustomEventArgs>`, sostituendo il nome della classe racchiuso tra parentesi acute.  
   
-        ```  
+        ```csharp  
         public event EventHandler<CustomEventArgs> RaiseCustomEvent;  
         ```  
   

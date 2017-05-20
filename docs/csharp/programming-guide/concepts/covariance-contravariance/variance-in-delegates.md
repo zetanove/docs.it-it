@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 413b8c3bfbfd70c91edeebece07833874db06334
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
+ms.openlocfilehash: cd1b765faa734973bf5e184cee2ac934ebdf9241
+ms.contentlocale: it-it
+ms.lasthandoff: 03/24/2017
 
 ---
 # <a name="variance-in-delegates-c"></a>Varianza nei delegati (C#)
@@ -30,7 +31,7 @@ In .NET framework 3.5 è stato introdotto il supporto della varianza per la corr
   
  Ad esempio, si consideri il codice seguente, che ha due classi e due delegati: generico e non generico.  
   
-```cs  
+```csharp  
 public class First { }  
 public class Second : First { }  
 public delegate First SampleDelegate(Second a);  
@@ -39,7 +40,7 @@ public delegate R SampleGenericDelegate<A, R>(A a);
   
  Quando si creano i delegati dei tipi `SampleDelegate` o `SampleGenericDelegate<A, R>` è possibile assegnare uno qualsiasi dei metodi seguenti ai delegati.  
   
-```cs  
+```csharp  
 // Matching signature.  
 public static First ASecondRFirst(Second first)  
 { return new First(); }  
@@ -60,7 +61,7 @@ public static Second AFirstRSecond(First first)
   
  L'esempio di codice seguente viene illustra la conversione implicita tra la firma del metodo e il tipo di delegato.  
   
-```cs  
+```csharp  
 // Assigning a method with a matching signature   
 // to a non-generic delegate. No conversion is necessary.  
 SampleDelegate dNonGeneric = ASecondRFirst;  
@@ -87,7 +88,7 @@ SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;
   
  L'esempio di codice seguente illustra come creare un delegato con un parametro di tipo generico covariante.  
   
-```cs  
+```csharp  
 // Type T is declared covariant by using the out keyword.  
 public delegate T SampleGenericDelegate <out T>();  
   
@@ -105,7 +106,7 @@ public static void Test()
   
  Nell'esempio di codice seguente non è possibile convertire in modo esplicito `SampleGenericDelegate<String>` in `SampleGenericDelegate<Object>`, sebbene `String` erediti `Object`. È possibile correggere questo problema contrassegnando il parametro generico `T` con la parola chiave `out`.  
   
-```cs  
+```csharp  
 public delegate T SampleGenericDelegate<T>();  
   
 public static void Test()  
@@ -145,30 +146,51 @@ public static void Test()
   
  È possibile dichiarare un parametro di tipo generico covariante in un delegato generico usando la parola chiave `out`. Il tipo covariante può essere usato solo come tipo restituito del metodo e non come tipo di argomenti del metodo. Nell'esempio di codice seguente viene illustrato come dichiarare un delegato generico covariante.  
   
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
+```csharp  
+public delegate R DCovariant<out R>();  
+```  
+  
  È possibile dichiarare un parametro di tipo generico controvariante in un delegato generico usando la parola chiave `in`. Il tipo controvariante può essere usato solo come tipo di argomenti del metodo e non come tipo restituito del metodo. Nell'esempio di codice seguente viene illustrato come dichiarare un delegato generico controvariante.  
   
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
+```csharp  
+public delegate void DContravariant<in A>(A a);  
+```  
+  
 > [!IMPORTANT]
 > I parametri  `ref`e `out` in C# non possono essere contrassegnati come varianti.  
   
  È anche possibile supportare sia la varianza che la covarianza nello stesso delegato, ma per parametri di tipo diverso. come illustrato nell'esempio riportato di seguito.  
   
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
+```csharp  
+public delegate R DVariant<in A, out R>(A a);  
+```  
+  
 ### <a name="instantiating-and-invoking-variant-generic-delegates"></a>Creare un'istanza e richiamare delegati generici varianti  
  È possibile creare un'istanza e richiamare delegati varianti con la stessa procedura con cui si crea un'istanza e si richiamano i delegati invariabili. Nell'esempio seguente viene creata un'istanza del delegato da un'espressione lambda.  
   
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
+```csharp  
+DVariant<String, String> dvariant = (String str) => str + " ";  
+dvariant("test");  
+```  
+  
 ### <a name="combining-variant-generic-delegates"></a>Combinare delegati generici varianti  
  È consigliabile non combinare i delegati varianti. Il metodo <xref:System.Delegate.Combine%2A> non supporta la conversione dei delegati varianti e prevede che i delegati siano esattamente dello stesso tipo. Questo può causare un'eccezione in fase di esecuzione quando si combinano delegati usando il metodo <xref:System.Delegate.Combine%2A> o l'operatore `+`, come illustrato nell'esempio di codice seguente.  
   
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
+```csharp  
+Action<object> actObj = x => Console.WriteLine("object: {0}", x);  
+Action<string> actStr = x => Console.WriteLine("string: {0}", x);  
+// All of the following statements throw exceptions at run time.  
+// Action<string> actCombine = actStr + actObj;  
+// actStr += actObj;  
+// Delegate.Combine(actStr, actObj);  
+```  
+  
 ## <a name="variance-in-generic-type-parameters-for-value-and-reference-types"></a>Varianza nei parametri di tipo generico per tipi di valore e riferimento  
  La varianza per i parametri di tipo generico è supportata solo per i tipi di riferimento. Ad esempio, `DVariant<int>` non può essere convertito implicitamente in `DVariant<Object>` o `DVariant<long>`, poiché integer è un tipo di valore.  
   
  L'esempio seguente dimostra che la varianza nei parametri di tipo generico non è supportata per i tipi di valore.  
   
-```cs  
+```csharp  
 // The type T is covariant.  
 public delegate T DVariant<out T>();  
   
