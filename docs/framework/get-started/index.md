@@ -18,10 +18,10 @@ author: rpetrusha
 ms.author: ronpet
 manager: wpickett
 ms.translationtype: Human Translation
-ms.sourcegitcommit: ddcefb2b35f8cbf06a3abcc16158eee850f799ff
-ms.openlocfilehash: 5713faed77786a87dc349a1c7e02ec9703b3700d
+ms.sourcegitcommit: fe9ab371ab8d3eee3778412e446b7aa30b42476b
+ms.openlocfilehash: 42d0ddd649ffaaaf375c3396e4a82b066c9719e9
 ms.contentlocale: it-it
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="get-started-with-the-net-framework"></a>Introduzione a .NET Framework
@@ -82,11 +82,11 @@ ms.lasthandoff: 05/03/2017
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Panoramica](../../../docs/framework/get-started/overview.md)|Vengono fornite informazioni dettagliate per gli sviluppatori che realizzano applicazioni destinate a .NET Framework.|
+|[Guida all'installazione](../../../docs/framework/install/index.md)|Vengono fornite informazioni sull'installazione di .NET Framework.|  
 |[.NET Framework e rilascio fuori programma](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)|Vengono descritti i rilasci fuori programma di .NET Framework e viene illustrato come usarli nell'applicazione.|
 |[Requisiti di sistema](../../../docs/framework/get-started/system-requirements.md)|Vengono elencati i requisiti hardware e software per l'esecuzione di .NET Framework.|
 |[Componenti di base e open-source di .NET](../../../docs/framework/get-started/net-core-and-open-source.md)|Viene descritto .NET Core in relazione a .NET Framework e viene spiegato come accedere ai progetti .NET Core open source.|
 |[Documentazione di .NET Core](https://docs.microsoft.com/dotnet/)|Documentazione concettuale e di riferimento delle API per .NET Core.|
-|[Guida all'installazione](../../../docs/framework/install/guide-for-developers.md)|Vengono fornite informazioni sull'installazione di .NET Framework.|
 
 ## <a name="see-also"></a>Vedere anche
  [Guida a .NET Framework](../../../docs/framework/index.md)   
