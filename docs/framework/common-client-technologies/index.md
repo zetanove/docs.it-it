@@ -14,10 +14,11 @@ caps.latest.revision: 3
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: 25bf2fef9936a3b685ccedb479c941cb7e3f499b
-ms.lasthandoff: 04/08/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 33735d01f33adc5fc2299c0a83a4208a28fc6b2d
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="common-client-technologies-in-the-net-framework"></a>Tecnologie client comuni in .NET Framework

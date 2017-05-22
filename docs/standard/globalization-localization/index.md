@@ -21,10 +21,11 @@ caps.latest.revision: 42
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: d6313cea51b98b3b19363f3c465e5adf241ab3d4
-ms.lasthandoff: 04/08/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 46a0ccb9db4d468e68b1e8d1d278308e6e87e85e
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="globalizing-and-localizing-net-framework-applications"></a>Globalizzazione e localizzazione di applicazioni .NET Framework
@@ -67,7 +68,7 @@ Lo sviluppo di [applicazioni internazionali](http://msdn.microsoft.com/goglobal/
   
 ## <a name="reference"></a>Riferimento  
  Spazio dei nomi <xref:System.Globalization?displayProperty=fullName>  
- Contiene le classi che definiscono le informazioni correlate alle impostazioni cultura quali lingua, paese, calendari, formato per date, valute e numeri e tipo di ordinamento delle stringhe.  
+ Contiene classi che definiscono informazioni sulle impostazioni cultura, tra cui la lingua, il paese, il calendario, il formato delle date, delle valute e dei numeri e il criterio di ordinamento delle stringhe.  
   
  Spazio dei nomi <xref:System.Resources>  
  Vengono fornite le classi per la creazione, la manipolazione e l'uso di risorse.  

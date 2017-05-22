@@ -14,10 +14,11 @@ caps.latest.revision: 5
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: f22ffc11ba3bce4c568c67459995842c3c103b6b
-ms.lasthandoff: 04/18/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="mitigation-deserialization-of-objects-across-app-domains"></a>Mitigazione: deserializzazione di oggetti tra domini app
@@ -28,7 +29,7 @@ In alcuni casi, quando in un'applicazione vengono utilizzati due o più domini a
   
 1.  In un'applicazione vengono utilizzati due o più domini applicazione con basi di applicazione diverse.  
   
-2.  Alcuni tipi vengono aggiunti esplicitamente alla proprietà <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> chiamando un metodo, ad esempio <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.SetData%2A?displayProperty=fullName> o <xref:System.Runtime.Remoting.Messaging.CallContext.LogicalSetData%2A?displayProperty=fullName>. Questi tipi non vengono contrassegnati come serializzabili e non sono archiviati nella Global Assembly Cache.  
+2.  Alcuni tipi vengono aggiunti esplicitamente all'oggetto <xref:System.Runtime.Remoting.Messaging.LogicalCallContext> chiamando un metodo come <xref:System.Runtime.Remoting.Messaging.LogicalCallContext.SetData%2A?displayProperty=fullName> o <xref:System.Runtime.Remoting.Messaging.CallContext.LogicalSetData%2A?displayProperty=fullName>. Questi tipi non vengono contrassegnati come serializzabili e non sono archiviati nella Global Assembly Cache.  
   
 3.  Successivamente, tramite il codice in esecuzione nel dominio applicazione non predefinito viene effettuato il tentativo di lettura di un valore da un file di configurazione o di utilizzo di XML per deserializzare un oggetto.  
   
@@ -49,7 +50,7 @@ In alcuni casi, quando in un'applicazione vengono utilizzati due o più domini a
 ## <a name="mitigation"></a>Attenuazione  
  Per risolvere questo problema, effettuare le operazioni seguenti:  
   
-1.  Individuare la chiamata a `get_Evidence` nello stack di chiamate quando viene generata l'eccezione. L'eccezione può essere un subset qualsiasi di eccezioni, tra cui <xref:System.IO.FileNotFoundException> e <xref:System.Runtime.Serialization.SerializationException>.  
+1.  Individuare la chiamata a `get_Evidence` nello stack di chiamate quando viene generata l'eccezione. L'eccezione può essere una qualsiasi di un subset di eccezioni, incluse <xref:System.IO.FileNotFoundException> e <xref:System.Runtime.Serialization.SerializationException>.  
   
 2.  Identificare la posizione nell'applicazione in cui nessun oggetto viene aggiunto al contesto di chiamata logico e aggiungere il codice seguente:  
   

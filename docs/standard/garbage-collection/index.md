@@ -28,10 +28,11 @@ caps.latest.revision: 36
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: e6c68eb589ce80fa6154c77840c8d4fdee4d8a81
-ms.openlocfilehash: b48c375c86b435e880e9ad9650941ab0f2329c3a
-ms.lasthandoff: 04/11/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 11ea4186a77a600d1645fe334ba9fd704fe728b4
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="garbage-collection"></a>Garbage Collection

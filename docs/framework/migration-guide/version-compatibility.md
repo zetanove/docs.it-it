@@ -22,7 +22,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: 09f682d9c3a1cf5d42bba878676d84b9328a1a81
 ms.contentlocale: it-it
-ms.lasthandoff: 04/18/2017
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="version-compatibility-in-the-net-framework"></a>Compatibilità tra le versioni in .NET Framework
@@ -50,7 +50,7 @@ Per compatibilità con le versioni precedenti si intende che un'app sviluppata p
 ## <a name="version-compatibility-for-components"></a>Compatibilità tra le versioni per componenti  
  Un'app è in grado di controllare la versione di .NET Framework in cui viene eseguita, diversamente da un componente. I componenti e le librerie di classi vengono caricati nel contesto di un'app specifica e pertanto vengono eseguiti automaticamente nella versione di .NET Framework in cui è in esecuzione l'app.  
   
- A causa di questa restrizione, le garanzie di compatibilità sono particolarmente importanti per i componenti. A partire da .NET Framework 4, è possibile specificare il livello di compatibilità di un componente tra più versioni applicando l'attributo <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute?displayProperty=fullName> al componente. Gli strumenti possono usare questo attributo per rilevare le possibili violazioni della garanzia di compatibilità in versioni future di un componente.  
+ A causa di questa restrizione, le garanzie di compatibilità sono particolarmente importanti per i componenti. A partire da .NET Framework 4, è possibile specificare il livello di compatibilità di un componente in più versioni applicando l'attributo <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute?displayProperty=fullName> a tale componente. Gli strumenti possono usare questo attributo per rilevare le possibili violazioni della garanzia di compatibilità in versioni future di un componente.  
   
 ## <a name="backward-compatibility-and-the-net-framework-45"></a>Compatibilità con le versioni precedenti e .NET Framework 4.5  
  .NET Framework 4.5 e versioni intermedie (4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2 e 4.7) sono compatibili con le versioni precedenti delle app create con versioni precedenti di .NET Framework. In altre parole, le app e i componenti creati con le versioni precedenti funzioneranno senza applicare alcuna modifica in .NET Framework 4.5. Tuttavia, per impostazione predefinita, le app vengono eseguite sulla versione di Common Language Runtime per la quale sono state sviluppate, pertanto potrebbe essere necessario fornire un file di configurazione per far sì che l'app venga eseguita in .NET Framework 4.5. Per altre informazioni, vedere la sezione [Compatibilità tra le versioni per app](#Apps) in questo articolo.  

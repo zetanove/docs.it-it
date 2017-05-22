@@ -17,10 +17,11 @@ caps.latest.revision: 14
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: 9169510da6b6d5022b59a3a520b79933c783ce05
-ms.openlocfilehash: 490a09798518b3750ff5ae2fc19259f201ffc964
-ms.lasthandoff: 04/11/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: e1451f41b463e28a5fa305f23f3790bcfc066c30
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="working-with-base-types-in-net"></a>Uso dei tipi di base in .NET
