@@ -479,7 +479,7 @@ ms.lasthandoff: 05/22/2017
 |Ambito|Microsoft Edge|  
 |Versione|4.5|  
 |Tipo|Runtime|  
-|API interessate|<xref:System.Web.HttpRequest.ContentEncoding?displayProperty=fullName>|  
+|API interessate|<xref:System.Web.HttpRequest.ContentEncoding%2A?displayProperty=fullName>|  
 |Analizzatori|CD0043|  
   
 <a name="diagnostic44"></a>   
