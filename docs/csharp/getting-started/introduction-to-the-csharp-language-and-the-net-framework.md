@@ -32,7 +32,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 39e8e757a446b30ab18914465853138e1c239e40
 ms.openlocfilehash: a2c5986dfb9ed4f80e15e8e3ddf061ef858a1e93
 ms.contentlocale: it-it
-ms.lasthandoff: 05/03/2017
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="introduction-to-the-c-language-and-the-net-framework"></a>Introduzione al linguaggio C# e a .NET Framework
