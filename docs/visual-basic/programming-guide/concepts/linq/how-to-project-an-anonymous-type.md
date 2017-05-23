@@ -15,9 +15,10 @@ ms.assetid: 30b42987-0e0e-4b2b-adb1-5255ddfbcd7b
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: a9edd260e9bc36449445ee835648573c7bc9c229
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -55,7 +56,6 @@ Dim custList = _
 For Each cust In custList  
     Console.WriteLine("{0}:{1}:{2}", cust.CustomerID, cust.CompanyName, cust.ContactName)  
 Next  
-  
 ```  
   
  L'output del codice è il seguente:  
@@ -69,3 +69,4 @@ LETSS:Let's Stop N Shop:Jaime Yorres
   
 ## <a name="see-also"></a>Vedere anche  
  [Proiezioni e trasformazioni (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+

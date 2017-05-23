@@ -42,7 +42,6 @@ ms.lasthandoff: 05/15/2017
 Le classi vengono dichiarate usando la parola chiave `class`, come illustrato nell'esempio seguente:  
   
 ```  
-  
       class TestClass  
 {  
     // Methods, properties, fields, events, delegates   
@@ -122,3 +121,4 @@ Console.Write(child1.name);   // Error
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
  [Tipi di riferimento](../../../csharp/language-reference/keywords/reference-types.md)
+

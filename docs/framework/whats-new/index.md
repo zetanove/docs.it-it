@@ -880,7 +880,6 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
               // new code
            }
         }
-
         ```
 
          È opportuno usare un formato coerente per le opzioni, poiché si tratta di un contratto formale esposto da una libreria. Di seguito sono riportati due formati ovvi.

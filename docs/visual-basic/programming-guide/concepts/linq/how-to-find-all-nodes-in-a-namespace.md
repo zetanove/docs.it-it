@@ -15,9 +15,10 @@ ms.assetid: b735d7da-5727-48a3-ab57-a16378adc32e
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 4216ba0ab8c8026705a82f505807fb4b1f31e424
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -54,7 +55,6 @@ Module Module1
         Next  
     End Sub  
 End Module  
-  
 ```  
   
  L'output del codice è il seguente:  
@@ -85,7 +85,6 @@ Module Module1
         Console.WriteLine(newTree)  
     End Sub  
 End Module  
-  
 ```  
   
  L'output del codice è il seguente:  
@@ -126,3 +125,4 @@ End Module
   
 ## <a name="see-also"></a>Vedere anche  
  [Query di base (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+

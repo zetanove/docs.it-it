@@ -72,7 +72,6 @@ class Program
         WriteLine(Sqrt(3*3 + 4*4));   
     }   
 }  
-  
 ```  
   
 ## <a name="remarks"></a>Note  

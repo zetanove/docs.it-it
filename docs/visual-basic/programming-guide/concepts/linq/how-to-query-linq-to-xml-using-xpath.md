@@ -15,9 +15,10 @@ ms.assetid: e1f69a20-1efa-452d-9089-c472fa84b3d5
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 0356a7210fbc1b1e0c15adc9d37b6099877fa655
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -45,7 +46,6 @@ Dim list As IEnumerable(Of XElement) = root.XPathSelectElements("./Child2")
 For Each el As XElement In list  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  Questo esempio produce il seguente output:  
@@ -58,3 +58,4 @@ Next
   
 ## <a name="see-also"></a>Vedere anche  
  [Tecniche di Query (LINQ to XML) avanzate (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+

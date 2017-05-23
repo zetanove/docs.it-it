@@ -35,14 +35,12 @@ Per compatibilità con le versioni precedenti si intende che un'app sviluppata p
  Per definire le versioni specifiche in cui viene eseguita l'app, aggiungere uno o più elementi [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) al file di configurazione dell'app. Ogni elemento `<supportedRuntime>` elenca una versione supportata del runtime, con il primo che specifica la versione preferita e l'ultimo che specifica l'ultima versione nell'elenco delle preferenze.  
   
 ```xml  
-  
 <configuration>  
    <startup>  
       <supportedRuntime version="v2.0.50727" />  
       <supportedRuntime version="v4.0" />  
    </startup>  
 </configuration>  
-  
 ```  
   
  Per altre informazioni, vedere [Procedura: Configurare un'app per supportare .NET Framework 4 o 4.x](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md).  
@@ -98,3 +96,4 @@ Per compatibilità con le versioni precedenti si intende che un'app sviluppata p
  [Compatibilità delle applicazioni](../../../docs/framework/migration-guide/application-compatibility.md)   
  [Criteri relativi al ciclo di vita del supporto Microsoft .NET Framework](http://go.microsoft.com/fwlink/p/?LinkId=248212)   
  [Problemi di migrazione di .NET Framework 4](http://go.microsoft.com/fwlink/p/?LinkId=248212)
+

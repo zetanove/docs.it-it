@@ -40,9 +40,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: f3f6c013df6cd5c3b99e465bdc8bb0b4ead6bdf4
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -52,7 +53,6 @@ Esegue una disgiunzione logica tra due `Boolean` espressioni oppure una disgiunz
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-  
 result = expression1 Or expression2  
 ```  
   
@@ -119,3 +119,4 @@ result = expression1 Or expression2
  [Elencata degli operatori per funzionalità](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)   
  [OrElse (operatore)](../../../visual-basic/language-reference/operators/orelse-operator.md)   
  [Operatori logici e bit per bit in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+

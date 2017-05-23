@@ -41,7 +41,6 @@ ms.lasthandoff: 04/18/2017
      Il file di configurazione seguente permette di effettuare queste operazioni:  
   
     ```xml  
-  
     <configuration>  
         <system.serviceModel>  
             <bindings>  
@@ -58,7 +57,6 @@ ms.lasthandoff: 04/18/2017
             </bindings>  
         </system.ServiceModel>  
     </configuration>  
-  
     ```  
   
 -   Se l'associazione è configurata in modo dinamico nel codice sorgente, aggiornare la proprietà <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A?displayProperty=fullName> in modo che usi TLS 1.1 (<xref:System.Security.Authentication.SslProtocols?displayProperty=fullName>) o una versione precedente del protocollo nel codice sorgente.  

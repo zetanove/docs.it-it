@@ -15,9 +15,10 @@ ms.assetid: 6cb3f969-1986-414a-b850-87418712edea
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 3441e513012ba24419a3c5330cdb2f75f5ca394f
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -45,7 +46,6 @@ Console.WriteLine(root)
  L'output del codice è il seguente:  
   
 ```xml  
-  
           <Root>  
   <Child1>Value1</Child1>  
   <Child2>Value2</Child2>  
@@ -86,3 +86,4 @@ Child4:Value4
   
 ## <a name="see-also"></a>Vedere anche  
  [Proiezioni e trasformazioni (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+

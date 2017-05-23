@@ -20,9 +20,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: de78bfda263071817535157522430de080d4f6a4
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -220,7 +221,6 @@ Task returnedTask = Task_MethodAsync()
 Await returnedTask  
 ' or, in a single statement  
 Await Task_MethodAsync()  
-  
 ```  
   
  Ogni attività restituita rappresenta il lavoro attualmente in fase di esecuzione. Un'attività include le informazioni sullo stato del processo asincrono e, infine, il risultato finale del processo o l'eccezione che il processo genera se non viene completato.  
@@ -334,3 +334,4 @@ End Class
 ## <a name="see-also"></a>Vedere anche  
  [Operatore Await](../../../../visual-basic/language-reference/operators/await-operator.md)   
  [Async](../../../../visual-basic/language-reference/modifiers/async.md)
+

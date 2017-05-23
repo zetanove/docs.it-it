@@ -49,7 +49,6 @@ Function ( [ parameterlist ] ) expression
 Function ( [ parameterlist ] )  
   [ statements ]  
 End Function  
-  
 ```  
   
 ## <a name="parts"></a>Parti  

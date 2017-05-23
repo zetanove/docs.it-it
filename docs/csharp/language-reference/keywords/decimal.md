@@ -48,7 +48,6 @@ La parola chiave `decimal` indica un tipo di dati a 128 bit. Rispetto ai tipi a 
  Se si desidera che un valore letterale numerico reale venga gestito come `decimal`, utilizzare il suffisso m o M, ad esempio:  
   
 ```  
-  
 decimal myMoney = 300.5m;  
 ```  
   
@@ -58,14 +57,12 @@ decimal myMoney = 300.5m;
  I tipi integrali vengono convertiti in modo implicito in `decimal` e il risultato restituisce `decimal`. È pertanto possibile inizializzare una variabile decimale mediante un valore letterale Integer, senza il suffisso, ad esempio:  
   
 ```  
-  
 decimal myMoney = 300;  
 ```  
   
  Non esiste alcuna conversione implicita tra i tipi a virgola mobile e il tipo `decimal`. È pertanto necessario utilizzare un cast per operare una conversione tra questi due tipi. Ad esempio:  
   
 ```  
-  
       decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
@@ -92,7 +89,6 @@ Console.WriteLine(dec + dub);
 // You can fix the error by using explicit casting of either operand.  
 Console.WriteLine(dec + (decimal)dub);  
 Console.WriteLine((double)dec + dub);  
-  
 ```  
   
  Viene restituito l'errore seguente:  
@@ -121,3 +117,4 @@ Console.WriteLine((double)dec + dub);
  [Tabella delle conversioni numeriche implicite](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [Tabella delle conversioni numeriche esplicite](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
  [Stringhe di formato numerico standard](../../../standard/base-types/standard-numeric-format-strings.md)
+

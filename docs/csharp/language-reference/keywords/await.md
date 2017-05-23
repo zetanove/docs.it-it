@@ -50,7 +50,6 @@ L'operatore `await` viene applicato a un'attività in un metodo asincrono per so
  Nel codice seguente, il metodo <xref:System.Net.Http.HttpClient> <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> restituisce `Task\<byte[]>`, `getContentsTask`. L'attività è una promessa di produrre la matrice di byte effettiva una volta completata l'attività. L'operatore `await` viene applicato a `getContentsTask` per sospendere l'esecuzione in `SumPageSizesAsync` fino al completamento di `getContentsTask`. Nel frattempo, il controllo viene restituito al chiamante di `SumPageSizesAsync`. Quando `getContentsTask` termina, l'espressione `await` restituisce una matrice di byte.  
   
 ```csharp  
-  
 private async Task SumPageSizesAsync()  
 {  
     // To use the HttpClient type in desktop apps, you must include a using directive and add a   
@@ -64,7 +63,6 @@ private async Task SumPageSizesAsync()
     //byte[] urlContents = await client.GetByteArrayAsync(url);  
     // . . .  
 }  
-  
 ```  
   
 > [!IMPORTANT]
@@ -78,7 +76,6 @@ TResult result = await AsyncMethodThatReturnsTaskTResult();
   
 // Keyword await used with a method that returns a Task.  
 await AsyncMethodThatReturnsTask();  
-  
 ```  
   
  Un'espressione `await` non blocca il thread su cui è in esecuzione. Comporta invece la registrazione, tramite il compilatore, della parte restante del metodo asincrono come continuazione dell'attività di cui si è in attesa. Il controllo quindi viene restituito al chiamante del metodo asincrono. Al termine dell'attività, ne richiama la continuazione e l'esecuzione del metodo asincrono riprende da dove era stata interrotta.  
@@ -100,7 +97,6 @@ await AsyncMethodThatReturnsTask();
  Il seguente esempio di Windows Form illustra l'uso di `await` in un metodo asincrono, `WaitAsynchronouslyAsync`. Contrastare il comportamento di tale metodo con il comportamento di `WaitSynchronously`. Senza un operatore `await` applicato a un'attività, `WaitSynchronously` viene eseguito in modo sincrono nonostante l'uso del modificatore `async` nella sua definizione e di una chiamata a <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> nel corpo.  
   
 ```csharp  
-  
 private async void button1_Click(object sender, EventArgs e)  
 {  
     // Call the method that runs asynchronously.  
@@ -137,3 +133,4 @@ public async Task<string> WaitSynchronously()
  [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)  (Programmazione asincrona con async e await)  
  [Procedura dettagliata: accesso al Web con async e await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
  [async](../../../csharp/language-reference/keywords/async.md)
+

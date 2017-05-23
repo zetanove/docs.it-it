@@ -456,7 +456,6 @@ public class MethodCallVisitor : Visitor
         }
     }
 }
-
 ```
 
 L'output per l'albero delle espressioni sarà:
