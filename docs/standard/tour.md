@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: dotnet-standard
 ms.devlang: dotnet
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
-translationtype: Human Translation
-ms.sourcegitcommit: 48563be13dc07000ced2e6817b3028e6117abd93
-ms.openlocfilehash: ee6ced104137a453267b409fea05716d781ef83f
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: d00f2096e0799107a8a2ff1d12274c6026d4c27a
+ms.openlocfilehash: 50e5b333f892cf469e9f3fe57a0325ac6d8e641f
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 
@@ -27,7 +28,7 @@ Per informazioni su tutti i componenti dell'architettura di .NET e sulle relativ
 
 ## <a name="how-to-run-the-code-samples"></a>Come eseguire i codici di esempio
 
-Per informazioni su come configurare un ambiente di sviluppo all'interno del quale eseguire i codici di esempio, vedere l'articolo [Introduzione](getting-started.md).  È possibile copiare i codici di esempio da questa pagina e incollarli nel proprio ambiente per eseguirli. 
+Per informazioni su come configurare un ambiente di sviluppo all'interno del quale eseguire i codici di esempio, vedere l'articolo [Introduzione](get-started.md).  È possibile copiare i codici di esempio da questa pagina e incollarli nel proprio ambiente per eseguirli. 
 
 > [!NOTE]
 In futuro, da questo sito di programmazione sarà possibile eseguire i codici di esempio direttamente nel proprio browser.
@@ -150,7 +151,7 @@ Per una panoramica delle funzionalità di C#, vedere [Tour of C#](../csharp/tour
 
 Per una panoramica delle funzionalità di F#, vedere l'articolo [Tour of F#](../fsharp/tour.md) (Panoramica di F#).
 
-Per un'introduzione alla scrittura di codice personalizzato, vedere [Introduzione](getting-started.md).
+Per un'introduzione alla scrittura di codice personalizzato, vedere [Introduzione](get-started.md).
 
 Per informazioni sui componenti principali di .NET, vedere [Componenti dell'architettura .NET](components.md).
 

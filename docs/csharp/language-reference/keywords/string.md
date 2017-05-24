@@ -34,20 +34,20 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a616808a8e6ff5e259c503c0143db4b8f73bdef2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 737a0902a0cb010a74b59560abe43f5cfb6550db
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="string-c-reference"></a>string (Riferimenti per C#)
-Il tipo `string` rappresenta una sequenza di zero o più caratteri Unicode. `string` è un alias di <xref:System.String> in .NET Framework.  
+Il tipo `string` rappresenta una sequenza di zero o più caratteri Unicode. `string` è un alias per <xref:System.String> in .NET Framework.  
   
  Sebbene `string` sia un tipo riferimento, gli operatori di uguaglianza (`==` e `!=`) vengono definiti per confrontare i valori degli oggetti `string` e non dei riferimenti. In questo modo il test di uguaglianza delle stringhe è più intuitivo. Ad esempio:  
   
 ```csharp  
-  
-      string a = "hello";  
+string a = "hello";  
 string b = "h";  
 // Append to contents of 'b'  
 b += "ello";  
@@ -60,7 +60,6 @@ Console.WriteLine((object)a == (object)b);
  L'operatore + concatena le stringhe:  
   
 ```csharp  
-  
 string a = "good " + "morning";  
 ```  
   
@@ -68,17 +67,15 @@ string a = "good " + "morning";
   
  Le stringhe sono *immutabili*: non è possibile modificare il contenuto di un oggetto stringa dopo la creazione dell'oggetto, sebbene la sintassi sembri indicare che è possibile apportare modifiche. Ad esempio, quando si scrive il codice, il compilatore crea un nuovo oggetto stringa per archiviare la nuova sequenza di caratteri e il nuovo oggetto viene assegnato a b. La stringa "h" è quindi idonea per Garbage Collection.  
   
-```csharp  
-  
-      string b = "h";  
+```csharp
+string b = "h";  
 b += "ello";  
 ```  
   
  L'operatore [] può essere usato per accedere in lettura ai singoli caratteri di un `string`:  
   
 ```csharp  
-  
-      string str = "test";  
+string str = "test";  
 char x = str[2];  // x = 's';  
 ```  
   
@@ -91,8 +88,7 @@ char x = str[2];  // x = 's';
  I valori letterali della stringa possono contenere qualsiasi carattere letterale. Sono incluse le sequenze di escape. L'esempio seguente usa una sequenza di escape `\\` per la barra rovesciata, `\u0066` per la lettera f e `\n` per la nuova riga.  
   
 ```  
-  
-      string a = "\\\u0066\n";  
+string a = "\\\u0066\n";  
 Console.WriteLine(a);  
 ```  
   
@@ -130,11 +126,12 @@ Console.WriteLine(a);
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
- [Procedure consigliate per l'uso delle stringhe](http://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7)   
+ [Procedure consigliate per l'uso delle stringhe](../../../standard/base-types/best-practices-strings.md)   
  [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Tipi di riferimento](../../../csharp/language-reference/keywords/reference-types.md)   
  [Tipi di valore](../../../csharp/language-reference/keywords/value-types.md)   
- [Operazioni di base su stringhe](http://msdn.microsoft.com/library/8133d357-90b5-4b62-9927-43323d99b6b6)   
- [Creazione di nuove stringhe](http://msdn.microsoft.com/library/06fdf123-2fac-4459-8904-eb48ab908a30)   
+ [Operazioni di base su stringhe](../../../standard/base-types/basic-string-operations.md)   
+ [Creazione di nuove stringhe](../../../standard/base-types/creating-new.md)   
  [Tabella di formattazione dei risultati numerici](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)
+

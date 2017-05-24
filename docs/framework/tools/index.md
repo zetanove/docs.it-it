@@ -24,10 +24,11 @@ caps.latest.revision: 65
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: 792ffdaefdd3379673df7789bd499eade26b0a6d
-ms.lasthandoff: 04/08/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: baaf365a21661b377f8151e5d97ac16542aa2c36
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="net-framework-tools"></a>Strumenti di .NET Framework
@@ -77,7 +78,7 @@ Gli strumenti di .NET Framework facilitano la creazione, la distribuzione e la g
  Accetta un file eseguibile di tipo PE contenente codice del linguaggio intermedio (IL) e crea un file di testo utilizzabile come input per l'assembler IL (Ilasm.exe).  
   
  [Installutil.exe (Strumento Programma di installazione)](../../../docs/framework/tools/installutil-exe-installer-tool.md)  
- Consente di installare e disinstallare le risorse del server eseguendo i componenti del programma di installazione di un assembly specificato. Funziona insieme alle classi nello spazio dei nomi <xref:System.Configuration.Install>. Consente di installare e disinstallare le risorse del server eseguendo i componenti del programma di installazione di un assembly specificato. Funziona insieme alle classi nello spazio dei nomi <xref:System.Configuration.Install>.  
+ Consente di installare e disinstallare le risorse del server eseguendo i componenti del programma di installazione di un assembly specificato. Funziona con le classi dello spazio dei nomi <xref:System.Configuration.Install>. Consente di installare e disinstallare le risorse del server eseguendo i componenti del programma di installazione di un assembly specificato. Funziona con le classi dello spazio dei nomi <xref:System.Configuration.Install>.  
   
  [Lc.exe (Compilatore licenze)](../../../docs/framework/tools/lc-exe-license-compiler.md)  
  Legge i file di testo che contengono informazioni sulla licenza e genera un file con estensione licenses che è possibile incorporare come risorsa in un eseguibile di Common Language Runtime. Legge i file di testo che contengono informazioni sulla licenza e genera un file con estensione licenses che è possibile incorporare come risorsa in un eseguibile di Common Language Runtime.  

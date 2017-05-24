@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 6312a76a-a298-49a0-9116-b9d9e6b3c7c3
+redirect_url: /dotnet/articles/csharp/index
 translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 5ca4591fb1bb5143251c9e05af27392bd3fdc40d

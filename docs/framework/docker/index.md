@@ -10,9 +10,10 @@ ms.prod: .net-framework
 ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bea5aa270cef5105a685f5141362b439c12af340
 ms.openlocfilehash: 764e73c865eaf838a2b975dbc23382f86fe799ea
+ms.contentlocale: it-it
 ms.lasthandoff: 04/05/2017
 
 ---

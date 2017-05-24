@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 6945bedf-5bf3-4955-8588-83fb87511b79
-translationtype: Human Translation
-ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
-ms.openlocfilehash: c76168d1c9ae65ef0d17c55aab156a4f16ecea52
-ms.lasthandoff: 03/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
+ms.openlocfilehash: c1f279e4c78111350dbc8ec01d33d65773c56bb1
+ms.contentlocale: it-it
+ms.lasthandoff: 04/12/2017
 
 ---
 
@@ -20,7 +21,7 @@ ms.lasthandoff: 03/20/2017
 
 Visual Studio per Mac offre un ambiente di sviluppo integrato completo per lo sviluppo di applicazioni .NET Core. Questo argomento descrive il processo di creazione di una soluzione .NET Core contenente una libreria riutilizzabile e unit test.
 
-In questa esercitazione viene illustrato come creare un'applicazione che accetta una parola di ricerca e una stringa di testo dall'utente, conta il numero di volte in cui la parola di ricerca appare nella stringa usando un metodo in una libreria di classi e restituisce il risultato all'utente. La soluzione include anche unit test per la libreria di classi come introduzione ai concetti relativi allo sviluppo basato su test. Se si preferisce continuare l'esercitazione con un esempio completo, scaricare la [soluzione di esempio](https://github.com/dotnet/docs/blob/master/samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter).
+In questa esercitazione viene illustrato come creare un'applicazione che accetta una parola di ricerca e una stringa di testo dall'utente, conta il numero di volte in cui la parola di ricerca appare nella stringa usando un metodo in una libreria di classi e restituisce il risultato all'utente. La soluzione include anche unit test per la libreria di classi come introduzione ai concetti relativi allo sviluppo basato su test. Se si preferisce continuare l'esercitazione con un esempio completo, scaricare la [soluzione di esempio](https://github.com/dotnet/docs/blob/master/samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter). Per istruzioni sul download, vedere [Esempi ed esercitazioni](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 > [!NOTE]
 > Visual Studio per Mac è un software di anteprima. Come per qualsiasi versione di anteprima di prodotti Microsoft, il feedback dei clienti è sempre tenuto in grande considerazione. Sono disponibili due modi per comunicare al team di sviluppatori la propria opinione su Visual Studio per Mac:

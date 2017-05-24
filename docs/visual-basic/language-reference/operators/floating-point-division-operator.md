@@ -41,9 +41,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 71b4f64f6deeb334412c87131ccd9480620f284f
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -53,7 +54,6 @@ Divide due numeri e restituisce un risultato a virgola mobile.
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-  
 expression1 / expression2  
 ```  
   

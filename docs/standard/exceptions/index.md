@@ -21,10 +21,11 @@ caps.latest.revision: 16
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: c8c5962db342dba6ff22c409d145af5e628eed3d
-ms.lasthandoff: 04/12/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="handling-and-throwing-exceptions-in-net"></a>Gestione e generazione di eccezioni in .NET

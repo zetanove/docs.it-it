@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 3e60516d1f443528c357eb12612b6149f34c1f7e
-ms.lasthandoff: 03/13/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="-operator-c-reference"></a>Operatore ?: (Riferimenti per C#)
@@ -54,7 +55,6 @@ condition ? first_expression : second_expression;
  I calcoli che richiedono una costruzione `if-else` possono essere espressi più concisamente mediante l'operatore condizionale. Ad esempio, il codice seguente viene utilizzato prima un'istruzione `if`, quindi un operatore condizionale per classificare un integer come positivo o negativo.  
   
 ```  
-  
 int input = Convert.ToInt32(Console.ReadLine());  
 string classify;  
   
@@ -66,7 +66,6 @@ else
   
 // ?: conditional operator.  
 classify = (input > 0) ? "positive" : "negative";  
-  
 ```  
   
  L'operatore condizionale si associa all'operando a destra. L'espressione `a ? b : c ? d : e` viene valutata come `a ? b : (c ? d : e)`, non come `(a ? b : c) ? d : e`.  
@@ -83,3 +82,4 @@ classify = (input > 0) ? "positive" : "negative";
  [if-else](../../../csharp/language-reference/keywords/if-else.md)   
  [Operatori ?. e ?](../../../csharp/language-reference/operators/null-conditional-operators.md)   
  [?? (operatore)](../../../csharp/language-reference/operators/null-conditional-operator.md)
+

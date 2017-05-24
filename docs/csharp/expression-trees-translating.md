@@ -10,9 +10,10 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 01cc83bc46d2cbe6beaaa5c3212b18bb8608ec82
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -127,7 +128,6 @@ private static int Aggregate(Expression exp)
     }
     else throw new NotSupportedException("Haven't written this yet");
 }
-
 ```
 
 L'esecuzione del metodo sulla stessa espressione produce l'output seguente:

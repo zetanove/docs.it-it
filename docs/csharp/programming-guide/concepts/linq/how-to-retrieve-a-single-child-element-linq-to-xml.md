@@ -14,9 +14,10 @@ ms.assetid: ce37db9e-76fa-46eb-b4cc-e8f32d22ad90
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: a8cc212a91e4646ef7001d41ba9bb5486cc60052
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -44,7 +45,6 @@ Console.WriteLine(e);
  Questo esempio produce il seguente output:  
   
 ```xml  
-  
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  
   
@@ -63,9 +63,9 @@ Console.WriteLine(e);
  Questo esempio produce il seguente output:  
   
 ```xml  
-  
 <aw:DeliveryNotes xmlns:aw="http://www.adventure-works.com">Please leave packages in shed by driveway.</aw:DeliveryNotes>  
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
  [Assi LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+

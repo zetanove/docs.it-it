@@ -30,9 +30,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: b4aa3c7c54e5e4d53975262adbbd9b54c701a69e
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -46,7 +47,6 @@ public void SampleMethod()
 {  
     // Body of the method.  
 }  
-  
 ```  
   
  `void` si usa inoltre in un contesto unsafe per dichiarare un puntatore a un tipo sconosciuto. Per altre informazioni, vedere [Tipi di puntatori](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md).  
@@ -64,3 +64,4 @@ public void SampleMethod()
  [Tipi di valore](../../../csharp/language-reference/keywords/value-types.md)   
  [Metodi](../../../csharp/programming-guide/classes-and-structs/methods.md)   
  [Codice unsafe e puntatori](../../../csharp/programming-guide/unsafe-code-pointers/index.md)
+

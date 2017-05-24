@@ -19,9 +19,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 09489e2dabd34da0446a623e91cd85de35c3c70b
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -29,10 +30,8 @@ ms.lasthandoff: 03/13/2017
 Quando si usa LINQ per eseguire una query su raccolte <xref:System.Collections.IEnumerable> non generiche, come ad esempio <xref:System.Collections.ArrayList>, è necessario dichiarare in modo esplicito il tipo della variabile di intervallo in base al tipo specifico di oggetti nella raccolta. Ad esempio, se si ha un <xref:System.Collections.ArrayList> di oggetti `Student`, la [clausola from](../../../../csharp/language-reference/keywords/from-clause.md) dovrebbe essere così:  
   
 ```  
-  
 var query = from Student s in arrList  
 ...  
-  
 ```  
   
  Specificando il tipo della variabile di intervallo, si esegue il cast di ogni elemento dell'<xref:System.Collections.ArrayList> in `Student`.  
@@ -103,3 +102,4 @@ namespace NonGenericLINQ
   
 ## <a name="see-also"></a>Vedere anche  
  [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+

@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f104657c66e067ffe657f8387fef2178e3b2e62b
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 336a4a7bb485a48282dd740bafb81421e0cba693
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="decimal-c-reference"></a>decimal (Riferimenti per C#)
@@ -47,7 +48,6 @@ La parola chiave `decimal` indica un tipo di dati a 128 bit. Rispetto ai tipi a 
  Se si desidera che un valore letterale numerico reale venga gestito come `decimal`, utilizzare il suffisso m o M, ad esempio:  
   
 ```  
-  
 decimal myMoney = 300.5m;  
 ```  
   
@@ -57,14 +57,12 @@ decimal myMoney = 300.5m;
  I tipi integrali vengono convertiti in modo implicito in `decimal` e il risultato restituisce `decimal`. È pertanto possibile inizializzare una variabile decimale mediante un valore letterale Integer, senza il suffisso, ad esempio:  
   
 ```  
-  
 decimal myMoney = 300;  
 ```  
   
  Non esiste alcuna conversione implicita tra i tipi a virgola mobile e il tipo `decimal`. È pertanto necessario utilizzare un cast per operare una conversione tra questi due tipi. Ad esempio:  
   
 ```  
-  
       decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
@@ -77,7 +75,7 @@ myMoney = (decimal)x;
  Per altre informazioni sulle conversioni numeriche esplicite, vedere [Tabella delle conversioni numeriche esplicite](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md).  
   
 ## <a name="formatting-decimal-output"></a>Formattazione dell'output di tipo decimal  
- È possibile formattare i risultati usando il metodo `String.Format` o il metodo <xref:System.Console.Write%2A?displayProperty=fullName>, che chiama `String.Format()`. Il formato valuta viene specificato tramite la stringa di formato valuta standard "C" o "c", come illustrato nel secondo esempio riportato più avanti. Per altre informazioni sul metodo `String.Format`, vedere <xref:System.String.Format%2A?displayProperty=fullName>.  
+ È possibile applicare il formato desiderato ai risultati utilizzando il metodo `String.Format` o mediante il metodo <xref:System.Console.Write%2A?displayProperty=fullName> che chiama `String.Format()`. Il formato valuta viene specificato tramite la stringa di formato valuta standard "C" o "c", come illustrato nel secondo esempio riportato più avanti. Per ulteriori informazioni sul metodo `String.Format`, vedere <xref:System.String.Format%2A?displayProperty=fullName>.  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente causa un errore del compilatore tentando di aggiungere le variabili [double](../../../csharp/language-reference/keywords/double.md) e `decimal`.  
@@ -91,7 +89,6 @@ Console.WriteLine(dec + dub);
 // You can fix the error by using explicit casting of either operand.  
 Console.WriteLine(dec + (decimal)dub);  
 Console.WriteLine((double)dec + dub);  
-  
 ```  
   
  Viene restituito l'errore seguente:  
@@ -119,4 +116,5 @@ Console.WriteLine((double)dec + dub);
  [Tabella dei tipi predefiniti](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [Tabella delle conversioni numeriche implicite](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [Tabella delle conversioni numeriche esplicite](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)   
- [Stringhe di formato numerico standard](http://msdn.microsoft.com/library/580e57eb-ac47-4ffd-bccd-3a1637c2f467)
+ [Stringhe di formato numerico standard](../../../standard/base-types/standard-numeric-format-strings.md)
+

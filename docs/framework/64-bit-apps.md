@@ -18,10 +18,11 @@ caps.latest.revision: 53
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: 3d1ddfa9842909a491af2541c9ac770989fc2164
-ms.lasthandoff: 04/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 987c7063c5e6dce10233761b6e37ed102d5878a9
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="64-bit-applications"></a>Applicazioni a 64 bit
@@ -67,7 +68,7 @@ Quando si compila un'applicazione, è possibile specificare che deve essere eseg
 |--------------|---------------------|  
 |Visual Basic|[/platform (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/platform.md)|  
 |Visual C#|[/platform (opzioni del compilatore C#)](~/docs/csharp/language-reference/compiler-options/platform-compiler-option.md)|  
-|Visual C++|È possibile creare applicazioni Microsoft Intermediate Language (MSIL) indipendenti dalla piattaforma usando **/clr:safe**. Per altre informazioni, vedere [/clr (Compilazione Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).<br /><br /> Visual C++ include un compilatore separato per ogni sistema operativo a 64 bit. Per altre informazioni sull'uso di Visual C++ per creare applicazioni native eseguibili in un sistema operativo Windows a 64 bit, vedere [Programmazione a 64 bit con Visual C++](http://msdn.microsoft.com/library/h2k70f3s\(v=vs.80\)).|  
+|Visual C++|È possibile creare applicazioni Microsoft Intermediate Language (MSIL) indipendenti dalla piattaforma usando **/clr:safe**. Per altre informazioni, vedere [/clr (Compilazione Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).<br /><br /> Visual C++ include un compilatore separato per ogni sistema operativo a 64 bit. Per altre informazioni sull'uso di Visual C++ per creare applicazioni native eseguibili in un sistema operativo Windows a 64 bit, vedere [Programmazione a 64 bit con Visual C++](http://msdn.microsoft.com/library/h2k70f3s\(v=vs.80\)).|  
   
 ## <a name="determining-the-status-of-an-exe-file-or-dll-file"></a>Determinazione dello stato di un file EXE o di un file DLL  
  Per determinare se un file EXE o un file DLL deve essere eseguito solo su una piattaforma specifica o in WOW64, usare [CorFlags.exe (strumento di conversione CorFlags)](../../docs/framework/tools/corflags-exe-corflags-conversion-tool.md) senza opzioni. È anche possibile usare CorFlags.exe per modificare lo stato della piattaforma di un file EXE o di un file DLL. Il numero di versione del runtime principale dell'intestazione CLR di un assembly di Visual Studio è impostato su 2, mentre quello secondario è impostato su 5. Le applicazioni con la versione di runtime secondaria impostata su 0 sono considerate applicazioni legacy e vengono sempre eseguite in WOW64.  

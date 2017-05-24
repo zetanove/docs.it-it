@@ -21,10 +21,11 @@ caps.latest.revision: 82
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: 706aab6d49b75d3ee15425b4f83eea5394a79d26
-ms.lasthandoff: 04/08/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 8b7d089b293c4a33c55e3d379ad9b6d673f266ef
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="advanced-windows-presentation-foundation"></a>Aree avanzate (Windows Presentation Foundation)

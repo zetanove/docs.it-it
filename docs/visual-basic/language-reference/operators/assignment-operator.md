@@ -33,9 +33,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 47b69a908f12ec36daf2848da6ee4b04895fd3a4
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -45,7 +46,6 @@ Assegna un valore a una variabile o proprietà.
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-  
 variableorproperty = value  
 ```  
   

@@ -10,10 +10,11 @@ ms.prod: visual-studio-dev-15
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: bba2a8d183f928e298c452f6ec132f3eb9dffbd3
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 4b2fdc86a3b2485f6177112a584291558fb76984
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 

@@ -35,9 +35,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: ab0a007f039d3dbda989bb605cb80fcf5fc7460a
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -47,7 +48,6 @@ Divide il valore di una variabile o proprietà per il valore di un'espressione e
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-  
 variableorproperty /= expression  
 ```  
   

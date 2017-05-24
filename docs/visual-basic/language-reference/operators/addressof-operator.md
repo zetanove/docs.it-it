@@ -33,9 +33,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 04a7c5be9b890faea561c28715093a271cf9eaa8
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -45,7 +46,6 @@ Crea un'istanza del delegato procedure che fa riferimento la procedura specifica
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-  
 AddressOf procedurename  
 ```  
   
@@ -73,3 +73,4 @@ AddressOf procedurename
  [Istruzione Function](../../../visual-basic/language-reference/statements/function-statement.md)   
  [Sub (istruzione)](../../../visual-basic/language-reference/statements/sub-statement.md)   
  [Delegati](../../../visual-basic/programming-guide/language-features/delegates/index.md)
+

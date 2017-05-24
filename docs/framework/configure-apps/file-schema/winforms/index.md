@@ -10,10 +10,11 @@ ms.assetid: 6eb142d5-fc98-40e2-9d90-84733f2a27ba
 caps.latest.revision: 6
 author: rpetrusha
 ms.author: ronpet
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9ff485d8791960f24f727cfc60fbc5ab77203a92
 ms.openlocfilehash: fc062bf205db5b2f8883785eb2656eb9d3d8ca16
-ms.lasthandoff: 04/15/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/02/2017
 
 ---
 # <a name="windows-forms-configuration-section"></a>Sezione di configurazione di Windows Form

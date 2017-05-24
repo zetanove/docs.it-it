@@ -22,10 +22,11 @@ caps.latest.revision: 19
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: 3bbfaf3272444fbd2127f01ae4d5c9ca0db7bd39
-ms.lasthandoff: 04/08/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: ffe0b574b00e3ce420d83658f5844f26c3f8ea72
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="resources-in-desktop-apps"></a>Risorse nelle applicazioni desktop
@@ -50,23 +51,23 @@ L'utilizzo di risorse è richiesto in quasi tutte le applicazioni destinate a un
  Per ulteriori informazioni, leggere l'articolo [Creazione del package e distribuzione delle risorse](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
 ## <a name="retrieving-resources"></a>Recupero di risorse  
- In fase di esecuzione, le applicazioni caricano le risorse localizzate appropriate per ciascun thread, in base alle impostazioni cultura specificate dalla proprietà <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>. Questo valore della proprietà viene derivato come segue:  
+ In fase di esecuzione, tramite un'applicazione vengono caricate le risorse localizzate appropriate per ciascun thread, in base alle impostazioni cultura specificate dalla proprietà <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>. Questo valore della proprietà viene derivato come segue:  
   
 -   Assegnando direttamente un oggetto <xref:System.Globalization.CultureInfo> che rappresenta le impostazioni cultura localizzate alla proprietà <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName>.  
   
--   Se le impostazioni cultura non vengono assegnate in modo esplicito, recuperando il thread predefinito delle impostazioni cultura dell'interfaccia utente dalla proprietà <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=fullName>.  
+-   Se le impostazioni cultura non vengono assegnate in modo esplicito, recuperando le impostazioni cultura dell'interfaccia utente del thread predefinito dalla proprietà <xref:System.Globalization.CultureInfo.DefaultThreadCurrentUICulture%2A?displayProperty=fullName>.  
   
 -   Se le impostazioni cultura dell'interfaccia utente di un thread predefinito non vengono assegnate in modo esplicito, recuperando le impostazioni cultura per l'utente corrente del computer locale chiamando la funzione `GetUserDefaultUILanguage` di Windows.  
   
  Per ulteriori informazioni su come vengono impostate le impostazioni cultura correnti dell'interfaccia utente, vedere le pagine di riferimento <xref:System.Globalization.CultureInfo> e <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>.  
   
- È quindi possibile recuperare le risorse per le impostazioni cultura correnti dell'interfaccia utente o per impostazioni cultura specifiche utilizzando la classe <xref:System.Resources.ResourceManager?displayProperty=fullName>. Sebbene la classe <xref:System.Resources.ResourceManager> sia maggiormente utilizzata per recuperare le risorse nelle applicazioni desktop, nello spazio dei nomi <xref:System.Resources?displayProperty=fullName> sono contenuti tipi aggiuntivi utilizzabili per recuperare le risorse. Sono inclusi:  
+ È quindi possibile recuperare le risorse per le impostazioni cultura correnti dell'interfaccia utente o per impostazioni cultura specifiche utilizzando la classe <xref:System.Resources.ResourceManager?displayProperty=fullName>. Sebbene la classe <xref:System.Resources.ResourceManager> sia maggiormente utilizzata per recuperare le risorse nelle applicazioni desktop, nello spazio dei nomi <xref:System.Resources?displayProperty=fullName> sono contenuti tipi aggiuntivi utilizzabili per recuperare le risorse. tra cui:  
   
 -   La classe <xref:System.Resources.ResourceReader>, che consente di enumerare le risorse incorporate in un assembly o archiviate in un file binario autonomo con estensione resources. È utile quando non si conoscono i nomi esatti delle risorse disponibili in fase di esecuzione.  
   
 -   La classe <xref:System.Resources.ResXResourceReader> che consente di recuperare le risorse da un file XML (con estensione resx).  
   
--   La classe <xref:System.Resources.ResourceSet> che consente di recuperare le risorse di impostazioni cultura specifiche senza rispettare le regole di fallback. Le risorse possono essere archiviate in un assembly o un file binario autonomo con estensione resources. È inoltre possibile sviluppare un'implementazione <xref:System.Resources.IResourceReader> che consente di utilizzare la classe <xref:System.Resources.ResourceSet> per recuperare le risorse da un'altra origine.  
+-   La classe <xref:System.Resources.ResourceSet> che consente di recuperare le risorse di impostazioni cultura specifiche senza rispettare le regole di fallback. Le risorse possono essere archiviate in un assembly o un file binario autonomo con estensione resources. È inoltre possibile sviluppare un'implementazione dell'oggetto <xref:System.Resources.IResourceReader> che consente di utilizzare la classe <xref:System.Resources.ResourceSet> per recuperare le risorse da un'altra origine.  
   
 -   La classe <xref:System.Resources.ResXResourceSet> che consente di recuperare tutti gli elementi in un file di risorse XML in memoria.  
   

@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3434dc4b13295101970fd4aadb69d56ddbca7142
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
+ms.openlocfilehash: fa0a35df3c2038859a8c2861780fd8dfa98d4429
+ms.contentlocale: it-it
+ms.lasthandoff: 03/24/2017
 
 ---
 # <a name="cancel-remaining-async-tasks-after-one-is-complete-c"></a>Annullare le attività asincrone rimanenti dopo il completamento di una sola attività (C#)
@@ -59,7 +60,7 @@ Tramite il metodo <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=f
   
  Nel file MainWindow.xaml.cs del progetto **CancelAListOfTasks** avviare la transizione spostando le fasi di elaborazione per ogni sito Web dal ciclo in `AccessTheWebAsync` al metodo asincrono seguente.  
   
-```cs  
+```csharp  
 / ***Bundle the processing steps for a website into one async method.  
 async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken ct)  
 {  
@@ -81,13 +82,22 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
 2.  Creare una query che, quando eseguita, produce una raccolta di attività generiche. Ogni chiamata a `ProcessURLAsync` restituisce <xref:System.Threading.Tasks.Task%601> dove `TResult` è un numero intero.  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+    ```csharp  
+    // ***Create a query that, when executed, returns a collection of tasks.  
+    IEnumerable<Task<int>> downloadTasksQuery =  
+        from url in urlList select ProcessURLAsync(url, client, ct);  
+    ```  
+  
 3.  Chiamare `ToArray` per eseguire la query e avviare le attività. L'applicazione del metodo `WhenAny` nel passaggio successivo esegue la query e avvia le attività senza usare `ToArray`, ma altri metodi non farebbero lo stesso. La procedura più sicura consiste nel forzare l'esecuzione della query in modo esplicito.  
   
-<CodeContentPlaceHolder>2</CodeContentPlaceHolder>  
+    ```csharp  
+    // ***Use ToArray to execute the query and start the download tasks.   
+    Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
+    ```  
+  
 4.  Chiamare `WhenAny` sulla raccolta di attività. `WhenAny` restituisce `Task(Of Task(Of Integer))` o `Task<Task<int>>`.  Ovvero `WhenAny` restituisce un'attività che include un singolo `Task(Of Integer)` o `Task<int>` quando è attesa. L'attività singola è la prima attività della raccolta da completare. L'attività completata per prima viene assegnata a `firstFinishedTask`. Il tipo di `firstFinishedTask` è <xref:System.Threading.Tasks.Task%601> dove `TResult` è un numero intero perché è il tipo restituito di `ProcessURLAsync`.  
   
-    ```cs  
+    ```csharp  
     // ***Call WhenAny and then await the result. The task that finishes   
     // first is assigned to firstFinishedTask.  
     Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
@@ -95,14 +105,14 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
 5.  In questo esempio, si è interessati solo all'attività che termina per prima. Usare quindi <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName> per annullare le attività rimanenti.  
   
-    ```cs  
+    ```csharp  
     // ***Cancel the rest of the downloads. You just want the first one.  
     cts.Cancel();  
     ```  
   
 6.  Infine, attendere `firstFinishedTask` per recuperare la lunghezza del contenuto scaricato.  
   
-    ```cs  
+    ```csharp  
     var length = await firstFinishedTask;  
     resultsTextBox.Text += String.Format("\r\nLength of the downloaded website:  {0}\r\n", length);  
     ```  
@@ -116,7 +126,7 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
  È possibile scaricare il progetto da [Async Sample: Fine Tuning Your Application](http://go.microsoft.com/fwlink/?LinkId=255046) (Esempio di attività asincrona: ottimizzazione dell'applicazione).  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

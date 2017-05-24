@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d31ba6dd73ec4f5abcb34dc481144b154301f1af
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 801187b1fcc25a1eea1f40ec8ac4c67af42e5880
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="volatile-c-reference"></a>volatile (Riferimenti per C#)
@@ -53,7 +54,7 @@ La parola chiave `volatile` indica che un campo potrebbe essere modificato da pi
   
 -   Parametri di tipo generico noti come tipi di riferimento.  
   
--   <xref:System.IntPtr> and <xref:System.UIntPtr>.  
+-   <xref:System.IntPtr> e <xref:System.UIntPtr>.  
   
  La parola chiave volatile può essere applicata solo a campi di una classe o struct. Le variabili locali non possono essere dichiarate `volatile`.  
   
@@ -63,7 +64,7 @@ La parola chiave `volatile` indica che un campo potrebbe essere modificato da pi
  [!code-cs[csrefKeywordsModifiers#24](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_1.cs)]  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente viene illustrato come un thread di lavoro o ausiliario può essere creato e usato per eseguire l'elaborazione in parallelo con quella del thread principale. Per informazioni di base sul multithreading, vedere [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) and [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c).  
+ Nell'esempio seguente viene illustrato come un thread di lavoro o ausiliario può essere creato e usato per eseguire l'elaborazione in parallelo con quella del thread principale. Per informazioni di base sul multithreading, vedere [Threading](../../../standard/threading/index.md) and [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c).  
   
  [!code-cs[csProgGuideThreading#1](../../../csharp/language-reference/keywords/codesnippet/CSharp/volatile_2.cs)]  
   

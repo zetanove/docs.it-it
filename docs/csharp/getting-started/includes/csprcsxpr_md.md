@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: a32d6f1d365b337d8d8878032ed52105923a5571
+ms.contentlocale: it-it
 
 ---
 Visual C# Express

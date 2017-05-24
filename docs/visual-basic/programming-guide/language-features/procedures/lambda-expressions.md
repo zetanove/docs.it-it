@@ -35,9 +35,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: e50593e76afecfe8807c3cb5bac479245d2feaef
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -108,7 +109,6 @@ Public Class Form1
     End Function  
   
 End Class  
-  
 ```  
   
  È possibile aggiungere lo stesso gestore eventi utilizzando un'espressione lambda asincrona in un [AddHandler (istruzione)](../../../../visual-basic/language-reference/statements/addhandler-statement.md). Per aggiungere il gestore, aggiungere un modificatore `Async` prima dell'elenco di parametri lambda, come illustrato di seguito.  
@@ -131,7 +131,6 @@ Public Class Form1
     End Function  
   
 End Class  
-  
 ```  
   
  Per ulteriori informazioni su come creare e utilizzare i metodi asincroni, vedere [la programmazione asincrona con Async e Await](../../../../visual-basic/programming-guide/concepts/async/index.md).  
@@ -188,3 +187,4 @@ End Class
  [Procedura: passare una routine a un'altra routine in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)   
  [Procedura: creare un'espressione Lambda](./how-to-create-a-lambda-expression.md)   
  [Conversione di tipo relaxed del delegato](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+

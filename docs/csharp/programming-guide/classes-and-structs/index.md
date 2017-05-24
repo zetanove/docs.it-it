@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6023f09a9a355c9ab00252f9e2ac6cc45abf42ce
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: d855989586fdee8b98bd994125ebb5c59776040a
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="classes-and-structs-c-programming-guide"></a>Classi e struct (Guida per programmatori C#)
@@ -76,9 +77,9 @@ Classi e struct sono due dei costrutti di base del Common Type System in .NET Fr
   
 -   [Costruttori](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Distruttori](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-  
 -   [Eventi](../../../csharp/programming-guide/events/index.md)  
+  
+-   [Finalizzatori](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
   
 -   [Indicizzatori](../../../csharp/programming-guide/indexers/index.md)  
   
@@ -90,7 +91,7 @@ Classi e struct sono due dei costrutti di base del Common Type System in .NET Fr
  Alcuni metodi e proprietà sono progettati in modo da essere chiamabili o accessibili da codice esterno alla classe o al tipo struct, noto come *codice client*. Altri metodi e proprietà possono invece essere usati esclusivamente all'interno della classe o del tipo struct. Questa distinzione è importante per limitare l'accessibilità del codice in modo che solo il codice client desiderato possa raggiungerlo. È possibile specificare il modo in cui i tipi e i rispettivi membri sono accessibili dal codice client usando i modificatori di accesso [public](../../../csharp/language-reference/keywords/public.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), `protected internal` e [private](../../../csharp/language-reference/keywords/private.md). L'accessibilità predefinita è `private`. Per altre informazioni, vedere [Modificatori di accesso](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
   
 ### <a name="inheritance"></a>Ereditarietà  
- Le classi (ma non i tipi struct) supportano il concetto di ereditarietà. Una classe che deriva da un'altra (la *classe di base*) contiene automaticamente tutti i membri pubblici, protetti e interni della classe di base, ad eccezione di costruttori e distruttori. Per altre informazioni, vedere [Ereditarietà](../../../csharp/programming-guide/classes-and-structs/inheritance.md) e [Polimorfismo](../../../csharp/programming-guide/classes-and-structs/polymorphism.md).  
+ Le classi (ma non i tipi struct) supportano il concetto di ereditarietà. Una classe che deriva da un'altra classe definita *classe di base* contiene automaticamente tutti i membri pubblici, protetti e interni della classe di base, ad eccezione di costruttori e finalizzatori. Per altre informazioni, vedere [Ereditarietà](../../../csharp/programming-guide/classes-and-structs/inheritance.md) e [Polimorfismo](../../../csharp/programming-guide/classes-and-structs/polymorphism.md).  
   
  Le classi possono essere dichiarate come [astratte](../../../csharp/language-reference/keywords/abstract.md). Ciò significa che uno o più metodi di tali classi sono privi di implementazione. Anche se non è possibile crearne direttamente un'istanza, le classi astratte possono svolgere la funzione di classi di base per altre classi che forniscono l'implementazione mancante. Le classi possono anche essere dichiarate come [sealed](../../../csharp/language-reference/keywords/sealed.md) per impedire che altre classi ereditino da esse. Per altre informazioni, vedere [Classi e membri delle classi astratte e sealed](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
@@ -98,7 +99,7 @@ Classi e struct sono due dei costrutti di base del Common Type System in .NET Fr
  Le classi e i tipi struct possono ereditare più interfacce. Quando eredita da un'interfaccia, un tipo implementa tutti i metodi definiti in tale interfaccia. Per altre informazioni, vedere [Interfacce](../../../csharp/programming-guide/interfaces/index.md).  
   
 ### <a name="generic-types"></a>Tipi generici  
- Le classi e i tipi struct possono essere definiti con uno o più parametri di tipo. Il codice client fornisce il tipo quando ne crea un'istanza. La classe <xref:System.Collections.Generic.List%601> nello spazio dei nomi <xref:System.Collections.Generic>, ad esempio, è definita con un parametro di tipo. Il codice client crea un'istanza di `List<string>` o `List<int>` per specificare il tipo che sarà contenuto nell'elenco. Per altre informazioni, vedere [Generics](../../../csharp/programming-guide/generics/index.md).  
+ Le classi e i tipi struct possono essere definiti con uno o più parametri di tipo. Il codice client fornisce il tipo quando ne crea un'istanza. Ad esempio, la classe <xref:System.Collections.Generic.List%601> nello spazio dei nomi <xref:System.Collections.Generic> viene definita con un solo parametro di tipo. Il codice client crea un'istanza di `List<string>` o `List<int>` per specificare il tipo che sarà contenuto nell'elenco. Per altre informazioni, vedere [Generics](../../../csharp/programming-guide/generics/index.md).  
   
 ### <a name="static-types"></a>Tipi statici  
  Le classi (ma non i tipi struct) possono essere dichiarate come [statiche](../../../csharp/language-reference/keywords/static.md). Una classe statica può contenere solo membri statici e non è possibile crearne un'istanza con la nuova parola chiave. Una copia della classe viene caricata in memoria durante il caricamento del programma e i relativi membri sono accessibili tramite il nome della classe. Sia le classi che i tipi struct possono contenere membri statici. Per altre informazioni, vedere [Classi statiche e membri di classi statiche](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  

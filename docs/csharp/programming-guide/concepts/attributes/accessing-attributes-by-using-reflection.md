@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: cfbcdccd8c648fcb3f989e2ee551ed33709ba784
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: d268f237c4feab964c64b2d2843d5b9b539d7535
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="accessing-attributes-by-using-reflection-c"></a>Accesso agli attributi tramite reflection (C#)
@@ -133,7 +134,7 @@ class TestAuthorAttribute
  <xref:System.Reflection>   
  <xref:System.Attribute>   
  [Guida per programmatori C#](../../../../csharp/programming-guide/index.md)   
- [Recupero di informazioni memorizzate negli attributi](http://msdn.microsoft.com/library/37dfe4e3-7da0-48b6-a3d9-398981524e1c)   
+ [Recupero di informazioni memorizzate negli attributi](../../../../standard/attributes/retrieving-information-stored-in-attributes.md)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [Attributi (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [Creazione di attributi personalizzati (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)
