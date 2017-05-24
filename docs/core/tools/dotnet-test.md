@@ -4,16 +4,17 @@ description: Il comando `dotnet test` viene usato per eseguire unit test in un d
 keywords: dotnet-test, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 03/25/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 4bf0aef4-148a-41c6-bb95-0a9e1af8762e
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: 26b5834135db8041995a137f5008d00cdf14d820
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3cc29c37879a3edafb05b482698393f521b6c3b3
+ms.openlocfilehash: b4b0ac5a58fa37e5b39bcba262ba0fac443725e6
+ms.contentlocale: it-it
+ms.lasthandoff: 03/26/2017
 
 ---
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 03/22/2017
 
 ## <a name="description"></a>Descrizione
 
-Il comando `dotnet test` viene usato per eseguire unit test in un determinato progetto. Gli unit test sono progetti della libreria di classi con dipendenze dal framework di unit test (ad esempio, MSText, NUnit o xUnit) e dal Test Runner dotnet per il framework di unit test. Sono disponibili come pacchetti NuGet e vengono ripristinati come dipendenze ordinarie per il progetto.
+Il comando `dotnet test` viene usato per eseguire unit test in un determinato progetto. Gli unit test sono progetti dell'applicazione console con dipendenze nel framework di unit test (ad esempio MSText, NUnit o xUnit) e nel Test Runner dotnet per il framework di unit test. Sono disponibili come pacchetti NuGet e vengono ripristinati come dipendenze ordinarie per il progetto.
 
 Anche i progetti di test devono specificare il Test Runner. Quest'ultimo viene specificato usando un normale elemento `<PackageReference>`, come illustrato nel file di progetto di esempio seguente:
 
@@ -103,3 +104,4 @@ Eseguire i test nel progetto `test1`:
 
 * [Framework di destinazione](../../standard/frameworks.md)
 * [Catalogo RID (Runtime IDentifier)](../rid-catalog.md)
+

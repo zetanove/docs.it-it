@@ -3,60 +3,45 @@ title: Introduzione a .NET
 description: Per iniziare
 keywords: .NET
 author: richlander
-manager: wpickett
+ms.author: mairaw
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net
-ms.technology: .net-technologies
 ms.devlang: dotnet
 ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
-translationtype: Human Translation
-ms.sourcegitcommit: 15c55a87beb64f265a164db918c7721c7690fadf
-ms.openlocfilehash: dac380e7c493abc733c136f022d3634b807d8836
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d00f2096e0799107a8a2ff1d12274c6026d4c27a
+ms.openlocfilehash: b29e40d96d5e22ee60e2cd6c88ce438269742a5f
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 
 # <a name="welcome-to-net"></a>Introduzione a .NET
 
-> Per imparare a creare una semplice applicazione .NET Core, consultare le [esercitazioni introduttive di .NET Core](core/getting-started.md). Sono necessari pochi minuti per realizzare ed eseguire la prima app.
-
-Introduzione a .NET Con .NET è possibile creare qualsiasi tipo di applicazione, dai sistemi cloud a IoT (Internet of Things) fino ai giochi. Con .NET è possibile creare qualsiasi tipo di applicazione, dai sistemi cloud a IoT (Internet of Things) fino ai giochi. Esistono milioni di sviluppatori che usano .NET per sviluppare applicazioni mission-critical, app personali e giochi coinvolgenti. Perché non essere il prossimo?
-
-È possibile sviluppare app e giochi in Windows, macOS e Linux. Sono disponibili strumenti gratuiti che è possibile usare per creare app o giochi e distribuirli su server o desktop oppure pubblicarli in App Store. .NET è perfetto per gli studenti, ma è usato anche da grandi aziende di tutto il mondo.
-
-## <a name="news"></a>Novità
-
-La community .NET offre sempre qualcosa di nuovo da scoprire o imparare. Di seguito sono riportate le ultime notizie.
-
-- [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) (Introduzione a .NET Standard)
-- [.NET Core 1.0.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2016/09/13/announcing-september-2016-updates-for-net-core-1-0/) (Annuncio di .NET core 1.0.1)
-- [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/) (Annuncio di .NET Framework 4.6.2)
-- [Announcing .NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/announcing-net-core-1-0) (Annuncio di .NET Core 1.0)
-- [.NET Core 1.0.1 announcement](https://blogs.msdn.microsoft.com/webdev/2016/06/27/announcing-asp-net-core-1-0/) (Annuncio di ASP.NET Core 1.0)
-- [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/) (Xamarin open source, pronto per l'uso)
-- [The week in .NET](https://blogs.msdn.microsoft.com/dotnet/tag/week-in-net/) (Post di blog settimanali su .NET)
-- [Thank you for watching dotnetConf 2016!](https://blogs.msdn.microsoft.com/dotnet/2016/06/09/thank-you-for-watching-dotnetconf-2016/) (Ringraziamento per la partecipazione a dotnetConf 2016)
+Con .NET è possibile compilare molti tipi di app, ad esempio cloud, IoT e giochi. L'app può essere eseguita in Windows, Linux, Android, macOS e iOS. Per la compilazione di app e giochi sono disponibili strumenti gratuiti, che possono essere distribuiti in server o PC desktop oppure pubblicati negli archivi applicazioni.
 
 ## <a name="documentation"></a>Documentazione
 
-Questa documentazione spiega come creare un'app da zero o come completarne una già iniziata. Sezioni principali:
+Questa documentazione illustra tutte le funzionalità di .NET attraverso piattaforme e linguaggi.  È possibile iniziare a conoscere .NET e i suoi linguaggi nelle sezioni seguenti:
 
+- [Guida alla piattaforma .NET](standard/index.md)
+- [Guida a .NET Core](core/index.md)
+- [Guida a .NET Framework](framework/index.md)
 - [Guida a C#](csharp/index.md)
 - [Guida a F#](fsharp/index.md)
-- [API .NET Core](../api/index.md)
-- [Guida a .NET Core](core/index.md)
-- [Guida a .NET Standard](standard/index.md)
+- [Guida a Visual Basic](visual-basic/index.md)
+
+È anche possibile esplorare i [riferimenti alle API .NET](https://docs.microsoft.com/dotnet/api).
 
 ## <a name="open-source"></a>Open source
 
-Molte parti di .NET sono state create da collaboratori open source. Tutti gli utenti possono offrire il proprio contributo alla [Documentazione di .NET](https://github.com/dotnet/core-docs). È possibile leggere il codice sorgente e contribuire allo sviluppo dei prodotti .NET, inclusi [.NET Core](https://github.com/dotnet/core) e [Xamarin](http://open.xamarin.com). Importanti progetti Microsoft sono stati messi a disposizione della [.NET Foundation](http://dotnetfoundation.org).
+Questa documentazione è completamente [open source](https://github.com/dotnet/docs).  È possibile contribuire in qualsiasi modo, sottoponendo problemi o scrivendo la documentazione.  Anche la maggior parte di .NET è open source:
 
-## <a name="community"></a>Community
+- [Home di .NET Core](https://github.com/dotnet/core)
+- [Librerie .NET](https://github.com/dotnet/corefx)
+- [Runtime di .NET Core](https://github.com/dotnet/coreclr)
+- [Piattaforma del compilatore Roslyn (C# e Visual Basic) e strumenti IDE](https://github.com/dotnet/roslyn)
+- [Compilatore F# e strumenti IDE](https://github.com/microsoft/visualfsharp)
 
-Community di .NET. È possibile unirsi ad altre persone attive nella [community di .NET](https://www.microsoft.com/net/community) per scoprire le novità o chiedere aiuto.
-
-
-
-<!--HONumber=Nov16_HO1-->
-
-
+Esistono anche molti altri progetti chiave nell'ecosistema open source .NET disponibili per [.NET Foundation](http://dotnetfoundation.org).
