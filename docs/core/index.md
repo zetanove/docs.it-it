@@ -1,5 +1,5 @@
 ---
-title: .NET Core
+title: .NET Core | Microsoft Docs
 description: .NET Core
 keywords: .NET, .NET Core
 author: richlander
@@ -10,10 +10,10 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d00f2096e0799107a8a2ff1d12274c6026d4c27a
-ms.openlocfilehash: fe38934a3bd56b7c00e0f4c58c3978a539f23a97
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: cd99aa47233f855ac6da37ff93b981a941ee416a
 ms.contentlocale: it-it
-ms.lasthandoff: 05/14/2017
+ms.lasthandoff: 05/23/2017
 
 ---
 

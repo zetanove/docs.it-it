@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni su C#
+title: Esercitazioni su C# | Microsoft Docs
 description: Esercitazioni su C#
 keywords: .NET, .NET Core
 author: BillWagner
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: fcc83b5b-fb68-4e48-9132-0882677d8056
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b236b0cc55af36cd664bf8f3ddece8305a8a1065
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: bda4350a2a39676f39b5d5660fcde7ab3bee9377
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Docker su .NET Framework
+title: Docker su .NET Framework | Microsoft Docs
 description: Docker su .NET Framework
 keywords: .NET, .NET Server, Docker, contenitori di Windows
 author: BillWagner
@@ -11,10 +11,10 @@ ms.technology: dotnet-docker
 ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 ms.translationtype: Human Translation
-ms.sourcegitcommit: bea5aa270cef5105a685f5141362b439c12af340
-ms.openlocfilehash: 764e73c865eaf838a2b975dbc23382f86fe799ea
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: 600faa333273452716ee85187c5384d54a6fa5fd
 ms.contentlocale: it-it
-ms.lasthandoff: 04/05/2017
+ms.lasthandoff: 05/23/2017
 
 ---
 

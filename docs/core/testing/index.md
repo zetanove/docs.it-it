@@ -1,5 +1,5 @@
 ---
-title: "Testing unità in .NET Core"
+title: "Testing unità in .NET Core | Microsoft Docs"
 description: "Testing unità in .NET Core"
 keywords: .NET, .NET Core
 author: ardalis
@@ -10,10 +10,10 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: ae036cfcad341ffc859336a7ab2a49feec145715
-ms.openlocfilehash: 1bef3c8b36218d0cb228e85ef2ccdffd9a2a1bd7
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: 4983af5386efc6b713f10f200687535b7dc36a11
 ms.contentlocale: it-it
-ms.lasthandoff: 05/18/2017
+ms.lasthandoff: 05/23/2017
 
 ---
 
