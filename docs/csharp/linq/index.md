@@ -1,5 +1,5 @@
 ---
-title: LINQ (Language-Integrated Query)
+title: LINQ (Language Integrated Query) | Microsoft Docs
 description: Introduzione a LINQ (Language-Integrated Query) in C#
 keywords: .NET, .NET Core, LINQ, C#
 author: BillWagner
@@ -11,10 +11,10 @@ ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 007cc736-f5cf-4919-b99b-0c00ab2814ce
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
-ms.openlocfilehash: f63580ba16c2b776ec6f791001cdd48687ce41be
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: 21e4420d385bff07173b265782dd23f89f61e797
 ms.contentlocale: it-it
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 05/23/2017
 
 ---
 
