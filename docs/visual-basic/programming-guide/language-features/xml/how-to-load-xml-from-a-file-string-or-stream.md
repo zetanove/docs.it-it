@@ -32,16 +32,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 242c8b79cbe1329b6f53e9fd4e5495d4a157e08c
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="how-to-load-xml-from-a-file-string-or-stream-visual-basic"></a>Procedura: caricare XML da un file, da una stringa o da un flusso (Visual Basic)
 È possibile creare [valori letterali XML](../../../../visual-basic/language-reference/xml-literals/index.md) e popolarli con i contenuti da un'origine esterna, ad esempio un file, una stringa o un flusso, utilizzando vari metodi. Questi metodi sono illustrati negli esempi seguenti.  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-load-xml-from-a-file"></a>Per caricare XML da un file  
   

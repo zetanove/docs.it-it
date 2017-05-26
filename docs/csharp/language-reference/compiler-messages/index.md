@@ -50,7 +50,7 @@ Per alcuni errori del compilatore C# sono disponibili articoli corrispondenti ch
   
  Per informazioni su come configurare le opzioni relative agli errori e agli avvisi in C#, vedere [Pagina Compilazione, Progettazione progetti (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  (Opzioni del compilatore C#)  

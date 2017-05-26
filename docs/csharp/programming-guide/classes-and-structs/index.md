@@ -123,7 +123,7 @@ Classi e struct sono due dei costrutti di base del Common Type System in .NET Fr
  All'interno di un metodo di classe o struct è possibile usare la tipizzazione implicita per indicare al compilatore di determinare il tipo corretto in fase di compilazione. Per altre informazioni, vedere [Variabili locali tipizzate in modo implicito](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)

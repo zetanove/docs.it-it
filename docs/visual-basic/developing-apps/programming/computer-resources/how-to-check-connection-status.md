@@ -43,7 +43,7 @@ ms.lasthandoff: 05/22/2017
 # <a name="how-to-check-connection-status-in-visual-basic"></a>Procedura: controllare lo stato di connessione in Visual Basic
 Per determinare se il computer ha una rete o una connessione Internet funzionante, è possibile usare la proprietà <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A>.  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-check-whether-a-computer-has-a-working-connection"></a>Per verificare se un computer ha una connessione funzionante  
   

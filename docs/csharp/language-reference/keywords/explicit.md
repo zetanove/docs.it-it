@@ -30,9 +30,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: a5c842eba24f0a30d357afc24aeed10c1447345e
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -62,7 +63,7 @@ La parola chiave `explicit` dichiara un operatore di conversione di tipo definit
  [!code-cs[csrefKeywordsConversion#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/explicit_4.cs)]  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   

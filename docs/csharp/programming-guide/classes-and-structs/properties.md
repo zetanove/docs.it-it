@@ -93,7 +93,7 @@ Se una proprietà ha entrambe le funzioni di accesso `get` e `set`, entrambe le 
 -   [Proprietà implementate automaticamente](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   

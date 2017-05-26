@@ -28,9 +28,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 23789bb11cab17b50928651e1dc00d5d59640c0f
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -39,7 +40,7 @@ ms.lasthandoff: 03/13/2017
   
  È possibile visualizzare dati correlati mediante il trascinamento degli elementi di dettaglio che condividono lo stesso nodo tabella master dal **origini dati** finestra un <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>controllo.</xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> Ad esempio, se si dispone di un'origine dati che dispone di una tabella Customers e una tabella correlata Orders, noterete entrambe le tabelle come nodi di primo livello nella visualizzazione struttura ad albero di **origini dati** finestra. Espandere il nodo di clienti in modo che è possibile visualizzare le colonne. Si noti che l'ultima colonna nell'elenco è un nodo che rappresenta la tabella Orders. Questo nodo rappresenta gli ordini correlati per un cliente.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-related-data-in-two-datarepeater-controls"></a>Per visualizzare dati correlati in due controlli DataRepeater  
   

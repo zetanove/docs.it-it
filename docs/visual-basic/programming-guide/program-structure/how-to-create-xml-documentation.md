@@ -31,16 +31,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 363a20c0fce05566b61e764d05932a9dfb779f90
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="how-to-create-xml-documentation-in-visual-basic"></a>Procedura: creare documentazione XLM in Visual Basic
 In questo esempio viene illustrato come aggiungere commenti di documentazione XML per il codice.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-create-xml-documentation-for-a-type-or-member"></a>Creazione di documentazione XML per un tipo o membro  
   
