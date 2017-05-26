@@ -17,10 +17,11 @@ caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: c50b3e328998b65ec47efe6d7457b36116813c77
-ms.openlocfilehash: aa6ebe6c4ddc9b5cdec267cb2fc114440c189f0c
-ms.lasthandoff: 04/08/2017
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 09b1e6559b7edba2ee7dced1df4f6f6414f87aa9
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="application-development"></a>Sviluppo di applicazioni
@@ -135,7 +136,7 @@ ms.lasthandoff: 04/08/2017
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Cenni preliminari sulla gestione di applicazioni](../../../../docs/framework/wpf/app-development/application-management-overview.md)|Offre una panoramica della classe <xref:System.Windows.Application>, con informazioni sulla gestione di ciclo di vita dell'applicazione, finestre, risorse dell'applicazione e navigazione.|  
-|[Windows in WPF](../../../../docs/framework/wpf/app-development/windows-in-wpf-applications.md)|Offre informazioni dettagliate sulla gestione delle finestre nell'applicazione, tra cui come usare la classe <xref:System.Windows.Window> e le finestre di dialogo.|  
+|[Windows in WPF](../../../../docs/framework/wpf/app-development/windows-in-wpf-applications.md)|Offre informazioni dettagliate sulla gestione delle finestre nell'applicazione, tra cui l'uso della classe <xref:System.Windows.Window> e delle finestre di dialogo.|  
 |[Cenni preliminari sulla navigazione](../../../../docs/framework/wpf/app-development/navigation-overview.md)|Offre una panoramica della gestione della navigazione tra pagine dell'applicazione.|  
 |[Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)|Viene fornita una panoramica su [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].|  
 |[Compilazione e distribuzione di applicazioni WPF](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)|Descrive come compilare e distribuire un'applicazione WPF.|  

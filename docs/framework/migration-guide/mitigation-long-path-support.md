@@ -23,18 +23,18 @@ ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="mitigation-long-path-support"></a>Mitigazione: Supporto del percorso lungo
-A partire dalle applicazioni destinate a [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], i metodi I/O del file system non generano più automaticamente <xref:System.IO.PathTooLongException> se un percorso o nome completo del file supera i 260 (o `MAX_PATH`) caratteri. Al contrario, sono supportati i percorsi lunghi con un massimo di 32 mila caratteri.  
+A partire dalle applicazioni destinate a [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], i metodi I/O del file system non generano più automaticamente un'eccezione <xref:System.IO.PathTooLongException> se un percorso o nome completo del file supera i 260 (o `MAX_PATH`) caratteri. Al contrario, sono supportati i percorsi lunghi con un massimo di 32 mila caratteri.  
   
 ## <a name="impact"></a>Impatto  
- Le applicazioni ricompilate destinate a [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] e che in precedenza generavano automaticamente <xref:System.IO.PathTooLongException>, perché un percorso con più di 260 caratteri genera ora <xref:System.IO.PathTooLongException> solo nelle condizioni seguenti:  
+ Le applicazioni ricompilate destinate a [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] e che in precedenza generavano automaticamente un'eccezione <xref:System.IO.PathTooLongException>, perché un percorso con più di 260 caratteri genera ora un'eccezione <xref:System.IO.PathTooLongException> solo nelle condizioni seguenti:  
   
--   La lunghezza del percorso è maggiore di <xref:System.Int16.MaxValue?displayProperty=fullName> (32.767) caratteri.  
+-   La lunghezza della stringa deve essere maggiore di <xref:System.Int16.MaxValue?displayProperty=fullName> (32,767) caratteri.  
   
 -   Il sistema operativo restituisce `COR_E_PATHTOOLONG` o equivalente.  
   
- Il comportamento legacy per le applicazioni destinate a [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] e versioni precedenti è che il runtime genera automaticamente un <xref:System.IO.PathTooLongException> ogni volta che un percorso supera i 260 caratteri.  
+ Il comportamento legacy per le applicazioni destinate a [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] e versioni precedenti è che il runtime genera automaticamente un'eccezione <xref:System.IO.PathTooLongException> ogni volta che un percorso supera i 260 caratteri.  
   
-## <a name="mitigation"></a>Attenuazione  
+## <a name="mitigation"></a>Mitigazione  
  Per le applicazioni destinate a [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], è possibile rifiutare esplicitamente il supporto del percorso lungo, nel caso non sia opportuno, aggiungendo il codice seguente alla sezione [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) sezione del file app. config:  
   
 ```xml  
