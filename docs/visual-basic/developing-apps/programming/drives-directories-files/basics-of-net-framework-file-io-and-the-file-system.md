@@ -36,16 +36,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9623d1c3076d622d69a0f7c4e711274f6e244023
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: f471bac04a853e5876b9da52b7b858e1e1766e28
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="basics-of-net-framework-file-io-and-the-file-system-visual-basic"></a>Nozioni fondamentali sul file system e sulla funzionalità di I/O di file di .NET Framework (Visual Basic)
-Le classi dello spazio dei nomi <xref:System.IO> vengono usate per gestire unità, file e directory.  
+Le classi dello spazio dei nomi <xref:System.IO> si usano per lavorare con unità, file e directory.  
   
- Lo spazio dei nomi <xref:System.IO> contiene le classi <xref:System.IO.File> e <xref:System.IO.Directory>, che offrono la funzionalità [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] che modifica file e directory. Poiché i metodi di questi oggetti sono membri statici o condivisi, è possibile usarli direttamente senza prima creare un'istanza della classe. A queste classi sono associate le classi <xref:System.IO.FileInfo> e <xref:System.IO.DirectoryInfo> che risulteranno familiari agli utenti della funzionalità `My`. Per usare queste classi è necessario specificare in modo completo i nomi oppure importare gli spazi dei nomi appropriati, includendo le istruzioni `Imports` all'inizio del codice in questione. Per altre informazioni, vedere [Istruzione Imports (tipo e spazio dei nomi .NET)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
+ Lo spazio dei nomi <xref:System.IO> contiene le classi <xref:System.IO.File> e <xref:System.IO.Directory> che forniscono la funzionalità [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] per la gestione di file e directory. Poiché i metodi di questi oggetti sono membri statici o condivisi, è possibile usarli direttamente senza prima creare un'istanza della classe. Associate a queste classi sono le classi <xref:System.IO.FileInfo> e <xref:System.IO.DirectoryInfo> che saranno note agli utenti della funzionalità `My`. Per usare queste classi è necessario specificare in modo completo i nomi oppure importare gli spazi dei nomi appropriati, includendo le istruzioni `Imports` all'inizio del codice in questione. Per altre informazioni, vedere [Istruzione Imports (tipo e spazio dei nomi .NET)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 > [!NOTE]
 >  Altri argomenti di questa sezione usano l'oggetto `My.Computer.FileSystem` anziché le classi `System.IO` per lavorare con unità, file e directory. L'oggetto `My.Computer.FileSystem` è destinato principalmente all'uso nei programmi [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. Le classi `System.IO` sono destinate all'uso da parte di qualsiasi linguaggio che supporta il [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)], tra cui [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
@@ -67,9 +68,9 @@ Le classi dello spazio dei nomi <xref:System.IO> vengono usate per gestire unit�
  Per altre informazioni, vedere [Composing Streams](https://msdn.microsoft.com/library/e4y2dch9).  
   
 ## <a name="types-of-streams"></a>Tipi di flussi  
- In [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)], un flusso è rappresentato dalla classe <xref:System.IO.Stream> che costituisce la classe astratta per tutti i flussi. Non è possibile creare direttamente un'istanza della classe <xref:System.IO.Stream>, ma è necessario usare una delle classi implementata dall'istanza.  
+ Nel [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] un flusso è rappresentato dalla classe <xref:System.IO.Stream> che costituisce la classe astratta per tutti i flussi. Non è possibile creare direttamente un'istanza della classe <xref:System.IO.Stream> ma è necessario usare una delle classi che essa implementa.  
   
- Ci sono diversi tipi di flusso, ma per usare l'input/output (I/O) di file, i tipi più importanti sono la classe <xref:System.IO.FileStream>, che offre un modo di leggere e scrivere in file, e la classe <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>, che offre un modo per creare file e directory in archiviazione isolata. Altri flussi che possono essere usati quando si lavora con l'I/O su file includono:  
+ Esistono molti tipi di flussi, ma per lavorare con l'input/output (I/O) su file, i tipi più importanti sono la classe <xref:System.IO.FileStream>, che fornisce un modo per leggere e scrivere sui file, e la classe <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>, che consente di creare file e directory in uno spazio di memorizzazione isolato. Altri flussi che possono essere usati quando si lavora con l'I/O su file includono:  
   
 -   <xref:System.IO.BufferedStream>  
   
@@ -92,9 +93,9 @@ Le classi dello spazio dei nomi <xref:System.IO> vengono usate per gestire unit�
 |Decrittografare i dati|[Decrittografia di dati](https://msdn.microsoft.com/library/te15te69.aspx)|  
   
 ## <a name="file-access-and-attributes"></a>Accesso ai file e attributi  
- È possibile controllare come i file vengono creati, aperti e condivisi con le enumerazioni <xref:System.IO.FileAccess>, <xref:System.IO.FileMode> e <xref:System.IO.FileShare>, che contengono i flag usati dai costruttori della classe <xref:System.IO.FileStream>. Ad esempio, quando si apre o si crea un nuovo <xref:System.IO.FileStream>, l'enumerazione <xref:System.IO.FileMode> consente di specificare se il file viene aperto per operazioni di accodamento, se viene creato un nuovo file nel caso il file specificato non esista, se il file viene sovrascritto e così via.  
+ È possibile controllare come i file vengono creati, aperti e condivisi con le enumerazioni <xref:System.IO.FileAccess>, <xref:System.IO.FileMode> e <xref:System.IO.FileShare>, che contengono i flag utilizzati dai costruttori della classe <xref:System.IO.FileStream>. Ad esempio, quando si apre o si crea un nuovo <xref:System.IO.FileStream>, l'enumerazione <xref:System.IO.FileMode> consente di specificare se il file viene aperto per operazioni di accodamento, se viene creato un nuovo file quando il file specificato non esiste, se il file viene sovrascritto e così via.  
   
- L'enumerazione <xref:System.IO.FileAttributes> abilita la raccolta di informazioni specifiche del file. L'enumerazione <xref:System.IO.FileAttributes> restituisce gli attributi archiviati del file, ad esempio se è compresso, crittografato, nascosto, in sola lettura, un archivio, una directory, un file di sistema o un file temporaneo.  
+ L'enumerazione <xref:System.IO.FileAttributes> consente la raccolta di informazioni specifiche del file. L'enumerazione <xref:System.IO.FileAttributes> restituisce gli attributi del file archiviato, ad esempio se è compresso, crittografato, nascosto, in sola lettura, un archivio, una directory, un file di sistema o un file temporaneo.  
   
  La tabella seguente elenca le attività che coinvolgono l'accesso ai file e gli attributi di file:  
   
@@ -104,7 +105,7 @@ Le classi dello spazio dei nomi <xref:System.IO> vengono usate per gestire unit�
 |Determinare gli attributi di un file|<xref:System.IO.FileAttributes>|  
   
 ## <a name="file-permissions"></a>Autorizzazioni di file  
- Il controllo dell'accesso ai file e alle directory può essere eseguito con la classe <xref:System.Security.Permissions.FileIOPermission>. Questo può essere particolarmente importante per gli sviluppatori che lavorano con i Web Form che, per impostazione predefinita, vengono eseguiti nel contesto di un account utente locale speciale denominato ASPNET, che viene creato come parte delle installazioni di [!INCLUDE[vstecasp](../../../../csharp/language-reference/preprocessor-directives/includes/vstecasp_md.md)] e [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] . Quando una tale applicazione richiede l'accesso a una risorsa, l'account utente ASPNET dispone di autorizzazioni limitate, che potrebbero impedire all'utente di eseguire azioni quali la scrittura in un file da un'applicazione Web. Per altre informazioni, vedere [Autorizzazioni di sicurezza](http://msdn.microsoft.com/en-us/b03757b4-e926-4196-b738-3733ced2bda0) e <xref:System.Security.Permissions.FileIOPermission>.  
+ Il controllo dell'accesso ai file e alle directory può essere eseguito con la classe <xref:System.Security.Permissions.FileIOPermission>. Questo può essere particolarmente importante per gli sviluppatori che lavorano con i Web Form che, per impostazione predefinita, vengono eseguiti nel contesto di un account utente locale speciale denominato ASPNET, che viene creato come parte delle installazioni di [!INCLUDE[vstecasp](../../../../csharp/language-reference/preprocessor-directives/includes/vstecasp_md.md)] e [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)]. Quando una tale applicazione richiede l'accesso a una risorsa, l'account utente ASPNET dispone di autorizzazioni limitate, che potrebbero impedire all'utente di eseguire azioni quali la scrittura in un file da un'applicazione Web. Per altre informazioni, vedere [Autorizzazioni di sicurezza](http://msdn.microsoft.com/en-us/b03757b4-e926-4196-b738-3733ced2bda0) e <xref:System.Security.Permissions.FileIOPermission>.  
   
 ## <a name="isolated-file-storage"></a>Archiviazione di file isolati  
  Lo spazio di archiviazione isolato è un tentativo di risolvere i problemi creati durante l'uso dei file in cui l'utente o il codice non dispone delle autorizzazioni necessarie. Lo spazio di archiviazione isolato assegna a ciascun utente un raggruppamento di dati che può contenere uno o più archivi. Gli archivi possono essere isolati gli uni dagli altri per utente e per assembly. Solo l'utente e l'assembly che ha creato l'archivio può accedervi. Un archivio opera come un file system virtuale completo: all'interno di un archivio è possibile creare e modificare directory e file.  
@@ -122,7 +123,7 @@ Le classi dello spazio dei nomi <xref:System.IO> vengono usate per gestire unit�
 |Eliminare un file o una directory in un spazio di memorizzazione isolato|[Procedura: Eliminare file e directory nello spazio di memorizzazione isolato](https://msdn.microsoft.com/library/kx3852wf.aspx)|  
   
 ## <a name="file-events"></a>Eventi di file  
- Il componente <xref:System.IO.FileSystemWatcher> consente di controllare le modifiche in file e directory del sistema o in ogni computer al quale si ha accesso di rete. Ad esempio, se un file viene modificato, è consigliabile inviare all'utente un avviso che la modifica ha avuto luogo. Quando vengono apportate modifiche, vengono generati uno o più eventi, che vengono archiviati in un buffer e passati al componente <xref:System.IO.FileSystemWatcher> per l'elaborazione.  
+ Il componente <xref:System.IO.FileSystemWatcher> consente di controllare le modifiche nei file e nelle directory del sistema o in qualsiasi computer a cui si ha accesso dalla rete. Ad esempio, se un file viene modificato, è consigliabile inviare all'utente un avviso che la modifica ha avuto luogo. Quando vengono apportate modifiche, vengono generati uno o più eventi, che vengono archiviati in un buffer e consegnati al componente <xref:System.IO.FileSystemWatcher> per l'elaborazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Composizione dei flussi](https://msdn.microsoft.com/library/e4y2dch9)   
