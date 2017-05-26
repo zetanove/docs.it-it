@@ -1,23 +1,42 @@
 ---
-title: "Procedura: eseguire il cast sicuro da bool? a bool (Guida per programmatori C#) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "cast [C#], tipi nullable"
-  - "nullable (tipi) [C#], cast da bool? a bool"
+title: 'Procedura: Eseguire il cast sicuro da bool? a bool (Guida per programmatori C#) | Microsoft Docs'
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- casting [C#], nullable types
+- nullable types [C#], casting bool? to bool
 ms.assetid: e06e4274-a443-422d-8ef1-9dbf9df55237
 caps.latest.revision: 9
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 9
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
+ms.openlocfilehash: 7648b9bb5d54b58dc13371e1308f038289df8e56
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
+
 ---
-# Procedura: eseguire il cast sicuro da bool? a bool (Guida per programmatori C#)
-Il tipo `bool?` nullable può contenere tre valori diversi: `true`, `false` e `null`.  Non è pertanto possibile utilizzare il tipo `bool?` in istruzioni condizionali, ad esempio con `if`, `for` o `while`.  Il codice seguente, ad esempio, causa un errore del compilatore:  
+# <a name="how-to-safely-cast-from-bool-to-bool-c-programming-guide"></a>Procedura: eseguire il cast sicuro da bool? a bool (Guida per programmatori C#)
+Il tipo nullable `bool?` può contenere tre valori diversi: `true`, `false` e `null`. Pertanto il tipo `bool?` non può essere usato in istruzioni condizionali, ad esempio con `if`, `for` o `while`. Il codice seguente, ad esempio, causa un errore di compilazione.  
   
 ```  
 bool? b = null;  
@@ -26,11 +45,11 @@ if (b) // Error CS0266.
 }  
 ```  
   
- Questa operazione non è consentita, in quanto il significato di `null` non è chiaro nel contesto di un'istruzione condizionale.  Per utilizzare un valore `bool?` in un'istruzione condizionale, controllare innanzitutto la proprietà <xref:System.Nullable%601.HasValue%2A> per garantire che il valore non sia `null`, quindi eseguire il cast a `bool`.  Per ulteriori informazioni, vedere [bool](../../../csharp/language-reference/keywords/bool.md).  Se si esegue il cast su un valore `bool?` con valore `null`, verrà generata un'eccezione <xref:System.InvalidOperationException> nel test condizionale.  Nell'esempio seguente viene illustrato un modo per eseguire il cast in modo sicuro da `bool?` a `bool`:  
+ Questo codice non è consentito perché non è chiaro il significato di `null` nel contesto di un'istruzione condizionale. Prima di usare un tipo `bool?` in un'istruzione condizionale, verificare che il valore della proprietà <xref:System.Nullable%601.HasValue%2A> del tipo non sia `null`, quindi eseguire il cast a `bool`. Per altre informazioni, vedere [bool](../../../csharp/language-reference/keywords/bool.md). Se si esegue il cast per un `bool?` con valore `null`, nel testo condizionale viene aggiunta l'eccezione <xref:System.InvalidOperationException>. L'esempio seguente visualizza un modo sicuro per eseguire il cast da `bool?` a `bool`:  
   
-## Esempio  
+## <a name="example"></a>Esempio  
   
-```c#  
+```csharp  
 bool? test = null;  
 // Other code that may or may not  
 // give a value to test.  
@@ -46,8 +65,8 @@ if((bool)test) //now this cast is safe
 }  
 ```  
   
-## Vedere anche  
- [Guida per programmatori C\#](../../../csharp/programming-guide/index.md)   
+## <a name="see-also"></a>Vedere anche  
+ [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Parole chiave letterali](../../../csharp/language-reference/keywords/literal-keywords.md)   
  [Tipi nullable](../../../csharp/programming-guide/nullable-types/index.md)   
- [?? Operatore](../../../csharp/language-reference/operators/null-conditional-operator.md)
+ [?? (operatore)](../../../csharp/language-reference/operators/null-conditional-operator.md)

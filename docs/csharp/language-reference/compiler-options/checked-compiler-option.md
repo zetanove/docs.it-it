@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: c6cfc54c2dbd3e14d874d7684fdc75a972260cc3
-ms.lasthandoff: 03/13/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="checked-c-compiler-options"></a>/checked (opzioni del compilatore C#)
@@ -55,15 +56,15 @@ L'opzione **/checked** specifica se un'istruzione di calcolo di interi che risul
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Per impostare l'opzione del compilatore nell'ambiente di sviluppo di Visual Studio  
   
-1.  Aprire la pagine **Proprietà** del progetto. Per altre informazioni, vedere [Pagina Compilazione, Creazione progetti (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp).  
+1.  Aprire la pagina **Proprietà** del progetto. Per altre informazioni, vedere [Pagina Compilazione, Creazione progetti (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-page-project-designer-csharp).  
   
-2.  Fare clic sulla pagina della proprietà **Compilazione** .  
+2.  Fare clic sulla pagina della proprietà **Compilazione**.  
   
 3.  Fare clic su **Avanzate** .  
   
 4.  Modificare la proprietà **Controlla overflow/underflow aritmetico**.  
   
- Per accedere a questa opzione del compilatore, vedere <xref:VSLangProj80.CSharpProjectConfigurationProperties3.CheckForOverflowUnderflow%2A>.  
+ Per accedere all'opzione del compilatore a livello di codice, vedere <xref:VSLangProj80.CSharpProjectConfigurationProperties3.CheckForOverflowUnderflow%2A>.  
   
 ## <a name="example"></a>Esempio  
  Il comando seguente compila `t2.cs`. L'uso di `/checked` nel comando specifica che l'istruzione di calcolo di interi nel file che non è nell'ambito della parola chiave `checked` o `unchecked` e che risulta in un valore non incluso nell'intervallo dei tipi di dati, genera un'eccezione in fase di esecuzione.  

@@ -1,5 +1,5 @@
 ---
-title: Versionamento di .NET Core
+title: Controllo delle versioni di .NET | Microsoft Docs
 description: Versionamento di .NET Core
 keywords: .NET, .NET Core
 author: richlander
@@ -10,10 +10,10 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
-ms.openlocfilehash: 7be49f3ac7a7806e631eacf5004343919654881e
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: 3cdd3ff040bfd9d307f0d0c0a07fbd0d972cbd3e
 ms.contentlocale: it-it
-ms.lasthandoff: 04/05/2017
+ms.lasthandoff: 05/23/2017
 
 ---
 

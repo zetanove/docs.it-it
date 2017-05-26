@@ -14,10 +14,11 @@ ms.assetid: 516792fb-461d-40a8-8a50-9993a51258fc
 caps.latest.revision: 4
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: b43d3cb5cc7154c1133c5fa17e5bdacca97a38c9
-ms.lasthandoff: 03/13/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 
 ---
@@ -37,23 +38,23 @@ Dopo aver creato un albero XML o aver caricato un documento XML in un albero XML
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|<xref:System.Xml.Linq.XNode.Ancestors%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei predecessori dell'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei predecessori con l'<xref:System.Xml.Linq.XName> specificato.|  
-|<xref:System.Xml.Linq.XContainer.Descendants%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei discendenti dell'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei discendenti con l'<xref:System.Xml.Linq.XName> specificato.|  
-|<xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi figlio dell'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi figlio con l'<xref:System.Xml.Linq.XName> specificato.|  
-|<xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che seguono l'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che seguono l'elemento con l'<xref:System.Xml.Linq.XName> specificato.|  
-|<xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che precedono l'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che precedono l'elemento con l'<xref:System.Xml.Linq.XName> specificato.|  
-|<xref:System.Xml.Linq.XElement.AncestorsAndSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> di questo elemento e dei relativi predecessori. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi con l'<xref:System.Xml.Linq.XName> specificato.|  
-|<xref:System.Xml.Linq.XElement.DescendantsAndSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> di questo elemento e dei relativi discendenti. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi con l'<xref:System.Xml.Linq.XName> specificato.|  
+|<xref:System.Xml.Linq.XNode.Ancestors%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei progenitori dell'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei progenitori per i quali è stato specificato <xref:System.Xml.Linq.XName>.|  
+|<xref:System.Xml.Linq.XContainer.Descendants%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei discendenti dell'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dei discendenti per i quali è stato specificato <xref:System.Xml.Linq.XName>.|  
+|<xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi figlio dell'elemento. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi figlio per i quali è stato specificato <xref:System.Xml.Linq.XName>.|  
+|<xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che seguono l'elemento corrente. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che seguono l'elemento per i quali è stato specificato <xref:System.Xml.Linq.XName>.|  
+|<xref:System.Xml.Linq.XNode.ElementsBeforeSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che precedono l'elemento corrente. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi che precedono l'elemento per i quali è stato specificato <xref:System.Xml.Linq.XName>.|  
+|<xref:System.Xml.Linq.XElement.AncestorsAndSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dell'elemento e dei relativi progenitori. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi per i quali è stato specificato <xref:System.Xml.Linq.XName>.|  
+|<xref:System.Xml.Linq.XElement.DescendantsAndSelf%2A?displayProperty=fullName>|Restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> dell'elemento e dei relativi discendenti. Un overload restituisce un <xref:System.Collections.Generic.IEnumerable%601> di <xref:System.Xml.Linq.XElement> degli elementi per i quali è stato specificato <xref:System.Xml.Linq.XName>.|  
   
 ## <a name="method-for-retrieving-a-single-element"></a>Metodo per il recupero di un singolo elemento  
  Il metodo seguente consente di recuperare un singolo elemento figlio da un oggetto <xref:System.Xml.Linq.XElement>.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|<xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>|Restituisce il primo oggetto <xref:System.Xml.Linq.XElement> figlio con l'<xref:System.Xml.Linq.XName> specificato.|  
+|<xref:System.Xml.Linq.XContainer.Element%2A?displayProperty=fullName>|Restituisce il primo oggetto <xref:System.Xml.Linq.XElement> figlio per il quale è stato specificato <xref:System.Xml.Linq.XName>.|  
   
 ## <a name="method-for-retrieving-a-collection-of-attributes"></a>Metodo per il recupero di una raccolta di attributi  
- Il metodo seguente consente di recuperare attributi da un oggetto <xref:System.Xml.Linq.XElement>.  
+ Il metodo seguente consente di recuperare gli attributi da un oggetto <xref:System.Xml.Linq.XElement>.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
@@ -64,7 +65,7 @@ Dopo aver creato un albero XML o aver caricato un documento XML in un albero XML
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|<xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>|Restituisce l'attributo<xref:System.Xml.Linq.XAttribute> con l'<xref:System.Xml.Linq.XName> specificato.|  
+|<xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=fullName>|Restituisce l'oggetto <xref:System.Xml.Linq.XAttribute> per il quale è stato specificato <xref:System.Xml.Linq.XName>.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Assi LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)

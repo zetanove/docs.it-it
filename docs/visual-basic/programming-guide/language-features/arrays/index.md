@@ -34,14 +34,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1eeccc9b4f1cb00d434b1af61656b64bb860dbb8
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 14abadaf548e228244a1ff7ca72fa3896ef4eb5d
+ms.openlocfilehash: 324055a730b977faad637a14362b5c906931c721
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 ---
 # <a name="arrays-in-visual-basic"></a>Matrici in Visual Basic
-Una matrice è costituita da un insieme di valori logicamente correlati tra loro, ad esempio il numero degli studenti iscritti a ciascun anno scolastico di una scuola elementare.  Per informazioni sulle matrici in Visual Basic, Applications Edition, vedere la [documentazione di riferimento del linguaggio](https://msdn.microsoft.com/library/office/gg264383\(v=office.14\).aspx).  
+Una matrice è costituita da un insieme di valori logicamente correlati tra loro, ad esempio il numero degli studenti iscritti a ciascun anno scolastico di una scuola elementare.  Per informazioni sulle matrici in Visual Basic for Applications (VBA), vedere la [documentazione di riferimento del linguaggio](https://msdn.microsoft.com/library/office/gg264383\(v=office.14\).aspx).  
   
  Una matrice permette di fare riferimento ai valori correlati tramite lo stesso nome e usare un numero, denominato indice, per distinguere i valori. I singoli valori sono denominati elementi della matrice e sono contigui, dall'indice 0 al valore di indice più alto.  
   
@@ -50,7 +51,6 @@ Una matrice è costituita da un insieme di valori logicamente correlati tra loro
  Di seguito sono riportati alcuni esempi:  
   
 ```vb  
-  
 'Declare a single-dimension array of 5 values  
 Dim numbers(4) As Integer   
   
@@ -121,7 +121,7 @@ Elementi della matrice "students"
   
  Per fare riferimento all'intera matrice è sufficiente usare il nome della variabile di matrice senza indici.  
   
- La matrice `students` nell'esempio precedente usa un unico indice ed è detta unidimensionale. Una matrice che usa più indici è detta multidimensionale. Per altre informazioni, vedere il resto di questo argomento e [Dimensioni di matrice in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md).  
+ La matrice `students` nell'esempio precedente usa un unico indice ed è detta unidimensionale. Una matrice che usa più indici è detta multidimensionale. Per altre informazioni, vedere il resto di questo argomento e [Array Dimensions in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md).  
   
 ##  <a name="BKMK_CreatingAnArray"></a> Creazione di una matrice  
  La dimensione di una matrice può essere definita in vari modi. È possibile specificare la dimensione quando la matrice viene dichiarata, come illustra l'esempio seguente.  
@@ -154,7 +154,7 @@ Elementi della matrice "students"
   
  [!code-vb[VbVbalrCollectionInitializers#3](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_8.vb)]  
   
- Quando si usa l'inferenza del tipo, il tipo della matrice viene determinato dal tipo dominante nell'elenco di valori fornito per il valore letterale di matrice. Il tipo dominante è un tipo univoco in cui tutti gli altri tipi nel valore letterale di matrice possono ampliarsi. Se non è possibile determinare il tipo univoco, il tipo dominante è il tipo univoco in cui possono restringersi tutti gli altri tipi nella matrice. Se nessuno di questi tipi univoci può essere determinato, il tipo dominante è `Object`. Se, ad esempio, l'elenco di valori fornito al valore letterale di matrice contiene valori di tipo `Integer`, `Long`e `Double`, la matrice risultante è di tipo `Double`. Sia `Integer` che `Long` possono ampliarsi solo nel tipo `Double`. `Double` è pertanto il tipo dominante. Per altre informazioni, vedere [Conversioni di ampliamento e restrizione](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md). Queste regole di inferenza si applicano ai tipi dedotti per le matrici che sono variabili locali definite in un membro di classe. Anche se è possibile usare valori letterali di matrice quando si creano variabili a livello di classe, non è possibile usare l'inferenza del tipo a livello di classe. Di conseguenza, i valori letterali di matrice specificati a livello di classe consentono di dedurre i valori forniti per il valore letterale di matrice come tipo `Object`.  
+ Quando si usa l'inferenza del tipo, il tipo della matrice viene determinato dal tipo dominante nell'elenco di valori fornito per il valore letterale di matrice. Il tipo dominante è un tipo univoco in cui tutti gli altri tipi nel valore letterale di matrice possono ampliarsi. Se non è possibile determinare il tipo univoco, il tipo dominante è il tipo univoco in cui possono restringersi tutti gli altri tipi nella matrice. Se nessuno di questi tipi univoci può essere determinato, il tipo dominante è `Object`. Se, ad esempio, l'elenco di valori fornito al valore letterale di matrice contiene valori di tipo `Integer`, `Long`e `Double`, la matrice risultante è di tipo `Double`. Sia `Integer` che `Long` possono ampliarsi solo nel tipo `Double`. `Double` è pertanto il tipo dominante. Per altre informazioni, vedere [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md). Queste regole di inferenza si applicano ai tipi dedotti per le matrici che sono variabili locali definite in un membro di classe. Anche se è possibile usare valori letterali di matrice quando si creano variabili a livello di classe, non è possibile usare l'inferenza del tipo a livello di classe. Di conseguenza, i valori letterali di matrice specificati a livello di classe consentono di dedurre i valori forniti per il valore letterale di matrice come tipo `Object`.  
   
  È possibile specificare in modo esplicito il tipo di elementi in una matrice creata usando un valore letterale di matrice. In tal caso, i valori nel valore letterale di matrice devono potersi ampliare al tipo degli elementi della matrice. L'esempio di codice seguente consente di creare una matrice di tipo `Double` da un elenco di numeri interi.  
   
@@ -224,7 +224,7 @@ Elementi della matrice "students"
   
  Potrebbe essere necessario creare una matrice di lunghezza zero nelle circostanze seguenti:  
   
--   Senza rischiare un'eccezione <xref:System.NullReferenceException>, il codice deve accedere ai membri della classe <xref:System.Array>, come <xref:System.Array.Length%2A> o <xref:System.Array.Rank%2A> oppure chiamare una funzione [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] come <xref:Microsoft.VisualBasic.Information.UBound%2A>.  
+-   Senza correre il rischio di generare un'eccezione <xref:System.NullReferenceException>, il codice deve accedere ai membri della classe <xref:System.Array>, ad esempio <xref:System.Array.Length%2A> o <xref:System.Array.Rank%2A> oppure chiamare una funzione [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], come ad esempio <xref:Microsoft.VisualBasic.Information.UBound%2A>.  
   
 -   È consigliabile semplificare il codice che la usa escludendo la verifica della presenza di `Nothing` come caso particolare.  
   
@@ -241,7 +241,7 @@ Dim prices(3, 4, 5) As Long
   
  La dimensione complessiva della matrice nella variabile `prices` è (3 + 1) x (4 + 1) x (5 + 1) = 120.  
   
- È possibile determinare la dimensione di una matrice usando la proprietà <xref:System.Array.Length%2A>. È possibile determinare la lunghezza di ogni dimensione di una matrice multidimensionale usando il metodo <xref:System.Array.GetLength%2A>.  
+ È possibile determinare le dimensioni di una matrice usando la proprietà <xref:System.Array.Length%2A>. È possibile determinare la lunghezza di ogni dimensione di una matrice multidimensionale usando il metodo <xref:System.Array.GetLength%2A>.  
   
  Per ridimensionare una variabile di matrice è possibile assegnare un nuovo oggetto matrice o usare l'istruzione `ReDim` .  
   
@@ -293,7 +293,7 @@ Dim prices(3, 4, 5) As Long
   
 |Termine|Definizione|  
 |----------|----------------|  
-|[Dimensioni di matrice in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md)|Illustra il numero di dimensioni, o rango, e le dimensioni delle matrici.|  
+|[Array Dimensions in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/array-dimensions.md)|Illustra il numero di dimensioni, o rango, e le dimensioni delle matrici.|  
 |[Procedura: Inizializzare una variabile di matrice in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)|Descrive come popolare le matrici con valori iniziali.|  
 |[Procedura: Ordinare una matrice in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-sort-an-array.md)|Illustra come ordinare alfabeticamente gli elementi di una matrice.|  
 |[Procedura: Assegnare una matrice a un'altra matrice](../../../../visual-basic/programming-guide/language-features/arrays/how-to-assign-one-array-to-another-array.md)|Descrive regole e passaggi per l'assegnazione di una matrice a un'altra variabile di matrice.|  
@@ -303,3 +303,4 @@ Dim prices(3, 4, 5) As Long
  <xref:System.Array>   
  [Istruzione Dim](../../../../visual-basic/language-reference/statements/dim-statement.md)   
  [Istruzione ReDim](../../../../visual-basic/language-reference/statements/redim-statement.md)
+

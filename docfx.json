@@ -39,7 +39,7 @@
         {
           "files": ["**/*.md"],
           "src": "docs",
-          "dest": "articles",
+          "dest": ".",
           "exclude": [
 	"**/includes/**", 
 	"***/contributing.md",
@@ -121,7 +121,7 @@
             "**/*.bmp"
           ],
           "src": "docs",
-          "dest": "articles",
+          "dest": ".",
           "exclude": [
             "**/obj/**",
             "_themes/DocPacker/**"

@@ -1,5 +1,5 @@
 ---
-title: Guida a C#
+title: Guida di C# | Microsoft Docs
 description: Guida a C#
 keywords: .NET, .NET Core
 author: BillWagner
@@ -9,10 +9,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 52db8280-0e53-40cf-858b-e8eef3997dea
-translationtype: Human Translation
-ms.sourcegitcommit: 0184e07012ffe1a1300dc5af7e99e0d5a3517d6b
-ms.openlocfilehash: 2ebb4a32d7898f38596ccc526a721c8f811a5951
-ms.lasthandoff: 05/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: b87601e339a73b7d9f3132d80496742317439ffa
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 ---
 

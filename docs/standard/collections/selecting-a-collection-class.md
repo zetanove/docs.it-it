@@ -20,10 +20,11 @@ caps.latest.revision: 20
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: 403a78e3fc1496b91403b3c42494e34d12607b70
-ms.lasthandoff: 04/18/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="selecting-a-collection-class"></a>Selezione di una classe Collection
@@ -41,7 +42,7 @@ Assicurarsi di scegliere con attenzione la classe Collection, poiché l'uso del 
   
     -   La classe <xref:System.Collections.Queue> e la classe generica <xref:System.Collections.Generic.Queue%601> o <xref:System.Collections.Concurrent.ConcurrentQueue%601> consentono l'accesso FIFO. Per altre informazioni, vedere [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md) (Quando usare una raccolta thread-safe).  
   
-    -   La classe <xref:System.Collections.Stack> e la classe generica <xref:System.Collections.Generic.Stack%601> o <xref:System.Collections.Concurrent.ConcurrentSTack%601> consentono l'accesso LIFO. Per altre informazioni, vedere [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md) (Quando usare una raccolta thread-safe).  
+    -   La classe <xref:System.Collections.Stack> e la classe generica <xref:System.Collections.Generic.Stack%601> o <xref:System.Collections.Concurrent.ConcurrentStack%601> consentono l'accesso LIFO. Per altre informazioni, vedere [When to Use a Thread-Safe Collection](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md) (Quando usare una raccolta thread-safe).  
   
     -   La classe generica <xref:System.Collections.Generic.LinkedList%601> consente l'accesso sequenziale dall'inizio alla fine o viceversa.  
   
@@ -55,9 +56,9 @@ Assicurarsi di scegliere con attenzione la classe Collection, poiché l'uso del 
   
 -   Ogni elemento contiene un valore, una combinazione di una chiave e un valore o una combinazione di una chiave e più valori?  
   
-    -   Un valore: usare una delle raccolte basate sull'interfaccia <xref:System.Collections.IList> o l'interfaccia generica <xref:System.Collections.Generic.IList%601>.  
+    -   Un valore: usare una qualsiasi raccolta basata sull'interfaccia <xref:System.Collections.IList> o sull'interfaccia generica <xref:System.Collections.Generic.IList%601>.  
   
-    -   Una chiave e un valore: usare una delle raccolte basate sull'interfaccia <xref:System.Collections.IDictionary> o l'interfaccia generica <xref:System.Collections.Generic.IDictionary%602>.  
+    -   Una chiave e un valore: usare una qualsiasi raccolta basata sull'interfaccia <xref:System.Collections.IDictionary> o sull'interfaccia generica <xref:System.Collections.Generic.IDictionary%602>.  
   
     -   Un valore con chiave incorporata: usare la classe generica <xref:System.Collections.ObjectModel.KeyedCollection%602>.  
   
@@ -65,24 +66,24 @@ Assicurarsi di scegliere con attenzione la classe Collection, poiché l'uso del 
   
 -   È necessario ordinare gli elementi in modo diverso da come sono stati immessi?  
   
-    -   La classe <xref:System.Collections.Hashtable> ordina gli elementi in base ai rispettivi codici hash.  
+    -   Gli elementi della classe <xref:System.Collections.Hashtable> vengono ordinati in base ai rispettivi codici hash.  
   
-    -   La classe <xref:System.Collections.SortedList> e le classi generiche <xref:System.Collections.Generic.SortedDictionary%602> e <xref:System.Collections.Generic.SortedList%602> ordinano i relativi elementi in base alla chiave, facendo riferimento alle implementazioni dell'interfaccia <xref:System.Collections.IComparer> e dell'interfaccia generica <xref:System.Collections.Generic.IComparer%601>.  
+    -   Gli elementi della classe <xref:System.Collections.SortedList> e delle classi generiche <xref:System.Collections.Generic.SortedDictionary%602> e <xref:System.Collections.Generic.SortedList%602> vengono ordinati in base alla chiave, a seconda delle implementazioni dell'interfaccia <xref:System.Collections.IComparer> e dell'interfaccia generica <xref:System.Collections.Generic.IComparer%601>.  
   
-    -   <xref:System.Collections.ArrayList> offre un metodo <xref:System.Collections.ArrayList.Sort%2A> che accetta un'implementazione <xref:System.Collections.IComparer> come parametro. La controparte generica, la classe generica <xref:System.Collections.Generic.List%601> offre un metodo <xref:System.Collections.Generic.List%601.Sort%2A> che accetta un'implementazione dell'interfaccia generica <xref:System.Collections.Generic.IComparer%601> come parametro.  
+    -   <xref:System.Collections.ArrayList> fornisce un metodo <xref:System.Collections.ArrayList.Sort%2A> che accetta come parametro un'implementazione di <xref:System.Collections.IComparer>. La relativa controparte generica, ossia la classe <xref:System.Collections.Generic.List%601>, fornisce un metodo <xref:System.Collections.Generic.List%601.Sort%2A> che accetta come parametro un'implementazione dell'interfaccia generica <xref:System.Collections.Generic.IComparer%601>.  
   
 -   Sono necessarie le ricerche veloci e il recupero di informazioni?  
   
-    -   <xref:System.Collections.Specialized.ListDictionary> è più veloce di <xref:System.Collections.Hashtable> per le raccolte dimensioni ridotte (non più di 10 elementi). La classe generica <xref:System.Collections.Generic.Dictionary%602> offre un sistema di ricerca più rapido della classe generica <xref:System.Collections.Generic.SortedDictionary%602>. L'implementazione multithread è <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> offre un rapido inserimento multithread per i dati non ordinati. Per altre informazioni su entrambi i tipi di multithread, vedere [Quando usare una raccolta thread-safe](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).  
+    -   <xref:System.Collections.Specialized.ListDictionary> è più veloce di <xref:System.Collections.Hashtable> per le raccolte che non superano le 10 voci. La classe generica <xref:System.Collections.Generic.Dictionary%602> consente ricerche più veloci rispetto alla classe generica <xref:System.Collections.Generic.SortedDictionary%602>. L'implementazione multithreading è <xref:System.Collections.Concurrent.ConcurrentDictionary%602>. <xref:System.Collections.Concurrent.ConcurrentBag%601> fornisce un inserimento multithreading veloce per i dati non ordinati. Per altre informazioni su entrambi i tipi di multithread, vedere [Quando usare una raccolta thread-safe](../../../docs/standard/collections/thread-safe/when-to-use-a-thread-safe-collection.md).  
   
 -   Sono necessarie raccolte che accettano solo stringhe?  
   
-    -   <xref:System.Collections.Specialized.StringCollection> (basata su <xref:System.Collections.IList>) e <xref:System.Collections.Specialized.StringDictionary> (basata su <xref:System.Collections.IDictionary>) sono nello spazio dei nomi <xref:System.Collections.Specialized>.  
+    -   La classe <xref:System.Collections.Specialized.StringCollection> (basata su <xref:System.Collections.IList>) e la classe <xref:System.Collections.Specialized.StringDictionary> (basata su <xref:System.Collections.IDictionary>) sono incluse nello spazio dei nomi <xref:System.Collections.Specialized>.  
   
-    -   È anche possibile usare una qualsiasi classe di raccolte generiche nello spazio dei nomi <xref:System.Collections.Generic> come raccolte di stringhe fortemente tipizzate, specificando la classe <xref:System.String> per i relativi argomenti di tipo generico.  
+    -   È anche possibile usare una qualsiasi classe di raccolte generiche nello spazio dei nomi <xref:System.Collections.Generic> come raccolte di stringhe fortemente tipizzate specificando la classe <xref:System.String> per i relativi argomenti di tipo generico.  
   
 ## <a name="linq-to-objects-and-plinq"></a>LINQ to Objects e PLINQ  
- LINQ to Objects consente agli sviluppatori di usare le query LINQ per accedere agli oggetti in memoria, a condizione che il tipo dell'oggetto implementi <xref:System.Collections.IEnumerable> o <xref:System.Collections.Generic.IEnumerable%601>. Le query LINQ forniscono un modello comune per l'accesso ai dati, sono in genere più concise e leggibili dei cicli `foreach` standard e forniscono funzionalità di filtro, ordinamento e raggruppamento. Per altre informazioni, vedere [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9).  
+ LINQ to Objects permette agli sviluppatori di usare le query LINQ per accedere agli oggetti in memoria, a condizione che il tipo dell'oggetto implementi <xref:System.Collections.IEnumerable> o <xref:System.Collections.Generic.IEnumerable%601>. Le query LINQ forniscono un modello comune per l'accesso ai dati, sono in genere più concise e leggibili dei cicli `foreach` standard e forniscono funzionalità di filtro, ordinamento e raggruppamento. Per altre informazioni, vedere [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9).  
   
  PLINQ fornisce un'implementazione parallela di LINQ to Objects in grado di offrire un'esecuzione più rapida delle query in molti scenari, grazie a un uso più efficiente dei computer multicore. Per altre informazioni, vedere [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).  
   

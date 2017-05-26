@@ -1,5 +1,5 @@
 ---
-title: "Portabilità in .NET Core da .NET Framework"
+title: "Portabilità in .NET Core da .NET Framework | Microsoft Docs"
 description: "Portabilità in .NET Core da .NET Framework"
 keywords: .NET, .NET Core
 author: cartermp
@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 00d00d38-99af-44f4-a75f-defcd9729dc5
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 5ad986ee6cfba17602398adc54f88dc03c133499
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: f922fd75bf22d3cfb0c54276443820bae175bc79
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni di .NET Core
+title: Esercitazioni su .NET Core | Microsoft Docs
 description: Esercitazioni di .NET Core
 keywords: .NET, .NET Core
 author: richlander
@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
-translationtype: Human Translation
-ms.sourcegitcommit: 39e8e757a446b30ab18914465853138e1c239e40
-ms.openlocfilehash: 5630e2202f822015437bbb1d3f2cb751825e382b
-ms.lasthandoff: 05/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: 86320023259bae3bd262a146681f24a6c6d3f7ea
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 ---
 

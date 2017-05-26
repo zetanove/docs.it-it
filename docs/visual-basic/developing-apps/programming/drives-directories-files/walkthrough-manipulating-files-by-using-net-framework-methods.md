@@ -41,10 +41,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e8bf73f32dba51455542778ed91ef3bfd2898754
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: a16d2168548dadf9210b653d90ce229d99469b64
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="walkthrough-manipulating-files-by-using-net-framework-methods-visual-basic"></a>Procedura dettagliata: modifica di file mediante i metodi .NET Framework (Visual Basic)
@@ -74,7 +75,7 @@ Questa procedura dettagliata spiega come aprire e leggere un file usando la clas
 |<xref:System.Windows.Forms.TextBox>|**Nome**<br /><br /> **Testo**<br /><br /> **Multiline**|`Entry`<br /><br /> **Immettere un valore.**<br /><br /> `False`|  
   
 ## <a name="writing-to-the-file"></a>Scrivere nel file  
- Per aggiungere la possibilità di scrivere in un file usando l'applicazione, usare la classe <xref:System.IO.StreamWriter>. La classe <xref:System.IO.StreamWriter> è progettata per l'output di caratteri in una codifica particolare, mentre la classe <xref:System.IO.Stream> è progettata per l'input e l'output di byte. Usare <xref:System.IO.StreamWriter> per scrivere righe di informazioni in un file di testo standard. Per altre informazioni sulla classe <xref:System.IO.StreamWriter>, vedere <xref:System.IO.StreamWriter>.  
+ Per aggiungere la possibilità di scrivere in un file tramite l'applicazione, usare la classe <xref:System.IO.StreamWriter>. La classe <xref:System.IO.StreamWriter> è progettata per l'output di caratteri in una codifica particolare, mentre la classe <xref:System.IO.Stream> è progettata per l'input e l'output di byte. Usare la classe <xref:System.IO.StreamWriter> per scrivere righe di informazioni in un file di testo standard. Per altre informazioni sulla classe <xref:System.IO.StreamWriter>, vedere <xref:System.IO.StreamWriter>.  
   
 #### <a name="to-add-writing-functionality"></a>Per aggiungere la funzionalità di scrittura  
   
@@ -110,20 +111,20 @@ Questa procedura dettagliata spiega come aprire e leggere un file usando la clas
      [!code-vb[VbVbcnMyFileSystem#40](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_6.vb)]  
   
 ## <a name="adding-display-features-to-the-diary"></a>Aggiungere funzionalità di visualizzazione al diario  
- In questa sezione, si aggiunge una funzionalità che consente di visualizzare l'ultima voce dell'oggetto <xref:System.Windows.Forms.TextBox> `DisplayEntry`. È anche possibile aggiungere un oggetto <xref:System.Windows.Forms.ComboBox> che visualizza le diverse voci e da cui un utente può selezionare una voce da visualizzare nell'oggetto <xref:System.Windows.Forms.TextBox> `DisplayEntry`. Un'istanza della classe <xref:System.IO.StreamReader> legge da `MyDiary.txt`. Come la classe <xref:System.IO.StreamWriter>, la classe <xref:System.IO.StreamReader> deve essere usata con i file di testo.  
+ In questa sezione, si aggiunge una funzionalità che consente di visualizzare l'ultima voce dell'oggetto `DisplayEntry`<xref:System.Windows.Forms.TextBox>. È anche possibile aggiungere un oggetto <xref:System.Windows.Forms.ComboBox> che visualizza le diverse voci e da cui un utente può selezionare una voce da visualizzare nell'oggetto `DisplayEntry`<xref:System.Windows.Forms.TextBox>. Un'istanza della classe <xref:System.IO.StreamReader> legge da `MyDiary.txt`. Come la classe <xref:System.IO.StreamWriter>, la classe <xref:System.IO.StreamReader> deve essere usata con file di testo.  
   
  Per questa sezione della procedura, aggiungere i controlli della tabella seguente al form e impostare i valori corrispondenti per le relative proprietà.  
   
 |Controllo|Proprietà|Valori|  
 |-------------|----------------|------------|  
 |<xref:System.Windows.Forms.TextBox>|**Nome**<br /><br /> **Visible**<br /><br /> **Dimensione**<br /><br /> **Multiline**|`DisplayEntry`<br /><br /> `False`<br /><br /> `120,60`<br /><br /> `True`|  
-|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Testo**|`Display`<br /><br /> **Visualizza**|  
+|<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Testo**|`Display`<br /><br /> **Visualizzazione**|  
 |<xref:System.Windows.Forms.Button>|**Nome**<br /><br /> **Testo**|`GetEntries`<br /><br /> **Ottieni voci**|  
 |<xref:System.Windows.Forms.ComboBox>|**Nome**<br /><br /> **Testo**<br /><br /> **Enabled**|`PickEntries`<br /><br /> **Seleziona una voce**<br /><br /> `False`|  
   
 #### <a name="to-populate-the-combo-box"></a>Per popolare la casella combinata  
   
-1.  L'oggetto <xref:System.Windows.Forms.ComboBox> `PickEntries` viene usato per visualizzare le date in cui un utente immette ogni voce, in modo che l'utente possa selezionare una voce da una data specifica. Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `GetEntries` e aggiungere il codice seguente.  
+1.  L'oggetto `PickEntries`<xref:System.Windows.Forms.ComboBox> viene usato per visualizzare le date in cui un utente immette le diverse voci, in modo che l'utente possa selezionare una voce da una data specifica. Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `GetEntries` e aggiungervi il codice seguente.  
   
      [!code-vb[VbVbcnMyFileSystem#41](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_7.vb)]  
   
@@ -131,11 +132,11 @@ Questa procedura dettagliata spiega come aprire e leggere un file usando la clas
   
 #### <a name="to-choose-and-display-individual-entries"></a>Per scegliere e visualizzare le singole voci  
   
-1.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `Display` e aggiungere il codice seguente.  
+1.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `Display` e aggiungervi il codice seguente.  
   
      [!code-vb[VbVbcnMyFileSystem#42](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_8.vb)]  
   
-2.  Per testare il codice, premere F5 per compilare l'applicazione e quindi inviare una voce. Fare clic su **Ottieni voci**, selezionare una voce in <xref:System.Windows.Forms.ComboBox>, quindi fare clic su **Visualizza**. Il contenuto della voce selezionata viene visualizzato nell'oggetto <xref:System.Windows.Forms.TextBox> `DisplayEntry`.  
+2.  Per testare il codice, premere F5 per compilare l'applicazione e quindi inviare una voce. Fare clic su **Ottieni voci**, selezionare una voce in <xref:System.Windows.Forms.ComboBox> e quindi fare clic su **Visualizza**. Il contenuto della voce selezionata viene visualizzato nell'oggetto `DisplayEntry`<xref:System.Windows.Forms.TextBox>.  
   
 ## <a name="enabling-users-to-delete-or-modify-entries"></a>Consentire agli utenti di eliminare o modificare le voci  
  Infine, è possibile includere funzionalità aggiuntive che consentono agli utenti di eliminare o modificare una voce usando i pulsanti `DeleteEntry` e `EditEntry`. Entrambi i pulsanti restano disabilitati a meno che non sia visualizzata una voce.  
@@ -154,23 +155,23 @@ Questa procedura dettagliata spiega come aprire e leggere un file usando la clas
   
      [!code-vb[VbVbcnMyFileSystem#43](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_9.vb)]  
   
-2.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `DeleteEntry` e aggiungere il codice seguente.  
+2.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `DeleteEntry` e aggiungervi il codice seguente.  
   
      [!code-vb[VbVbcnMyFileSystem#44](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_10.vb)]  
   
-3.  Quando un utente visualizza una voce, il pulsante `EditEntry` viene abilitato. Aggiungere il codice seguente all'evento <xref:System.Windows.Forms.Control.Click> del pulsante `Display`, dopo `DisplayEntry.Text = ReadString`.  
+3.  Quando un utente visualizza una voce, il pulsante `EditEntry` viene abilitato. Aggiungere il codice seguente all'evento <xref:System.Windows.Forms.Control.Click> del pulsante `Display` dopo `DisplayEntry.Text = ReadString`.  
   
      [!code-vb[VbVbcnMyFileSystem#45](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_11.vb)]  
   
-4.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `EditEntry` e aggiungere il codice seguente.  
+4.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `EditEntry` e aggiungervi il codice seguente.  
   
      [!code-vb[VbVbcnMyFileSystem#46](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_12.vb)]  
   
-5.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `SubmitEdit` e aggiungere il codice seguente  
+5.  Creare un gestore eventi <xref:System.Windows.Forms.Control.Click> per il pulsante `SubmitEdit` e aggiungervi il codice seguente  
   
      [!code-vb[VbVbcnMyFileSystem#47](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/walkthrough-manipulating-files-by-using-net-framework-methods_13.vb)]  
   
- Per testare il codice, premere F5 per compilare l'applicazione. Fare clic su **Ottieni voci**, selezionare una voce e quindi fare clic su **Visualizza**. La voce viene visualizzata nell'oggetto <xref:System.Windows.Forms.TextBox> `DisplayEntry`. Fare clic su **Modifica voce**. La voce viene visualizzata nell'oggetto <xref:System.Windows.Forms.TextBox> `Entry`. Modificare la voce nell'oggetto <xref:System.Windows.Forms.TextBox> `Entry` e fare clic su **Invia modifica**. Aprire il file `MyDiary.txt` per confermare la correzione. Ora selezionare una voce e fare clic su **Elimina voce**. Quando l'oggetto <xref:System.Windows.Forms.MessageBox> richiede una conferma, fare clic su **OK**. Chiudere l'applicazione e aprire `MyDiary.txt` per confermare l'eliminazione.  
+ Per testare il codice, premere F5 per compilare l'applicazione. Fare clic su **Ottieni voci**, selezionare una voce e quindi fare clic su **Visualizza**. La voce viene visualizzata nell'oggetto `DisplayEntry`<xref:System.Windows.Forms.TextBox>. Fare clic su **Modifica voce**. La voce viene visualizzata nell'oggetto `Entry`<xref:System.Windows.Forms.TextBox>. Modificare la voce nell'oggetto `Entry`<xref:System.Windows.Forms.TextBox> e fare clic su **Invia modifica**. Aprire il file `MyDiary.txt` per confermare la correzione. Ora selezionare una voce e fare clic su **Elimina voce**. Quando l'oggetto <xref:System.Windows.Forms.MessageBox> chiede una conferma, fare clic su **OK**. Chiudere l'applicazione e aprire `MyDiary.txt` per confermare l'eliminazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.IO.StreamReader>   

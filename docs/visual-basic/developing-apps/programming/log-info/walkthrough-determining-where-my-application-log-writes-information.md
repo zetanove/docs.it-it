@@ -36,10 +36,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3ef53fb9439159c94bb3894c233977088edc8872
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 44e6dc6add43050897bbcae6eff3d2e58d027821
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="walkthrough-determining-where-myapplicationlog-writes-information-visual-basic"></a>Procedura dettagliata: individuazione della posizione di inserimento delle informazioni con My.Application.Log (Visual Basic)
@@ -60,7 +61,7 @@ L'oggetto `My.Application.Log` può scrivere le informazioni in diversi listener
   
      Se queste sezioni non esistono, è possibile configurare i listener di log `My.Application.Log` nel file di configurazione del computer. I passaggi seguenti descrivono come determinare ciò che viene definito dal file di configurazione del computer:  
   
-    1.  Individuare il file machine.config del computer. Il file si trova in genere nella directory *SystemRoot\Microsoft.NET\Framework\frameworkVersion\CONFIG*, dove `SystemRoot` è la directory del sistema operativo e `frameworkVersion` è la versione di [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)].  
+    1.  Individuare il file machine.config del computer. Il file si trova in genere nella directory *SystemRoot\Microsoft.NET\Framework\frameworkVersion\CONFIG* , dove `SystemRoot` è la directory del sistema operativo e `frameworkVersion` è la versione di [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)].  
   
          È possibile eseguire l'override delle impostazioni del file machine.config con il file di configurazione di un'applicazione.  
   
@@ -78,13 +79,13 @@ L'oggetto `My.Application.Log` può scrivere le informazioni in diversi listener
   
 5.  Per molti tipi di listener condivisi, i dati di inizializzazione del listener includono una descrizione della posizione in cui il listener indirizza i dati:  
   
-    -   Un listener <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName> scrive in un log file, come descritto nell'introduzione.  
+    -   Il listener <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName> scrive le informazioni in un log file, come descritto nell'introduzione.  
   
-    -   Un listener <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName> scrive informazioni nel registro eventi del computer specificato dal parametro `initializeData`. Per visualizzare un log eventi, è possibile usare **Esplora server** o **Visualizzatore eventi di Windows**. Per altre informazioni, vedere l'articolo relativo agli [eventi ETW in .NET Framework](http://msdn.microsoft.com/library/d186276f-6afb-4dfd-bf3c-4251edc2c299).  
+    -   Il listener <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName> scrive le informazioni nel log eventi del computer specificato dal parametro `initializeData`. Per visualizzare un log eventi, è possibile usare **Esplora server** o **Visualizzatore eventi di Windows**. Per altre informazioni, vedere [ETW Events in the .NET Framework](http://msdn.microsoft.com/library/d186276f-6afb-4dfd-bf3c-4251edc2c299).  
   
-    -   I listener <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName> e <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName> scrivono nel file specificato nel parametro `initializeData`.  
+    -   I listener <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName> e <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName> scrivono le informazioni nel file specificato nel parametro `initializeData`.  
   
-    -   Un listener <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName> scrive nella console della riga di comando.  
+    -   Il listener <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName> scrive le informazioni nella console della riga di comando.  
   
     -   Per sapere dove gli altri tipi di listener di log scrivono le informazioni, consultare la documentazione relativa al tipo di listener desiderato.  
   

@@ -33,10 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 0b2d59f347df075e3f8c4f952b62e8ad7fa1643f
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 59efea23743d126e9b1d5a842fc7655ad3350acd
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="how-to-copy-a-directory-to-another-directory-in-visual-basic"></a>Procedura: copiare una directory in un'altra directory di Visual Basic
@@ -57,9 +58,9 @@ Usare il metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> 
   
 -   Il nuovo nome specificato per la directory contiene il segno dei due punti (:) o una barra (\ o /) (<xref:System.ArgumentException>).  
   
--   Il percorso non è valido per uno dei motivi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo, ovvero inizia con \\\\.\\ (<xref:System.ArgumentException>).  
+-   Il percorso non è valido per uno dei motivi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo (inizia con \\\\.\\) (<xref:System.ArgumentException>).  
   
--   Il percorso non è valido in quanto `Nothing` (<xref:System.ArgumentNullException>).  
+-   Il percorso non è valido in quanto è `Nothing` (<xref:System.ArgumentNullException>).  
   
 -   `destinationDirectoryName` è `Nothing` o una stringa vuota (<xref:System.ArgumentNullException>)  
   
@@ -75,13 +76,13 @@ Usare il metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory%2A> 
   
 -   L'operazione è ciclica (<xref:System.InvalidOperationException>).  
   
--   Il percorso contiene il segno dei due punti (:) (<xref:System.NotSupportedException>).  
+-   Il percorso contiene i due punti (:) (<xref:System.NotSupportedException>).  
   
 -   La lunghezza del percorso supera la lunghezza massima definita dal sistema (<xref:System.IO.PathTooLongException>).  
   
 -   Il nome di un file o di una cartella nel percorso contiene i due punti (:) o ha un formato non valido (<xref:System.NotSupportedException>).  
   
--   L'utente non ha le autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
+-   L'utente non dispone delle autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
   
 -   Esiste un file di destinazione ma non è possibile accedervi (<xref:System.UnauthorizedAccessException>).  
   

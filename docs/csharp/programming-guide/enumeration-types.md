@@ -34,7 +34,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
 ms.openlocfilehash: 2014047f17f766023ba4db4981aad6e6d4902381
 ms.contentlocale: it-it
-ms.lasthandoff: 03/31/2017
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="enumeration-types-c-programming-guide"></a>Tipi di enumerazione (Guida per programmatori C#)
