@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 5e1e95d92123b2874aace0c36005a8a07a6203fc
-ms.lasthandoff: 03/13/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="programming-guide-linq-to-xml-c"></a>Guida per programmatori (LINQ to XML) (C#)
@@ -39,8 +40,8 @@ Contenuto della sezione vengono fornite informazioni di carattere concettuale e 
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Panoramica della programmazione con LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)|Offre una panoramica delle classi [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] e informazioni dettagliate su tre delle classi più importanti: <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XDocument>.|  
-|[Creazione di alberi XML (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)|Vengono fornite informazioni di carattere concettuale e sulle attività correlate alla creazione di alberi XML. È possibile creare alberi XML usando la costruzione funzionale oppure analizzando il testo XML di una stringa o di un file. È anche possibile usare <xref:System.Xml.XmlReader> per popolare un albero XML.|  
+|[Panoramica della programmazione con LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)|Viene fornita una panoramica sulle classi di [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], nonché informazioni dettagliate sulle tre classi principali: <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XDocument>.|  
+|[Creazione di alberi XML (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)|Vengono fornite informazioni di carattere concettuale e sulle attività correlate alla creazione di alberi XML. È possibile creare alberi XML usando la costruzione funzionale oppure analizzando il testo XML di una stringa o di un file. È inoltre possibile usare un oggetto <xref:System.Xml.XmlReader> per popolare un albero XML.|  
 |[Uso degli spazi dei nomi XML (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)|Vengono fornite informazioni dettagliate sulla creazione di alberi XML che usano spazi dei nomi.|  
 |[Serializzazione di strutture ad albero XML (C#)](../../../../csharp/programming-guide/concepts/linq/serializing-xml-trees.md)|Vengono descritti i diversi approcci disponibili per la serializzazione di un albero XML e vengono fornite istruzioni sulla scelta dell'approccio da usare.|  
 |[Assi LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)|Enumera e descrive i metodi dell'asse di [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] che è necessario conoscere prima di poter scrivere query [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)].|  
