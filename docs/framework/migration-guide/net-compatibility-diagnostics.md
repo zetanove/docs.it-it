@@ -200,7 +200,7 @@ ms.lasthandoff: 05/22/2017
 |Ambito|Microsoft Edge|  
 |Versione|4.5|  
 |Tipo|Runtime|  
-|API interessate|<xref:System.Xml.Linq.LoadOptions?displayProperty=fullName>|  
+|API interessate|<xref:System.Xml.Linq.LoadOptions.SetLineInfo?displayProperty=fullName>|  
 |Analizzatori|CD0019|  
   
 <a name="diagnostic20"></a>   

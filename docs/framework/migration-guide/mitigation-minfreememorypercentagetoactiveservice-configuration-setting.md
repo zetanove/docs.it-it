@@ -29,14 +29,14 @@ In [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] viene generata un'ecce
   
  Tuttavia, in alcuni casi, potrebbe non essere possibile l’avvio di un servizio che era stato avviato correttamente in precedenza. In tal caso, viene visualizzato un messaggio di errore dettagliato:  
   
-```Output  
-Memory gates checking failed because the free memory (nnnn bytes) is less than nn% of total memory. As a result, the service will not be available for incoming requests. To resolve this, either reduce the load on the machine or adjust the value of minFreeMemoryPercentageToActivateService on the serviceHostingEnvironment config element.  
-```  
+```console
+Memory gates checking failed because the free memory (nnnn bytes) is less than nn% of total memory. As a result, the service will not be available for incoming requests. To resolve this, either reduce the load on the machine or adjust the value of minFreeMemoryPercentageToActivateService on the serviceHostingEnvironment config element.
+```
   
 ## <a name="mitigation"></a>Attenuazione  
  Per ripristinare il comportamento precedente dove è stata ignorata l'impostazione [minFreeMemoryPercentageToActivateService](../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md), modificare il file web.config come segue:  
   
-```  
+```xml
 <serviceHostingEnvironment multipleSiteBindingsEnabled="true"   
                            minFreeMemoryPercentageToActivateService="0">  
    <serviceActivations>  
