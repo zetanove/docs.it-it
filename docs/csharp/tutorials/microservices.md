@@ -36,7 +36,7 @@ Verranno inoltre illustrate alcune funzionalità del linguaggio C#:
 * Elaborazione delle richieste HTTP in ingresso e generazione della risposta HTTP
 * Uso dei tipi valore nullable
 
-È possibile [visualizzare o scaricare l'app di esempio](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice) per questo argomento. Per istruzioni sul download, vedere [Esempi ed esercitazioni](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+È possibile [visualizzare o scaricare l'applicazione di esempio](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice) per questo argomento. Per istruzioni sul download, vedere [Esempi ed esercitazioni](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### <a name="why-docker"></a>Vantaggi offerti dall'uso di Docker
 

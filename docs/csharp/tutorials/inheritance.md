@@ -11,10 +11,11 @@ ms.prod: .net-core
 ms.technology: .net-core-technologies
 ms.devlang: dotnet
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c14a2ecfa4b9c9522278098d54aad258b5feb1dc
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: 0c76bbcc8e60a2739b8c2735b3576842bd4f0942
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="inheritance-in-c-and-net"></a>Ereditarietà in C# e .NET #
@@ -53,13 +54,13 @@ Non tutti i membri di una classe di base vengono ereditati dalle classi derivate
 
 - [Costruttori di istanze](../programming-guide/classes-and-structs/constructors.md), che vengono chiamati per creare una nuova istanza della classe. Ogni classe deve definire propri costruttori.
 
-- [Distruttori](../programming-guide/classes-and-structs/destructors.md), che vengono chiamati dal Garbage Collector di runtime per distruggere le istanze di una classe.
+- [Finalizzatori](../programming-guide/classes-and-structs/destructors.md), che vengono chiamati dal Garbage Collector di runtime per distruggere le istanze di una classe.
 
 Tutti gli altri membri di una classe di base vengono ereditati dalle classi derivate, ma la loro visibilità dipende dall'accessibilità. L'accessibilità di un membro ne determina la visibilità per le classi derivate, come indicato di seguito:
 
 - I membri [privati](../language-reference/keywords/private.md) sono visibili solo nelle classi derivate che sono annidate nella relativa classe di base. In caso contrario, non sono visibili nelle classi derivate. Nell'esempio seguente `A.B` è una classe annidata che deriva da `A` e `C` deriva da `A`. Il campo privato `A.value` è visibile in A.B. Se tuttavia si rimuovono i commenti dal metodo `C.GetValue` e si tenta di compilare l'esempio, verrà generato l'errore del compilatore CS0122: "'A.value' non è accessibile a causa del livello di protezione impostato".
 
-   [!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/private.cs#1)]
+   [!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/private.cs#1)]
 
 - I membri [protetti](../language-reference/keywords/protected.md) sono visibili solo nelle classi derivate.
 
@@ -67,7 +68,7 @@ Tutti gli altri membri di una classe di base vengono ereditati dalle classi deri
 
 - I membri [pubblici] (../language-reference/keywords/protected.md) sono visibili nelle classi derivate e fanno parte dell'interfaccia pubblica della classe derivata. I membri pubblici ereditati possono essere chiamati come se fossero definiti nella classe derivata. Nell'esempio seguente la classe `A` definisce un metodo denominato `Method1` e la classe `B` eredita dalla classe `A`. Nell'esempio viene quindi chiamato `Method1` come se fosse un metodo di istanza in `B`.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/basics.cs#1)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/basics.cs#1)]
 
 Le classi derivate possono anche eseguire l'*override* dei membri ereditati fornendo un'implementazione alternativa. Per poter eseguire l'override di un membro, il membro nella classe di base deve essere contrassegnato con la parola chiave [virtual](../language-reference/keywords/virtual.md). Per impostazione predefinita, i membri della classe di base non sono contrassegnati come `virtual` e non possono essere sottoposti a override. Se si prova a eseguire l'override di un membro non virtuale, viene generato l'errore del compilatore CS0506: "<member> non può eseguire l'override del membro ereditato <member> perché non è contrassegnato come virtual, abstract o override".
 
@@ -122,11 +123,11 @@ Oltre ai tipi da cui possono ereditare tramite l'ereditarietà singola, tutti i 
 
 Per comprendere il significato dell'ereditarietà implicita, si definirà una nuova classe, `SimpleClass`, che è semplicemente una definizione di classe vuota:
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#1)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#1)]
 
 È quindi possibile usare la reflection, che consente di esaminare i metadati del tipo per ottenere informazioni su di esso, per generare un elenco dei membri che appartengono al tipo `SimpleClass`. Anche se non è stato definito alcun membro nella classe `SimpleClass`, l'output dell'esempio indica che ha effettivamente nove membri. Uno di questi membri è un costruttore senza parametri (o predefinito) fornito automaticamente per il tipo `SimpleClass` dal compilatore C#. Gli altri otto sono membri di @System.Object, il tipo da cui tutte le classi e le interfacce nel sistema di tipi .NET ereditano in modo implicito.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#2)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass.cs#2)]
 
 L'ereditarietà implicita dalla classe @System.Object rende disponibili questi metodi per la classe `SimpleClass`:
 
@@ -144,7 +145,7 @@ L'ereditarietà implicita dalla classe @System.Object rende disponibili questi m
 
 Grazie all'ereditarietà implicita, è possibile chiamare qualsiasi membro ereditato da un oggetto `SimpleClass` come se fosse effettivamente un membro definito nella classe `SimpleClass`. Nell'esempio seguente viene chiamato il metodo `SimpleClass.ToString` che `SimpleClass` eredita da @System.Object.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass2.cs#1)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/simpleclass2.cs#1)]
 
 Nella tabella seguente sono elencate le categorie di tipi che è possibile creare in C# e i tipi da cui ereditano in modo implicito. Tramite l'ereditarietà ciascun tipo di base rende disponibile un set di membri diverso per i tipi derivati in modo implicito.
 
@@ -163,11 +164,11 @@ In genere l'ereditarietà consente di esprimere una relazione "è un" tra una cl
 
 Si noti che "è un" esprime anche la relazione tra un tipo e un'istanza specifica di quel tipo. Nell'esempio seguente `Automobile` è una classe che ha tre proprietà univoche di sola lettura: `Moke`, il produttore dell'automobile, `Model`, il tipo di automobile e `Year`, l'anno di produzione. La classe `Automobile` include anche un costruttore i cui argomenti vengono assegnati ai valori delle proprietà ed esegue l'override del metodo @System.Object.ToString per generare una stringa che identifica in modo univoco l'istanza `Automobile` anziché la classe `Automobile`.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/is-a.cs#1)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/is-a.cs#1)]
 
 In questo caso è opportuno non fare affidamento sull'ereditarietà per rappresentare marche e modelli specifici di automobili. Non è ad esempio necessario definire un tipo `Packard` che rappresenta automobili prodotte dalla casa automobilistica Packard. È invece possibile rappresentarle creando un oggetto `Automobile` con i valori appropriati passati al costruttore della classe, come illustrato nell'esempio seguente.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/is-a.cs#2)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/is-a.cs#2)]
 
 È preferibile applicare una relazione "è un" basata sull'ereditarietà a una classe di base e a classi derivate che aggiungono altri membri alla classe di base o che richiedono funzionalità aggiuntive non presenti nella classe di base.
 
@@ -205,7 +206,7 @@ Per progettare la classe `Publication`, è necessario prendere alcune decisioni 
 
 L'esempio seguente illustra il codice sorgente della classe `Publication`, nonché un'enumerazione `PublicationType` restituita dalla proprietà `Publication.PublicationType`. Oltre ai membri che eredita da @System.Object, la classe `Publication` definisce i membri univoci e gli override dei membri seguenti:
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/base-and-derived.cs#1)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/base-and-derived.cs#1)]
 
 - Un costruttore
 
@@ -248,7 +249,7 @@ La figura seguente illustra la relazione tra la classe di base `Publication` e l
 
 La classe `Book` rappresenta un libro come tipo specializzato di pubblicazione. L'esempio seguente illustra il codice sorgente della classe `Book`.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/base-and-derived.cs#2)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/base-and-derived.cs#2)]
 
 Oltre ai membri che eredita da `Publication`, la classe `Book` definisce i membri univoci e gli override dei membri seguenti:
 
@@ -268,7 +269,7 @@ Oltre ai membri che eredita da `Publication`, la classe `Book` definisce i membr
 
 - Un metodo `SetPrice`, che imposta i valori dei campi `bookPrice` e `ISOCurrencySymbol`. Si tratta dei valori restituiti dalle proprietà `Price` e `Currency`.
 
-- Esegue l'override del metodo `ToString` ereditato da `Publication` e dei metodi @System.Object.Equals(System.Object) e @System.Object.GetHashCode ereditati da @System.Object.
+- Esegue l'override del metodo `ToString` ereditato da `Publication` e dei metodi @System.Object.Equals(System.Object) e @System.Object.GetHashCode (ereditati da @System.Object).
 
   A meno che non venga sottoposto a override, il metodo @System.Object.Equals(System.Object) verifica l'uguaglianza dei riferimenti. Ciò significa che due variabili di oggetto sono considerate uguali se fanno riferimento allo stesso oggetto. Nel caso della classe `Book`, d'altra parte, due oggetti `Book` sono considerati uguali se hanno lo stesso ISBN.
 
@@ -280,7 +281,7 @@ La figura seguente illustra la relazione tra la classe `Book` e la relativa clas
 
 È ora possibile creare un'istanza di un oggetto `Book`, richiamarne i membri univoci ed ereditati e passarla come argomento a un metodo che prevede un parametro di tipo `Publication` o `Book`, come illustrato nell'esempio seguente.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/use-publication.cs#1)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/use-publication.cs#1)]
 
 ## <a name="abstract"></a> Progettazione di classi di base astratte e delle relative classi derivate ##
 
@@ -290,15 +291,15 @@ Ogni forma geometrica bidimensionale chiusa include ad esempio due proprietà: l
 
 L'esempio seguente definisce una classe di base astratta denominata `Shape` che definisce due proprietà: `Area` e `Perimeter`. Si noti che, oltre a contrassegnare la classe con la parola chiave [abstract](../language-reference/keywords/abstract.md), si contrassegna con la parola chiave [abstract](../language-reference/keywords/abstract.md) anche ogni membro dell'istanza. In questo caso `Shape` esegue anche l'override del metodo @System.Object.ToString per restituire il nome del tipo, anziché il nome completo. Definisce inoltre due membri statici, `GetArea` e `GetPerimeter`, che consentono ai chiamanti di recuperare facilmente l'area e il perimetro di un'istanza di qualsiasi classe derivata. Quando si passa un'istanza di una classe derivata a uno di questi metodi, il runtime chiama l'override del metodo della classe derivata.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#1)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#1)]
 
 È quindi possibile derivare da `Shape` alcune classi che rappresentano forme specifiche. Nell'esempio seguente vengono definite tre classi, `Triangle`, `Rectangle` e `Circle`. Ogni classe usa una formula univoca per calcolare l'area e il perimetro della forma specifica. Alcune classi derivate definiscono anche le proprietà, ad esempio `Rectangle.Diagonal` e `Circle.Diameter`, che sono univoche per la forma che rappresentano.
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#2)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#2)]
 
 Nell'esempio seguente vengono usati gli oggetti derivati da `Shape`. Viene creata un'istanza di una matrice di oggetti derivati da `Shape` e vengono chiamati i metodi statici della classe `Shape`, che esegue il wrapping dei valori restituiti della proprietà `Shape`. Si noti che il runtime recupera i valori dalle proprietà dei tipi derivati sottoposte a override. Nell'esempio viene anche eseguito il cast di ogni oggetto `Shape` nella matrice al relativo tipo derivato e, se il cast ha esito positivo, vengono recuperate le proprietà di quella sottoclasse specifica di `Shape`. 
 
-[!CODE [Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#3)]
+[!code-csharp[Ereditarietà](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#3)]
 
 ## <a name="see-also"></a>Vedere anche ##
 

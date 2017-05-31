@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: dc931fe2c87620ddb073f53f7e8edccaa1e3b987
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.openlocfilehash: 3dcf0204d57861543743fee4de9523231465d24c
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 
@@ -30,11 +31,14 @@ Questa esercitazione illustra alcune funzionalità disponibili in .NET Core e ne
 
 Si creerà un'applicazione che invia richieste HTTP a un servizio REST su GitHub, si leggeranno informazioni in formato JSON e si convertirà il pacchetto JSON in oggetti C#. Si imparerà infine a usare e gestire oggetti C#.
 
-In questa esercitazione verranno create anche numerose funzionalità. 
+In questa esercitazione verranno create anche numerose funzionalità.
+
+Se si vuole proseguire, è possibile scaricare l'[esempio finale](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) di questo argomento. Per istruzioni sul download, vedere [Esempi ed esercitazioni](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+
 ## <a name="prerequisites"></a>Prerequisiti
-È necessario configurare il computer per l'esecuzione di .NET Core. Le istruzioni di installazione sono disponibili nella pagina [.NET Core](https://www.microsoft.com/net/core). Questa applicazione può essere eseguita in Windows, Linux, macOS o in un contenitore Docker. È necessario installare l'editor di codice preferito. Nelle descrizioni seguenti viene usato [Visual Studio Code](https://code.visualstudio.com/), un editor open source multipiattaforma, ma è possibile usare gli strumenti con cui si ha maggiore familiarità.
+È necessario configurare il computer per l'esecuzione di .NET core. Le istruzioni di installazione sono disponibili nella pagina [.NET Core](https://www.microsoft.com/net/core). Questa applicazione può essere eseguita in Windows, Linux, macOS o in un contenitore Docker. È necessario installare l'editor di codice preferito. Nelle descrizioni seguenti viene usato [Visual Studio Code](https://code.visualstudio.com/), un editor open source multipiattaforma, ma è possibile usare gli strumenti con cui si ha maggiore familiarità.
 ## <a name="create-the-application"></a>Creare l'applicazione
-Il primo passaggio consiste nel creare una nuova applicazione. Aprire un prompt dei comandi e creare una nuova directory per l'applicazione, impostandola come directory corrente. Digitare il comando `dotnet new console` al prompt dei comandi per creare i file di avvio per un'applicazione "Hello World" di base.
+Il primo passaggio consiste nel creare una nuova applicazione. Aprire un prompt dei comandi e creare una nuova directory per l'applicazione, impostandola come directory corrente. Digitare il comando `dotnet new console` al prompt dei comandi Questa operazione crea i file iniziali per un'applicazione "Hello World" di base.
 
 Prima di iniziare ad apportare modifiche, è opportuno ripercorrere i passaggi necessari per eseguire l'applicazione Hello World semplice. Dopo aver creato l'applicazione, digitare `dotnet restore` al prompt dei comandi. Questo comando esegue il processo di ripristino dei pacchetti NuGet. Lo strumento NuGet consente di gestire pacchetti .NET. Questo comando scarica eventuali dipendenze mancanti per il progetto. Poiché si tratta di un nuovo progetto, non è ancora presente alcuna dipendenza e con la prima esecuzione verrà quindi scaricato .NET Core Framework. Dopo questo passaggio iniziale, sarà sufficiente eseguire `dotnet restore` quando si aggiungono nuovi pacchetti dipendenti o si aggiorna la versione di una delle dipendenze.  
 
@@ -121,7 +125,7 @@ using System.Net.Http.Headers;
 Questa prima versione esegue una richiesta Web per leggere l'elenco di tutti i repository presenti nell'organizzazione DotNet Foundation. L'ID di GitHub per .NET Foundation è 'dotnet'. Come prima operazione, creare un nuovo oggetto @System.Net.Http.HttpClient per gestire la richiesta e le risposte. Nelle righe successive l'oggetto @System.Net.Http.HttpClient viene impostato per questa richiesta, ma prima viene configurato per accettare le risposte JSON di GitHub.
 Questo formato è semplicemente JSON. Nella riga successiva viene aggiunta un'intestazione Agente utente a tutte le richieste provenienti da questo oggetto. Queste due intestazioni vengono controllate dal codice server di GitHub e sono necessarie per recuperare informazioni da GitHub.
 
-Dopo aver configurato l'oggetto @System.Net.Http.HttpClient, si eseguirà una richiesta Web e si recupererà la risposta. In questa prima versione si userà il metodo di supporto <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=fullname>. Questo metodo avvia un'attività che esegue la richiesta Web e, quando la richiesta viene restituita, legge il flusso di risposta e ne estrae il contenuto. Il corpo della risposta viene restituito come @System.String. La stringa è disponibile quando l'attività viene completata. 
+Dopo aver configurato l'oggetto @System.Net.Http.HttpClient, si eseguirà una richiesta Web e si recupererà la risposta. In questa prima versione viene usato il metodo pratico <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)?displayProperty=fullname>. Questo metodo avvia un'attività che esegue la richiesta Web e, quando la richiesta viene restituita, legge il flusso di risposta e ne estrae il contenuto. Il corpo della risposta viene restituito come @System.String. La stringa è disponibile quando l'attività viene completata. 
 
 Le ultime due righe di questo metodo attendono che l'attività sia completata e visualizzano la risposta nella console.
 Compilare l'app ed eseguirla. Il messaggio di avviso non viene più visualizzato perché `ProcessRepositories` contiene ora un operatore `await`. Verrà visualizzata una lunga schermata di testo JSON formattato.   
@@ -170,7 +174,7 @@ var repositories = serializer.ReadObject(await streamTask) as List<repo>;
 
 È opportuno notare che si sta ora usando @System.Net.Http.HttpClient.GetStreamAsync(System.String) anziché @System.Net.Http.HttpClient.GetStringAsync(System.String). Il serializzatore usa un flusso anziché una stringa come origine. Verranno ora illustrate alcune funzionalità del linguaggio C# usate nella seconda riga sopra riportata. L'argomento di @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) è un'espressione `await`. Le espressioni await possono essere presenti quasi ovunque nel codice, anche se finora sono apparse solo nell'ambito di un'istruzione di assegnazione.
 
-Inoltre, l'operatore `as` esegue la conversione del tipo in fase di compilazione da `object` a `List<repo>`. La dichiarazione di @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) indica che restituisce un oggetto di tipo <xref:System.Object?displayProperty=fullName>. @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) restituirà il tipo specificato al momento della costruzione (`List<repo>` in questa esercitazione). Se la conversione non riesce, l'operatore `as` restituisce `null` anziché generare un'eccezione.
+Inoltre, l'operatore `as` esegue la conversione del tipo in fase di compilazione da `object` a `List<repo>`. La dichiarazione di @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) indica che viene restituito un oggetto di tipo <xref:System.Object?displayProperty=fullName>. @System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream) restituirà il tipo specificato al momento della costruzione (`List<repo>` in questa esercitazione). Se la conversione non riesce, l'operatore `as` restituisce `null` anziché generare un'eccezione.
 
 Questa sezione è quasi completata. Ora che i dati JSON sono stati convertiti in oggetti C#, verrà visualizzato il nome di ogni repository. Sostituire le righe seguenti:
 
@@ -360,7 +364,7 @@ Dopo aver aggiunto un'altra istruzione di output alla console, sarà possibile c
 Console.WriteLine(repo.LastPush);
 ```
 
-La versione creata deve corrispondere alla versione definitiva disponibile [qui](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient).
+La versione dell'app dovrebbe ora corrispondere all'[esempio completo](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient).
  
 ## <a name="conclusion"></a>Conclusione
 
