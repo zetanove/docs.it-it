@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 609b0845-49e7-4864-957b-21ffe1b93bf2
-translationtype: Human Translation
-ms.sourcegitcommit: 519253bd6dc105afb138268c62347c29a6072fbb
-ms.openlocfilehash: 9cb957973e68129194c998c88e398351b48819ec
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
+ms.openlocfilehash: e0ba4886bd954c8e772a85a677775167e7c4bc53
+ms.contentlocale: it-it
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -37,12 +38,12 @@ Alcuni di questi vantaggi vengono sfruttati solo in particolari circostanze. I p
 
 Di seguito è riportato un elenco dei principali pacchetti NuGet per .NET Core:
 
-- [System.Runtime](https://www.nuget.org/packages/System.Runtime): principale pacchetto .NET Core. Sono inclusi [Object](http://docs.microsoft.com/dotnet/core/api/System.Object), [String](http://docs.microsoft.com/dotnet/core/api/System.String), [Array](http://docs.microsoft.com/dotnet/core/api/System.Array), [Action](http://docs.microsoft.com/dotnet/core/api/System.Action) e [IList&lt;T&gt;](http://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IList-1).
-- [System.Collections](https://www.nuget.org/packages/System.Collections): set di raccolte (essenzialmente) generiche. Sono inclusi [List&lt;T&gt;](http://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1) e [Dictionary&lt;K,V&gt;](http://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2).
-- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http): set di tipi per la comunicazione di rete HTTP. Sono inclusi [HttpClient](http://docs.microsoft.com/dotnet/core/api/System.Net.Http.HttpClient) e [HttpResponseMessage](http://docs.microsoft.com/dotnet/core/api/System.Net.Http.HttpResponseMessage).
-- [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem): set di tipi per la lettura e la scrittura in sistemi di archiviazione basati su disco locali o di rete. Sono inclusi [File](http://docs.microsoft.com/dotnet/core/api/System.IO.File) e [Directory](http://docs.microsoft.com/dotnet/core/api/System.IO.Directory).
-- [System.Linq](https://www.nuget.org/packages/System.Linq): set di tipi di oggetti di query. Sono inclusi Enumerable, [ILookup&lt;TKey e TElement&gt;](http://docs.microsoft.com/dotnet/core/api/System.Linq.ILookup-2).
-- [System.Reflection](https://www.nuget.org/packages/System.Reflection): set di tipi per il caricamento, l'analisi e l'attivazione. Sono inclusi [Assembly](http://docs.microsoft.com/dotnet/core/api/System.Reflection.Assembly), [TypeInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.TypeInfo) e [MethodInfo](http://docs.microsoft.com/dotnet/core/api/System.Reflection.MethodInfo).
+- [System.Runtime](https://www.nuget.org/packages/System.Runtime): pacchetto fondamentale di .NET Core, che include <xref:System.Object>, <xref:System.String>, <xref:System.Array>, <xref:System.Action> e <xref:System.Collections.Generic.IList%601>.
+- [System.Collections](https://www.nuget.org/packages/System.Collections): gruppo composto principalmente da raccolte generiche, che include <xref:System.Collections.Generic.List%601> e <xref:System.Collections.Generic.Dictionary%602>.
+- [System.Net.Http](https://www.nuget.org/packages/System.Net.Http): set di tipi per le comunicazioni di rete HTTP, che include <xref:System.Net.Http.HttpClient> e <xref:System.Net.Http.HttpResponseMessage>.
+- [System.IO.FileSystem](https://www.nuget.org/packages/System.IO.FileSystem): set di tipi per la lettura e la scrittura in sistemi di archiviazione locali o di rete basati su disco. Include <xref:System.IO.File> e <xref:System.IO.Directory>.
+- [System.Linq](https://www.nuget.org/packages/System.Linq): set di tipi per le query sugli oggetti. Include `Enumerable` e <xref:System.Linq.ILookup%602>.
+- [System.Reflection](https://www.nuget.org/packages/System.Reflection): set di tipi per il caricamento, l'ispezione e l'attivazione dei tipi. Include <xref:System.Reflection.Assembly>, <xref:System.Reflection.TypeInfo> e <xref:System.Reflection.MethodInfo>.
 
 In genere, anziché includere i pacchetti nei progetti in modo individuale, è molto più semplice includere un *metapacchetto*, ovvero un set di pacchetti che vengono spesso usati insieme. Per altre informazioni sui metapacchetti, vedere la sezione successiva. Se è necessario usare un pacchetto singolo, è tuttavia possibile includerlo come illustrato nell'esempio seguente, che fa riferimento al pacchetto [System.Runtime](https://www.nuget.org/packages/System.Runtime/). 
 

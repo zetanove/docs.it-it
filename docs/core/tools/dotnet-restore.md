@@ -4,16 +4,17 @@ description: Informazioni sul ripristino delle dipendenze e degli strumenti spec
 keywords: dotnet-restore, interfaccia della riga di comando, comando dell&quot;interfaccia della riga di comando, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 03/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
-translationtype: Human Translation
-ms.sourcegitcommit: dff752a9d31ec92b113dae9eed20cd72faf57c84
-ms.openlocfilehash: 92da0806eb6c365a4622668242edc28d9966ed26
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 602c173ff8d114a76c5598cd0826485ac32a2e72
+ms.openlocfilehash: fd4fd6ef2e8482a2b961ccbca1f5227d80c8be53
+ms.contentlocale: it-it
+ms.lasthandoff: 03/29/2017
 
 ---
 
@@ -37,6 +38,8 @@ Per le dipendenze è possibile specificare dove vengono inseriti i pacchetti rip
 
 Per gli strumenti specifici del progetto, `dotnet restore` ripristina innanzitutto il pacchetto in cui viene compresso lo strumento e quindi ripristina le dipendenze dello strumento come specificato nel file di progetto.
 
+Il funzionamento del comando `dotnet restore` può essere modificato da alcune impostazioni del file *NuGet.Config*, se è presente. Se ad esempio si imposta `globalPackagesFolder` in *NuGet.Config* i pacchetti NuGet ripristinati vengono posizionati nella cartella specificata. Questo approccio rappresenta un'alternativa all'impostazione dell'opzione `--packages` per il comando `dotnet restore`. Per altre informazioni, vedere [NuGet.Config reference](https://docs.microsoft.com/nuget/schema/nuget-config-file) (Informazioni di riferimento su NuGet.Config).
+
 ## <a name="arguments"></a>Argomenti
 
 `ROOT` 
@@ -57,7 +60,7 @@ Specifica un'origine dei pacchetti NuGet da usare durante l'operazione di ripris
 
 Specifica un runtime per il ripristino dei pacchetti. Questo runtime viene usato per ripristinare i pacchetti di runtime non esplicitamente elencati nel tag `<RuntimeIdentifiers>` del file *csproj*. Per un elenco degli identificatori di runtime (RID, Runtime Identifier), vedere il [catalogo RID](../rid-catalog.md). Specificare più origini selezionando questa opzione più volte.
 
-`--packages <PACKAGES_DIRECTORY]`
+`--packages <PACKAGES_DIRECTORY>`
 
 Specifica la directory per i pacchetti ripristinati. 
 
@@ -103,7 +106,7 @@ Ripristinare le dipendenze e gli strumenti per il progetto nella directory corre
 
 `dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages` 
 
-Ripristinare le dipendenze e gli strumenti per il progetto nella directory corrente e includere solo gli errori nell'output:
+Ripristinare le dipendenze e gli strumenti per il progetto nella directory corrente e mostrare solo un output minimo:
 
-`dotnet restore --verbosity Error`
+`dotnet restore --verbosity minimal`
 

@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c0d70120-78c8-4d26-bb3c-801f42fc2366
-translationtype: Human Translation
-ms.sourcegitcommit: 4a1f0c88fb1ccd6694f8d4f5687431646adbe000
-ms.openlocfilehash: d32c73ac3a724d4701b7f6c1d548aedb3fb00c56
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
+ms.openlocfilehash: e30573a60e27314466822935249e2b1b119a9259
+ms.contentlocale: it-it
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -105,7 +106,7 @@ Per aggiornare il file `global.json`, rimuovere la proprietà o impostarla sulla
 ```
 
 ### <a name="migrating-the-project-file"></a>Migrazione del file di progetto
-L'interfaccia della riga di comando e DNX usano entrambi lo stesso sistema di progetto basato sul file `project.json`. La sintassi e la semantica del file di progetto sono molto simili, a parte alcune differenze dipendenti dallo scenario. Sono presenti anche alcune modifiche dello schema che è possibile vedere nel [file di schema](http://json.schemastore.org/project) o, in modo più semplice, nell'argomento [project.json reference](../tools/project-json.md) (Riferimento project.json). 
+L'interfaccia della riga di comando e DNX usano entrambi lo stesso sistema di progetto basato sul file `project.json`. La sintassi e la semantica del file di progetto sono molto simili, a parte alcune differenze dipendenti dallo scenario. Sono presenti anche alcune modifiche dello schema, visibili nel [file di schema](http://json.schemastore.org/project).
 
 Se si sta creando un'applicazione console, è necessario aggiungere al file di progetto il frammento seguente:
 

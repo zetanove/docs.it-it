@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
 ms.assetid: 480df976-7568-4df4-9d26-9911357b5a31
-translationtype: Human Translation
-ms.sourcegitcommit: 195664ae6409be02ca132900d9c513a7b412acd4
-ms.openlocfilehash: c816bf4c93430a009e61ddf2a3673c43f49b8de9
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.openlocfilehash: eda9e6f30defb93737aa67563aa6e606a8a2fb91
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 
@@ -41,13 +42,13 @@ Comandi di .NET Core (con funzionalità di telemetria non abilitata):
 
 ## <a name="behavior"></a>Comportamento
 
-La funzionalità di telemetria degli strumenti di .NET Core è abilitata per impostazione predefinita. È possibile rifiutare esplicitamente questa funzionalità impostando una variabile di ambiente DOTNET_CLI_TELEMETRY_OPTOUT (ad esempio, `export` in macOS/Linux, `set` in Windows) su true (ad esempio, "true", 1).
+La funzionalità di telemetria degli strumenti di .NET Core è abilitata per impostazione predefinita. È possibile rifiutare esplicitamente questa funzionalità impostando una variabile di ambiente DOTNET_CLI_TELEMETRY_OPTOUT (ad esempio `export` in macOS/Linux, `set` in Windows) su true (ad esempio "true", 1).
 
 ## <a name="data-points"></a>Punti dati
 
 La funzionalità raccoglie i dati seguenti:
 
-- Il comando usato (ad esempio, "build", "restore")
+- Il comando usato (ad esempio "build", "restore")
 - Il codice di uscita del comando
 - Per i progetti di test, il Test Runner usato
 - Il timestamp della chiamata
@@ -59,7 +60,7 @@ La funzionalità non raccoglie invece i dati personali, ad esempio i nomi utente
 
 ## <a name="license"></a>Licenza
 
-La distribuzione Microsoft di .NET Core è concessa in base alle [condizioni di licenza di MICROSOFT .NET LIBRARY](https://aka.ms/dotnet-core-eula). Nelle condizioni è inclusa la sezione "DATA", riportata anche di seguito, che prevede l'abilitazione della funzionalità di telemetria.
+La distribuzione Microsoft di .NET Core è concessa in base alle [condizioni di licenza di MICROSOFT .NET LIBRARY](https://aka.ms/dotnet-core-eula). Nelle condizioni è inclusa la sezione "DATA", riportata anche di seguito, per l'abilitazione della telemetria.
 
 Questa licenza viene usata anche dai [pacchetti NuGet .NET](https://www.nuget.org/profiles/dotnetframework) per i quali, tuttavia, la funzionalità di telemetria non è abilitata (vedere la precedente sezione [Ambito](#scope)).
 

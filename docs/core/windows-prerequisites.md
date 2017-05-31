@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: c33b1241-ab66-4583-9eba-52cf51146f5a
-translationtype: Human Translation
-ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
-ms.openlocfilehash: 13947fd81940c1ccb606cb4cd765dc230fe95c0f
-ms.lasthandoff: 03/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d97a1501ad25b683cbb5d7fbd8bd1b137f7f4046
+ms.openlocfilehash: 582b7d7f00b939493cea6d8cb4055b6779118c14
+ms.contentlocale: it-it
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -36,11 +37,11 @@ Per l'elenco completo dei sistemi operativi supportati, vedere le [note sulla ve
 
 ## <a name="net-core-dependencies"></a>Dipendenze .NET Core
 
-.NET Core richiede Visual C++ Redistributable per l'esecuzione in versioni di Windows precedenti a Windows 10 e Windows Server 2016. Questa dipendenza viene installata automaticamente se si usa il programma di installazione di .NET Core. È invece necessario installare manualmente [Visual C++ Redistributable per Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145) se si esegue l'installazione di .NET Core tramite [script](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-install-script) o si distribuisce un'applicazione .NET Core autonoma.
+.NET Core richiede Visual C++ Redistributable per l'esecuzione in versioni di Windows precedenti a Windows 10 e Windows Server 2016. Questa dipendenza viene installata automaticamente se si usa il programma di installazione di .NET Core. È invece necessario installare manualmente [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=53840) se si esegue l'installazione di .NET Core tramite lo [script del programma di installazione ](./tools/dotnet-install-script.md) o si distribuisce un'applicazione .NET Core completa.
 
 > [!NOTE]
 > <em>Solo per i computer Windows 7 e Windows Server 2008:</em><br>
-> Verificare che l'installazione di Windows sia aggiornata e includa l'hotfix [KB2533623](https://support.microsoft.com/en-us/kb/2533623) installato tramite Windows Update.
+> Verificare che l'installazione di Windows sia aggiornata e includa l'hotfix [KB2533623](https://support.microsoft.com/help/2533623) installato tramite Windows Update.
 
 ## <a name="prerequisites-with-visual-studio-2017"></a>Prerequisiti con Visual Studio 2017
 
@@ -52,12 +53,11 @@ Per l'elenco completo dei sistemi operativi supportati, vedere le [note sulla ve
 Per usare Visual Studio 2017 per lo sviluppo di app .NET Core, è necessario avere l'ultima versione di Visual Studio installata con il set di strumenti di **sviluppo multipiattaforma di .NET Core** selezionato (nella sezione **Altri set di strumenti**).
 ![Screenshot dell'installazione di Visual Studio 2017 con il carico di lavoro "Sviluppo multipiattaforma .NET Core" selezionato](./media/windows-prerequisites/vs_workloads.jpg)
 
-Ci sono edizioni diverse di Visual Studio 2017. Per iniziare, è possibile scaricare [Visual Studio Community 2017](https://www.visualstudio.com/downloads/) gratuitamente.  Per altre informazioni sul processo di installazione di Visual Studio, vedere [Install Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio) (Installare Visual Studio 2017).
+Ci sono edizioni diverse di Visual Studio 2017. Per iniziare, è possibile scaricare [Visual Studio Community 2017](https://www.visualstudio.com/downloads/) gratuitamente.  Per altre informazioni sul processo di installazione di Visual Studio, vedere [Install Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio) (Installare Visual Studio 2017).
 
-Per verificare di avere a disposizione la versione più recente di Visual Studio 2017, seguire questa procedura:
- +
- +*Dal menu**?**scegliere**Informazioni su Microsoft Visual Studio**. +* Nella finestra di dialogo **Informazioni su Microsoft Visual Studio** il numero di versione deve essere 15.0.26228.4 o superiore.
+Per verificare che la versione a disposizione sia la più recente di Visual Studio 2017, seguire questa procedura:
 
-Nelle [note sulla versione ](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes) è possibile trovare altre informazioni sulle modifiche in Visual Studio 2017.
+ * Dal menu **Guida** scegliere **About Microsoft Visual Studio** (Informazioni su Microsoft Visual Studio).
+ * Nella finestra di dialogo **Informazioni su Microsoft Visual Studio** il numero di versione deve essere 15.0.26228.4 o versione successiva.
 
-[sdk]: https://go.microsoft.com/fwlink/?LinkID=827546
+Nelle [note sulla versione ](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) è possibile trovare altre informazioni sulle modifiche in Visual Studio 2017.
