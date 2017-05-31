@@ -26,17 +26,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a3e2641e5c7cd3ce98ca869889848e8cdf4eed62
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.openlocfilehash: ee9d0f9803c6de056644587578792568ab25b4da
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 # <a name="interpolated-strings-c-reference"></a>Stringhe interpolate (Riferimento per C#)
 
 Vengono usate per la costruzione di stringhe.  Una stringa interpolata è simile a una stringa di modello che contiene *espressioni interpolate*.  Una stringa interpolata restituisce una stringa che sostituisce le espressioni interpolate in essa contenute con le rappresentazioni di stringa.  
 
-Gli argomenti di una stringa interpolata sono più facili da comprendere rispetto a una [stringa di formato composito](../../../standard/base-types/composite-format.md#composite-format-string).  Ad esempio, la stringa interpolata  
+Gli argomenti di una stringa interpolata sono più facili da comprendere rispetto a una [stringa di formato composito](../../../standard/base-types/composite-formatting.md#composite-format-string).  Ad esempio, la stringa interpolata  
   
 ```csharp  
 Console.WriteLine($"Name = {name}, hours = {hours:hh}"); 
@@ -77,7 +78,7 @@ Da una stringa interpolata vengono effettuate tre conversioni di tipo implicito:
 
    Questo è il risultato finale di un'interpretazione della stringa. Tutte le occorrenze delle parentesi graffe doppie ("{{" e "}}") vengono convertite in parentesi graffe singole. 
 
-2. Conversione di una stringa interpolata in una variabile <xref:System.IFormattable> che consente di creare più stringhe risultato con contenuto specifico delle impostazioni cultura da una singola istanza <xref:System.IFormattable>. Ciò è utile per includere elementi quali i formati numerici e di data corretti per singole impostazioni cultura.  Tutte le occorrenze di parentesi graffe doppie ("{{" e "}}") rimangono tali finché la stringa non viene formattata in modo implicito o esplicito chiamando il metodo @System.Object.ToString.  Tutte le espressioni di interpolazione contenute vengono convertite in {0}, \{1\} e così via.  
+2. Conversione di una stringa interpolata in una variabile <xref:System.IFormattable> che consente di creare più stringhe risultato con contenuto specifico delle impostazioni cultura da una singola istanza di <xref:System.IFormattable>. Ciò è utile per includere elementi quali i formati numerici e di data corretti per singole impostazioni cultura.  Tutte le occorrenze di parentesi graffe doppie ("{{" e "}}") rimangono tali finché la stringa non viene formattata in modo implicito o esplicito chiamando il metodo @System.Object.ToString.  Tutte le espressioni di interpolazione contenute vengono convertite in {0}, \{1\} e così via.  
 
    Nell'esempio seguente viene usata la reflection per visualizzare i membri, nonché i valori di campi e le proprietà di una variabile <xref:System.IFormattable> creata da una stringa interpolata. Viene anche passata la variabile <xref:System.IFormattable> al metodo @System.Console (System. String).
 
@@ -85,7 +86,7 @@ Da una stringa interpolata vengono effettuate tre conversioni di tipo implicito:
 
    Si noti che la stringa interpolata può essere controllata solo tramite reflection. Se viene passata al metodo di formattazione delle stringhe, ad esempio @System.Console.WriteLine(System. String), gli elementi di formato vengono risolti e viene restituita la stringa di risultato. 
 
-3. Conversione di una stringa interpolata a una variabile <xref:System.FormattableString> che rappresenta una stringa di formato composito. Grazie all'esame della stringa di formato composito e del modo in cui viene eseguito il rendering come stringa di risultato, è ad esempio possibile attuare misure di protezione contro attacchi di tipo injection durante la creazione di una query.  <xref:System.FormattableString>include anche overload <xref:System.FormattableString.ToString> che consentono di produrre stringhe di risultato per @System.Globalization.InvariantCulture e @System.Globalization.CurrentCulture.  Tutte le occorrenze delle parentesi graffe doppie ("{{" e "}}") rimangono invariate finché non si applica la formattazione.  Tutte le espressioni di interpolazione contenute vengono convertite in {0}, \{1\} e così via.  
+3. Conversione di una stringa interpolata in una variabile <xref:System.FormattableString> che rappresenta una stringa di formato composito. Grazie all'esame della stringa di formato composito e del modo in cui viene eseguito il rendering come stringa di risultato, è ad esempio possibile attuare misure di protezione contro attacchi di tipo injection durante la creazione di una query.  <xref:System.FormattableString> include anche overload <xref:System.FormattableString.ToString> che consentono di generare stringhe di risultato per @System.Globalization.InvariantCulture e @System.Globalization.CurrentCulture.  Tutte le occorrenze delle parentesi graffe doppie ("{{" e "}}") rimangono invariate finché non si applica la formattazione.  Tutte le espressioni di interpolazione contenute vengono convertite in {0}, \{1\} e così via.  
 
    [!code-cs[interpolated-strings3](../../../../samples/snippets/csharp/language-reference/keywords/interpolated-strings3.cs#1)]  
 

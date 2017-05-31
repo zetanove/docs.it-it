@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 34c0c1ff1c00eecc27edaff30f119e2f3dac8c1d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 66045a6902e64db394a1f5812658e25a11692027
+ms.openlocfilehash: a4d0e8f348afdf1793804a4062be45d2fb4e7e2b
+ms.contentlocale: it-it
+ms.lasthandoff: 04/21/2017
 
 ---
 # <a name="object-and-collection-initializers-c-programming-guide"></a>Inizializzatori di oggetto e di raccolte (Guida per programmatori C#)
@@ -44,7 +45,7 @@ Gli inizializzatori di oggetto consentono di assegnare valori a qualsiasi propri
 ## <a name="object-initializers-with-anonymous-types"></a>Inizializzatori di oggetto con tipi anonimi  
  Anche se gli inizializzatori di oggetto possono essere usati in qualsiasi contesto, sono particolarmente utili nelle espressioni di query [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)]. Le espressioni di query si avvalgono di frequente di [tipi anonimi](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md) che possono essere inizializzati solo con un inizializzatore di oggetto, come illustrato nella dichiarazione seguente.  
   
-```  
+```csharp
 var pet = new { Age = 10, Name = "Fluffy" };  
 ```  
   
@@ -54,13 +55,13 @@ var pet = new { Age = 10, Name = "Fluffy" };
   
  Quando questa query verrà eseguita, la variabile `productInfos` conterrà una sequenza di oggetti a cui sarà possibile accedere in un'istruzione `foreach` come illustrato in questo esempio:  
   
-```  
+```csharp
 foreach(var p in productInfos){...}  
 ```  
   
  Ogni oggetto nel nuovo tipo anonimo dispone di due proprietà pubbliche che ricevono gli stessi nomi delle proprietà o dei campi nell'oggetto originale. È inoltre possibile rinominare un campo mentre si crea un tipo anonimo. Nell'esempio seguente il campo `UnitPrice` viene rinominato in `Price`.  
   
-```  
+```csharp
 select new {p.ProductName, Price = p.UnitPrice};  
 ```  
   
@@ -68,11 +69,11 @@ select new {p.ProductName, Price = p.UnitPrice};
  L'uso di un inizializzatore di oggetto con struct nullable genera un errore in fase di compilazione.  
   
 ## <a name="collection-initializers"></a>Inizializzatori di raccolta  
- Gli inizializzatori di insieme consentono di specificare uno o più inizializzatori di elemento quando si inizializza una classe Collection che implementa <xref:System.Collections.IEnumerable> o una classe con un metodo di estensione `Add`. Gli inizializzatori di elemento possono essere un semplice valore, un'espressione o un inizializzatore di oggetto. Se si utilizza un inizializzatore di raccolta, non è necessario specificare più chiamate al metodo `Add` della classe nel codice sorgente, in quanto le chiamate vengono aggiunte dal compilatore.  
+ Gli inizializzatori di raccolta consentono di specificare uno o più inizializzatori di elemento quando si inizializza un tipo di raccolta che implementa <xref:System.Collections.IEnumerable> e ha un metodo `Add` con una firma appropriata come metodo di istanza o metodo di estensione. Gli inizializzatori di elemento possono essere un semplice valore, un'espressione o un inizializzatore di oggetto. Se si utilizza un inizializzatore di raccolta, non è necessario specificare più chiamate al metodo `Add` della classe nel codice sorgente, in quanto le chiamate vengono aggiunte dal compilatore.  
   
  Negli esempi seguenti vengono illustrati due semplici inizializzatori di raccolta:  
   
-```  
+```csharp
 List<int> digits = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };  
 List<int> digits2 = new List<int> { 0 + 1, 12 % 3, MakeInt() };  
 ```  
@@ -87,7 +88,7 @@ List<int> digits2 = new List<int> { 0 + 1, 12 % 3, MakeInt() };
   
  È possibile specificare elementi indicizzati se la raccolta supporta l'indicizzazione.  
   
-```  
+```csharp
 var numbers = new Dictionary<int, string> {   
     [7] = "seven",   
     [9] = "nine",   
@@ -102,3 +103,4 @@ var numbers = new Dictionary<int, string> {
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Espressioni di query LINQ](../../../csharp/programming-guide/linq-query-expressions/index.md)   
  [Tipi anonimi](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+

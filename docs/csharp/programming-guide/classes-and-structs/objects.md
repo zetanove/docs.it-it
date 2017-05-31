@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: ab83f765d6cc66bc0808a316cecabf65af7a3843
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: fe548eb5d520945e3f0d52750bbf89935947116e
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="objects-c-programming-guide"></a>Oggetti (Guida per programmatori C#)
@@ -51,7 +52,7 @@ Una definizione di classe o struct è simile a un progetto iniziale in cui vengo
   
  [!code-cs[csProgGuideStatements#31](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_2.cs)]  
   
- La memoria per `p1` e `p2` viene allocata nello stack di thread. La memoria viene recuperata insieme al tipo o al metodo in cui è stata dichiarata. Questo è il motivo per cui gli struct vengono copiati per assegnazione. Al contrario, la memoria allocata per l'istanza di una classe viene recuperata automaticamente (tramite Garbage Collection) da Common Language Runtime quando tutti i riferimenti all'oggetto sono usciti dall'ambito. Non è possibile eliminare in modo deterministico un oggetto di classe come avviene in C++. Per altre informazioni su Garbage Collection in [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], vedere [Garbage Collection](../../../standard/garbagecollection/index.md).  
+ La memoria per `p1` e `p2` viene allocata nello stack di thread. La memoria viene recuperata insieme al tipo o al metodo in cui è stata dichiarata. Questo è il motivo per cui gli struct vengono copiati per assegnazione. Al contrario, la memoria allocata per l'istanza di una classe viene recuperata automaticamente (tramite Garbage Collection) da Common Language Runtime quando tutti i riferimenti all'oggetto sono usciti dall'ambito. Non è possibile eliminare in modo deterministico un oggetto di classe come avviene in C++. Per altre informazioni su Garbage Collection in [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], vedere [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
 > [!NOTE]
 >  L'allocazione e la deallocazione di memoria sull'heap gestito sono estremamente ottimizzate in Common Language Runtime. Nella maggior parte dei casi non esistono differenze significative in termini di impatto sulle prestazioni tra l'allocazione di un'istanza di classe sull'heap e l'allocazione di un'istanza di struttura sullo stack.  
@@ -59,15 +60,15 @@ Una definizione di classe o struct è simile a un progetto iniziale in cui vengo
 ## <a name="object-identity-vs-value-equality"></a>Differenze tra identità di oggetto e uguaglianza di valori  
  Quando si confrontano due oggetti per verificarne l'uguaglianza, è necessario innanzitutto distinguere se si vuole determinare se le due variabili rappresentano lo stesso oggetto in memoria oppure se i valori di uno o più campi sono equivalenti. Se si intende confrontare valori, è necessario considerare se gli oggetti sono istanze di tipi di valore (struct) o di tipi di riferimento (classi, delegati, matrici).  
   
--   Per determinare se due istanze di classe fanno riferimento alla stessa posizione in memoria (ovvero hanno la stessa *identità*), usare il metodo statico <xref:System.Object.Equals%2A>. <xref:System.Object?displayProperty=fullName> è la classe base implicita per tutti i tipi valore e i tipi riferimento, inclusi struct e classi definiti dall'utente.  
+-   Per determinare se due istanze di classe fanno riferimento alla stessa posizione in memoria (ovvero hanno la stessa *identità*), usare il metodo statico <xref:System.Object.Equals%2A>. <xref:System.Object?displayProperty=fullName> è la classe di base implicita per tutti i tipi valore e i tipi riferimento, inclusi struct e classi definiti dall'utente.  
   
--   Per determinare se i campi di istanza in due istanze di struct hanno gli stessi valori, utilizzare il metodo <xref:System.ValueType.Equals%2A?displayProperty=fullName>. Poiché tutti gli struct ereditano implicitamente da <xref:System.ValueType?displayProperty=fullName>, il metodo viene chiamato direttamente nell'oggetto, come illustrato nell'esempio seguente:  
+-   Per determinare se i campi di istanza in due istanze di struct hanno gli stessi valori, usare il metodo <xref:System.ValueType.Equals%2A?displayProperty=fullName>. Poiché tutti gli struct ereditano implicitamente da <xref:System.ValueType?displayProperty=fullName>, il metodo viene chiamato direttamente nell'oggetto, come illustrato nell'esempio seguente:  
   
  [!code-cs[csProgGuideStatements#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/objects_3.cs)]  
   
  L'implementazione <xref:System.ValueType?displayProperty=fullName> di `Equals` usa la reflection perché deve essere in grado di determinare i campi presenti in tutti gli struct. Quando si creano struct, eseguire l'override del metodo `Equals` per specificare un algoritmo di uguaglianza efficiente specifico del tipo.  
   
--   Per determinare se i valori dei campi in due istanze di classe sono uguali, è possibile usare il metodo <xref:System.Object.Equals%2A> o l'[operatore ==](../../../csharp/language-reference/operators/equality-comparison-operator.md). Tuttavia, usarli solo se la classe ha eseguito il loro override o overload per offrire una definizione personalizzata di cosa significa "uguaglianza" per gli oggetti di quel tipo. È possibile anche che la classe implementi l'interfaccia <xref:System.IEquatable%601> o <xref:System.Collections.Generic.IEqualityComparer%601>. Entrambe le interfacce offrono metodi che possono essere usati per verificare l'uguaglianza dei valori. Durante la progettazione di classi che eseguono l'override di `Equals`, assicurarsi di seguire le linee guida definite in [Procedura: Definire l'uguaglianza di valori per un tipo](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) e <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>.  
+-   Per determinare se i valori dei campi in due istanze di classe sono uguali, è possibile usare il metodo <xref:System.Object.Equals%2A> o l'operatore [==](../../../csharp/language-reference/operators/equality-comparison-operator.md). Tuttavia, usarli solo se la classe ha eseguito il loro override o overload per offrire una definizione personalizzata di cosa significa "uguaglianza" per gli oggetti di quel tipo. La classe può anche implementare l'interfaccia <xref:System.IEquatable%601> o <xref:System.Collections.Generic.IEqualityComparer%601>. Entrambe le interfacce offrono metodi che possono essere usati per verificare l'uguaglianza dei valori. Durante la progettazione di classi che eseguono l'override di `Equals`, assicurarsi di seguire le linee guida definite in [Procedura: Definire l'uguaglianza di valori per un tipo](../../../csharp/programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md) e <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName>.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  Per ulteriori informazioni:  
@@ -78,7 +79,7 @@ Una definizione di classe o struct è simile a un progetto iniziale in cui vengo
   
 -   [Costruttori](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Distruttori](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+-   [Finalizzatori](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
   
 -   [Eventi](../../../csharp/programming-guide/events/index.md)  
   
@@ -89,4 +90,4 @@ Una definizione di classe o struct è simile a un progetto iniziale in cui vengo
  [class](../../../csharp/language-reference/keywords/class.md)   
  [struct](../../../csharp/language-reference/keywords/struct.md)   
  [Operatore new](../../../csharp/language-reference/keywords/new-operator.md)   
- [Common Type System](http://msdn.microsoft.com/library/53c57c96-83e1-4ee3-9543-9ac832671a89)
+ [Common Type System](../../../standard/base-types/common-type-system.md)

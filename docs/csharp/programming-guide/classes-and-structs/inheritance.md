@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 4590130fed9606f0f0592895de548c4bd7865db7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: 4ad15bc57b3ec3b6b06f671f560dce426af64ccc
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="inheritance-c-programming-guide"></a>Ereditarietà (Guida per programmatori C#)
@@ -47,14 +48,14 @@ L'ereditarietà, insieme all'incapsulamento e al polimorfismo, rappresenta una d
   
  Concettualmente, una classe derivata rappresenta una specializzazione della classe di base. Ad esempio, avendo una classe di base `Animal`, è possibile definire una classe derivata denominata `Mammal` e un'altra classe derivata denominata `Reptile`. Un oggetto `Mammal` è anche un oggetto `Animal` e un oggetto `Reptile` è anche un `Animal`, ma ogni classe derivata rappresenta una diversa specializzazione della classe di base.  
   
- Quando si definisce una classe derivandola da un'altra classe, la classe derivata acquista implicitamente tutti i membri della classe di base, con l'eccezione dei costruttori e dei distruttori. Di conseguenza, la classe derivata può riusare il codice definito nella classe di base senza doverlo implementare nuovamente. Nella classe derivata è possibile aggiungere altri membri. In questo modo, la classe derivata estende la funzionalità della classe di base.  
+ Quando si definisce una classe derivandola da un'altra classe, la classe derivata acquista implicitamente tutti i membri della classe di base, con l'eccezione dei costruttori e dei finalizzatori. Di conseguenza, la classe derivata può riusare il codice definito nella classe di base senza doverlo implementare nuovamente. Nella classe derivata è possibile aggiungere altri membri. In questo modo, la classe derivata estende la funzionalità della classe di base.  
   
- La figura riportata di seguito illustra una classe `WorkItem` che rappresenta un elemento di lavoro in un qualche processo aziendale. Come tutte le classi, è derivata da <xref:System.Object?displayProperty=fullName> ed eredita tutti i metodi di tale classe. `WorkItem` aggiunge cinque propri membri, tra i quali un costruttore, perché i costruttori non vengono ereditati. La classe `ChangeRequest` eredita da `WorkItem` e rappresenta un particolare tipo di elemento di lavoro. `ChangeRequest` aggiunge altri due membri ai membri che eredita da `WorkItem` e da <xref:System.Object>. Deve aggiungere il proprio costruttore e aggiunge anche `originalItemID`. La proprietà `originalItemID` consente l'associazione dell'istanza di `ChangeRequest` all'oggetto `WorkItem` originale a cui si applica la richiesta di modifica.  
+ La figura riportata di seguito illustra una classe `WorkItem` che rappresenta un elemento di lavoro in un qualche processo aziendale. Come per tutte le classi, è derivata da <xref:System.Object?displayProperty=fullName> ed eredita tutti i metodi di tale classe. `WorkItem` aggiunge cinque propri membri, tra i quali un costruttore, perché i costruttori non vengono ereditati. La classe `ChangeRequest` eredita da `WorkItem` e rappresenta un particolare tipo di elemento di lavoro. `ChangeRequest` aggiunge altri due membri ai membri che eredita da `WorkItem` e da <xref:System.Object>. Deve aggiungere il proprio costruttore e aggiunge anche `originalItemID`. La proprietà `originalItemID` consente l'associazione dell'istanza di `ChangeRequest` all'oggetto `WorkItem` originale a cui si applica la richiesta di modifica.  
   
  ![Ereditarietà delle classi](../../../csharp/programming-guide/classes-and-structs/media/class_inheritance.png "Class_Inheritance")  
 Ereditarietà delle classi  
   
- Nell'esempio seguente viene illustrato come le relazioni tra le classi mostrate nella precedente illustrazione vengono espresse in C#. Nell'esempio viene descritto anche come `WorkItem` esegue l'override del metodo virtuale <xref:System.Object.ToString%2A?displayProperty=fullName> e come la classe `ChangeRequest` eredita l'implementazione del metodo definito dalla classe `WorkItem`.  
+ Nell'esempio seguente viene illustrato come le relazioni tra le classi mostrate nella precedente illustrazione vengono espresse in C#. Nell'esempio viene descritto anche come `WorkItem` esegue l'override del metodo virtuale <xref:System.Object.ToString%2A?displayProperty=fullName> e come la classe `ChangeRequest` eredita l'implementazione del metodo propria della classe `WorkItem`.  
   
  [!code-cs[csProgGuideInheritance#49](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/inheritance_1.cs)]  
   
@@ -67,7 +68,7 @@ Ereditarietà delle classi
 ## <a name="interfaces"></a>Interfacce  
  Un'*interfaccia* rappresenta un tipo di riferimento ed è per vari aspetti simile a una classe di base astratta costituita solo da membri astratti. Quando una classe implementa un'interfaccia, deve fornire un'implementazione per tutti i membri definiti nell'interfaccia. Una classe può implementare più interfacce, anche se può essere derivata solo da una singola classe di base diretta.  
   
- Le interfacce sono usate per definire specifiche funzionalità per le classi che non sono necessariamente caratterizzate da una relazione di tipo "è un". Ad esempio, l'interfaccia <xref:System.IEquatable%601?displayProperty=fullName> può essere implementata da qualunque classe o struct che deve abilitare il codice client per determinare se due oggetti di un dato tipo sono equivalenti, indipendentemente da come il tipo definisca l'equivalenza. <xref:System.IEquatable%601> non implica lo stesso tipo di relazione "è" esistente tra una classe di base e una classe derivata. Ad esempio, un `Mammal` è un `Animal`. Per altre informazioni, vedere [Interfacce](../../../csharp/programming-guide/interfaces/index.md).  
+ Le interfacce sono usate per definire specifiche funzionalità per le classi che non sono necessariamente caratterizzate da una relazione di tipo "è un". Ad esempio, l'interfaccia <xref:System.IEquatable%601?displayProperty=fullName> può essere implementata da qualunque classe o struct che debba abilitare il codice client per determinare se due oggetti di un dato tipo sono equivalenti, indipendentemente da come il tipo definisca l'equivalenza. <xref:System.IEquatable%601> non implica lo stesso tipo di relazione "è" esistente tra una classe di base e una classe derivata. Ad esempio, un `Mammal` è un `Animal`. Per altre informazioni, vedere [Interfacce](../../../csharp/programming-guide/interfaces/index.md).  
   
 ## <a name="preventing-further-derivation"></a>Prevenzione di un'ulteriore derivazione  
  È possibile evitare che altre classi ereditino da una data classe o da uno qualsiasi dei suoi membri, dichiarando tale classe o tale membro come [sealed](../../../csharp/language-reference/keywords/sealed.md). Per altre informazioni, vedere [Classi e membri delle classi astratte e sealed](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  

@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9940012829038f585ad78a10b70fe2941753e40e
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: c8d870feccd1fe44caf566ce45349818b6ddf6e9
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="access-modifiers-c-programming-guide"></a>Modificatori di accesso (Guida per programmatori C#)
@@ -76,7 +77,7 @@ Tutti i tipi e i membri dei tipi hanno un livello di accessibilità, che control
   
  Gli operatori definiti dall'utente devono sempre essere dichiarati come public. Per altre informazioni, vedere [operatore (Riferimenti per C#)](../../../csharp/language-reference/keywords/operator.md).  
   
- I distruttori non possono avere modificatori di accessibilità.  
+ I finalizzatori non possono avere modificatori di accessibilità.  
   
  Per impostare il livello di accesso per un membro struct o di classe, aggiungere la parola chiave appropriata alla dichiarazione del membro, come illustrato nell'esempio seguente.  
   
@@ -93,7 +94,7 @@ Tutti i tipi e i membri dei tipi hanno un livello di accessibilità, che control
  I delegati si comportano come classi e struct. Per impostazione predefinita, hanno accesso internal quando dichiarati direttamente all'interno di uno spazio dei nomi e accesso private se annidati.  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   

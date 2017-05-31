@@ -31,18 +31,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 7ca42afd69e814ce448bfea97c2dbf480830a74a
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7e33ed084c560470a486ebbb25035a59ddc18565
+ms.openlocfilehash: 21abcf70cce2d6c9052629ce60d08e9ec6ac16e7
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="hello-world----your-first-program-c-programming-guide"></a>Hello World -- Il primo programma (Guida per programmatori C#)
-La procedura seguente crea una versione C# del  programma "Hello World!" tradizionale. Il programma visualizza la stringa `Hello World!`  
+La procedura seguente crea una versione C# del programma "Hello World!" tradizionale. Il programma visualizza la stringa `Hello World!`  
   
  Per altri esempi di concetti introduttivi, vedere [Introduzione a Visual C# e Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-create-and-run-a-console-application"></a>Per creare ed eseguire un'applicazione console  
   
@@ -146,10 +147,7 @@ La procedura seguente crea una versione C# del  programma "Hello World!" tradizi
   
      `Hello`  
   
- Per altre informazioni sul compilatore C# e le relative opzioni, vedere [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md) (Opzioni del compilatore C#).  
-  
-## <a name="featured-book-chapter"></a>Capitoli del libro rappresentati  
- [Writing a C# Program](http://go.microsoft.com/fwlink/?LinkId=221227) (Scrittura di un programma in C#) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214) (Introduzione a Visual C# 2010)  
+ Per altre informazioni sul compilatore C# e le relative opzioni, vedere [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md) (Opzioni del compilatore C#).
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   

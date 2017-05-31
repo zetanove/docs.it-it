@@ -29,16 +29,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: b12c4b20f65f8cd2b68a55c5d2548b289a560c3c
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d65b4050287289df419685127cdbbb18f52ec719
+ms.openlocfilehash: a214f129424fd458decf473ef94ec3c5ed6eed3c
+ms.contentlocale: it-it
+ms.lasthandoff: 05/16/2017
 
 ---
 # <a name="extension-methods-c-programming-guide"></a>Metodi di estensione (Guida per programmatori C#)
 I metodi di estensione consentono di "aggiungere" metodi ai tipi esistenti senza creare un nuovo tipo derivato, ricompilare o modificare in altro modo il tipo originale. I metodi di estensione sono uno speciale tipo di metodo statico, ma vengono chiamati come se fossero metodi di istanza sul tipo esteso. Per il codice client scritto in C# e Visual Basic non esistono differenze evidenti tra la chiamata a un metodo di estensione e ai metodi effettivamente definiti in un tipo.  
   
- I metodi di estensione più comuni sono gli operatori di query standard [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] che aggiungono funzionalità di query ai tipi esistenti <xref:System.Collections.IEnumerable?displayProperty=fullName> e <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>. Per utilizzare gli operatori query standard, inserirli innanzitutto nell'ambito con una direttiva `using System.Linq`. Quindi qualsiasi tipo che implementa <xref:System.Collections.Generic.IEnumerable%601> sembra avere metodi di istanza come <xref:System.Linq.Enumerable.GroupBy%2A>, <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.Average%2A> e così via. È possibile vedere questi metodi aggiuntivi nel completamento istruzioni di IntelliSense quando si digita il punto (.) dopo un'istanza del tipo <xref:System.Collections.Generic.IEnumerable%601> come <xref:System.Collections.Generic.List%601> or <xref:System.Array>.  
+ I metodi di estensione più comuni sono gli operatori query standard [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] che aggiungono la funzionalità di query ai tipi <xref:System.Collections.IEnumerable?displayProperty=fullName> e <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> esistenti. Per utilizzare gli operatori query standard, inserirli innanzitutto nell'ambito con una direttiva `using System.Linq`. In questo modo qualsiasi tipo che implementa <xref:System.Collections.Generic.IEnumerable%601> avrà apparentemente metodi di istanza quali <xref:System.Linq.Enumerable.GroupBy%2A>, <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.Average%2A>e così via. È possibile visualizzare questi metodi aggiuntivi con la funzionalità di completamento istruzioni di IntelliSense quando si digita "punto" dopo un'istanza di un tipo <xref:System.Collections.Generic.IEnumerable%601>, ad esempio <xref:System.Collections.Generic.List%601> o <xref:System.Array>.  
   
  Nell'esempio seguente viene illustrato come chiamare il metodo `OrderBy` dell'operatore query standard su una matrice di Integer. L'espressione tra parentesi è un'espressione lambda. Molti operatori query standard accettano espressioni lambda come parametri, sebbene non sia un requisito per i metodi di estensione. Per altre informazioni, vedere [Espressioni lambda](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
@@ -46,7 +47,7 @@ I metodi di estensione consentono di "aggiungere" metodi ai tipi esistenti senza
   
  I metodi di estensione sono definiti come metodi statici, ma vengono chiamati utilizzando la sintassi del metodo di istanza. Il primo parametro specifica su quale tipo opera il metodo ed è preceduto dal modificatore [this](../../../csharp/language-reference/keywords/this.md). I metodi di estensione si trovano nell'ambito solo quando si importa in modo esplicito lo spazio dei nomi nel codice sorgente con una direttiva `using`.  
   
- L'esempio seguente mostra un metodo di estensione definito per la classe <xref:System.String?displayProperty=fullName>. Si noti che viene definito in una classe statica non annidata e non generica:  
+ Nell'esempio riportato di seguito viene illustrato un metodo di estensione definito per la classe <xref:System.String?displayProperty=fullName>. Si noti che viene definito in una classe statica non annidata e non generica:  
   
  [!code-cs[csProgGuideExtensionMethods#4](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/extension-methods_2.cs)]  
   
@@ -73,10 +74,10 @@ int i = s.WordCount();
 using System.Linq;  
 ```  
   
- Può inoltre essere necessario aggiungere un riferimento a System.Core.dll. Si noterà che gli operatori di query standard vengono ora visualizzati in IntelliSense come metodi aggiuntivi disponibili per la maggior parte dei tipi <xref:System.Collections.Generic.IEnumerable%601>.  
+ Può inoltre essere necessario aggiungere un riferimento a System.Core.dll. Si noterà che gli operatori query standard vengono ora visualizzati in IntelliSense come metodi aggiuntivi disponibili per la maggior parte dei tipi <xref:System.Collections.Generic.IEnumerable%601>.  
   
 > [!NOTE]
->  Anche se gli operatori di query standard non sono visualizzati in IntelliSense per <xref:System.String>, sono comunque disponibili.  
+>  Anche se gli operatori query standard non sono visualizzati in IntelliSense per <xref:System.String>, sono tuttavia disponibili.  
   
 ## <a name="binding-extension-methods-at-compile-time"></a>Associazione di metodi di estensione in fase di compilazione  
  È possibile utilizzare metodi di estensione per estendere una classe o un'interfaccia, ma non per eseguirne l'override. Un metodo di estensione con lo stesso nome e la stessa firma di un metodo di interfaccia o di classe non verrà mai chiamato. In fase di compilazione, i metodi di estensione hanno sempre una priorità più bassa dei metodi di istanza definiti nel tipo stesso. In altre parole, se un tipo dispone di un metodo denominato `Process(int i)` e si dispone di un metodo di estensione con la stessa firma, il compilatore eseguirà sempre l'associazione al metodo di istanza. Quando il compilatore rileva una chiamata al metodo, cerca innanzitutto una corrispondenza nei metodi di istanza del tipo. Se non viene trovata alcuna corrispondenza, cercherà eventuali metodi di estensione definiti per il tipo ed eseguirà l'associazione al primo metodo di estensione trovato. Nell'esempio seguente viene dimostrato come il compilatore determina a quale metodo di estensione o metodo di istanza eseguire l'associazione.  
@@ -95,7 +96,7 @@ using System.Linq;
   
  Quando si utilizza un metodo di estensione per estendere un tipo di cui non è possibile modificare il codice sorgente, si corre il rischio che una modifica nell'implementazione del tipo provochi l'interruzione del metodo di estensione.  
   
- Se si implementano metodi di estensione per un determinato tipo, è importante tenere presente i seguenti punti:  
+ Se si implementano metodi di estensione per un determinato tipo, è importante tenere presente quanto segue:  
   
 -   Un metodo di estensione non verrà mai chiamato se dispone della stessa firma di un metodo definito nel tipo.  
   
@@ -112,3 +113,4 @@ using System.Linq;
  [Interoperabilità dei metodi di estensione tra linguaggi](http://go.microsoft.com/fwlink/?LinkId=112386)   
  [Metodi di estensione e delegati sottoposti a currying](http://go.microsoft.com/fwlink/?LinkId=112387)   
  [Associazione di metodi di estensione e segnalazione errori](http://go.microsoft.com/fwlink/?LinkId=112388)
+

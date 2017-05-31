@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 5cf36f45-f91a-4fca-a0b7-87f233e108e9
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: df6e493f4dfb72ac59951832773cc818627f4c2f
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
+ms.openlocfilehash: 7fea22be3b98c3218d173e5d80f1f22ef7ecf7e2
+ms.contentlocale: it-it
+ms.lasthandoff: 04/12/2017
 
 ---
 
@@ -29,6 +30,8 @@ Si creeranno anche metodi iteratori, cioè metodi che producono un iteratore per
 + Creazione di una pipeline di dati dove i dati fluiscono in modo efficace tramite i metodi iteratori.
 
 Il linguaggio C# offre funzionalità per entrambi gli scenari. In questo articolo viene offerta una panoramica di tali funzionalità.
+
+Questa esercitazione prevede diversi passaggi. Dopo ogni passaggio, è possibile eseguire l'applicazione e verificare lo stato di avanzamento. È anche possibile [visualizzare o scaricare l'esempio completato](https://github.com/dotnet/docs/blob/master/samples/csharp/iterators) per questo argomento. Per istruzioni sul download, vedere [Esempi ed esercitazioni](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## <a name="iterating-with-foreach"></a>Iterazione con foreach
 

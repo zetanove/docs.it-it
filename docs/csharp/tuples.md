@@ -10,16 +10,17 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f2c81b7e18f36bde5b46c0c6df5c8122cd303931
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b30f41e3fb07a962542a09a41c698efee7ebb5a
+ms.openlocfilehash: 0ea7299d87dc69784e3bed93e48d83e4a0076a20
+ms.contentlocale: it-it
+ms.lasthandoff: 04/26/2017
 
 ---
 
 # <a name="c-tuple-types"></a>Tipi di tupla di C# #
 
-Le tuple in C# sono tipi definiti tramite una sintassi leggera. I vantaggi includono una sintassi più semplice, regole per le conversioni basate su numero (detto "grado") e tipi di campi, nonché regole coerenti per le copie e le assegnazioni. Come un compromesso, le tuple non supportano gli idiomi orientati agli oggetti associati all'ereditarietà. È possibile ottenere una panoramica della sezione nell'argomento [Tuples in the What's new in C# 7](csharp-7.md#tuples) (Tuple in Novità di C# 7).
+Le tuple in C# sono tipi definiti tramite una sintassi leggera. I vantaggi includono una sintassi più semplice, regole per le conversioni basate su numero (detto "grado") e tipi di campi, nonché regole coerenti per le copie e le assegnazioni. Come un compromesso, le tuple non supportano gli idiomi orientati agli oggetti associati all'ereditarietà. È possibile ottenere una panoramica della sezione nell'argomento [Tuples in the What's new in C# 7](whats-new/csharp-7.md#tuples) (Tuple in Novità di C# 7).
 
 Questo argomento descrive le regole del linguaggio che controllano le tuple in C# 7, le diverse modalità di uso delle stesse e una guida iniziale per l'uso delle tuple.
 
@@ -65,7 +66,7 @@ Il compilatore deve comunicare tali nomi creati per le tuple, restituiti dalle p
 
 ## <a name="assignment-and-tuples"></a>Assegnazione e tuple
 
-Il linguaggio supporta l'assegnazione tra tipi di tupla che hanno lo stesso numero di campi e gli stessi tipi per ognuno di tali campi. Tali tipi devono essere corrispondenze esatte in fase di compilazione. Non sono considerate altre conversioni per le assegnazioni. Esaminiamo i tipi di assegnazioni consentiti tra i tipi di tupla.
+Il linguaggio supporta l'assegnazione tra tipi di tupla che hanno lo stesso numero di campi e conversioni implicite dei tipi per ognuno di tali campi. Non sono considerate altre conversioni per le assegnazioni. Esaminiamo i tipi di assegnazioni consentiti tra i tipi di tupla.
 
 Considerare le variabili usate negli esempi seguenti:
 
@@ -181,7 +182,7 @@ In aggiunta, è possibile usare la parola chiave `var` con una o tutte le dichia
 ```
 Si noti che non è possibile usare un tipo specifico all'esterno delle parentesi, anche se ogni campo nella tupla presenta lo stesso tipo.
 
-### <a name="deconstring-user-defined-types"></a>Decostruzione dei tipi definiti dall'utente
+### <a name="deconstructing-user-defined-types"></a>Decostruzione dei tipi definiti dall'utente
 
 Qualsiasi tipo di tupla può essere decostruito come illustrato in precedenza. È semplice anche abilitare la decostruzione sui tipi definiti dall'utente (classi, struct o perfino interfacce).
 

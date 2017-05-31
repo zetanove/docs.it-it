@@ -27,14 +27,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 587e50d5c81c19d75e9d8bf4779064947a373b71
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 49d7f0dc14f6595ed1e96e5072766dc119f22127
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="using-statement-c-reference"></a>Istruzione using (Riferimenti per C#)
-Offre una comoda sintassi che garantisce l'uso corretto degli oggetti <xref:System.IDisposable>.  
+Offre una comoda sintassi che verifica l'uso corretto degli oggetti <xref:System.IDisposable>.  
   
 ## <a name="example"></a>Esempio  
  L'esempio seguente illustra come usare l'istruzione using.  
@@ -42,11 +43,11 @@ Offre una comoda sintassi che garantisce l'uso corretto degli oggetti <xref:Syst
  [!code-cs[csrefKeywordsNamespace#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_1.cs)]  
   
 ## <a name="remarks"></a>Note  
- <xref:System.IO.File> e <xref:System.Drawing.Font> sono esempi di tipi gestiti che accedono a risorse non gestite (in questo caso handle di file e contesti di dispositivo). Esistono molti altri tipi di risorse non gestite e tipi della libreria di classi che le incapsulano. Tutti questi tipi devono implementare l'interfaccia <xref:System.IDisposable>.  
+ <xref:System.IO.File> e <xref:System.Drawing.Font> sono esempi di tipi gestiti che accedono a risorse non gestite (in questo caso handle di file e contesti di dispositivo). Esistono molti altri tipi di risorse non gestite e tipi della libreria di classi che le incapsulano. Ogni tipo deve implementare l'interfaccia <xref:System.IDisposable>.  
   
- Di norma, quando si usa un oggetto `IDisposable` è necessario dichiararlo e creare la relativa istanza in un'istruzione `using`. L'istruzione `using` chiama il metodo <xref:System.IDisposable.Dispose%2A> per l'oggetto in modo corretto e, quando si usa come illustrato in precedenza, fa in modo che l'oggetto stesso esca dall'ambito, non appena si chiama <xref:System.IDisposable.Dispose%2A>. All'interno del blocco `using` l'oggetto è di sola lettura e non può essere modificato o riassegnato.  
+ Di norma, quando si usa un oggetto `IDisposable` è necessario dichiararlo e creare la relativa istanza in un'istruzione `using`. L'istruzione `using` chiama il metodo <xref:System.IDisposable.Dispose%2A> sull'oggetto in modo corretto e, quando viene usata come illustrato in precedenza, fa in modo che l'oggetto stesso esca dall'ambito non appena viene chiamato il metodo <xref:System.IDisposable.Dispose%2A>. All'interno del blocco `using` l'oggetto è di sola lettura e non può essere modificato o riassegnato.  
   
- L'istruzione `using` garantisce che il metodo <xref:System.IDisposable.Dispose%2A> venga chiamato anche se si verifica un'eccezione mentre si chiamano i metodi per l'oggetto. È possibile ottenere lo stesso risultato inserendo l'oggetto all'interno di un blocco try e chiamando <xref:System.IDisposable.Dispose%2A> in un blocco finally. Di fatto questo è il modo in cui l'istruzione `using` viene convertita dal compilatore. L'esempio di codice precedente si espande al codice seguente in fase di compilazione (si notino le parentesi graffe aggiuntive per creare l'ambito limitato per l'oggetto):  
+ L'istruzione `using` verifica che il metodo <xref:System.IDisposable.Dispose%2A> venga chiamato anche se si verifica un'eccezione mentre si chiamano i metodi sull'oggetto. È possibile ottenere lo stesso risultato inserendo l'oggetto all'interno di un blocco try e chiamando `using` in un blocco finally. Di fatto questo è il modo in cui l'istruzione <xref:System.IDisposable.Dispose%2A> viene convertita dal compilatore. L'esempio di codice precedente si espande al codice seguente in fase di compilazione (si notino le parentesi graffe aggiuntive per creare l'ambito limitato per l'oggetto):  
   
  [!code-cs[csrefKeywordsNamespace#5](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_2.cs)]  
   
@@ -59,12 +60,12 @@ Offre una comoda sintassi che garantisce l'uso corretto degli oggetti <xref:Syst
  [!code-cs[csrefKeywordsNamespace#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-statement_4.cs)]  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
  [Direttiva using](../../../csharp/language-reference/keywords/using-directive.md)   
- [Garbage Collection](../../../standard/garbagecollection/index.md)   
- [Implementazione di un metodo Dispose](http://msdn.microsoft.com/library/eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9)
+ [Garbage Collection](../../../standard/garbage-collection/index.md)   
+ [Implementazione di un metodo Dispose](../../../standard/garbage-collection/implementing-dispose.md)

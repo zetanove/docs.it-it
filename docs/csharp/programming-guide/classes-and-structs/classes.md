@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1a7d66be3ce0a4a24fd95d5b77787dcad5598f4d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: 1f327e7171df8b91d4c5a787c879069a4e44f562
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="classes-c-programming-guide"></a>Classi (Guida per programmatori C#)
@@ -84,14 +85,14 @@ Una *classe* è un costrutto che consente di creare tipi personalizzati raggrupp
  [!code-cs[csProgGuideObjects#84](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/classes_6.cs)]  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
- [Programmazione orientata ad oggetti](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)   
+ [Programmazione orientata ad oggetti](../concepts/object-oriented-programming.md)   
  [Polimorfismo](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)   
  [Membri](../../../csharp/programming-guide/classes-and-structs/members.md)   
  [Metodi](../../../csharp/programming-guide/classes-and-structs/methods.md)   
  [Costruttori](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Distruttori](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [Finalizzatori](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [Oggetti](../../../csharp/programming-guide/classes-and-structs/objects.md)

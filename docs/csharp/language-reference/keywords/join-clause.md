@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c80cce6cbb29946dfc2d0407781cd4ba698a2ea2
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 26027418b70d211dcadf6ace58b24927d94e427a
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="join-clause-c-reference"></a>Clausola join (Riferimento C#)
@@ -88,7 +89,7 @@ Il clausola `join` è utile per l'associazione di elementi di sequenze di origin
 ## <a name="joins-on-object-collections-vs-relational-tables"></a>Join su raccolte di oggetti e tabelle relazionali  
  In un'espressione di query [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] le operazioni di join vengono eseguite su raccolte di oggetti. Le raccolte di oggetti non possono essere "aggiunte" nello stesso modo in cui si aggiungono due tabelle relazionali. In [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] le clausole `join` esplicite sono necessarie solo quando due sequenze di origine non sono legate da una relazione. Quando si usa [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq_md.md)], le tabelle di chiavi esterne vengono rappresentate nel modello a oggetti come proprietà della tabella primaria. Nel database Northwind, ad esempio, la tabella Customer ha una relazione di chiavi esterne con la tabella Orders. Quando si esegue il mapping delle tabelle al modello a oggetti, la classe Customer presenta una proprietà Orders che contiene la raccolta degli ordini associati a tale cliente. In effetti, il join è già stato automaticamente eseguito.  
   
- Per altre informazioni sull'esecuzione di una query in tabelle correlate nel contesto di [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq_md.md)], vedere [Procedura: Eseguire il mapping delle relazioni di database](http://msdn.microsoft.com/library/538def39-8399-46fb-b02d-60ede4e050af).  
+ Per altre informazioni sull'esecuzione di una query in tabelle correlate nel contesto di [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq_md.md)], vedere [Procedura: Eseguire il mapping delle relazioni di database](../../../framework/data/adonet/sql/linq/how-to-map-database-relationships.md).  
   
 ## <a name="composite-keys"></a>Chiavi composte  
  È possibile verificare l'uguaglianza di più valori usando una chiave composta. Per altre informazioni, vedere [Procedura: Eseguire un join usando chiavi composte](../../../csharp/programming-guide/linq-query-expressions/how-to-join-by-using-composite-keys.md). Le chiavi composte possono essere usate anche nella clausola `group`.  
@@ -99,7 +100,7 @@ Il clausola `join` è utile per l'associazione di elementi di sequenze di origin
  [!code-cs[cscsrefQueryKeywords#23](../../../csharp/language-reference/keywords/codesnippet/CSharp/join-clause_5.cs)]  
   
 ## <a name="remarks"></a>Note  
- Una clausola `join` non seguita da `into` viene convertita in una chiamata al metodo <xref:System.Linq.Enumerable.Join%2A>. Una clausola `join` seguita da `into` viene convertita in una chiamata al metodo <xref:System.Linq.Enumerable.GroupJoin%2A>.  
+ Una clausola `join` non seguita da `into` viene traslata in una chiamata al metodo <xref:System.Linq.Enumerable.Join%2A>. Una clausola `join` seguita da `into` viene traslata in una chiamata al metodo <xref:System.Linq.Enumerable.GroupJoin%2A>.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Parole chiave di query (LINQ)](../../../csharp/language-reference/keywords/query-keywords.md)   

@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9d61870e6d2d8f905c56f86bbb6e6d99d5dae80c
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: 47103d13a68c5250c33dbca3e89de2f1f3e13449
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="using-constructors-c-programming-guide"></a>Utilizzo di costruttori (Guida per programmatori C#)
@@ -50,7 +51,7 @@ Quando si crea una [classe](../../../csharp/language-reference/keywords/class.md
   
  Per altre informazioni, vedere [Costruttori privati](../../../csharp/programming-guide/classes-and-structs/private-constructors.md).  
   
- I costruttori per i tipi [struct](../../../csharp/language-reference/keywords/struct.md) sono simili ai costruttori di classi, ma gli struct non possono contenere un costruttore predefinito esplicito poiché ne viene specificato automaticamente uno dal compilatore. Questo costruttore inizializza ogni campo dello `struct` sui valori predefiniti. Per altre informazioni, vedere [Tabella dei valori predefiniti](../../../csharp/language-reference/keywords/default-values-table.md). Il costruttore predefinito viene tuttavia richiamato solo se si crea un'istanza per lo `struct` con `new`. Ad esempio, questo codice usa il costruttore predefinito per <xref:System.Int32>, in modo da garantire che venga inizializzato il valore integer:  
+ I costruttori per i tipi [struct](../../../csharp/language-reference/keywords/struct.md) sono simili ai costruttori di classi, ma gli `structs` non possono contenere un costruttore predefinito esplicito poiché ne viene specificato automaticamente uno dal compilatore. Questo costruttore inizializza ogni campo dello `struct` sui valori predefiniti. Per altre informazioni, vedere [Tabella dei valori predefiniti](../../../csharp/language-reference/keywords/default-values-table.md). Il costruttore predefinito viene tuttavia richiamato solo se si crea un'istanza per lo `struct` con `new`. Ad esempio, questo codice usa il costruttore predefinito per <xref:System.Int32>, in modo da garantire che venga inizializzato l'Integer:  
   
 ```  
 int i = new int();  
@@ -110,10 +111,10 @@ Console.WriteLine("{0}, {1}", a, b);
  Un costruttore può essere dichiarato statico usando la parola chiave [static](../../../csharp/language-reference/keywords/static.md). I costruttori statici vengono chiamati automaticamente subito prima dell'accesso ai campi statici e in genere vengono usati per inizializzare i membri delle classi statiche. Per altre informazioni, vedere [Costruttori statici](../../../csharp/programming-guide/classes-and-structs/static-constructors.md).  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
  [Classi e struct](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [Costruttori](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Distruttori](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+ [Finalizzatori](../../../csharp/programming-guide/classes-and-structs/destructors.md)

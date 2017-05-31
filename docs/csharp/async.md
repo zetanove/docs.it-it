@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 27c39f8c67a3f8288883a37025797a461c50f940
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.openlocfilehash: 2983dccc63c38884a24f4183d41b406797d5d10f
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 
@@ -225,7 +226,7 @@ Sebbene produca una quantità minore di codice, è necessario prestare molta att
 
 Sebbene la programmazione asincrona è relativamente semplice, ci sono alcuni dettagli da tenere presente per evitare comportamenti non previsti.
 
-*  `async`I metodi **devono avere una parola chiave** `await` **nel corpo, altrimenti non verranno eseguiti.**
+*  `async`I metodi  **devono avere una parola chiave**  `await`  **nel corpo, altrimenti non verranno eseguiti.**
 
 Questo è importante da tenere presente.  Se `await` non viene usato nel corpo di un metodo `async`, il compilatore C# genererà un avviso, ma il codice verrà compilato ed eseguito come se fosse un metodo normale.  Si noti che anche questo sarebbe estremamente inefficiente, perché la macchina a stati generata dal compilatore C# per il metodo asincrono non produrrebbe niente.
 
@@ -233,7 +234,7 @@ Questo è importante da tenere presente.  Se `await` non viene usato nel corpo d
 
 Questa è la convenzione usata in .NET per differenziare più facilmente i metodi sincroni dai metodi asincroni. Si noti che alcuni metodi non chiamati in modo esplicito dal codice, ad esempio un gestore di eventi o un metodo di controller del Web, non vengono necessariamente applicati. Poiché questi metodi non vengono chiamati in modo esplicito dal codice, non è importante denominarli in modo esplicito.
 
-*   `async void` **deve essere usato solo per i gestori eventi.**
+*   `async void`  **deve essere usato solo per i gestori eventi.**
 
 `async void` è l'unico modo per consentire ai gestori eventi asincroni di funzionare correttamente, poiché gli eventi non hanno tipi restituiti (quindi non possono usare `Task` e `Task<T>`). Qualsiasi altro uso di `async void` non segue il modello TAP e può essere difficile da usare, ad esempio:
 
