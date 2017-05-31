@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 41e8976e7b133380687a65265fd5ebe9a810a4ff
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.openlocfilehash: 360e93af03e00547116d1af1816c2b9b29524881
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 
@@ -33,7 +34,7 @@ In questa esercitazione verranno create anche numerose funzionalità.
 ## <a name="prerequisites"></a>Prerequisiti
 È necessario configurare il computer per l'esecuzione di .NET Core. Le istruzioni di installazione sono disponibili nella pagina [.NET Core](https://www.microsoft.com/net/core). Questa applicazione può essere eseguita in Windows, Linux, macOS o in un contenitore Docker. È necessario installare l'editor di codice preferito. 
 ## <a name="create-the-application"></a>Creare l'applicazione
-Il primo passaggio consiste nel creare una nuova applicazione. Aprire un prompt dei comandi e creare una nuova directory per l'applicazione, impostandola come directory corrente. Digitare il comando `dotnet new console` al prompt dei comandi per creare i file di avvio per un'applicazione "Hello World" di base.
+Il primo passaggio consiste nel creare una nuova applicazione. Aprire un prompt dei comandi e creare una nuova directory per l'applicazione, impostandola come directory corrente. Digitare il comando `dotnet new console` al prompt dei comandi Questa operazione crea i file iniziali per un'applicazione "Hello World" di base.
 
 Prima di iniziare ad apportare modifiche, è opportuno ripercorrere i passaggi necessari per eseguire l'applicazione Hello World semplice. Dopo aver creato l'applicazione, digitare `dotnet restore` al prompt dei comandi. Questo comando esegue il processo di ripristino dei pacchetti NuGet. Lo strumento NuGet consente di gestire pacchetti .NET. Questo comando scarica eventuali dipendenze mancanti per il progetto. Poiché si tratta di un nuovo progetto, non è ancora presente alcuna dipendenza e con la prima esecuzione verrà quindi scaricato .NET Core Framework. Dopo questo passaggio iniziale, sarà sufficiente eseguire `dotnet restore` quando si aggiungono nuovi pacchetti dipendenti o si aggiorna la versione di una delle dipendenze. Questo processo consente anche di creare il file di blocco del progetto (project.lock.json) nella directory del progetto. Con questo file è possibile gestire le dipendenze del progetto. Contiene infatti il percorso locale di tutte le dipendenze del progetto. Non è necessario inserire il file nel controllo del codice sorgente. Verrà generato quando si esegue `dotnet restore`. 
 
@@ -53,7 +54,7 @@ namespace TeleprompterConsole
 ```
 
 ## <a name="reading-and-echoing-the-file"></a>Lettura e restituzione del file
-La prima funzionalità da aggiungere è quella per leggere un file di testo e visualizzare tutto il testo nella console. Si aggiungerà innanzitutto un file di testo. Copiare il file [sampleQuotes.txt](https://raw.githubusercontent.com/dotnet/docs/master/samples/csharp/getting-started/console-teleprompter/sampleQuotes.txt) dal repository GitHub di questo [esempio](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-teleprompter) alla directory del progetto. Questo file verrà usato come script per l'applicazione.
+La prima funzionalità da aggiungere è la capacità di leggere un file di testo e visualizzare tutto il testo nella console. Si aggiungerà innanzitutto un file di testo. Copiare il file [sampleQuotes.txt](https://raw.githubusercontent.com/dotnet/docs/master/samples/csharp/getting-started/console-teleprompter/sampleQuotes.txt) dal repository GitHub di questo [esempio](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-teleprompter) alla directory del progetto. Questo file verrà usato come script per l'applicazione. Per informazioni su come scaricare l'app di esempio per questo argomento, vedere le istruzioni nell'argomento [Esempi ed esercitazioni](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 Aggiungere quindi il metodo seguente alla classe Program (immediatamente sotto il metodo `Main`):
 
