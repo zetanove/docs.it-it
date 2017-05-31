@@ -43,7 +43,7 @@ L'opzione **/lib** specifica la posizione degli assembly a cui si fa riferimento
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /lib:dir1[,dir2]  
 ```  
   
@@ -86,7 +86,7 @@ L'opzione **/lib** specifica la posizione degli assembly a cui si fa riferimento
 ## <a name="example"></a>Esempio  
  Compilare t2.cs per creare un file con estensione exe. Verranno cercati i riferimenti agli assembly nella directory di lavoro e nella directory radice dell'unità C.  
   
-```  
+```console  
 csc /lib:c:\ /reference:t2.dll t2.cs  
 ```  
   

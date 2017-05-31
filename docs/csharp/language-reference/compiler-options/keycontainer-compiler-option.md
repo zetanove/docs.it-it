@@ -43,7 +43,7 @@ Specifica il nome del contenitore di chiavi crittografiche.
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /keycontainer:string  
 ```  
   

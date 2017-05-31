@@ -46,7 +46,7 @@ Questa opzione rappresenta un modo pratico per segnalare a Microsoft un errore d
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /errorreport:{ none | prompt | queue | send }  
 ```  
   

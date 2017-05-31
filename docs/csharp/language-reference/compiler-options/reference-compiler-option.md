@@ -48,7 +48,7 @@ Con l'opzione **/reference** il compilatore importa nel progetto corrente le inf
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /reference:[alias=]filename  
 /reference:filename  
 ```  
@@ -95,7 +95,7 @@ Con l'opzione **/reference** il compilatore importa nel progetto corrente le inf
   
  In questo modo vengono impostati gli alias esterni "GridV1" e "GridV2", da usare nel programma tramite un'istruzione extern:  
   
-```  
+```csharp  
 extern alias GridV1;  
 extern alias GridV2;  
 // Using statements go here.  
@@ -103,13 +103,13 @@ extern alias GridV2;
   
  Una volta completate queste operazioni, è possibile fare riferimento al controllo griglia dal file grid.dll aggiungendo il prefisso GridV1 al nome del controllo, come riportato di seguito:  
   
-```  
+```csharp  
 GridV1::Grid  
 ```  
   
  È anche possibile fare riferimento al controllo griglia dal file grid20.dll aggiungendo il prefisso GridV2 al nome del controllo, come riportato di seguito:  
   
-```  
+```csharp  
 GridV2::Grid   
 ```  
   

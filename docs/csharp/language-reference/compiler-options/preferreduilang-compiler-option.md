@@ -43,7 +43,7 @@ Utilizzando l'opzione del compilatore `/preferreduilang`, è possibile specifica
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /preferreduilang: language  
 ```  
   

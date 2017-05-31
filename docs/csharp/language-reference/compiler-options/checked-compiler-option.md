@@ -43,7 +43,7 @@ L'opzione **/checked** specifica se un'istruzione di calcolo di interi che risul
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /checked[+ | -]  
 ```  
   
@@ -69,7 +69,7 @@ L'opzione **/checked** specifica se un'istruzione di calcolo di interi che risul
 ## <a name="example"></a>Esempio  
  Il comando seguente compila `t2.cs`. L'uso di `/checked` nel comando specifica che l'istruzione di calcolo di interi nel file che non è nell'ambito della parola chiave `checked` o `unchecked` e che risulta in un valore non incluso nell'intervallo dei tipi di dati, genera un'eccezione in fase di esecuzione.  
   
-```  
+```console  
 csc t2.cs /checked  
 ```  
   
