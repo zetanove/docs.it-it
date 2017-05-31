@@ -2,6 +2,7 @@
 title: 'Mitigazione: CspParameters.ParentWindowHandle prevede un HWND | Microsoft Docs'
 ms.custom: 
 ms.date: 04/07/2017
+ms.prod: .net-framework
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -16,10 +17,11 @@ caps.latest.revision: 5
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
-ms.sourcegitcommit: 9460c8b6ca8db927af4064e3567eca34c1bf5c91
-ms.openlocfilehash: 22c258b06a5cc8fa3fec72665d7e413b0cdd11ee
-ms.lasthandoff: 04/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 39e8e757a446b30ab18914465853138e1c239e40
+ms.openlocfilehash: 31898c86adc687b63a1b7f02eee98aae9b16c5f7
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="mitigation-cspparametersparentwindowhandle-expects-an-hwnd"></a>Mitigazione: CspParameters.ParentWindowHandle prevede un HWND
@@ -46,7 +48,7 @@ cspParameters.ParentWindowHandle = form.Handle;
 
 Gli sviluppatori che hanno identificato il valore corretto nell'indirizzo della posizione di memoria contenente il valore `form.Handle` possono rifiutare esplicitamente questa modifica nel comportamento impostando l'opzione <xref:System.Security.AppContext> `Switch.System.Security.Cryptography.DoNotAddrOfCspParentWindowHandle` su `true`:
 
-- Impostando a livello di codice le opzioni di compatibilità sull'istanza [AppContext](assetID:///T:System.Security.AppContext).
+- Impostando a livello di codice le opzioni di compatibilità sull'istanza <xref:System.Security.AppContext>.
 
 - Aggiungendo la riga seguente alla sezione `<runtime>` del file app.config:
    
