@@ -58,13 +58,13 @@ Usare il metodo `CreateDirectory` dell'oggetto `My.Computer.FileSystem` per la c
   
 -   Il nome della directory è `Nothing` (<xref:System.ArgumentNullException>).  
   
--   Il percorso della directory è troppo lungo (<xref:System.IO.PathTooLongException>).  
+-   Il nome della directory è troppo lungo (<xref:System.IO.PathTooLongException>).  
   
--   Il nome della directory contiene i due punti ":" (<xref:System.NotSupportedException>).  
+-   Il nome della directory è un carattere due punti ":" (<xref:System.NotSupportedException>).  
   
--   L'utente non dispone dell'autorizzazione per la creazione della directory (<xref:System.UnauthorizedAccessException>).  
+-   L'utente non è autorizzato a creare la directory (<xref:System.UnauthorizedAccessException>).  
   
--   L'utente non dispone delle autorizzazioni in una situazione di attendibilità parziale (<xref:System.Security.SecurityException>).  
+-   L'utente non ha le autorizzazioni richieste in una situazione di attendibilità parziale (<xref:System.Security.SecurityException>).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory%2A>   

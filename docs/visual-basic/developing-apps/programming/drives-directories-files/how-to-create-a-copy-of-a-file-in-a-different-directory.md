@@ -52,11 +52,11 @@ Il metodo `My.Computer.FileSystem.CopyFile` consente di copiare i file. I sui pa
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Le condizioni seguenti possono generare un'eccezione:  
   
--   Il percorso non è valido per uno dei motivi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo, ovvero inizia con \\\\.\\ (<xref:System.ArgumentException>).  
+-   Il percorso non è valido per uno dei motivi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo (inizia con \\\\.\\) (<xref:System.ArgumentException>).  
   
 -   Il sistema non ha recuperato il percorso assoluto (<xref:System.ArgumentException>).  
   
--   Il percorso non è valido in quanto `Nothing` (<xref:System.ArgumentNullException>).  
+-   Il percorso non è valido in quanto è `Nothing` (<xref:System.ArgumentNullException>).  
   
 -   Il file di origine non è valido o non esiste (<xref:System.IO.FileNotFoundException>).  
   
@@ -64,7 +64,7 @@ Il metodo `My.Computer.FileSystem.CopyFile` consente di copiare i file. I sui pa
   
 -   Il file di destinazione esiste e `overwrite` è impostato su `False` (<xref:System.IO.IOException>).  
   
--   L'utente non dispone delle autorizzazioni sufficienti per accedere al file (<xref:System.IO.IOException>).  
+-   L'utente non dispone di autorizzazioni sufficienti per accedere al file (<xref:System.IO.IOException>).  
   
 -   Un file nella cartella di destinazione con lo stesso nome è in uso (<xref:System.IO.IOException>).  
   
@@ -72,13 +72,13 @@ Il metodo `My.Computer.FileSystem.CopyFile` consente di copiare i file. I sui pa
   
 -   `ShowUI` è impostato su `True`, `onUserCancel` è impostato su `ThrowException` e l'utente ha annullato l'operazione (<xref:System.OperationCanceledException>).  
   
--   `ShowUI` è impostato su `True`, `onUserCancel` è impostato su `ThrowException` e si è verificato un errore di I/O non specificato (<xref:System.OperationCanceledException>).  
+-   `ShowUI`è impostato su `True`, `onUserCancel` è impostato su `ThrowException` e si verifica un errore di I/O non specificato (<xref:System.OperationCanceledException>).  
   
 -   La lunghezza del percorso supera la lunghezza massima definita dal sistema (<xref:System.IO.PathTooLongException>).  
   
--   L'utente non dispone delle autorizzazioni necessarie (<xref:System.UnauthorizedAccessException>).  
+-   L'utente non ha le autorizzazioni necessarie (<xref:System.UnauthorizedAccessException>).  
   
--   L'utente non ha le autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
+-   L'utente non dispone delle autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>   

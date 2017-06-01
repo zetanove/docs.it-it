@@ -48,7 +48,7 @@ In questo argomento vengono illustrate le implicazioni in termini di sicurezza d
   
  Le variabili del Registro di sistema non devono essere memorizzate in posizioni di memoria accessibili da codice senza <xref:System.Security.Permissions.RegistryPermission>. Analogamente, concedere i privilegi minimi necessari a eseguire il lavoro.  
   
- I valori delle autorizzazioni di accesso al Registro di sistema sono definite dall'enumerazione <xref:System.Security.Permissions.RegistryPermissionAccess>. Nella tabella riportata di seguito sono illustrati i dettagli dei membri.  
+ I valori di accesso alle autorizzazioni per il Registro di sistema sono definiti dall'enumerazione <xref:System.Security.Permissions.RegistryPermissionAccess>. Nella tabella riportata di seguito sono illustrati i dettagli dei membri.  
   
 |Valore|Accesso alle variabili del Registro di sistema|  
 |-----------|----------------------------------|  

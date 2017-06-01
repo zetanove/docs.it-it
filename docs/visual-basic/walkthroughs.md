@@ -92,7 +92,7 @@ Le procedure dettagliate forniscono istruzioni specifiche per scenari comuni, ch
  Spiega come verificare le caratteristiche delle password complesse e aggiornare un parametro di stringa con le informazioni sui controlli che una password non ha superato.  
   
  [Crittografia e decrittografia di stringhe in Visual Basic](../visual-basic/programming-guide/language-features/strings/walkthrough-encrypting-and-decrypting-strings.md)  
- Spiega come usare la classe <xref:System.Security.Cryptography.DESCryptoServiceProvider> per crittografare e decrittografare le stringhe.  
+ Illustra come usare la classe <xref:System.Security.Cryptography.DESCryptoServiceProvider> per crittografare e decrittografare le stringhe.  
   
  [Modifica di file e cartelle in Visual Basic](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
  Viene illustrato come usare le funzioni [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] per determinare informazioni su un file, cercare una stringa in un file e scrivere in un file.  

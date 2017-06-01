@@ -47,10 +47,10 @@ In questo esempio viene usata la funzione `Shell` per avviare l'applicazione Cal
  [!code-vb[VbVbalrMyComputer#25](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-start-an-application-and-send-it-keystrokes_1.vb)]  
   
 ## <a name="robust-programming"></a>Programmazione efficiente  
- Se non viene rilevata un'applicazione con l'identificatore di processo richiesto, viene generata l'eccezione <xref:System.ArgumentException>.  
+ Se non viene rilevata un'applicazione con l'identificatore di processo richiesto, viene generata un'eccezione <xref:System.ArgumentException>.  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
- La chiamata alla funzione `Shell` richiede attendibilità totale (classe <xref:System.Security.SecurityException>).  
+ La chiamata alla funzione `Shell` richiede l'attendibilità totale (classe <xref:System.Security.SecurityException>).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.Devices.Keyboard.SendKeys%2A>   

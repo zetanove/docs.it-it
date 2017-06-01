@@ -41,7 +41,7 @@ ms.lasthandoff: 05/22/2017
 # <a name="how-to-log-exceptions-in-visual-basic"></a>Procedura: registrare eccezioni in Visual Basic
 È possibile usare gli oggetti `My.Application.Log` e `My.Log` per registrare informazioni sulle eccezioni generate nell'applicazione. Questi esempi illustrano come usare il metodo `My.Application.Log.WriteException` per registrare le eccezioni rilevate in modo esplicito e quelle non gestite.  
   
- Per registrare le informazioni di traccia, usare il metodo `My.Application.Log.WriteEntry`. Per altre informazioni, vedere <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>  
+ Per registrare le informazioni di traccia, usare il metodo `My.Application.Log.WriteEntry`. Per altre informazioni, vedere <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>.  
   
 ### <a name="to-log-a-handled-exception"></a>Per registrare un'eccezione gestita  
   
@@ -55,7 +55,7 @@ ms.lasthandoff: 05/22/2017
   
 3.  Inserire il codice che potrebbe generare un'eccezione nel blocco `Try`.  
   
-     Rimuovere il commento delle righe `Dim` e `MsgBox` per generare un'eccezione <xref:System.NullReferenceException>.  
+     Rimuovere il commento dalle righe `Dim` e `MsgBox` per causare un'eccezione <xref:System.NullReferenceException>.  
   
      [!code-vb[VbVbalrMyApplicationLog#7](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/how-to-log-exceptions_3.vb)]  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 05/22/2017
   
 5.  Scegliere **UnhandledException** dal menu **Dichiarazioni**.  
   
-     L'applicazione genera l'evento <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> prima che venga eseguita l'applicazione principale.  
+     L'applicazione genera l'evento <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> prima dell'esecuzione dell'applicazione principale.  
   
 6.  Aggiungere il metodo `My.Application.Log.WriteException` al gestore eventi `UnhandledException` .  
   

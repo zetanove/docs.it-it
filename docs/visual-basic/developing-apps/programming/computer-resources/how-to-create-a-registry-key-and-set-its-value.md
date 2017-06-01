@@ -77,7 +77,7 @@ Il metodo `CreateSubKey` dell'oggetto `My.Computer.Registry` consente di creare 
   
  È più sicuro scrivere i dati nella cartella dell'utente (<xref:Microsoft.Win32.Registry.CurrentUser>) anziché nel computer locale (<xref:Microsoft.Win32.Registry.LocalMachine>).  
   
- Quando si crea un valore del Registro di sistema, è necessario decidere come procedere nel caso in cui tale valore esista già. È possibile che un altro processo, forse dannoso, abbia già creato il valore e possa accedervi. I dati inseriti nel valore del Registro di sistema sono disponibili per altri processi. Per impedire che si verifichi questo problema, usare il metodo <xref:Microsoft.Win32.RegistryKey.GetValue%2A>. Restituisce `Nothing` se la chiave non esiste.  
+ Quando si crea un valore del Registro di sistema, è necessario decidere come procedere nel caso in cui tale valore esista già. È possibile che un altro processo, forse dannoso, abbia già creato il valore e possa accedervi. I dati inseriti nel valore del Registro di sistema sono disponibili per altri processi. Per evitare che ciò accada, usare il metodo <xref:Microsoft.Win32.RegistryKey.GetValue%2A>. Restituisce `Nothing` se la chiave non esiste.  
   
  Archiviare come testo nel Registro di sistema informazioni riservate, quali le password, può presentare dei rischi, anche se la chiave del Registro di sistema è protetta da elenchi di controllo di accesso (ACL, Access Control List).  
   
@@ -85,7 +85,7 @@ Il metodo `CreateSubKey` dell'oggetto `My.Computer.Registry` consente di creare 
   
 -   Il nome della chiave è `Nothing` (<xref:System.ArgumentNullException>).  
   
--   L'utente non dispone delle autorizzazioni per la creazione di chiavi del Registro di sistema (<xref:System.Security.SecurityException>).  
+-   L'utente non è autorizzato a creare le chiavi del Registro di sistema (<xref:System.Security.SecurityException>).  
   
 -   Il nome della chiave supera il limite di 255 caratteri (<xref:System.ArgumentException>).  
   

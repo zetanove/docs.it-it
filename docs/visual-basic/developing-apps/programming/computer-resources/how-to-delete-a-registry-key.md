@@ -45,9 +45,9 @@ ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="how-to-delete-a-registry-key-in-visual-basic"></a>Procedura: eliminare una chiave del Registro di sistema in Visual Basic
-Per eliminare le chiavi del Registro di sistema, è possibile usare i metodi <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> e <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%2CSystem.Boolean%29>.  
+È possibile usare i metodi <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> e <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%2CSystem.Boolean%29> per eliminare le chiavi del Registro di sistema.  
   
-## <a name="procedure"></a>Procedura  
+## <a name="procedure"></a>Routine  
   
 #### <a name="to-delete-a-registry-key"></a>Per eliminare una chiave del Registro di sistema  
   
@@ -62,14 +62,14 @@ Per eliminare le chiavi del Registro di sistema, è possibile usare i metodi <xr
   
 -   Il nome della chiave è `Nothing` (<xref:System.ArgumentNullException>).  
   
--   L'utente non ha le autorizzazioni per l'eliminazione delle chiavi del Registro di sistema (<xref:System.Security.SecurityException>).  
+-   L'utente non è autorizzato a eliminare le chiavi del Registro di sistema (<xref:System.Security.SecurityException>).  
   
 -   Il nome della chiave supera il limite di 255 caratteri (<xref:System.ArgumentException>).  
   
 -   La chiave del Registro di sistema è di sola lettura (<xref:System.UnauthorizedAccessException>).  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
- Le chiamate al Registro di sistema hanno esito negativo se non sono concesse autorizzazioni sufficienti in fase di esecuzione (<xref:System.Security.Permissions.RegistryPermission>) o se, in base a quanto determinato dagli ACL, l'utente non dispone dell'accesso corretto per la creazione o la scrittura nelle impostazioni. Ad esempio, un'applicazione locale che ha l'autorizzazione di sicurezza dall'accesso di codice potrebbe non avere l'autorizzazione del sistema operativo.  
+ Le chiamate al Registro di sistema hanno esito negativo se non sono concesse autorizzazioni sufficienti in fase di esecuzione (<xref:System.Security.Permissions.RegistryPermission>) o se, in base a quanto determinato dagli ACL, l'utente non usa l'accesso corretto per la creazione o la scrittura nelle impostazioni. Ad esempio, un'applicazione locale che ha l'autorizzazione di sicurezza dall'accesso di codice potrebbe non avere l'autorizzazione del sistema operativo.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>   

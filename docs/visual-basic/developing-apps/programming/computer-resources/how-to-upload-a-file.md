@@ -42,7 +42,7 @@ ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="how-to-upload-a-file-in-visual-basic"></a>Procedura: caricare un file in Visual Basic
-È possibile usare il metodo <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> per caricare un file e archiviarlo in una posizione remota. Se il parametro `ShowUI` è impostato su `True`, viene visualizzata una finestra di dialogo in cui è illustrato lo stato di avanzamento del processo di download. Qui l'utente può annullare l'operazione.  
+Il metodo <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> consente di caricare un file e archiviarlo in un percorso remoto. Se il parametro `ShowUI` è impostato su `True`, viene visualizzata una finestra di dialogo in cui è illustrato lo stato di avanzamento del processo di download. Qui l'utente può annullare l'operazione.  
   
 ### <a name="to-upload-a-file"></a>Per caricare un file  
   
@@ -65,7 +65,7 @@ ms.lasthandoff: 05/22/2017
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Le condizioni seguenti possono generare un'eccezione:  
   
--   Il percorso del file locale non è valido (<xref:System.ArgumentException>).  
+-   Il percorso file locale non è valido (<xref:System.ArgumentException>).  
   
 -   Autenticazione non riuscita (<xref:System.Security.SecurityException>).  
   
