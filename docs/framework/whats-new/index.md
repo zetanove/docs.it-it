@@ -634,13 +634,11 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
  L'esempio di codice seguente illustra quanto sia semplice generare una firma per un flusso di byte usando il nuovo supporto dei certificati X509 ECDSA incluso in [!INCLUDE[net_v461](../../../includes/net-v461-md.md)].
 
- [!code-csharp[whatsnew.461.crypto#1](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.461.crypto/cs/Code46.cs#1)]
- [!code-vb[whatsnew.461.crypto#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.461.crypto/vb/Code461.vb#1)]
+ [!code-csharp[whatsnew.461.crypto#1](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.461.crypto/cs/Code46.cs#1)] [!code-vb[whatsnew.461.crypto#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.461.crypto/vb/Code461.vb#1)]
 
  Emerge una netta differenza rispetto al codice necessario per generare una firma in .NET Framework 4.6.
 
- [!code-csharp[whatsnew.461.crypto#2](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.461.crypto/cs/Code46.cs#2)]
- [!code-vb[whatsnew.461.crypto#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.461.crypto/vb/Code46.vb#2)]
+ [!code-csharp[whatsnew.461.crypto#2](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.461.crypto/cs/Code46.cs#2)] [!code-vb[whatsnew.461.crypto#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.461.crypto/vb/Code46.vb#2)]
 
 <a name="ADO.NET461"></a> 
 ### <a name="adonet"></a>ADO.NET
@@ -743,7 +741,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
          L'associazione di modelli async è controllata dall'impostazione di configurazione `aspnet:EnableAsyncModelBinding`.
 
-        ```
+        ```xml
         <appSettings>
            <add key=" aspnet:EnableAsyncModelBinding" value="true|false" />
         </appSettings>
@@ -776,7 +774,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
          In .NET Framework 4.5 è stato introdotto un [algoritmo hash casuale per le stringhe](../configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md). Tuttavia, non era supportato da ASP.NET perché alcune funzionalità ASP.NET dipendevano da un codice hash stabile. In [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] gli algoritmi di hash della stringa casuale sono ora supportati. Per abilitare questa funzionalità, usare l'impostazione di configurazione `aspnet:UseRandomizedStringHashAlgorithm`.
 
-        ```
+        ```xml
         <appSettings>
            <add key="aspnet:UseRandomizedStringHashAlgorithm" value="true|false" />
         </appSettings>
@@ -832,13 +830,11 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
         - Miglioramenti all'API RSA in modo che le azioni comuni non richiedano più il cast. Ad esempio, la crittografia dei dati eseguita con un oggetto <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> richiede codice simile al seguente nelle versioni precedenti di .NET Framework.
 
-             [!code-csharp[WhatsNew.Casting#1](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.casting/cs/program.cs#1)]
-             [!code-vb[WhatsNew.Casting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.casting/vb/module1.vb#1)]
+             [!code-csharp[WhatsNew.Casting#1](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.casting/cs/program.cs#1)]    [!code-vb[WhatsNew.Casting#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.casting/vb/module1.vb#1)]
 
              Il codice che usa le nuove API di crittografia in Framework .NET 4.6 può essere riscritto nel modo seguente per evitare il cast.
 
-             [!code-csharp[WhatsNew.Casting#2](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.casting/cs/program.cs#2)]
-             [!code-vb[WhatsNew.Casting#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.casting/vb/module1.vb#2)]
+             [!code-csharp[WhatsNew.Casting#2](../../../samples/snippets/csharp/VS_Snippets_CLR/whatsnew.casting/cs/program.cs#2)]    [!code-vb[WhatsNew.Casting#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/whatsnew.casting/vb/module1.vb#2)]
 
     - **Supporto per la conversione di date e ore da o verso l'ora di Unix**
 
@@ -928,7 +924,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
          Il supporto di HDPI in WPF è stato migliorato in [!INCLUDE[net_v46](../../../includes/net-v46-md.md)]. Sono state apportate modifiche all'arrotondamento del layout per ridurre le istanze di ritaglio nei controlli con bordi. Per impostazione predefinita, questa funzionalità è abilitata solo se <xref:System.Runtime.Versioning.TargetFrameworkAttribute> è impostato su .NET 4.6.  Le applicazioni destinate alle versioni precedenti del framework, ma eseguite in [!INCLUDE[net_v46](../../../includes/net-v46-md.md)], possono scegliere il nuovo comportamento aggiungendo la riga seguente alla sezione [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) del file app.config:
 
-        ```
+        ```xml
         <AppContextSwitchOverrides
         value="Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=false"
         />
@@ -936,7 +932,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
          Le finestre WPF che si estendono su più monitor con impostazioni DPI diverse (configurazione di più DPI) sono ora visualizzate completamente senza aree nere. È possibile rifiutare esplicitamente questo comportamento disabilitandolo con l'aggiunta della riga seguente alla sezione `<appSettings>` del file di configurazione dell'app:
 
-        ```
+        ```xml
         <add key="EnableMultiMonitorDisplayClipping" value="true"/>
         ```
 
@@ -956,7 +952,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
          WCF ora supporta la versione SSL TLS 1.1 e TLS 1.2, oltre a SSL 3.0 e TLS 1.0, quando si usa NetTcp con la sicurezza del trasporto e l'autenticazione client. Ora è possibile selezionare il protocollo da usare o disabilitare i protocolli precedenti, che sono meno sicuri. A tale scopo, è possibile impostare la proprietà <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A> o aggiungere il codice seguente a un file di configurazione.
 
-        ```
+        ```xml
         <netTcpBinding>
            <binding>
               <security mode= "None|Transport|Message|TransportWithMessageCredential" >
@@ -981,7 +977,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
              Gli utenti possono anche attivare una funzionalità che assicura che i messaggi inviati con i canali creati da channel factory diverse useranno connessioni HTTP sottostanti diverse. Per abilitare questa funzionalità, gli utenti devono impostare `appSetting` su `true`:
 
-            ```
+            ```xml
             <appSettings>
                <add key="wcf:httpTransportBinding:useUniqueConnectionPoolPerFactory" value="true" />
             </appSettings>
@@ -991,7 +987,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
      Ora è possibile specificare il numero di secondi che un servizio di flusso di lavoro attenderà per una richiesta di operazione non ordinata quando esiste un segnalibro "non protocollo" in attesa prima del timeout della richiesta. Un segnalibro "non protocollo" è un segnalibro che non è correlato alle attività di ricezione in attesa. Alcune attività creano segnalibri non protocollo all'interno della propria implementazione, quindi potrebbe non essere evidente che un segnalibro non protocollo esista. Sono incluse le attività relative allo stato e alla selezione. Pertanto, se si ha un servizio del flusso di lavoro implementato con una macchina a stati o contenente un'attività di selezione, probabilmente si avranno segnalibri non protocollo. Specificare l'intervallo aggiungendo una riga simile alla seguente alla sezione `appSettings` del file di configurazione dell'app:
 
-    ```
+    ```xml
     <add key="microsoft:WorkflowServices:FilterResumeTimeoutInSeconds" value="60"/>
     ```
 
@@ -1009,7 +1005,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
      Ora è possibile includere l'identificatore di transazione distribuita per la transazione che ha generato un'eccezione derivata da <xref:System.Transactions.TransactionException>. A questo scopo, aggiungere la chiave seguente alla sezione `appSettings` del file di configurazione dell'app:
 
-    ```
+    ```xml
     <add key="Transactions:IncludeDistributedTransactionIdInExceptionMessage" value="true"/> 
     ```
 
@@ -1041,7 +1037,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
      È una funzionalità che prevede il consenso esplicito. Per attivarla, impostare l'elemento `EnableWindowsFormsHighDpiAutoResizing` su `true` nel file di configurazione dell'applicazione (app.config):
 
-    ```
+    ```xml
     <appSettings>
        <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />
     </appSettings>
@@ -1080,7 +1076,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
      È una funzionalità che prevede il consenso esplicito. Per attivarla, impostare l'elemento `EnableWindowsFormsHighDpiAutoResizing` su `true` nel file di configurazione dell'applicazione (app.config):
 
-    ```
+    ```xml
     <appSettings>
        <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />
     </appSettings>
@@ -1170,7 +1166,7 @@ Per altre informazioni sulla struttura di <xref:System.TimeZoneInfo> e sulle reg
 
      Per attivare questa funzionalità, aggiungere un nuovo elemento \<appSettings> al file di configurazione (app.config) e impostare l'elemento `EnableWindowsFormsHighDpiAutoResizing` su `true`:
 
-    ```
+    ```xml
     <appSettings>
        <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />
     </appSettings>

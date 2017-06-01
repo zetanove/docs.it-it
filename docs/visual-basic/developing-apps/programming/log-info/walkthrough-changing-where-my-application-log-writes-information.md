@@ -33,10 +33,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
-ms.openlocfilehash: f2563a334248740ff1bd4fc49662229d8f3bf27e
+ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
+ms.openlocfilehash: 5e3d68e6a64ec9f8e9cd8bfd13fa8174da568299
 ms.contentlocale: it-it
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="walkthrough-changing-where-myapplicationlog-writes-information-visual-basic"></a>Procedura dettagliata: modifica della posizione di inserimento delle informazioni con My.Application.Log (Visual Basic)
@@ -65,7 +65,7 @@ ms.lasthandoff: 05/22/2017
   
 3.  Aggiungere gli elementi seguenti alla sezione `<listeners>` .  
   
-    ```  
+    ```xml  
     <!-- Uncomment to connect the application file log. -->  
     <!-- <add name="FileLog" /> -->  
     <!-- Uncomment to connect the event log. -->  
@@ -84,7 +84,7 @@ ms.lasthandoff: 05/22/2017
   
 6.  Aggiungere gli elementi seguenti alla sezione `<sharedListeners>` .  
   
-    ```  
+    ```xml  
     <add name="FileLog"  
          type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
                Microsoft.VisualBasic, Version=8.0.0.0,   
@@ -115,7 +115,7 @@ ms.lasthandoff: 05/22/2017
   
 7.  Il contenuto del file app.config dovrebbe essere simile al codice XML seguente.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <configuration>  
       <system.diagnostics>  
@@ -180,13 +180,13 @@ ms.lasthandoff: 05/22/2017
   
      Di seguito sono riportati alcuni esempi di listener che si possono usare.  
   
-    -   Il listener <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName>, che scrive le informazioni in un log file.  
+    -   Un listener <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName>, che scrive in un log file.  
   
-    -   Il listener <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>, che scrive le informazioni nel log eventi del computer specificato dal parametro `initializeData`.  
+    -   Un listener <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>, che scrive informazioni nel registro eventi del computer specificato dal parametro `initializeData`.  
   
-    -   I listener <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName> e <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName>, che scrivono le informazioni nel file specificato nel parametro `initializeData`.  
+    -   I listener <xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName> e <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=fullName>, che scrivono nel file specificato nel parametro `initializeData`.  
   
-    -   Il listener <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName>, che scrive le informazioni nella console della riga di comando.  
+    -   Un listener <xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName>, che scrive nella console della riga di comando.  
   
      Per sapere dove gli altri tipi di listener di log scrivono le informazioni, consultare la documentazione relativa al tipo di listener desiderato.  
   
@@ -213,5 +213,5 @@ ms.lasthandoff: 05/22/2017
  <xref:System.Diagnostics.TraceListener>   
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener?displayProperty=fullName>   
  <xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>   
- [How to: Write Event Information to a Text File](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)   
+ [Procedura: Scrivere informazioni sugli eventi in un file di testo](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-event-information-to-a-text-file.md)   
  [Procedura: Scrivere nel registro eventi di un'applicazione](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-to-an-application-event-log.md)

@@ -59,7 +59,7 @@ Per tutte le app che ospitano Common Language Runtime (CLR) è necessario che ve
   
 2.  Aggiungere l'elemento [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) al file di configurazione dell'applicazione come segue:  
   
-    ```  
+    ```xml  
     <configuration>  
       <startup>  
         <supportedRuntime version="<version>"/>  

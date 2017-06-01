@@ -32,7 +32,7 @@ ms.lasthandoff: 04/18/2017
   
 -   È possibile reindirizzare l'applicazione affinché venga eseguita in [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]. Il reindirizzamento richiede l'aggiunta di un elemento [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) al file di configurazione dell'applicazione che ne consenta l'esecuzione in [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. Tale file di configurazione prende il form seguente:  
   
-    ```  
+    ```xml  
     <configuration>   
        <startup>  
           <supportedRuntime version="v4.0"/>  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/18/2017
 ## <a name="breaking-changes"></a>Modifiche di interruzione  
  Quando si verifica una modifica di interruzione, in base alla modifica specifica, è possibile che sia disponibile una soluzione alternativa sia per le applicazioni reindirizzate che per le applicazioni ricompilate. In alcuni casi, è possibile aggiungere un elemento figlio all'elemento [\<runtime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) del file di configurazione dell'applicazione per ripristinare il comportamento precedente. Ad esempio, nel file di configurazione seguente viene ripristinato l'ordinamento della stringa e il comportamento del confronto utilizzato in [!INCLUDE[net_v11_short](../../../includes/net-v11-short-md.md)] che può essere utilizzato con un'applicazione reindirizzata o ricompilata.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <CompatSortNLSVersion enabled="4096"/>  

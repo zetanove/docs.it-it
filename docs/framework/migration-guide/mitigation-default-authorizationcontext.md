@@ -14,9 +14,10 @@ caps.latest.revision: 3
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: d2cffc531efc0f0be841956d3a09e1ab253d8fbd
+ms.contentlocale: it-it
 ms.lasthandoff: 04/18/2017
 
 ---
@@ -33,7 +34,7 @@ L'implementazione dell'oggetto <xref:System.IdentityModel.Policy.AuthorizationCo
   
 -   Aggiungere la riga seguente alla sezione `<appSettings>` del file app.config:  
   
-    ```  
+    ```xml  
     <add key="appContext.SetSwitch:Switch.System.IdentityModel.EnableCachedEmptyDefaultAuthorizationContext" value="true" />  
     ```  
   

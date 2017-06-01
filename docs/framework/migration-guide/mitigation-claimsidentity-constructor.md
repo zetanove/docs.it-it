@@ -31,7 +31,7 @@ A partire da [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] sono state a
 ## <a name="mitigation"></a>Attenuazione  
  Se questo comportamento è inaccettabile, è possibile ripristinare il comportamento precedente impostando il commutatore `Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity` nel file di configurazione dell'applicazione su `true`. A questo scopo è necessario aggiungere il codice seguente alla sezione [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) del file web.config:  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <AppContextSwitchOverrides value="Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity=true" />  
