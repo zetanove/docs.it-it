@@ -35,15 +35,15 @@ A partire da .NET Framework 4.6, il runtime include un nuovo compilatore JIT a 6
 > [!IMPORTANT]
 >  Tutti questi problemi noti sono stati risolti nel nuovo compilatore a 64 bit rilasciato con .NET Framework 4.6.2. La maggior parte dei problemi è stata inoltre risolta nelle service release di .NET Framework 4.6 e 4.6.1 incluse con Windows Update. È possibile evitare questi problemi assicurandosi che la versione di Windows sia aggiornata o eseguendo l'aggiornamento a .NET Framework 4.6.2.  
   
--   In determinate condizioni, un'operazione di conversione unboxing può generare un <xref:System.NullReferenceException > nelle build di rilascio con l'ottimizzazione attivata.  
+-   In determinate condizioni, un'operazione di conversione unboxing può generare <xref:System.NullReferenceException> nelle build di rilascio con l'ottimizzazione attivata.  
   
--   In alcuni casi, l'esecuzione del codice di produzione in un corpo del metodo di grandi dimensioni può generare un <xref:System.StackOverflowException >.  
+-   In alcuni casi l'esecuzione del codice di produzione in un corpo del metodo di grandi dimensioni può generare <xref:System.StackOverflowException>.  
   
 -   In determinate condizioni, le strutture passate a un metodo vengono considerate come tipi di riferimento piuttosto che tipi di valore nelle build di rilascio. Una delle manifestazioni di questo problema è che i singoli elementi in una raccolta vengono visualizzati in un ordine imprevisto.  
   
 -   In determinate condizioni, il confronto dei valori di <xref:System.UInt16> con il set di bit elevato non è corretto se l'ottimizzazione è abilitata.  
   
--   In determinate condizioni, in particolare durante l'inizializzazione dei valori della matrice, l'inizializzazione di memoria mediante l'istruzione IL <xref:System.Reflection.Emit.OpCodes.Initblk?displayProperty=fullName> può avvenire con un valore non corretto. Ciò può generare un'eccezione non gestita o un output non corretto.  
+-   In determinate condizioni, in particolare durante l'inizializzazione dei valori della matrice, è possibile che l'inizializzazione della memoria con l'istruzione IL <xref:System.Reflection.Emit.OpCodes.Initblk?displayProperty=fullName> venga eseguita con un valore non corretto. Ciò può generare un'eccezione non gestita o un output non corretto.  
   
 -   In alcuni casi rari, un test condizionale dei bit può restituire il valore <xref:System.Boolean> non corretto o generare un'eccezione se sono abilitate le ottimizzazioni del compilatore.  
   
