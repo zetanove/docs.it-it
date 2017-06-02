@@ -102,11 +102,11 @@ La pubblicazione di una distribuzione autonoma senza dipendenze di terze parti c
 
    L'esempio seguente indica che l'app viene eseguita in sistemi operativi Windows 10 a 64 bit e nel sistema operativo OS X versione 10.11 a 64 bit.
 
-       ```xml
-        <PropertyGroup>
-          <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-        </PropertyGroup>
-       ```
+```xml
+<PropertyGroup>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+</PropertyGroup>
+```
    Si noti che l'elemento `<RuntimeIdentifiers>` può essere inserito in qualsiasi elemento `<PropertyGroup>` presente nel file *csproj*. Un file di esempio *csproj* completo è disponibile più avanti in questa sezione.
 
 1. Creare una build di debug dell'app.
