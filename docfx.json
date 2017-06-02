@@ -39,10 +39,54 @@
         {
           "files": ["**/*.md"],
           "src": "docs",
-          "dest": "articles",
+          "dest": ".",
           "exclude": [
 	"**/includes/**", 
 	"***/contributing.md",
+	"framework/add-ins/**",
+	"framework/additional-apis/**",
+	"framework/app-domains/**",
+	"framework/common-client-technologies/**",
+	"framework/configure-apps/**",
+	"framework/data/**",
+	"framework/debug-trace-profile/**",
+	"framework/deployment/**",
+	"framework/install/**",
+	"framework/interop/**",
+	"framework/mef/**",
+	"framework/misc/**",
+	"framework/net-native/**",
+	"framework/network-programming/**",
+	"framework/performance/**",
+	"framework/reflection-and-codedom/**",
+	"framework/resources/**",
+	"framework/security/**",
+	"framework/serialization/**",
+	"framework/tools/**",
+	"framework/ui-automation/**",
+	"framework/unmanaged-api/**",
+	"framework/wcf/diagnostics/**",
+	"framework/windows-services/**",
+	"framework/windows-workflow-foundation/**",
+	"framework/winforms/**",
+	"framework/wpf/**",
+	"framework/xaml-services/**",
+	"standard/asynchronous-programming-patterns/**",
+	"standard/attributes/**",
+	"standard/base-types/**",
+	"standard/cross-platform/**",
+	"standard/data/**",
+	"standard/datetime/**",
+	"standard/design-guidelines/**",
+	"standard/events/**",
+	"standard/exceptions/**",
+	"standard/garbage-collection/**",
+	"standard/generics/**",
+	"standard/globalization-localization/**",
+	"standard/io/**",
+	"standard/parallel-programming/**",
+	"standard/security/**",
+	"standard/threading/**",
 	"csharp/misc/**",
 	"visual-basic/developing-apps/customizing-extending-my/**",
 	"visual-basic/developing-apps/development-with-my/**",
@@ -77,7 +121,7 @@
             "**/*.bmp"
           ],
           "src": "docs",
-          "dest": "articles",
+          "dest": ".",
           "exclude": [
             "**/obj/**",
             "_themes/DocPacker/**"
@@ -93,7 +137,8 @@
       "author": "dotnet-bot",
       "ms.author": "dotnetcontent",
       "manager": "wpickett",
-      "searchScope": [".NET"]
+      "searchScope": [".NET"],
+      "uhfHeaderId": "MSDocsHeader-DotNet"
     },
     "fileMetadata": {
       "ms.prod":
@@ -107,6 +152,13 @@
     },
     "dest": "_site",
     "template": [ "docs.html" ],
-    "xref": ["_zip/msdn.4.5.2.zip", "_zip/namespaces.4.5.2.zip", "_zip/vs.110.zip", "_zip/vs.140.zip", "_zip/office15.zip", "_zip/missingapi.yml"]
+    "xref": [
+      "dotnet-xref/_zip/dotnet.zip",
+      "dotnet-xref/_zip/vs.110.zip",
+      "dotnet-xref/_zip/vs.140.zip",
+      "dotnet-xref/_zip/office15.zip",
+      "dotnet-xref/_zip/missingapi.yml",
+      "dotnet-xref/_zip/msdnsmallset.yml"
+    ]
   }
 }

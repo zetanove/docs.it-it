@@ -1,5 +1,5 @@
 ---
-title: Esercitazioni di .NET Core
+title: Esercitazioni su .NET Core | Microsoft Docs
 description: Esercitazioni di .NET Core
 keywords: .NET, .NET Core
 author: richlander
@@ -9,10 +9,11 @@ ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
-translationtype: Human Translation
-ms.sourcegitcommit: ff143583ba62fc1d82561e739a75107e50ebee88
-ms.openlocfilehash: 3f8c62a6a3b179e146874761465ad2665c20a6dd
-ms.lasthandoff: 04/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: 86320023259bae3bd262a146681f24a6c6d3f7ea
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 ---
 
@@ -23,11 +24,11 @@ Le esercitazioni seguenti includono informazioni e istruzioni sull'uso di .NET C
 ## <a name="building-applications-with-visual-studio-2017"></a>Creazione di applicazioni con Visual Studio 2017
 
 - [Creazione di un'applicazione C# denominata Hello World](../../csharp/getting-started/with-visual-studio.md)
-- [Debug di un'applicazione C# denominata Hello World](../../csharp/getting-started/debugging-with-visual-studio-2017.md)
-- [Pubblicazione di un'applicazione C# denominata Hello World](../../csharp/getting-started/publishing-with-visual-studio-2017.md)
-- [Compilazione di una libreria di classi C#](../../csharp/getting-started/library-with-visual-studio-2017.md)
+- [Debug di un'applicazione C# denominata Hello World](../../csharp/getting-started/debugging-with-visual-studio.md)
+- [Pubblicazione di un'applicazione C# denominata Hello World](../../csharp/getting-started/publishing-with-visual-studio.md)
+- [Compilazione di una libreria di classi C#](../../csharp/getting-started/library-with-visual-studio.md)
 - [Test di una libreria di classi C#](../../csharp/getting-started/testing-library-with-visual-studio.md)
-- [Uso di una libreria di classi C# con .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio-2017.md)
+- [Uso di una libreria di classi C# con .NET Core](../../csharp/getting-started/consuming-library-with-visual-studio.md)
 - [Compilare una soluzione completa C# con .NET in Windows](using-on-windows-full-solution.md)
 - [Esercitazione su NoSQL: Compilare un'applicazione console C# di DocumentDB in .Net Core](https://docs.microsoft.com/azure/documentdb/documentdb-dotnetcore-get-started)
 

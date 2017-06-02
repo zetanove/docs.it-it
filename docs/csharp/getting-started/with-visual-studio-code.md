@@ -4,20 +4,21 @@ description: Informazioni su come creare la prima applicazione .NET Core in C# e
 keywords: C#, introduzione, acquisizione, installazione, Visual Studio Code, multipiattaforma
 author: kendrahavens
 ms.author: mairaw
-ms.date: 03/07/2017
+ms.date: 5/02/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 4550129f4e6f1eeb3521ad7fe3233f2bda49e5c5
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d00f2096e0799107a8a2ff1d12274c6026d4c27a
+ms.openlocfilehash: a8233995046e6fdf980bf630da18908a02d2bfb0
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 
-# <a name="getting-started-with-visual-studio-code"></a>Introduzione a Visual Studio Code
+# <a name="get-started-with-visual-studio-code"></a>Introduzione a Visual Studio Code
 
 .NET Core offre una piattaforma veloce e modulare per la creazione di applicazioni server eseguibili in Windows, Linux e macOS. Usare Visual Studio Code con l'estensione C# per ottenere un'efficace esperienza di programmazione con il supporto completo per IntelliSense C# (completamento intelligente del codice) e debug.
 
@@ -94,6 +95,6 @@ Per altre informazioni sull'installazione in [Windows](https://channel9.msdn.com
 > Per altre informazioni e per suggerimenti sul debug .NET Core con OmniSharp in Visual Studio Code, vedere [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md) (Istruzioni per l'impostazione del debugger .NET Core).
 
 ## <a name="see-also"></a>Vedere anche
-- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview) (Impostazione di Visual Studio Code)
-- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) (Debug in Visual Studio Code)
+[Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)  (Impostazione di Visual Studio Code)  
+[Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging) (Debug in Visual Studio Code)
 

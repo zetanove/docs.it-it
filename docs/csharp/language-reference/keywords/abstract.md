@@ -30,9 +30,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: acb9c5748addd75f741e97688fca707910b042a0
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -100,7 +101,7 @@ BaseClass bc = new BaseClass();   // Error
  si otterrà un errore che informa che il compilatore non può creare un'istanza della classe astratta "BaseClass".  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   

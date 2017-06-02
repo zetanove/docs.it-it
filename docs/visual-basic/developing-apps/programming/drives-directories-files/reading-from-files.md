@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a21629921a04f26aa8cb6d18acdf923888d32ef9
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 6e2dbabb7ad2141840fbfaed054494e5604e24c3
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="reading-from-files-in-visual-basic"></a>Lettura da file in Visual Basic
@@ -60,11 +61,11 @@ In questa sezione viene illustrato come eseguire attività associate alla lettur
  Spiega come leggere da un file binario.  
   
  [Procedura: leggere il testo da file con un oggetto StreamReader](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md)  
- Spiega come usare <xref:System.IO.StreamReader> per leggere da un file.  
+ Viene illustrato come usare un oggetto <xref:System.IO.StreamReader> per leggere da un file.  
   
 ## <a name="reference"></a>Riferimento  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- Descrive l'oggetto `My.Computer.FileSystem` e i relativi membri.  
+ Illustra l'oggetto `My.Computer.FileSystem` e i suoi membri.  
   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A>  
  Descrive il metodo `ReadAllText`.  

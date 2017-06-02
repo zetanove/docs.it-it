@@ -19,23 +19,24 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 8ac37ce1a225a66069e34abedd2ee0c273b8f8a9
-ms.lasthandoff: 03/13/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="linq-to-xml-vs-other-xml-technologies"></a>LINQ to XML e altre tecnologie XML
-Questo argomento esegue un confronto tra [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] e le tecnologie XML seguenti: <xref:System.Xml.XmlReader>, XSLT, MSXML e XmlLite. Queste informazioni possono risultare utili per decidere quale tecnologia usare.  
+In questo argomento viene illustrato un confronto tra [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] e le seguenti tecnologie XML: <xref:System.Xml.XmlReader>, XSLT, MSXML e XmlLite. Queste informazioni possono risultare utili per decidere quale tecnologia usare.  
   
  Per un confronto tra [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] e DOM (Document Object Model), vedere [LINQ to XML e DOM (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-vs-dom.md).  
   
 ## <a name="linq-to-xml-vs-xmlreader"></a>LINQ to XML e XmlReader  
  <xref:System.Xml.XmlReader> è un parser rapido, di tipo forward-only, che non supporta la memorizzazione nella cache.  
   
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] viene implementato sopra <xref:System.Xml.XmlReader>, con cui è strettamente integrato. Tuttavia, è anche possibile usare solo <xref:System.Xml.XmlReader>.  
+ [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] viene implementato sopra <xref:System.Xml.XmlReader>, con cui è strettamente integrato. Tuttavia, è possibile usare <xref:System.Xml.XmlReader> anche in modo autonomo.  
   
- Si supponga ad esempio di compilare un servizio Web per l'analisi di centinaia di documenti XML al secondo e che i documenti abbiano la stessa struttura, per cui è necessario scrivere un'unica implementazione del codice di analisi. In questo caso, è preferibile usare solo <xref:System.Xml.XmlReader>.  
+ Si supponga ad esempio di compilare un servizio Web per l'analisi di centinaia di documenti XML al secondo e che i documenti abbiano la stessa struttura, per cui è necessario scrivere un'unica implementazione del codice di analisi. In questo caso, è preferibile usare <xref:System.Xml.XmlReader> in modo autonomo.  
   
  Se al contrario si compila un sistema per l'analisi di vari documenti XML più piccoli, diversi uno dall'altro, è consigliabile sfruttare i miglioramenti per la produttività offerti da [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)].  
   

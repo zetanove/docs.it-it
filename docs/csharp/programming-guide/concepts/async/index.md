@@ -19,9 +19,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 931f984b2267d0782cdbad22cb00f7a698de357e
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -218,7 +219,6 @@ Task returnedTask = Task_MethodAsync();
 await returnedTask;  
 // or, in a single statement  
 await Task_MethodAsync();  
-  
 ```  
   
  Ogni attività restituita rappresenta il lavoro attualmente in fase di esecuzione. Un'attività include le informazioni sullo stato del processo asincrono e, infine, il risultato finale del processo o l'eccezione che il processo genera se non viene completato.  
@@ -351,3 +351,4 @@ namespace AsyncFirstExample
 ## <a name="see-also"></a>Vedere anche  
  [async](../../../../csharp/language-reference/keywords/async.md)   
  [await](../../../../csharp/language-reference/keywords/await.md)
+

@@ -1,5 +1,5 @@
 ---
-title: "Novità di C# | Guida a C#"
+title: "Novità di C# - Guida di C# | Microsoft Docs"
 description: Informazioni sull&quot;evoluzione del linguaggio C#
 keywords: "C#, funzionalità più recenti, novità, Roslyn"
 author: BillWagner
@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
-translationtype: Human Translation
-ms.sourcegitcommit: 75908d895017c31e36da6702f1b69816afb91d14
-ms.openlocfilehash: 1285ea5dca29025408f7e164e425fde64323671a
-ms.lasthandoff: 03/28/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4437ce5d344cf06d30e31911def6287999fc6ffc
+ms.openlocfilehash: f337a916f0a15c6e81b228ec378a34e97055f68e
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 ---
 
@@ -26,22 +27,22 @@ ms.lasthandoff: 03/28/2017
 * [C# 6](csharp-6.md):
     - Questa pagina descrive le funzionalità che sono state aggiunte in C# 6. Queste funzionalità sono disponibili in Visual Studio 2015 per gli sviluppatori Windows e in .NET Core 1.0 per gli sviluppatori che vogliono esplorare il linguaggio C# in macOS e Linux.
 
-* [C# Interactive](../interactive/index.md): 
-    - Questa pagina descrive C# Interactive, uno strumento REPL (Read-Eval-Print Loop) che è possibile usare per esplorare il linguaggio C#. È possibile usare questo strumento per scrivere codice in modo interattivo e vederlo immediatamente in esecuzione, senza eseguire passaggi di compilazione.
-
+<!--* [C# Interactive](../interactive/index.md): 
+    - This page describes C# Interactive, an interactive Read Eval Print Loop (REPL) that you can use to explore the C# language. You can use it to write code interactively and see it execute immediately, without any compile or build step.
+-->
 * [Supporto per più piattaforme](../../core/index.md):
     - Grazie al supporto per .NET Core, è possibile eseguire C# su diverse piattaforme. Gli utenti interessati a provare C# in macOS o su una delle diverse distribuzioni Linux supportate possono leggere le informazioni relative a .NET Core.
 
-- [.NET Compiler Platform SDK](../roslyn/index.md) :
-    - .NET Compiler Platform SDK consente di scrivere codice che esegue analisi statiche nel codice C#. È possibile usare queste API per individuare potenziali errori o procedure sconsigliate, per suggerire correzioni e anche implementarle.
-
-
+<!--
+- [.NET Compiler Platform SDK](../roslyn/index.md):
+    - The .NET Compiler Platform SDK enables you to write code that performs static analysis on C# code. You can use these APIs to find potential errors, or bad practices, suggest fixes, and even implement those fixes.
+-->
   
 ## <a name="previous-versions"></a>Versioni precedenti
 Di seguito sono elencate le principali funzionalità introdotte in versioni precedenti del linguaggio C# e Visual Studio .NET.  
   
  * Visual Studio .NET 2013: 
-     - Questa versione di Visual Studio include correzioni di bug, miglioramenti delle prestazioni e Technology Preview di .NET Compiler Platform ("Roslyn") che è diventato [.NET Compiler Platform SDK](../roslyn/index.md).
+     - Questa versione di Visual Studio include correzioni di bug, miglioramenti delle prestazioni e Technology Preview di .NET Compiler Platform ("Roslyn") che è diventato .NET Compiler Platform SDK<!--Link to ../roslyn/index.md-->.
 
  * C# 5, Visual Studio .NET 2012: 
      - `Async` / `await` e attributi delle [informazioni sul chiamante](../programming-guide/concepts/caller-information.md).

@@ -1,55 +1,72 @@
 ---
-title: "How to: Write to Binary Files in Visual Basic | Microsoft Docs"
-ms.custom: ""
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-helpviewer_keywords: 
-  - "files, binary access"
-  - "WriteAllBytes method"
-  - "binary files, writing in Visual Basic"
+title: 'Procedura: Scrivere all&quot;interno di file binari in Visual Basic | Microsoft Docs'
+ms.custom: 
+ms.date: 2015-07-20
+ms.prod: .net
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-visual-basic
+ms.topic: article
+dev_langs:
+- VB
+helpviewer_keywords:
+- files, binary access
+- WriteAllBytes method
+- binary files, writing in Visual Basic
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-caps.handback.revision: 16
----
-# How to: Write to Binary Files in Visual Basic
-[!INCLUDE[vs2017banner](../../../../visual-basic/developing-apps/includes/vs2017banner.md)]
+author: dotnet-bot
+ms.author: dotnetcontent
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 0d86e39b7150b4ae8fc4de0498b0b786c5669bb4
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
-Il metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> scrive dati in un file binario.  Se il parametro `append` è `True`, i dati verranno aggiunti al file. In caso contrario, i dati nel file verranno sovrascritti.  
+---
+# <a name="how-to-write-to-binary-files-in-visual-basic"></a>Procedura: scrivere all'interno di file binari in Visual Basic
+Il metodo <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> scrive i dati in un file binario. Se il parametro`append` è `True`, i dati verranno aggiunti al file; in caso contrario i dati nel file saranno sovrascritti.  
   
- Se il percorso specificato, escluso il nome del file, non è valido, verrà generata un'eccezione <xref:System.IO.DirectoryNotFoundException>.  Se il percorso è valido ma il file non esiste, il file verrà creato.  
+ Se il percorso specificato che esclude il nome file non è valido, verrà generata un'eccezione <xref:System.IO.DirectoryNotFoundException>. Se il percorso sia valido, ma il file non esiste, verrà creato il file.  
   
-### Per scrivere all'interno di un file binario  
+### <a name="to-write-to-a-binary-file"></a>Per scrivere in un file binario  
   
--   Utilizzare il metodo `WriteAllBytes`, specificando il percorso e il nome del file e i byte da scrivere.  In questo esempio viene aggiunta la matrice di dati `CustomerData` al file denominato `CollectedData.dat`.  
+-   Usare il metodo `WriteAllBytes` specificando il percorso e nome file e i byte da scrivere. In questo esempio la matrice di dati `CustomerData` viene aggiunta al file denominato `CollectedData.dat`.  
   
      [!code-vb[VbVbcnMyFileSystem#27](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-to-binary-files_1.vb)]  
   
-## Programmazione efficiente  
- Un'eccezione può essere generata nelle condizioni seguenti:  
+## <a name="robust-programming"></a>Programmazione efficiente  
+ Le condizioni seguenti possono generare un'eccezione:  
   
--   Il percorso non è valido per uno dei seguenti motivi: è una stringa di lunghezza zero, contiene solo spazi vuoti o contiene caratteri non validi.  \(<xref:System.ArgumentException>\).  
+-   Il percorso non è valido per uno di questi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi. (<xref:System.ArgumentException>).  
   
--   Il percorso non è valido in quanto `Nothing` \(<xref:System.ArgumentNullException>\).  
+-   Il percorso non è valido in quanto è `Nothing` (<xref:System.ArgumentNullException>).  
   
--   `File` punta a un percorso non esistente \(<xref:System.IO.FileNotFoundException> o <xref:System.IO.DirectoryNotFoundException>\).  
+-   `File` punta a un percorso che non esiste (<xref:System.IO.FileNotFoundException> o <xref:System.IO.DirectoryNotFoundException>).  
   
--   Il file è utilizzato da un altro processo o si è verificato un errore di I\/O \(<xref:System.IO.IOException>\).  
+-   Il file è in uso in un altro processo oppure si verifica un errore di I/O (<xref:System.IO.IOException>).  
   
--   La lunghezza del percorso supera la lunghezza massima definita dal sistema \(<xref:System.IO.PathTooLongException>\).  
+-   La lunghezza del percorso supera la lunghezza massima definita dal sistema (<xref:System.IO.PathTooLongException>).  
   
--   Il nome di un file o di una directory nel percorso contiene i due punti \(:\) o ha un formato non valido \(<xref:System.NotSupportedException>\).  
+-   Il nome di un file o di una directory nel percorso contiene i due punti (:) o ha un formato non valido (<xref:System.NotSupportedException>).  
   
--   L'utente non dispone delle autorizzazioni necessarie per visualizzare il percorso \(<xref:System.Security.SecurityException>\).  
+-   L'utente non dispone delle autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
   
-## Vedere anche  
+## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>   
- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)
+ [Procedura: scrivere testo in file](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)

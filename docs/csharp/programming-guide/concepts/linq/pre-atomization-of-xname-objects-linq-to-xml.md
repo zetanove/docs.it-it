@@ -14,17 +14,18 @@ ms.assetid: e84fbbe7-f072-4771-bfbb-059d18e1ad15
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: f2e324029a4951f1cb05507d580db73caea2d3f7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
+ms.openlocfilehash: 0b7cc79a10cc2c8288c048fdb98717e61a3f3463
+ms.contentlocale: it-it
+ms.lasthandoff: 05/30/2017
 
 
 ---
 # <a name="pre-atomization-of-xname-objects-linq-to-xml-c"></a>Pre-atomizzazione di oggetti XName (LINQ to XML) (C#)
-Uno dei metodi per migliorare le prestazioni in LINQ to XML consiste nel pre-atomizzare gli oggetti <xref:System.Xml.Linq.XName>. La pre-atomizzazione prevede l'assegnazione di una stringa a un oggetto <xref:System.Xml.Linq.XName> prima della creazione dell'albero XML tramite i costruttori delle classi <xref:System.Xml.Linq.XElement> e  <xref:System.Xml.Linq.XAttribute>. Quindi, anziché passare una stringa al costruttore e usare la conversione implicita da stringa a <xref:System.Xml.Linq.XName>, viene passato l'oggetto inizializzato <xref:System.Xml.Linq.XName>.  
+Per migliorare le prestazioni in LINQ to XML, è possibile pre-atomizzare gli oggetti <xref:System.Xml.Linq.XName>. Questa operazione consiste nell'assegnare una stringa a un oggetto <xref:System.Xml.Linq.XName> prima di creare l'albero XML usando i costruttori delle classi <xref:System.Xml.Linq.XElement> e <xref:System.Xml.Linq.XAttribute>. Anziché passare una stringa al costruttore, che utilizzerebbe la conversione implicita da stringa a <xref:System.Xml.Linq.XName>, è possibile passare l'oggetto <xref:System.Xml.Linq.XName> inizializzato.  
   
- Questa operazione consente di migliorare le prestazioni quando si crea un albero XML di grandi dimensioni in cui sono ripetuti nomi specifici. A tale scopo, dichiarare e inizializzare gli oggetti <xref:System.Xml.Linq.XName> prima di costruire l'albero XML, quindi usare gli oggetti <xref:System.Xml.Linq.XName> anziché specificare le stringhe per i nomi di elementi e attributi. Questa tecnica può consentire un miglioramento significativo delle prestazioni se si crea un numero elevato di elementi (o attributi) con lo stesso nome.  
+ Questa operazione consente di migliorare le prestazioni quando si crea un albero XML di grandi dimensioni in cui sono ripetuti nomi specifici. A tale scopo, è necessario dichiarare e inizializzare gli oggetti <xref:System.Xml.Linq.XName> prima di costruire l'albero XML, quindi usare gli oggetti <xref:System.Xml.Linq.XName> anziché specificare le stringhe per i nomi di elementi e attributi. Questa tecnica può consentire un miglioramento significativo delle prestazioni se si crea un numero elevato di elementi (o attributi) con lo stesso nome.  
   
  Se si decide di usare la pre-atomizzazione, è prima necessario testarla nel proprio scenario.  
   

@@ -29,10 +29,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e44ef58e85fee164ab3b8be73a35083bd44c5df1
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: da1abda4faec540c115d93e14a757dae24c5ae78
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="methods-c-programming-guide"></a>Metodi (Guida per programmatori C#)
@@ -42,7 +43,7 @@ Un metodo è un blocco di codice che contiene una serie di istruzioni. Un progra
 >  In questo argomento vengono descritti i metodi denominati. Per informazioni sulle funzioni anonime, vedere [Funzioni anonime](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md).  
   
 ## <a name="method-signatures"></a>Firme del metodo  
- I metodi vengono dichiarati in una [classe](../../../csharp/language-reference/keywords/class.md) o in uno [struct](../../../csharp/language-reference/keywords/struct.md) specificando il livello di accesso, ad esempio `public` o `private`, i modificatori facoltativi, ad esempio `abstract` o `sealed`, il valore restituito, il nome del metodo e i parametri del metodo. Queste parti costituiscono la firma del metodo.  
+ I metodi vengono dichiarati in una [classe](../../../csharp/language-reference/keywords/class.md) o in una [struct](../../../csharp/language-reference/keywords/struct.md) specificando il livello di accesso, ad esempio `public` o `private`, i modificatori facoltativi, ad esempio `abstract` o `sealed`, il valore restituito, il nome del metodo e i parametri del metodo. Queste parti costituiscono la firma del metodo.  
   
 > [!NOTE]
 >  Un tipo restituito di un metodo non fa parte della firma del metodo in caso di overload dei metodi. Fa tuttavia parte della firma del metodo quando si determina la compatibilità tra un delegato e il metodo a cui fa riferimento.  
@@ -111,13 +112,12 @@ static void Main(string[] args)
                 }  
             }  
         }  
-  
 ```  
   
  Per altre informazioni, vedere [return](../../../csharp/language-reference/keywords/return.md).  
   
 ## <a name="async-methods"></a>Metodi asincroni  
- Tramite la funzionalità async, è possibile richiamare i metodi asincroni senza usare callback espliciti o suddividere manualmente il codice in più metodi o espressioni lambda. La funzionalità async è stata introdotta in [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs_dev11_long_md.md)].  
+ Tramite la funzionalità async, è possibile richiamare i metodi asincroni senza usare callback espliciti o suddividere manualmente il codice in più metodi o espressioni lambda. 
   
  Se si contrassegna un metodo con il modificatore [async](../../../csharp/language-reference/keywords/async.md) , è possibile usare l'operatore [await](../../../csharp/language-reference/keywords/await.md) nel metodo. Quando il controllo raggiunge un'espressione await nel metodo asincrono, il controllo torna al chiamante e l'avanzamento nel metodo viene sospeso fino al completamento dell'attività attesa. Una volta completata l'attività, l'esecuzione del metodo può riprendere.  
   
@@ -126,7 +126,7 @@ static void Main(string[] args)
   
  Un metodo asincrono può avere un tipo restituito <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task> o void. Il tipo restituito void viene usato principalmente per definire i gestori eventi, dove un tipo restituito void è necessario. Un metodo asincrono che restituisce void non può essere atteso e il chiamante di un metodo che restituisce void non può intercettare eccezioni generate dal metodo.  
   
- Nell'esempio seguente, `DelayAsync` è un metodo asincrono con tipo restituito <xref:System.Threading.Tasks.Task%601>. `DelayAsync` ha un'istruzione `return` che restituisce un numero intero. La dichiarazione del metodo di `DelayAsync` deve quindi avere un tipo restituito `Task<int>`. Poiché il tipo restituito è `Task<int>`, la valutazione dell'espressione `await` in `DoSomethingAsync` genera un numero intero come illustra l'istruzione seguente: `int result = await delayTask`.  
+ Nel seguente esempio, `DelayAsync` è un metodo asincrono con un tipo restituito <xref:System.Threading.Tasks.Task%601>. `DelayAsync` ha un'istruzione `return` che restituisce un numero intero. La dichiarazione del metodo di `DelayAsync` deve quindi avere un tipo restituito `Task<int>`. Poiché il tipo restituito è `Task<int>`, la valutazione dell'espressione `await` in `DoSomethingAsync` genera un numero intero come illustra l'istruzione seguente: `int result = await delayTask`.  
   
  Il metodo `startButton_Click` è un esempio di un metodo asincrono con un tipo restituito void. Poiché `DoSomethingAsync` è un metodo asincrono, l'attività per la chiamata a `DoSomethingAsync` deve essere attesa, come mostra l'istruzione seguente: `await DoSomethingAsync();`. Il metodo `startButton_Click` deve essere definito con il modificatore `async` perché il metodo ha un'espressione `await` .  
   
@@ -148,10 +148,10 @@ public string Name => First + " " + Last;
 public Customer this[long id] => store.LookupCustomer(id);  
 ```  
   
- Se il metodo restituisce `void` o è un metodo asincrono, il corpo del metodo deve essere un'espressione di istruzione (come per le espressioni lambda).  Per le proprietà e gli indicizzatori, devono essere di sola lettura e non è necessario usare la parola chiave della funzione di accesso `get` .  
+ Se il metodo restituisce `void` o è un metodo asincrono, il corpo del metodo deve essere un'espressione di istruzione (come per le espressioni lambda).  Per le proprietà e gli indicizzatori, devono essere di sola lettura e non è necessario usare la parola chiave della funzione di accesso `get`.  
   
 ## <a name="iterators"></a>Iteratori  
- Un iteratore esegue un'iterazione personalizzata su una raccolta, ad esempio un elenco o una matrice. Un iteratore usa l'istruzione [yield return](../../../csharp/language-reference/keywords/yield.md) per restituire un elemento alla volta. Quando viene raggiunta un'istruzione [yield return](../../../csharp/language-reference/keywords/yield.md), la posizione corrente nel codice viene memorizzata. L'esecuzione viene riavviata a partire da quella posizione la volta successiva che viene chiamato l'iteratore.  
+ Un iteratore esegue un'iterazione personalizzata su una raccolta, ad esempio un elenco o una matrice. Un iteratore usa l'istruzione [yield return](../../../csharp/language-reference/keywords/yield.md) per restituire un elemento per volta. Quando viene raggiunta un'istruzione [yield return](../../../csharp/language-reference/keywords/yield.md) , la posizione corrente nel codice viene memorizzata. L'esecuzione viene riavviata a partire da quella posizione la volta successiva che viene chiamato l'iteratore.  
   
  Per chiamare un iteratore dal codice client, usare un'istruzione [foreach](../../../csharp/language-reference/keywords/foreach-in.md) .  
   
@@ -160,7 +160,7 @@ public Customer this[long id] => store.LookupCustomer(id);
  Per altre informazioni, vedere [Iteratori](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   
@@ -174,3 +174,4 @@ public Customer this[long id] => store.LookupCustomer(id);
  [out](../../../csharp/language-reference/keywords/out.md)   
  [ref](../../../csharp/language-reference/keywords/ref.md)   
  [Passaggio di parametri](passing-parameters.md)
+

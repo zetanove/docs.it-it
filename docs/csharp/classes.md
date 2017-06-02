@@ -2,18 +2,19 @@
 title: Classi | Guida per programmatori C#
 description: Informazioni sui tipi di classe e su come crearli
 keywords: .NET, .NET Core, C#
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/10/2016
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 95c686ba-ae4f-440e-8e94-0dbd6e04d11f
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 4b5614123d38ae00cb471ef85d0eb92c03c68bba
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: f2cfeac321860a609c21046818c36fbc6aa3c636
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 
@@ -25,7 +26,7 @@ Un tipo definito come [classe](https://msdn.microsoft.com/library/0b0thckt.aspx)
 
 [!code-csharp[Tipi di riferimenti](../../samples/snippets/csharp/concepts/classes/reference-type.cs)]
   
-Quando viene creato l'oggetto, la memoria viene allocata nell'heap gestito e la variabile mantiene solo un riferimento al percorso dell'oggetto. I tipi nell'heap gestito richiedono un overhead quando vengono allocati e recuperati dalla funzionalità di gestione automatica della memoria di CLR, nota come *Garbage Collection*. La Garbage Collection è tuttavia anche altamente ottimizzata e, nella maggior parte degli scenari, non causa un problema di prestazioni. Per altre informazioni sulla Garbage Collection, vedere [Gestione automatica della memoria e Garbage Collection](../standard/garbagecollection/gc.md).  
+Quando viene creato l'oggetto, la memoria viene allocata nell'heap gestito e la variabile mantiene solo un riferimento al percorso dell'oggetto. I tipi nell'heap gestito richiedono un overhead quando vengono allocati e recuperati dalla funzionalità di gestione automatica della memoria di CLR, nota come *Garbage Collection*. La Garbage Collection è tuttavia anche altamente ottimizzata e, nella maggior parte degli scenari, non causa un problema di prestazioni. Per altre informazioni sulla Garbage Collection, vedere [Gestione automatica della memoria e Garbage Collection](../standard/garbage-collection/gc.md).  
   
 I tipi di riferimenti supportano completamente l'*ereditarietà*, una caratteristica fondamentale nella programmazione orientata a oggetti. Quando si crea una classe, è possibile ereditare da qualsiasi altra interfaccia o classe che non è definita come [sealed](https://msdn.microsoft.com/library/88c54tsw.aspx), e altre classi possono ereditare dalla classe ed eseguire l'override dei metodi virtuali. Per altre informazioni, vedere [Ereditarietà](https://msdn.microsoft.com/library/ms173149.aspx).
 
@@ -81,7 +82,7 @@ Per altre informazioni, vedere le [specifiche del linguaggio C#](https://msdn.mi
 [Membri di classi e struct](https://msdn.microsoft.com/library/ms173113.aspx)   
 [Metodi di classi e struct](https://msdn.microsoft.com/library/ms173114.aspx)   
 [Costruttori](https://msdn.microsoft.com/library/ace5hbzh.aspx)   
-[Distruttori](https://msdn.microsoft.com/library/66x5fx1b.aspx)   
+[Finalizzatori](https://msdn.microsoft.com/library/66x5fx1b.aspx)   
 [Oggetti](https://msdn.microsoft.com/library/ms173110.aspx)
 
 

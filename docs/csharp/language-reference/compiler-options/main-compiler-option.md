@@ -31,9 +31,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: fa8c02a6521b65e2cc4f7c8d779c1091ce399fba
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -42,7 +43,7 @@ Questa opzione specifica la classe che contiene il punto di ingresso al programm
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /main:class  
 ```  
   
@@ -68,7 +69,7 @@ Questa opzione specifica la classe che contiene il punto di ingresso al programm
 ## <a name="example"></a>Esempio  
  Compilare `t2.cs` e `t3.cs` specificando che il metodo **Main** si trova in `Test2`:  
   
-```  
+```console  
 csc t2.cs t3.cs /main:Test2  
 ```  
   

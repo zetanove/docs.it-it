@@ -30,17 +30,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 020be199391789360ae9a25858bef54d8259ae56
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: ae705e7df4515cd0c7481f64fa63b2e844a7d564
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="lock-statement-c-reference"></a>Istruzione lock (Riferimenti per C#)
 La parola chiave `lock` contrassegna un blocco di istruzioni come sezione critica ottenendo il blocco a esclusione reciproca per un determinato oggetto, eseguendo un'istruzione e rilasciando in seguito il blocco. L'esempio seguente illustra un'istruzione `lock`.  
   
 ```  
-  
 class Account  
 {  
     decimal balance;  
@@ -58,7 +58,6 @@ class Account
         }  
     }  
 }  
-  
 ```  
   
  Per altre informazioni, vedere [Sincronizzazione di thread](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4).  
@@ -68,7 +67,7 @@ class Account
   
  Nella sezione [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c) vengono specificate informazioni sul threading.  
   
- La parola chiave `lock` chiama <xref:System.Threading.Monitor.Enter%2A> all'inizio del blocco e <xref:System.Threading.Monitor.Exit%2A> alla fine del blocco. <xref:System.Threading.ThreadInterruptedException> viene generato se <xref:System.Threading.Thread.Interrupt%2A> interrompe un thread in attesa di immettere un'istruzione `lock`.  
+ La parola chiave `lock` chiama <xref:System.Threading.Monitor.Enter%2A> all'inizio del blocco e <xref:System.Threading.Monitor.Exit%2A> alla fine del blocco. Viene generata un'eccezione <xref:System.Threading.ThreadInterruptedException> se <xref:System.Threading.Thread.Interrupt%2A> interrompe un thread in attesa di immettere un'istruzione `lock`.  
   
  In generale è opportuno evitare il blocco su un tipo `public` o su istanze oltre il controllo del codice. I costrutti comuni `lock (this)`, `lock (typeof (MyType))` e `lock ("myLock")` non rispettano questa regola:  
   
@@ -104,6 +103,7 @@ class Account
  [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
  [Parole chiave per le istruzioni](../../../csharp/language-reference/keywords/statement-keywords.md)   
  @System.Threading.Monitor   
- [Operazioni interlocked](http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b)   
- [AutoResetEvent](http://msdn.microsoft.com/library/6d39c48d-6b37-4a9b-8631-f2924cfd9c18)   
+ [Operazioni interlocked](../../../standard/threading/interlocked-operations.md)   
+ [AutoResetEvent](../../../standard/threading/autoresetevent.md)   
  [Sincronizzazione di thread](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4)
+

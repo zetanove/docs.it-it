@@ -30,9 +30,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 700e80272384a946609d538c5516f0480b7fed27
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -40,7 +41,6 @@ ms.lasthandoff: 03/13/2017
 Si usa la parola chiave `const` per dichiarare un campo costante o una variabile locale costante. I campi e le variabili locali costanti non sono variabili e non sono quindi modificabili. Gli elementi costanti possono essere numeri, valori booleani, stringhe o un riferimento Null. Non creare una costante per rappresentare informazioni di cui si prevede la modifica in qualsiasi momento. Un campo costante, ad esempio, non deve essere usato per archiviare il prezzo di un servizio, il numero di versione di un prodotto o il nome dell'organizzazione di una società. Tali valori potrebbero cambiare nel tempo e, poiché i compilatori propagano le costanti, eventuale altro codice compilato con quelle librerie dovrebbe essere ricompilato per riflettere le modifiche. Vedere anche la parola chiave [readonly](../../../csharp/language-reference/keywords/readonly.md). Ad esempio:  
   
 ```  
-  
       const int x = 0;  
 public const double gravitationalConstant = 6.673e-11;  
 private const string productName = "Visual C#";  
@@ -78,7 +78,7 @@ public const int c2 = c1 + 100;
  [!code-cs[csrefKeywordsModifiers#6](../../../csharp/language-reference/keywords/codesnippet/CSharp/const_2.cs)]  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   
@@ -86,3 +86,4 @@ public const int c2 = c1 + 100;
  [Parole chiave di C#](../../../csharp/language-reference/keywords/index.md)   
  [Modificatori](../../../csharp/language-reference/keywords/modifiers.md)   
  [readonly](../../../csharp/language-reference/keywords/readonly.md)
+

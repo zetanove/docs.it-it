@@ -15,9 +15,10 @@ ms.assetid: 589f2adc-69f9-404d-b9d6-4c28dabea7f7
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: dd5b63f255107c5864108cfbb87bef6e53a971a0
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -37,7 +38,6 @@ Dim query2 = From e In query1 Where CInt(e) Mod 2 = 0e
 For Each i As var In query2  
     Console.WriteLine("{0}", CInt(i))  
 Next  
-  
 ```  
   
  Questo esempio produce il seguente output:  
@@ -60,3 +60,4 @@ Next
   
 ## <a name="see-also"></a>Vedere anche  
  [Prestazioni (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+

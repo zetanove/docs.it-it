@@ -29,9 +29,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: ba3b38a8bce9f5b49ef863acfae04bc2a39c052a
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -69,7 +70,6 @@ L'uso dei commenti XML relativi alla documentazione richiede la specifica di del
     /**   
      * <summary>text</summary>   
     */  
-  
     ```  
   
 -   Il compilatore identifica il modello comune " * " all'inizio della seconda e della terza riga. Il modello non è incluso nell'output.  
@@ -105,3 +105,4 @@ L'uso dei commenti XML relativi alla documentazione richiede la specifica di del
  [Commenti relativi alla documentazione XML](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)   
  [/doc (opzioni del compilatore C#)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)   
  [Commenti relativi alla documentazione XML](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+

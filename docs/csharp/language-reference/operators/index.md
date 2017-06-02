@@ -41,10 +41,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: fd70919f68c7c48894e7c944aeb1a74c73513e8e
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: c4e018ec0073086a82d52ccd37463c070e9fb6e6
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="c-operators"></a>Operatori [C#]
@@ -66,9 +67,7 @@ C# fornisce diversi operatori, ovvero simboli che specificano quali operazioni (
  [f(x)](../../../csharp/language-reference/operators/invocation-operator.md): chiamata di funzione.  
   
  [a&#91;x&#93;](../../../csharp/language-reference/operators/index-operator.md): indicizzazione oggetto aggregato.  
-  
- [a?&#91;x&#93;](../../../csharp/language-reference/operators/null-conditional-operators.md): indicizzazione condizionale null.  Restituisce `null` se l'operando sul lato sinistro è `null`.  
-  
+   
  [x++](../../../csharp/language-reference/operators/increment-operator.md): incremento suffisso.  Restituisce il valore di x e quindi aggiorna la posizione di archiviazione con il valore di x che risulta maggiore (in genere aggiunge il numero intero 1).  
   
  [x--](../../../csharp/language-reference/operators/decrement-operator.md): decremento suffisso.  Restituisce il valore di x e quindi aggiorna la posizione di archiviazione con il valore di x che risulta minore (in genere sottrae il numero intero 1).  
@@ -230,7 +229,7 @@ C# fornisce diversi operatori, ovvero simboli che specificano quali operazioni (
    
 -   L'overflow aritmetico a virgola mobile o la divisione per zero non genera mai un'eccezione, perché i tipi a virgola mobile si basano su IEEE 754 e quindi dispongono del provisioning per la rappresentazione dell'infinito e di NaN (Not a Number).  
   
--   L'overflow aritmetico [decimale](../../../csharp/language-reference/keywords/decimal.md) genera sempre un'eccezione <xref:System.OverflowException>. La divisione decimale per zero genera sempre un'eccezione <xref:System.DivideByZeroException>.  
+-   L'overflow aritmetico [decimale](../../../csharp/language-reference/keywords/decimal.md) genera sempre un'eccezione <xref:System.OverflowException>. La divisione di decimali per zero genera sempre un'eccezione <xref:System.DivideByZeroException>.  
   
   
 ## <a name="see-also"></a>Vedere anche  

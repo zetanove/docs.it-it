@@ -36,9 +36,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 87cb32c12ab3238508a6a4bb114306909e409dda
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -62,7 +63,6 @@ End Property
 [ <attributelist> ] [ Default ] [ accessmodifier ]   
 [ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ]   
 Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  
-  
 ```  
   
 ## <a name="parts"></a>Parti  
@@ -237,3 +237,4 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
  [Set (istruzione)](../../../visual-basic/language-reference/statements/set-statement.md)   
  [Elenco di parametri](../../../visual-basic/language-reference/statements/parameter-list.md)   
  [Default](../../../visual-basic/language-reference/modifiers/default.md)
+

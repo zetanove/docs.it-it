@@ -1,72 +1,91 @@
 ---
-title: "/debug (C# Compiler Options) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "/debug"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "debug compiler option [C#]"
-  - "-debug compiler option [C#]"
-  - "/debug compiler option [C#]"
+title: -debug (opzioni del compilatore C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- /debug
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- debug compiler option [C#]
+- -debug compiler option [C#]
+- /debug compiler option [C#]
 ms.assetid: e2b48c07-01bc-45cc-a52c-92e9085eb969
 caps.latest.revision: 19
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 19
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 6f22f998e4d652075e594c113026dfae18792ded
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
+
 ---
-# /debug (C# Compiler Options)
-L'opzione **\/debug** determina, in fase di compilazione, la generazione di informazioni di debug che verranno inserite nel file o nei file di output.  
+# <a name="debug-c-compiler-options"></a>/debug (opzioni del compilatore C#)
+L'opzione **/debug** indica al compilatore di generare informazioni di debug e di inserirle nel file o file di output.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /debug[+ | -]  
 /debug:{full | pdbonly}  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
  `+` &#124; `-`  
- Specificando `+` o **\/debug**, il compilatore genera informazioni relative al debug e le inserisce in un database di programma \(file con estensione\).  Se si specifica l'argomento `-`, che è attivo quando **\/debug** non è specificato, non verranno create informazioni di debug.  
+ Se si specifica `+`, o soltanto **/debug**, il compilatore genera le informazioni di debug e le inserisce in un database di programma (file PDB). Se si specifica `-`, ovvero non si specifica **/debug**, non verranno create informazioni di debug.  
   
  `full` &#124; `pdbonly`  
- Determina il tipo di informazioni di debug generate dal compilatore.  L'argomento full, che è attivo se non si specifica **\/debug:pdbonly**, consente l'associazione di un debugger al programma in esecuzione.  La specifica di pdbonly consente il debug del codice sorgente quando l'avvio del programma avviene dal debugger, ma in questo caso l'assembler viene visualizzato sono quando il programma in esecuzione è collegato al debugger.  
+ Specifica il tipo di informazioni di debug generate dal compilatore. L'argomento completo, che viene usato se non si specifica **/debug:pdbonly**, consente di allegare un debugger al programma in esecuzione. Specificando pdbonly si consente il debug del codice sorgente quando il programma viene avviato nel debugger, ma l'assembler viene visualizzato solo se il programma in esecuzione è allegato al debugger.  
   
-## Note  
- Utilizzare questa opzione per creare build di debug.  Se non vengono specificate le opzioni **\/debug**, **\/debug\+** o **\/debug:full**, non sarà possibile eseguire il debug del file di output.  
+## <a name="remarks"></a>Note  
+ Usare questa opzione per creare build di debug. Se **/debug**, **/debug+** o **/debug:full** non è specificato, non sarà possibile eseguire il debug del file di output del programma.  
   
- Quando si utilizza **\/debug:full**, è opportuno tenere presente che **\/debug:full** può avere un impatto considerevole sulla velocità e le dimensioni del codice JIT ottimizzato ed effetti minori sulla qualità del codice stesso.  Per la generazione del codice di rilascio, è consigliato specificare **\/debug:pdbonly** oppure evitare l'utilizzo di un file PDB.  
+ Se si usa **/debug:full**, tenere presente che comporta un certo impatto sulla velocità e sulle dimensioni del codice ottimizzato JIT ed effetti minori sulla qualità del codice con **/debug: full**. Si consiglia l'uso di **/debug:pdbonly** o nessun file PDB per la generazione del codice di rilascio.  
   
 > [!NOTE]
->  L'opzione **\/debug:pdbonly** si differenzia da **\/debug:full** perché, ad esempio, se si specifica **\/debug:full**, viene creato un attributo <xref:System.Diagnostics.DebuggableAttribute> per indicare al compilatore JIT la disponibilità di informazioni di debug.  Verrà pertanto restituito un errore se il codice contiene l'attributo <xref:System.Diagnostics.DebuggableAttribute> impostato su false quando si utilizza l'opzione **\/debug:full**.  
+>  Una differenza tra **/debug:pdbonly** e **/debug:full** è che con **/debug:full** il compilatore genera un <xref:System.Diagnostics.DebuggableAttribute>, che viene usato per indicare al compilatore JIT che le informazioni di debug sono disponibili. Di conseguenza, si otterrà un errore se il codice contiene <xref:System.Diagnostics.DebuggableAttribute> impostato su false se si usa **/debug:full**.  
   
- Per ulteriori informazioni su come configurare le prestazioni di debug di un'applicazione, vedere [Semplificazione del debug di un'immagine](../Topic/Making%20an%20Image%20Easier%20to%20Debug.md).  
+ Per altre informazioni su come configurare le prestazioni di debug di un'applicazione, vedere [Semplificazione del debug di un'immagine](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   
- Per cambiare il percorso del file con estensione pdb, vedere [\/pdb \(Specify Debug Symbol File\)](../../../csharp/language-reference/compiler-options/pdb-compiler-option.md).  
+ Per modificare il percorso del file PDB, vedere [/pdb (opzioni del compilatore C#)](../../../csharp/language-reference/compiler-options/pdb-compiler-option.md).  
   
-### Per impostare l'opzione del compilatore nell'ambiente di sviluppo di Visual Studio  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Per impostare l'opzione del compilatore nell'ambiente di sviluppo di Visual Studio  
   
-1.  Aprire la pagina **Proprietà** del progetto.  
+1.  Aprire la pagine **Proprietà** del progetto.  
   
-2.  Fare clic sulla pagina delle proprietà **Compila**.  
+2.  Fare clic sulla pagina della proprietà **Compilazione**.  
   
-3.  Fare clic sul pulsante **Avanzate**.  
+3.  Fare clic su **Avanzate** .  
   
-4.  Modificare la proprietà **Informazioni di debug**.  
+4.  Modificare la proprietà **Informazioni di Debug**.  
   
  Per informazioni su come impostare questa opzione del compilatore a livello di codice, vedere <xref:VSLangProj80.CSharpProjectConfigurationProperties3.DebugSymbols%2A>.  
   
-## Esempio  
- Inserire informazioni di debug nel file di output `app.pdb`:  
+## <a name="example"></a>Esempio  
+ Inserire le informazioni di debug nel file di output `app.pdb`:  
   
-```  
+```console  
 csc /debug /pdb:app.pdb test.cs  
 ```  
   
-## Vedere anche  
- [C\# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Procedura: modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/it-it/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+## <a name="see-also"></a>Vedere anche  
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  (Opzioni del compilatore C#)  
+ [NIB Procedura: Modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

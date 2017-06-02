@@ -27,9 +27,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 1e5b1880e6821b2fd4595baad31f7a1bd5599ac4
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -66,7 +67,7 @@ Un *campo* è una variabile di qualsiasi tipo che viene dichiarata direttamente 
  È possibile dichiarare un campo come [readonly](../../../csharp/language-reference/keywords/readonly.md). A un campo di sola lettura può essere assegnato un valore solo durante l'inizializzazione o in un costruttore. Un campo `static``readonly` è molto simile a una costante, a parte il fatto che il compilatore C# non ha accesso al valore di un campo statico di sola lettura in fase di compilazione, ma solo in fase di esecuzione. Per altre informazioni, vedere [Costanti](../../../csharp/programming-guide/classes-and-structs/constants.md).  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Guida per programmatori C#](../../../csharp/programming-guide/index.md)   

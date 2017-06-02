@@ -14,9 +14,10 @@ ms.assetid: 924a2699-72f6-4be1-aaa6-de62f8ec73b9
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: d96dc59c2d798f11d949e26d208a2ce71d9c4de2
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -31,7 +32,7 @@ In questo argomento viene illustrato come ottenere il valore superficiale di un 
 ## <a name="example"></a>Esempio  
  Il file di testo seguente, Report.xml, è l'origine di questo esempio.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Report>  
   <Section>  

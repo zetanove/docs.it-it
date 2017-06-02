@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: e22d81efef735f4b6619054cb15f21790efabf5e
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 17edc1598b806f073ad93e470dc8764cfeb1e4eb
+ms.openlocfilehash: 8c42c213a3933f35750d2ad7db9c88867aacd549
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="error-messages-visual-basic"></a>Messaggi di errore (Visual Basic)
@@ -57,6 +57,7 @@ Quando si scrive, compila o esegue un'applicazione Visual Basic, possono verific
 ## <a name="compile-time-errors"></a>Errori in fase di compilazione  
  Se il compilatore Visual Basic rileva un errore nel codice, si verifica un errore in fase di compilazione. Nell'editor di codice è possibile identificare facilmente la riga del codice che ha determinato l'errore poiché sotto tale riga viene visualizzata una sottolineatura ondulata. Per visualizzare il messaggio di errore, posizionare il mouse sulla linea ondulata o aprire **Elenco errori**, in cui sono riportati anche altri messaggi.  
   
- Se un identificatore presenta una linea ondulata e una sottolineatura breve sotto il carattere all'estrema destra, è possibile generare uno stub per la classe, il costruttore, il metodo, la proprietà, il campo o l'enumerazione. Per altre informazioni, vedere [Generazione dall'utilizzo](https://docs.microsoft.com/cpp/misc/generate-from-usage).  
+ Se un identificatore presenta una linea ondulata e una sottolineatura breve sotto il carattere all'estrema destra, è possibile generare uno stub per la classe, il costruttore, il metodo, la proprietà, il campo o l'enumerazione. Per altre informazioni, vedere [Generazione dall'utilizzo](https://docs.microsoft.com/visualstudio/ide/visual-csharp-intellisense#generate-from-usage).
   
  La risoluzione degli avvisi visualizzati dal compilatore Visual Basic consente di scrivere codice più veloce e con meno bug. Questi avvisi identificano il codice che può generare errori durante l'esecuzione dell'applicazione. Ad esempio, il compilatore genera un avviso quando si cerca di chiamare un membro di una variabile di oggetto non assegnata, di completare l'esecuzione di una funzione senza impostare il valore restituito o di eseguire un blocco `Try` con errori nel codice per l'intercettazione delle eccezioni. Per altre informazioni sugli avvisi, incluso il modo di attivarli e disattivarli, vedere [Configurazione degli avvisi in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).
+

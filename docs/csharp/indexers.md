@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 3dc9347aa3c4090b71d473d13b5c7ad68f1fbc76
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 890c058bd09893c2adb185e1d8107246eef2e20a
+ms.openlocfilehash: a3ee06e9e177fe3c0a41e99361ba9289943c1cf5
+ms.contentlocale: it-it
+ms.lasthandoff: 04/12/2017
 
 ---
 
@@ -52,8 +53,7 @@ La differenza tra indicizzatori e proprietà è costituita dalla presenza negli 
 Si definiscono *indicizzatori* in un tipo se l'API corrispondente modella una raccolta per cui si definiscono gli argomenti. Gli indicizzatori possono essere mappati direttamente o meno ai tipi di raccolta che fanno parte di .NET Framework Core. Oltre alla modellazione di una raccolta, il tipo può avere altre responsabilità.
 Gli indicizzatori consentono di fornire l'API corrispondente all'astrazione del tipo senza esporre nei minimi dettagli la modalità di archiviazione o di calcolo dei valori per tale astrazione.
 
-Di seguito è riportata la descrizione dettagliata di alcuni scenari comuni per l'uso di *indicizzatori*.
-Il codice di tutti gli esempi è disponibile nell'[archivio GitHub](https://github.com/dotnet/core-docs) core-docs. In alternativa, è possibile accedere alla [cartella degli esempi](https://github.com/dotnet/docs/tree/master/samples/csharp/indexers) direttamente.
+Di seguito è riportata la descrizione dettagliata di alcuni scenari comuni per l'uso di *indicizzatori*. È possibile accedere alla [cartella degli esempi per gli indicizzatori](https://github.com/dotnet/docs/tree/master/samples/csharp/indexers). Per istruzioni sul download, vedere [Esempi ed esercitazioni](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### <a name="arrays-and-vectors"></a>Matrici e vettori
 

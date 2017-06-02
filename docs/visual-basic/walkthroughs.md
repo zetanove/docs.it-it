@@ -14,8 +14,8 @@ helpviewer_keywords:
 - walkthroughs [Visual Basic]
 ms.assetid: e4e1f849-e1ce-4cf7-8483-d9b4c4887a8e
 caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 translation.priority.ht:
 - cs-cz
 - de-de
@@ -30,17 +30,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 07743cabc00f65b1369c2733e5119cf1eaf47e0a
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: f88f7dcc7880621cf0f482b32ad7c1e5f1b51257
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="visual-basic-language-walkthroughs"></a>Procedure dettagliate relative al linguaggio Visual Basic
 Le procedure dettagliate forniscono istruzioni specifiche per scenari comuni, che li rende un ottimo strumento per apprendere l'utilizzo del prodotto o di una determinata area funzionale.  
   
  [Scrittura di un programma asincrono](./programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- Spiega come creare una soluzione asincrona usando [async ](../visual-basic/language-reference/modifiers/async.md) e [await](../visual-basic/language-reference/operators/await-operator.md), introdotte in [!INCLUDE[vs_dev11_long](../csharp/includes/vs_dev11_long_md.md)].  
+ Viene illustrato come creare una soluzione asincrona usando [Async](../visual-basic/language-reference/modifiers/async.md) e [Await](../visual-basic/language-reference/operators/await-operator.md).  
   
  [Dichiarazione e generazione di eventi](../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)  
  Viene illustrato come dichiarare e generare eventi in [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
@@ -91,7 +92,7 @@ Le procedure dettagliate forniscono istruzioni specifiche per scenari comuni, ch
  Spiega come verificare le caratteristiche delle password complesse e aggiornare un parametro di stringa con le informazioni sui controlli che una password non ha superato.  
   
  [Crittografia e decrittografia di stringhe in Visual Basic](../visual-basic/programming-guide/language-features/strings/walkthrough-encrypting-and-decrypting-strings.md)  
- Spiega come usare la classe <xref:System.Security.Cryptography.DESCryptoServiceProvider> per crittografare e decrittografare le stringhe.  
+ Illustra come usare la classe <xref:System.Security.Cryptography.DESCryptoServiceProvider> per crittografare e decrittografare le stringhe.  
   
  [Modifica di file e cartelle in Visual Basic](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
  Viene illustrato come usare le funzioni [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] per determinare informazioni su un file, cercare una stringa in un file e scrivere in un file.  

@@ -34,9 +34,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: e4016ee35ed487fd2ca48074d2e483778719dff3
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -50,7 +51,6 @@ Un'istruzione `if` identifica quale istruzione eseguire in base al valore di un'
  Un'istruzione `if` in C# può essere usata in due modi, come illustrato nell'esempio seguente.  
   
 ```csharp  
-  
 // if-else statement  
 if (condition)  
 {  
@@ -151,7 +151,7 @@ if (!(m >= n || m >= p))
 ```  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   
@@ -160,3 +160,4 @@ if (!(m >= n || m >= p))
  [Operatore ?: ](../../../csharp/language-reference/operators/conditional-operator.md)   
  [Istruzione if-else (C++)](https://docs.microsoft.com/cpp/cpp/if-else-statement-cpp)   
  [switch](../../../csharp/language-reference/keywords/switch.md)
+

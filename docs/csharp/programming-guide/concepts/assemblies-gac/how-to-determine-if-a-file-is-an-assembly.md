@@ -19,10 +19,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 4de303da9215fb07ecbb6bfff78d18dcd246aad3
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 9565d0af978f1a1bc3744db127ac75911b519ab2
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="how-to-determine-if-a-file-is-an-assembly-c"></a>Procedura: Determinare se un file è un assembly (C#)
@@ -34,11 +35,11 @@ Un file è un assembly unicamente nei casi in cui è gestito e include nei metad
   
 2.  Caricare il file che si intende verificare.  
   
-3.  Se **ILDASM** segnala che il file non è un file eseguibile portabile (PE, portable executable), tale file non è un assembly. Per altre informazioni, vedere [Procedura: Visualizzare il contenuto dell'assembly](http://msdn.microsoft.com/library/fb7baaab-4c0d-47ad-8fd3-4591cf834709).  
+3.  Se **ILDASM** segnala che il file non è un file eseguibile portabile (PE, portable executable), tale file non è un assembly. Per altre informazioni, vedere [Procedura: Visualizzare il contenuto dell'assembly](../../../../framework/app-domains/how-to-view-assembly-contents.md).  
   
 ### <a name="how-to-programmatically-determine-if-a-file-is-an-assembly"></a>Procedura: Determinare se un file è un assembly a livello di codice  
   
-1.  Chiamare il metodo <xref:System.Reflection.AssemblyName.GetAssemblyName%2A>, passando il percorso completo e il nome del file che si vuole testare.  
+1.  Chiamare il metodo <xref:System.Reflection.AssemblyName.GetAssemblyName%2A>, passando il percorso file completo e il nome del file sottoposto a test.  
   
 2.  Se viene generata un'eccezione <xref:System.BadImageFormatException>, il file non è un assembly.  
   
@@ -80,7 +81,7 @@ class TestAssembly
 */  
 ```  
   
- Il metodo <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> carica il file di test, quindi lo rilascia dopo averne letto i dati.  
+ Il metodo <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> carica il file di test e lo rilascia dopo aver letto le informazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Reflection.AssemblyName>   

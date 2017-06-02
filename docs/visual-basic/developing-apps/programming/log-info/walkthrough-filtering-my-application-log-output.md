@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: caa4b8be16e5000d02d82a83199a25d13ad07bba
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: c0b8b0a4174527d1fc512b461355d2508e34e152
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="walkthrough-filtering-myapplicationlog-output-visual-basic"></a>Procedura dettagliata: filtro dell'output di My.Application.Log
@@ -72,10 +73,10 @@ Questa procedura dettagliata illustra come modificare il filtro di log predefini
     > [!NOTE]
     >  Per impostazione predefinita, l'applicazione elimina l'output del file di log alla chiusura dell'applicazione.  
   
-     Nell'esempio precedente la seconda chiamata al metodo <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A> e la chiamata al metodo <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A> generano output del log, mentre la prima e l'ultima chiamata al metodo `WriteEntry` non ne generano. Questo avviene poiché i livelli di gravità di `WriteEntry` e `WriteException` sono "Information" ed "Error", entrambi consentiti dal filtro di log predefinito dell'oggetto `My.Application.Log`. Tuttavia, agli eventi con i livelli di gravità "Start" e "Stop" non è consentito creare output di log.  
+     Nell'esempio precedente la seconda chiamata al metodo <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A> e la chiamata al metodo <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A> generano l'output del log, mentre non lo generano la prima e l'ultima chiamata al metodo `WriteEntry`. Questo avviene poiché i livelli di gravità di `WriteEntry` e `WriteException` sono "Information" ed "Error", entrambi consentiti dal filtro di log predefinito dell'oggetto `My.Application.Log`. Tuttavia, agli eventi con i livelli di gravità "Start" e "Stop" non è consentito creare output di log.  
   
 ## <a name="filtering-for-all-myapplicationlog-listeners"></a>Filtro per tutti i listener di My.Application.Log  
- L'oggetto `My.Application.Log` usa un oggetto <xref:System.Diagnostics.SourceSwitch> denominato `DefaultSwitch` per stabilire quali messaggi vengono passati dai metodi `WriteEntry` e `WriteException` ai listener di log. È possibile configurare `DefaultSwitch` nel file di configurazione dell'applicazione impostando il relativo valore su uno dei valori di enumerazione di <xref:System.Diagnostics.SourceLevels>. Per impostazione predefinita, il valore è "Information".  
+ L'oggetto `My.Application.Log` usa una classe <xref:System.Diagnostics.SourceSwitch> denominata `DefaultSwitch` per stabilire quali messaggi vengono passati dai metodi `WriteEntry` e `WriteException` ai listener di log. È possibile configurare `DefaultSwitch` nel file di configurazione dell'applicazione impostando il relativo valore su uno dei valori di enumerazione di <xref:System.Diagnostics.SourceLevels>. Per impostazione predefinita, il valore è "Information".  
   
  Questa tabella illustra il livello di gravità richiesto al log per la scrittura di un messaggio ai listener, data un'impostazione `DefaultSwitch` specifica.  
   
@@ -278,5 +279,5 @@ Questa procedura dettagliata illustra come modificare il filtro di log predefini
  [Procedura dettagliata: Modifica della posizione di inserimento delle informazioni con My.Application.Log](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-changing-where-my-application-log-writes-information.md)   
  [Procedura dettagliata: Creazione di listener di log personalizzati](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)   
  [Procedura: Scrivere messaggi di log](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)   
- [Opzioni di traccia](http://msdn.microsoft.com/library/8ab913aa-f400-4406-9436-f45bc6e54fbe)   
+ [Opzioni di traccia](../../../../framework/debug-trace-profile/trace-switches.md)   
  [Registrazione di informazioni relative all'applicazione](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)

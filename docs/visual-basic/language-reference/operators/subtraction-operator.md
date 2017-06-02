@@ -42,9 +42,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 7f45094da7bc61687d9c767d25858aa214bf1978
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -54,7 +55,6 @@ Restituisce la differenza tra due espressioni numeriche o il valore negativo di 
 ## <a name="syntax"></a>Sintassi  
   
 ```  
-  
       expression1 – expression2  
 - or -  
 – expression1  

@@ -1,6 +1,6 @@
 ---
 title: sbyte (Riferimenti per C#) | Documentazione Microsoft
-ms.date: 2015-07-20
+ms.date: 2017-03-14
 ms.prod: .net
 ms.technology:
 - devlang-csharp
@@ -30,39 +30,50 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: df57296bb285441aeddc596289d82d1e458dc278
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
+ms.openlocfilehash: 2de7b352382f1a39ef73788c553d9bd881644019
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="sbyte-c-reference"></a>sbyte (Riferimenti per C#)
-La parola chiave `sbyte` indica un tipo integrale che memorizza valori in base alla dimensione e all'intervallo indicati nella seguente tabella.  
+
+`sbyte` denota un tipo integrale che archivia valori in base alla dimensione e all'intervallo visualizzato nella tabella seguente.  
   
 |Tipo|Intervallo|Dimensioni|Tipo .NET Framework|  
 |----------|-----------|----------|-------------------------|  
 |`sbyte`|Da -128 a 127|Valore intero con segno a 8 bit|<xref:System.SByte?displayProperty=fullName>|  
   
 ## <a name="literals"></a>Valori letterali  
- È possibile dichiarare e inizializzare una variabile `sbyte` come riportato di seguito:  
+
+È possibile dichiarare e inizializzare una variabile `sbyte` assegnandole un valore letterale decimale, un valore letterale esadecimale o (a partire da C# 7) un valore letterale binario. 
+
+Nell'esempio seguente, i valori interi uguali a 102 rappresentati come valori letterali decimali, esadecimali o binari vengono convertiti da valori [int](../../../csharp/language-reference/keywords/int.md) a valori `sbyte`.    
   
-```  
-  
-sbyte sByte1 = 127;  
-```  
-  
- Nella precedente dichiarazione il valore letterale intero 127 viene convertito in modo implicito da [int](../../../csharp/language-reference/keywords/int.md) a `sbyte`. Se il valore letterale intero supera l'intervallo di `sbyte`, si verifica un errore di compilazione.  
-  
+[!code-cs[SByte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#SByte)]  
+
+> [!NOTE] 
+> Viene usato il prefisso `0x` o `0X` per identificare un valore letterale esadecimale e il prefisso `0b` o `0B` per identificare un valore letterale binario. I valori letterali decimali non hanno prefissi.
+
+A partire da C# 7, è anche possibile usare il carattere di sottolineatura, `_`, come separatore di cifre per migliorare la leggibilità, come illustrato nell'esempio seguente.
+
+[!code-cs[SByteSeparator](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#SByteS)]  
+
+Se il valore letterale integer è esterno all'intervallo di `sbyte`, vale a dire se è minore di <xref:System.SByte.MinValue?displayProperty=fullName> o maggiore di <xref:System.SByte.MaxValue?displayProperty=fullName>, si verifica un errore di compilazione. Quando un valore letterale integer non ha alcun suffisso, il tipo è il primo di questi tipi in cui può essere rappresentato il relativo valore: [int](int.md), [uint](uint.md), [long](long.md), [ulong](ulong.md). Ciò significa che, in questo esempio, i valori letterali numerici `0x9A` e `0b10011010` vengono interpretati come interi con segno a 32 bit con un valore corrispondente a 156, che supera <xref:System.SByte.MaxValue?displayProperty=fullName>. Per questo motivo, è necessario l'operatore di cast e l'assegnazione deve trovarsi in un contesto [unchecked](unchecked.md). 
+
+## <a name="compiler-overload-resolution"></a>Risoluzione dell'overload del compilatore
+
  È necessario usare un cast quando si chiamano metodi di overload. Considerare, ad esempio, i metodi seguenti di overload che usano i parametri `sbyte` e [int](../../../csharp/language-reference/keywords/int.md):  
   
-```  
+```csharp  
 public static void SampleMethod(int i) {}  
 public static void SampleMethod(sbyte b) {}  
 ```  
   
  L'uso del cast `sbyte` garantisce che venga chiamato il tipo corretto, ad esempio:  
   
-```  
+```csharp 
 // Calling the method with the int parameter:  
 SampleMethod(5);  
 // Calling the method with the sbyte parameter:  
@@ -74,39 +85,34 @@ SampleMethod((sbyte)5);
   
  Non è possibile convertire in modo implicito tipi numerici non letterali che necessitano di maggiore spazio in memoria in `sbyte`. Per informazioni sullo spazio necessario per l'archiviazione dei tipi integrali, vedere [Tabella dei tipi integrali](../../../csharp/language-reference/keywords/integral-types-table.md). Considerare, ad esempio, le due variabili `sbyte` seguenti, `x` e `y`:  
   
-```  
-  
+```csharp  
 sbyte x = 10, y = 20;  
 ```  
   
  L'istruzione di assegnazione che segue provocherà un errore di compilazione poiché, per impostazione predefinita, l'espressione aritmetica a destra dell'operatore di assegnazione restituisce [int](../../../csharp/language-reference/keywords/int.md).  
   
-```  
-  
+```csharp  
 sbyte z = x + y;   // Error: conversion from int to sbyte  
 ```  
   
  Per risolvere il problema, eseguire il cast dell'espressione come nell'esempio seguente:  
   
-```  
-  
+```csharp  
 sbyte z = (sbyte)(x + y);   // OK: explicit conversion  
 ```  
   
  È possibile tuttavia usare le istruzioni seguenti dove la variabile di destinazione ha la stessa dimensione di archiviazione o una dimensione maggiore:  
   
-```  
-  
-      sbyte x = 10, y = 20;  
+```csharp
+sbyte x = 10, y = 20;  
 int m = x + y;  
 long n = x + y;  
 ```  
   
  Si noti inoltre che non avviene alcuna conversione implicita dai tipi a virgola mobile in `sbyte`. Ad esempio, l'istruzione seguente genera un errore del compilatore, a meno che non venga usato un cast esplicito:  
   
-```  
-  
-      sbyte x = 3.0;         // Error: no implicit conversion from double  
+```csharp  
+sbyte x = 3.0;         // Error: no implicit conversion from double  
 sbyte y = (sbyte)3.0;  // OK: explicit conversion  
 ```  
   

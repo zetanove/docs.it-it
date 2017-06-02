@@ -15,9 +15,10 @@ ms.assetid: 3f4825c7-c3b0-48da-ba4e-8e97fb2a2f34
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 2ea8e71acf861b93a21296c74254b3ca4d977d0a
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -43,7 +44,6 @@ Dim list1 = From el In po.Descendants("Address")
 For Each el In list1  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  L'espressione di query di questo esempio viene scritta di nuovo dal compilatore nella sintassi delle query basate su metodo. L'esempio seguente, scritto nella sintassi delle query basate su metodo, produce gli stessi risultati del precedente:  
@@ -87,7 +87,6 @@ For Each n As Xml.XmlNode In nl
     Console.WriteLine(n.OuterXml)  
 Next  
 reader.Close()  
-  
 ```  
   
  Questa query restituisce lo stesso output degli esempi che utilizzano LINQ to XML. l'unica differenza è che LINQ to XML viene applicato un rientro al codice XML stampato, mentre <xref:System.Xml.XmlDocument>non esiste.</xref:System.Xml.XmlDocument>  
@@ -106,3 +105,4 @@ reader.Close()
   
 ## <a name="see-also"></a>Vedere anche  
  [Prestazioni (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+

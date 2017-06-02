@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: a0a31353ce3ee0c48907f9550f6961260f92b64a
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: a090fa8df6347a98b5c971c26664e6dd1098a594
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="how-to-rename-a-file-in-visual-basic"></a>Procedura: rinominare un file in Visual Basic
@@ -51,11 +52,11 @@ Usare il metodo `RenameFile` dell'oggetto `My.Computer.FileSystem` per rinominar
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Le seguenti condizioni possono generare un'eccezione:  
   
--   Il percorso non è valido per uno dei motivi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo, ovvero inizia con \\\\.\\ (<xref:System.ArgumentException>).  
+-   Il percorso non è valido per uno dei motivi seguenti: è una stringa di lunghezza zero, contiene solo spazi vuoti, contiene caratteri non validi o è il percorso di un dispositivo (inizia con \\\\.\\) (<xref:System.ArgumentException>).  
   
 -   `newName` contiene informazioni sul percorso (<xref:System.ArgumentException>).  
   
--   Il percorso non è valido in quanto `Nothing` (<xref:System.ArgumentNullException>).  
+-   Il percorso non è valido in quanto è `Nothing` (<xref:System.ArgumentNullException>).  
   
 -   `newName` è `Nothing` o una stringa vuota (<xref:System.ArgumentNullException>).  
   
@@ -67,7 +68,7 @@ Usare il metodo `RenameFile` dell'oggetto `My.Computer.FileSystem` per rinominar
   
 -   Il nome di un file o di una directory nel percorso contiene i due punti (:) o ha un formato non valido (<xref:System.NotSupportedException>).  
   
--   L'utente non ha le autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
+-   L'utente non dispone delle autorizzazioni necessarie per visualizzare il percorso (<xref:System.Security.SecurityException>).  
   
 -   L'utente non dispone delle autorizzazioni necessarie (<xref:System.UnauthorizedAccessException>).  
   

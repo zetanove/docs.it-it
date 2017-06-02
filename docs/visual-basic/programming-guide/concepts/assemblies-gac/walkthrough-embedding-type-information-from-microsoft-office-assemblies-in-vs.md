@@ -20,16 +20,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 4347ba0e740419b53a1aa662c43933dead107e9c
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-visual-studio-visual-basic"></a>Procedura dettagliata: Incorporamento delle informazioni sui tipi da assembly di Microsoft Office in Visual Studio (Visual Basic)
 Se si incorporano informazioni sul tipo in un'applicazione che fa riferimento a oggetti COM, è possibile eliminare la necessità di un assembly di interoperabilità primario (PIA). Inoltre, le informazioni sul tipo incorporato consente di ottenere l'indipendenza dalla versione dell'applicazione. Vale a dire, il programma può essere scritto per utilizzare tipi di più versioni di una libreria COM senza un PIA specifico per ogni versione. Si tratta di uno scenario comune per le applicazioni che utilizzano gli oggetti delle librerie di Microsoft Office. Incorporamento di informazioni sul tipo consente la stessa build di un programma per l'utilizzo delle diverse versioni di Microsoft Office in computer diversi senza dover ridistribuire l'applicazione o assembly di interoperabilità primario per ogni versione di Microsoft Office.  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per l'esecuzione di questa procedura sono richiesti i seguenti elementi:  

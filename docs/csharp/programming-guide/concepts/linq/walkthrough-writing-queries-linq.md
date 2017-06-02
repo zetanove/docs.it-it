@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 9dd72793d23c7f6ccc208a3368c255f7cc4dbbd7
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 5692bd4b2fae4c5e17d48c12e98eb2e18523ba61
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="walkthrough-writing-queries-in-c-linq"></a>Procedura dettagliata: scrittura di query in C# (LINQ)
@@ -202,7 +203,7 @@ Questa procedura dettagliata illustra le funzionalità del linguaggio C# utilizz
   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
   
- [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)  
+ [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   
  [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
   

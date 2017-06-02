@@ -10,10 +10,11 @@ ms.prod: .net-core
 ms.technology: dotnet-docker
 ms.devlang: csharp
 ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 57c49b555d7989a27fb4a2943b72cd2c4849694b
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: ed747cf589e1f4731d78af7cc206ff3674d666b2
+ms.openlocfilehash: b2ce10b3c079ff2c881f6dbe297ead33b8254476
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 
@@ -35,7 +36,7 @@ Verranno inoltre illustrate alcune funzionalità del linguaggio C#:
 * Elaborazione delle richieste HTTP in ingresso e generazione della risposta HTTP
 * Uso dei tipi valore nullable
 
-È possibile recuperare il codice dall'[archivio GitHub](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice).
+È possibile [visualizzare o scaricare l'applicazione di esempio](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/WeatherMicroservice) per questo argomento. Per istruzioni sul download, vedere [Esempi ed esercitazioni](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### <a name="why-docker"></a>Vantaggi offerti dall'uso di Docker
 
@@ -145,7 +146,7 @@ Il valori del dizionario Query sono di tipo `StringValue`. Questo tipo può cont
 
 Come passaggio successivo, è necessario convertire le stringhe in valori double. Per convertire una stringa in un valore double verrà usato il metodo `double.TryParse()`:
 
-```cs
+```csharp
 bool TryParse(string s, out double result);
 ```
 
@@ -173,7 +174,7 @@ A questo punto, è possibile eseguire l'applicazione Web e verificare se il codi
 
 L'attività successiva consiste nella creazione di una previsione meteo casuale. Come prima operazione, creare un contenitore dati in cui siano presenti i valori necessari per una previsione meteo:
 
-```cs
+```csharp
 public class WeatherReport
 {
     private static readonly string[] PossibleConditions = new string[]
@@ -285,10 +286,6 @@ docker build -t weather-microservice .
 
 Questo comando compila l'immagine del contenitore sulla base di tutte le informazioni presenti nel file Docker. L'argomento `-t` specifica un tag, o un nome, per questa immagine del contenitore. Nella riga di comando precedente il tag usato per il contenitore Docker è `weather-microservice`. Dopo l'esecuzione di questo comando, è disponibile un contenitore pronto per l'esecuzione del nuovo servizio. 
 
-> [!Note]
-> Il comando copy copierà tutte le risorse compilate, nonché l'origine dell'applicazione.
-> Prima di compilare l'immagine Docker, rimuovere le directory `obj`, `bin` e `out` dal computer locale.
-
 Eseguire il comando seguente per avviare il contenitore e il servizio:
 
 ```console
@@ -343,7 +340,7 @@ docker rm hello-docker
 Per rimuovere dal computer le immagini non utilizzate, usare il comando seguente:
 
 ```console
-docker rmi hello-docker
+docker rmi weather-microservice
 ```
 
 ## <a name="conclusion"></a>Conclusione 

@@ -31,9 +31,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: a9165414bc08b62aab20410e7af187fa4b45c162
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -102,13 +103,11 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
         Await Task.Delay(howLong)  
         ResultsTextBox.Text &= vbCrLf & "    Task.Delay is finished--returning from called method."  
     End Function  
-  
     ```  
   
      Nell'esempio, se si sceglie Call #1 o Call #2, il metodo asincrono senza attesa (`CalledMethodAsync`) termina dopo che il relativo chiamante (`CallingMethodAsync`) e il chiamante del chiamante (`StartButton_Click`) sono completati. Nell'ultima riga nell'output seguente viene mostrato quando viene completato il metodo chiamato. L'entrata e l'uscita dal gestore eventi tramite cui viene chiamato `CallingMethodAsync` nell'esempio completo sono contrassegnate nell'output.  
   
     ```  
-  
     Entering the Click event handler.  
       Entering calling method.  
         Entering called method, starting and awaiting Task.Delay.  
@@ -138,7 +137,6 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
             <TextBox x:Name="ResultsTextBox" Margin="0,80,0,0" TextWrapping="Wrap" FontFamily="Lucida Console"/>  
         </Grid>  
     </Window>  
-  
     ```  
   
      Una finestra semplice con un pulsante e una casella di testo viene visualizzata nella visualizzazione **Progettazione** di MainWindow.xaml.  
@@ -148,7 +146,6 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
 4.  Sostituire il codice in MainWindow.xaml.vb con quello riportato di seguito.  
   
     ```vb  
-  
     Class MainWindow   
   
         Private Async Sub StartButton_Click(sender As Object, e As RoutedEventArgs)  
@@ -233,3 +230,4 @@ Non è possibile attendere la chiamata, pertanto l'esecuzione del metodo corrent
 ## <a name="see-also"></a>Vedere anche  
  [Await (operatore)](../../../visual-basic/language-reference/operators/await-operator.md)   
  [Programmazione asincrona con Async e Await](../../../visual-basic/programming-guide/concepts/async/index.md)
+

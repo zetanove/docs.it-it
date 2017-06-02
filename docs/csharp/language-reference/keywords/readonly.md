@@ -30,9 +30,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: e915ac4621d2514e1efcaa8bdb4df698e6a66a72
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -75,7 +76,7 @@ public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
  ovvero lo stesso errore che si ottiene quando si tenta di assegnare un valore a una costante.  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   

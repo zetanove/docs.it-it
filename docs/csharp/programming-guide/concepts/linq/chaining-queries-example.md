@@ -14,9 +14,10 @@ ms.assetid: abbca162-d95e-43af-b92c-e46e6aa2540e
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 5426fbf710917b537d44e25966a8bc51d78f298e
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -88,7 +89,6 @@ Main: str >DEF!!!<
 ToUpper: source >ghi<  
 AppendString: source >GHI<  
 Main: str >GHI!!!<  
-  
 ```  
   
  In questo esempio è possibile osservare che i metodi di estensione operano uno alla volta per ogni elemento della raccolta di origine.  
@@ -101,3 +101,4 @@ Main: str >GHI!!!<
   
 ## <a name="see-also"></a>Vedere anche  
  [Esercitazione: concatenamento di query (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)
+

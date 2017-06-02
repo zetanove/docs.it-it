@@ -30,16 +30,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d5c0b9fff370893d890518c6a95a74889b3f2295
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 400dfda51d978f35c3995f90840643aaff1b9c13
+ms.openlocfilehash: e5baa75c55d58a4d975fc42472f90ff4125cbb5c
+ms.contentlocale: it-it
+ms.lasthandoff: 03/24/2017
 
 ---
 # <a name="where-generic-type-constraint-c-reference"></a>where (vincolo di tipo generico) (Riferimenti per C#)
 In una definizione di tipo generico, la clausola `where` viene usata per specificare i vincoli per i tipi che possono essere usati come argomenti per un parametro di tipo definito in una dichiarazione generica. Ad esempio, è possibile dichiarare una classe generica, `MyGenericClass`, in modo tale che il parametro di tipo `T` implementi l'interfaccia <xref:System.IComparable%601>:  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```csharp  
+public class MyGenericClass<T> where T:IComparable { }  
+```  
+  
 > [!NOTE]
 >  Per altre informazioni sulla clausola where in un'espressione di query, vedere [Clausola where](../../../csharp/language-reference/keywords/where-clause.md).  
   
@@ -59,13 +63,13 @@ In una definizione di tipo generico, la clausola `where` viene usata per specifi
   
  È anche possibile associare vincoli ai parametri di tipo di metodi generici, come indicato di seguito:  
   
-```  
+```csharp  
 public bool MyMethod<T>(T t) where T : IMyInterface { }  
 ```  
   
  Si noti che la sintassi usata per descrivere i vincoli dei parametri di tipo per i delegati è uguale a quella dei metodi:  
   
-```  
+```csharp  
 delegate T MyDelegate<T>() where T : new()  
 ```  
   
@@ -74,7 +78,7 @@ delegate T MyDelegate<T>() where T : new()
  Per informazioni dettagliate sulla sintassi e sull'uso dei vincoli, vedere [Vincoli sui parametri di tipo](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md).  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   

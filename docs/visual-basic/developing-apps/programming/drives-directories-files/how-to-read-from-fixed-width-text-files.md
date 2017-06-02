@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: c1ce67620d96a35ccf1223cc4de9d34ca1aaa722
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: f0cd02a26be70d2d3272ecd56b11e31e3d26f83a
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="how-to-read-from-fixed-width-text-files-in-visual-basic"></a>Procedura: Leggere da file di testo a larghezza fissa in Visual Basic
@@ -71,15 +72,15 @@ L'oggetto `TextFieldParser` consente di analizzare in modo facile ed efficace i 
 ## <a name="robust-programming"></a>Programmazione efficiente  
  Le seguenti condizioni possono generare un'eccezione:  
   
--   Non è possibile analizzare una riga usando il formato specificato (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). Il messaggio di eccezione specifica la riga che ha generato l'eccezione, mentre al testo contenuto nella riga viene assegnata la proprietà <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A>.  
+-   Impossibile analizzare la riga usando il formato specificato (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). Il messaggio di eccezione specifica la riga che ha generato l'eccezione, mentre alla proprietà <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> viene assegnato il testo contenuto nella riga.  
   
--   Il file specificato non esiste (<xref:System.IO.FileNotFoundException>).  
+-   File specificato inesistente (<xref:System.IO.FileNotFoundException>).  
   
 -   Un contesto di attendibilità parziale in cui gli utenti non dispongono di autorizzazioni sufficienti per accedere al file (<xref:System.Security.SecurityException>).  
   
--   Il percorso è troppo lungo (<xref:System.IO.PathTooLongException>).  
+-   Percorso del file troppo lungo (<xref:System.IO.PathTooLongException>).  
   
--   L'utente non dispone delle autorizzazioni sufficienti per accedere al file (<xref:System.UnauthorizedAccessException>).  
+-   L'utente non dispone di autorizzazioni sufficienti per accedere al file (<xref:System.UnauthorizedAccessException>).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser?displayProperty=fullName>   

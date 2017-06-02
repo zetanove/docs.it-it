@@ -15,9 +15,10 @@ ms.assetid: 5f4b3790-c83f-4eb3-a889-e3587edf3ca1
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: a1661b1ea00eb7e377fc4d8a57ba27a558052b46
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -37,7 +38,7 @@ Console.WriteLine(str)
   
  Questo esempio produce il seguente output:  
   
-```  
+```xml  
 <Root Attr="abcde" />  
 abcde  
 ```  

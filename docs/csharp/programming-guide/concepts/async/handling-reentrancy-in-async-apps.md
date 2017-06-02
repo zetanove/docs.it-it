@@ -19,9 +19,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 7be76ad572be522071d9e8c2ae9cf8c770fd1fd0
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -319,7 +320,6 @@ TOTAL bytes returned:  890591
  Nell'output seguente viene illustrato il risultato restituito quando l'utente sceglie il pulsante **Start** una sola volta. L'etichetta A indica che il risultato fa riferimento alla prima volta che il pulsante **Start** viene scelto. I numeri indicano l'ordine degli URL nell'elenco delle destinazioni di download.  
   
 ```  
-  
 #Starting group A.  
 #Task assigned for group A.  
   
@@ -391,7 +391,6 @@ C-8. msdn.microsoft.com/library/ff730837.aspx               148010
 TOTAL bytes returned:  920526  
   
 #Group C is complete.  
-  
 ```  
   
  I gruppi B e C vengono avviati prima del completamento del gruppo A, ma l'output per ogni gruppo viene visualizzato separatamente. Viene prima visualizzato l'intero output del gruppo A, seguito dall'intero output del gruppo B e dall'intero output del gruppo C. L'app visualizza sempre i gruppi nell'ordine e, per ogni gruppo, visualizza sempre le informazioni sui singoli siti Web in base all'ordine in cui i relativi URL sono visualizzati nell'elenco di URL.  
@@ -732,3 +731,4 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: accesso al Web tramite async e await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
  [Programmazione asincrona con async e await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+

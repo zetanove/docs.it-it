@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6bf3902995531768b8b065aca70790c16d77b0ce
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: ca1ecff264734c16369c9a7d28fbb388bb2f1ccc
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="classes-used-in-net-framework-file-io-and-the-file-system-visual-basic"></a>Classi utilizzate nel file system e nella funzionalità di I/O di file di .Net Framework (Visual Basic)
@@ -56,7 +57,7 @@ Le tabelle seguenti elencano le classi comunemente usate per l'I/O di file di .N
 |<xref:System.IO.FileMode?displayProperty=fullName>|Controlla la modalità di apertura di un file. Questo parametro è specificato in molti costruttori per `FileStream` e `IsolatedStorageFileStream` e per i metodi `Open` di <xref:System.IO.File> e <xref:System.IO.FileInfo>.|  
 |<xref:System.IO.FileShare?displayProperty=fullName>|Definisce le costanti per controllare il tipo di accesso che altri flussi di file possono avere sullo stesso file.|  
 |<xref:System.IO.Path?displayProperty=fullName>|Offre metodi e proprietà per elaborare le stringhe di directory.|  
-|<xref:System.Security.Permissions.FileIOPermission?displayProperty=fullName>|Controlla l'accesso di file e cartelle definendo le autorizzazioni <xref:System.Security.Permissions.FileIOPermissionAttribute.Read%2A>, <xref:System.Security.Permissions.FileIOPermissionAttribute.Write%2A>, <xref:System.Security.Permissions.FileIOPermissionAttribute.Append%2A> e <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A>.|  
+|<xref:System.Security.Permissions.FileIOPermission?displayProperty=fullName>|Controlla se è possibile accedere ai file e alle cartelle definendo le autorizzazioni <xref:System.Security.Permissions.FileIOPermissionAttribute.Read%2A>, <xref:System.Security.Permissions.FileIOPermissionAttribute.Write%2A>, <xref:System.Security.Permissions.FileIOPermissionAttribute.Append%2A> e <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A>.|  
   
 ## <a name="classes-used-to-create-streams"></a>Classi usate per creare flussi  
  La tabella seguente elenca e descrive le principali classi usate per creare flussi.  
@@ -64,7 +65,7 @@ Le tabelle seguenti elencano le classi comunemente usate per l'I/O di file di .N
 |Classe|Descrizione|  
 |-----------|-----------------|  
 |<xref:System.IO.BufferedStream?displayProperty=fullName>|Aggiunge un livello di buffer per operazioni di lettura e scrittura in un altro flusso.|  
-|<xref:System.IO.FileStream?displayProperty=fullName>|Supporta l'accesso casuale a file tramite il suo metodo <xref:System.IO.FileStream.Seek%2A>. <xref:System.IO.FileStream> apre file simultaneamente per impostazione predefinita, ma supporta anche operazioni asincrone.|  
+|<xref:System.IO.FileStream?displayProperty=fullName>|Supporta l'accesso casuale ai file tramite il metodo <xref:System.IO.FileStream.Seek%2A>. <xref:System.IO.FileStream> apre file simultaneamente per impostazione predefinita, ma supporta anche operazioni asincrone.|  
 |<xref:System.IO.MemoryStream?displayProperty=fullName>|Crea un flusso il cui archivio di backup è costituito da memoria, anziché da un file.|  
 |<xref:System.Net.Sockets.NetworkStream?displayProperty=fullName>|Offre il flusso sottostante di dati per l'accesso alla rete.|  
 |<xref:System.Security.Cryptography.CryptoStream?displayProperty=fullName>|Definisce un flusso che collega i flussi di dati alle trasformazioni crittografiche.|  
@@ -76,7 +77,7 @@ Le tabelle seguenti elencano le classi comunemente usate per l'I/O di file di .N
 |---------------|---------------------|  
 |<xref:System.IO.BinaryReader?displayProperty=fullName>|Legge stringhe codificate e tipi di dati primitivi da <xref:System.IO.FileStream>.|  
 |<xref:System.IO.BinaryWriter?displayProperty=fullName>|Scrive stringhe codificate e tipi di dati primitivi in <xref:System.IO.FileStream>.|  
-|<xref:System.IO.StreamReader?displayProperty=fullName>|Legge caratteri da <xref:System.IO.FileStream> usando <xref:System.IO.StreamReader.CurrentEncoding%2A> per convertire i caratteri da e in byte. <xref:System.IO.StreamReader> ha un costruttore che prova a verificare il corretto <xref:System.IO.StreamReader.CurrentEncoding%2A> per un determinato flusso, basato sulla presenza di un preambolo specifico <xref:System.IO.StreamReader.CurrentEncoding%2A>, ad esempio un byte order mark.|  
+|<xref:System.IO.StreamReader?displayProperty=fullName>|Legge caratteri da <xref:System.IO.FileStream> usando <xref:System.IO.StreamReader.CurrentEncoding%2A> per convertire i caratteri da e in byte. <xref:System.IO.StreamReader> ha un costruttore che prova a verificare il corretto <xref:System.IO.StreamReader.CurrentEncoding%2A> per un determinato flusso, basato sulla presenza di un preambolo specifico di <xref:System.IO.StreamReader.CurrentEncoding%2A>, ad esempio un byte order mark.|  
 |<xref:System.IO.StreamWriter?displayProperty=fullName>|Scrive caratteri in un `FileStream`, usando <xref:System.IO.StreamWriter.Encoding%2A> per convertire i caratteri in byte.|  
 |<xref:System.IO.StringReader?displayProperty=fullName>|Legge caratteri da un `String`. L'output può essere un flusso in qualsiasi codifica o una `String`.|  
 |<xref:System.IO.StringWriter?displayProperty=fullName>|Scrive caratteri in una `String`. L'output può essere un flusso in qualsiasi codifica o una `String`.|  

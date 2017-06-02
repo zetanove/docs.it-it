@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 7810948b8ee549d05d7e795f89822db2fdfd1648
-ms.lasthandoff: 03/13/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="additional-resources-for-visual-c-programmers"></a>Risorse aggiuntive per programmatori Visual C#

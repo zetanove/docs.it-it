@@ -29,9 +29,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 9bf8f2f5fcc4dfa2b29e368a4e26bf112e08149e
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -42,7 +43,7 @@ L'utilizzo più comune del <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>c
   
  È inoltre possibile associare a un'origine dati in fase di esecuzione impostando la <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.VirtualMode%2A>proprietà `True` e l'assegnazione di un'origine dati per il <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DataSource%2A>proprietà.</xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DataSource%2A> </xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.VirtualMode%2A> In questo caso, è necessario gestire l'interazione con l'origine dati. Per ulteriori informazioni, vedere [modalità virtuale nel controllo DataRepeater](../../../visual-basic/developing-apps/windows-forms/virtual-mode-in-the-datarepeater-control-visual-studio.md).  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### <a name="to-create-a-data-bound-datarepeater"></a>Per creare un oggetto DataRepeater con associazione a dati  
   

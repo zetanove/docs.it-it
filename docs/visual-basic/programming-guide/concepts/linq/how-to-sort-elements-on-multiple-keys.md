@@ -15,9 +15,10 @@ ms.assetid: 0c4c1462-3047-4766-b9e2-7e0e9cc7f421
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: ce543b99ffb977fed12e81890099da50f08b4b5c
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -45,7 +46,6 @@ For Each r In result
     Console.WriteLine("CustomerID:{0} EmployeeID:{1} ShipPostalCode:{2} OrderDate:{3:d}", _  
                 r.CustomerID, r.EmployeeID, r.ShipPostalCode, r.OrderDate)  
 Next  
-  
 ```  
   
  L'output del codice è il seguente:  
@@ -132,3 +132,4 @@ CustomerID:LAZYK EmployeeID:8 ShipPostalCode:99362 OrderDate:5/22/1997
   
 ## <a name="see-also"></a>Vedere anche  
  [Query di base (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+

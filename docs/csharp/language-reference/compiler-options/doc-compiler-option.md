@@ -35,9 +35,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 8addbbfe1e854feee560192292b713da4fc67e6c
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -46,7 +47,7 @@ L'opzione **/doc** consente di inserire commenti per la documentazione in un fil
   
 ## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /doc:file  
 ```  
   

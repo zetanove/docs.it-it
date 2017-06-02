@@ -32,9 +32,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 5e3d68e6a64ec9f8e9cd8bfd13fa8174da568299
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -64,7 +65,7 @@ ms.lasthandoff: 03/13/2017
   
 3.  Aggiungere gli elementi seguenti alla sezione `<listeners>` .  
   
-    ```  
+    ```xml  
     <!-- Uncomment to connect the application file log. -->  
     <!-- <add name="FileLog" /> -->  
     <!-- Uncomment to connect the event log. -->  
@@ -83,7 +84,7 @@ ms.lasthandoff: 03/13/2017
   
 6.  Aggiungere gli elementi seguenti alla sezione `<sharedListeners>` .  
   
-    ```  
+    ```xml  
     <add name="FileLog"  
          type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
                Microsoft.VisualBasic, Version=8.0.0.0,   
@@ -114,7 +115,7 @@ ms.lasthandoff: 03/13/2017
   
 7.  Il contenuto del file app.config dovrebbe essere simile al codice XML seguente.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <configuration>  
       <system.diagnostics>  

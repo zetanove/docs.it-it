@@ -15,9 +15,10 @@ ms.assetid: 933a97b2-dfe7-4f4d-94ad-e6e20df84abd
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 58c93ad2de0f4292dde2ee60e60588bbe2cbaa60
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -41,7 +42,6 @@ Dim extensions As IEnumerable(Of Decimal) = _
 For Each ex As Decimal In extensions  
     Console.WriteLine(ex)  
 Next  
-  
 ```  
   
  L'output del codice è il seguente:  
@@ -90,3 +90,4 @@ End Module
   
 ## <a name="see-also"></a>Vedere anche  
  [Query di base (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+

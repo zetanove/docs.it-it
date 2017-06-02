@@ -10,17 +10,18 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: a7094b8c-7229-4b6f-82fc-824d0ea0ec40
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 1733538c605cb06c7da4d91a6780caa3ea3bec23
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: ff7e67add731324e01b8f2cc323a66e3a8683ec9
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 
 # <a name="structs"></a>Struct
-Uno *struct* è un tipo valore. Quando viene creato uno struct, la variabile a cui è assegnato lo struct contiene i dati effettivi dello struct. Quando lo struct viene assegnato a una nuova variabile, viene copiato. La nuova variabile e la variabile originale contengono quindi due copie separate degli stessi dati. Eventuali modifiche apportate a una copia non influiscono sull'altra copia.
+Uno *struct* è un tipo valore. Quando viene creato uno struct, la variabile a cui è assegnato lo struct contiene i dati effettivi dello struct. Quando viene assegnato a una nuova variabile, il tipo struct viene copiato. La nuova variabile e quella originale contengono quindi due copie separate degli stessi dati. Eventuali modifiche apportate a una copia non influiscono sull'altra copia.
 
-Le variabili dei tipi valore contengono direttamente i rispettivi valori, ovvero la memoria viene allocata inline nel contesto in cui è dichiarata la variabile. Non esiste un'allocazione heap o un overhead di Garbage Collection separato per le variabili dei tipi di valore.  
+Le variabili dei tipi valore contengono direttamente i rispettivi valori, ovvero la memoria viene allocata inline nel contesto in cui è dichiarata la variabile. Non esiste un'allocazione heap o un overhead di Garbage Collection separato per le variabili dei tipi valore.  
   
 Esistono due categorie di tipi valore: [struct](./language-reference/keywords/struct.md) e [enum](./language-reference/keywords/enum.md).  
   
@@ -32,9 +33,9 @@ Ad essi, tuttavia, si dichiarano e si assegnano valori come se fossero tipi non 
   
 [!code-csharp[Assegnare valori](../../samples/snippets/csharp/concepts/structs/assign-value.cs)] 
   
-I tipi valore sono *sealed*, ovvero non è possibile, ad esempio, derivare un tipo da @System.Int32 e non è possibile definire uno struct da ereditare da uno struct o una classe definita dall'utente, poiché uno struct può ereditare solo da @System.ValueType. Uno struct può implementare tuttavia una o più interfacce. È possibile eseguire il cast di un tipo struct in un tipo di interfaccia; questa operazione genera tuttavia una *conversione boxing* con cui si esegue il wrapping dello struct in un oggetto tipo riferimento sull'heap gestito. Le operazioni di conversione boxing si verificano anche quando si passa un tipo valore a un metodo che accetta @System.Object come parametro di input. Per altre informazioni, vedere [Boxing e unboxing](./programming-guide/types/boxing-and-unboxing.md ).  
+I tipi valore sono *sealed*, ovvero non è possibile, ad esempio, derivare un tipo da @System.Int32 e non è possibile definire uno struct da ereditare da uno struct o una classe definita dall'utente, poiché uno struct può ereditare solo da @System.ValueType. Uno struct può implementare tuttavia una o più interfacce. È possibile eseguire il cast di un tipo struct in un tipo di interfaccia; questa operazione genera tuttavia una *conversione boxing*  con cui si esegue il wrapping dello struct in un oggetto tipo riferimento sull'heap gestito. Le operazioni di conversione boxing si verificano anche quando si passa un tipo valore a un metodo che accetta @System.Object come parametro di input. Per altre informazioni, vedere [Boxing e unboxing](./programming-guide/types/boxing-and-unboxing.md ).  
   
-Usare la parola chiave [struct](./language-reference/keywords/struct.md) per creare tipi di valore personalizzati. In genere, uno struct viene usato come contenitore per un piccolo set di variabili correlate, come illustrato nell'esempio seguente:  
+Usare la parola chiave [struct](./language-reference/keywords/struct.md) per creare tipi valore personalizzati. In genere, uno struct viene usato come contenitore per un piccolo set di variabili correlate, come illustrato nell'esempio seguente:  
   
 [!code-csharp[Parola chiave struct](../../samples/snippets/csharp/concepts/structs/struct-keyword.cs)]  
   
@@ -44,7 +45,7 @@ Gli struct condividono la maggior parte della sintassi delle classi, anche sono 
   
 -   All'interno di una dichiarazione di struct, non è possibile inizializzare i campi a meno che non siano stati dichiarati come `const` o `static`.  
   
--   Uno struct non può dichiarare un distruttore o un costruttore, ovvero un costruttore senza parametri, predefinito.  
+-   Uno struct non può dichiarare un finalizzatore o un costruttore, ovvero un costruttore senza parametri, predefinito.  
   
 -   Gli struct vengono copiati su assegnazione. Quando uno struct viene assegnato a una nuova variabile, tutti i dati vengono copiati e qualsiasi modifica alla nuova copia non modifica i dati nella copia originale. È importante ricordare questo aspetto quando si lavora con le Collection di tipi valore come Dictionary<string, myStruct>.  
   

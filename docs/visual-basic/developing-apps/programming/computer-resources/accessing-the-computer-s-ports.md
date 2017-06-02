@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 20e04ca70444de99076d3d59f98f19ee862a244a
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
+ms.openlocfilehash: 69153a48b87e069de68b9332c7fc7653058096ef
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="accessing-the-computer39s-ports-visual-basic"></a>Accesso alle porte del computer (Visual Basic)
@@ -68,4 +69,4 @@ L'oggetto `My.Computer.Ports` offre una proprietà e un metodo per l'accesso a p
   
 ## <a name="related-sections"></a>Sezioni correlate  
  <xref:System.IO.Ports.SerialPort>  
- Illustra la classe <xref:System.IO.Ports.SerialPort> di .NET Framework.
+ Descrive la classe <xref:System.IO.Ports.SerialPort> di .NET Framework.

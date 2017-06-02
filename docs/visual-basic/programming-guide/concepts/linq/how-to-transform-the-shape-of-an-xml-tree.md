@@ -15,9 +15,10 @@ ms.assetid: 84b60854-48b2-452c-87f2-77d53e1d653a
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 9c71f4af829a395204bc17161547aa5fdd06cbb1
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -69,7 +70,6 @@ Console.WriteLine(newCustOrd)
  L'output del codice è il seguente:  
   
 ```xml  
-  
         <Root>  
 <Customer CustomerID="GREAL">  
   <CompanyName>Great Lakes Food Market</CompanyName>  
@@ -139,7 +139,6 @@ Sub Main()
         </PO>  
     Console.WriteLine(newPo)  
 End Sub  
-  
 ```  
   
  L'output del codice è il seguente:  
@@ -159,3 +158,4 @@ End Sub
   
 ## <a name="see-also"></a>Vedere anche  
  [Proiezioni e trasformazioni (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+

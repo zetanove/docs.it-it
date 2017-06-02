@@ -32,16 +32,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 6083af22fe8743a3d952138e04be90536cbd75d3
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: be7974018ce3195dc7344192d647fe64fb2ebcc4
+ms.openlocfilehash: 43ba8cdf265efd930199f7c6a8a77e49f491e737
+ms.contentlocale: it-it
+ms.lasthandoff: 05/14/2017
 
 ---
 # <a name="lambda-expressions-c-programming-guide"></a>Espressioni lambda (Guida per programmatori C#)
-Un'espressione lambda è una [funzione anonima](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) che è possibile usare per creare [delegati](../../../csharp/programming-guide/delegates/using-delegates.md) o tipi di [alberi delle espressioni](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b). Mediante le espressioni lambda è possibile scrivere funzioni locali che possono essere passate come argomenti o restituite come valore delle chiamate di funzione. Le espressioni lambda sono particolarmente utili per la scrittura delle espressioni di query LINQ.  
+Un'espressione lambda è una [funzione anonima](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md) che è possibile utilizzare per creare [delegati](../../../csharp/programming-guide/delegates/using-delegates.md) o tipi di [alberi delle espressioni](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b) . Mediante le espressioni lambda è possibile scrivere funzioni locali che possono essere passate come argomenti o restituite come valore delle chiamate di funzione. Le espressioni lambda sono particolarmente utili per la scrittura delle espressioni di query LINQ.  
   
- Per creare un'espressione lambda, specificare gli eventuali parametri di input a sinistra dell'operatore lambda [=>](../../../csharp/language-reference/operators/lambda-operator.md) e inserire l'espressione o il blocco di istruzioni dall'altra parte. Ad esempio, l'espressione lambda `x => x * x` specifica un parametro denominato `x` e restituisce il valore di `x` al quadrato. È possibile assegnare questa espressione a un tipo di delegato, come illustrato nell'esempio riportato di seguito:  
+ Per creare un'espressione lambda, specificare gli eventuali parametri di input a sinistra dell'operatore lambda [=>](../../../csharp/language-reference/operators/lambda-operator.md)e inserire l'espressione o il blocco di istruzioni dall'altra parte. Ad esempio, l'espressione lambda `x => x * x` specifica un parametro denominato `x` e restituisce il valore di `x` al quadrato. È possibile assegnare questa espressione a un tipo di delegato, come illustrato nell'esempio riportato di seguito:  
   
 ```csharp  
 delegate int del(int i);  
@@ -69,11 +70,11 @@ namespace ConsoleApplication1
 }  
 ```  
   
- L'operatore `=>` ha la stessa precedenza dell'assegnazione (`=`) e prevede l'[associazione all'operando di destra](../../../csharp/programming-guide/statements-expressions-operators/operators.md). Vedere la sezione "Associazione" dell'articolo sugli operatori.  
+ L'operatore `=>` ha la stessa precedenza dell'assegnazione (`=`) e [prevede l'associazione all'operando di destra](../../../csharp/programming-guide/statements-expressions-operators/operators.md) (vedere la sezione "Associazione" dell'articolo sugli operatori).  
   
- Le espressioni lambda vengono usate nelle query [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] basate sul metodo come argomenti dei metodi di operatori di query standard, quali <xref:System.Linq.Enumerable.Where%2A>.  
+ Le espressioni lambda vengono utilizzate nelle query [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] basate sul metodo come argomenti dei metodi di operatori di query standard, quali <xref:System.Linq.Enumerable.Where%2A>.  
   
- Quando si usa la sintassi basata sul metodo per chiamare il metodo <xref:System.Linq.Enumerable.Where%2A> nella classe <xref:System.Linq.Enumerable>, come in [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] to Objects e [!INCLUDE[sqltecxlinq](../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], il parametro è un tipo di delegato <xref:System.Func%602?displayProperty=fullName>. Un'espressione lambda è il modo più pratico per creare tale delegato. Quando, ad esempio, si chiama lo stesso metodo nella classe <xref:System.Linq.Queryable?displayProperty=fullName>, come in [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq_md.md)], il tipo di parametro sarà <xref:System.Linq.Expressions.Expression?displayProperty=fullName><Func\>, dove Func è qualsiasi delegato Func con un massimo di sedici parametri di input. Un'espressione lambda rappresenta quindi un modo rapido per costruire tale albero delle espressioni. Mediante le espressioni lambda, le chiamate `Where` risultano simili anche se in realtà il tipo di oggetto creato dall'espressione lambda è diverso.  
+ Quando si utilizza la sintassi basata sul metodo per chiamare il metodo <xref:System.Linq.Enumerable.Where%2A> nella classe <xref:System.Linq.Enumerable>, come in [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] to Objects e [!INCLUDE[sqltecxlinq](../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)], il parametro è un tipo <xref:System.Func%602?displayProperty=fullName> delegato. Un'espressione lambda è il modo più pratico per creare tale delegato. Quando, ad esempio, si chiama lo stesso metodo nella classe <xref:System.Linq.Queryable?displayProperty=fullName>, come in [!INCLUDE[vbtecdlinq](../../../csharp/includes/vbtecdlinq_md.md)], il tipo di parametro è <xref:System.Linq.Expressions.Expression?displayProperty=fullName><Func\>, dove Func è un qualsiasi delegato Func con un massimo di sedici parametri di input. Un'espressione lambda rappresenta quindi un modo rapido per costruire tale albero delle espressioni. Mediante le espressioni lambda, le chiamate `Where` risultano simili anche se in realtà il tipo di oggetto creato dall'espressione lambda è diverso.  
   
  Nell'esempio precedente si noti che la firma del delegato ha un parametro di input tipizzato in modo implicito di tipo `int`e restituisce un oggetto `int`. L'espressione lambda può essere convertita in un delegato di tale tipo poiché dispone anche di un parametro di input (`x`) e di un valore restituito che il compilatore può convertire in modo implicito nel tipo `int`. L'inferenza dei tipi viene illustrata più dettagliatamente nelle sezioni seguenti. Quando il delegato viene richiamato tramite un parametro di input pari a 5, restituisce un risultato di 25.  
   
@@ -115,14 +116,14 @@ namespace ConsoleApplication1
 
  Il corpo di un'espressione lambda dell'istruzione può essere costituito da un numero qualsiasi di istruzioni, sebbene in pratica generalmente non ce ne siano più di due o tre.  
   
- [StatementLamba#1](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#1)]
+[!code-csharp[StatementLamba#1](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#1)]
 
- [StatementLamba#2](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#2)]
+[!code-csharp[StatementLamba#2](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#2)]
 
  Le espressioni lambda dell'istruzione, come i metodi anonimi, non possono essere utilizzate per creare alberi delle espressioni.  
   
 ## <a name="async-lambdas"></a>Espressioni lambda asincrone  
- Usando le parole chiave [async](../../../csharp/language-reference/keywords/async.md) e [await](../../../csharp/language-reference/keywords/await.md) è facile creare istruzioni ed espressioni lambda che includono l'elaborazione asincrona. Nell'esempio seguente di Windows Form è presente un gestore eventi che chiama e attende un metodo asincrono, `ExampleMethodAsync`.  
+ È facile creare istruzioni ed espressioni lambda che includono l'elaborazione asincrona utilizzando le parole chiave [async](../../../csharp/language-reference/keywords/async.md) e [await](../../../csharp/language-reference/keywords/await.md) . Nell'esempio seguente di Windows Form è presente un gestore eventi che chiama e attende un metodo asincrono, `ExampleMethodAsync`.  
   
 ```csharp
 public partial class Form1 : Form  
@@ -174,7 +175,7 @@ public partial class Form1 : Form
  Per altre informazioni su come creare e usare i metodi asincroni, vedere [Programmazione asincrona con async e await](../../../csharp/programming-guide/concepts/async/index.md).  
   
 ## <a name="lambdas-with-the-standard-query-operators"></a>Espressioni lambda con operatori di query standard  
- Molti operatori query standard hanno un parametro di input il cui tipo è uno della famiglia <xref:System.Func%602> di delegati generici. Questi delegati utilizzano parametri di tipo per definire il numero e i tipi di parametri di input e il tipo restituito del delegato. I delegati `Func` sono molto utili per incapsulare le espressioni definite dall'utente applicate a ogni elemento in un set di dati di origine. Considerare ad esempio il seguente tipo delegato:  
+ Molti operatori di query standard hanno un parametro di input il cui tipo è uno della famiglia <xref:System.Func%602> di delegati generici. Questi delegati utilizzano parametri di tipo per definire il numero e i tipi di parametri di input e il tipo restituito del delegato. I delegati`Func` sono molto utili per incapsulare le espressioni definite dall'utente applicate a ogni elemento in un set di dati di origine. Considerare ad esempio il seguente tipo delegato:  
   
 ```csharp  
 public delegate TResult Func<TArg0, TResult>(TArg0 arg0)  
@@ -187,7 +188,7 @@ Func<int, bool> myFunc = x => x == 5;
 bool result = myFunc(4); // returns false of course  
 ```  
   
- È inoltre possibile fornire un'espressione lambda quando il tipo di argomento è `Expression<Func>`, ad esempio negli operatori di query standard definiti in System.Linq.Queryable. Quando si specifica un argomento `Expression<Func>` , l'espressione lambda viene compilata in un albero delle espressioni.  
+ È inoltre possibile fornire un'espressione lambda quando il tipo di argomento è `Expression<Func>`, ad esempio negli operatori di query standard definiti in System.Linq.Queryable. Quando si specifica un argomento `Expression<Func>`, l'espressione lambda viene compilata in un albero delle espressioni.  
   
  Di seguito viene illustrato un operatore di query standard, il metodo <xref:System.Linq.Enumerable.Count%2A>:  
   
@@ -274,7 +275,6 @@ class Test
         Console.ReadKey();  
     }  
 }  
-  
 ```  
   
  Le regole seguenti si applicano all'ambito delle variabili nelle espressioni lambda:  
@@ -300,6 +300,7 @@ class Test
  [LINQ (Language Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Metodi anonimi](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)   
  [is](../../../csharp/language-reference/keywords/is.md)   
- [Alberi delle espressioni](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)   
+ [Expression Trees](http://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)   
  [Esempi C# di Visual Studio 2008 (vedere i file di query di esempio LINQ e il programma XQuery)](http://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)   
  [Recursive lambda expressions (Espressioni lambda ricorsive)](http://go.microsoft.com/fwlink/?LinkId=112395)
+

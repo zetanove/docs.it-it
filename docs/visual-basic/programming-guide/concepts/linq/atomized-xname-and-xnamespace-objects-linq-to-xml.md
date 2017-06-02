@@ -15,9 +15,10 @@ ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: b08f3116f5acb404cf2c33072ec31fbaada4e7cb
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -52,7 +53,6 @@ If DirectCast(n, Object) = DirectCast(r1.Name, Object) Then
 Else  
     Console.WriteLine("Different")  
 End If  
-  
 ```  
   
  Questo esempio produce il seguente output:  
@@ -78,10 +78,11 @@ Next
   
  Questo esempio produce il seguente output:  
   
-```  
+```xml  
 <C1>1</C1>  
 <C1>1</C1>  
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
  [Prestazioni (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+

@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8a4bbb2f6d8060cd9196dd510cd89c827c9d697d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a5ed524a1b17f7be8903f998cbd732594faab831
+ms.openlocfilehash: a8c29002ae2287df60996ed2b23068eec1e2739b
+ms.contentlocale: it-it
+ms.lasthandoff: 05/15/2017
 
 ---
 # <a name="using-exceptions-c-programming-guide"></a>Utilizzo di eccezioni (Guida per programmatori C#)
@@ -59,9 +60,9 @@ In C# gli errori del programma in fase di esecuzione vengono propagati attravers
   
  Se non viene trovato alcun blocco `catch` compatibile nello stack di chiamate dopo la generazione di un'eccezione, si verifica una delle tre situazioni seguenti:  
   
--   Se l'eccezione è all'interno di un distruttore, il distruttore viene interrotto e viene chiamato il distruttore di base, se presente.  
+-   Se l'eccezione è all'interno di un finalizzatore, il finalizzatore viene interrotto e viene chiamato il finalizzatore di base, se presente.  
   
--   Se lo stack di chiamate contiene un costruttore statico o un inizializzatore di campo statico, <xref:System.TypeInitializationException> viene generata con l'eccezione originale assegnata alla proprietà <xref:System.Exception.InnerException%2A> della nuova eccezione.  
+-   Se lo stack di chiamate contiene un costruttore statico o un inizializzatore di campo statico, viene generata <xref:System.TypeInitializationException> con l'eccezione originale assegnata alla proprietà <xref:System.Exception.InnerException%2A> della nuova eccezione.  
   
 -   Se viene raggiunto l'inizio del thread, il thread viene terminato.  
   

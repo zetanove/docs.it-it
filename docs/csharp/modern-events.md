@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 9aa627c3-3222-4094-9ca8-7e88e1071e06
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: d750209f2d970044aac2f3b8b119412a58595171
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 0184e07012ffe1a1300dc5af7e99e0d5a3517d6b
+ms.openlocfilehash: 8fc483fb52babd27f897958b17c0303710c6cce4
+ms.contentlocale: it-it
+ms.lasthandoff: 05/02/2017
 
 ---
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 03/13/2017
 L'articolo precedente descriveva gli schemi di eventi più comuni. .NET Core ha uno schema più flessibile. In questa versione la definizione `EventHandler<TEventArgs>` non ha più il vincolo che prevede che `TEventArgs` deve essere una classe derivata da `System.EventArgs`.
 
 Di conseguenza, la flessibilità è maggiore e viene offerta la compatibilità con le versioni precedenti. Si consideri innanzitutto la flessibilità. La classe System.EventArgs introduce un solo metodo: `MemberwiseClone()` che crea una copia superficiale dell'oggetto.
-Il metodo deve usare la [reflection](reflection.md) per implementare la funzionalità per tutte le classi derivate da `EventArgs`. Tale funzionalità risulta più semplice da creare in una classe derivata specifica. Ciò significa che la derivazione da System.EventArgs è un vincolo che limita la progettazione e non offre altri vantaggi.
+Il metodo deve usare la reflection per implementare la funzionalità per tutte le classi derivate da `EventArgs`. Tale funzionalità risulta più semplice da creare in una classe derivata specifica. Ciò significa che la derivazione da System.EventArgs è un vincolo che limita la progettazione e non offre altri vantaggi.
 È possibile infatti modificare le definizioni di `FileFoundArgs` e `SearchDirectoryArgs` in modo che non derivino da `EventArgs`.
 Il programma funzionerà esattamente allo stesso modo.
 

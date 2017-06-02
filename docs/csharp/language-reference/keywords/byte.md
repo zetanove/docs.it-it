@@ -1,6 +1,6 @@
 ---
 title: byte (Riferimenti per C#) | Microsoft Docs
-ms.date: 2015-07-20
+ms.date: 2017-03-14
 ms.prod: .net
 ms.technology:
 - devlang-csharp
@@ -30,35 +30,42 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 7c522506b4541edb2a81036e93e8872711f849b9
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 57c4b1c7ead9386ff4067da5915a55a79f5e562e
+ms.openlocfilehash: fce94687cbf055219913758d49642c8e4a999db3
+ms.contentlocale: it-it
+ms.lasthandoff: 05/22/2017
 
 ---
 # <a name="byte-c-reference"></a>byte (Riferimenti per C#)
-La parola chiave `byte` denota un tipo integrale che archivia valori come indicato nella tabella seguente.  
+
+`byte` identifica un tipo integrale che archivia valori come indicato nella tabella seguente.  
   
 |Tipo|Intervallo|Dimensioni|Tipo .NET Framework|  
 |----------|-----------|----------|-------------------------|  
 |`byte`|Da 0 a 255|Intero senza segno a 8 bit|<xref:System.Byte?displayProperty=fullName>|  
   
 ## <a name="literals"></a>Valori letterali  
- È possibile dichiarare e inizializzare una variabile `byte` come illustrato nell'esempio seguente:  
+
+ È possibile dichiarare e inizializzare una variabile `byte` assegnandole un valore letterale decimale, un valore letterale esadecimale o (a partire da C# 7) un valore letterale binario. Se il valore letterale integer è esterno all'intervallo di `byte`, vale a dire se è minore di <xref:System.Byte.MinValue?displayProperty=fullName> o maggiore di <xref:System.Byte.MaxValue?displayProperty=fullName>, si verifica un errore di compilazione.
+
+Nell'esempio seguente, i valori interi uguali a 201 rappresentati some valori letterali decimali, esadecimali o binari vengono convertiti in modo implicito da valori [int](../../../csharp/language-reference/keywords/int.md) a valori `byte`.    
   
-```  
-byte myByte = 255;  
-```  
-  
- Nella dichiarazione precedente, il valore letterale intero `255` viene convertito implicitamente da [int](../../../csharp/language-reference/keywords/int.md) a `byte`. Se il valore letterale intero supera l'intervallo di `byte`, si verifica un errore di compilazione.  
-  
+[!code-cs[Byte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Byte)]  
+
+> [!NOTE] 
+> Viene usato il prefisso `0x` o `0X` per identificare un valore letterale esadecimale e il prefisso `0b` o `0B` per identificare un valore letterale binario. I valori letterali decimali non hanno prefissi.
+
+A partire da C# 7, è anche possibile usare il carattere di sottolineatura, `_`, come separatore di cifre per migliorare la leggibilità, come illustrato nell'esempio seguente.
+
+[!code-cs[Byte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#ByteS)]  
+ 
 ## <a name="conversions"></a>Conversioni  
  È disponibile una conversione implicita predefinita da `byte` a [short](../../../csharp/language-reference/keywords/short.md), [ushort](../../../csharp/language-reference/keywords/ushort.md), [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), [ulong](../../../csharp/language-reference/keywords/ulong.md), [float](../../../csharp/language-reference/keywords/float.md), [double](../../../csharp/language-reference/keywords/double.md) o [decimal](../../../csharp/language-reference/keywords/decimal.md).  
   
  Non è possibile convertire in modo implicito i tipi numerici non letterali di dimensioni di archiviazione maggiori di `byte`. Per altre informazioni sulle dimensioni di archiviazione dei tipi integrali, vedere [Tabella dei tipi integrali](../../../csharp/language-reference/keywords/integral-types-table.md). Considerare, ad esempio, le due variabili `byte` seguenti, `x` e `y`:  
   
 ```  
-  
 byte x = 10, y = 20;  
 ```  
   
@@ -125,3 +132,4 @@ SampleMethod((byte)5);
  [Tabella dei tipi predefiniti](../../../csharp/language-reference/keywords/built-in-types-table.md)   
  [Tabella delle conversioni numeriche implicite](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)   
  [Tabella delle conversioni numeriche esplicite](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)
+

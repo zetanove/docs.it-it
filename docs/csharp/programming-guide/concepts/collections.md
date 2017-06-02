@@ -16,10 +16,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: 8fb5101eabd95dd6574caf344a428afcd4bf648c
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: 6ce347ec50378590946c756b3adbf64fe855874d
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="collections-c"></a>Raccolte (C#)
@@ -29,9 +30,9 @@ Per molte applicazioni è utile creare e gestire gruppi di oggetti correlati. È
   
  Le raccolte consentono di lavorare in modo più flessibile con gruppi di oggetti. A differenza delle matrici, il gruppo di oggetti con cui si lavora può aumentare e diminuire in modo dinamico in base alle esigenze dell'applicazione. Per alcune raccolte è possibile assegnare una chiave a qualsiasi oggetto inserito nella raccolta in modo da recuperare rapidamente l'oggetto usando la chiave.  
   
- Una Collection è una classe. Di conseguenza, prima di poter aggiungere elementi a una nuova raccolta è necessario dichiarare la Collection.  
+ Una raccolta è una classe. Di conseguenza, prima di poter aggiungere elementi a una nuova raccolta è necessario dichiarare la raccolta.  
   
- Se la raccolta contiene elementi di un solo tipo di dati, è possibile usare una delle classi nello spazio dei nomi <xref:System.Collections.Generic?displayProperty=fullName>. In una raccolta generica viene imposta l'indipendenza dai tipi, in modo da impedire che vengano aggiunti altri tipi di dati alla raccolta. Quando si recupera un elemento da una raccolta generica, non è necessario determinarne il tipo di dati né convertirlo.  
+ Se la raccolta contiene elementi di un solo tipo di dati, è possibile usare una delle classi dello spazio dei nomi <xref:System.Collections.Generic?displayProperty=fullName>. In una raccolta generica viene imposta l'indipendenza dai tipi, in modo da impedire che vengano aggiunti altri tipi di dati alla raccolta. Quando si recupera un elemento da una raccolta generica, non è necessario determinarne il tipo di dati né convertirlo.  
   
 > [!NOTE]
 >  Per gli esempi in questo argomento, includere le direttive [using](../../../csharp/language-reference/keywords/using-directive.md) per gli spazi dei nomi `System.Collections.Generic` e `System.Linq`.  
@@ -60,7 +61,7 @@ Per molte applicazioni è utile creare e gestire gruppi di oggetti correlati. È
   
 <a name="BKMK_SimpleCollection"></a>
 ## <a name="using-a-simple-collection"></a>Uso di una raccolta semplice  
- Gli esempi in questa sezione usano la classe generica <xref:System.Collections.Generic.List%601>, che consente di lavorare con un elenco di oggetti fortemente tipizzato.  
+ Gli esempi in questa sezione usano la classe generica <xref:System.Collections.Generic.List%601>, che consente di usare un elenco di oggetti fortemente tipizzato.  
   
  L'esempio seguente crea un elenco di stringhe, quindi esegue l'iterazione nelle stringhe usando un'istruzione [foreach](../../../csharp/language-reference/keywords/foreach-in.md).  
   
@@ -132,7 +133,7 @@ foreach (var salmon in salmons)
 // Output: chinook pink sockeye  
 ```  
   
- Nell'esempio seguente vengono rimossi elementi da un elenco generico. Invece di un'istruzione `foreach` viene usata un'istruzione [for](../../../csharp/language-reference/keywords/for.md) che esegue l'iterazione in ordine decrescente. Ciò accade perché il metodo <xref:System.Collections.Generic.List%601.RemoveAt%2A> fa sì che gli elementi che seguono un elemento rimosso abbiano un valore di indice inferiore.  
+ Nell'esempio seguente vengono rimossi elementi da un elenco generico. Invece di un'istruzione `foreach` viene usata un'istruzione [for](../../../csharp/language-reference/keywords/for.md) che esegue l'iterazione in ordine decrescente. Ciò è necessario perché il metodo <xref:System.Collections.Generic.List%601.RemoveAt%2A> fa sì che gli elementi dopo un elemento rimosso abbiano un valore di indice inferiore.  
   
 ```csharp  
 var numbers = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };  
@@ -156,7 +157,7 @@ numbers.ForEach(
 // Output: 0 2 4 6 8  
 ```  
   
- Per il tipo degli elementi in <xref:System.Collections.Generic.List%601> è anche possibile definire una classe personalizzata. Nell'esempio seguente la classe `Galaxy` usata dall'oggetto <xref:System.Collections.Generic.List%601> viene definita nel codice.  
+ Per il tipo di elementi in <xref:System.Collections.Generic.List%601>, è possibile anche definire una classe personalizzata. Nell'esempio seguente la classe `Galaxy` viene usata dall'oggetto <xref:System.Collections.Generic.List%601> definito nel codice.  
   
 ```csharp  
 private static void IterateThroughList()  
@@ -202,33 +203,33 @@ public class Galaxy
   
 <a name="BKMK_Generic"></a>
 ### <a name="systemcollectionsgeneric-classes"></a>Classi System.Collections.Generic  
- È possibile creare una raccolta generica usando una delle classi nello spazio dei nomi <xref:System.Collections.Generic>. Una raccolta generica è utile quando ogni elemento al suo interno presenta lo stesso tipo di dati. Una raccolta generica applica la tipizzazione forte consentendo di aggiungere soltanto i tipi di dati desiderati.  
+ È possibile creare una raccolta generica usando una delle classi dello spazio dei nomi <xref:System.Collections.Generic>. Una raccolta generica è utile quando ogni elemento al suo interno presenta lo stesso tipo di dati. Una raccolta generica applica la tipizzazione forte consentendo di aggiungere soltanto i tipi di dati desiderati.  
   
- La tabella seguente elenca alcune classi di uso frequente dello spazio dei nomi <xref:System.Collections.Generic?displayProperty=fullName>:  
+ La tabella seguente elenca alcune delle classi di uso frequente dello spazio dei nomi <xref:System.Collections.Generic?displayProperty=fullName>:  
 
 |Classe|Descrizione| 
 |---|---|  
 |<xref:System.Collections.Generic.Dictionary%602>|Rappresenta una raccolta di coppie chiave/valore organizzate in base alla chiave.|  
 |<xref:System.Collections.Generic.List%601>|Rappresenta un elenco di oggetti accessibile in base all'indice. Fornisce metodi per la ricerca, l'ordinamento e la modifica degli elenchi.|  
 |<xref:System.Collections.Generic.Queue%601>|Rappresenta una raccolta di oggetti FIFO (First-In First-Out).|  
-|<xref:System.Collections.Generic.SortedList%602>|Rappresenta una raccolta di coppie chiave/valore ordinate per chiave in base all'implementazione di <xref:System.Collections.Generic.IComparer%601> associata.|  
+|<xref:System.Collections.Generic.SortedList%602>|Rappresenta una raccolta di coppie chiave/valore ordinate per chiave in base all'implementazione <xref:System.Collections.Generic.IComparer%601> associata.|  
 |<xref:System.Collections.Generic.Stack%601>|Rappresenta una raccolta di oggetti LIFO (Last-In First-Out).|  
   
  Per altre informazioni, vedere [Tipi di raccolte comunemente utilizzate](../../../standard/collections/commonly-used-collection-types.md), [Selezione di una classe Collection](../../../standard/collections/selecting-a-collection-class.md) e @System.Collections.Generic.  
   
 <a name="BKMK_Concurrent"></a>
 ### <a name="systemcollectionsconcurrent-classes"></a>Classi System.Collections.Concurrent  
- In .NET Framework 4 o versioni successive le raccolte nello spazio dei nomi <xref:System.Collections.Concurrent> includono operazioni thread-safe efficienti per l'accesso agli elementi della raccolta da più thread.  
+ In .NET Framework 4 o versioni successive le raccolte dello spazio dei nomi <xref:System.Collections.Concurrent> garantiscono operazioni thread-safe efficienti per accedere agli elementi della raccolta da più thread.  
   
- Quando più thread accedono contemporaneamente alla raccolta, è consigliabile usare le classi dello spazio dei nomi <xref:System.Collections.Concurrent> anziché i tipi corrispondenti degli spazi dei nomi <xref:System.Collections.Generic?displayProperty=fullName> e <xref:System.Collections?displayProperty=fullName>. Per altre informazioni, vedere [Raccolte thread-safe](../../../standard/collections/threadsafe/index.md) e <xref:System.Collections.Concurrent>.  
+ Le classi dello spazio dei nomi <xref:System.Collections.Concurrent> devono essere usate in sostituzione dei tipi corrispondenti negli spazi dei nomi <xref:System.Collections.Generic?displayProperty=fullName> e <xref:System.Collections?displayProperty=fullName> ogni volta che più thread accedono contemporaneamente alla raccolta. Per altre informazioni, vedere [Raccolte thread-safe](../../../standard/collections/thread-safe/index.md) e <xref:System.Collections.Concurrent>.  
   
- Alcune delle classi incluse nello spazio dei nomi <xref:System.Collections.Concurrent> sono <xref:System.Collections.Concurrent.BlockingCollection%601>, <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, <xref:System.Collections.Concurrent.ConcurrentQueue%601> e <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
+ Alcune classi incluse nello spazio dei nomi <xref:System.Collections.Concurrent> sono <xref:System.Collections.Concurrent.BlockingCollection%601>, <xref:System.Collections.Concurrent.ConcurrentDictionary%602>, <xref:System.Collections.Concurrent.ConcurrentQueue%601> e <xref:System.Collections.Concurrent.ConcurrentStack%601>.  
   
 <a name="BKMK_Collections"></a>
 ### <a name="systemcollections-classes"></a>Classi System.Collections  
- Le classi nello spazio dei nomi <xref:System.Collections?displayProperty=fullName> non archiviano gli elementi come oggetti tipizzati in modo specifico, ma come oggetti di tipo `Object`.  
+ Le classi dello spazio dei nomi <xref:System.Collections?displayProperty=fullName> non archiviano gli elementi come oggetti tipizzati in modo specifico, ma come oggetti di tipo `Object`.  
   
- Se possibile, è consigliabile usare le raccolte generiche dello spazio dei nomi <xref:System.Collections.Generic?displayProperty=fullName> o dello spazio dei nomi <xref:System.Collections.Concurrent> anziché i tipi legacy dello spazio dei nomi `System.Collections`.  
+ Quando possibile, usare le raccolte generiche degli spazi dei nomi <xref:System.Collections.Generic?displayProperty=fullName> o <xref:System.Collections.Concurrent> al posto dei tipi legacy dello spazio dei nomi `System.Collections`.  
   
  La tabella seguente elenca alcune classi di uso frequente nello spazio dei nomi `System.Collections`:  
   
@@ -239,7 +240,7 @@ public class Galaxy
 |<xref:System.Collections.Queue>|Rappresenta una raccolta di oggetti FIFO (First-In First-Out).|  
 |<xref:System.Collections.Stack>|Rappresenta una raccolta di oggetti LIFO (Last-In First-Out).|  
   
- Lo spazio dei nomi <xref:System.Collections.Specialized> include classi Collection fortemente tipizzate e specializzate, ad esempio raccolte di sole stringhe e dizionari ibridi ed elenchi collegati.  
+ Lo spazio dei nomi <xref:System.Collections.Specialized> offre classi di raccolte fortemente tipizzate e specializzate, ad esempio raccolte di sole stringhe, dizionari ibridi e dizionari a elenchi collegati.  
 
 <a name="BKMK_KeyValuePairs"></a>
 ## <a name="implementing-a-collection-of-keyvalue-pairs"></a>Implementazione di una raccolta di coppie chiave/valore  
@@ -332,7 +333,7 @@ private static void FindInDictionary(string symbol)
 }  
 ```  
   
- L'esempio che segue usa invece il metodo <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> per trovare rapidamente un elemento in base alla chiave.  
+ L'esempio seguente usa invece il metodo <xref:System.Collections.Generic.Dictionary%602.TryGetValue%2A> per individuare rapidamente un elemento in base alla chiave.  
   
 ```csharp  
 private static void FindInDictionary2(string symbol)  
@@ -398,9 +399,9 @@ public class Element
 ## <a name="sorting-a-collection"></a>Ordinamento di una raccolta  
  L'esempio seguente illustra una procedura per ordinare una raccolta. Nell'esempio vengono ordinate le istanze della classe `Car` archiviate in un oggetto <xref:System.Collections.Generic.List%601>. La classe `Car` implementa l'interfaccia <xref:System.IComparable%601>, che richiede l'implementazione del metodo <xref:System.IComparable%601.CompareTo%2A>.  
   
- Ogni chiamata al metodo <xref:System.IComparable%601.CompareTo%2A> esegue un unico confronto, che viene usato per l'ordinamento. Il codice scritto dall'utente presente nel metodo `CompareTo` restituisce un valore per ogni confronto dell'oggetto corrente con un altro oggetto. Il valore restituito è minore di zero se l'oggetto corrente è inferiore all'altro oggetto, maggiore di zero se l'oggetto corrente è superiore all'altro oggetto e zero se sono uguali. In questo modo è possibile definire nel codice i criteri di maggiore, minore e uguale.  
+ Ogni chiamata al metodo <xref:System.IComparable%601.CompareTo%2A> effettua un confronto unico che viene usato per l'ordinamento. Il codice scritto dall'utente presente nel metodo `CompareTo` restituisce un valore per ogni confronto dell'oggetto corrente con un altro oggetto. Il valore restituito è minore di zero se l'oggetto corrente è inferiore all'altro oggetto, maggiore di zero se l'oggetto corrente è superiore all'altro oggetto e zero se sono uguali. In questo modo è possibile definire nel codice i criteri di maggiore, minore e uguale.  
   
- Nel metodo `ListCars` l'istruzione `cars.Sort()` ordina l'elenco. Questa chiamata al metodo <xref:System.Collections.Generic.List%601.Sort%2A> di <xref:System.Collections.Generic.List%601> fa in modo che il metodo `CompareTo` venga chiamato automaticamente per gli oggetti `Car` in `List`.  
+ Nel metodo `ListCars` l'istruzione `cars.Sort()` ordina l'elenco. Questa chiamata al metodo <xref:System.Collections.Generic.List%601.Sort%2A> di <xref:System.Collections.Generic.List%601> determina la chiamata automatica al metodo `CompareTo` per gli oggetti `Car` in `List`.  
   
 ```csharp  
 private static void ListCars()  
@@ -474,13 +475,13 @@ public class Car : IComparable<Car>
   
 <a name="BKMK_CustomCollection"></a>
 ## <a name="defining-a-custom-collection"></a>Definizione di una raccolta personalizzata  
- È possibile definire una raccolta mediante l'implementazione dell'interfaccia <xref:System.Collections.Generic.IEnumerable%601> o <xref:System.Collections.IEnumerable>. Per altre informazioni, vedere [Procedura: Accedere a una classe di raccolte con foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md).  
+ È possibile definire una raccolta implementando l'interfaccia <xref:System.Collections.Generic.IEnumerable%601> o <xref:System.Collections.IEnumerable>. Per altre informazioni, vedere [Procedura: Accedere a una classe di raccolte con foreach](../../../csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md).  
   
  Sebbene sia possibile definire una raccolta personalizzata, in genere è preferibile usare le raccolte incluse in .NET Framework, descritte in [Tipi di raccolte](#BKMK_KindsOfCollections) in precedenza in questo argomento.  
   
- L'esempio seguente definisce una classe di raccolte personalizzata denominata `AllColors`. Questa classe implementa l'interfaccia <xref:System.Collections.IEnumerable>, che richiede l'implementazione del metodo <xref:System.Collections.IEnumerable.GetEnumerator%2A>.  
+ L'esempio seguente definisce una classe di raccolte personalizzata denominata `AllColors`. Questa classe implementa l'interfaccia <xref:System.Collections.IEnumerable> che richiede l'implementazione del metodo <xref:System.Collections.IEnumerable.GetEnumerator%2A>.  
   
- Il metodo `GetEnumerator` restituisce un'istanza della classe `ColorEnumerator`. `ColorEnumerator` implementa l'interfaccia <xref:System.Collections.IEnumerator>, che richiede l'implementazione della proprietà <xref:System.Collections.IEnumerator.Current%2A>, del metodo <xref:System.Collections.IEnumerator.MoveNext%2A> e del metodo <xref:System.Collections.IEnumerator.Reset%2A>.  
+ Il metodo `GetEnumerator` restituisce un'istanza della classe `ColorEnumerator`. `ColorEnumerator` implementa l'interfaccia <xref:System.Collections.IEnumerator> che richiede l'implementazione della proprietà <xref:System.Collections.IEnumerator.Current%2A> e dei metodi <xref:System.Collections.IEnumerator.MoveNext%2A> e <xref:System.Collections.IEnumerator.Reset%2A>.  
   
 ```csharp  
 private static void ListColors()  
@@ -593,7 +594,7 @@ private static IEnumerable<int> EvenSequence(
  [Nozioni di base sulla programmazione (C#)](../../../csharp/programming-guide/concepts/index.md)   
  [Istruzione Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)   
- [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)   
+ [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)   
  [Raccolte e strutture di dati](../../../standard/collections/index.md)   
  [Creazione e modifica delle raccolte](http://msdn.microsoft.com/en-us/2065398e-eb1a-4821-9188-75f16e42e069)   
  [Selezione di una classe Collection](../../../standard/collections/selecting-a-collection-class.md)   

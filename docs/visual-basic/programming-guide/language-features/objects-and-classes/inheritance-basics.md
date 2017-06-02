@@ -46,9 +46,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 58aee9f8c348eb06daec2b8c9e332f3f2775bcb6
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -133,7 +134,7 @@ Il `Inherits` istruzione viene utilizzata per dichiarare una nuova classe, denom
   
  Nell'esempio seguente vengono confrontate `Me` e `MyClass`.  
   
-```  
+```vb
 Class baseClass  
     Public Overridable Sub testMethod()  
         MsgBox("Base class string")  
@@ -170,3 +171,4 @@ End Class
 ## <a name="see-also"></a>Vedere anche  
  [Inherits (istruzione)](../../../../visual-basic/language-reference/statements/inherits-statement.md)   
  [Me, My, MyBase e MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+

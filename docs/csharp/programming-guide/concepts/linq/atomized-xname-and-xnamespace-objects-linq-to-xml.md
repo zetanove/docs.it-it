@@ -14,9 +14,10 @@ ms.assetid: a5b21433-b49d-415c-b00e-bcbfb0d267d7
 caps.latest.revision: 3
 author: BillWagner
 ms.author: wiwagn
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 89f5c2634e1deb196b121f2983b85f125927ae32
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -81,7 +82,7 @@ foreach (var z in query)
   
  Questo esempio produce il seguente output:  
   
-```  
+```xml  
 <C1>1</C1>  
 <C1>1</C1>  
 ```  

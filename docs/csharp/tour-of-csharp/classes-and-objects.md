@@ -10,10 +10,11 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 63a89bde-0f05-4bc4-b0cd-4f693854f0cd
-translationtype: Human Translation
-ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
-ms.openlocfilehash: eca74e69b0377f85deaf4cedbdf7b9edcf1b4b87
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 68fbe2e9895825bbbb41cfe025bfdf1d4f9d3d04
+ms.openlocfilehash: 6fe6b83d4a2b50a5eb7c2f6b23d4bda367666ac9
+ms.contentlocale: it-it
+ms.lasthandoff: 05/05/2017
 
 ---
 # <a name="classes-and-objects"></a>Classi e oggetti
@@ -68,9 +69,9 @@ A ogni membro di una classe è associata una caratteristica di accessibilità, c
 * `protected`
     - Accesso limitato a questa classe o alle classi derivate da questa classe
 * `internal`
-    - Accesso limitato a questo programma
+    - Accesso limitato all'assembly corrente (file EXE, file DLL e cosi via.)
 * `protected internal`
-    - Accesso limitato a questo programma o alle classi derivate da questa classe
+    - Accesso limitato alla classe principale o alle classi derivate dalla classe principale
 * `private`
     - Accesso limitato a questa classe
 
@@ -89,7 +90,7 @@ Un tipo generico per il quale sono stati specificati argomenti di tipo, come `Pa
 
 ## <a name="base-classes"></a>Classi di base
 
-Una dichiarazione di classe può specificare una classe di base se si fa seguire il nome della classe e i parametri di tipo dai due punti e dal nome della classe di base. Omettere di specificare una classe di base equivale a derivare la classe dall'oggetto tipo. Nell'esempio seguente la classe di base di `Point3D` è `Point` e quella di `Point` è `object`:
+Una dichiarazione di classe può specificare una classe di base se si fa seguire il nome della classe e i parametri di tipo dai due punti e dal nome della classe di base. L'omissione della specifica della classe di base equivale alla derivazione dal tipo `object`. Nell'esempio seguente la classe di base di `Point3D` è `Point` e quella di `Point` è `object`:
 
 [!code-csharp[Point3DClass](../../../samples/snippets/csharp/tour/classes-and-objects/Point.cs#L3-L20)]
 
@@ -127,15 +128,15 @@ La *firma* di un metodo deve essere univoca nell'ambito della classe in cui vien
 
 I parametri consentono di passare ai metodi valori o riferimenti a variabili. I parametri di un metodo ottengono i valori effettivi dagli *argomenti* specificati quando viene richiamato il metodo. Esistono quattro tipi di parametri: parametri di valore, parametri di riferimento, i parametri di output e matrici di parametri.
 
-Un *parametro di valore* consente di passare parametri di input. Corrisponde a una variabile locale che ottiene il valore iniziale dall'argomento passato per il parametro. Eventuali modifiche a un parametro di valore non interessano l'argomento passato per il parametro. 
+Un *parametro di valore* viene usato per passare argomenti di input. Corrisponde a una variabile locale che ottiene il valore iniziale dall'argomento passato per il parametro. Eventuali modifiche a un parametro di valore non interessano l'argomento passato per il parametro. 
 
 I parametri di valore possono essere facoltativi specificando un valore predefinito. In questo caso gli argomenti corrispondenti possono essere omessi.
 
-Un *parametro di riferimento* consente di passare parametri di input e di output. L'argomento passato per un parametro di riferimento deve essere una variabile e, durante l'esecuzione del metodo, il parametro di riferimento rappresenta la stessa posizione di memoria della variabile di argomento. Un parametro di riferimento viene dichiarato con il modificatore `ref`. Nell'esempio seguente viene illustrato l'uso di parametri `ref`.
+Un *parametro di riferimento* viene usato per passare argomenti per riferimento. L'argomento passato per un parametro di riferimento deve essere una variabile con un valore definito e, durante l'esecuzione del metodo, il parametro di riferimento rappresenta lo stesso percorso di archiviazione della variabile di argomento. Un parametro di riferimento viene dichiarato con il modificatore `ref`. Nell'esempio seguente viene illustrato l'uso di parametri `ref`.
 
 [!code-csharp[swapExample](../../../samples/snippets/csharp/tour/classes-and-objects/RefExample.cs#L3-L18)]
 
-Un *parametro di output* consente di passare parametri di input. Un parametro di output è simile a un parametro di riferimento, da cui differisce perché il valore iniziale dell'argomento fornito dal chiamante non è importante. Un parametro di output viene dichiarato con il modificatore `out`. Nell'esempio seguente viene illustrato l'uso di parametri `out`.
+Un *parametro di output* viene usato per passare argomenti per riferimento. È simile a un parametro di riferimento, ad eccezione del fatto che non è necessario assegnare in modo esplicito un valore per l'argomento specificato dal chiamante. Un parametro di output viene dichiarato con il modificatore `out`. L'esempio seguente illustra come usare i parametri `out` con la sintassi introdotta in C# 7.
 
 [!code-csharp[OutExample](../../../samples/snippets/csharp/tour/classes-and-objects/OutExample.cs#L3-L17)]
 
@@ -201,7 +202,7 @@ Le quattro classi precedenti possono essere usate per modellare espressioni arit
 
 [!code-csharp[ExpressionExample](../../../samples/snippets/csharp/tour/classes-and-objects/Program.cs#L40-L43)]
 
-Il metodo `Evaluate` di un'istanza `Expression` viene richiamato per valutare l'espressione specificata e generare un valore `double`. Il metodo accetta come argomento un parametro @`Dctionary` che include nomi di variabile (ad esempio, chiavi delle voci) e valori (ad esempio, valori delle voci). Il metodo `Evaluate` è un metodo `virtual abstract`, ovvero deve essere sottoposto a override da classi derivate non astratte per poter ottenere un'implementazione effettiva.
+Il metodo `Evaluate` di un'istanza `Expression` viene richiamato per valutare l'espressione specificata e generare un valore `double`. Il metodo accetta un argomento `Dictionary` che contiene nomi di variabili (come chiavi delle voci) e valori (come valori delle voci). Poiché `Evaluate` è un metodo astratto, le classi non astratte derivate da `Expression` devono eseguire l'override di `Evaluate`.
 
 L'implementazione di un valore `Constant` del metodo `Evaluate` restituisce semplicemente la costante memorizzata. L'implementazione di un valore `VariableReference` cerca il nome della variabile nel dizionario e restituisce il valore ottenuto. L'implementazione di un valore `Operation` valuta prima gli operandi sinistro e destro (richiamando in modo ricorsivo i metodi `Evaluate`) e quindi esegue l'operazione aritmetica specificata.
 

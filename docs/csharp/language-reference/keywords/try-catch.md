@@ -34,9 +34,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a06bd2a17f1d6c7308fa6337c866c1ca2e7281c0
 ms.openlocfilehash: 13684c7e32c52765f4d45d6a5bd2c6f8194efefe
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -69,7 +70,7 @@ catch (InvalidCastException e)
  Usando gli argomenti `catch`, è possibile filtrare le eccezioni che si desidera gestire.  È inoltre possibile usare un'espressione del predicato che esamini ulteriormente l'eccezione per decidere se gestirla.  Se l'espressione del predicato restituisce false, la ricerca di un gestore prosegue.  
   
 ```csharp  
-catch (ArgumentException e) when (e.ParamName == “…”)  
+catch (ArgumentException e) when (e.ParamName == "…")  
 {  
 }  
 ```  
@@ -87,7 +88,7 @@ catch (IOException e)
 {  
     // Extract some information from this exception, and then   
     // throw it to the parent method.  
-    whenDo not initialize (e.Source != null)  
+    if (e.Source != null)  
         Console.WriteLine("IOException source: {0}", e.Source);  
     throw;  
 }  
@@ -106,7 +107,6 @@ catch (InvalidCastException e)
  È anche possibile generare nuovamente un'eccezione quando una determinata condizione è true, come mostrato nell'esempio seguente.  
   
 ```csharp  
-  
 catch (InvalidCastException e)  
 {  
     if (e.Data == null)  
@@ -183,7 +183,7 @@ static void Main()
  [!code-cs[csAsyncExceptions#4](../../../csharp/language-reference/keywords/codesnippet/CSharp/try-catch_4.cs)]  
   
 ## <a name="c-language-specification"></a>Specifiche del linguaggio C#  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti per C#](../../../csharp/language-reference/index.md)   
@@ -194,3 +194,4 @@ static void Main()
  [throw](../../../csharp/language-reference/keywords/throw.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
  [Procedura: Come generare in modo esplicito le eccezioni](https://msdn.microsoft.com/library/xhcbs8fz)
+

@@ -1,47 +1,66 @@
 ---
-title: "/delaysign (C# Compiler Options) | Microsoft Docs"
-ms.date: "2015-07-20"
-ms.prod: ".net"
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
-f1_keywords: 
-  - "/delaysign"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "-delaysign compiler option [C#]"
-  - "delaysign compiler option [C#]"
-  - "/delaysign compiler option [C#]"
+title: -delaysign (opzioni del compilatore C#) | Microsoft Docs
+ms.date: 2015-07-20
+ms.prod: .net
+ms.technology:
+- devlang-csharp
+ms.topic: article
+f1_keywords:
+- /delaysign
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- -delaysign compiler option [C#]
+- delaysign compiler option [C#]
+- /delaysign compiler option [C#]
 ms.assetid: bcb058eb-2933-4e7f-b356-5c941db4de75
 caps.latest.revision: 16
-author: "BillWagner"
-ms.author: "wiwagn"
-caps.handback.revision: 16
+author: BillWagner
+ms.author: wiwagn
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fe32676f0e39ed109a68f39584cf41aec5f5ce90
+ms.openlocfilehash: f3dc76214acb66f2212a3611c0c419889e58c359
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
+
 ---
-# /delaysign (C# Compiler Options)
-Specificando questa opzione, il compilatore riserva spazio nel file di output in modo da poter aggiungere in seguito una firma digitale.  
+# <a name="delaysign-c-compiler-options"></a>/delaysign (opzioni del compilatore C#)
+Questa opzione indica al compilatore di riservare spazio nel file di output in modo che si possa aggiungere una firma digitale in un secondo tempo.  
   
-## Sintassi  
+## <a name="syntax"></a>Sintassi  
   
-```  
+```console  
 /delaysign[ + | - ]  
 ```  
   
-## Argomenti  
+## <a name="arguments"></a>Argomenti  
  `+` &#124; `-`  
- Utilizzare **\/delaysign\-** se si desidera che l'assembly abbia firma completa.  Utilizzare **\/delaysign\+** se si desidera inserire nell'assembly solo la chiave pubblica.  Il valore predefinito è **\/delaysign\-**.  
+ Usare **/delaysign-** se si vuole che l'assembly abbia firma completa. Usare **/delaysign+** se si vuole solo inserire la chiave pubblica nell'assembly. Il valore predefinito è **/delaysign-**.  
   
-## Note  
- L'opzione **\/delaysign** ha effetto solo se utilizzata con [\/keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md) o [\/keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md).  
+## <a name="remarks"></a>Note  
+ L'opzione **/delaysign** ha effetto solo se abbinata all'opzione [/keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md) o [/keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md).  
   
- Quando si richiede un assembly completamente firmato, il compilatore genera un hash per il file che contiene il manifesto, o metadati dell'assembly, e quindi firma l'hash risultante con la chiave privata.  La firma digitale risultante viene archiviata nel file contenente il manifesto.  Se per un assembly si utilizza una firma posticipata, la firma non verrà elaborata e quindi memorizzata dal compilatore, ma verrà riservato uno spazio nel file in modo che la firma possa essere aggiunta successivamente.  
+ Quando si richiede un assembly con firma completa, il compilatore genera un hash per il file contenente il manifesto (i metadati dell'assembly) e firma tale hash con la chiave privata. La firma digitale risultante viene archiviata nel file contenente il manifesto. Quando per un assembly è impostata la firma ritardata, il compilatore non calcola e archivia la firma, ma riserva spazio nel file in modo che la firma possa essere aggiunta successivamente.  
   
- Ad esempio, l'utilizzo di **\/delaysign\+** consente a un tester di inserire l'assembly nella Global Assembly Cache.  Al termine del test sarà possibile apporre una firma completa all'assembly inserendo la chiave privata mediante l'utilità [Assembly Linker](../Topic/Al.exe%20\(Assembly%20Linker\).md).  
+ Ad esempio, l'uso di **/delaysign+** consente a un tester di inserire l'assembly nella Global Assembly Cache. Al termine del test, è possibile firmare completamente l'assembly inserendo la chiave privata nell'assembly con l'utilità [Assembly Linker](https://msdn.microsoft.com/library/c405shex).  
   
- Per ulteriori informazioni, vedere [Creazione e utilizzo degli assembly con nome sicuro](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md) e [Ritardo della firma di un assembly](../Topic/Delay%20Signing%20an%20Assembly.md).  
+ Per altre informazioni, vedere [Creazione e utilizzo degli assembly con nome sicuro](https://msdn.microsoft.com/library/xwb8f617) e [Ritardo della firma di un assembly](../../../framework/app-domains/delay-sign-assembly.md).  
   
-### Per impostare l'opzione del compilatore nell'ambiente di sviluppo di Visual Studio  
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Per impostare l'opzione del compilatore nell'ambiente di sviluppo di Visual Studio  
   
 1.  Aprire la pagina **Proprietà** del progetto.  
   
@@ -49,6 +68,6 @@ Specificando questa opzione, il compilatore riserva spazio nel file di output in
   
  Per informazioni su come impostare questa opzione del compilatore a livello di codice, vedere <xref:VSLangProj80.ProjectProperties3.DelaySign%2A>.  
   
-## Vedere anche  
- [C\# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [Procedura: modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/it-it/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+## <a name="see-also"></a>Vedere anche  
+ [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  (Opzioni del compilatore C#)  
+ [NIB Procedura: Modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
