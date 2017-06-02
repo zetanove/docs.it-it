@@ -1,0 +1,5 @@
+# [Introduzione](index.md)
+## [Panoramica](overview.md)
+## [.NET Framework e rilascio fuori programma](the-net-framework-and-out-of-band-releases.md)
+## [Componenti di base e open-source di .NET](net-core-and-open-source.md)
+## [Requisiti di sistema](system-requirements.md)

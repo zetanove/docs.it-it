@@ -1,47 +1,52 @@
 ---
-title: Operazioni di base su stringhe
-description: Operazioni di base su stringhe
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 07/26/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 9658098d-de60-4868-ba5b-0c278748a90f
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: b8bdbeccd226c412e725200fcaf81ec568afc5bc
-ms.lasthandoff: 03/02/2017
-
+title: "Operazioni di base su stringhe in .NET Framework | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-standard"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "stringhe [.NET Framework], operazioni di base su stringhe"
+  - "stringhe personalizzate"
+ms.assetid: 8133d357-90b5-4b62-9927-43323d99b6b6
+caps.latest.revision: 13
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+caps.handback.revision: 13
 ---
-
-# <a name="basic-string-operations"></a>Operazioni di base su stringhe
-
-Le applicazioni spesso interagiscono con gli utenti creando messaggi in base all'input dell'utente. I siti Web ad esempio rispondono spesso a un utente che si è appena connesso con un saluto specifico che include il nome dell'utente. Nelle cassi [System. String](xref:System.String) e [System.Text.StringBuilder](xref:System.Text.StringBuilder) sono disponibili vari metodi che consentono una costruzione dinamica di stringhe personalizzate da visualizzare nell'interfaccia utente. Questi metodi consentono anche di eseguire una serie di operazioni di base sulle stringhe, come la creazione di nuove stringhe partendo da matrici di byte, il confronto di valori di stringhe e la modifica di stringhe esistenti.
-
-## <a name="in-this-section"></a>Contenuto della sezione
-
-[Creazione di nuove stringhe](creating-new.md): vengono descritte le operazioni di base per convertire gli oggetti in stringhe e combinare diverse stringhe.
-
-[Eliminazione di spazi iniziali e finali e rimozione di caratteri](trimming.md): viene descritto come eliminare gli spazi iniziali o finali o rimuovere caratteri in una stringa. 
-
-[Aggiunta di spaziatura interna alle stringhe ](padding.md): viene descritto come inserire caratteri o spazi vuoti in una stringa.
-
-[Confronto di stringhe](comparing.md): viene descritto come confrontare il contenuto di due o più stringhe.
-
-[Modifica della combinazione di maiuscole e minuscole](changing-case.md): viene descritto come modificare la combinazione di maiuscole e minuscole dei caratteri all'interno di una stringa.
-
-[Uso della classe StringBuilder](stringbuilder.md): viene descritto come creare e modificare oggetti stringa dinamici tramite la classe [StringBuilder](xref:System.Text.StringBuilder).
-
-[Procedura: Eseguire modifiche di base delle stringhe](basic-manipulations.md): viene descritto l'uso delle operazioni di base relativo alle stringhe.
-
-## <a name="related-sections"></a>Sezioni correlate
-
-[Conversione di tipi](type-conversion.md): viene descritto come convertire un tipo in un altro.
-
-[Formattazione di tipi](formatting-types.md): viene descritto come formattare le stringhe usando gli specificatori del formato stringa.
-
-
-
+# Operazioni di base su stringhe in .NET Framework
+Le applicazioni spesso interagiscono con l'utente creando e visualizzando messaggi in base all'input.  Non è inusuale, ad esempio, che per un utente appena connesso in un sito Web venga visualizzato un saluto personalizzato che include il nome dell'utente.  Svariati metodi nelle classi <xref:System.String?displayProperty=fullName> e <xref:System.Text.StringBuilder?displayProperty=fullName> consentono di costruire dinamicamente stringhe personalizzate da visualizzare nell'interfaccia utente.  Tali metodi consentono inoltre di eseguire numerose operazioni di base sulle stringhe, come la creazione di nuove stringhe da matrici di byte, il confronto tra i valori di più stringhe e la modifica di stringhe esistenti.  
+  
+## In questa sezione  
+ [Creazione di nuove stringhe](../../../docs/standard/base-types/creating-new.md)  
+ Vengono illustrate le operazioni di base per convertire oggetti in stringhe e combinare diverse stringhe.  
+  
+ [Eliminazione di spazi iniziali e finali e rimozione di caratteri](../../../docs/standard/base-types/trimming.md)  
+ Viene illustrato come eliminare gli spazi iniziali o finali o rimuovere caratteri in una stringa.  
+  
+ [Aggiunta di spaziatura interna alle stringhe](../../../docs/standard/base-types/padding.md)  
+ Viene illustrato come inserire caratteri o spazi vuoti in una stringa.  
+  
+ [Confronto di stringhe](../../../docs/standard/base-types/comparing.md)  
+ Viene illustrato come confrontare il contenuto di due o più stringhe.  
+  
+ [Modifica della combinazione di maiuscole e minuscole](../../../docs/standard/base-types/changing-case.md)  
+ Viene illustrato come modificare la combinazione di maiuscole e minuscole all'interno di una stringa.  
+  
+ [Uso della classe StringBuilder](../../../docs/standard/base-types/stringbuilder.md)  
+ Viene illustrato come creare e modificare oggetti stringa dinamici tramite la classe <xref:System.Text.StringBuilder>.  
+  
+ [Procedura: Eseguire modifiche di base delle stringhe](../../../docs/standard/base-types/basic-manipulations.md)  
+ Viene illustrato l'utilizzo delle operazioni di base relative alle stringhe.  
+  
+## Sezioni correlate  
+ [Conversione di tipi in .NET Framework](../../../docs/standard/base-types/type-conversion.md)  
+ Viene descritto come eseguire la conversione da un tipo a un altro.  
+  
+ [Formattazione di tipi](../../../docs/standard/base-types/formatting-types.md)  
+ Viene descritto come formattare le stringhe utilizzando gli identificatori di formato.

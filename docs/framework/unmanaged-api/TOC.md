@@ -1,0 +1,5 @@
+# [Tipi di dati comuni](common-data-types-unmanaged-api-reference.md)
+# [Riferimenti alle API non gestite](index.md)
+# [Maschera di bit COR_PRF_ALLOWABLE_AFTER_ATTACH](cor-prf-allowable-after-attach-bitmask.md)
+# [Costanti](constants-unmanaged-api-reference.md)
+# [Attributo GUID_ManagedName](guid-managedname-attribute.md)

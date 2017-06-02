@@ -1,86 +1,56 @@
 ---
-title: Analisi di altre stringhe in .NET
-description: Analisi di altre stringhe in .NET
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 07/29/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 67670b10-3df4-45ea-8908-5ba3f056887c
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: db80cc5f37e814f224ff76b14a906bb4d41064fb
-ms.lasthandoff: 03/02/2017
-
+title: "Analisi di altre stringhe in .NET Framework | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-standard"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "tipo di dati Char, analisi di stringhe"
+  - "enumerazioni [.NET Framework], analisi di stringhe"
+  - "tipi di base, analisi di stringhe"
+  - "analisi di stringhe, altre stringhe"
+  - "tipo di dati booleano, analisi di stringhe"
+ms.assetid: d139bc00-3c4e-4d78-ac9a-5c951b258d28
+caps.latest.revision: 15
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+caps.handback.revision: 15
 ---
-
-# <a name="parsing-other-strings-in-net"></a>Analisi di altre stringhe in .NET
-
-Oltre alle stringhe numeriche e [DateTime](xref:System.DateTime) è possibile analizzare le stringhe che rappresentano i tipi [Char](xref:System.Char), [Boolean](xref:System.Boolean) ed [Enum](xref:System.Enum) in tipi di dati.
-
-## <a name="char"></a>Char
-
-Il metodo di analisi statico associato al tipo di dati [Char](xref:System.Char) è utile per la conversione di una stringa contenente un solo carattere nel valore Unicode corrispondente. Nell'esempio seguente viene analizzata una stringa in un carattere Unicode.
-
-```csharp
-string MyString1 = "A";
-char MyChar = Char.Parse(MyString1);
-// MyChar now contains a Unicode "A" character.
-```
-
-```vb
-Dim MyString1 As String = "A"
-Dim MyChar As Char = Char.Parse(MyString1)
-' MyChar now contains a Unicode "A" character.
-```
-
-## <a name="boolean"></a>Booleano
-
-Il tipo di dati [Boolean](xref:System.Boolean) contiene un metodo [Parse](xref:System.Boolean.Parse(System.String)) che può essere usato per convertire una stringa che rappresenta un valore `Boolean` in un vero e proprio tipo `Boolean`. Questo metodo non fa distinzione tra maiuscole e minuscole e consente di analizzare correttamente una stringa contenente "True" o "False". Il metodo `Parse` associato al tipo `Boolean` consente anche di analizzare stringhe precedute e seguite da spazi vuoti. Se viene passata qualsiasi altra stringa, viene generata un'eccezione [FormatException](xref:System.FormatException).
-
-Nell'esempio di codice seguente viene usato il metodo `Parse` per convertire una stringa in un valore `Boolean`.
-
-```csharp
-string MyString2 = "True";
-bool MyBool = bool.Parse(MyString2);
-// MyBool now contains a True Boolean value.
-```
-
-```vb
-Dim MyString1 As String = "A"
-Dim MyChar As Char = Char.Parse(MyString1)
-' MyChar now contains a Unicode "A" character.
-```
-
-## <a name="enumeration"></a>Enumerazione
-
-È possibile usare il metodo statico [Parse](xref:System.Enum.Parse(System.Type,System.String)) per inizializzare un tipo di enumerazione per il valore di una stringa. Questo metodo accetta il tipo di enumerazione che si sta analizzando, la stringa da analizzare un flag `Boolean` facoltativo che indica se l'analisi fa distinzione tra maiuscole e minuscole. La stringa da analizzare può contenere diversi valori separati da virgole, che possono essere preceduti o seguiti da uno o più spazi vuoti. Quando la stringa contiene più valori, il valore dell'oggetto restituito è il valore di tutti i valori specificati combinati con un'operazione OR bit per bit.
-
-Nell'esempio seguente viene usato il metodo `Parse` per convertire una rappresentazione di stringa in un valore di enumerazione. L'enumerazione [DayOfWeek](xref:System.DayOfWeek) viene inizializzata su Thursday da una stringa.
-
-```csharp
-string MyString3 = "Thursday";
-DayOfWeek MyDays = (DayOfWeek)Enum.Parse(typeof(DayOfWeek), MyString3);
-Console.WriteLine(MyDays);
-// The result is Thursday.
-```
-
-```vb
-Dim MyString3 As String = "Thursday"
-Dim MyDays As DayOfWeek = CType([Enum].Parse(GetType(DayOfWeek), MyString3), DayOfWeek)
-Console.WriteLine("{0:G}", MyDays)
-' The result is Thursday.
-```
-
-## <a name="see-also"></a>Vedere anche
-
-[Analisi di stringhe in .NET](parsing-strings.md)
-
-[Formattazione di tipi in .NET](formatting-types.md)
-
-[Conversione di tipi in .NET](type-conversion.md)
-
-
+# Analisi di altre stringhe in .NET Framework
+Oltre alle stringhe numeriche e a quelle <xref:System.DateTime>, è possibile analizzare le stringhe che rappresentano i tipi <xref:System.Char>, <xref:System.Boolean> e <xref:System.Enum>.  
+  
+## Char  
+ Il metodo statico Parse associato al tipo di dati **Char** risulta utile per la conversione di una stringa formata da un singolo carattere nel valore Unicode corrispondente.  Nell'esempio seguente viene illustrata la conversione di una stringa in un carattere Unicode.  
+  
+ [!code-cpp[Conceptual.String.Parse#2](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.parse/cpp/parse.cpp#2)]
+ [!code-csharp[Conceptual.String.Parse#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.parse/cs/parse.cs#2)]
+ [!code-vb[Conceptual.String.Parse#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.parse/vb/parse.vb#2)]  
+  
+## Boolean  
+ Nel tipo di dati **Boolean** è disponibile un metodo **Parse** che consente di convertire una stringa che rappresenta un valore Boolean in un tipo **Boolean** effettivo.  Questo metodo non fa distinzione tra maiuscole e minuscole e consente di analizzare correttamente un stringa contenente un valore "True" o "False." Il metodo **Parse** associato al tipo **Boolean** consente inoltre di analizzare stringhe precedute e seguite da spazi.  Se viene passata qualsiasi altra stringa, viene generata un'eccezione <xref:System.FormatException>.  
+  
+ Nell'esempio riportato di seguito viene utilizzato il metodo **Parse** per convertire una stringa in un valore Boolean.  
+  
+ [!code-cpp[Conceptual.String.Parse#3](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.parse/cpp/parse.cpp#3)]
+ [!code-csharp[Conceptual.String.Parse#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.parse/cs/parse.cs#3)]
+ [!code-vb[Conceptual.String.Parse#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.parse/vb/parse.vb#3)]  
+  
+## Enumerazione  
+ È possibile utilizzare il metodo **Parse** statico per inizializzare un tipo di enumerazione sul valore di una stringa.  Questo metodo accetta il tipo di enumerazione che si sta analizzando, la stringa da analizzare e un flag Boolean facoltativo che indica se viene fatta distinzione tra maiuscole e minuscole.  La stringa che si analizza può contenere più valori separati da virgole che possono essere preceduti o seguiti da uno o più spazi.  Quando la stringa contiene più valori, il valore dell'oggetto restituito corrisponde a tutti i valori specificati combinati mediante un'operazione OR bit per bit.  
+  
+ Nell'esempio riportato di seguito viene utilizzato il metodo **Parse** per convertire una rappresentazione di stringa in un valore di enumerazione.  L'enumerazione <xref:System.DayOfWeek> viene inizializzata su **Thursday** da una stringa.  
+  
+ [!code-cpp[Conceptual.String.Parse#4](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.parse/cpp/parse.cpp#4)]
+ [!code-csharp[Conceptual.String.Parse#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.parse/cs/parse.cs#4)]
+ [!code-vb[Conceptual.String.Parse#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.parse/vb/parse.vb#4)]  
+  
+## Vedere anche  
+ [Analisi di stringhe](../../../docs/standard/base-types/parsing-strings.md)   
+ [Formattazione di tipi](../../../docs/standard/base-types/formatting-types.md)   
+ [Conversione di tipi in .NET Framework](../../../docs/standard/base-types/type-conversion.md)
