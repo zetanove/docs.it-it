@@ -26,11 +26,11 @@ caps.latest.revision: 56
 author: mairaw
 ms.author: mairaw
 manager: wpickett
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3dbadeec14ce9c023af39ae4ff95d0183826e7c1
-ms.openlocfilehash: eb0f0636abb39eabb387388fcdd39df8aca88c34
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: fe9ab371ab8d3eee3778412e446b7aa30b42476b
+ms.openlocfilehash: 46f524a8c2ee2d65d5c756a101a5c26c5919e165
 ms.contentlocale: it-it
-ms.lasthandoff: 05/02/2017
+ms.lasthandoff: 06/02/2017
 
 ---
 # <a name="deploying-the-net-framework-and-applications"></a>Distribuzione di .NET Framework e delle applicazioni
@@ -57,13 +57,13 @@ Questo articolo consente di iniziare a distribuire .NET Framework con l'applicaz
   
     -   [Riduzione dei riavvii del sistema durante le installazioni di .NET Framework 4.5](../../../docs/framework/deployment/reducing-system-restarts.md)  
   
-    -   [Risoluzione dei problemi relativi alle installazioni e disinstallazioni bloccate di .NET Framework](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
+    -   [Risolvere i problemi relativi alle installazioni e alle disinstallazioni bloccate di .NET Framework](~/docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
   
 -   Distribuzione di .NET Framework in un'applicazione client (per gli sviluppatori):   
   
-    -   [Uso di InstallShield](../../../docs/framework/deployment/deployment-guide-for-developers.md#installshield) in un progetto di installazione e distribuzione  
+    -   [Uso di InstallShield](../../../docs/framework/deployment/deployment-guide-for-developers.md#installshield-deployment) in un progetto di installazione e distribuzione  
   
-    -   [Uso di un'applicazione ClickOnce di Visual Studio](../../../docs/framework/deployment/deployment-guide-for-developers.md#clickonce)  
+    -   [Uso di un'applicazione ClickOnce di Visual Studio](../../../docs/framework/deployment/deployment-guide-for-developers.md#clickonce-deployment)  
   
     -   [Creazione di un pacchetto di installazione WiX](../../../docs/framework/deployment/deployment-guide-for-developers.md#wix)  
   
@@ -176,7 +176,7 @@ Questo articolo consente di iniziare a distribuire .NET Framework con l'applicaz
 |[Guida alla distribuzione per amministratori](../../../docs/framework/deployment/guide-for-administrators.md)|Illustra le modalità in cui un amministratore di sistema può distribuire .NET Framework e le relative dipendenze di sistema attraverso una rete usando System Center Configuration Manager (SCCM).|  
 |[Guida alla distribuzione per gli sviluppatori](../../../docs/framework/deployment/deployment-guide-for-developers.md)|Illustra come gli sviluppatori possono installare .NET Framework nei computer dei rispettivi utenti con le rispettive applicazioni.|  
 |[Distribuzione di applicazioni, servizi e componenti](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components)|Illustra le opzioni di distribuzione di Visual Studio, incluse le istruzioni per la pubblicazione di un'applicazione usando le tecnologie ClickOnce e Windows Installer.| 
-|[Pubblicazione di applicazioni ClickOnce](http://msdn.microsoft.com/library/eb6dfe79-f54c-4331-8e36-073688e70973)|Descrive come creare il pacchetto di un'applicazione Windows Forms e distribuirla con ClickOnce nei computer client di una rete.|  
+|[Pubblicazione di applicazioni ClickOnce](/visualstudio/deployment/publishing-clickonce-applications)|Descrive come creare il pacchetto di un'applicazione Windows Forms e distribuirla con ClickOnce nei computer client di una rete.|  
 |[Creazione del pacchetto e distribuzione delle risorse](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)|Descrive il modello hub e spoke usato da .NET Framework per creare pacchetti e distribuire le risorse. Vengono illustrate le convenzioni di denominazione, i processi di fallback e le possibilità alternative di creazione di pacchetti delle risorse.|  
 |[Distribuzione di una applicazione di interoperabilità](../../../docs/framework/interop/deploying-an-interop-application.md)|Illustra come fornire e installare applicazioni di interoperabilità, che in genere includono un assembly client .NET Framework, uno o più assembly di interoperabilità che rappresentano librerie dei tipi COM distinte e uno o più componenti COM registrati.|  
 |[Procedura: Ottenere lo stato di avanzamento dal programma d'installazione di .NET Framework 4.5](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)|Descrive come avviare e rilevare automaticamente il processo di installazione di .NET Framework pur mostrando la propria visualizzazione dello stato di avanzamento dell'installazione.|  
