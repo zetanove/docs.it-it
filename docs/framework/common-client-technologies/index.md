@@ -18,7 +18,7 @@ ms.translationtype: Machine Translation
 ms.sourcegitcommit: 9f5b8ebb69c9206ff90b05e748c64d29d82f7a16
 ms.openlocfilehash: 33735d01f33adc5fc2299c0a83a4208a28fc6b2d
 ms.contentlocale: it-it
-ms.lasthandoff: 05/22/2017
+ms.lasthandoff: 06/02/2017
 
 ---
 # <a name="common-client-technologies-in-the-net-framework"></a>Tecnologie client comuni in .NET Framework
