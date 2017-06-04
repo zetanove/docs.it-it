@@ -1,0 +1,1 @@
+libreria a collegamento dinamico (DLL)

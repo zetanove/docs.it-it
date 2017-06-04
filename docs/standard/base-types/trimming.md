@@ -1,212 +1,94 @@
 ---
-title: Eliminazione di spazi iniziali e finali e rimozione di caratteri dalle stringhe
-description: Eliminazione di spazi iniziali e finali e rimozione di caratteri dalle stringhe
-keywords: .NET, .NET Core
-author: stevehoag
-manager: wpickett
-ms.date: 07/26/2016
-ms.topic: article
-ms.prod: .net-core
-ms.technology: .net-core-technologies
-ms.devlang: dotnet
-ms.assetid: 95d818bc-2661-43f6-adb8-13b53abf9682
-translationtype: Human Translation
-ms.sourcegitcommit: fb00da6505c9edb6a49d2003ae9bcb8e74c11d6c
-ms.openlocfilehash: 6105861882c3bfd525a2d902fd2600f5da10417d
-
+title: "Eliminazione di spazi iniziali e finali e rimozione di caratteri dalle stringhe in .NET Framework | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-standard"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Remove (metodo)"
+  - "rimozione di caratteri"
+  - "stringhe [.NET Framework], rimozione di caratteri"
+  - "Trim (metodo)"
+  - "TrimEnd (metodo)"
+  - "caratteri di rimozione spazi"
+  - "TrimStart (metodo)"
+ms.assetid: ab248dab-70d4-4413-81c6-542d153fd195
+caps.latest.revision: 13
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+caps.handback.revision: 13
 ---
-
-# <a name="trimming-and-removing-characters-from-strings"></a>Eliminazione di spazi iniziali e finali e rimozione di caratteri dalle stringhe
-
-Se si sta analizzando una frase in singole parole, è possibile che si ottengano parole con spazi vuoti alle estremità. In questo caso è possibile usare uno dei metodi trim della classe [System.String](https://docs.microsoft.com/dotnet/core/api/System.String) per rimuovere un numero qualsiasi di spazi o altri caratteri da una posizione specificata nella stringa. La tabella seguente illustra i metodi trim disponibili.
-
-Nome metodo | Uso
------------ | ---
-[String.Trim](https://docs.microsoft.com/dotnet/core/api/System.String.Trim) | Rimuove gli spazi vuoti o i caratteri specificati in una matrice di caratteri all'inizio e alla fine di una stringa.
-[String.TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) | Rimuove i caratteri specificati in una matrice di caratteri alla fine di una stringa.
-[String.TrimStart](https://docs.microsoft.com/dotnet/core/api/System.String.TrimStart(System.Char[])) | Rimuove i caratteri specificati in una matrice di caratteri all'inizio di una stringa.
-[String.Remove](https://docs.microsoft.com/dotnet/core/api/System.String.Remove(System.Int32)) | Rimuove un numero specificato di caratteri da una posizione di indice specificata in una stringa.
-
-
-## <a name="trim"></a>Trim
-
-È possibile rimuovere facilmente gli spazi vuoti da entrambe le estremità di una stringa usando il metodo [String.Trim](https://docs.microsoft.com/dotnet/core/api/System.String.Trim), come visualizzato nell'esempio seguente.
-
-```csharp
-string MyString = " Big   ";
-Console.WriteLine("Hello{0}World!", MyString);
-string TrimString = MyString.Trim();
-Console.WriteLine("Hello{0}World!", TrimString);
-//       The example displays the following output:
-//             Hello Big   World!
-//             HelloBigWorld!
-```
-
-```vb
-Dim MyString As String = " Big   "
-Console.WriteLine("Hello{0}World!", MyString)
-Dim TrimString As String = MyString.Trim()
-Console.WriteLine("Hello{0}World!", TrimString)
-' The example displays the following output:
-'       Hello Big   World!
-'       HelloBigWorld!
-```
-
-È anche possibile rimuovere i caratteri specificati in una matrice di caratteri all'inizio e alla fine di una stringa. Nell'esempio seguente vengono rimossi gli spazi vuoti, i punti e gli asterischi.
-
-```csharp
-using System;
-
-public class Example
-{
-   public static void Main()
-   {
-      String header = "* A Short String. *";
-      Console.WriteLine(header);
-      Console.WriteLine(header.Trim( new Char[] { ' ', '*', '.' } ));
-   }
-}
-// The example displays the following output:
-//       * A Short String. *
-//       A Short String
-```
-
-```vb
-Module Example
-   Public Sub Main()
-      Dim header As String = "* A Short String. *"
-      Console.WriteLine(header)
-      Console.WriteLine(header.Trim( { " "c, "*"c, "."c } ))
-   End Sub
-End Module
-' The example displays the following output:
-'       * A Short String. *
-'       A Short String
-```
-
-## <a name="trimend"></a>TrimEnd
-
-Il metodo [TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) rimuove caratteri alla fine di una stringa, creando un nuovo oggetto stringa. Una matrice di caratteri viene passata a questo metodo per specificare i caratteri da rimuovere. L'ordine degli elementi nella matrice di caratteri non influenza l'operazione di rimozione. La rimozione si interrompe quando viene trovato un carattere non specificato nella matrice.
-
-L'esempio seguente rimuove le ultime lettere di una stringa con il metodo TrimEnd. In questo esempio la posizione dei caratteri `'r'` e `'W'` viene invertita per indicare che l'ordine dei caratteri nella matrice non è importante. Si noti che questo codice rimuove l'ultima parola di `MyString` e una parte della prima parola.
-
-```csharp
-string MyString = "Hello World!";
-char[] MyChar = {'r','o','W','l','d','!',' '};
-string NewString = MyString.TrimEnd(MyChar);
-Console.WriteLine(NewString);
-```
-
-```vb
-Dim MyString As String = "Hello World!"
-Dim MyChar() As Char = {"r","o","W","l","d","!"," "}
-Dim NewString As String = MyString.TrimEnd(MyChar)
-Console.WriteLine(NewString)
-```
-
-Il codice visualizza `He` nella console.
-
-L'esempio seguente rimuove l'ultima parola di una stringa con il metodo [TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])). In questo codice la parola `Hello` è seguita da una virgola: dato che la virgola non è specificata nella matrice di caratteri da tagliare, l'operazione di taglio termina in corrispondenza della virgola.
-
-```csharp
-string MyString = "Hello, World!";
-char[] MyChar = {'r','o','W','l','d','!',' '};
-string NewString = MyString.TrimEnd(MyChar);
-Console.WriteLine(NewString);
-```
-
-```vb
-Dim MyString As String = "Hello, World!"
-Dim MyChar() As Char = {"r","o","W","l","d","!"," "}
-Dim NewString As String = MyString.TrimEnd(MyChar)
-Console.WriteLine(NewString)
-```
-
-Il codice visualizza `Hello,` nella console.
-
-## <a name="trimstart"></a>TrimStart
-
-Il metodo [String.TrimStart](https://docs.microsoft.com/dotnet/core/api/System.String.TrimStart(System.Char[])) è simile al metodo [String.TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])) ma crea una nuova stringa rimuovendo caratteri dall'inizio di un oggetto stringa esistente. Una matrice di caratteri viene passata al metodo [TrimStart](https://docs.microsoft.com/dotnet/core/api/System.String.TrimStart(System.Char[])) per specificare i caratteri da rimuovere. Come per il metodo [TrimEnd](https://docs.microsoft.com/dotnet/core/api/System.String.TrimEnd(System.Char[])), l'ordine degli elementi nella matrice di caratteri non è importante per l'operazione di rimozione. La rimozione si interrompe quando viene trovato un carattere non specificato nella matrice.
-
-L'esempio seguente rimuove la prima parola di una stringa. In questo esempio la posizione dei caratteri `'l'` e `'H'` viene invertita per indicare che l'ordine dei caratteri nella matrice non è importante.
-
-```csharp
-string MyString = "Hello World!";
-char[] MyChar = {'e', 'H','l','o',' ' };
-string NewString = MyString.TrimStart(MyChar);
-Console.WriteLine(NewString);
-```
-
-```vb
-Dim MyString As String = "Hello World!"
-Dim MyChar() As Char = {"e","H","l","o"," " }
-Dim NewString As String = MyString.TrimStart(MyChar)
-Console.WriteLine(NewString)
-```
-
-Il codice visualizza `World!` nella console.
-
-## <a name="remove"></a>Rimuovi
-
-Il metodo [String.Remove](https://docs.microsoft.com/dotnet/core/api/System.String.Remove(System.Int32)) rimuove un numero specificato di caratteri a partire da una posizione specificata in una stringa esistente. Questo metodo presuppone un indice a base zero.
-
-L'esempio seguente rimuove dieci caratteri da una stringa a partire dalla posizione cinque di un indice a base zero della stringa.
-
-```csharp
-string MyString = "Hello Beautiful World!";
-Console.WriteLine(MyString.Remove(5,10));
-// The example displays the following output:
-//         Hello World!  
-```
-
-```vb
-Dim MyString As String = "Hello Beautiful World!"
-Console.WriteLine(MyString.Remove(5,10))
-' The example displays the following output:
-'         Hello World!
-```
-
-È anche possibile rimuovere da una stringa una sottostringa o un carattere specificato chiamando il metodo [String.Replace(String, String)](https://docs.microsoft.com/dotnet/core/api/System.String.Replace(System.String,System.String)) e specificando in sostituzione una stringa vuota ([String.Empty](https://docs.microsoft.com/dotnet/core/api/System.String.Empty)). Nell'esempio seguente vengono rimosse tutte le virgole da una stringa.
-
-```csharp
-using System;
-
-public class Example
-{
-   public static void Main()
-   {
-      String phrase = "a cold, dark night";
-      Console.WriteLine("Before: {0}", phrase);
-      phrase = phrase.Replace(",", "");
-      Console.WriteLine("After: {0}", phrase);
-   }
-}
-// The example displays the following output:
-//       Before: a cold, dark night
-//       After: a cold dark night
-```
-
-```vb
-Module Example
-   Public Sub Main()
-      Dim phrase As String = "a cold, dark night"
-      Console.WriteLine("Before: {0}", phrase)
-      phrase = phrase.Replace(",", "")
-      Console.WriteLine("After: {0}", phrase)
-   End Sub
-End Module
-' The example displays the following output:
-'       Before: a cold, dark night
-'       After: a cold dark night
-```
-
-## <a name="see-also"></a>Vedere anche
-
-[Operazioni di base su stringhe](basic-string-operations.md)
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
-
+# Eliminazione di spazi iniziali e finali e rimozione di caratteri dalle stringhe in .NET Framework
+Quando si suddivide una frase in parole singole è possibile che prima o dopo le parole rimangano spazi vuoti.  In questo caso è possibile utilizzare uno dei metodi della classe **System.String** per rimuovere spazi o altri caratteri da una posizione specificata all'interno della stringa.  Nella tabella che segue sono descritti i metodi disponibili per l'eliminazione degli spazi iniziali e finali.  
+  
+|Nome del metodo|Utilizzo|  
+|---------------------|--------------|  
+|<xref:System.String.Trim%2A?displayProperty=fullName>|Rimuove gli spazi vuoti o i caratteri specificati in un array di caratteri dall'inizio e alla fine di una stringa.|  
+|<xref:System.String.TrimEnd%2A?displayProperty=fullName>|Consente di rimuovere i caratteri specificati in una matrice di caratteri dalla fine di una stringa.|  
+|<xref:System.String.TrimStart%2A?displayProperty=fullName>|Consente di rimuovere i caratteri specificati in una matrice di caratteri dall'inizio di una stringa.|  
+|<xref:System.String.Remove%2A?displayProperty=fullName>|Consente di rimuovere un numero specificato di caratteri da una posizione di indice specificata in una stringa.|  
+  
+## Trim  
+ È possibile rimuovere facilmente gli spazi vuoti da entrambe le estremità di una stringa utilizzando il metodo <xref:System.String.Trim%2A?displayProperty=fullName>, come illustrato nell'esempio di codice che segue.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#17](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#17)]
+ [!code-csharp[Conceptual.String.BasicOps#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#17)]
+ [!code-vb[Conceptual.String.BasicOps#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#17)]  
+  
+ È anche possibile rimuovere i caratteri specificati in un array di caratteri all'inizio e alla fine di una stringa.  L'esempio seguente consente di rimuovere gli spazi vuoti, i punti e gli asterischi.  
+  
+ [!code-csharp[Conceptual.String.BasicOps#22](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trim2.cs#22)]
+ [!code-vb[Conceptual.String.BasicOps#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trim2.vb#22)]  
+  
+## TrimEnd  
+ Il metodo **String.TrimEnd** consente di rimuovere caratteri dalla fine di una stringa, creando un nuovo oggetto stringa.  Una matrice di caratteri viene passata al metodo per specificare i caratteri da rimuovere.  L'ordine degli elementi nella matrice di caratteri non ha effetto sull'eliminazione degli spazi iniziali e finali.  L'eliminazione di spazi iniziali e finali ha termine quando viene individuato un carattere non specificato nella matrice.  
+  
+ Nell'esempio che segue vengono rimosse le ultime lettere di una stringa utilizzando il metodo **TrimEnd**.  La posizione dei caratteri `'r'` e `'W'` è invertita, per indicare che l'ordine dei caratteri nella matrice è ininfluente.  Si noti che viene rimossa l'ultima parola di `MyString` più una parte della prima.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#18](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#18)]
+ [!code-csharp[Conceptual.String.BasicOps#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#18)]
+ [!code-vb[Conceptual.String.BasicOps#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#18)]  
+  
+ Nella console verrà visualizzato `He`.  
+  
+ Nell'esempio che segue viene rimossa l'ultima parola di una stringa utilizzando il metodo **TrimEnd**.  La parola `Hello` è preceduta nel codice da una virgola e, poiché questo segno di punteggiatura non è specificato nella matrice di caratteri di cui eliminare gli spazi iniziali e finali, il codice termina in corrispondenza della virgola.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#19](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#19)]
+ [!code-csharp[Conceptual.String.BasicOps#19](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#19)]
+ [!code-vb[Conceptual.String.BasicOps#19](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#19)]  
+  
+ Nella console verrà visualizzato `Hello,`.  
+  
+## TrimStart  
+ Il metodo **String.TrimStart** è analogo a **String.TrimEnd**, fatta eccezione per il fatto che consente di creare una nuova stringa rimuovendo i caratteri dall'inizio di un oggetto stringa esistente.  Una matrice di caratteri viene passata al metodo **TrimStart** per specificare i caratteri da rimuovere.  Come per il metodo **TrimEnd**, l'ordine degli elementi nella matrice di caratteri non ha effetto sull'eliminazione di spazi iniziali e finali.  L'eliminazione di spazi iniziali e finali ha termine quando viene individuato un carattere non specificato nella matrice.  
+  
+ Nell'esempio che segue viene rimossa la prima parola di una stringa.  La posizione dei caratteri `'l'` e `'H'` è invertita, per indicare che l'ordine dei caratteri nella matrice è ininfluente.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#20](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#20)]
+ [!code-csharp[Conceptual.String.BasicOps#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#20)]
+ [!code-vb[Conceptual.String.BasicOps#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#20)]  
+  
+ Nella console verrà visualizzato `World!`.  
+  
+## Rimozione  
+ Il metodo <xref:System.String.Remove%2A?displayProperty=fullName> consente di rimuovere un numero specificato di caratteri a partire da una posizione specificata da una stringa esistente.  Il metodo presuppone un indice a base zero.  
+  
+ Nell'esempio che segue vengono rimossi da una stringa dieci caratteri, a partire dalla quinta posizione di un indice a base zero della stringa.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#21](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/trimming.cpp#21)]
+ [!code-csharp[Conceptual.String.BasicOps#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/trimming.cs#21)]
+ [!code-vb[Conceptual.String.BasicOps#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/trimming.vb#21)]  
+  
+ È anche possibile rimuovere da una stringa un carattere o una sottostringa specificati chiamando il metodo <xref:System.String.Replace%28System.String%2CSystem.String%29?displayProperty=fullName> e specificando una stringa vuota \(<xref:System.String.Empty?displayProperty=fullName>\) come sostituzione.  L'esempio seguente consente di rimuovere tutte le virgole da una stringa.  
+  
+ [!code-csharp[Conceptual.String.BasicOps#23](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/replace1.cs#23)]
+ [!code-vb[Conceptual.String.BasicOps#23](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/replace1.vb#23)]  
+  
+## Vedere anche  
+ [Operazioni di base su stringhe](../../../docs/standard/base-types/basic-string-operations.md)

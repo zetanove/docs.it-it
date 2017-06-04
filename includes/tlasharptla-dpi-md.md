@@ -1,0 +1,1 @@
+punti per pollice (dpi)

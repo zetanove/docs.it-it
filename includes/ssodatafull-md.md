@@ -1,0 +1,1 @@
+Protocollo OData (Open Data)

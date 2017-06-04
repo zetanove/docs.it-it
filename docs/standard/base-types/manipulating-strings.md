@@ -1,40 +1,43 @@
 ---
-title: Modifica di stringhe
-description: Modifica di stringhe
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 07/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: da3c277e-b06e-48bd-ae1f-1e7e4240b93e
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 0ad6a7ef456e7967b3c23e58cd7afa97a4b786de
-ms.lasthandoff: 03/02/2017
-
+title: "Modifica di stringhe in .NET Framework | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-standard"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "modifica di stringhe"
+  - "stringhe [.NET Framework], modifica"
+ms.assetid: d4568ff3-9f83-4549-acd8-47aec2194ac0
+caps.latest.revision: 11
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+caps.handback.revision: 11
 ---
-
-# <a name="manipulating-strings"></a>Modifica di stringhe
-
-.NET offre un insieme completo di routine che consentono di creare, confrontare e modificare stringhe in modo efficiente, nonché di analizzare rapidamente elevate quantità di testo e dati per cercare, rimuovere e sostituire pattern di testo.
-
-## <a name="in-this-section"></a>In questa sezione
-
-[Procedure consigliate per l'uso delle stringhe](best-practices-strings.md): esamina i metodi di ordinamento, confronto e combinazione di maiuscole e minuscole delle stringhe in .NET e offre suggerimenti per la selezione di un metodo di gestione delle stringhe. 
-
-[Espressioni regolari](regular-expressions.md): include informazioni dettagliate sulle espressioni regolari di .NET, tra cui gli elementi del linguaggio, il comportamento delle espressioni regolari, oltre ad esempi.
-
-[Operazioni di base sulle stringhe](basic-string-operations.md): descrive le operazioni di stringa fornite dalle classi @System.String e @System.Text.StringBuilder, tra cui la creazione di nuove stringhe partendo da matrici di byte, il confronto dei valori delle stringhe e la modifica di stringhe esistenti.
-
-[Codifica di caratteri in .NET](character-encoding.md): descrive come codificare e decodificare i formati carattere come Unicode.
-
-[Conversione di tipi](type-conversion.md): viene descritto come convertire un tipo in un altro.
-
-[Formattazione di tipi](formatting-types.md): viene descritto come formattare le stringhe usando gli specificatori del formato stringa.
-
-[Analisi di stringhe](parsing-strings.md): descrive come eseguire la conversione di stringhe in tipi.
-
-
+# Modifica di stringhe in .NET Framework
+.NET Framework fornisce un insieme completo di routine che consentono di creare, confrontare e modificare stringhe in modo efficace e analizzare rapidamente elevate quantità di testo e dati per cercare, rimuovere e sostituire testo corrispondente a criteri specifici.  
+  
+## In questa sezione  
+ [Procedure consigliate per l'utilizzo di stringhe](../../../docs/standard/base-types/best-practices-strings.md)  
+ Vengono analizzati i metodi di ordinamento, confronto e gestione di maiuscole e minuscole per le stringhe in .NET Framework e vengono offerti suggerimenti per la selezione di un metodo di gestione delle stringhe.  
+  
+ [Espressioni regolari di .NET Framework](../../../docs/standard/base-types/regular-expressions.md)  
+ Vengono fornite informazioni dettagliate sulle espressioni regolari di .NET Framework, inclusi gli elementi del linguaggio, il comportamento delle espressioni regolari ed esempi.  
+  
+ [Operazioni di base su stringhe](../../../docs/standard/base-types/basic-string-operations.md)  
+ Vengono descritte operazioni di stringa fornite dalle classi <xref:System.String?displayProperty=fullName> e <xref:System.Text.StringBuilder?displayProperty=fullName>, inclusi la creazione di nuove stringhe da matrici di byte, il confronto dei valori delle stringhe e la modifica di stringhe esistenti.  
+  
+## Sezioni correlate  
+ [Conversione di tipi in .NET Framework](../../../docs/standard/base-types/type-conversion.md)  
+ Vengono illustrate le tecniche e le regole utilizzate per convertire i tipi tramite .NET Framework.  
+  
+ [Formattazione di tipi](../../../docs/standard/base-types/formatting-types.md)  
+ Viene illustrato come utilizzare la libreria di classi base per implementare la formattazione, come formattare tipi numerici e tipi di stringa e come eseguire la formattazione per determinate impostazioni cultura.  
+  
+ [Analisi di stringhe](../../../docs/standard/base-types/parsing-strings.md)  
+ Viene descritta l'inizializzazione di oggetti sui valori descritti dalle rappresentazioni in forma di stringa di tali oggetti.  L'analisi è l'operazione contraria alla formattazione.

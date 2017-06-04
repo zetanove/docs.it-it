@@ -1,0 +1,1 @@
+Exchangeable Image File (EXIF)

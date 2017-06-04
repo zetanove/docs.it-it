@@ -1,0 +1,1 @@
+Sicurezza per l'accesso al codice (CAS, Code Access Security)

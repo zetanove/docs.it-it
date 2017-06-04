@@ -1,221 +1,155 @@
 ---
-title: Confronto di stringhe
-description: Confronto di stringhe
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 07/26/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 920ee5e8-3d61-4941-b5af-fc50eaee427c
-translationtype: Human Translation
-ms.sourcegitcommit: 90fe68f7f3c4b46502b5d3770b1a2d57c6af748a
-ms.openlocfilehash: 47ee37886fa2662a89730e9d52ee04987e37da2f
-ms.lasthandoff: 03/02/2017
-
+title: "Confronto di stringhe in .NET Framework | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-standard"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Compare (metodo)"
+  - "CompareOrdinal (metodo)"
+  - "CompareTo (metodo)"
+  - "EndsWith (metodo)"
+  - "Equals (metodo)"
+  - "IndexOf (metodo)"
+  - "LastIndexOf (metodo)"
+  - "StartsWith (metodo)"
+  - "stringhe [.NET Framework], confronto"
+  - "confronto tra valori di stringhe"
+ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
+caps.latest.revision: 15
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+caps.handback.revision: 15
 ---
-
-# <a name="comparing-strings"></a>Confronto di stringhe
-
-.NET offre diversi metodi per confrontare i valori delle stringhe. La tabella seguente elenca e descrive i metodi di confronto di valori.
-
-Nome metodo | Uso
------------ | ---
-[String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) | Confronta i valori di due stringhe. Restituisce un valore intero.
-[String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) | Confronta due stringhe senza tenere in considerazione le impostazioni cultura locali. Restituisce un valore intero.
-[String.CompareTo](xref:System.String.CompareTo(System.String)) | Confronta l'oggetto stringa corrente con un'altra stringa. Restituisce un valore intero.
-[String.StartsWith](xref:System.String.StartsWith(System.String)) | Determina se una stringa inizia con la stringa passata. Restituisce un valore booleano.
-[String.EndsWith](xref:System.String.CompareTo(System.String)) | Determina se una stringa finisce con la stringa passata. Restituisce un valore booleano.
-[String.Equals](xref:System.String.CompareTo(System.String)) | Determina se due stringhe sono uguali. Restituisce un valore booleano.
-[String.IndexOf](xref:System.String.IndexOf(System.Char)) | Restituisce la posizione di indice di un carattere o una stringa, a partire dall'inizio della stringa esaminata. Restituisce un valore intero.
-[String.LastIndexOf](xref:System.String.LastIndexOf(System.Char)) | Restituisce la posizione di indice di un carattere o una stringa, a partire dalla fine della stringa esaminata. Restituisce un valore intero.
-
-## <a name="compare"></a>Compare
-
-Il metodo statico [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) consente di confrontare due stringhe in modo accurato. Questo metodo fa distinzione tra le impostazioni cultura. È possibile usare questa funzione per confrontare due stringhe o le sottostringhe di due stringhe. Sono inoltre disponibili overload che consentono o meno di fare distinzione tra maiuscole e minuscole e di tenere o meno in considerazione le differenze nelle impostazioni cultura. La tabella seguente illustra i tre valori interi che questo metodo può restituire. 
-
-Valore restituito | Condizione
------------- | ---------
-Intero negativo | La prima stringa precede la seconda stringa nella sequenza di ordinamento, oppure la prima stringa è `null`.
-0 | La prima stringa e la seconda stringa sono uguali, oppure sono entrambe `null`.
-Un intero positivo, o 1 | La prima stringa segue la seconda stringa nella sequenza di ordinamento, oppure la seconda stringa è Null.
- 
+# Confronto di stringhe in .NET Framework
+.NET Framework fornisce diversi metodi per confrontare i valori delle stringhe. La tabella seguente elenca e descrive i metodi di confronto di valori.  
+  
+|Nome metodo|Uso|  
+|-----------------|---------|  
+|<xref:System.String.Compare%2A?displayProperty=fullName>|Confronta i valori di due stringhe. Restituisce un valore intero.|  
+|<xref:System.String.CompareOrdinal%2A?displayProperty=fullName>|Confronta due stringhe senza tenere in considerazione le impostazioni cultura locali. Restituisce un valore intero.|  
+|<xref:System.String.CompareTo%2A?displayProperty=fullName>|Confronta l'oggetto stringa corrente con un'altra stringa. Restituisce un valore intero.|  
+|<xref:System.String.StartsWith%2A?displayProperty=fullName>|Determina se una stringa inizia con la stringa passata. Restituisce un valore booleano.|  
+|<xref:System.String.EndsWith%2A?displayProperty=fullName>|Determina se una stringa finisce con la stringa passata. Restituisce un valore booleano.|  
+|<xref:System.String.Equals%2A?displayProperty=fullName>|Determina se due stringhe sono uguali. Restituisce un valore booleano.|  
+|<xref:System.String.IndexOf%2A?displayProperty=fullName>|Restituisce la posizione di indice di un carattere o una stringa, a partire dall'inizio della stringa esaminata. Restituisce un valore intero.|  
+|<xref:System.String.LastIndexOf%2A?displayProperty=fullName>|Restituisce la posizione di indice di un carattere o una stringa, a partire dalla fine della stringa esaminata. Restituisce un valore intero.|  
+  
+## Compare  
+ Il metodo statico <xref:System.String.Compare%2A?displayProperty=fullName> consente di confrontare due stringhe. Questo metodo fa distinzione tra le impostazioni cultura. È possibile usare questa funzione per confrontare due stringhe o le sottostringhe di due stringhe. Sono inoltre disponibili overload che consentono o meno di fare distinzione tra maiuscole e minuscole e di tenere o meno in considerazione le differenze nelle impostazioni cultura. La tabella seguente illustra i tre valori interi che questo metodo può restituire.  
+  
+|Valore restituito|Condizione|  
+|-----------------------|----------------|  
+|Intero negativo|La prima stringa precede la seconda stringa nella sequenza di ordinamento.<br /><br /> \-oppure\-<br /><br /> La prima stringa è `null`.|  
+|0|La prima stringa e la seconda stringa sono uguali.<br /><br /> \-oppure\-<br /><br /> Entrambe le stringhe sono `null`.|  
+|Intero positivo<br /><br /> \-oppure\-<br /><br /> 1|La prima stringa segue la seconda stringa nella sequenza di ordinamento.<br /><br /> \-oppure\-<br /><br /> La seconda stringa è `null`.|  
+  
 > [!IMPORTANT]
-> Il metodo [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) è destinato principalmente a essere usato quando si ordinano le stringhe. Non usare il metodo [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) per verificare l'uguaglianza, ovvero, per cercare in modo esplicito un valore restituito pari a 0 senza considerare se una stringa è minore o maggiore dell'altra. Per determinare se due stringhe sono uguali, usare invece il metodo [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String,System.String,System.StringComparison)).
-
-L'esempio seguente usa il metodo [String.Compare](xref:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)) per determinare i valori relativi di due stringhe.
-
-```csharp
-string string1 = "Hello World!";
-Console.WriteLine(String.Compare(string1, "Hello World?"));
-```
-
-```vb
-Dim string1 As String = "Hello World!"
-Console.WriteLine(String.Compare(string1, "Hello World?"))
-```
-
-L'esempio visualizza `-1` nella console.
-
-## <a name="compareordinal"></a>CompareOrdinal
-
-Il metodo [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) confronta due oggetti stringa senza considerare le impostazioni cultura locali. I valori restituiti da questo metodo sono identici a quelli restituiti dal metodo `Compare` nella tabella precedente.
-
+>  Il metodo <xref:System.String.Compare%2A?displayProperty=fullName> è destinato principalmente a essere usato quando si ordinano o si dispongono le stringhe. Non usare il metodo <xref:System.String.Compare%2A?displayProperty=fullName> per verificare l'uguaglianza \(ovvero, per cercare in modo esplicito un valore restituito pari a 0 senza considerare se una stringa è minore o maggiore di un'altra\). Per determinare se due stringhe sono uguali, usare invece il metodo <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName>.  
+  
+ L'esempio seguente usa il metodo <xref:System.String.Compare%2A?displayProperty=fullName> per determinare i valori relativi di due stringhe.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#6](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#6)]
+ [!code-csharp[Conceptual.String.BasicOps#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#6)]
+ [!code-vb[Conceptual.String.BasicOps#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#6)]  
+  
+ L'esempio visualizza `-1` nella console.  
+  
+ L'esempio precedente fa distinzione tra le impostazioni cultura per impostazione predefinita. Per eseguire un confronto tra stringhe senza fare distinzione tra le impostazioni cultura, usare un overload del metodo <xref:System.String.Compare%2A?displayProperty=fullName>, che consente di specificare le impostazioni cultura da usare tramite un parametro *culture*. Per un esempio che illustra come usare il metodo <xref:System.String.Compare%2A?displayProperty=fullName> per eseguire un confronto senza distinzione tra le impostazioni cultura, vedere [Esecuzione di confronti di stringhe indipendenti dalle impostazioni cultura](../../../ocs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
+  
+## CompareOrdinal  
+ Il metodo <xref:System.String.CompareOrdinal%2A?displayProperty=fullName> confronta due oggetti stringa senza considerare le impostazioni cultura locali. I valori restituiti da questo metodo sono identici a quelli restituiti dal metodo **Compare** nella tabella precedente.  
+  
 > [!IMPORTANT]
-> Il metodo [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) è destinato principalmente a essere usato quando si ordinano le stringhe. Non usare il metodo [String.CompareOrdinal](xref:System.String.CompareOrdinal(System.String,System.Int32,System.String,System.Int32,System.Int32)) per verificare l'uguaglianza, ovvero per cercare in modo esplicito un valore restituito pari a 0 senza considerare se una stringa è minore o maggiore dell'altra. Per determinare se due stringhe sono uguali, usare invece il metodo [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String,System.String,System.StringComparison)).
-
-L'esempio seguente usa il metodo `CompareOrdinal` per confrontare i valori di due stringhe.
-
-```csharp
-string string1 = "Hello World!";
-Console.WriteLine(String.CompareOrdinal(string1, "hello world!"));
-```
-
-```vb
-Dim string1 As String = "Hello World!"
-Console.WriteLine(String.CompareOrdinal(string1, "hello world!"))
-```
-
-L'esempio visualizza `-32` nella console.
-
-## <a name="compareto"></a>CompareTo
-
-Il metodo [String.CompareTo](xref:System.String.CompareTo(System.String)) confronta la stringa incapsulata dall'oggetto stringa corrente con un altro oggetto o stringa. I valori restituiti da questo metodo sono identici a quelli restituiti dal metodo `String.Compare` nella tabella precedente.
-
+>  Il metodo <xref:System.String.CompareOrdinal%2A?displayProperty=fullName> è destinato principalmente a essere usato quando si ordinano o si dispongono le stringhe. Non usare il metodo <xref:System.String.CompareOrdinal%2A?displayProperty=fullName> per verificare l'uguaglianza \(ovvero, per cercare in modo esplicito un valore restituito pari a 0 senza considerare se una stringa è minore o maggiore di un'altra\). Per determinare se due stringhe sono uguali, usare invece il metodo <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName>.  
+  
+ L'esempio seguente usa il metodo **CompareOrdinal** per confrontare i valori di due stringhe.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#7](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#7)]
+ [!code-csharp[Conceptual.String.BasicOps#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#7)]
+ [!code-vb[Conceptual.String.BasicOps#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#7)]  
+  
+ L'esempio visualizza `-32` nella console.  
+  
+## CompareTo  
+ Il metodo <xref:System.String.CompareTo%2A?displayProperty=fullName> confronta la stringa incapsulata dall'oggetto stringa corrente con un altro oggetto o stringa. I valori restituiti da questo metodo sono identici a quelli restituiti dal metodo <xref:System.String.Compare%2A?displayProperty=fullName> nella tabella precedente.  
+  
 > [!IMPORTANT]
-> Il metodo [String.CompareTo](xref:System.String.CompareTo(System.String)) è destinato principalmente a essere usato quando si ordinano le stringhe. Non usare il metodo [String.CompareTo](xref:System.String.CompareTo(System.String)) per verificare l'uguaglianza, ovvero per cercare in modo esplicito un valore restituito pari a 0 senza considerare se una stringa è minore o maggiore dell'altra. Per determinare se due stringhe sono uguali, usare invece il metodo [String.Equals(String, String, StringComparison)](xref:System.String.Equals(System.String,System.String,System.StringComparison)).
-
-L'esempio seguente usa il metodo `String.CompareTo` per confrontare l'oggetto `string1` con l'oggetto `string2`.
-
-```csharp
-string string1 = "Hello World";
-string string2 = "Hello World!";
-int MyInt = string1.CompareTo(string2);
-Console.WriteLine( MyInt );
-```
-
-```vb
-Dim string1 As String = "Hello World"
-Dim string2 As String = "Hello World!"
-Dim MyInt As Integer = string1.CompareTo(string2)
-Console.WriteLine(MyInt)
-```
-
-L'esempio visualizza `-1` nella console.
-
-## <a name="equals"></a>Equals
-
-Il metodo [String.Equals](xref:System.String.CompareTo(System.String)) consente di determinare in modo semplice se due stringhe sono uguali. Questo metodo, che fa distinzione tra maiuscole e minuscole, restituisce un valore booleano `true` o `false`. Può essere usato da una classe esistente, come illustrato nell'esempio seguente. L'esempio seguente usa il metodo `Equals` per determinare se un oggetto stringa contiene la frase "Hello World".
-
-```csharp
-string string1 = "Hello World";
-Console.WriteLine(string1.Equals("Hello World"));
-```
-
-```vb
-Dim string1 As String = "Hello World"
-Console.WriteLine(string1.Equals("Hello World"))
-```
-
-L'esempio visualizza `true` nella console.
-
-Questo metodo può anche essere usato come metodo statico. L'esempio seguente confronta due oggetti stringa tramite un metodo statico.
-
-```csharp
-string string1 = "Hello World";
-string string2 = "Hello World";
-Console.WriteLine(String.Equals(string1, string2));
-```
-
-```vb
-Dim string1 As String = "Hello World"
-Dim string2 As String = "Hello World"
-Console.WriteLine(String.Equals(string1, string2))
-```
-
-L'esempio visualizza `true` nella console.
-
-## <a name="startswith-and-endswith"></a>StartsWith ed EndsWith
-
-È possibile usare il metodo [String.StartsWith](xref:System.String.StartsWith(System.String)) per determinare se un oggetto stringa inizia con gli stessi caratteri inclusi in un'altra stringa. Questo metodo, che fa distinzione tra maiuscole e minuscole, restituisce `true` se l'oggetto stringa corrente inizia con la stringa passata e `false` in caso contrario. L'esempio seguente usa questo metodo per determinare se un oggetto stringa inizia con "Hello".
-
-```csharp
-string string1 = "Hello World";
-Console.WriteLine(string1.StartsWith("Hello"));
-```
-
-```vb
-Dim string1 As String = "Hello World!"
-Console.WriteLine(string1.StartsWith("Hello"))
-```
-
-L'esempio visualizza `true` nella console.
-
-Il metodo [String.EndsWith](xref:System.String.CompareTo(System.String)) confronta una stringa passata con i caratteri presenti alla fine dell'oggetto stringa corrente. Anch'esso restituisce un valore booleano. L'esempio seguente verifica la fine di una stringa usando il metodo `EndsWith`.
-
-```csharp
-string string1 = "Hello World";
-Console.WriteLine(string1.EndsWith("Hello"));
-```
-
-```vb
-Dim string1 As String = "Hello World!"
-Console.WriteLine(string1.EndsWith("Hello"))
-```
-
-L'esempio visualizza `false` nella console.
-
-## <a name="indexof-and-lastindexof"></a>IndexOf e LastIndexOf
-
-È possibile usare il metodo [String.IndexOf](xref:System.String.IndexOf(System.Char)) per determinare la posizione della prima occorrenza di un carattere specifico all'interno di una stringa. Questo metodo, che fa distinzione tra maiuscole e minuscole, inizia il conteggio dall'inizio di una stringa e restituisce la posizione di un carattere passato usando un indice in base zero. Se il carattere non viene trovato, viene restituito un valore -1.
-
-L'esempio seguente usa il metodo `IndexOf` per cercare la prima occorrenza del carattere "`l`" in una stringa.
-
-```csharp
-string string1 = "Hello World";
-Console.WriteLine(string1.IndexOf('l'));
-```
-
-```vb
-Dim string1 As String = "Hello World!"
-Console.WriteLine(string1.IndexOf("l"))
-```
-
-L'esempio visualizza `2` nella console.
-
-Il metodo [String.LastIndexOf](xref:System.String.LastIndexOf(System.Char)) è simile al metodo `String.IndexOf`, con la differenza che restituisce la posizione dell'ultima occorrenza di un carattere specifico all'interno di una stringa. Anch'esso fa distinzione tra maiuscole e minuscole e usa un indice in base zero. 
-
-L'esempio seguente usa il metodo `LastIndexOf` per cercare l'ultima occorrenza del carattere "`l`" in una stringa.
-
-```csharp
-string string1 = "Hello World";
-Console.WriteLine(string1.LastIndexOf('l'));
-```
-
-```vb
-Dim string1 As String = "Hello World!"
-Console.WriteLine(string1.LastIndexOf("l"))
-```
-
-L'esempio visualizza `9` nella console.
-
-Entrambi i metodi sono utili quando vengono usati in combinazione con il metodo [String.Remove](xref:System.String.Remove(System.Int32)). È possibile usare il metodo `IndexOf` o `LastIndexOf` per recuperare la posizione di un carattere e quindi specificare tale posizione nel metodo `Remove method` per rimuovere un carattere o una parola che inizia con tale carattere.
-
-## <a name="see-also"></a>Vedere anche
-
-[Operazioni di base su stringhe](basic-string-operations.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
+>  Il metodo <xref:System.String.CompareTo%2A?displayProperty=fullName> è destinato principalmente a essere usato quando si ordinano o si dispongono le stringhe. Non usare il metodo <xref:System.String.CompareTo%2A?displayProperty=fullName> per verificare l'uguaglianza \(ovvero, per cercare in modo esplicito un valore restituito pari a 0 senza considerare se una stringa è minore o maggiore di un'altra\). Per determinare se due stringhe sono uguali, usare invece il metodo <xref:System.String.Equals%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=fullName>.  
+  
+ L'esempio seguente usa il metodo <xref:System.String.CompareTo%2A?displayProperty=fullName> per confrontare l'oggetto `string1` con l'oggetto `string2`.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#8](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#8)]
+ [!code-csharp[Conceptual.String.BasicOps#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#8)]
+ [!code-vb[Conceptual.String.BasicOps#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#8)]  
+  
+ L'esempio visualizza `-1` nella console.  
+  
+ Tutti gli overload del metodo <xref:System.String.CompareTo%2A?displayProperty=fullName> eseguono per impostazione predefinita confronti che fanno distinzione tra le impostazioni cultura e tra maiuscole e minuscole. Non sono disponibili overload di questo metodo per eseguire un confronto senza distinzione tra le impostazioni cultura. Per maggiore chiarezza del codice, è consigliabile usare invece il metodo **String.Compare**, specificando <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> per operazioni con distinzione tra le impostazioni cultura o <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> per operazioni senza distinzione tra le impostazioni cultura. Per un esempio che illustra come usare il metodo **String.Compare** per eseguire confronti con e senza distinzione tra le impostazioni cultura, vedere [Esecuzione di confronti di stringhe indipendenti dalle impostazioni cultura](../../../ocs/standard/globalization-localization/performing-culture-insensitive-string-comparisons.md).  
+  
+## Equals  
+ Il metodo **Equals** consente di determinare in modo semplice se due stringhe sono uguali. Questo metodo, che fa distinzione tra maiuscole e minuscole, restituisce un valore booleano **true** o **false**. Può essere usato da una classe esistente, come illustrato nell'esempio seguente. L'esempio seguente usa il metodo **Equals** per determinare se un oggetto stringa contiene la frase "Hello World".  
+  
+ [!code-cpp[Conceptual.String.BasicOps#9](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#9)]
+ [!code-csharp[Conceptual.String.BasicOps#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#9)]
+ [!code-vb[Conceptual.String.BasicOps#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#9)]  
+  
+ L'esempio visualizza `True` nella console.  
+  
+ Questo metodo può anche essere usato come metodo statico. L'esempio seguente confronta due oggetti stringa tramite un metodo statico.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#10](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#10)]
+ [!code-csharp[Conceptual.String.BasicOps#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#10)]
+ [!code-vb[Conceptual.String.BasicOps#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#10)]  
+  
+ L'esempio visualizza `True` nella console.  
+  
+## StartsWith ed EndsWith  
+ È possibile usare il metodo **StartsWith** per determinare se un oggetto stringa inizia con gli stessi caratteri inclusi in un'altra stringa. Questo metodo, che fa distinzione tra maiuscole e minuscole, restituisce **true** se l'oggetto stringa corrente inizia con la stringa passata e **false** in caso contrario. L'esempio seguente usa questo metodo per determinare se un oggetto stringa inizia con "Hello".  
+  
+ [!code-cpp[Conceptual.String.BasicOps#11](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#11)]
+ [!code-csharp[Conceptual.String.BasicOps#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#11)]
+ [!code-vb[Conceptual.String.BasicOps#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#11)]  
+  
+ L'esempio visualizza `True` nella console.  
+  
+ Il metodo **EndsWith** confronta una stringa passata con i caratteri presenti alla fine dell'oggetto stringa corrente. Anch'esso restituisce un valore booleano. L'esempio seguente verifica la fine di una stringa usando il metodo **EndsWith**.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#12](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#12)]
+ [!code-csharp[Conceptual.String.BasicOps#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#12)]
+ [!code-vb[Conceptual.String.BasicOps#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#12)]  
+  
+ L'esempio visualizza `False`  nella console.  
+  
+## IndexOf e LastIndexOf  
+ È possibile usare il metodo **IndexOf** per determinare la posizione della prima occorrenza di un carattere specifico all'interno di una stringa. Questo metodo, che fa distinzione tra maiuscole e minuscole, inizia il conteggio dall'inizio di una stringa e restituisce la posizione di un carattere passato usando un indice in base zero. Se il carattere non viene trovato, viene restituito un valore \-1.  
+  
+ L'esempio seguente usa il metodo **IndexOf** per cercare la prima occorrenza del carattere '`l`' in una stringa.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#13](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#13)]
+ [!code-csharp[Conceptual.String.BasicOps#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#13)]
+ [!code-vb[Conceptual.String.BasicOps#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#13)]  
+  
+ L'esempio visualizza `2` nella console.  
+  
+ Il metodo **LastIndexOf** è simile al metodo **IndexOf**, con la differenza che restituisce la posizione dell'ultima occorrenza di un carattere specifico all'interno di una stringa. Anch'esso fa distinzione tra maiuscole e minuscole e usa un indice in base zero.  
+  
+ L'esempio seguente usa il metodo **LastIndexOf** per cercare l'ultima occorrenza del carattere '`l`' in una stringa.  
+  
+ [!code-cpp[Conceptual.String.BasicOps#14](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.string.basicops/cpp/compare.cpp#14)]
+ [!code-csharp[Conceptual.String.BasicOps#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.string.basicops/cs/compare.cs#14)]
+ [!code-vb[Conceptual.String.BasicOps#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.string.basicops/vb/compare.vb#14)]  
+  
+ L'esempio visualizza `9` nella console.  
+  
+ Entrambi i metodi sono utili quando vengono usati in combinazione con il metodo **String.Remove**. È possibile usare il metodo **IndexOf** o **LastIndexOf** per recuperare la posizione di un carattere e quindi specificare tale posizione nel metodo **Remove** per rimuovere un carattere o una parola che inizia con tale carattere.  
+  
+## Vedere anche  
+ [Operazioni di base su stringhe](../../../docs/standard/base-types/basic-string-operations.md)   
+ [Esecuzione di operazioni sulle stringhe indipendenti dalle impostazioni cultura](../../../ocs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
